@@ -1,0 +1,12 @@
+{
+  "all_checks_passed": true,
+  "checks": 14,
+  "original_inputs_unchanged": true,
+  "policy_updates": 0,
+  "new_physics_rollouts": 0,
+  "artifacts": {
+    "README.md": "22d20fd26204953050e1820f0138a6157136b8c2de2ae7b0992d4b32efd1563b",
+    "input_manifest.json": "38c94c73682514ac3ec3a3f563ec97e31ff1f1d939e165d7708b1006ba136acf",
+    "comparison.json": "cf121e1e9e8f4caf8e55d16a6f4f188c8287120be5b8c8ff74f85c7fa9c671dc"
+  }
+}

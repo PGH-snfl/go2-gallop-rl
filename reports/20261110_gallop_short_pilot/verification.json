@@ -1,0 +1,21 @@
+{
+  "training_completed": true,
+  "updates_500": true,
+  "eval_frozen": true,
+  "cases_complete": true,
+  "parent_unchanged": true,
+  "model_249.pt_updates": true,
+  "model_249.pt_finite": true,
+  "model_249.pt_actor_changed": true,
+  "model_249.pt_optimizer_populated": true,
+  "model_final.pt_updates": true,
+  "model_final.pt_finite": true,
+  "model_final.pt_actor_changed": true,
+  "model_final.pt_optimizer_populated": true,
+  "gallop_core.py_saved_source": true,
+  "gallop_core.py_evaluated_source": true,
+  "gallop_env.py_saved_source": true,
+  "gallop_env.py_evaluated_source": true,
+  "all_executed_targets_within_limits": true,
+  "all_executed_target_rates_within_limits": true
+}

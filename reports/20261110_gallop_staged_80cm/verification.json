@@ -1,0 +1,17 @@
+{
+  "checks": {
+    "unit_tests_177_passed": true,
+    "isaac16_env_1500steps_frozen": true,
+    "isaac_stage5_checkpoint_restore": true,
+    "mujoco_three_stage_contract_checks": true,
+    "pilot500_parent_hash_unchanged": true,
+    "protected30k_hash_unchanged": true,
+    "failed34k_hash_unchanged": true
+  },
+  "checked_at": "2026-11-10T22:31:30.161833+09:00",
+  "policy_updates": 0,
+  "physical_feasibility_claim": false,
+  "isaac_check": "runs/isaac/check/unitree_go2_gallop/20261110_222245_82cc62",
+  "restore_check": "runs/isaac/check/unitree_go2_gallop/20261110_222743_b0e4ea",
+  "adapter_check": "runs/isaac/check/unitree_go2_gallop/20261110_222659_3057c1"
+}

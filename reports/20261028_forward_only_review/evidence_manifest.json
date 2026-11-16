@@ -1,0 +1,326 @@
+{
+  "runs/isaac/train/unitree_go2_forward_only/20261028_150349_3efb1b/model_900.pt": {
+    "sha256": "6d8676fc644c6c7a43b18b09935e96000bf0e2e1d249a4b3444617844c8465f1",
+    "bytes": 4639595
+  },
+  "runs/isaac/train/unitree_go2_forward_only/20261028_150349_3efb1b/model_800.pt": {
+    "sha256": "8d73595e042cb91d5c4365d9edb3a938f9c0d53cfdc7910c3508fe8ebccd23a1",
+    "bytes": 4639595
+  },
+  "runs/isaac/train/unitree_go2_forward_only/20261028_150349_3efb1b/model_1400.pt": {
+    "sha256": "a7411ea4e49aa7d70b3d4b55f909fb0843cb4c9ff9a05d41835c90e014a895c7",
+    "bytes": 4639669
+  },
+  "runs/isaac/train/unitree_go2_forward_only/20261028_150349_3efb1b/model_400.pt": {
+    "sha256": "23fcdfd485eebae7e38bc86891b21b937ef8f8f58b02f12432fc9a0415d03a70",
+    "bytes": 4639595
+  },
+  "runs/isaac/train/unitree_go2_forward_only/20261028_150349_3efb1b/model_1100.pt": {
+    "sha256": "0caffd58cd4abfb278ad3d6fa95f41957c3dd70579fad2791ee32f474e88a319",
+    "bytes": 4639669
+  },
+  "runs/isaac/train/unitree_go2_forward_only/20261028_150349_3efb1b/model_1300.pt": {
+    "sha256": "d0494db26f1e070fee3eac9cf236fa0026997c6aa8d4c3872d65fc834119e31d",
+    "bytes": 4639669
+  },
+  "runs/isaac/train/unitree_go2_forward_only/20261028_150349_3efb1b/model_100.pt": {
+    "sha256": "20b19ae64878b9953eefb6a83c54cb86dd01075bb44a86ff1a99b0dbcdf52f23",
+    "bytes": 4639595
+  },
+  "runs/isaac/train/unitree_go2_forward_only/20261028_150349_3efb1b/model_500.pt": {
+    "sha256": "287ad52ceca0215176f04856d728bbc4e5508bbe2f762325d95e15c887285210",
+    "bytes": 4639595
+  },
+  "runs/isaac/train/unitree_go2_forward_only/20261028_150349_3efb1b/model_700.pt": {
+    "sha256": "d81884530cac4e5ac5922fb23810fb2804c38f5806c8261d4d3d05373243c029",
+    "bytes": 4639595
+  },
+  "runs/isaac/train/unitree_go2_forward_only/20261028_150349_3efb1b/model_1000.pt": {
+    "sha256": "07974764bee4b6ebf73be4004112f16b27745ca7c918ce0e53a7915487114e6f",
+    "bytes": 4639669
+  },
+  "runs/isaac/train/unitree_go2_forward_only/20261028_150349_3efb1b/events.out.tfevents.1793167447.cvr-laptop.1305322.0": {
+    "sha256": "b7b4258b52f5235277153e0f932bdda48732dc095f9cf5815f40af34924062a6",
+    "bytes": 4405672
+  },
+  "runs/isaac/train/unitree_go2_forward_only/20261028_150349_3efb1b/model_200.pt": {
+    "sha256": "27d70ceba7b2d820f219ca49712652df2ed90b9b1db29715043d6d9b82eb8137",
+    "bytes": 4639595
+  },
+  "runs/isaac/train/unitree_go2_forward_only/20261028_150349_3efb1b/model_1999.pt": {
+    "sha256": "38aff324392a7378a385f43b7cd49ea305fd2a9ad617d4527866a57e03aa5843",
+    "bytes": 4639669
+  },
+  "runs/isaac/train/unitree_go2_forward_only/20261028_150349_3efb1b/model_1700.pt": {
+    "sha256": "fe428d9ab74f0a97ef8799615ee36de66d9cc3842300a99fe75c7a623195775e",
+    "bytes": 4639669
+  },
+  "runs/isaac/train/unitree_go2_forward_only/20261028_150349_3efb1b/model_1200.pt": {
+    "sha256": "130f62f144d5ba6c6b18b4151c4bbe96e273d30ef0cfd1f6cc068fb115ac5b7d",
+    "bytes": 4639669
+  },
+  "runs/isaac/train/unitree_go2_forward_only/20261028_150349_3efb1b/status.json": {
+    "sha256": "ff47e0a3a84d4b9d543809e47553bf471474bd29acecd2614c732f0e8ec331c9",
+    "bytes": 1345
+  },
+  "runs/isaac/train/unitree_go2_forward_only/20261028_150349_3efb1b/model_final.pt": {
+    "sha256": "f9a79323e9848f58bc4cc0f281b2f2d5f74e451568cf5b3590468a3220450302",
+    "bytes": 4639743
+  },
+  "runs/isaac/train/unitree_go2_forward_only/20261028_150349_3efb1b/model_300.pt": {
+    "sha256": "d756e8b7994320fba1c9d51a6c9bc70c6204c74662337d571fdd2ed67d4c5470",
+    "bytes": 4639595
+  },
+  "runs/isaac/train/unitree_go2_forward_only/20261028_150349_3efb1b/model_1800.pt": {
+    "sha256": "d94da1ab11a2bc8fc86b98ffb34c162235c9e0671ecd48347576e5d5c9783bfc",
+    "bytes": 4639669
+  },
+  "runs/isaac/train/unitree_go2_forward_only/20261028_150349_3efb1b/manifest.json": {
+    "sha256": "da73df3ec1d86a257973bc380a99bd349844e1333ca70539a5a75b2e136772b9",
+    "bytes": 1789
+  },
+  "runs/isaac/train/unitree_go2_forward_only/20261028_150349_3efb1b/model_1900.pt": {
+    "sha256": "ef02c6d4111fe1598397c22853d1b4f8932a32ccc36290560ed873e38a3b46c3",
+    "bytes": 4639669
+  },
+  "runs/isaac/train/unitree_go2_forward_only/20261028_150349_3efb1b/console.log": {
+    "sha256": "a6ed1362c458a1d7d4815b2aeee324a0d19d53368c3a3a902b8edf1c02f536de",
+    "bytes": 3477287
+  },
+  "runs/isaac/train/unitree_go2_forward_only/20261028_150349_3efb1b/model_600.pt": {
+    "sha256": "0efaf382a6a109ac45a1ff4ae09c927281279959aa4bc5bc42a25cf62a5d169a",
+    "bytes": 4639595
+  },
+  "runs/isaac/train/unitree_go2_forward_only/20261028_150349_3efb1b/model_1600.pt": {
+    "sha256": "c641b00bd7399c4c35b234036e847e3be767116a0b23d2eae6e523a20f2c2c71",
+    "bytes": 4639669
+  },
+  "runs/isaac/train/unitree_go2_forward_only/20261028_150349_3efb1b/model_1500.pt": {
+    "sha256": "1d378538f7a56ec82806d444744bfd25475123ea8d175204ece82c7815c207dc",
+    "bytes": 4639669
+  },
+  "runs/isaac/train/unitree_go2_forward_only/20261028_150349_3efb1b/model_0.pt": {
+    "sha256": "2220f9cf514a1d00cfb8dc964138ac85ca61b7351372753c5abd102534d4833e",
+    "bytes": 4638999
+  },
+  "runs/isaac/train/unitree_go2_forward_only/20261028_150349_3efb1b/progress.jsonl": {
+    "sha256": "731c82d80a1e3ef2315180c065972e06f0f87f2647f89346f136bdad8e017b07",
+    "bytes": 887851
+  },
+  "runs/isaac/train/unitree_go2_forward_only/20261028_150349_3efb1b/params/agent.yaml": {
+    "sha256": "5038e9a4cb5934b9ebcf4e737239857b9f34457cec2aad28b75c33cff155e4e0",
+    "bytes": 1044
+  },
+  "runs/isaac/train/unitree_go2_forward_only/20261028_150349_3efb1b/params/env.yaml": {
+    "sha256": "f289974b536cc2666002c357ec9deadad10354643b022c27fd1d73818b756071",
+    "bytes": 31902
+  },
+  "runs/isaac/train/unitree_go2_forward_only/20261028_150349_3efb1b/source/official_env_cfg.py": {
+    "sha256": "56859832148dacc724ddba3954a7684b99a43560e4fde561f6361b9daa051b56",
+    "bytes": 14840
+  },
+  "runs/isaac/train/unitree_go2_forward_only/20261028_150349_3efb1b/source/official_ppo_cfg.py": {
+    "sha256": "0f15211f85adc84cf6586770dad448f080d579ea55b4f509aca20a36a11310f7",
+    "bytes": 1042
+  },
+  "runs/isaac/train/unitree_go2_forward_only/20261028_150349_3efb1b/source/official_runtime.py": {
+    "sha256": "dd24586b1ed38ff6f32dbe2f40c8cc864f5aee5382f4c5aa0da41a086f7dc141",
+    "bytes": 16322
+  },
+  "runs/isaac/train/unitree_go2_forward_only/20261028_150349_3efb1b/source/official_robot_cfg.py": {
+    "sha256": "5bb4d9b8cabfde167b0f905d0cfa63a2d8a6ab0209077c4885997edbc25c6a62",
+    "bytes": 24164
+  },
+  "runs/isaac/train/unitree_go2_forward_only/20261028_150349_3efb1b/source/forward_only.py": {
+    "sha256": "7a8c6c0c42983759d9c23c29b926c45c5f9567be1a812cd61c3f4447c554726a",
+    "bytes": 791
+  },
+  "runs/isaac/train/unitree_go2_forward_only/20261028_150349_3efb1b/videos/official-train-step-0.mp4": {
+    "sha256": "f5ae203fab1cc74f576435829749e41698d8c660c8fda6f6dd203f5a0f6ec539",
+    "bytes": 1794630
+  },
+  "runs/isaac/train/unitree_go2_forward_only/20261028_150349_3efb1b/videos/official-train-step-20000.mp4": {
+    "sha256": "fd24a1123acf66058e00761ea7e683e48889fab13dfe67a9fde0266463dbd33d",
+    "bytes": 614536
+  },
+  "runs/isaac/train/unitree_go2_forward_only/20261028_150349_3efb1b/videos/official-train-step-10000.mp4": {
+    "sha256": "98caba9d47c3647d075a67bd6f9b4f6cb54a1b1c62edf8ba5acc1cc082bc55c3",
+    "bytes": 1472371
+  },
+  "runs/isaac/train/unitree_go2_forward_only/20261028_150349_3efb1b/videos/official-train-step-30000.mp4": {
+    "sha256": "152cbadcca9a9826b3fdf2d4c546ef32cdd206d5a5c8f2dbef6ffc4a059954b9",
+    "bytes": 694774
+  },
+  "runs/isaac/train/unitree_go2_forward_only/20261028_150349_3efb1b/videos/official-train-step-40000.mp4": {
+    "sha256": "cc5074409a1a411e38ebadfdfd11085412a4deee63c795b55108572cf8342a44",
+    "bytes": 731190
+  },
+  "runs/isaac/play/unitree_go2_forward_only/20261028_153742_c7f3d7/play_trace.csv": {
+    "sha256": "792aad8fd7a40502ac2abcb30b22fc82b95afd704139f309c2368817e7887148",
+    "bytes": 150113
+  },
+  "runs/isaac/play/unitree_go2_forward_only/20261028_153742_c7f3d7/status.json": {
+    "sha256": "1abb559fe1bd14302502e8dec51bdf12c24e94f3ff9398ce40fb573285cf40aa",
+    "bytes": 856
+  },
+  "runs/isaac/play/unitree_go2_forward_only/20261028_153742_c7f3d7/play_trace.npz": {
+    "sha256": "da723e517b0b4e13c8a617584ae76fc6f34e436a8f810188d8479268ce4c39dc",
+    "bytes": 151534
+  },
+  "runs/isaac/play/unitree_go2_forward_only/20261028_153742_c7f3d7/manifest.json": {
+    "sha256": "82ce071672b4b2427940d5c5a850b5dbb579733ca0d381f108ebb1bd73d0e0a6",
+    "bytes": 1814
+  },
+  "runs/isaac/play/unitree_go2_forward_only/20261028_153742_c7f3d7/console.log": {
+    "sha256": "295a0c0750391bde064935707e8fa87c0f7a9f6cd21e9c7b7921272156acca70",
+    "bytes": 17441
+  },
+  "runs/isaac/play/unitree_go2_forward_only/20261028_153742_c7f3d7/progress.jsonl": {
+    "sha256": "4eb57d86022daf963e156600c5368be2273f6cd3e017db0e1fb6331518f27c52",
+    "bytes": 1292
+  },
+  "runs/isaac/play/unitree_go2_forward_only/20261028_153742_c7f3d7/params/agent.yaml": {
+    "sha256": "5038e9a4cb5934b9ebcf4e737239857b9f34457cec2aad28b75c33cff155e4e0",
+    "bytes": 1044
+  },
+  "runs/isaac/play/unitree_go2_forward_only/20261028_153742_c7f3d7/params/env.yaml": {
+    "sha256": "494abca00fe8e4e81e96551e29c67f63fb41a6e64af5fb688d975e2d5f303fa0",
+    "bytes": 31900
+  },
+  "runs/isaac/play/unitree_go2_forward_only/20261028_153742_c7f3d7/source/official_env_cfg.py": {
+    "sha256": "56859832148dacc724ddba3954a7684b99a43560e4fde561f6361b9daa051b56",
+    "bytes": 14840
+  },
+  "runs/isaac/play/unitree_go2_forward_only/20261028_153742_c7f3d7/source/official_ppo_cfg.py": {
+    "sha256": "0f15211f85adc84cf6586770dad448f080d579ea55b4f509aca20a36a11310f7",
+    "bytes": 1042
+  },
+  "runs/isaac/play/unitree_go2_forward_only/20261028_153742_c7f3d7/source/official_runtime.py": {
+    "sha256": "dd24586b1ed38ff6f32dbe2f40c8cc864f5aee5382f4c5aa0da41a086f7dc141",
+    "bytes": 16322
+  },
+  "runs/isaac/play/unitree_go2_forward_only/20261028_153742_c7f3d7/source/official_robot_cfg.py": {
+    "sha256": "5bb4d9b8cabfde167b0f905d0cfa63a2d8a6ab0209077c4885997edbc25c6a62",
+    "bytes": 24164
+  },
+  "runs/isaac/play/unitree_go2_forward_only/20261028_153742_c7f3d7/source/forward_only.py": {
+    "sha256": "7a8c6c0c42983759d9c23c29b926c45c5f9567be1a812cd61c3f4447c554726a",
+    "bytes": 791
+  },
+  "runs/isaac/play/unitree_go2_forward_only/20261028_153742_c7f3d7/videos/official-play-step-0.mp4": {
+    "sha256": "65a386696bfe8e8d9a7c2fa033a7398c2522893e815b747b364dcb57a737b95d",
+    "bytes": 1531418
+  },
+  "runs/isaac/check/forward_only_nominal_20261028/state_trace.csv": {
+    "sha256": "9c141d31bdfbaea43a3bd965902a76c1822715f6080f7557d7729350b4615d67",
+    "bytes": 448052
+  },
+  "runs/isaac/check/forward_only_nominal_20261028/tracking.png": {
+    "sha256": "202a5dc55043d4741bfd73b9a0c3883bc849af617f516d76960a933391de5327",
+    "bytes": 492554
+  },
+  "runs/isaac/check/forward_only_nominal_20261028/agent.yaml": {
+    "sha256": "5038e9a4cb5934b9ebcf4e737239857b9f34457cec2aad28b75c33cff155e4e0",
+    "bytes": 1044
+  },
+  "runs/isaac/check/forward_only_nominal_20261028/forward_04_contacts.png": {
+    "sha256": "8aab9f3e21b7e87d0f499e1bdd4ab976418bf1963c0b64916dbc713fce5f04f0",
+    "bytes": 100256
+  },
+  "runs/isaac/check/forward_only_nominal_20261028/report.json": {
+    "sha256": "f939c4a5de96182fa5c46522437556cb5123d4ab646d871b69916da7b7a6cc19",
+    "bytes": 4232
+  },
+  "runs/isaac/check/forward_only_nominal_20261028/protocol.json": {
+    "sha256": "b9e5d3083b10b3dc97bc75c0230d1e49c0059a5db4530b4eb60676e19910a801",
+    "bytes": 1264
+  },
+  "runs/isaac/check/forward_only_nominal_20261028/trials.csv": {
+    "sha256": "7659487eb6877483afb20ba6e4b465cc299811d4afd7bd4027e38a7d870f0636",
+    "bytes": 724
+  },
+  "runs/isaac/check/forward_only_nominal_20261028/status.json": {
+    "sha256": "6e1e0fc708bebb551735afae48f89b99b93c98a3d04656c55ad97b847bcbbeb2",
+    "bytes": 1300
+  },
+  "runs/isaac/check/forward_only_nominal_20261028/evaluator_source.py": {
+    "sha256": "78325d80e2f16eab0293073968eee0f142eeaf46ca0bb1af3c71243b20aee236",
+    "bytes": 17740
+  },
+  "runs/isaac/check/forward_only_nominal_20261028/console.log": {
+    "sha256": "00354f6cd0e7e00894173e4e5b0db155472b3bd2f10a2cd7a2e0e38745611cb9",
+    "bytes": 18595
+  },
+  "runs/isaac/check/forward_only_nominal_20261028/trace.npz": {
+    "sha256": "8987984c1ea4dd6dfcacb7c118c439d2217f94cc45b4dffbeae9b49d2d34b585",
+    "bytes": 744554
+  },
+  "runs/isaac/check/forward_only_nominal_20261028/videos/forward_04.mp4": {
+    "sha256": "e090a7dba59c7ab15472dc815119dd031b677052ef2b9a906e00012a79caac70",
+    "bytes": 1127970
+  },
+  "reports/20261028_forward_only_review/evaluation_protocol.json": {
+    "sha256": "b9e5d3083b10b3dc97bc75c0230d1e49c0059a5db4530b4eb60676e19910a801",
+    "bytes": 1264
+  },
+  "reports/20261028_forward_only_review/README.md": {
+    "sha256": "6a5144eae3993b11ae248812fdbe72ebd8e8b762b00b38a9742d44db778dd6d1",
+    "bytes": 6410
+  },
+  "reports/20261028_forward_only_review/play_analysis.json": {
+    "sha256": "e1f5d171e703b17c7436605a4385b096bece2ea37f7600f3ffa49b69088921c6",
+    "bytes": 1739
+  },
+  "reports/20261028_forward_only_review/tensorboard_scalars.csv": {
+    "sha256": "11d7f7ab4fe5150c373305c4f9101c6750997c5506ebb52392a23f4e4804bae5",
+    "bytes": 4710512
+  },
+  "reports/20261028_forward_only_review/evaluation_tracking.png": {
+    "sha256": "202a5dc55043d4741bfd73b9a0c3883bc849af617f516d76960a933391de5327",
+    "bytes": 492554
+  },
+  "reports/20261028_forward_only_review/forward_04_contacts.png": {
+    "sha256": "8aab9f3e21b7e87d0f499e1bdd4ab976418bf1963c0b64916dbc713fce5f04f0",
+    "bytes": 100256
+  },
+  "reports/20261028_forward_only_review/evaluation_trials.csv": {
+    "sha256": "7659487eb6877483afb20ba6e4b465cc299811d4afd7bd4027e38a7d870f0636",
+    "bytes": 724
+  },
+  "reports/20261028_forward_only_review/videos.csv": {
+    "sha256": "109c59ba198a5c53da8959083625494243f3479dcd486370eb05c54e0844a7f9",
+    "bytes": 1295
+  },
+  "reports/20261028_forward_only_review/play_tracking.png": {
+    "sha256": "2cf81b7d9a55f6fb2d2928122eddfabb67b8d2ffe7b63afebe489ba40451d821",
+    "bytes": 227872
+  },
+  "reports/20261028_forward_only_review/summary.json": {
+    "sha256": "68d539e8364c5d710173576c7057c6136be8a8fde39fe58fbb4958a3eabc4fe2",
+    "bytes": 28648
+  },
+  "reports/20261028_forward_only_review/training_curves.png": {
+    "sha256": "e3c99f27001ae77d75d2631f4f221fd1888ffe3fae2744566ba558ba0ea905ae",
+    "bytes": 287487
+  },
+  "reports/20261028_forward_only_review/play_state_trace.csv": {
+    "sha256": "4f51f266efeac6066ba08402e521e34a3dac1e6c9918a7124640990bf36232af",
+    "bytes": 207429
+  },
+  "reports/20261028_forward_only_review/evaluation_report.json": {
+    "sha256": "00353bd6efef742d4094a4bad65d6bfc016482853f149d99acb1e16504b0d8ff",
+    "bytes": 5100
+  },
+  "reports/20261028_forward_only_review/play_frames.png": {
+    "sha256": "c06d90c0e642d112f47f5f354a9fd2e3b1f13f9ff394aae8d6ea1d45cbcb3e7f",
+    "bytes": 377486
+  },
+  "reports/20261028_forward_only_review/params/agent.yaml": {
+    "sha256": "5038e9a4cb5934b9ebcf4e737239857b9f34457cec2aad28b75c33cff155e4e0",
+    "bytes": 1044
+  },
+  "reports/20261028_forward_only_review/params/env.yaml": {
+    "sha256": "f289974b536cc2666002c357ec9deadad10354643b022c27fd1d73818b756071",
+    "bytes": 31902
+  }
+}

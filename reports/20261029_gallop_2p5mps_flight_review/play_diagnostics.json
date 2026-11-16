@@ -1,0 +1,134 @@
+{
+  "event_count": 55,
+  "status_counts": {
+    "stable": 29,
+    "aborted": 24,
+    "not_selected_for_recovery": 1,
+    "pending_at_episode_end": 1
+  },
+  "qualified_events": 4,
+  "qualified_and_stable_events": 4,
+  "qualified_and_stable_event_ids": [
+    2,
+    6,
+    31,
+    54
+  ],
+  "event_distance_quantiles_m": [
+    0.10711388289928436,
+    0.11822941154241562,
+    0.1430238038301468,
+    0.15732454657554626,
+    0.16856130957603455
+  ],
+  "event_air_seconds_distribution": {
+    "0.065": 15,
+    "0.07": 4,
+    "0.055": 10,
+    "0.05": 6,
+    "0.06": 17,
+    "0.045": 3
+  },
+  "terminal_recovering": true,
+  "terminal_recovery_seconds": 0.03999999538064003,
+  "terminal_pending_distance_score": 0.8173776865005493,
+  "phase_statistics": [
+    {
+      "stage": "support",
+      "samples": 316,
+      "airborne_sample_fraction": 0.0,
+      "roll_pitch_rms": [
+        0.03390911594033241,
+        0.022358044981956482
+      ],
+      "angular_speed_max": 2.6477601528167725,
+      "lateral_speed_abs_max": 0.4005272388458252,
+      "supporting_feet_counts": {
+        "3": 304,
+        "4": 6,
+        "2": 6
+      },
+      "contact_counts_FL_FR_RL_RR": [
+        149,
+        314,
+        316,
+        169
+      ]
+    },
+    {
+      "stage": "prepare",
+      "samples": 220,
+      "airborne_sample_fraction": 0.2545454545454545,
+      "roll_pitch_rms": [
+        0.04008042812347412,
+        0.013017994351685047
+      ],
+      "angular_speed_max": 2.0972206592559814,
+      "lateral_speed_abs_max": 0.40282249450683594,
+      "supporting_feet_counts": {
+        "3": 59,
+        "2": 96,
+        "0": 56,
+        "1": 9
+      },
+      "contact_counts_FL_FR_RL_RR": [
+        163,
+        155,
+        60,
+        0
+      ]
+    },
+    {
+      "stage": "shared_air",
+      "samples": 195,
+      "airborne_sample_fraction": 0.4666666666666667,
+      "roll_pitch_rms": [
+        0.05018949136137962,
+        0.029062515124678612
+      ],
+      "angular_speed_max": 1.6130733489990234,
+      "lateral_speed_abs_max": 0.45877671241760254,
+      "supporting_feet_counts": {
+        "0": 91,
+        "1": 104
+      },
+      "contact_counts_FL_FR_RL_RR": [
+        0,
+        0,
+        0,
+        104
+      ]
+    },
+    {
+      "stage": "planned_recovery",
+      "samples": 220,
+      "airborne_sample_fraction": 0.0,
+      "roll_pitch_rms": [
+        0.04117424786090851,
+        0.03431219980120659
+      ],
+      "angular_speed_max": 6.8982696533203125,
+      "lateral_speed_abs_max": 0.4602086544036865,
+      "supporting_feet_counts": {
+        "1": 75,
+        "2": 111,
+        "3": 34
+      },
+      "contact_counts_FL_FR_RL_RR": [
+        0,
+        34,
+        145,
+        220
+      ]
+    }
+  ],
+  "physics_samples_per_policy_step": [
+    4.0
+  ],
+  "caveats": [
+    "Event geometry and counters come from the 5ms tracker; CSV timestamps are the following 20ms snapshots.",
+    "A pending recovery at natural timeout is incomplete, not an observed unstable landing.",
+    "No failure reason codes or per-foot velocity traces were saved; aborted recovery causes cannot be fully reconstructed.",
+    "Reference phase and actual recovery flags are different; phase statistics use reference phases."
+  ]
+}

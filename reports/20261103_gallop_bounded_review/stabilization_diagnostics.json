@@ -1,0 +1,251 @@
+{
+  "training": {
+    "all_eligible": {
+      "episodes": 8417,
+      "sufficient_gallop_measurements": 8007,
+      "successful_episodes": 0,
+      "criterion_rates": {
+        "tracking": 0.8643222050611857,
+        "pattern": 0.9522395152667221,
+        "flight": 0.4095283355114649,
+        "motion": 0.952477129618629,
+        "front_load": 0.9527147439705358,
+        "front_motion": 0.952477129618629,
+        "front_cycle": 0.952477129618629,
+        "stable": 0.0,
+        "mature": 0.9528335511464893,
+        "stabilization_pose": 0.9920399192111203,
+        "stabilization_width": 0.11203516692408222,
+        "stabilization_landing": 0.575145538790543,
+        "stabilization_distance": 0.595699180230486,
+        "stabilization_measured": 0.9512890578590947,
+        "bounded_limits": 0.0
+      },
+      "bounded_limit_failures": 8417,
+      "front_width": {
+        "passed_episodes": 1176,
+        "measured_fraction_q10_q50_q90_max": [
+          0.4756264626979828,
+          0.6936026811599731,
+          0.817009973526001,
+          0.9598662257194519
+        ]
+      },
+      "hind_width": {
+        "passed_episodes": 5187,
+        "measured_fraction_q10_q50_q90_max": [
+          0.6510849237442017,
+          0.8537634611129761,
+          0.9569453477859498,
+          1.0
+        ]
+      },
+      "clip_only_stable_failures": 0
+    },
+    "first_200": {
+      "episodes": 781,
+      "sufficient_gallop_measurements": 728,
+      "successful_episodes": 0,
+      "criterion_rates": {
+        "tracking": 0.3072983354673495,
+        "pattern": 0.9321382842509603,
+        "flight": 0.5070422535211268,
+        "motion": 0.9321382842509603,
+        "front_load": 0.9334186939820742,
+        "front_motion": 0.9321382842509603,
+        "front_cycle": 0.9321382842509603,
+        "stable": 0.0,
+        "mature": 0.9334186939820742,
+        "stabilization_pose": 0.9897567221510883,
+        "stabilization_width": 0.0,
+        "stabilization_landing": 0.030729833546734954,
+        "stabilization_distance": 0.5505761843790012,
+        "stabilization_measured": 0.9321382842509603,
+        "bounded_limits": 0.0
+      },
+      "bounded_limit_failures": 781,
+      "front_width": {
+        "passed_episodes": 0,
+        "measured_fraction_q10_q50_q90_max": [
+          0.3459450364112854,
+          0.45904555916786194,
+          0.566745412349701,
+          0.6894198060035706
+        ]
+      },
+      "hind_width": {
+        "passed_episodes": 442,
+        "measured_fraction_q10_q50_q90_max": [
+          0.6581980645656585,
+          0.8263973891735077,
+          0.9232421517372131,
+          0.9886363744735718
+        ]
+      },
+      "clip_only_stable_failures": 0
+    },
+    "last_200": {
+      "episodes": 899,
+      "sufficient_gallop_measurements": 855,
+      "successful_episodes": 0,
+      "criterion_rates": {
+        "tracking": 0.9399332591768632,
+        "pattern": 0.9510567296996663,
+        "flight": 0.41490545050055616,
+        "motion": 0.9510567296996663,
+        "front_load": 0.9510567296996663,
+        "front_motion": 0.9510567296996663,
+        "front_cycle": 0.9510567296996663,
+        "stable": 0.0,
+        "mature": 0.9510567296996663,
+        "stabilization_pose": 1.0,
+        "stabilization_width": 0.09121245828698554,
+        "stabilization_landing": 0.6540600667408232,
+        "stabilization_distance": 0.6295884315906563,
+        "stabilization_measured": 0.9510567296996663,
+        "bounded_limits": 0.0
+      },
+      "bounded_limit_failures": 899,
+      "front_width": {
+        "passed_episodes": 224,
+        "measured_fraction_q10_q50_q90_max": [
+          0.6557430744171142,
+          0.76450514793396,
+          0.8384463310241699,
+          0.9598662257194519
+        ]
+      },
+      "hind_width": {
+        "passed_episodes": 355,
+        "measured_fraction_q10_q50_q90_max": [
+          0.4777094960212708,
+          0.748908281326294,
+          0.9277801394462586,
+          0.9895178079605103
+        ]
+      },
+      "clip_only_stable_failures": 0
+    },
+    "last_1000": {
+      "episodes": 4371,
+      "sufficient_gallop_measurements": 4162,
+      "successful_episodes": 0,
+      "criterion_rates": {
+        "tracking": 0.9375428963623885,
+        "pattern": 0.9524136353237246,
+        "flight": 0.34019675131548843,
+        "motion": 0.9526424159231297,
+        "front_load": 0.9528711965225349,
+        "front_motion": 0.9526424159231297,
+        "front_cycle": 0.9526424159231297,
+        "stable": 0.0,
+        "mature": 0.9528711965225349,
+        "stabilization_pose": 0.9990848776023793,
+        "stabilization_width": 0.14138641043239533,
+        "stabilization_landing": 0.6742164264470373,
+        "stabilization_distance": 0.6293754289636239,
+        "stabilization_measured": 0.9521848547243194,
+        "bounded_limits": 0.0
+      },
+      "bounded_limit_failures": 4371,
+      "front_width": {
+        "passed_episodes": 780,
+        "measured_fraction_q10_q50_q90_max": [
+          0.5508772134780884,
+          0.7211999297142029,
+          0.826797366142273,
+          0.9598662257194519
+        ]
+      },
+      "hind_width": {
+        "passed_episodes": 2784,
+        "measured_fraction_q10_q50_q90_max": [
+          0.6490996599197387,
+          0.8652402758598328,
+          0.9643605947494507,
+          1.0
+        ]
+      },
+      "clip_only_stable_failures": 0
+    }
+  },
+  "play_gates": {
+    "tracking": true,
+    "pattern": true,
+    "flight": true,
+    "motion": true,
+    "front_load": true,
+    "front_motion": true,
+    "front_cycle": true,
+    "stable": false,
+    "mature": true,
+    "stabilization_pose": true,
+    "stabilization_width": true,
+    "stabilization_landing": true,
+    "stabilization_distance": true,
+    "stabilization_measured": true,
+    "bounded_limits": false
+  },
+  "play_failed_gates": [
+    "stable",
+    "bounded_limits"
+  ],
+  "bounded_play": {
+    "bounded_limits": 0.0,
+    "bounded_near_limit_fraction": 0.2872887849807739,
+    "bounded_near_limit_cost": 0.4455612599849701,
+    "bounded_target_rate_cost": 0.7930895090103149,
+    "bounded_tracking_rmse": 0.5403043031692505,
+    "bounded_torque_saturation": 0.1244528591632843
+  },
+  "actual_target_distance_m": 0.14000000059604645,
+  "configured_final_distance_m": 0.18,
+  "final_distance_reference": {
+    "events": 1,
+    "stable_events": 0,
+    "note": "Reference comparison only: the active qualification target was 14cm, not 18cm."
+  },
+  "curriculum": {
+    "decisions": 48,
+    "speed_caps": [
+      2.2
+    ],
+    "last_decision": {
+      "step": 48000,
+      "speed_before": 2.2,
+      "speed_cap": 2.2,
+      "level": 0,
+      "episodes": 180,
+      "success_rate": 0.0,
+      "reason": "hold",
+      "streak": 0,
+      "criterion_rates": {
+        "tracking": 0.9333333333333333,
+        "pattern": 0.95,
+        "flight": 0.4444444444444444,
+        "motion": 0.95,
+        "front_load": 0.95,
+        "front_motion": 0.95,
+        "front_cycle": 0.95,
+        "stable": 0.0,
+        "mature": 0.95,
+        "stabilization_pose": 1.0,
+        "stabilization_width": 0.07777777777777778,
+        "stabilization_landing": 0.6555555555555556,
+        "stabilization_distance": 0.6833333333333333,
+        "stabilization_measured": 0.95,
+        "bounded_limits": 0.0
+      },
+      "discarded_cross_level": 0,
+      "leap_target": 0.14000000059604645,
+      "highest_confirmed_speed": null
+    },
+    "promotions": 0,
+    "reason_counts": {
+      "waiting_for_episodes": 10,
+      "hold": 38
+    }
+  },
+  "highest_confirmed_speed": null,
+  "note": "Training cohorts are stochastic, while the saved play uses deterministic actions. Raw criterion rates and sufficiently measured episodes are reported separately."
+}

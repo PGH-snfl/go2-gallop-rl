@@ -1,0 +1,10 @@
+{
+  "control_steps": 10,
+  "physics_steps": 40,
+  "policy_updates": 0,
+  "policy_unchanged": true,
+  "brake_telemetry": true,
+  "physics_single_sample_fault": true,
+  "calf_target_rate": 10.0,
+  "performance_claim": false
+}

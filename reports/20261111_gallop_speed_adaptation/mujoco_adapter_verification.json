@@ -1,0 +1,12 @@
+{
+  "status": "completed",
+  "steps": 10,
+  "policy_updates": 0,
+  "source": "/home/cvr/GH/go2_animalization/gallop/runs/isaac/check/unitree_go2_gallop/20261111_153025_d3c9dd",
+  "output": "/home/cvr/GH/go2_animalization/gallop/runs/mujoco/evaluate/20261111_153525_e1c729",
+  "fixture": "/home/cvr/GH/go2_animalization/gallop/reports/20261111_gallop_speed_adaptation/fixtures/replay/frozen_fixture.pt",
+  "policy_unchanged": true,
+  "stage_index": 1,
+  "noise_schedule_in_inference": false,
+  "note": "Adapter wiring only, not new Sim2Sim performance,2.75m/s success,or80cm validation."
+}

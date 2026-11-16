@@ -1,0 +1,169 @@
+{
+  "duration_seconds": 30.0,
+  "dt": 0.019999999999999574,
+  "environments": [
+    {
+      "env": 0,
+      "warmup_seconds": 1.0,
+      "evaluated_samples": 951,
+      "evaluated_seconds": 19.019999999999595,
+      "first_segment_end_seconds": 20.0,
+      "reset_times_seconds": [
+        20.0
+      ],
+      "mean_command": [
+        2.0,
+        0.0,
+        0.0
+      ],
+      "mean_body_velocity": [
+        1.9350484180901706,
+        -0.021241093784978085,
+        -0.04734815448460382
+      ],
+      "planar_velocity_rmse": [
+        0.11518538643958494,
+        0.08837683662573323
+      ],
+      "yaw_rmse": 0.11040231887810323,
+      "roll_pitch_rms": [
+        0.026665536425129352,
+        0.03572294715763632
+      ],
+      "height_min_max": [
+        0.3183438777923584,
+        0.35730788111686707
+      ],
+      "net_planar_displacement": 36.64016342163086,
+      "all_feet_contact_fraction": 0.0,
+      "airborne_time_fraction": 0.0,
+      "longest_steady_air_seconds": 0.0,
+      "longest_full_first_segment_air_seconds": 0.03999999999999915,
+      "foot_contact_duty": [
+        0.5488958990536278,
+        0.5289169295478444,
+        0.6035751840168244,
+        0.4879074658254469
+      ],
+      "vertical_impulse_share": [
+        0.2448211908340454,
+        0.26001548767089844,
+        0.28481319546699524,
+        0.2103501409292221
+      ],
+      "mean_action_clip": 0.1645636111497879,
+      "action_clip_quantiles": [
+        0.0833333358168602,
+        0.1666666716337204,
+        0.25,
+        0.25
+      ],
+      "complete_phase_cycles_used_for_rom": 51,
+      "mean_cycle_joint_excursion_degrees": [
+        [
+          9.169184684753418,
+          59.25214767456055,
+          45.434059143066406
+        ],
+        [
+          7.415413856506348,
+          58.34529113769531,
+          33.38218688964844
+        ],
+        [
+          9.286605834960938,
+          59.885765075683594,
+          49.764183044433594
+        ],
+        [
+          19.207775115966797,
+          58.85506820678711,
+          37.76481628417969
+        ]
+      ],
+      "reported_episode": {
+        "age": 1000.0,
+        "level": 0.0,
+        "eligible": 1.0,
+        "success": 0.0,
+        "tracking": 1.0,
+        "pattern": 1.0,
+        "flight": 0.0,
+        "motion": 1.0,
+        "front_load": 1.0,
+        "front_motion": 1.0,
+        "front_cycle": 1.0,
+        "stable": 0.0,
+        "mature": 1.0,
+        "vx_rmse": 0.11463462561368942,
+        "contact_accuracy": 0.8546267151832581,
+        "order_accuracy": 0.004587155766785145,
+        "flight_fraction": 0.018518518656492233,
+        "rom_fraction": 0.9728257060050964,
+        "fore_load_share": 0.5048364400863647,
+        "fore_min_load_share": 0.244821235537529,
+        "fore_rom_fraction": 0.9392632842063904,
+        "fore_min_rom_fraction": 0.9389560222625732,
+        "fore_participation": 1.0,
+        "cycles": 54.0,
+        "sequences": 0.0,
+        "attitude_rms": 0.035722944885492325,
+        "action_clip_fraction": 0.1645635962486267,
+        "terminated": 0.0,
+        "timed_out": 1.0,
+        "pair_valid_cycles": 51.0,
+        "pair_joint_cost": 0.055519431829452515,
+        "pair_rom_cost": 0.0,
+        "pair_load_cost": 0.0,
+        "pair_stance_cost": 0.0,
+        "env": 0,
+        "step": 1000
+      }
+    }
+  ],
+  "note": "Only first contiguous segment is analyzed; reset rows are pre-reset snapshots. Steady metrics exclude warmup. Runtime episode velocity sums precede interval events, whereas saved snapshots follow them.",
+  "additional_steady_metrics": {
+    "body_forward_distance_per_full_phase_cycle_mean": 0.7158973107150959,
+    "cycle_count": 51,
+    "cycle_distance_quantiles": [
+      0.6337553000450139,
+      0.6904803180694633,
+      0.714640746116638,
+      0.74852161884308,
+      0.7561307406425491
+    ],
+    "supporting_foot_counts": {
+      "0": 0,
+      "1": 168,
+      "2": 454,
+      "3": 329,
+      "4": 0
+    },
+    "smallest_maximum_foot_force_newton": 43.890647888183594,
+    "maximum_minimum_foot_clearance": 0.0014712773263454437,
+    "pair_means": {
+      "pair_joint_cost": 0.05551948381357206,
+      "pair_rom_cost": 0.0,
+      "pair_load_cost": 0.0,
+      "pair_stance_cost": 0.0,
+      "pair_rom_asymmetry": [
+        0.08175675538843488,
+        0.07660294650857005
+      ],
+      "pair_load_asymmetry": [
+        0.0447885092743501,
+        0.15738930838372556
+      ],
+      "pair_stance_asymmetry": [
+        0.04622402990904767,
+        0.12133115564485704
+      ]
+    },
+    "air_force_threshold_counts": {
+      "1.0": 0,
+      "3.0": 0,
+      "8.0": 0,
+      "20.0": 0
+    }
+  }
+}

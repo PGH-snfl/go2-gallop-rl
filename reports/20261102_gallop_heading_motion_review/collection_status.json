@@ -1,0 +1,9 @@
+{
+  "status": "completed",
+  "operation": "saved_run_collection",
+  "training_complete": true,
+  "new_policy_updates": 0,
+  "new_simulations": 0,
+  "verification_checks": 35,
+  "checkpoint_unchanged": true
+}

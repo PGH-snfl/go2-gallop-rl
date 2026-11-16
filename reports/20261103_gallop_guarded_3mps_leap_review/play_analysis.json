@@ -1,0 +1,191 @@
+{
+  "duration_seconds": 30.0,
+  "dt": 0.019999999999999574,
+  "environments": [
+    {
+      "env": 0,
+      "warmup_seconds": 1.0,
+      "evaluated_samples": 1013,
+      "metric_segment_start_seconds": 9.76,
+      "metric_segment_available": true,
+      "evaluated_seconds": 20.259999999999568,
+      "first_segment_end_seconds": 30.0,
+      "reset_times_seconds": [
+        30.0
+      ],
+      "mean_command": [
+        2.5,
+        0.0,
+        0.0
+      ],
+      "mean_body_velocity": [
+        2.4410490637823483,
+        -0.020928749595488915,
+        0.04238036522783821
+      ],
+      "planar_velocity_rmse": [
+        0.179226260925852,
+        0.05218919680096033
+      ],
+      "yaw_rmse": 0.168009730028441,
+      "roll_pitch_rms": [
+        0.031689163098876656,
+        0.03329527047863573
+      ],
+      "height_min_max": [
+        0.2291404902935028,
+        0.3454884886741638
+      ],
+      "net_planar_displacement": 49.44685363769531,
+      "all_feet_contact_fraction": 0.15992102665350444,
+      "airborne_time_fraction": 0.19940769990128332,
+      "longest_steady_air_seconds": 0.09999999999999787,
+      "longest_full_first_segment_air_seconds": 0.11999999999999744,
+      "foot_contact_duty": [
+        0.39091806515301086,
+        0.5004935834155972,
+        0.6781836130306022,
+        0.5686080947680158
+      ],
+      "vertical_impulse_share": [
+        0.16694509983062744,
+        0.22780059278011322,
+        0.3020680844783783,
+        0.3031862676143646
+      ],
+      "mean_action_clip": 0.05355380102992058,
+      "action_clip_quantiles": [
+        0.0,
+        0.0,
+        0.1666666716337204,
+        0.1666666716337204
+      ],
+      "complete_phase_cycles_used_for_rom": 51,
+      "mean_cycle_joint_excursion_degrees": [
+        [
+          22.1219539642334,
+          125.71813201904297,
+          51.137413024902344
+        ],
+        [
+          23.34331512451172,
+          103.36286926269531,
+          49.18009948730469
+        ],
+        [
+          7.775441646575928,
+          95.06001281738281,
+          56.220542907714844
+        ],
+        [
+          11.956876754760742,
+          95.1554946899414,
+          44.50697326660156
+        ]
+      ],
+      "reported_episode": {
+        "age": 1500.0,
+        "level": 0.0,
+        "eligible": 1.0,
+        "success": 0.0,
+        "tracking": 1.0,
+        "pattern": 1.0,
+        "flight": 1.0,
+        "motion": 1.0,
+        "front_load": 1.0,
+        "front_motion": 1.0,
+        "front_cycle": 1.0,
+        "stable": 0.0,
+        "mature": 1.0,
+        "vx_rmse": 0.1785280406475067,
+        "contact_accuracy": 0.8292201161384583,
+        "order_accuracy": 0.04560260474681854,
+        "flight_fraction": 1.0,
+        "rom_fraction": 1.0,
+        "fore_load_share": 0.39474546909332275,
+        "fore_min_load_share": 0.1669449806213379,
+        "fore_rom_fraction": 1.0,
+        "fore_min_rom_fraction": 1.0,
+        "fore_participation": 1.0,
+        "cycles": 51.0,
+        "sequences": 0.0,
+        "attitude_rms": 0.033295273780822754,
+        "action_clip_fraction": 0.05355370044708252,
+        "terminated": 0.0,
+        "timed_out": 1.0,
+        "pair_valid_cycles": 70.0,
+        "pair_joint_cost": 0.2054157555103302,
+        "pair_rom_cost": 0.0,
+        "pair_load_cost": 0.0018833545036613941,
+        "pair_stance_cost": 0.0,
+        "pair_hip_cost": 0.008405264467000961,
+        "stabilization_front_support_samples": 381.0,
+        "stabilization_front_width_fraction": 0.2178477644920349,
+        "stabilization_hind_support_samples": 523.0,
+        "stabilization_hind_width_fraction": 0.980879545211792,
+        "stabilization_pose": 1.0,
+        "stabilization_width": 0.0,
+        "stabilization_landing": 0.0,
+        "stabilization_distance": 1.0,
+        "stabilization_measured": 1.0,
+        "stabilization_landing_fraction": 0.6538461446762085,
+        "stabilization_target_speed": 2.5,
+        "stabilization_leap_target": 0.14000000059604645,
+        "stabilization_excess_cost": 0.004884117282927036,
+        "stabilization_highest_confirmed_speed": 0.0,
+        "leap_events": 52.0,
+        "leap_qualified_events": 51.0,
+        "leap_qualified_fraction": 0.9807692170143127,
+        "leap_distance_mean": 0.18566380441188812,
+        "leap_distance_max": 0.21381624042987823,
+        "leap_air_seconds_mean": 0.08173076063394547,
+        "leap_reward_points": 72.21585845947266,
+        "leap_reward_steps": 32.0,
+        "leap_physics_samples": 6000.0,
+        "guarded_limits": 0.0,
+        "guarded_feet": 1.0,
+        "guarded_intervention": 0.5000824332237244,
+        "guarded_actual": 0.0,
+        "guarded_front_high": 0.059723593294620514,
+        "guarded_hind_high": 0.0409674234688282,
+        "guarded_front_cost": 0.012505410239100456,
+        "guarded_hind_cost": 0.0021601300686597824,
+        "guarded_tracking_rmse": 0.38511890172958374,
+        "flight_takeoffs": 52.0,
+        "flight_landings": 52.0,
+        "flight_stable_landings": 34.0,
+        "flight_aborted_landings": 18.0,
+        "flight_landing_peak_force_bw": 1.4831218719482422,
+        "flight_landing_peak_down_vz": 0.7202986478805542,
+        "flight_takeoff_vz_mean": 0.36000263690948486,
+        "flight_balance_cost": 0.07018224895000458,
+        "flight_support_cost": 0.006687662098556757,
+        "posture_seconds": 30.00049591064453,
+        "posture_rate_samples": 1499.0,
+        "posture_yaw_rmse": 0.036852605640888214,
+        "posture_roll_rate_rms": 0.6511526107788086,
+        "posture_pitch_rate_rms": 0.522990882396698,
+        "posture_cross_speed_rms": 0.10427574813365936,
+        "posture_quiet_score": 0.7897757887840271,
+        "posture_front_width": 0.2515687346458435,
+        "posture_hind_width": 0.28015658259391785,
+        "posture_front_width_score": 0.5741968750953674,
+        "posture_hind_width_score": 0.7756387591362,
+        "posture_forward_score": 0.7162517309188843,
+        "posture_along_speed": 2.0671563148498535,
+        "posture_pose_quality": 0.9820135235786438,
+        "posture_yaw_rate_rms": 0.15959079563617706,
+        "startup_stage": 3.0,
+        "startup_completed": 1.0,
+        "startup_hold_seconds": 0.9399996399879456,
+        "startup_walk_seconds": 3.0199978351593018,
+        "startup_blend_seconds": 4.75999641418457,
+        "startup_gallop_seconds": 21.260295867919922,
+        "gallop_metric_seconds": 20.260000228881836,
+        "env": 0,
+        "step": 1500
+      }
+    }
+  ],
+  "note": "Only first contiguous segment is analyzed; reset rows are pre-reset snapshots. Steady metrics exclude warmup. Runtime episode velocity sums precede interval events, whereas saved snapshots follow them."
+}

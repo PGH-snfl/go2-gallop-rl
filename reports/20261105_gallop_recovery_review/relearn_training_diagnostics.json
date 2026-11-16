@@ -1,0 +1,2160 @@
+{
+  "episodes": 26008,
+  "independently_reconstructed_stage_successes": 26008,
+  "controller_decisions_replayed": 144,
+  "stages": {
+    "2": {
+      "goal": {
+        "name": "walk_precision",
+        "speed": 1.0,
+        "gait": 0.0,
+        "request_tolerance": 0.06,
+        "request_seconds": 0.04,
+        "request_fraction": 0.03
+      },
+      "all_completed": {
+        "episodes": 792,
+        "measured_episodes": 768,
+        "stage_success_rate": 0.9696969696969697,
+        "full_gallop_successes": 0,
+        "request_termination_rate": 0.0,
+        "termination_rate": 0.030303030303030304,
+        "timeout_rate": 0.9696969696969697,
+        "episode_seconds_q10_q50_q90": [
+          30.0,
+          30.0,
+          30.0
+        ],
+        "criteria": {
+          "tracking": 0.9696969696969697,
+          "front_load": 0.9696969696969697,
+          "stabilization_pose": 1.0,
+          "stabilization_measured": 0.9696969696969697,
+          "guarded_feet": 0.9696969696969697
+        },
+        "measured_quantiles": {
+          "relearn_request_fraction": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "guarded_intervention": [
+            0.13174686431884766,
+            0.14656614512205124,
+            0.15536439418792725
+          ],
+          "action_clip_fraction": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "guarded_tracking_rmse": [
+            0.23629451990127565,
+            0.2592836916446686,
+            0.28388218581676483
+          ],
+          "vx_rmse": [
+            0.049703020602464676,
+            0.062355661764740944,
+            0.07964321821928025
+          ]
+        }
+      },
+      "accepted_for_curriculum": {
+        "episodes": 512,
+        "measured_episodes": 504,
+        "stage_success_rate": 0.984375,
+        "full_gallop_successes": 0,
+        "request_termination_rate": 0.0,
+        "termination_rate": 0.015625,
+        "timeout_rate": 0.984375,
+        "episode_seconds_q10_q50_q90": [
+          30.0,
+          30.0,
+          30.0
+        ],
+        "criteria": {
+          "tracking": 0.984375,
+          "front_load": 0.984375,
+          "stabilization_pose": 1.0,
+          "stabilization_measured": 0.984375,
+          "guarded_feet": 0.984375
+        },
+        "measured_quantiles": {
+          "relearn_request_fraction": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "guarded_intervention": [
+            0.14403181076049804,
+            0.15005332976579666,
+            0.15613356679677964
+          ],
+          "action_clip_fraction": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "guarded_tracking_rmse": [
+            0.2359744757413864,
+            0.2577443867921829,
+            0.2829230338335037
+          ],
+          "vx_rmse": [
+            0.0502016618847847,
+            0.06379097700119019,
+            0.08115632981061935
+          ]
+        }
+      }
+    },
+    "3": {
+      "goal": {
+        "name": "walk_precision_004",
+        "speed": 1.0,
+        "gait": 0.0,
+        "request_tolerance": 0.04,
+        "request_seconds": 0.04,
+        "request_fraction": 0.02
+      },
+      "all_completed": {
+        "episodes": 1018,
+        "measured_episodes": 993,
+        "stage_success_rate": 0.9724950884086444,
+        "full_gallop_successes": 0,
+        "request_termination_rate": 0.0029469548133595285,
+        "termination_rate": 0.0275049115913556,
+        "timeout_rate": 0.9724950884086444,
+        "episode_seconds_q10_q50_q90": [
+          30.0,
+          30.0,
+          30.0
+        ],
+        "criteria": {
+          "tracking": 0.9754420432220039,
+          "front_load": 0.9754420432220039,
+          "stabilization_pose": 1.0,
+          "stabilization_measured": 0.9754420432220039,
+          "guarded_feet": 0.9754420432220039
+        },
+        "measured_quantiles": {
+          "relearn_request_fraction": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "guarded_intervention": [
+            0.09162236452102661,
+            0.11622217297554016,
+            0.12243503481149674
+          ],
+          "action_clip_fraction": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "guarded_tracking_rmse": [
+            0.23754896223545074,
+            0.2604347765445709,
+            0.28669983744621275
+          ],
+          "vx_rmse": [
+            0.043046668916940686,
+            0.05666510760784149,
+            0.07152744084596634
+          ]
+        }
+      },
+      "accepted_for_curriculum": {
+        "episodes": 512,
+        "measured_episodes": 504,
+        "stage_success_rate": 0.984375,
+        "full_gallop_successes": 0,
+        "request_termination_rate": 0.0,
+        "termination_rate": 0.015625,
+        "timeout_rate": 0.984375,
+        "episode_seconds_q10_q50_q90": [
+          30.0,
+          30.0,
+          30.0
+        ],
+        "criteria": {
+          "tracking": 0.984375,
+          "front_load": 0.984375,
+          "stabilization_pose": 1.0,
+          "stabilization_measured": 0.984375,
+          "guarded_feet": 0.984375
+        },
+        "measured_quantiles": {
+          "relearn_request_fraction": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "guarded_intervention": [
+            0.11502694338560104,
+            0.11929237470030785,
+            0.12378219813108444
+          ],
+          "action_clip_fraction": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "guarded_tracking_rmse": [
+            0.237340746819973,
+            0.26055043935775757,
+            0.2868295431137085
+          ],
+          "vx_rmse": [
+            0.044212672486901285,
+            0.05684247426688671,
+            0.07218142300844192
+          ]
+        }
+      }
+    },
+    "4": {
+      "goal": {
+        "name": "walk_precision_002",
+        "speed": 1.0,
+        "gait": 0.0,
+        "request_tolerance": 0.02,
+        "request_seconds": 0.04,
+        "request_fraction": 0.01
+      },
+      "all_completed": {
+        "episodes": 817,
+        "measured_episodes": 789,
+        "stage_success_rate": 0.9608323133414932,
+        "full_gallop_successes": 0,
+        "request_termination_rate": 0.004895960832313341,
+        "termination_rate": 0.03916768665850673,
+        "timeout_rate": 0.9608323133414932,
+        "episode_seconds_q10_q50_q90": [
+          30.0,
+          30.0,
+          30.0
+        ],
+        "criteria": {
+          "tracking": 0.9657282741738066,
+          "front_load": 0.966952264381885,
+          "stabilization_pose": 1.0,
+          "stabilization_measured": 0.9657282741738066,
+          "guarded_feet": 0.9657282741738066
+        },
+        "measured_quantiles": {
+          "relearn_request_fraction": [
+            0.0,
+            0.0,
+            7.703212322667241e-05
+          ],
+          "guarded_intervention": [
+            0.08706218898296356,
+            0.09189609438180923,
+            0.09684766381978989
+          ],
+          "action_clip_fraction": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "guarded_tracking_rmse": [
+            0.2358224093914032,
+            0.25904181599617004,
+            0.2839124143123627
+          ],
+          "vx_rmse": [
+            0.04112923592329026,
+            0.05404920503497124,
+            0.06700221747159958
+          ]
+        }
+      },
+      "accepted_for_curriculum": {
+        "episodes": 512,
+        "measured_episodes": 503,
+        "stage_success_rate": 0.98046875,
+        "full_gallop_successes": 0,
+        "request_termination_rate": 0.00390625,
+        "termination_rate": 0.01953125,
+        "timeout_rate": 0.98046875,
+        "episode_seconds_q10_q50_q90": [
+          30.0,
+          30.0,
+          30.0
+        ],
+        "criteria": {
+          "tracking": 0.982421875,
+          "front_load": 0.984375,
+          "stabilization_pose": 1.0,
+          "stabilization_measured": 0.982421875,
+          "guarded_feet": 0.982421875
+        },
+        "measured_quantiles": {
+          "relearn_request_fraction": [
+            0.0,
+            0.0,
+            7.617306982865557e-05
+          ],
+          "guarded_intervention": [
+            0.08918268382549285,
+            0.09320997446775436,
+            0.09726044833660126
+          ],
+          "action_clip_fraction": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "guarded_tracking_rmse": [
+            0.23597940802574158,
+            0.2577866315841675,
+            0.28494741916656496
+          ],
+          "vx_rmse": [
+            0.04071744754910469,
+            0.05391808971762657,
+            0.06705553233623504
+          ]
+        }
+      }
+    },
+    "5": {
+      "goal": {
+        "name": "walk_limits",
+        "speed": 1.0,
+        "gait": 0.0,
+        "request_tolerance": 0.02,
+        "request_seconds": 0.02,
+        "request_fraction": 0.01
+      },
+      "all_completed": {
+        "episodes": 826,
+        "measured_episodes": 782,
+        "stage_success_rate": 0.9092009685230025,
+        "full_gallop_successes": 0,
+        "request_termination_rate": 0.048426150121065374,
+        "termination_rate": 0.09079903147699758,
+        "timeout_rate": 0.9092009685230025,
+        "episode_seconds_q10_q50_q90": [
+          30.0,
+          30.0,
+          30.0
+        ],
+        "criteria": {
+          "tracking": 0.9467312348668281,
+          "front_load": 0.9564164648910412,
+          "stabilization_pose": 1.0,
+          "stabilization_measured": 0.9467312348668281,
+          "guarded_feet": 0.9467312348668281
+        },
+        "measured_quantiles": {
+          "relearn_request_fraction": [
+            0.0,
+            0.0,
+            7.630559703102336e-05
+          ],
+          "guarded_intervention": [
+            0.08250377178192139,
+            0.08630415052175522,
+            0.09058550521731376
+          ],
+          "action_clip_fraction": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "guarded_tracking_rmse": [
+            0.23577102273702621,
+            0.25928063690662384,
+            0.2836254358291626
+          ],
+          "vx_rmse": [
+            0.04282982610166073,
+            0.05501092970371246,
+            0.06998777762055397
+          ]
+        }
+      },
+      "accepted_for_curriculum": {
+        "episodes": 512,
+        "measured_episodes": 503,
+        "stage_success_rate": 0.935546875,
+        "full_gallop_successes": 0,
+        "request_termination_rate": 0.0546875,
+        "termination_rate": 0.064453125,
+        "timeout_rate": 0.935546875,
+        "episode_seconds_q10_q50_q90": [
+          30.0,
+          30.0,
+          30.0
+        ],
+        "criteria": {
+          "tracking": 0.982421875,
+          "front_load": 0.986328125,
+          "stabilization_pose": 1.0,
+          "stabilization_measured": 0.982421875,
+          "guarded_feet": 0.982421875
+        },
+        "measured_quantiles": {
+          "relearn_request_fraction": [
+            0.0,
+            0.0,
+            7.638252282049507e-05
+          ],
+          "guarded_intervention": [
+            0.08271181583404541,
+            0.08691936731338501,
+            0.09089391976594925
+          ],
+          "action_clip_fraction": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "guarded_tracking_rmse": [
+            0.23578867316246033,
+            0.25848743319511414,
+            0.28292274475097656
+          ],
+          "vx_rmse": [
+            0.04221898317337036,
+            0.05426046624779701,
+            0.06870241463184357
+          ]
+        }
+      }
+    },
+    "6": {
+      "goal": {
+        "name": "walk_speed",
+        "speed": 1.25,
+        "gait": 0.0,
+        "request_tolerance": 0.02,
+        "request_seconds": 0.02,
+        "request_fraction": 0.01
+      },
+      "all_completed": {
+        "episodes": 1024,
+        "measured_episodes": 963,
+        "stage_success_rate": 0.8857421875,
+        "full_gallop_successes": 0,
+        "request_termination_rate": 0.087890625,
+        "termination_rate": 0.1142578125,
+        "timeout_rate": 0.8857421875,
+        "episode_seconds_q10_q50_q90": [
+          24.754000000000016,
+          30.0,
+          30.0
+        ],
+        "criteria": {
+          "tracking": 0.9404296875,
+          "front_load": 0.966796875,
+          "stabilization_pose": 1.0,
+          "stabilization_measured": 0.9404296875,
+          "guarded_feet": 0.9404296875
+        },
+        "measured_quantiles": {
+          "relearn_request_fraction": [
+            0.0,
+            0.0,
+            7.638252282049507e-05
+          ],
+          "guarded_intervention": [
+            0.0905352622270584,
+            0.09555264562368393,
+            0.10160232782363891
+          ],
+          "action_clip_fraction": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "guarded_tracking_rmse": [
+            0.24299399852752684,
+            0.2640736699104309,
+            0.2877906382083893
+          ],
+          "vx_rmse": [
+            0.0487073726952076,
+            0.06680372357368469,
+            0.08742739409208299
+          ]
+        }
+      },
+      "accepted_for_curriculum": {
+        "episodes": 512,
+        "measured_episodes": 486,
+        "stage_success_rate": 0.88671875,
+        "full_gallop_successes": 0,
+        "request_termination_rate": 0.08984375,
+        "termination_rate": 0.11328125,
+        "timeout_rate": 0.88671875,
+        "episode_seconds_q10_q50_q90": [
+          26.770000000000003,
+          30.0,
+          30.0
+        ],
+        "criteria": {
+          "tracking": 0.94921875,
+          "front_load": 0.974609375,
+          "stabilization_pose": 1.0,
+          "stabilization_measured": 0.94921875,
+          "guarded_feet": 0.94921875
+        },
+        "measured_quantiles": {
+          "relearn_request_fraction": [
+            0.0,
+            0.0,
+            7.737569467280991e-05
+          ],
+          "guarded_intervention": [
+            0.08967360109090805,
+            0.09430661424994469,
+            0.10018396750092506
+          ],
+          "action_clip_fraction": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "guarded_tracking_rmse": [
+            0.2402668371796608,
+            0.26095186173915863,
+            0.2850915342569351
+          ],
+          "vx_rmse": [
+            0.04985567554831505,
+            0.07067389041185379,
+            0.09455296024680138
+          ]
+        }
+      }
+    },
+    "7": {
+      "goal": {
+        "name": "walk_speed",
+        "speed": 1.5,
+        "gait": 0.0,
+        "request_tolerance": 0.02,
+        "request_seconds": 0.02,
+        "request_fraction": 0.01
+      },
+      "all_completed": {
+        "episodes": 13615,
+        "measured_episodes": 12789,
+        "stage_success_rate": 0.8852735952993023,
+        "full_gallop_successes": 0,
+        "request_termination_rate": 0.07256702166727874,
+        "termination_rate": 0.11472640470069775,
+        "timeout_rate": 0.8853470437017995,
+        "episode_seconds_q10_q50_q90": [
+          24.76,
+          30.0,
+          30.0
+        ],
+        "criteria": {
+          "tracking": 0.9388909291222916,
+          "front_load": 0.9560778553066471,
+          "stabilization_pose": 0.9985310319500551,
+          "stabilization_measured": 0.9393316195372751,
+          "guarded_feet": 0.9393316195372751
+        },
+        "measured_quantiles": {
+          "relearn_request_fraction": [
+            0.0,
+            0.0,
+            7.631257903994992e-05
+          ],
+          "guarded_intervention": [
+            0.10551511198282242,
+            0.11698587983846664,
+            0.12959975004196167
+          ],
+          "action_clip_fraction": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "guarded_tracking_rmse": [
+            0.2628180980682373,
+            0.2845664918422699,
+            0.3069194912910461
+          ],
+          "vx_rmse": [
+            0.049195945262908936,
+            0.06423233449459076,
+            0.08233125060796738
+          ]
+        }
+      },
+      "accepted_for_curriculum": {
+        "episodes": 7680,
+        "measured_episodes": 7408,
+        "stage_success_rate": 0.9127604166666666,
+        "full_gallop_successes": 0,
+        "request_termination_rate": 0.06549479166666666,
+        "termination_rate": 0.08723958333333333,
+        "timeout_rate": 0.912890625,
+        "episode_seconds_q10_q50_q90": [
+          30.0,
+          30.0,
+          30.0
+        ],
+        "criteria": {
+          "tracking": 0.9643229166666667,
+          "front_load": 0.9768229166666667,
+          "stabilization_pose": 0.998828125,
+          "stabilization_measured": 0.9645833333333333,
+          "guarded_feet": 0.9645833333333333
+        },
+        "measured_quantiles": {
+          "relearn_request_fraction": [
+            0.0,
+            0.0,
+            7.638252282049507e-05
+          ],
+          "guarded_intervention": [
+            0.10562046468257905,
+            0.11669734120368958,
+            0.1293523982167244
+          ],
+          "action_clip_fraction": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "guarded_tracking_rmse": [
+            0.2628203690052032,
+            0.2837679386138916,
+            0.30693683922290804
+          ],
+          "vx_rmse": [
+            0.04952405877411366,
+            0.06464550644159317,
+            0.08292011842131615
+          ]
+        }
+      }
+    },
+    "8": {
+      "goal": {
+        "name": "gallop_shape",
+        "speed": 1.5,
+        "gait": 0.25,
+        "request_tolerance": 0.02,
+        "request_seconds": 0.02,
+        "request_fraction": 0.01
+      },
+      "all_completed": {
+        "episodes": 7916,
+        "measured_episodes": 7406,
+        "stage_success_rate": 0.011116725618999495,
+        "full_gallop_successes": 0,
+        "request_termination_rate": 0.059120768064679134,
+        "termination_rate": 0.10750378979282466,
+        "timeout_rate": 0.8924962102071753,
+        "episode_seconds_q10_q50_q90": [
+          26.17,
+          30.0,
+          30.0
+        ],
+        "criteria": {
+          "tracking": 0.9345629105608894,
+          "front_load": 0.9509853461344113,
+          "stabilization_pose": 0.9973471450227388,
+          "stabilization_measured": 0.9355735219807984,
+          "guarded_feet": 0.9355735219807984
+        },
+        "measured_quantiles": {
+          "relearn_request_fraction": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "guarded_intervention": [
+            0.10445166379213333,
+            0.11485476419329643,
+            0.12634050101041794
+          ],
+          "action_clip_fraction": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "guarded_tracking_rmse": [
+            0.2616571635007858,
+            0.2834225445985794,
+            0.3055194765329361
+          ],
+          "vx_rmse": [
+            0.048716701567173004,
+            0.06391575559973717,
+            0.08066180348396301
+          ]
+        }
+      },
+      "accepted_for_curriculum": {
+        "episodes": 3840,
+        "measured_episodes": 3633,
+        "stage_success_rate": 0.0049479166666666664,
+        "full_gallop_successes": 0,
+        "request_termination_rate": 0.0546875,
+        "termination_rate": 0.09401041666666667,
+        "timeout_rate": 0.9059895833333333,
+        "episode_seconds_q10_q50_q90": [
+          30.0,
+          30.0,
+          30.0
+        ],
+        "criteria": {
+          "tracking": 0.9450520833333333,
+          "front_load": 0.9614583333333333,
+          "stabilization_pose": 0.9963541666666667,
+          "stabilization_measured": 0.94609375,
+          "guarded_feet": 0.94609375
+        },
+        "measured_quantiles": {
+          "relearn_request_fraction": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "guarded_intervention": [
+            0.10365005880594254,
+            0.11401116847991943,
+            0.12553957104682922
+          ],
+          "action_clip_fraction": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "guarded_tracking_rmse": [
+            0.2606324315071106,
+            0.28124621510505676,
+            0.30418368577957156
+          ],
+          "vx_rmse": [
+            0.04875878319144249,
+            0.06393647938966751,
+            0.08054175525903702
+          ]
+        }
+      }
+    }
+  },
+  "windows": [
+    {
+      "iteration_start": 0,
+      "iteration_end": 1000,
+      "all": {
+        "episodes": 4221,
+        "measured_episodes": 4042,
+        "stage_success_rate": 0.937455579246624,
+        "full_gallop_successes": 0,
+        "request_termination_rate": 0.030087656953328594,
+        "termination_rate": 0.06254442075337598,
+        "timeout_rate": 0.937455579246624,
+        "episode_seconds_q10_q50_q90": [
+          30.0,
+          30.0,
+          30.0
+        ],
+        "criteria": {
+          "tracking": 0.9575929874437337,
+          "front_load": 0.9661217720919213,
+          "stabilization_pose": 1.0,
+          "stabilization_measured": 0.9575929874437337,
+          "guarded_feet": 0.9575929874437337
+        },
+        "measured_quantiles": {
+          "relearn_request_fraction": [
+            0.0,
+            0.0,
+            7.617306982865557e-05
+          ],
+          "guarded_intervention": [
+            0.08591880798339843,
+            0.09534688666462898,
+            0.14606381505727767
+          ],
+          "action_clip_fraction": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "guarded_tracking_rmse": [
+            0.23713222295045852,
+            0.2601027935743332,
+            0.28507736027240754
+          ],
+          "vx_rmse": [
+            0.043725548684597014,
+            0.05825928598642349,
+            0.0766576237976551
+          ]
+        }
+      },
+      "stages": {
+        "2": {
+          "episodes": 792,
+          "measured_episodes": 768,
+          "stage_success_rate": 0.9696969696969697,
+          "full_gallop_successes": 0,
+          "request_termination_rate": 0.0,
+          "termination_rate": 0.030303030303030304,
+          "timeout_rate": 0.9696969696969697,
+          "episode_seconds_q10_q50_q90": [
+            30.0,
+            30.0,
+            30.0
+          ],
+          "criteria": {
+            "tracking": 0.9696969696969697,
+            "front_load": 0.9696969696969697,
+            "stabilization_pose": 1.0,
+            "stabilization_measured": 0.9696969696969697,
+            "guarded_feet": 0.9696969696969697
+          },
+          "measured_quantiles": {
+            "relearn_request_fraction": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "guarded_intervention": [
+              0.13174686431884766,
+              0.14656614512205124,
+              0.15536439418792725
+            ],
+            "action_clip_fraction": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "guarded_tracking_rmse": [
+              0.23629451990127565,
+              0.2592836916446686,
+              0.28388218581676483
+            ],
+            "vx_rmse": [
+              0.049703020602464676,
+              0.062355661764740944,
+              0.07964321821928025
+            ]
+          }
+        },
+        "3": {
+          "episodes": 1018,
+          "measured_episodes": 993,
+          "stage_success_rate": 0.9724950884086444,
+          "full_gallop_successes": 0,
+          "request_termination_rate": 0.0029469548133595285,
+          "termination_rate": 0.0275049115913556,
+          "timeout_rate": 0.9724950884086444,
+          "episode_seconds_q10_q50_q90": [
+            30.0,
+            30.0,
+            30.0
+          ],
+          "criteria": {
+            "tracking": 0.9754420432220039,
+            "front_load": 0.9754420432220039,
+            "stabilization_pose": 1.0,
+            "stabilization_measured": 0.9754420432220039,
+            "guarded_feet": 0.9754420432220039
+          },
+          "measured_quantiles": {
+            "relearn_request_fraction": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "guarded_intervention": [
+              0.09162236452102661,
+              0.11622217297554016,
+              0.12243503481149674
+            ],
+            "action_clip_fraction": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "guarded_tracking_rmse": [
+              0.23754896223545074,
+              0.2604347765445709,
+              0.28669983744621275
+            ],
+            "vx_rmse": [
+              0.043046668916940686,
+              0.05666510760784149,
+              0.07152744084596634
+            ]
+          }
+        },
+        "4": {
+          "episodes": 817,
+          "measured_episodes": 789,
+          "stage_success_rate": 0.9608323133414932,
+          "full_gallop_successes": 0,
+          "request_termination_rate": 0.004895960832313341,
+          "termination_rate": 0.03916768665850673,
+          "timeout_rate": 0.9608323133414932,
+          "episode_seconds_q10_q50_q90": [
+            30.0,
+            30.0,
+            30.0
+          ],
+          "criteria": {
+            "tracking": 0.9657282741738066,
+            "front_load": 0.966952264381885,
+            "stabilization_pose": 1.0,
+            "stabilization_measured": 0.9657282741738066,
+            "guarded_feet": 0.9657282741738066
+          },
+          "measured_quantiles": {
+            "relearn_request_fraction": [
+              0.0,
+              0.0,
+              7.703212322667241e-05
+            ],
+            "guarded_intervention": [
+              0.08706218898296356,
+              0.09189609438180923,
+              0.09684766381978989
+            ],
+            "action_clip_fraction": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "guarded_tracking_rmse": [
+              0.2358224093914032,
+              0.25904181599617004,
+              0.2839124143123627
+            ],
+            "vx_rmse": [
+              0.04112923592329026,
+              0.05404920503497124,
+              0.06700221747159958
+            ]
+          }
+        },
+        "5": {
+          "episodes": 826,
+          "measured_episodes": 782,
+          "stage_success_rate": 0.9092009685230025,
+          "full_gallop_successes": 0,
+          "request_termination_rate": 0.048426150121065374,
+          "termination_rate": 0.09079903147699758,
+          "timeout_rate": 0.9092009685230025,
+          "episode_seconds_q10_q50_q90": [
+            30.0,
+            30.0,
+            30.0
+          ],
+          "criteria": {
+            "tracking": 0.9467312348668281,
+            "front_load": 0.9564164648910412,
+            "stabilization_pose": 1.0,
+            "stabilization_measured": 0.9467312348668281,
+            "guarded_feet": 0.9467312348668281
+          },
+          "measured_quantiles": {
+            "relearn_request_fraction": [
+              0.0,
+              0.0,
+              7.630559703102336e-05
+            ],
+            "guarded_intervention": [
+              0.08250377178192139,
+              0.08630415052175522,
+              0.09058550521731376
+            ],
+            "action_clip_fraction": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "guarded_tracking_rmse": [
+              0.23577102273702621,
+              0.25928063690662384,
+              0.2836254358291626
+            ],
+            "vx_rmse": [
+              0.04282982610166073,
+              0.05501092970371246,
+              0.06998777762055397
+            ]
+          }
+        },
+        "6": {
+          "episodes": 768,
+          "measured_episodes": 710,
+          "stage_success_rate": 0.86328125,
+          "full_gallop_successes": 0,
+          "request_termination_rate": 0.10416666666666667,
+          "termination_rate": 0.13671875,
+          "timeout_rate": 0.86328125,
+          "episode_seconds_q10_q50_q90": [
+            17.218000000000004,
+            30.0,
+            30.0
+          ],
+          "criteria": {
+            "tracking": 0.9244791666666666,
+            "front_load": 0.9596354166666666,
+            "stabilization_pose": 1.0,
+            "stabilization_measured": 0.9244791666666666,
+            "guarded_feet": 0.9244791666666666
+          },
+          "measured_quantiles": {
+            "relearn_request_fraction": [
+              0.0,
+              0.0,
+              7.716049731243402e-05
+            ],
+            "guarded_intervention": [
+              0.0900009848177433,
+              0.09438112750649452,
+              0.10018773451447487
+            ],
+            "action_clip_fraction": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "guarded_tracking_rmse": [
+              0.241508287191391,
+              0.26219379901885986,
+              0.2864796817302704
+            ],
+            "vx_rmse": [
+              0.048610586673021317,
+              0.0681782141327858,
+              0.0913404054939747
+            ]
+          }
+        }
+      }
+    },
+    {
+      "iteration_start": 1000,
+      "iteration_end": 2000,
+      "all": {
+        "episodes": 4351,
+        "measured_episodes": 4075,
+        "stage_success_rate": 0.59733394621926,
+        "full_gallop_successes": 0,
+        "request_termination_rate": 0.08641691565157435,
+        "termination_rate": 0.12571822569524246,
+        "timeout_rate": 0.8742817743047575,
+        "episode_seconds_q10_q50_q90": [
+          22.46,
+          30.0,
+          30.0
+        ],
+        "criteria": {
+          "tracking": 0.9363364743737072,
+          "front_load": 0.957251206619168,
+          "stabilization_pose": 0.9983911744426569,
+          "stabilization_measured": 0.9365663065961848,
+          "guarded_feet": 0.9365663065961848
+        },
+        "measured_quantiles": {
+          "relearn_request_fraction": [
+            0.0,
+            0.0,
+            7.670595514355227e-05
+          ],
+          "guarded_intervention": [
+            0.1100457787513733,
+            0.12254025787115097,
+            0.13346449732780458
+          ],
+          "action_clip_fraction": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "guarded_tracking_rmse": [
+            0.2613902747631073,
+            0.2832948863506317,
+            0.30594025254249574
+          ],
+          "vx_rmse": [
+            0.05063528493046761,
+            0.06634868681430817,
+            0.0875898852944374
+          ]
+        }
+      },
+      "stages": {
+        "6": {
+          "episodes": 256,
+          "measured_episodes": 253,
+          "stage_success_rate": 0.953125,
+          "full_gallop_successes": 0,
+          "request_termination_rate": 0.0390625,
+          "termination_rate": 0.046875,
+          "timeout_rate": 0.953125,
+          "episode_seconds_q10_q50_q90": [
+            30.0,
+            30.0,
+            30.0
+          ],
+          "criteria": {
+            "tracking": 0.98828125,
+            "front_load": 0.98828125,
+            "stabilization_pose": 1.0,
+            "stabilization_measured": 0.98828125,
+            "guarded_feet": 0.98828125
+          },
+          "measured_quantiles": {
+            "relearn_request_fraction": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "guarded_intervention": [
+              0.09364960342645645,
+              0.09841571003198624,
+              0.1036466270685196
+            ],
+            "action_clip_fraction": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "guarded_tracking_rmse": [
+              0.24699924886226654,
+              0.2687617242336273,
+              0.29082733392715454
+            ],
+            "vx_rmse": [
+              0.04896562770009041,
+              0.06325596570968628,
+              0.07924832850694656
+            ]
+          }
+        },
+        "7": {
+          "episodes": 2722,
+          "measured_episodes": 2542,
+          "stage_success_rate": 0.8585598824393829,
+          "full_gallop_successes": 0,
+          "request_termination_rate": 0.1032329169728141,
+          "termination_rate": 0.1414401175606172,
+          "timeout_rate": 0.8585598824393829,
+          "episode_seconds_q10_q50_q90": [
+            19.112000000000005,
+            30.0,
+            30.0
+          ],
+          "criteria": {
+            "tracking": 0.9338721528288023,
+            "front_load": 0.9570168993387216,
+            "stabilization_pose": 0.9977957384276267,
+            "stabilization_measured": 0.9338721528288023,
+            "guarded_feet": 0.9338721528288023
+          },
+          "measured_quantiles": {
+            "relearn_request_fraction": [
+              0.0,
+              0.0,
+              7.73682513681706e-05
+            ],
+            "guarded_intervention": [
+              0.11347226202487945,
+              0.12406638637185097,
+              0.13519516736268997
+            ],
+            "action_clip_fraction": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "guarded_tracking_rmse": [
+              0.2623508423566818,
+              0.28386107087135315,
+              0.3060700535774231
+            ],
+            "vx_rmse": [
+              0.051040686294436456,
+              0.06717069819569588,
+              0.09205578342080116
+            ]
+          }
+        },
+        "8": {
+          "episodes": 1373,
+          "measured_episodes": 1280,
+          "stage_success_rate": 0.013109978150036417,
+          "full_gallop_successes": 0,
+          "request_termination_rate": 0.061908230152949745,
+          "termination_rate": 0.10924981791697014,
+          "timeout_rate": 0.8907501820830298,
+          "episode_seconds_q10_q50_q90": [
+            26.58400000000001,
+            30.0,
+            30.0
+          ],
+          "criteria": {
+            "tracking": 0.9315367807720321,
+            "front_load": 0.9519300801165331,
+            "stabilization_pose": 0.9992716678805535,
+            "stabilization_measured": 0.9322651128914785,
+            "guarded_feet": 0.9322651128914785
+          },
+          "measured_quantiles": {
+            "relearn_request_fraction": [
+              0.0,
+              0.0,
+              7.617306982865557e-05
+            ],
+            "guarded_intervention": [
+              0.11343654245138168,
+              0.12167755886912346,
+              0.1306150496006012
+            ],
+            "action_clip_fraction": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "guarded_tracking_rmse": [
+              0.26316146552562714,
+              0.28506535291671753,
+              0.30676293671131133
+            ],
+            "vx_rmse": [
+              0.05013135224580765,
+              0.06551942601799965,
+              0.08324657157063485
+            ]
+          }
+        }
+      }
+    },
+    {
+      "iteration_start": 2000,
+      "iteration_end": 3000,
+      "all": {
+        "episodes": 4340,
+        "measured_episodes": 4087,
+        "stage_success_rate": 0.5711981566820277,
+        "full_gallop_successes": 0,
+        "request_termination_rate": 0.05898617511520737,
+        "termination_rate": 0.10437788018433179,
+        "timeout_rate": 0.8956221198156682,
+        "episode_seconds_q10_q50_q90": [
+          27.914000000000005,
+          30.0,
+          30.0
+        ],
+        "criteria": {
+          "tracking": 0.93963133640553,
+          "front_load": 0.956221198156682,
+          "stabilization_pose": 0.997926267281106,
+          "stabilization_measured": 0.941705069124424,
+          "guarded_feet": 0.941705069124424
+        },
+        "measured_quantiles": {
+          "relearn_request_fraction": [
+            0.0,
+            0.0,
+            7.610350439790636e-05
+          ],
+          "guarded_intervention": [
+            0.10806161314249038,
+            0.11701654642820358,
+            0.1268460988998413
+          ],
+          "action_clip_fraction": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "guarded_tracking_rmse": [
+            0.26530478000640867,
+            0.2869935631752014,
+            0.3080195069313049
+          ],
+          "vx_rmse": [
+            0.05034277141094208,
+            0.06479182839393616,
+            0.08235792666673661
+          ]
+        }
+      },
+      "stages": {
+        "7": {
+          "episodes": 2705,
+          "measured_episodes": 2549,
+          "stage_success_rate": 0.8950092421441774,
+          "full_gallop_successes": 0,
+          "request_termination_rate": 0.06062846580406654,
+          "termination_rate": 0.10499075785582256,
+          "timeout_rate": 0.8950092421441774,
+          "episode_seconds_q10_q50_q90": [
+            27.64000000000001,
+            30.0,
+            30.0
+          ],
+          "criteria": {
+            "tracking": 0.9412199630314233,
+            "front_load": 0.9571164510166359,
+            "stabilization_pose": 0.9988909426987062,
+            "stabilization_measured": 0.9423290203327171,
+            "guarded_feet": 0.9423290203327171
+          },
+          "measured_quantiles": {
+            "relearn_request_fraction": [
+              0.0,
+              0.0,
+              7.624275895068422e-05
+            ],
+            "guarded_intervention": [
+              0.10936943143606186,
+              0.11816390603780746,
+              0.12818324267864228
+            ],
+            "action_clip_fraction": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "guarded_tracking_rmse": [
+              0.2660470426082611,
+              0.2877805531024933,
+              0.30894739627838136
+            ],
+            "vx_rmse": [
+              0.05070405974984169,
+              0.06485387682914734,
+              0.08204058408737183
+            ]
+          }
+        },
+        "8": {
+          "episodes": 1635,
+          "measured_episodes": 1538,
+          "stage_success_rate": 0.03547400611620795,
+          "full_gallop_successes": 0,
+          "request_termination_rate": 0.056269113149847096,
+          "termination_rate": 0.10336391437308869,
+          "timeout_rate": 0.8966360856269113,
+          "episode_seconds_q10_q50_q90": [
+            28.628,
+            30.0,
+            30.0
+          ],
+          "criteria": {
+            "tracking": 0.9370030581039756,
+            "front_load": 0.9547400611620795,
+            "stabilization_pose": 0.9963302752293578,
+            "stabilization_measured": 0.9406727828746178,
+            "guarded_feet": 0.9406727828746178
+          },
+          "measured_quantiles": {
+            "relearn_request_fraction": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "guarded_intervention": [
+              0.10655335709452629,
+              0.1150122620165348,
+              0.12434119284152985
+            ],
+            "action_clip_fraction": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "guarded_tracking_rmse": [
+              0.2641245275735855,
+              0.2859959006309509,
+              0.30682767629623414
+            ],
+            "vx_rmse": [
+              0.049543312191963194,
+              0.06461641192436218,
+              0.08253554999828339
+            ]
+          }
+        }
+      }
+    },
+    {
+      "iteration_start": 3000,
+      "iteration_end": 4000,
+      "all": {
+        "episodes": 4398,
+        "measured_episodes": 4097,
+        "stage_success_rate": 0.553206002728513,
+        "full_gallop_successes": 0,
+        "request_termination_rate": 0.06912232833105958,
+        "termination_rate": 0.12005457025920874,
+        "timeout_rate": 0.8801728058208277,
+        "episode_seconds_q10_q50_q90": [
+          22.228,
+          30.0,
+          30.0
+        ],
+        "criteria": {
+          "tracking": 0.9311050477489768,
+          "front_load": 0.9483856298317417,
+          "stabilization_pose": 0.9977262391996362,
+          "stabilization_measured": 0.9315597999090496,
+          "guarded_feet": 0.9315597999090496
+        },
+        "measured_quantiles": {
+          "relearn_request_fraction": [
+            0.0,
+            0.0,
+            7.60340626584366e-05
+          ],
+          "guarded_intervention": [
+            0.10647142082452773,
+            0.11669754236936569,
+            0.12873254716396332
+          ],
+          "action_clip_fraction": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "guarded_tracking_rmse": [
+            0.2658896744251251,
+            0.2867095470428467,
+            0.3076495826244354
+          ],
+          "vx_rmse": [
+            0.04724221751093864,
+            0.06206377223134041,
+            0.07880450189113618
+          ]
+        }
+      },
+      "stages": {
+        "7": {
+          "episodes": 2735,
+          "measured_episodes": 2560,
+          "stage_success_rate": 0.8851919561243144,
+          "full_gallop_successes": 0,
+          "request_termination_rate": 0.0712979890310786,
+          "termination_rate": 0.11480804387568556,
+          "timeout_rate": 0.8855575868372944,
+          "episode_seconds_q10_q50_q90": [
+            25.432000000000006,
+            30.0,
+            30.0
+          ],
+          "criteria": {
+            "tracking": 0.9356489945155393,
+            "front_load": 0.9546617915904936,
+            "stabilization_pose": 0.9985374771480804,
+            "stabilization_measured": 0.9360146252285192,
+            "guarded_feet": 0.9360146252285192
+          },
+          "measured_quantiles": {
+            "relearn_request_fraction": [
+              0.0,
+              0.0,
+              7.617306982865557e-05
+            ],
+            "guarded_intervention": [
+              0.10747925862669945,
+              0.1181127205491066,
+              0.1301591232419014
+            ],
+            "action_clip_fraction": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "guarded_tracking_rmse": [
+              0.2670769453048706,
+              0.28781045973300934,
+              0.308507627248764
+            ],
+            "vx_rmse": [
+              0.04733105339109898,
+              0.06201581284403801,
+              0.07897478193044662
+            ]
+          }
+        },
+        "8": {
+          "episodes": 1663,
+          "measured_episodes": 1537,
+          "stage_success_rate": 0.0072158749248346366,
+          "full_gallop_successes": 0,
+          "request_termination_rate": 0.06554419723391461,
+          "termination_rate": 0.12868310282621767,
+          "timeout_rate": 0.8713168971737824,
+          "episode_seconds_q10_q50_q90": [
+            18.772000000000002,
+            30.0,
+            30.0
+          ],
+          "criteria": {
+            "tracking": 0.9236319903788335,
+            "front_load": 0.9380637402285027,
+            "stabilization_pose": 0.9963920625375827,
+            "stabilization_measured": 0.9242333132892363,
+            "guarded_feet": 0.9242333132892363
+          },
+          "measured_quantiles": {
+            "relearn_request_fraction": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "guarded_intervention": [
+              0.10508522093296051,
+              0.11461203545331955,
+              0.12539763748645782
+            ],
+            "action_clip_fraction": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "guarded_tracking_rmse": [
+              0.2640830397605896,
+              0.28523892164230347,
+              0.305826860666275
+            ],
+            "vx_rmse": [
+              0.04703092277050018,
+              0.062277551740407944,
+              0.0781404510140419
+            ]
+          }
+        }
+      }
+    },
+    {
+      "iteration_start": 4000,
+      "iteration_end": 5000,
+      "all": {
+        "episodes": 4356,
+        "measured_episodes": 4098,
+        "stage_success_rate": 0.5606060606060606,
+        "full_gallop_successes": 0,
+        "request_termination_rate": 0.05922865013774105,
+        "termination_rate": 0.10537190082644628,
+        "timeout_rate": 0.8946280991735537,
+        "episode_seconds_q10_q50_q90": [
+          28.03,
+          30.0,
+          30.0
+        ],
+        "criteria": {
+          "tracking": 0.9403122130394858,
+          "front_load": 0.9533976124885216,
+          "stabilization_pose": 0.9979338842975206,
+          "stabilization_measured": 0.940771349862259,
+          "guarded_feet": 0.940771349862259
+        },
+        "measured_quantiles": {
+          "relearn_request_fraction": [
+            0.0,
+            0.0,
+            7.56887675379403e-05
+          ],
+          "guarded_intervention": [
+            0.10571016222238541,
+            0.11518577486276627,
+            0.12618667632341385
+          ],
+          "action_clip_fraction": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "guarded_tracking_rmse": [
+            0.26297309398651125,
+            0.28463977575302124,
+            0.30634373128414155
+          ],
+          "vx_rmse": [
+            0.04838576391339302,
+            0.06267302855849266,
+            0.07906912863254548
+          ]
+        }
+      },
+      "stages": {
+        "7": {
+          "episodes": 2727,
+          "measured_episodes": 2569,
+          "stage_success_rate": 0.8954895489548955,
+          "full_gallop_successes": 0,
+          "request_termination_rate": 0.05903923725705904,
+          "termination_rate": 0.10451045104510451,
+          "timeout_rate": 0.8954895489548955,
+          "episode_seconds_q10_q50_q90": [
+            28.608000000000004,
+            30.0,
+            30.0
+          ],
+          "criteria": {
+            "tracking": 0.9413274660799413,
+            "front_load": 0.9545287862119546,
+            "stabilization_pose": 0.9981664833149981,
+            "stabilization_measured": 0.942060872753942,
+            "guarded_feet": 0.942060872753942
+          },
+          "measured_quantiles": {
+            "relearn_request_fraction": [
+              0.0,
+              0.0,
+              7.596475188620389e-05
+            ],
+            "guarded_intervention": [
+              0.1061144307255745,
+              0.11557185649871826,
+              0.12631383538246155
+            ],
+            "action_clip_fraction": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "guarded_tracking_rmse": [
+              0.26322161555290224,
+              0.2849043905735016,
+              0.30670130848884586
+            ],
+            "vx_rmse": [
+              0.04807757958769798,
+              0.06246611848473549,
+              0.07914427667856216
+            ]
+          }
+        },
+        "8": {
+          "episodes": 1629,
+          "measured_episodes": 1529,
+          "stage_success_rate": 0.0,
+          "full_gallop_successes": 0,
+          "request_termination_rate": 0.05954573357888275,
+          "termination_rate": 0.10681399631675875,
+          "timeout_rate": 0.8931860036832413,
+          "episode_seconds_q10_q50_q90": [
+            27.116000000000003,
+            30.0,
+            30.0
+          ],
+          "criteria": {
+            "tracking": 0.9386126457949663,
+            "front_load": 0.9515039901780233,
+            "stabilization_pose": 0.9975445058317987,
+            "stabilization_measured": 0.9386126457949663,
+            "guarded_feet": 0.9386126457949663
+          },
+          "measured_quantiles": {
+            "relearn_request_fraction": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "guarded_intervention": [
+              0.10527127981185913,
+              0.11456418037414551,
+              0.12592228651046752
+            ],
+            "action_clip_fraction": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "guarded_tracking_rmse": [
+              0.2625934362411499,
+              0.2839886248111725,
+              0.3061072528362274
+            ],
+            "vx_rmse": [
+              0.048780825734138486,
+              0.06297668069601059,
+              0.07889365702867508
+            ]
+          }
+        }
+      }
+    },
+    {
+      "iteration_start": 5000,
+      "iteration_end": 6000,
+      "all": {
+        "episodes": 4342,
+        "measured_episodes": 4091,
+        "stage_success_rate": 0.5601105481345002,
+        "full_gallop_successes": 0,
+        "request_termination_rate": 0.06264394288346384,
+        "termination_rate": 0.10087517273146016,
+        "timeout_rate": 0.8991248272685398,
+        "episode_seconds_q10_q50_q90": [
+          29.422,
+          30.0,
+          30.0
+        ],
+        "criteria": {
+          "tracking": 0.9421925380009213,
+          "front_load": 0.9578535237217872,
+          "stabilization_pose": 0.9986181483187471,
+          "stabilization_measured": 0.9421925380009213,
+          "guarded_feet": 0.9421925380009213
+        },
+        "measured_quantiles": {
+          "relearn_request_fraction": [
+            0.0,
+            0.0,
+            7.624275895068422e-05
+          ],
+          "guarded_intervention": [
+            0.10000009834766388,
+            0.10847055166959763,
+            0.11933288723230362
+          ],
+          "action_clip_fraction": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "guarded_tracking_rmse": [
+            0.255354106426239,
+            0.2777080833911896,
+            0.30182263255119324
+          ],
+          "vx_rmse": [
+            0.04966713860630989,
+            0.0644378811120987,
+            0.08101200312376022
+          ]
+        }
+      },
+      "stages": {
+        "7": {
+          "episodes": 2726,
+          "measured_episodes": 2569,
+          "stage_success_rate": 0.8921496698459281,
+          "full_gallop_successes": 0,
+          "request_termination_rate": 0.0685986793837124,
+          "termination_rate": 0.1078503301540719,
+          "timeout_rate": 0.8921496698459281,
+          "episode_seconds_q10_q50_q90": [
+            27.11,
+            30.0,
+            30.0
+          ],
+          "criteria": {
+            "tracking": 0.9424064563462949,
+            "front_load": 0.9570799706529713,
+            "stabilization_pose": 0.9992663242846662,
+            "stabilization_measured": 0.9424064563462949,
+            "guarded_feet": 0.9424064563462949
+          },
+          "measured_quantiles": {
+            "relearn_request_fraction": [
+              0.0,
+              0.0,
+              7.638252282049507e-05
+            ],
+            "guarded_intervention": [
+              0.10017041862010956,
+              0.10852378606796265,
+              0.11925697922706606
+            ],
+            "action_clip_fraction": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "guarded_tracking_rmse": [
+              0.2555011689662933,
+              0.27844199538230896,
+              0.30234001874923705
+            ],
+            "vx_rmse": [
+              0.05007718205451965,
+              0.06453511118888855,
+              0.08143811821937563
+            ]
+          }
+        },
+        "8": {
+          "episodes": 1616,
+          "measured_episodes": 1522,
+          "stage_success_rate": 0.0,
+          "full_gallop_successes": 0,
+          "request_termination_rate": 0.0525990099009901,
+          "termination_rate": 0.0891089108910891,
+          "timeout_rate": 0.9108910891089109,
+          "episode_seconds_q10_q50_q90": [
+            30.0,
+            30.0,
+            30.0
+          ],
+          "criteria": {
+            "tracking": 0.9418316831683168,
+            "front_load": 0.9591584158415841,
+            "stabilization_pose": 0.9975247524752475,
+            "stabilization_measured": 0.9418316831683168,
+            "guarded_feet": 0.9418316831683168
+          },
+          "measured_quantiles": {
+            "relearn_request_fraction": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "guarded_intervention": [
+              0.09966854974627495,
+              0.10833356156945229,
+              0.11942373365163804
+            ],
+            "action_clip_fraction": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "guarded_tracking_rmse": [
+              0.2549797981977463,
+              0.2767942249774933,
+              0.300605046749115
+            ],
+            "vx_rmse": [
+              0.04912581518292427,
+              0.0642206221818924,
+              0.07951655164361
+            ]
+          }
+        }
+      }
+    }
+  ],
+  "transitions": {
+    "2->3": 1,
+    "3->4": 1,
+    "4->5": 1,
+    "5->6": 1,
+    "6->7": 1,
+    "7->8": 15,
+    "8->7": 15
+  },
+  "max_reached_level": 8,
+  "visited_gait_strengths": [
+    0.0,
+    0.25
+  ],
+  "reason_counts": {
+    "waiting_for_cohort": 89,
+    "confirming_success": 20,
+    "promote_stage": 18,
+    "promote": 2,
+    "regress": 15
+  },
+  "final_level": 7,
+  "discarded_old_generation_episodes": 8704,
+  "visits": [
+    {
+      "level": 2,
+      "entry_iteration": 0.0,
+      "exit_iteration": 166.66666666666666,
+      "control_seconds": 80.0,
+      "ppo_iterations": 166.66666666666666,
+      "exit_reason": "promote_stage"
+    },
+    {
+      "level": 3,
+      "entry_iteration": 166.66666666666666,
+      "exit_iteration": 375.0,
+      "control_seconds": 100.0,
+      "ppo_iterations": 208.33333333333334,
+      "exit_reason": "promote_stage"
+    },
+    {
+      "level": 4,
+      "entry_iteration": 375.0,
+      "exit_iteration": 583.3333333333334,
+      "control_seconds": 100.0,
+      "ppo_iterations": 208.33333333333334,
+      "exit_reason": "promote_stage"
+    },
+    {
+      "level": 5,
+      "entry_iteration": 583.3333333333334,
+      "exit_iteration": 791.6666666666666,
+      "control_seconds": 100.0,
+      "ppo_iterations": 208.33333333333334,
+      "exit_reason": "promote"
+    },
+    {
+      "level": 6,
+      "entry_iteration": 791.6666666666666,
+      "exit_iteration": 1000.0,
+      "control_seconds": 100.0,
+      "ppo_iterations": 208.33333333333334,
+      "exit_reason": "promote"
+    },
+    {
+      "level": 7,
+      "entry_iteration": 1000.0,
+      "exit_iteration": 1208.3333333333333,
+      "control_seconds": 100.0,
+      "ppo_iterations": 208.33333333333334,
+      "exit_reason": "promote_stage"
+    },
+    {
+      "level": 8,
+      "entry_iteration": 1208.3333333333333,
+      "exit_iteration": 1333.3333333333333,
+      "control_seconds": 60.0,
+      "ppo_iterations": 125.0,
+      "exit_reason": "regress"
+    },
+    {
+      "level": 7,
+      "entry_iteration": 1333.3333333333333,
+      "exit_iteration": 1541.6666666666667,
+      "control_seconds": 100.0,
+      "ppo_iterations": 208.33333333333334,
+      "exit_reason": "promote_stage"
+    },
+    {
+      "level": 8,
+      "entry_iteration": 1541.6666666666667,
+      "exit_iteration": 1666.6666666666667,
+      "control_seconds": 60.0,
+      "ppo_iterations": 125.0,
+      "exit_reason": "regress"
+    },
+    {
+      "level": 7,
+      "entry_iteration": 1666.6666666666667,
+      "exit_iteration": 1875.0,
+      "control_seconds": 100.0,
+      "ppo_iterations": 208.33333333333334,
+      "exit_reason": "promote_stage"
+    },
+    {
+      "level": 8,
+      "entry_iteration": 1875.0,
+      "exit_iteration": 2000.0,
+      "control_seconds": 60.0,
+      "ppo_iterations": 125.0,
+      "exit_reason": "regress"
+    },
+    {
+      "level": 7,
+      "entry_iteration": 2000.0,
+      "exit_iteration": 2208.3333333333335,
+      "control_seconds": 100.0,
+      "ppo_iterations": 208.33333333333334,
+      "exit_reason": "promote_stage"
+    },
+    {
+      "level": 8,
+      "entry_iteration": 2208.3333333333335,
+      "exit_iteration": 2333.3333333333335,
+      "control_seconds": 60.0,
+      "ppo_iterations": 125.0,
+      "exit_reason": "regress"
+    },
+    {
+      "level": 7,
+      "entry_iteration": 2333.3333333333335,
+      "exit_iteration": 2541.6666666666665,
+      "control_seconds": 100.0,
+      "ppo_iterations": 208.33333333333334,
+      "exit_reason": "promote_stage"
+    },
+    {
+      "level": 8,
+      "entry_iteration": 2541.6666666666665,
+      "exit_iteration": 2666.6666666666665,
+      "control_seconds": 60.0,
+      "ppo_iterations": 125.0,
+      "exit_reason": "regress"
+    },
+    {
+      "level": 7,
+      "entry_iteration": 2666.6666666666665,
+      "exit_iteration": 2875.0,
+      "control_seconds": 100.0,
+      "ppo_iterations": 208.33333333333334,
+      "exit_reason": "promote_stage"
+    },
+    {
+      "level": 8,
+      "entry_iteration": 2875.0,
+      "exit_iteration": 3000.0,
+      "control_seconds": 60.0,
+      "ppo_iterations": 125.0,
+      "exit_reason": "regress"
+    },
+    {
+      "level": 7,
+      "entry_iteration": 3000.0,
+      "exit_iteration": 3208.3333333333335,
+      "control_seconds": 100.0,
+      "ppo_iterations": 208.33333333333334,
+      "exit_reason": "promote_stage"
+    },
+    {
+      "level": 8,
+      "entry_iteration": 3208.3333333333335,
+      "exit_iteration": 3333.3333333333335,
+      "control_seconds": 60.0,
+      "ppo_iterations": 125.0,
+      "exit_reason": "regress"
+    },
+    {
+      "level": 7,
+      "entry_iteration": 3333.3333333333335,
+      "exit_iteration": 3541.6666666666665,
+      "control_seconds": 100.0,
+      "ppo_iterations": 208.33333333333334,
+      "exit_reason": "promote_stage"
+    },
+    {
+      "level": 8,
+      "entry_iteration": 3541.6666666666665,
+      "exit_iteration": 3666.6666666666665,
+      "control_seconds": 60.0,
+      "ppo_iterations": 125.0,
+      "exit_reason": "regress"
+    },
+    {
+      "level": 7,
+      "entry_iteration": 3666.6666666666665,
+      "exit_iteration": 3875.0,
+      "control_seconds": 100.0,
+      "ppo_iterations": 208.33333333333334,
+      "exit_reason": "promote_stage"
+    },
+    {
+      "level": 8,
+      "entry_iteration": 3875.0,
+      "exit_iteration": 4000.0,
+      "control_seconds": 60.0,
+      "ppo_iterations": 125.0,
+      "exit_reason": "regress"
+    },
+    {
+      "level": 7,
+      "entry_iteration": 4000.0,
+      "exit_iteration": 4208.333333333333,
+      "control_seconds": 100.0,
+      "ppo_iterations": 208.33333333333334,
+      "exit_reason": "promote_stage"
+    },
+    {
+      "level": 8,
+      "entry_iteration": 4208.333333333333,
+      "exit_iteration": 4333.333333333333,
+      "control_seconds": 60.0,
+      "ppo_iterations": 125.0,
+      "exit_reason": "regress"
+    },
+    {
+      "level": 7,
+      "entry_iteration": 4333.333333333333,
+      "exit_iteration": 4541.666666666667,
+      "control_seconds": 100.0,
+      "ppo_iterations": 208.33333333333334,
+      "exit_reason": "promote_stage"
+    },
+    {
+      "level": 8,
+      "entry_iteration": 4541.666666666667,
+      "exit_iteration": 4666.666666666667,
+      "control_seconds": 60.0,
+      "ppo_iterations": 125.0,
+      "exit_reason": "regress"
+    },
+    {
+      "level": 7,
+      "entry_iteration": 4666.666666666667,
+      "exit_iteration": 4875.0,
+      "control_seconds": 100.0,
+      "ppo_iterations": 208.33333333333334,
+      "exit_reason": "promote_stage"
+    },
+    {
+      "level": 8,
+      "entry_iteration": 4875.0,
+      "exit_iteration": 5000.0,
+      "control_seconds": 60.0,
+      "ppo_iterations": 125.0,
+      "exit_reason": "regress"
+    },
+    {
+      "level": 7,
+      "entry_iteration": 5000.0,
+      "exit_iteration": 5208.333333333333,
+      "control_seconds": 100.0,
+      "ppo_iterations": 208.33333333333334,
+      "exit_reason": "promote_stage"
+    },
+    {
+      "level": 8,
+      "entry_iteration": 5208.333333333333,
+      "exit_iteration": 5333.333333333333,
+      "control_seconds": 60.0,
+      "ppo_iterations": 125.0,
+      "exit_reason": "regress"
+    },
+    {
+      "level": 7,
+      "entry_iteration": 5333.333333333333,
+      "exit_iteration": 5541.666666666667,
+      "control_seconds": 100.0,
+      "ppo_iterations": 208.33333333333334,
+      "exit_reason": "promote_stage"
+    },
+    {
+      "level": 8,
+      "entry_iteration": 5541.666666666667,
+      "exit_iteration": 5666.666666666667,
+      "control_seconds": 60.0,
+      "ppo_iterations": 125.0,
+      "exit_reason": "regress"
+    },
+    {
+      "level": 7,
+      "entry_iteration": 5666.666666666667,
+      "exit_iteration": 5875.0,
+      "control_seconds": 100.0,
+      "ppo_iterations": 208.33333333333334,
+      "exit_reason": "promote_stage"
+    },
+    {
+      "level": 8,
+      "entry_iteration": 5875.0,
+      "exit_iteration": 6000.0,
+      "control_seconds": 60.0,
+      "ppo_iterations": 125.0,
+      "exit_reason": "regress"
+    },
+    {
+      "level": 7,
+      "entry_iteration": 6000.0,
+      "exit_iteration": 6000,
+      "control_seconds": 0.0,
+      "ppo_iterations": 0.0,
+      "exit_reason": "training_end"
+    }
+  ],
+  "repeated_env_episodes": 3224,
+  "accepted_episode_count": 14080,
+  "rollout_steps": 24,
+  "note": "All completed episodes and episodes accepted by the current curriculum generation are reported separately. Late completions can be discarded after a stage change."
+}

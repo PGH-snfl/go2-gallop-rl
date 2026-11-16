@@ -1,0 +1,31 @@
+{
+  "terms": {
+    "Episode_Reward/track_lin_vel_xy": 2.5302409529685974,
+    "Episode_Reward/track_ang_vel_z": 0.6064774125814438,
+    "Episode_Reward/base_linear_velocity": -0.0074297433346509935,
+    "Episode_Reward/base_angular_velocity": -0.05620369508862495,
+    "Episode_Reward/joint_vel": -0.7896667897701264,
+    "Episode_Reward/joint_acc": -0.25686247751116753,
+    "Episode_Reward/joint_torques": -0.25184089943766597,
+    "Episode_Reward/action_rate": -0.12281616993248462,
+    "Episode_Reward/dof_pos_limits": -0.010455552064813673,
+    "Episode_Reward/energy": -0.011517134411260486,
+    "Episode_Reward/feet_slide": -0.08775604419410228,
+    "Episode_Reward/undesired_contacts": -0.004656111006624997,
+    "Episode_Reward/gallop_contact": 1.768855916261673,
+    "Episode_Reward/gallop_order": 1.6445696253697406e-05,
+    "Episode_Reward/gallop_swing": 0.6643081307411194,
+    "Episode_Reward/gallop_joint": 0.21478777408599853,
+    "Episode_Reward/gallop_motion": 0.9574129670858383,
+    "Episode_Reward/gallop_flight": 9.586308369762264e-06,
+    "Episode_Reward/gallop_fore_use": 0.9611890101432801,
+    "Episode_Reward/gallop_attitude": -0.019998363386839628,
+    "Episode_Reward/gallop_pair_joint": -0.1323464000970125,
+    "Episode_Reward/gallop_pair_rom": -4.538322582741949e-06,
+    "Episode_Reward/gallop_pair_load": -7.35325401175313e-05,
+    "Episode_Reward/gallop_pair_stance": -3.1145804240395593e-06,
+    "Episode_Reward/gallop_leap_distance": 0.00023205204435726047
+  },
+  "net_sum": 5.951899682238433,
+  "leap_fraction_of_net_contribution": 3.8987895755324405e-05
+}

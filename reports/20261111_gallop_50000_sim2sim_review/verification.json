@@ -1,0 +1,18 @@
+{
+  "original_train_play_files_verified": 48,
+  "original_hashes_unchanged": true,
+  "checkpoint_sha256": "93394343a7faf50f848e94ec4138c6a354641addb5b0d4e0b65db3f7ad4674a2",
+  "completed_validation_runs": 4,
+  "recordings_readable": 4,
+  "no_policy_updates": true,
+  "policies_unchanged": true,
+  "every_run_same_checkpoint": true,
+  "final_original_hashes_rechecked": true,
+  "validation_sources_match_snapshot": true,
+  "local_report_links_exist": true,
+  "edu_checks_passed": 2,
+  "mujoco_regression_checks_passed": 8,
+  "training_curriculum_decisions_reproduced": 48,
+  "official_checkout_still_clean": true,
+  "physical_hardware_commands": 0
+}

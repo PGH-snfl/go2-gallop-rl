@@ -1,0 +1,62 @@
+{
+  "status": "running",
+  "checkpoint": "/home/cvr/GH/go2_animalization/gallop/runs/isaac/train/unitree_go2_forward_only/20261028_150349_3efb1b/model_final.pt",
+  "policy_updates": 0,
+  "profile": "nominal",
+  "seed": 42,
+  "trials": [
+    {
+      "name": "forward_02",
+      "command": [
+        0.2,
+        0,
+        0
+      ],
+      "required": true,
+      "repeat": 0
+    },
+    {
+      "name": "forward_03",
+      "command": [
+        0.3,
+        0,
+        0
+      ],
+      "required": true,
+      "repeat": 0
+    },
+    {
+      "name": "forward_04",
+      "command": [
+        0.4,
+        0,
+        0
+      ],
+      "required": true,
+      "repeat": 0
+    }
+  ],
+  "total_steps": 1000,
+  "physics_dt": 0.005,
+  "policy_dt": 0.02,
+  "start_mode": "immediate",
+  "case_suite": "forward-only",
+  "source_repo": "/home/cvr/GH/unitree/unitree_rl_lab_official",
+  "source_official": true,
+  "training_variant": "forward_only",
+  "protocol": {
+    "initial_stand_s": 0.0,
+    "ramp_s": 0.0,
+    "hold_s": 20.0,
+    "stop_ramp_s": 0.0,
+    "final_stand_s": 0.0
+  },
+  "threshold_note": "Engineering thresholds for this flat-ground baseline test, not official certification",
+  "step": 1000,
+  "surviving": 3,
+  "failures": [
+    null,
+    null,
+    null
+  ]
+}

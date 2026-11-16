@@ -1,0 +1,15 @@
+{
+  "configs/gallop_2mps_50cm_velocity_guard.json": "fcd2b26070f7ee0ed424b641a0a3df639013e5654bc8059bb980ce3924f63e85",
+  "isaac_task/gallop_core.py": "20c729d7aa82bf2b5d751f4d9dde6ba3ea8cd8ba4e91b0a0ae1595617af392f9",
+  "isaac_task/gallop_env.py": "00b9855bd3bb8e05cbaa2f25f6f2ff604c3e25ea3aae1f2ea3ec10638246d3f3",
+  "gpd/rl_mujoco.py": "237000a79316975511fc18f54685b164cc58111a72332c745da00fbc0b24ea9e",
+  "scripts/training/gallop_baseline.py": "63b37d07dbe54bc6dd4acd97106ccb29fc675a03cacf58fd2a295f9ecf29d956",
+  "scripts/analysis/collect_guarded_diagnostics.py": "e0652f292a2a7512f452629fa9c93432d5ea326419304311ef9f697bae1e261b",
+  "scripts/validation/check_gallop_fixed_edu.py": "cbb1e9c4691b6832419e6d073cfa45aaae051720f7b47e13637347d6775696c9",
+  "tests/test_gallop_velocity_guard.py": "15f05f66be77958bf74ce023229a2adc23c7705a56244a06bf3931a5b2a8ecb7",
+  "docs/gallop_velocity_guard.md": "0051cd989929d33c1bd4d467f1a532506b7be8756f83af6362f10246f3ec8f75",
+  "configs/active_gallop_branch.json": "7e371075cdccfedcfecc777fc0aa51d81d9cdd1c2777b41a8f6932a188dafddb",
+  "AGENTS.md": "42d6b5bec6853b30541f347c83cf49f2b7ae5cdb7e2aaec406a929a2baa2c834",
+  "README.md": "68f03c478304964f3b2c397cc759b35121f7c3da31be6ee8ccb1e7154886aa11",
+  "docs/CONTINUE_HERE.md": "1ff88d0f5f1a3375a2bcbd0ab73e773690bcffdce3b2b053b6e50da0775c7e33"
+}

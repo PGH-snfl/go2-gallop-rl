@@ -1,0 +1,54 @@
+{
+  "tracking_relative_rmse": {
+    "before": 0.25,
+    "after": 0.4
+  },
+  "tracking_absolute_rmse": {
+    "before": 0.15,
+    "after": 0.3
+  },
+  "velocity_tracking_weight": {
+    "before": 3.0,
+    "after": 1.5
+  },
+  "velocity_tracking_std": {
+    "before": 0.5,
+    "after": 0.8
+  },
+  "progress_speed_scale_fraction": {
+    "before": 0.25,
+    "after": 0.4
+  },
+  "leap_reward_weight": {
+    "before": 8.0,
+    "after": 24.0
+  },
+  "leap_partial_credit": {
+    "before": 0.75,
+    "after": 0.5
+  },
+  "leap_progress_exponent": {
+    "before": 1.0,
+    "after": 2.0
+  },
+  "flight_landing_distance_scaled": {
+    "before": false,
+    "after": true
+  },
+  "flight_drive_weight": {
+    "before": 2.0,
+    "after": 4.0
+  },
+  "flight_clearance_weight": {
+    "before": 2.0,
+    "after": 3.0
+  },
+  "flight_takeoff_weight": {
+    "before": 0.5,
+    "after": 2.0
+  },
+  "forward_progress_weight": {
+    "before": 2.0,
+    "after": 1.0
+  }
+}

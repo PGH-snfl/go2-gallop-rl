@@ -1,0 +1,117 @@
+{
+  "duration_seconds": 30.0,
+  "dt": 0.019999999999999574,
+  "environments": [
+    {
+      "env": 0,
+      "warmup_seconds": 1.0,
+      "evaluated_samples": 951,
+      "evaluated_seconds": 19.019999999999595,
+      "first_segment_end_seconds": 20.0,
+      "reset_times_seconds": [
+        20.0
+      ],
+      "mean_command": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "mean_body_velocity": [
+        1.0108635715756382,
+        0.007853829146183627,
+        -0.0603458827207713
+      ],
+      "planar_velocity_rmse": [
+        0.07101367475070258,
+        0.07938460896108356
+      ],
+      "yaw_rmse": 0.08252986073358752,
+      "roll_pitch_rms": [
+        0.02830689828869132,
+        0.07344668211109447
+      ],
+      "height_min_max": [
+        0.3263980448246002,
+        0.3714762032032013
+      ],
+      "net_planar_displacement": 19.283287048339844,
+      "all_feet_contact_fraction": 0.0,
+      "airborne_time_fraction": 0.0,
+      "longest_steady_air_seconds": 0.0,
+      "longest_full_first_segment_air_seconds": 0.03999999999999915,
+      "foot_contact_duty": [
+        0.5699263932702419,
+        0.5299684542586751,
+        0.655099894847529,
+        0.5047318611987381
+      ],
+      "vertical_impulse_share": [
+        0.22761908173561096,
+        0.267060786485672,
+        0.30109405517578125,
+        0.20422601699829102
+      ],
+      "mean_action_clip": 0.1473010778427124,
+      "action_clip_quantiles": [
+        0.0833333358168602,
+        0.1666666716337204,
+        0.25,
+        0.25
+      ],
+      "complete_phase_cycles_used_for_rom": 44,
+      "mean_cycle_joint_excursion_degrees": [
+        [
+          7.093470573425293,
+          36.23948669433594,
+          33.5544548034668
+        ],
+        [
+          8.377899169921875,
+          42.06362533569336,
+          31.18413543701172
+        ],
+        [
+          9.89505672454834,
+          37.236751556396484,
+          29.070079803466797
+        ],
+        [
+          12.107043266296387,
+          43.90945816040039,
+          31.3269100189209
+        ]
+      ],
+      "reported_episode": {
+        "age": 1000.0,
+        "level": 0.0,
+        "eligible": 1.0,
+        "success": 0.0,
+        "tracking": 1.0,
+        "pattern": 1.0,
+        "flight": 0.0,
+        "motion": 1.0,
+        "front_load": 1.0,
+        "front_motion": 1.0,
+        "front_cycle": 1.0,
+        "stable": 0.0,
+        "mature": 1.0,
+        "vx_rmse": 0.07022001594305038,
+        "contact_accuracy": 0.8259726762771606,
+        "order_accuracy": 0.010362694039940834,
+        "flight_fraction": 0.021276595070958138,
+        "rom_fraction": 0.9297855496406555,
+        "fore_load_share": 0.4946797490119934,
+        "fore_min_load_share": 0.2276189774274826,
+        "fore_rom_fraction": 0.8419440984725952,
+        "fore_min_rom_fraction": 0.7766169905662537,
+        "fore_participation": 0.978723406791687,
+        "cycles": 47.0,
+        "sequences": 0.0,
+        "attitude_rms": 0.07344666868448257,
+        "env": 0,
+        "step": 1000
+      }
+    }
+  ],
+  "note": "Only first contiguous segment is analyzed; reset rows are pre-reset snapshots. Steady metrics exclude warmup. Runtime episode velocity sums precede interval events, whereas saved snapshots follow them."
+}

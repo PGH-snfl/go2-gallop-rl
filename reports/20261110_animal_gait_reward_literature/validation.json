@@ -1,0 +1,17 @@
+{
+  "papers": 50,
+  "method_checked": 48,
+  "abstract_only": 2,
+  "conditions": 15,
+  "queries": 30,
+  "search_results": 300,
+  "unique_search_urls": 205,
+  "fetched_records": 64,
+  "unique_fetched_urls": 63,
+  "csv_json_identical": true,
+  "relative_links_valid": true,
+  "source_snapshot_hashes_unchanged": true,
+  "cpu_reference_audit_reproduced": true,
+  "training_updates": 0,
+  "physics_rollouts": 0
+}

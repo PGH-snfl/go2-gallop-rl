@@ -1,0 +1,132 @@
+[
+  {
+    "path": "reports/20261028_gallop_setup/README.md",
+    "size": 2663,
+    "sha256": "32444f0f4c0e5e1a0da541396ff1006e6faa655506420984ce987be656ed7b5e"
+  },
+  {
+    "path": "reports/20261028_gallop_setup/unit_tests.log",
+    "size": 2254,
+    "sha256": "bb49a2cca3fec22eabf5055ca1824a52581360354431b2d5a27a3f12fef655d6"
+  },
+  {
+    "path": "reports/20261028_gallop_setup/summary.json",
+    "size": 2958,
+    "sha256": "8b6ad71494f60412e37e9f2d64a69ca5df1fba466bf2d645bae1c97a9a4a5014"
+  },
+  {
+    "path": "isaac_task/gallop_core.py",
+    "size": 10106,
+    "sha256": "466fc04c6f60d541da957fd83f8f82a9c01d03c2482f7033bad847464c3353b9"
+  },
+  {
+    "path": "isaac_task/gallop_env.py",
+    "size": 19179,
+    "sha256": "5d0e537815ccf5d2404d7c661160d3db845c6347c42147f80043698a82adc569"
+  },
+  {
+    "path": "scripts/training/gallop_baseline.py",
+    "size": 13929,
+    "sha256": "e1a3cb958babfd4045d7017b922e018c52029c3f76a0b53dfcfd8c7345bad244"
+  },
+  {
+    "path": "scripts/training/launch_isaac.py",
+    "size": 2712,
+    "sha256": "030ae94239d6a668849312cd0173f6d57547e8b8e5d6e84061551cb49d0a42dc"
+  },
+  {
+    "path": "configs/gallop_rl.json",
+    "size": 928,
+    "sha256": "20471669ae3480d3c82b572adb6bdc98dd6a3c52ed2087f6db98e5aab31eb9e3"
+  },
+  {
+    "path": "tests/test_gallop_core.py",
+    "size": 4956,
+    "sha256": "f584af5c44635762729ce96032e979b29a96bd1394804fcea670901aac99149f"
+  },
+  {
+    "path": "docs/gallop_rl.md",
+    "size": 8403,
+    "sha256": "ef2204de529c43afc7bca9cc379957b665163c5a6e9773e7d234c7a8d3d72eff"
+  },
+  {
+    "path": "runs/isaac/check/gallop_style_plane256_20261028/episodes.jsonl",
+    "size": 179442,
+    "sha256": "872d611dbdaf814b05c8291596173ba56777590c87cd9ddd27fe892a5fbfa1da"
+  },
+  {
+    "path": "runs/isaac/check/gallop_style_plane256_20261028/gallop_trace.npz",
+    "size": 48778097,
+    "sha256": "0adad43a87f8b20e1b34eeb07601a1b47b662cf985ee1f55d5546646a8cdb852"
+  },
+  {
+    "path": "runs/isaac/check/gallop_style_plane256_20261028/gallop_config.json",
+    "size": 1501,
+    "sha256": "eefa9bd1d7656f8be632451955c8e9723c8297a2fa860d0242dc4f68deeb9e38"
+  },
+  {
+    "path": "runs/isaac/check/gallop_style_plane256_20261028/status.json",
+    "size": 1303,
+    "sha256": "6840c100537f13bf87a63bde3b47b650770c57a0a2dc00c5fc0d7018f15ca569"
+  },
+  {
+    "path": "runs/isaac/check/gallop_style_plane256_20261028/curriculum_summary.json",
+    "size": 1375,
+    "sha256": "3c6ec6588b881d8282a13f117b9b860ff9845967845bcc50d72303dd3b78098e"
+  },
+  {
+    "path": "runs/isaac/check/gallop_style_plane256_20261028/manifest.json",
+    "size": 3462,
+    "sha256": "3cacb149ad22fe2fb1c79f02dba1a2179fbdbc24804de7541614a91dc8711b67"
+  },
+  {
+    "path": "runs/isaac/check/gallop_style_plane256_20261028/console.log",
+    "size": 17207,
+    "sha256": "1c79c4b5ff21756040350be64bf4e09c6f90509e0fa67be43ceca6c7503daa00"
+  },
+  {
+    "path": "runs/isaac/check/gallop_style_plane256_20261028/progress.jsonl",
+    "size": 1986,
+    "sha256": "7b330886629c84d030afc4cdf0e913318281585db80f4aa9751b48afe450f56e"
+  },
+  {
+    "path": "runs/isaac/check/gallop_style_plane256_20261028/params/agent.yaml",
+    "size": 1039,
+    "sha256": "371b2410abf6e1f54391b44e0389b3e270cae17cc87c36918e39858e3029afef"
+  },
+  {
+    "path": "runs/isaac/check/gallop_style_plane256_20261028/params/env.yaml",
+    "size": 28371,
+    "sha256": "cf4ffb34329c6e26b5d805999af8c4902d9f97ce3814fd7138496708c2817f5e"
+  },
+  {
+    "path": "runs/isaac/check/gallop_style_plane256_20261028/source/velocity_env_cfg.py",
+    "size": 14840,
+    "sha256": "56859832148dacc724ddba3954a7684b99a43560e4fde561f6361b9daa051b56"
+  },
+  {
+    "path": "runs/isaac/check/gallop_style_plane256_20261028/source/gallop_env.py",
+    "size": 19179,
+    "sha256": "5d0e537815ccf5d2404d7c661160d3db845c6347c42147f80043698a82adc569"
+  },
+  {
+    "path": "runs/isaac/check/gallop_style_plane256_20261028/source/parent_manifest.json",
+    "size": 2734,
+    "sha256": "f507fc3530fc3befff5a2d05d5e9e42012bd6f3a3359f394e967b9e0aa9d8d94"
+  },
+  {
+    "path": "runs/isaac/check/gallop_style_plane256_20261028/source/gallop_core.py",
+    "size": 10106,
+    "sha256": "466fc04c6f60d541da957fd83f8f82a9c01d03c2482f7033bad847464c3353b9"
+  },
+  {
+    "path": "runs/isaac/check/gallop_style_plane256_20261028/source/gallop_baseline.py",
+    "size": 13929,
+    "sha256": "e1a3cb958babfd4045d7017b922e018c52029c3f76a0b53dfcfd8c7345bad244"
+  },
+  {
+    "path": "runs/isaac/check/gallop_style_plane256_20261028/videos/gallop-check-step-0.mp4",
+    "size": 511531,
+    "sha256": "ff115a8b566d8d7a6c1b91b5d8941955dc8a52824e95807fd84f55a5b5caf61f"
+  }
+]

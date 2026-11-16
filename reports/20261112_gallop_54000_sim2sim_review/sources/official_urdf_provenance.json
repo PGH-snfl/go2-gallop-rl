@@ -1,0 +1,8 @@
+{
+  "repository": "unitreerobotics/unitree_ros",
+  "ref": "master",
+  "blob_sha": "70bce96b3e96a1c4cf5eeb1753bbd4351c9122e4",
+  "url": "https://github.com/unitreerobotics/unitree_ros/blob/master/robots/go2_description/urdf/go2_description.urdf",
+  "retrieved_on": "2026-11-11",
+  "scope": "Official generic Go2 URDF; not an EDU serial-number-specific continuous-duty or firmware certification."
+}

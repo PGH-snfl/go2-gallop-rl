@@ -1,0 +1,130 @@
+{
+  "README.md": {
+    "bytes": 11298,
+    "sha256": "48786929ceb195b3227212da8cba6056791ba137cafb74b610b2c35f37701454"
+  },
+  "collection_source/collect_flight_diagnostics.py": {
+    "bytes": 12173,
+    "sha256": "85b374d2c3f4ab27af862c909300a48fa6123b7080eaed7da025d844420192fa"
+  },
+  "collection_source/collect_gallop.py": {
+    "bytes": 19197,
+    "sha256": "066d09bb8ad43b76776e32708a3c1c71eeacbc15047a15ed75ebddb36c17f180"
+  },
+  "criterion_pass_rates.png": {
+    "bytes": 62526,
+    "sha256": "43471321e0eef95a1a9a22566b638047804089b6486c6dcffdf7bd7ecc66e4c5"
+  },
+  "curriculum_decisions.csv": {
+    "bytes": 12535,
+    "sha256": "029d15504b022cdc9dc25f7bb0e74a963ca2ec338d386ea3fae69fae49e0c217"
+  },
+  "evidence_manifest.json": {
+    "bytes": 11497,
+    "sha256": "d95746dbabe628622c5991411d13c8d0bea3bba93f493ff981e0369657a219c4"
+  },
+  "flight_reward_curves.png": {
+    "bytes": 401942,
+    "sha256": "f3cfa4433b5fe82e49d68b98f6e739e7a8870b23b668f2d65f2010a0b1b27e4d"
+  },
+  "gallop_config.json": {
+    "bytes": 2682,
+    "sha256": "6f3415d4bbe09ad8e510f8c00620c82b0a7a0e9ce872ccd1a6a48b29e3780648"
+  },
+  "joint_motion.png": {
+    "bytes": 568351,
+    "sha256": "65cdf66b94ee9e831f73c50a718a7dc2d0b79081770aedc559dd9b4870cd9182"
+  },
+  "leap_curves.png": {
+    "bytes": 239553,
+    "sha256": "3588721d7f877f5e4f766c3a4c55a9c9c41d2e461719ec09da9e1c8c47835d4e"
+  },
+  "pair_reward_curves.png": {
+    "bytes": 238339,
+    "sha256": "f69878d4ba8dbfb68007729f889739ad3752c6eae85b54fcf8ba5ad25fc0077a"
+  },
+  "params/agent.yaml": {
+    "bytes": 1039,
+    "sha256": "0916df3c3b5fbbac8e3bce4c48504cf89ec819c7b8d2cc966ccabb7dc87e8a0a"
+  },
+  "params/env.yaml": {
+    "bytes": 30066,
+    "sha256": "8289a88d3a8b58c8490bd134aa3137a94ad35e7b6f513fcd09182e06a863c9b6"
+  },
+  "parent_play_comparison.json": {
+    "bytes": 7311,
+    "sha256": "64063efd386234d8f2da01354ea9e544752dfe03facac291fc360dac9f8312f0"
+  },
+  "play_analysis.json": {
+    "bytes": 4452,
+    "sha256": "e22de8c332452118edb9c64981a2357ab09c56593fa4bc86b55f8953e2431189"
+  },
+  "play_contacts.png": {
+    "bytes": 329132,
+    "sha256": "188f95d05714b85f02c5b562177f7595cb4cf630d1c3abed86050bf4e49bde1a"
+  },
+  "play_diagnostics.json": {
+    "bytes": 3216,
+    "sha256": "66535f76152afd5adf3530dade64c0453c8df29d4d32acf816bb777dbb833a07"
+  },
+  "play_episodes.csv": {
+    "bytes": 1427,
+    "sha256": "7e8fb92645f82b059f426f7824b13dbef9091b8d1aa4a3ca84e48787fb989d1d"
+  },
+  "play_flight_events.csv": {
+    "bytes": 4884,
+    "sha256": "1c010db9b0c96236921d1b540344f0d14c636a587e9bab32592b6de54c81c9e6"
+  },
+  "play_flight_events.png": {
+    "bytes": 119208,
+    "sha256": "efcf26a3eb8fe20f87c0e79ef74896f0f0a41190759937cad8c2f5bb33942531"
+  },
+  "play_flight_trace.csv": {
+    "bytes": 972893,
+    "sha256": "9f1dc9b6acec261b4080b130a0fe936d6247ffb63c648afa737bc42b46f696d0"
+  },
+  "play_keyframes.png": {
+    "bytes": 939908,
+    "sha256": "3540cfc142e31490355d51556fdfb14a15b2a1044b8a140e802fa53aad41cb5b"
+  },
+  "play_state_trace.csv": {
+    "bytes": 183445,
+    "sha256": "e304ca9c86a2ae7172ceba968587626cbcc7bedf31cd3031e3f400347603c665"
+  },
+  "play_tracking.png": {
+    "bytes": 340501,
+    "sha256": "968420cfc46a67c3ca29a9752e8f1390a2f7ae1f2af4f8517b8ab580eafb01c6"
+  },
+  "reward_contributions_last100.json": {
+    "bytes": 2279,
+    "sha256": "b8e4637a7ed239932a26cd6c4557e2d6eac0e102e76455dc777283714eb75a5c"
+  },
+  "summary.json": {
+    "bytes": 47294,
+    "sha256": "ac7d9be21191d0cd6ac50468f929305685f8cfcf344e5cdc9858f4807b76877f"
+  },
+  "tensorboard_scalars.csv": {
+    "bytes": 11839444,
+    "sha256": "41789973b17b015480c16b4def3fdc3df86e383d731c89d0c484ade77073e534"
+  },
+  "train_episodes.csv": {
+    "bytes": 9300485,
+    "sha256": "84dc3b9c1e584921f99e8b992bbf9fe0baadfcbddf1aeda1bc6a9f9b4b055b9f"
+  },
+  "training_curves.png": {
+    "bytes": 207769,
+    "sha256": "bd3f756a280250ee92c81be4bcb959d385d7e6fef8271a4b5fad3172d008c0d5"
+  },
+  "training_diagnostics.json": {
+    "bytes": 38478,
+    "sha256": "b12b545655366ea6547446d3ab089d75799a7350fa4fa08976778113e98c9c4f"
+  },
+  "verification.json": {
+    "bytes": 2131,
+    "sha256": "a5dacf2e30447146fedf0f1cda862ef42dde95c9b4268f1a7b0756dc6ef8ff7f"
+  },
+  "videos.csv": {
+    "bytes": 211,
+    "sha256": "2675d5b479a89e289ba19cb4b31cc4bb6c32c7a3c3df1fc5789526d4d47a8de9"
+  }
+}

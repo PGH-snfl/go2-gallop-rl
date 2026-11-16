@@ -1,0 +1,278 @@
+{
+  "checkpoint": "/home/cvr/GH/go2_animalization/gallop/runs/isaac/train/unitree_go2_curriculum_fixed/20261028_141745_8d9837/model_final.pt",
+  "checkpoint_sha256": "d2ef45499337dc840200f2dcc2f7ef2633dc20fcb67ab405ed792c11045cb107",
+  "profile": "nominal",
+  "observation_commands_verified": true,
+  "source_repo": "/home/cvr/GH/unitree/unitree_rl_lab_official",
+  "source_official": true,
+  "training_variant": "curriculum_fixed",
+  "case_suite": "standard",
+  "focal_case": "forward_04",
+  "seed": 42,
+  "start_mode": "stand-first",
+  "policy_updates": 0,
+  "trials": [
+    {
+      "name": "stand",
+      "command": [
+        0,
+        0,
+        0
+      ],
+      "required": true,
+      "repeat": 0,
+      "passed": true,
+      "gates": {
+        "survived": true,
+        "full_hold": true,
+        "stop_measured": true,
+        "vx_rmse": true,
+        "vy_rmse": true,
+        "yaw_rmse": true,
+        "stop_speed_rms": true,
+        "roll_pitch_rms": true,
+        "roll_pitch_peak": true,
+        "min_height": true,
+        "contact_slip_rms": true,
+        "stand_speed_rms": true
+      },
+      "metrics": {
+        "vx_rmse": 0.0003546223451849073,
+        "vy_rmse": 0.0001235466916114092,
+        "yaw_rmse": 0.00016937567852437496,
+        "roll_pitch_rms": 0.03404782712459564,
+        "roll_pitch_peak": 0.042971134185791016,
+        "min_height": 0.31170007586479187,
+        "stop_speed_rms": 0.00033858168171718717,
+        "contact_slip_rms": 0.0030027227476239204,
+        "mean_vx": 7.879585609771311e-06,
+        "stand_speed_rms": 0.000375527364667505
+      },
+      "failure": null,
+      "hold_samples": 950,
+      "vx_rmse_limit": 0.1,
+      "all_feet_contact_fraction": 1.0,
+      "mean_yaw_rate": 4.9706690333550796e-05
+    },
+    {
+      "name": "forward_02",
+      "command": [
+        0.2,
+        0,
+        0
+      ],
+      "required": true,
+      "repeat": 0,
+      "passed": false,
+      "gates": {
+        "survived": true,
+        "full_hold": true,
+        "stop_measured": true,
+        "vx_rmse": false,
+        "vy_rmse": true,
+        "yaw_rmse": true,
+        "stop_speed_rms": true,
+        "roll_pitch_rms": true,
+        "roll_pitch_peak": true,
+        "min_height": true,
+        "contact_slip_rms": true
+      },
+      "metrics": {
+        "vx_rmse": 0.19999484717845917,
+        "vy_rmse": 6.24868698650971e-05,
+        "yaw_rmse": 0.0001578823575982824,
+        "roll_pitch_rms": 0.037522222846746445,
+        "roll_pitch_peak": 0.04297161102294922,
+        "min_height": 0.3117000162601471,
+        "stop_speed_rms": 0.0007028208347037435,
+        "contact_slip_rms": 0.0029242115560919046,
+        "mean_vx": 5.246767614153214e-06
+      },
+      "failure": null,
+      "hold_samples": 950,
+      "vx_rmse_limit": 0.1,
+      "all_feet_contact_fraction": 1.0,
+      "mean_yaw_rate": 3.6972407997382106e-06
+    },
+    {
+      "name": "forward_04",
+      "command": [
+        0.4,
+        0,
+        0
+      ],
+      "required": true,
+      "repeat": 0,
+      "passed": false,
+      "gates": {
+        "survived": true,
+        "full_hold": true,
+        "stop_measured": true,
+        "vx_rmse": false,
+        "vy_rmse": true,
+        "yaw_rmse": true,
+        "stop_speed_rms": true,
+        "roll_pitch_rms": true,
+        "roll_pitch_peak": true,
+        "min_height": true,
+        "contact_slip_rms": true
+      },
+      "metrics": {
+        "vx_rmse": 0.39996767044067383,
+        "vy_rmse": 5.8377736422698945e-05,
+        "yaw_rmse": 0.00028306982130743563,
+        "roll_pitch_rms": 0.041360147297382355,
+        "roll_pitch_peak": 0.04297661781311035,
+        "min_height": 0.3117011785507202,
+        "stop_speed_rms": 0.0013094485038891435,
+        "contact_slip_rms": 0.0029156189411878586,
+        "mean_vx": 3.244517938583158e-05
+      },
+      "failure": null,
+      "hold_samples": 950,
+      "vx_rmse_limit": 0.1,
+      "all_feet_contact_fraction": 1.0,
+      "mean_yaw_rate": 0.00012261753727216274
+    },
+    {
+      "name": "turn_left",
+      "command": [
+        0.2,
+        0,
+        0.5
+      ],
+      "required": true,
+      "repeat": 0,
+      "passed": false,
+      "gates": {
+        "survived": true,
+        "full_hold": true,
+        "stop_measured": true,
+        "vx_rmse": false,
+        "vy_rmse": true,
+        "yaw_rmse": false,
+        "stop_speed_rms": true,
+        "roll_pitch_rms": true,
+        "roll_pitch_peak": true,
+        "min_height": true,
+        "contact_slip_rms": true
+      },
+      "metrics": {
+        "vx_rmse": 0.18052875995635986,
+        "vy_rmse": 0.06777039170265198,
+        "yaw_rmse": 0.6281841993331909,
+        "roll_pitch_rms": 0.03298961743712425,
+        "roll_pitch_peak": 0.05256843566894531,
+        "min_height": 0.3117011487483978,
+        "stop_speed_rms": 0.0018465517787262797,
+        "contact_slip_rms": 0.09623990207910538,
+        "mean_vx": 0.021575575694441795
+      },
+      "failure": null,
+      "hold_samples": 950,
+      "vx_rmse_limit": 0.1,
+      "all_feet_contact_fraction": 0.868421052631579,
+      "mean_yaw_rate": 0.15372644364833832
+    },
+    {
+      "name": "turn_right",
+      "command": [
+        0.2,
+        0,
+        -0.5
+      ],
+      "required": true,
+      "repeat": 0,
+      "passed": false,
+      "gates": {
+        "survived": true,
+        "full_hold": true,
+        "stop_measured": true,
+        "vx_rmse": false,
+        "vy_rmse": true,
+        "yaw_rmse": true,
+        "stop_speed_rms": true,
+        "roll_pitch_rms": true,
+        "roll_pitch_peak": true,
+        "min_height": true,
+        "contact_slip_rms": true
+      },
+      "metrics": {
+        "vx_rmse": 0.1591428518295288,
+        "vy_rmse": 0.05609925091266632,
+        "yaw_rmse": 0.07101152092218399,
+        "roll_pitch_rms": 0.042770687490701675,
+        "roll_pitch_peak": 0.07153606414794922,
+        "min_height": 0.3117022216320038,
+        "stop_speed_rms": 0.004958778619766235,
+        "contact_slip_rms": 0.13840815424919128,
+        "mean_vx": 0.05234766751527786
+      },
+      "failure": null,
+      "hold_samples": 950,
+      "vx_rmse_limit": 0.1,
+      "all_feet_contact_fraction": 0.7305263157894737,
+      "mean_yaw_rate": -0.47272494435310364
+    },
+    {
+      "name": "forward_08_stress",
+      "command": [
+        0.8,
+        0,
+        0
+      ],
+      "required": false,
+      "repeat": 0,
+      "passed": false,
+      "gates": {
+        "survived": true,
+        "full_hold": true,
+        "stop_measured": true,
+        "vx_rmse": false,
+        "vy_rmse": true,
+        "yaw_rmse": true,
+        "stop_speed_rms": true,
+        "roll_pitch_rms": true,
+        "roll_pitch_peak": true,
+        "min_height": true,
+        "contact_slip_rms": true
+      },
+      "metrics": {
+        "vx_rmse": 0.7999919056892395,
+        "vy_rmse": 0.00018739717779681087,
+        "yaw_rmse": 0.0010816545691341162,
+        "roll_pitch_rms": 0.04711747169494629,
+        "roll_pitch_peak": 0.04719686508178711,
+        "min_height": 0.311702162027359,
+        "stop_speed_rms": 0.002654163632541895,
+        "contact_slip_rms": 0.002710918430238962,
+        "mean_vx": 8.389628419536166e-06
+      },
+      "failure": null,
+      "hold_samples": 950,
+      "vx_rmse_limit": 0.1,
+      "all_feet_contact_fraction": 1.0,
+      "mean_yaw_rate": 0.0004220495175104588
+    }
+  ],
+  "thresholds": {
+    "vx_rmse": 0.1,
+    "vy_rmse": 0.1,
+    "yaw_rmse": 0.25,
+    "stand_speed_rms": 0.08,
+    "stop_speed_rms": 0.1,
+    "roll_pitch_rms": 0.2,
+    "roll_pitch_peak": 0.65,
+    "min_height": 0.18,
+    "contact_slip_rms": 0.2
+  },
+  "required_trials_passed": false,
+  "video_case": "forward_04",
+  "video_last_sim_time": 28.0,
+  "caveats": [
+    "First terminal state is captured before auto-reset. No subsequent episode is counted as recovery.",
+    "Nominal profile disables observation noise, external mass/material randomization and initial-state perturbations.",
+    "0.8 m/s is a separate stress case above the final training command curriculum.",
+    "Slip is contact-weighted RMS horizontal foot-link speed; not an exact measurement of contact-patch sliding."
+  ]
+}

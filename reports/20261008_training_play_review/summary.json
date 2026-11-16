@@ -1,0 +1,322 @@
+{
+  "collected_at": "2026-10-08T09:46:00.664853+09:00",
+  "training_path": "/home/cvr/GH/go2_animalization/gallop/runs/isaac/train/20261007_124336_0e2927",
+  "play_path": "/home/cvr/GH/go2_animalization/gallop/runs/isaac/play/20261008_093942_61876e",
+  "training_status": {
+    "status": "completed",
+    "mode": "train",
+    "backend": "Isaac Lab / PhysX / RSL-RL",
+    "hardware_io": false,
+    "num_envs": 4,
+    "iterations": 1000,
+    "checkpoint": null,
+    "last_event": {
+      "time": "2026-10-07T14:02:55+09:00",
+      "elapsed_s": 4759.07,
+      "event": "COMPLETED",
+      "mode": "train",
+      "output": "/home/cvr/GH/go2_animalization/gallop/runs/isaac/train/20261007_124336_0e2927"
+    },
+    "export": {
+      "accepted": true,
+      "max_abs_error": 0.0,
+      "observation_dim": 57,
+      "action_dim": 5,
+      "trainer": "Isaac Lab / RSL-RL PPO",
+      "normalization": "included in actor.pt"
+    }
+  },
+  "play_status": {
+    "status": "completed",
+    "mode": "play",
+    "backend": "Isaac Lab / PhysX / RSL-RL",
+    "hardware_io": false,
+    "num_envs": 1,
+    "iterations": 1000,
+    "checkpoint": "runs/isaac/train/20261007_124336_0e2927/model_final.pt",
+    "last_event": {
+      "time": "2026-10-08T09:44:31+09:00",
+      "elapsed_s": 288.7,
+      "event": "COMPLETED",
+      "mode": "play",
+      "output": "/home/cvr/GH/go2_animalization/gallop/runs/isaac/play/20261008_093942_61876e"
+    },
+    "steps": 2400,
+    "reset_count": 29,
+    "gait_accepted": false
+  },
+  "config": {
+    "lead": "right",
+    "speed": 0.8,
+    "period": 0.45,
+    "hind_separation": 0.125,
+    "fore_start": 0.25,
+    "fore_separation": 0.25,
+    "duty": [
+      0.55,
+      0.5,
+      0.45,
+      0.55
+    ],
+    "height": 0.27,
+    "swing_height": 0.05,
+    "swing_kp": 400.0,
+    "swing_kd": 40,
+    "foot_velocity_gain": 0.03,
+    "simulation_dt": 0.001,
+    "control_dt": 0.005,
+    "mpc_dt": 0.025,
+    "policy_dt": 0.025,
+    "horizon_steps": 18,
+    "settle_seconds": 0.5,
+    "episode_seconds": 10.0,
+    "friction": 0.8,
+    "gpd_gamma": 0.5,
+    "gpd_predict_dt": 0.025,
+    "gpd_s": [
+      10,
+      10,
+      20,
+      10,
+      10,
+      20
+    ],
+    "gpd_w": 1e-08,
+    "gpd_force_min_factor": 1.0,
+    "gpd_v_initial": 0.7,
+    "mpc_q": [
+      1,
+      1,
+      100,
+      10,
+      20,
+      5,
+      8,
+      8,
+      3,
+      1,
+      1,
+      2
+    ],
+    "mpc_force_max": 300.0,
+    "torque_limits": [
+      23.7,
+      23.7,
+      45.43
+    ],
+    "velocity_limits": [
+      30.1,
+      30.1,
+      15.7
+    ],
+    "contact_on": 8.0,
+    "contact_off": 3.0,
+    "contact_dwell": 0.01,
+    "contact_filter_seconds": 0.01,
+    "estimator_contact_gain": 0.35,
+    "residual_bounds": [
+      0.04,
+      0.035,
+      0.035,
+      0.06,
+      0.015
+    ],
+    "residual_rate": [
+      0.1,
+      0.12,
+      0.12,
+      0.25,
+      0.04
+    ],
+    "roll_pitch_limit": 0.65,
+    "min_height": 0.15,
+    "max_height": 0.5,
+    "max_solver_failures": 3,
+    "state_timeout": 0.05,
+    "warmup_metric_seconds": 1.5,
+    "acceptance_min_cycles": 8,
+    "acceptance_valid_fraction": 0.8,
+    "acceptance_velocity_rmse": 0.35,
+    "acceptance_contact_accuracy": 0.7,
+    "acceptance_attitude_rms": 0.25,
+    "acceptance_clip_fraction": 0.1,
+    "stance_kp": 150,
+    "stance_kd": 20,
+    "swing_feedforward": 0,
+    "contact_template": "grounded_transverse_initial"
+  },
+  "agent": {
+    "seed": 42,
+    "device": "cuda:0",
+    "num_steps_per_env": 32,
+    "save_interval": 50,
+    "obs_groups": {
+      "policy": [
+        "policy"
+      ],
+      "critic": [
+        "policy"
+      ]
+    },
+    "logger": "tensorboard",
+    "policy": {
+      "class_name": "ActorCritic",
+      "init_noise_std": 0.15,
+      "noise_std_type": "log",
+      "actor_obs_normalization": false,
+      "critic_obs_normalization": false,
+      "actor_hidden_dims": [
+        128,
+        128
+      ],
+      "critic_hidden_dims": [
+        128,
+        128
+      ],
+      "activation": "elu"
+    },
+    "algorithm": {
+      "class_name": "PPO",
+      "value_loss_coef": 1.0,
+      "use_clipped_value_loss": true,
+      "clip_param": 0.2,
+      "entropy_coef": 0.005,
+      "num_learning_epochs": 5,
+      "num_mini_batches": 4,
+      "learning_rate": 0.0003,
+      "schedule": "adaptive",
+      "gamma": 0.99,
+      "lam": 0.95,
+      "desired_kl": 0.01,
+      "max_grad_norm": 1.0
+    }
+  },
+  "last_update": {
+    "time": "2026-10-07T14:02:55+09:00",
+    "elapsed_s": 4759.05,
+    "event": "PPO_UPDATE",
+    "iteration": 1000,
+    "completed": 1000,
+    "total": 1000,
+    "progress_pct": 100.0,
+    "transitions": 128000,
+    "iteration_s": 4.35,
+    "eta_s": 0.0,
+    "losses": {
+      "value_function": 171.92567596435546,
+      "surrogate": -0.03612632621079683,
+      "entropy": -2.3464375376701354
+    }
+  },
+  "export_validation": {
+    "accepted": true,
+    "max_abs_error": 0.0,
+    "observation_dim": 57,
+    "action_dim": 5,
+    "trainer": "Isaac Lab / RSL-RL PPO",
+    "normalization": "included in actor.pt"
+  },
+  "tensorboard": {
+    "Loss/value_function": {
+      "count": 1000,
+      "first": 115.45865631103516,
+      "last": 171.92567443847656,
+      "maximum": 1285.245849609375,
+      "max_step_zero_based": 559
+    },
+    "Loss/surrogate": {
+      "count": 1000,
+      "first": -0.021706456318497658,
+      "last": -0.03612632676959038,
+      "maximum": 0.03470879793167114,
+      "max_step_zero_based": 476
+    },
+    "Loss/entropy": {
+      "count": 1000,
+      "first": -2.393455982208252,
+      "last": -2.346437454223633,
+      "maximum": -2.346437454223633,
+      "max_step_zero_based": 999
+    },
+    "Loss/learning_rate": {
+      "count": 1000,
+      "first": 9.999999747378752e-06,
+      "last": 9.999999747378752e-06,
+      "maximum": 2.2500000341096893e-05,
+      "max_step_zero_based": 234
+    },
+    "Policy/mean_noise_std": {
+      "count": 1000,
+      "first": 0.14992372691631317,
+      "last": 0.15135280787944794,
+      "maximum": 0.15135280787944794,
+      "max_step_zero_based": 999
+    },
+    "Perf/total_fps": {
+      "count": 1000,
+      "first": 39.0,
+      "last": 29.0,
+      "maximum": 41.0,
+      "max_step_zero_based": 494
+    },
+    "Perf/collection time": {
+      "count": 1000,
+      "first": 3.0334391593933105,
+      "last": 4.305294036865234,
+      "maximum": 7.099920272827148,
+      "max_step_zero_based": 87
+    },
+    "Perf/learning_time": {
+      "count": 1000,
+      "first": 0.19359207153320312,
+      "last": 0.04451274871826172,
+      "maximum": 0.19359207153320312,
+      "max_step_zero_based": 0
+    },
+    "Train/mean_reward": {
+      "count": 999,
+      "first": 58.84929656982422,
+      "last": 99.48714447021484,
+      "maximum": 116.78040313720703,
+      "max_step_zero_based": 487
+    },
+    "Train/mean_episode_length": {
+      "count": 999,
+      "first": 56.5,
+      "last": 97.22000122070312,
+      "maximum": 107.18000030517578,
+      "max_step_zero_based": 554
+    },
+    "Train/mean_reward/time": {
+      "count": 999,
+      "first": 58.84929656982422,
+      "last": 99.48714447021484,
+      "maximum": 116.78040313720703,
+      "max_step_zero_based": 2332
+    },
+    "Train/mean_episode_length/time": {
+      "count": 999,
+      "first": 56.5,
+      "last": 97.22000122070312,
+      "maximum": 107.18000030517578,
+      "max_step_zero_based": 2639
+    }
+  },
+  "episode_summary": {
+    "completed": 29,
+    "partial": 1,
+    "accepted": 0,
+    "reset_reasons": {
+      "Attitude limit + attitude_limit": 29
+    },
+    "duration_min": 2.05,
+    "duration_mean": 2.0499999999999994,
+    "duration_max": 2.05,
+    "note": "Durations include standing initialization. Reports after warmup cover only a short pre-failure window; do not treat those averages as sustained gait performance."
+  },
+  "current_source_differs_from_training": [
+    "isaac_task/env.py",
+    "isaac_task/logging.py"
+  ],
+  "collection_performed_no_simulation_or_training": true
+}

@@ -1,0 +1,1273 @@
+{
+  "core_reconstruction_exact": true,
+  "records_checked": 9666,
+  "stage_groups": {
+    "0": {
+      "all": {
+        "episodes": 5189,
+        "active_success_rate": 0.722875313162459,
+        "strict_successes": 25,
+        "core_pass_rate": 0.7488918866833687,
+        "mandatory_gate_pass_rates": {
+          "tracking": 0.8092117941799961,
+          "contact": 0.8167276931971478,
+          "flight": 0.816920408556562,
+          "rom": 0.8173058392753902,
+          "front_load": 0.8173058392753902,
+          "front_motion": 0.8173058392753902,
+          "front_cycle": 0.8171131239159761,
+          "mature": 0.8174985546348044,
+          "survival": 0.8138369628059356,
+          "measured10s": 0.8157641164000771,
+          "distance": 0.756022354981692,
+          "joint_limits": 0.8161495471189054,
+          "broad_attitude": 1.0,
+          "raw_clip": 1.0,
+          "precise_vx": 0.9959529774523029
+        },
+        "speed_rmse_q10_q50_q90": [
+          0.0,
+          0.14841844141483307,
+          0.17958466112613677
+        ],
+        "only_precise_speed_core_failure": 1,
+        "progress_rate_if_only_vx_threshold_changed": {
+          "0.25": 0.722875313162459,
+          "0.275": 0.722875313162459,
+          "0.3": 0.722875313162459,
+          "0.35": 0.722875313162459
+        },
+        "failed_promotion_gates": {
+          "staged_core": 1303,
+          "staged_landing": 1141,
+          "staged_heading": 2,
+          "staged_pose": 1
+        }
+      },
+      "measured10s": {
+        "episodes": 4233,
+        "active_success_rate": 0.8861327663595558,
+        "strict_successes": 25,
+        "core_pass_rate": 0.9180250413418379,
+        "mandatory_gate_pass_rates": {
+          "tracking": 0.9912591542641153,
+          "contact": 1.0,
+          "flight": 0.9997637609260571,
+          "rom": 1.0,
+          "front_load": 1.0,
+          "front_motion": 1.0,
+          "front_cycle": 1.0,
+          "mature": 1.0,
+          "survival": 0.9976376092605717,
+          "measured10s": 1.0,
+          "distance": 0.926293408929837,
+          "joint_limits": 0.9995275218521144,
+          "broad_attitude": 1.0,
+          "raw_clip": 1.0,
+          "precise_vx": 0.9959839357429718
+        },
+        "speed_rmse_q10_q50_q90": [
+          0.13171285688877105,
+          0.1533660888671875,
+          0.18272545635700227
+        ],
+        "only_precise_speed_core_failure": 1,
+        "progress_rate_if_only_vx_threshold_changed": {
+          "0.25": 0.8861327663595558,
+          "0.275": 0.8861327663595558,
+          "0.3": 0.8861327663595558,
+          "0.35": 0.8861327663595558
+        },
+        "failed_promotion_gates": {
+          "staged_core": 347,
+          "staged_landing": 187
+        }
+      }
+    },
+    "1": {
+      "all": {
+        "episodes": 4477,
+        "active_success_rate": 0.30399821308912217,
+        "strict_successes": 6,
+        "core_pass_rate": 0.3178467723922269,
+        "mandatory_gate_pass_rates": {
+          "tracking": 0.7976323430868886,
+          "contact": 0.8081304444940809,
+          "flight": 0.8081304444940809,
+          "rom": 0.8092472637927184,
+          "front_load": 0.8096939915121734,
+          "front_motion": 0.8092472637927184,
+          "front_cycle": 0.8092472637927184,
+          "mature": 0.8099173553719008,
+          "survival": 0.8038865311592585,
+          "measured10s": 0.8063435336162609,
+          "distance": 0.7574268483359392,
+          "joint_limits": 0.8074603529148984,
+          "broad_attitude": 0.9997766361402725,
+          "raw_clip": 0.999553272280545,
+          "precise_vx": 0.5083761447397811
+        },
+        "speed_rmse_q10_q50_q90": [
+          0.0,
+          0.2483844757080078,
+          0.34289608597755433
+        ],
+        "only_precise_speed_core_failure": 1929,
+        "progress_rate_if_only_vx_threshold_changed": {
+          "0.25": 0.30399821308912217,
+          "0.275": 0.4389099843645298,
+          "0.3": 0.5499218226490954,
+          "0.35": 0.6805896805896806
+        },
+        "failed_promotion_gates": {
+          "staged_core": 3054,
+          "staged_landing": 1061,
+          "staged_heading": 4,
+          "staged_pose": 2
+        }
+      },
+      "measured10s": {
+        "episodes": 3610,
+        "active_success_rate": 0.3770083102493075,
+        "strict_successes": 6,
+        "core_pass_rate": 0.3941828254847645,
+        "mandatory_gate_pass_rates": {
+          "tracking": 0.9889196675900277,
+          "contact": 1.0,
+          "flight": 1.0,
+          "rom": 1.0,
+          "front_load": 1.0,
+          "front_motion": 1.0,
+          "front_cycle": 1.0,
+          "mature": 1.0,
+          "survival": 0.9969529085872576,
+          "measured10s": 1.0,
+          "distance": 0.9382271468144044,
+          "joint_limits": 0.9997229916897507,
+          "broad_attitude": 1.0,
+          "raw_clip": 1.0,
+          "precise_vx": 0.39445983379501387
+        },
+        "speed_rmse_q10_q50_q90": [
+          0.20382845103740693,
+          0.2647031992673874,
+          0.34942781329154965
+        ],
+        "only_precise_speed_core_failure": 1929,
+        "progress_rate_if_only_vx_threshold_changed": {
+          "0.25": 0.3770083102493075,
+          "0.275": 0.5443213296398892,
+          "0.3": 0.681994459833795,
+          "0.35": 0.8440443213296399
+        },
+        "failed_promotion_gates": {
+          "staged_core": 2187,
+          "staged_landing": 198
+        }
+      }
+    }
+  },
+  "accepted_stage_groups": {
+    "0": {
+      "all": {
+        "episodes": 2048,
+        "active_success_rate": 0.86083984375,
+        "strict_successes": 14,
+        "core_pass_rate": 0.89111328125,
+        "mandatory_gate_pass_rates": {
+          "tracking": 0.96533203125,
+          "contact": 0.970703125,
+          "flight": 0.97119140625,
+          "rom": 0.97119140625,
+          "front_load": 0.97119140625,
+          "front_motion": 0.97119140625,
+          "front_cycle": 0.97119140625,
+          "mature": 0.97119140625,
+          "survival": 0.9677734375,
+          "measured10s": 0.970703125,
+          "distance": 0.896484375,
+          "joint_limits": 0.97021484375,
+          "broad_attitude": 1.0,
+          "raw_clip": 1.0,
+          "precise_vx": 0.99462890625
+        },
+        "speed_rmse_q10_q50_q90": [
+          0.1302838608622551,
+          0.15332229435443878,
+          0.18527409881353377
+        ],
+        "only_precise_speed_core_failure": 1,
+        "progress_rate_if_only_vx_threshold_changed": {
+          "0.25": 0.86083984375,
+          "0.275": 0.86083984375,
+          "0.3": 0.86083984375,
+          "0.35": 0.86083984375
+        },
+        "failed_promotion_gates": {
+          "staged_core": 223,
+          "staged_landing": 152
+        }
+      },
+      "measured10s": {
+        "episodes": 1988,
+        "active_success_rate": 0.8868209255533199,
+        "strict_successes": 14,
+        "core_pass_rate": 0.9180080482897385,
+        "mandatory_gate_pass_rates": {
+          "tracking": 0.994466800804829,
+          "contact": 1.0,
+          "flight": 1.0,
+          "rom": 1.0,
+          "front_load": 1.0,
+          "front_motion": 1.0,
+          "front_cycle": 1.0,
+          "mature": 1.0,
+          "survival": 0.9969818913480886,
+          "measured10s": 1.0,
+          "distance": 0.9235412474849095,
+          "joint_limits": 0.9994969818913481,
+          "broad_attitude": 1.0,
+          "raw_clip": 1.0,
+          "precise_vx": 0.994466800804829
+        },
+        "speed_rmse_q10_q50_q90": [
+          0.13254657685756682,
+          0.15391507744789124,
+          0.18556989133358
+        ],
+        "only_precise_speed_core_failure": 1,
+        "progress_rate_if_only_vx_threshold_changed": {
+          "0.25": 0.8868209255533199,
+          "0.275": 0.8868209255533199,
+          "0.3": 0.8868209255533199,
+          "0.35": 0.8868209255533199
+        },
+        "failed_promotion_gates": {
+          "staged_core": 163,
+          "staged_landing": 92
+        }
+      }
+    },
+    "1": {
+      "all": {
+        "episodes": 1792,
+        "active_success_rate": 0.39174107142857145,
+        "strict_successes": 5,
+        "core_pass_rate": 0.41015625,
+        "mandatory_gate_pass_rates": {
+          "tracking": 0.9547991071428571,
+          "contact": 0.9681919642857143,
+          "flight": 0.96875,
+          "rom": 0.9693080357142857,
+          "front_load": 0.9698660714285714,
+          "front_motion": 0.9693080357142857,
+          "front_cycle": 0.9693080357142857,
+          "mature": 0.9698660714285714,
+          "survival": 0.9659598214285714,
+          "measured10s": 0.9676339285714286,
+          "distance": 0.9095982142857143,
+          "joint_limits": 0.9676339285714286,
+          "broad_attitude": 1.0,
+          "raw_clip": 0.9994419642857143,
+          "precise_vx": 0.4408482142857143
+        },
+        "speed_rmse_q10_q50_q90": [
+          0.19360249042510985,
+          0.2580791413784027,
+          0.3439932942390442
+        ],
+        "only_precise_speed_core_failure": 875,
+        "progress_rate_if_only_vx_threshold_changed": {
+          "0.25": 0.39174107142857145,
+          "0.275": 0.5485491071428571,
+          "0.3": 0.6763392857142857,
+          "0.35": 0.8264508928571429
+        },
+        "failed_promotion_gates": {
+          "staged_core": 1057,
+          "staged_landing": 152,
+          "staged_pose": 1
+        }
+      },
+      "measured10s": {
+        "episodes": 1734,
+        "active_success_rate": 0.40484429065743943,
+        "strict_successes": 5,
+        "core_pass_rate": 0.42387543252595156,
+        "mandatory_gate_pass_rates": {
+          "tracking": 0.986159169550173,
+          "contact": 1.0,
+          "flight": 1.0,
+          "rom": 1.0,
+          "front_load": 1.0,
+          "front_motion": 1.0,
+          "front_cycle": 1.0,
+          "mature": 1.0,
+          "survival": 0.9982698961937716,
+          "measured10s": 1.0,
+          "distance": 0.9394463667820069,
+          "joint_limits": 0.9994232987312572,
+          "broad_attitude": 1.0,
+          "raw_clip": 1.0,
+          "precise_vx": 0.4244521337946944
+        },
+        "speed_rmse_q10_q50_q90": [
+          0.19960871040821077,
+          0.26043394207954407,
+          0.3451321303844452
+        ],
+        "only_precise_speed_core_failure": 875,
+        "progress_rate_if_only_vx_threshold_changed": {
+          "0.25": 0.40484429065743943,
+          "0.275": 0.5668973471741637,
+          "0.3": 0.698961937716263,
+          "0.35": 0.8540945790080738
+        },
+        "failed_promotion_gates": {
+          "staged_core": 999,
+          "staged_landing": 94
+        }
+      }
+    }
+  },
+  "stage_visits": [
+    {
+      "index": 0,
+      "start_step": 0,
+      "end_step": 11000,
+      "duration_sim_seconds": 220.0,
+      "additional_ppo_iterations": 458.3333333333333,
+      "exit_reason": "promote_stage"
+    },
+    {
+      "index": 1,
+      "start_step": 11000,
+      "end_step": 18000,
+      "duration_sim_seconds": 140.0,
+      "additional_ppo_iterations": 291.6666666666667,
+      "exit_reason": "regress_stage"
+    },
+    {
+      "index": 0,
+      "start_step": 18000,
+      "end_step": 25000,
+      "duration_sim_seconds": 140.0,
+      "additional_ppo_iterations": 291.6666666666667,
+      "exit_reason": "promote_stage"
+    },
+    {
+      "index": 1,
+      "start_step": 25000,
+      "end_step": 32000,
+      "duration_sim_seconds": 140.0,
+      "additional_ppo_iterations": 291.6666666666667,
+      "exit_reason": "regress_stage"
+    },
+    {
+      "index": 0,
+      "start_step": 32000,
+      "end_step": 39000,
+      "duration_sim_seconds": 140.0,
+      "additional_ppo_iterations": 291.6666666666667,
+      "exit_reason": "promote_stage"
+    },
+    {
+      "index": 1,
+      "start_step": 39000,
+      "end_step": 48000,
+      "duration_sim_seconds": 180.0,
+      "additional_ppo_iterations": 375.0,
+      "exit_reason": "training_end"
+    }
+  ],
+  "complete_cohorts_by_stage": {
+    "0": [
+      {
+        "step": 5000,
+        "success_rate": 0.85546875,
+        "reason": "confirming_success",
+        "criteria": {
+          "tracking": 0.98828125,
+          "pattern": 0.99609375,
+          "flight": 0.99609375,
+          "motion": 0.99609375,
+          "front_load": 0.99609375,
+          "front_motion": 0.99609375,
+          "front_cycle": 0.99609375,
+          "stable": 0.71484375,
+          "mature": 0.99609375,
+          "stabilization_pose": 1.0,
+          "stabilization_width": 0.0,
+          "stabilization_landing": 0.16796875,
+          "stabilization_distance": 0.90234375,
+          "stabilization_measured": 0.99609375,
+          "guarded_limits": 0.9921875,
+          "guarded_feet": 0.71875,
+          "staged_measured": 0.99609375,
+          "staged_tracking": 0.75390625,
+          "staged_core": 0.89453125,
+          "staged_pose": 1.0,
+          "staged_heading": 1.0,
+          "staged_landing": 0.9453125,
+          "staged_details": 1.0,
+          "staged_regression": 0.85546875
+        }
+      },
+      {
+        "step": 7000,
+        "success_rate": 0.76171875,
+        "reason": "hold",
+        "criteria": {
+          "tracking": 0.9375,
+          "pattern": 0.94140625,
+          "flight": 0.9453125,
+          "motion": 0.9453125,
+          "front_load": 0.9453125,
+          "front_motion": 0.9453125,
+          "front_cycle": 0.9453125,
+          "stable": 0.91796875,
+          "mature": 0.9453125,
+          "stabilization_pose": 1.0,
+          "stabilization_width": 0.05859375,
+          "stabilization_landing": 0.140625,
+          "stabilization_distance": 0.796875,
+          "stabilization_measured": 0.94140625,
+          "guarded_limits": 0.94140625,
+          "guarded_feet": 0.92578125,
+          "staged_measured": 0.94140625,
+          "staged_tracking": 0.7890625,
+          "staged_core": 0.796875,
+          "staged_pose": 1.0,
+          "staged_heading": 1.0,
+          "staged_landing": 0.8671875,
+          "staged_details": 1.0,
+          "staged_regression": 0.76171875
+        }
+      },
+      {
+        "step": 9000,
+        "success_rate": 0.859375,
+        "reason": "confirming_success",
+        "criteria": {
+          "tracking": 0.95703125,
+          "pattern": 0.97265625,
+          "flight": 0.97265625,
+          "motion": 0.97265625,
+          "front_load": 0.97265625,
+          "front_motion": 0.97265625,
+          "front_cycle": 0.97265625,
+          "stable": 0.91015625,
+          "mature": 0.97265625,
+          "stabilization_pose": 1.0,
+          "stabilization_width": 0.00390625,
+          "stabilization_landing": 0.125,
+          "stabilization_distance": 0.89453125,
+          "stabilization_measured": 0.97265625,
+          "guarded_limits": 0.97265625,
+          "guarded_feet": 0.91796875,
+          "staged_measured": 0.97265625,
+          "staged_tracking": 0.8515625,
+          "staged_core": 0.87890625,
+          "staged_pose": 1.0,
+          "staged_heading": 1.0,
+          "staged_landing": 0.9453125,
+          "staged_details": 1.0,
+          "staged_regression": 0.859375
+        }
+      },
+      {
+        "step": 11000,
+        "success_rate": 0.86328125,
+        "reason": "promote_stage",
+        "criteria": {
+          "tracking": 0.95703125,
+          "pattern": 0.95703125,
+          "flight": 0.95703125,
+          "motion": 0.95703125,
+          "front_load": 0.95703125,
+          "front_motion": 0.95703125,
+          "front_cycle": 0.95703125,
+          "stable": 0.921875,
+          "mature": 0.95703125,
+          "stabilization_pose": 1.0,
+          "stabilization_width": 0.06640625,
+          "stabilization_landing": 0.09375,
+          "stabilization_distance": 0.91015625,
+          "stabilization_measured": 0.95703125,
+          "guarded_limits": 0.95703125,
+          "guarded_feet": 0.921875,
+          "staged_measured": 0.95703125,
+          "staged_tracking": 0.86328125,
+          "staged_core": 0.90625,
+          "staged_pose": 1.0,
+          "staged_heading": 1.0,
+          "staged_landing": 0.890625,
+          "staged_details": 1.0,
+          "staged_regression": 0.86328125
+        }
+      },
+      {
+        "step": 23000,
+        "success_rate": 0.8359375,
+        "reason": "confirming_success",
+        "criteria": {
+          "tracking": 0.98046875,
+          "pattern": 0.98046875,
+          "flight": 0.98046875,
+          "motion": 0.98046875,
+          "front_load": 0.98046875,
+          "front_motion": 0.98046875,
+          "front_cycle": 0.98046875,
+          "stable": 0.796875,
+          "mature": 0.98046875,
+          "stabilization_pose": 1.0,
+          "stabilization_width": 0.04296875,
+          "stabilization_landing": 0.18359375,
+          "stabilization_distance": 0.87890625,
+          "stabilization_measured": 0.98046875,
+          "guarded_limits": 0.98046875,
+          "guarded_feet": 0.80078125,
+          "staged_measured": 0.98046875,
+          "staged_tracking": 0.8046875,
+          "staged_core": 0.87890625,
+          "staged_pose": 1.0,
+          "staged_heading": 1.0,
+          "staged_landing": 0.91796875,
+          "staged_details": 1.0,
+          "staged_regression": 0.8359375
+        }
+      },
+      {
+        "step": 25000,
+        "success_rate": 0.875,
+        "reason": "promote_stage",
+        "criteria": {
+          "tracking": 0.9609375,
+          "pattern": 0.96484375,
+          "flight": 0.96484375,
+          "motion": 0.96484375,
+          "front_load": 0.96484375,
+          "front_motion": 0.96484375,
+          "front_cycle": 0.96484375,
+          "stable": 0.5546875,
+          "mature": 0.96484375,
+          "stabilization_pose": 1.0,
+          "stabilization_width": 0.05078125,
+          "stabilization_landing": 0.21484375,
+          "stabilization_distance": 0.90234375,
+          "stabilization_measured": 0.96484375,
+          "guarded_limits": 0.96484375,
+          "guarded_feet": 0.5546875,
+          "staged_measured": 0.96484375,
+          "staged_tracking": 0.74609375,
+          "staged_core": 0.90234375,
+          "staged_pose": 1.0,
+          "staged_heading": 1.0,
+          "staged_landing": 0.92578125,
+          "staged_details": 1.0,
+          "staged_regression": 0.875
+        }
+      },
+      {
+        "step": 37000,
+        "success_rate": 0.90625,
+        "reason": "confirming_success",
+        "criteria": {
+          "tracking": 0.96484375,
+          "pattern": 0.96875,
+          "flight": 0.96875,
+          "motion": 0.96875,
+          "front_load": 0.96875,
+          "front_motion": 0.96875,
+          "front_cycle": 0.96875,
+          "stable": 0.140625,
+          "mature": 0.96875,
+          "stabilization_pose": 1.0,
+          "stabilization_width": 0.125,
+          "stabilization_landing": 0.19140625,
+          "stabilization_distance": 0.93359375,
+          "stabilization_measured": 0.96875,
+          "guarded_limits": 0.96875,
+          "guarded_feet": 0.140625,
+          "staged_measured": 0.96875,
+          "staged_tracking": 0.7890625,
+          "staged_core": 0.92578125,
+          "staged_pose": 1.0,
+          "staged_heading": 1.0,
+          "staged_landing": 0.94921875,
+          "staged_details": 1.0,
+          "staged_regression": 0.90625
+        }
+      },
+      {
+        "step": 39000,
+        "success_rate": 0.9296875,
+        "reason": "promote_stage",
+        "criteria": {
+          "tracking": 0.9765625,
+          "pattern": 0.984375,
+          "flight": 0.984375,
+          "motion": 0.984375,
+          "front_load": 0.984375,
+          "front_motion": 0.984375,
+          "front_cycle": 0.984375,
+          "stable": 0.1328125,
+          "mature": 0.984375,
+          "stabilization_pose": 1.0,
+          "stabilization_width": 0.05859375,
+          "stabilization_landing": 0.23046875,
+          "stabilization_distance": 0.953125,
+          "stabilization_measured": 0.984375,
+          "guarded_limits": 0.984375,
+          "guarded_feet": 0.1328125,
+          "staged_measured": 0.984375,
+          "staged_tracking": 0.76953125,
+          "staged_core": 0.9453125,
+          "staged_pose": 1.0,
+          "staged_heading": 1.0,
+          "staged_landing": 0.96484375,
+          "staged_details": 1.0,
+          "staged_regression": 0.9296875
+        }
+      }
+    ],
+    "1": [
+      {
+        "step": 16000,
+        "success_rate": 0.3046875,
+        "reason": "hold",
+        "criteria": {
+          "tracking": 0.94140625,
+          "pattern": 0.9609375,
+          "flight": 0.9609375,
+          "motion": 0.96484375,
+          "front_load": 0.96484375,
+          "front_motion": 0.96484375,
+          "front_cycle": 0.96484375,
+          "stable": 0.75390625,
+          "mature": 0.96484375,
+          "stabilization_pose": 0.99609375,
+          "stabilization_width": 0.03125,
+          "stabilization_landing": 0.08203125,
+          "stabilization_distance": 0.85546875,
+          "stabilization_measured": 0.9609375,
+          "guarded_limits": 0.9609375,
+          "guarded_feet": 0.75390625,
+          "staged_measured": 0.9609375,
+          "staged_tracking": 0.30859375,
+          "staged_core": 0.31640625,
+          "staged_pose": 0.99609375,
+          "staged_heading": 1.0,
+          "staged_landing": 0.89453125,
+          "staged_details": 1.0,
+          "staged_regression": 0.3046875
+        }
+      },
+      {
+        "step": 18000,
+        "success_rate": 0.265625,
+        "reason": "regress_stage",
+        "criteria": {
+          "tracking": 0.95703125,
+          "pattern": 0.9609375,
+          "flight": 0.9609375,
+          "motion": 0.9609375,
+          "front_load": 0.9609375,
+          "front_motion": 0.9609375,
+          "front_cycle": 0.9609375,
+          "stable": 0.7421875,
+          "mature": 0.9609375,
+          "stabilization_pose": 1.0,
+          "stabilization_width": 0.24609375,
+          "stabilization_landing": 0.12890625,
+          "stabilization_distance": 0.8828125,
+          "stabilization_measured": 0.9609375,
+          "guarded_limits": 0.9609375,
+          "guarded_feet": 0.75,
+          "staged_measured": 0.95703125,
+          "staged_tracking": 0.26171875,
+          "staged_core": 0.2890625,
+          "staged_pose": 1.0,
+          "staged_heading": 1.0,
+          "staged_landing": 0.87890625,
+          "staged_details": 1.0,
+          "staged_regression": 0.265625
+        }
+      },
+      {
+        "step": 30000,
+        "success_rate": 0.390625,
+        "reason": "hold",
+        "criteria": {
+          "tracking": 0.97265625,
+          "pattern": 0.98046875,
+          "flight": 0.98046875,
+          "motion": 0.98046875,
+          "front_load": 0.98046875,
+          "front_motion": 0.98046875,
+          "front_cycle": 0.98046875,
+          "stable": 0.3515625,
+          "mature": 0.98046875,
+          "stabilization_pose": 1.0,
+          "stabilization_width": 0.046875,
+          "stabilization_landing": 0.15625,
+          "stabilization_distance": 0.92578125,
+          "stabilization_measured": 0.98046875,
+          "guarded_limits": 0.98046875,
+          "guarded_feet": 0.35546875,
+          "staged_measured": 0.98046875,
+          "staged_tracking": 0.31640625,
+          "staged_core": 0.40234375,
+          "staged_pose": 1.0,
+          "staged_heading": 1.0,
+          "staged_landing": 0.9375,
+          "staged_details": 1.0,
+          "staged_regression": 0.390625
+        }
+      },
+      {
+        "step": 32000,
+        "success_rate": 0.33203125,
+        "reason": "regress_stage",
+        "criteria": {
+          "tracking": 0.90234375,
+          "pattern": 0.953125,
+          "flight": 0.953125,
+          "motion": 0.953125,
+          "front_load": 0.95703125,
+          "front_motion": 0.953125,
+          "front_cycle": 0.953125,
+          "stable": 0.4296875,
+          "mature": 0.95703125,
+          "stabilization_pose": 1.0,
+          "stabilization_width": 0.01953125,
+          "stabilization_landing": 0.18359375,
+          "stabilization_distance": 0.89453125,
+          "stabilization_measured": 0.953125,
+          "guarded_limits": 0.94921875,
+          "guarded_feet": 0.43359375,
+          "staged_measured": 0.953125,
+          "staged_tracking": 0.3125,
+          "staged_core": 0.34765625,
+          "staged_pose": 1.0,
+          "staged_heading": 1.0,
+          "staged_landing": 0.91015625,
+          "staged_details": 1.0,
+          "staged_regression": 0.33203125
+        }
+      },
+      {
+        "step": 44000,
+        "success_rate": 0.46484375,
+        "reason": "hold",
+        "criteria": {
+          "tracking": 0.96875,
+          "pattern": 0.97265625,
+          "flight": 0.97265625,
+          "motion": 0.97265625,
+          "front_load": 0.97265625,
+          "front_motion": 0.97265625,
+          "front_cycle": 0.97265625,
+          "stable": 0.4609375,
+          "mature": 0.97265625,
+          "stabilization_pose": 1.0,
+          "stabilization_width": 0.0078125,
+          "stabilization_landing": 0.1640625,
+          "stabilization_distance": 0.9375,
+          "stabilization_measured": 0.97265625,
+          "guarded_limits": 0.97265625,
+          "guarded_feet": 0.4609375,
+          "staged_measured": 0.97265625,
+          "staged_tracking": 0.375,
+          "staged_core": 0.48046875,
+          "staged_pose": 1.0,
+          "staged_heading": 1.0,
+          "staged_landing": 0.94921875,
+          "staged_details": 1.0,
+          "staged_regression": 0.46484375
+        }
+      },
+      {
+        "step": 46000,
+        "success_rate": 0.5234375,
+        "reason": "hold",
+        "criteria": {
+          "tracking": 0.96875,
+          "pattern": 0.9765625,
+          "flight": 0.98046875,
+          "motion": 0.98046875,
+          "front_load": 0.98046875,
+          "front_motion": 0.98046875,
+          "front_cycle": 0.98046875,
+          "stable": 0.29296875,
+          "mature": 0.98046875,
+          "stabilization_pose": 1.0,
+          "stabilization_width": 0.0,
+          "stabilization_landing": 0.1328125,
+          "stabilization_distance": 0.95703125,
+          "stabilization_measured": 0.9765625,
+          "guarded_limits": 0.9765625,
+          "guarded_feet": 0.29296875,
+          "staged_measured": 0.9765625,
+          "staged_tracking": 0.39453125,
+          "staged_core": 0.54296875,
+          "staged_pose": 1.0,
+          "staged_heading": 1.0,
+          "staged_landing": 0.91796875,
+          "staged_details": 1.0,
+          "staged_regression": 0.5234375
+        }
+      },
+      {
+        "step": 48000,
+        "success_rate": 0.4609375,
+        "reason": "hold",
+        "criteria": {
+          "tracking": 0.97265625,
+          "pattern": 0.97265625,
+          "flight": 0.97265625,
+          "motion": 0.97265625,
+          "front_load": 0.97265625,
+          "front_motion": 0.97265625,
+          "front_cycle": 0.97265625,
+          "stable": 0.58203125,
+          "mature": 0.97265625,
+          "stabilization_pose": 1.0,
+          "stabilization_width": 0.00390625,
+          "stabilization_landing": 0.15234375,
+          "stabilization_distance": 0.9140625,
+          "stabilization_measured": 0.97265625,
+          "guarded_limits": 0.97265625,
+          "guarded_feet": 0.5859375,
+          "staged_measured": 0.97265625,
+          "staged_tracking": 0.4296875,
+          "staged_core": 0.4921875,
+          "staged_pose": 1.0,
+          "staged_heading": 1.0,
+          "staged_landing": 0.91796875,
+          "staged_details": 1.0,
+          "staged_regression": 0.4609375
+        }
+      }
+    ]
+  },
+  "play_tracking_decomposition": {
+    "formal": {
+      "samples": 1051,
+      "command_mean": 2.75,
+      "actual_vx_mean": 2.6080100536346436,
+      "error_bias": -0.14198987899112428,
+      "error_std": 0.16098552583753223,
+      "rmse": 0.2146566217592667,
+      "variance_fraction_of_mse": 0.5624515016197261
+    },
+    "last10s": {
+      "samples": 500,
+      "command_mean": 2.75,
+      "actual_vx_mean": 2.5988998413085938,
+      "error_bias": -0.1511001329421997,
+      "error_std": 0.16336293323460094,
+      "rmse": 0.22252797156798762,
+      "variance_fraction_of_mse": 0.5389367847446837
+    },
+    "last5s": {
+      "samples": 250,
+      "command_mean": 2.75,
+      "actual_vx_mean": 2.5639209747314453,
+      "error_bias": -0.1860791826248169,
+      "error_std": 0.16433054138448408,
+      "rmse": 0.24825388020741507,
+      "variance_fraction_of_mse": 0.43817185842838025
+    },
+    "complete_cycles": {
+      "count": 54,
+      "cycle_mean_velocity_rmse": 0.1579958254811944,
+      "mean_cycle_bias": -0.1424850120243651,
+      "cycles": [
+        {
+          "start_seconds": 9.02,
+          "end_seconds": 9.38,
+          "mean_vx": 2.6335272789001465,
+          "command": 2.75,
+          "mean_error": -0.11647295951843262
+        },
+        {
+          "start_seconds": 9.4,
+          "end_seconds": 9.78,
+          "mean_vx": 2.556748867034912,
+          "command": 2.75,
+          "mean_error": -0.19325079023838043
+        },
+        {
+          "start_seconds": 9.8,
+          "end_seconds": 10.16,
+          "mean_vx": 2.5525925159454346,
+          "command": 2.75,
+          "mean_error": -0.19740740954875946
+        },
+        {
+          "start_seconds": 10.18,
+          "end_seconds": 10.540000000000001,
+          "mean_vx": 2.600346088409424,
+          "command": 2.75,
+          "mean_error": -0.14965400099754333
+        },
+        {
+          "start_seconds": 10.56,
+          "end_seconds": 10.92,
+          "mean_vx": 2.578859806060791,
+          "command": 2.75,
+          "mean_error": -0.17114001512527466
+        },
+        {
+          "start_seconds": 10.94,
+          "end_seconds": 11.32,
+          "mean_vx": 2.6102373600006104,
+          "command": 2.75,
+          "mean_error": -0.13976261019706726
+        },
+        {
+          "start_seconds": 11.34,
+          "end_seconds": 11.700000000000001,
+          "mean_vx": 2.6197056770324707,
+          "command": 2.75,
+          "mean_error": -0.13029435276985168
+        },
+        {
+          "start_seconds": 11.72,
+          "end_seconds": 12.08,
+          "mean_vx": 2.6206436157226562,
+          "command": 2.75,
+          "mean_error": -0.1293560266494751
+        },
+        {
+          "start_seconds": 12.1,
+          "end_seconds": 12.46,
+          "mean_vx": 2.58857798576355,
+          "command": 2.75,
+          "mean_error": -0.16142208874225616
+        },
+        {
+          "start_seconds": 12.48,
+          "end_seconds": 12.86,
+          "mean_vx": 2.5704457759857178,
+          "command": 2.75,
+          "mean_error": -0.17955449223518372
+        },
+        {
+          "start_seconds": 12.88,
+          "end_seconds": 13.24,
+          "mean_vx": 2.6027228832244873,
+          "command": 2.75,
+          "mean_error": -0.14727692306041718
+        },
+        {
+          "start_seconds": 13.26,
+          "end_seconds": 13.620000000000001,
+          "mean_vx": 2.6187362670898438,
+          "command": 2.75,
+          "mean_error": -0.13126377761363983
+        },
+        {
+          "start_seconds": 13.64,
+          "end_seconds": 14.0,
+          "mean_vx": 2.599163055419922,
+          "command": 2.75,
+          "mean_error": -0.150836780667305
+        },
+        {
+          "start_seconds": 14.02,
+          "end_seconds": 14.4,
+          "mean_vx": 2.583113431930542,
+          "command": 2.75,
+          "mean_error": -0.16688668727874756
+        },
+        {
+          "start_seconds": 14.42,
+          "end_seconds": 14.780000000000001,
+          "mean_vx": 2.610959529876709,
+          "command": 2.75,
+          "mean_error": -0.13904060423374176
+        },
+        {
+          "start_seconds": 14.8,
+          "end_seconds": 15.16,
+          "mean_vx": 2.8394923210144043,
+          "command": 2.75,
+          "mean_error": 0.08949235826730728
+        },
+        {
+          "start_seconds": 15.18,
+          "end_seconds": 15.540000000000001,
+          "mean_vx": 2.7764346599578857,
+          "command": 2.75,
+          "mean_error": 0.026434723287820816
+        },
+        {
+          "start_seconds": 15.56,
+          "end_seconds": 15.94,
+          "mean_vx": 2.6063899993896484,
+          "command": 2.75,
+          "mean_error": -0.14361003041267395
+        },
+        {
+          "start_seconds": 15.96,
+          "end_seconds": 16.32,
+          "mean_vx": 2.625732898712158,
+          "command": 2.75,
+          "mean_error": -0.12426712363958359
+        },
+        {
+          "start_seconds": 16.34,
+          "end_seconds": 16.7,
+          "mean_vx": 2.5959365367889404,
+          "command": 2.75,
+          "mean_error": -0.1540634036064148
+        },
+        {
+          "start_seconds": 16.72,
+          "end_seconds": 17.080000000000002,
+          "mean_vx": 2.577606201171875,
+          "command": 2.75,
+          "mean_error": -0.17239385843276978
+        },
+        {
+          "start_seconds": 17.1,
+          "end_seconds": 17.48,
+          "mean_vx": 2.557068347930908,
+          "command": 2.75,
+          "mean_error": -0.19293150305747986
+        },
+        {
+          "start_seconds": 17.5,
+          "end_seconds": 17.86,
+          "mean_vx": 2.5721280574798584,
+          "command": 2.75,
+          "mean_error": -0.17787186801433563
+        },
+        {
+          "start_seconds": 17.88,
+          "end_seconds": 18.240000000000002,
+          "mean_vx": 2.623979091644287,
+          "command": 2.75,
+          "mean_error": -0.12602102756500244
+        },
+        {
+          "start_seconds": 18.26,
+          "end_seconds": 18.62,
+          "mean_vx": 2.6624655723571777,
+          "command": 2.75,
+          "mean_error": -0.08753441274166107
+        },
+        {
+          "start_seconds": 18.64,
+          "end_seconds": 19.02,
+          "mean_vx": 2.609917640686035,
+          "command": 2.75,
+          "mean_error": -0.14008232951164246
+        },
+        {
+          "start_seconds": 19.04,
+          "end_seconds": 19.400000000000002,
+          "mean_vx": 2.6371312141418457,
+          "command": 2.75,
+          "mean_error": -0.11286892741918564
+        },
+        {
+          "start_seconds": 19.42,
+          "end_seconds": 19.78,
+          "mean_vx": 2.632471799850464,
+          "command": 2.75,
+          "mean_error": -0.11752842366695404
+        },
+        {
+          "start_seconds": 19.8,
+          "end_seconds": 20.16,
+          "mean_vx": 2.5744290351867676,
+          "command": 2.75,
+          "mean_error": -0.17557093501091003
+        },
+        {
+          "start_seconds": 20.18,
+          "end_seconds": 20.56,
+          "mean_vx": 2.5920138359069824,
+          "command": 2.75,
+          "mean_error": -0.15798643231391907
+        },
+        {
+          "start_seconds": 20.580000000000002,
+          "end_seconds": 20.94,
+          "mean_vx": 2.5977976322174072,
+          "command": 2.75,
+          "mean_error": -0.1522022932767868
+        },
+        {
+          "start_seconds": 20.96,
+          "end_seconds": 21.32,
+          "mean_vx": 2.6378259658813477,
+          "command": 2.75,
+          "mean_error": -0.11217392235994339
+        },
+        {
+          "start_seconds": 21.34,
+          "end_seconds": 21.7,
+          "mean_vx": 2.7661612033843994,
+          "command": 2.75,
+          "mean_error": 0.016161667183041573
+        },
+        {
+          "start_seconds": 21.72,
+          "end_seconds": 22.1,
+          "mean_vx": 2.778695821762085,
+          "command": 2.75,
+          "mean_error": 0.02869575098156929
+        },
+        {
+          "start_seconds": 22.12,
+          "end_seconds": 22.48,
+          "mean_vx": 2.6070544719696045,
+          "command": 2.75,
+          "mean_error": -0.1429455280303955
+        },
+        {
+          "start_seconds": 22.5,
+          "end_seconds": 22.86,
+          "mean_vx": 2.5989582538604736,
+          "command": 2.75,
+          "mean_error": -0.15104155242443085
+        },
+        {
+          "start_seconds": 22.88,
+          "end_seconds": 23.240000000000002,
+          "mean_vx": 2.6382787227630615,
+          "command": 2.75,
+          "mean_error": -0.11172118037939072
+        },
+        {
+          "start_seconds": 23.26,
+          "end_seconds": 23.64,
+          "mean_vx": 2.6146812438964844,
+          "command": 2.75,
+          "mean_error": -0.13531872630119324
+        },
+        {
+          "start_seconds": 23.66,
+          "end_seconds": 24.02,
+          "mean_vx": 2.619636058807373,
+          "command": 2.75,
+          "mean_error": -0.13036388158798218
+        },
+        {
+          "start_seconds": 24.04,
+          "end_seconds": 24.400000000000002,
+          "mean_vx": 2.595672130584717,
+          "command": 2.75,
+          "mean_error": -0.15432791411876678
+        },
+        {
+          "start_seconds": 24.42,
+          "end_seconds": 24.78,
+          "mean_vx": 2.6243340969085693,
+          "command": 2.75,
+          "mean_error": -0.12566573917865753
+        },
+        {
+          "start_seconds": 24.8,
+          "end_seconds": 25.18,
+          "mean_vx": 2.5715484619140625,
+          "command": 2.75,
+          "mean_error": -0.17845137417316437
+        },
+        {
+          "start_seconds": 25.2,
+          "end_seconds": 25.560000000000002,
+          "mean_vx": 2.571796417236328,
+          "command": 2.75,
+          "mean_error": -0.1782035082578659
+        },
+        {
+          "start_seconds": 25.580000000000002,
+          "end_seconds": 25.94,
+          "mean_vx": 2.5745139122009277,
+          "command": 2.75,
+          "mean_error": -0.1754862666130066
+        },
+        {
+          "start_seconds": 25.96,
+          "end_seconds": 26.32,
+          "mean_vx": 2.5982649326324463,
+          "command": 2.75,
+          "mean_error": -0.15173496305942535
+        },
+        {
+          "start_seconds": 26.34,
+          "end_seconds": 26.72,
+          "mean_vx": 2.601332902908325,
+          "command": 2.75,
+          "mean_error": -0.14866717159748077
+        },
+        {
+          "start_seconds": 26.740000000000002,
+          "end_seconds": 27.1,
+          "mean_vx": 2.5710065364837646,
+          "command": 2.75,
+          "mean_error": -0.17899338901042938
+        },
+        {
+          "start_seconds": 27.12,
+          "end_seconds": 27.48,
+          "mean_vx": 2.342700958251953,
+          "command": 2.75,
+          "mean_error": -0.40729910135269165
+        },
+        {
+          "start_seconds": 27.5,
+          "end_seconds": 27.86,
+          "mean_vx": 2.4940731525421143,
+          "command": 2.75,
+          "mean_error": -0.2559269964694977
+        },
+        {
+          "start_seconds": 27.88,
+          "end_seconds": 28.26,
+          "mean_vx": 2.566558837890625,
+          "command": 2.75,
+          "mean_error": -0.18344123661518097
+        },
+        {
+          "start_seconds": 28.28,
+          "end_seconds": 28.64,
+          "mean_vx": 2.6182472705841064,
+          "command": 2.75,
+          "mean_error": -0.13175277411937714
+        },
+        {
+          "start_seconds": 28.66,
+          "end_seconds": 29.02,
+          "mean_vx": 2.6032745838165283,
+          "command": 2.75,
+          "mean_error": -0.14672555029392242
+        },
+        {
+          "start_seconds": 29.04,
+          "end_seconds": 29.400000000000002,
+          "mean_vx": 2.607337236404419,
+          "command": 2.75,
+          "mean_error": -0.14266249537467957
+        },
+        {
+          "start_seconds": 29.42,
+          "end_seconds": 29.8,
+          "mean_vx": 2.5764803886413574,
+          "command": 2.75,
+          "mean_error": -0.1735197901725769
+        }
+      ]
+    }
+  },
+  "limitations": [
+    "Per-episode training logs have RMSE only, no formal mean velocity or per-cycle velocity; variance/bias separation is available for saved play only.",
+    "Threshold alternatives are retrospective counters, not performance predictions or changed training settings.",
+    "Stage0/1 visits are stochastic policies during training, not matched fixed-policy experiments."
+  ]
+}

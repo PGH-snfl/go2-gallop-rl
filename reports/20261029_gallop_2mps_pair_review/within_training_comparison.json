@@ -1,0 +1,84 @@
+{
+  "all_eligible": {
+    "first_count": 1091,
+    "last_count": 1168,
+    "measures": {
+      "vx_rmse": {
+        "first_200_iterations": 0.2190406791572173,
+        "last_200_iterations": 0.11509895644928902,
+        "change_percent": -47.453159434975866
+      },
+      "attitude_rms": {
+        "first_200_iterations": 0.08023450002893737,
+        "last_200_iterations": 0.048038941572024804,
+        "change_percent": -40.12682629704294
+      },
+      "pair_joint_cost": {
+        "first_200_iterations": 0.14484547597964786,
+        "last_200_iterations": 0.07551578478249785,
+        "change_percent": -47.86458860951341
+      },
+      "pair_rom_cost": {
+        "first_200_iterations": 0.0008433370393426688,
+        "last_200_iterations": 6.50468797701856e-05,
+        "change_percent": -92.28696514730507
+      },
+      "pair_load_cost": {
+        "first_200_iterations": 0.0018800011873164818,
+        "last_200_iterations": 0.000352304959245335,
+        "change_percent": -81.26038634325461
+      },
+      "pair_stance_cost": {
+        "first_200_iterations": 0.0007240260116520764,
+        "last_200_iterations": 5.650036350436326e-05,
+        "change_percent": -92.19636275560858
+      },
+      "action_clip_fraction": {
+        "first_200_iterations": 0.14459175990397619,
+        "last_200_iterations": 0.16363789506052454,
+        "change_percent": 13.172351708836615
+      }
+    }
+  },
+  "full_timeout_only": {
+    "first_count": 988,
+    "last_count": 1153,
+    "measures": {
+      "vx_rmse": {
+        "first_200_iterations": 0.16587104887403697,
+        "last_200_iterations": 0.11387586121908604,
+        "change_percent": -31.346752798576837
+      },
+      "attitude_rms": {
+        "first_200_iterations": 0.06436841374994652,
+        "last_200_iterations": 0.047439089392256134,
+        "change_percent": -26.300670424248963
+      },
+      "pair_joint_cost": {
+        "first_200_iterations": 0.14249895692535258,
+        "last_200_iterations": 0.07524386063825536,
+        "change_percent": -47.19690427090529
+      },
+      "pair_rom_cost": {
+        "first_200_iterations": 0.0006255162415670022,
+        "last_200_iterations": 6.121031757414186e-05,
+        "change_percent": -90.21443193532404
+      },
+      "pair_load_cost": {
+        "first_200_iterations": 0.0006590539451471526,
+        "last_200_iterations": 0.000351255710148273,
+        "change_percent": -46.7030411190627
+      },
+      "pair_stance_cost": {
+        "first_200_iterations": 0.00018207958672420034,
+        "last_200_iterations": 5.41300226109796e-05,
+        "change_percent": -70.27122941959911
+      },
+      "action_clip_fraction": {
+        "first_200_iterations": 0.15157505871373633,
+        "last_200_iterations": 0.1640182553894708,
+        "change_percent": 8.209263965541048
+      }
+    }
+  }
+}

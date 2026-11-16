@@ -1,0 +1,26 @@
+{
+  "checked_at": "2026-11-12",
+  "browser_rechecked": [
+    "https://raw.githubusercontent.com/unitreerobotics/unitree_ros/master/robots/go2_description/urdf/go2_description.urdf",
+    "https://www.unitree.com/go2/"
+  ],
+  "verified_limits": {
+    "hip_thigh_velocity": 30.1,
+    "calf_velocity": 15.7,
+    "hip_thigh_effort": 23.7,
+    "calf_effort": 45.43,
+    "public_hip_range_degrees": [
+      -48,
+      48
+    ]
+  },
+  "scope": "URDF version-pinned numerical audit; publicly listed Go2 software bounds and product ranges, not EDU serial calibration or continuous duty.",
+  "unitree_mujoco": {
+    "path": "/home/cvr/GH/unitree/unitree_mujoco",
+    "commit": "1eb6642e3f3fdfb7fb13a9794fd6a2dd93ea0e7d"
+  },
+  "unitree_rl_lab_official": {
+    "path": "/home/cvr/GH/unitree/unitree_rl_lab_official",
+    "commit": "4960b84732b0c2ec593dccbfe963fda1bcd7b1e3"
+  }
+}

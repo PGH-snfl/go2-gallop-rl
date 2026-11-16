@@ -1,0 +1,350 @@
+{
+  "aggregate": {
+    "formal_samples": 1075,
+    "formal_seconds": 21.49999951943755,
+    "target_operating_violation_fraction": 0.0,
+    "target_physical_violation_fraction": 0.0,
+    "target_rate_violation_fraction": 0.0,
+    "original_mechanical_violation_fraction": 0.0,
+    "new_physical_violation_fraction_over_1mrad": 0.0,
+    "new_physical_violation_fraction_over_guard_tolerance": 0.0,
+    "max_actual_new_physical_excess_rad": 0.0,
+    "filter_intervention_fraction": 0.0851937984496124,
+    "request_execution_rmse_rad": 0.01922391913831234,
+    "projection_cost_mean": 0.0029675000985346805,
+    "rate_intervention_fraction": 0.0851937984496124,
+    "raw_angle_exceed_fraction": 0.0,
+    "target_rate_abs_p95": 11.35682325363159,
+    "tracking_rmse_rad": 0.23816218972206116,
+    "max_violation_seconds": 0.0
+  },
+  "foot_height": {
+    "FL": {
+      "cap_m": 0.16,
+      "p50_p90_p95_max_m": [
+        0.0017444118857383728,
+        0.04960344731807709,
+        0.05763498023152351,
+        0.07192618399858475
+      ],
+      "fraction_over_cap": 0.0,
+      "fraction_over_cap_plus_1mm": 0.0
+    },
+    "FR": {
+      "cap_m": 0.16,
+      "p50_p90_p95_max_m": [
+        0.0018022805452346802,
+        0.04367398619651796,
+        0.050123355537652965,
+        0.06315165758132935
+      ],
+      "fraction_over_cap": 0.0,
+      "fraction_over_cap_plus_1mm": 0.0
+    },
+    "RL": {
+      "cap_m": 0.1,
+      "p50_p90_p95_max_m": [
+        0.001763850450515747,
+        0.036533357203006746,
+        0.04231043383479118,
+        0.06342024356126785
+      ],
+      "fraction_over_cap": 0.0,
+      "fraction_over_cap_plus_1mm": 0.0
+    },
+    "RR": {
+      "cap_m": 0.1,
+      "p50_p90_p95_max_m": [
+        0.0016954317688941956,
+        0.030402429401874542,
+        0.03579220809042453,
+        0.04454830288887024
+      ],
+      "fraction_over_cap": 0.0,
+      "fraction_over_cap_plus_1mm": 0.0
+    }
+  },
+  "per_joint": [
+    {
+      "joint": "FL_hip_joint",
+      "intervention": 0.2586046511627907,
+      "request_rate_limited": 0.2586046511627907,
+      "actual_max_excess_rad": 0.0,
+      "tracking_rmse_rad": 0.1055341511964798,
+      "target_rate_abs_max": 6.000000476837158,
+      "target_rate_limit": 6.0
+    },
+    {
+      "joint": "FR_hip_joint",
+      "intervention": 0.21674418604651163,
+      "request_rate_limited": 0.21674418604651163,
+      "actual_max_excess_rad": 0.0,
+      "tracking_rmse_rad": 0.1272803097963333,
+      "target_rate_abs_max": 6.000000476837158,
+      "target_rate_limit": 6.0
+    },
+    {
+      "joint": "RL_hip_joint",
+      "intervention": 0.25302325581395346,
+      "request_rate_limited": 0.25302325581395346,
+      "actual_max_excess_rad": 0.0,
+      "tracking_rmse_rad": 0.12978969514369965,
+      "target_rate_abs_max": 6.000000476837158,
+      "target_rate_limit": 6.0
+    },
+    {
+      "joint": "RR_hip_joint",
+      "intervention": 0.2344186046511628,
+      "request_rate_limited": 0.2344186046511628,
+      "actual_max_excess_rad": 0.0,
+      "tracking_rmse_rad": 0.10478630661964417,
+      "target_rate_abs_max": 6.000000476837158,
+      "target_rate_limit": 6.0
+    },
+    {
+      "joint": "FL_thigh_joint",
+      "intervention": 0.010232558139534883,
+      "request_rate_limited": 0.010232558139534883,
+      "actual_max_excess_rad": 0.0,
+      "tracking_rmse_rad": 0.2618812620639801,
+      "target_rate_abs_max": 16.0,
+      "target_rate_limit": 16.0
+    },
+    {
+      "joint": "FR_thigh_joint",
+      "intervention": 0.012093023255813953,
+      "request_rate_limited": 0.012093023255813953,
+      "actual_max_excess_rad": 0.0,
+      "tracking_rmse_rad": 0.23941458761692047,
+      "target_rate_abs_max": 16.000003814697266,
+      "target_rate_limit": 16.0
+    },
+    {
+      "joint": "RL_thigh_joint",
+      "intervention": 0.009302325581395349,
+      "request_rate_limited": 0.009302325581395349,
+      "actual_max_excess_rad": 0.0,
+      "tracking_rmse_rad": 0.19895732402801514,
+      "target_rate_abs_max": 16.0,
+      "target_rate_limit": 16.0
+    },
+    {
+      "joint": "RR_thigh_joint",
+      "intervention": 0.013023255813953489,
+      "request_rate_limited": 0.013023255813953489,
+      "actual_max_excess_rad": 0.0,
+      "tracking_rmse_rad": 0.19646620750427246,
+      "target_rate_abs_max": 16.000003814697266,
+      "target_rate_limit": 16.0
+    },
+    {
+      "joint": "FL_calf_joint",
+      "intervention": 0.0037209302325581397,
+      "request_rate_limited": 0.0037209302325581397,
+      "actual_max_excess_rad": 0.0,
+      "tracking_rmse_rad": 0.3104790151119232,
+      "target_rate_abs_max": 16.000003814697266,
+      "target_rate_limit": 16.0
+    },
+    {
+      "joint": "FR_calf_joint",
+      "intervention": 0.004651162790697674,
+      "request_rate_limited": 0.004651162790697674,
+      "actual_max_excess_rad": 0.0,
+      "tracking_rmse_rad": 0.3315739035606384,
+      "target_rate_abs_max": 16.000003814697266,
+      "target_rate_limit": 16.0
+    },
+    {
+      "joint": "RL_calf_joint",
+      "intervention": 0.0,
+      "request_rate_limited": 0.0,
+      "actual_max_excess_rad": 0.0,
+      "tracking_rmse_rad": 0.34393566846847534,
+      "target_rate_abs_max": 14.606398582458496,
+      "target_rate_limit": 16.0
+    },
+    {
+      "joint": "RR_calf_joint",
+      "intervention": 0.0065116279069767444,
+      "request_rate_limited": 0.0065116279069767444,
+      "actual_max_excess_rad": 0.0,
+      "tracking_rmse_rad": 0.3110902011394501,
+      "target_rate_abs_max": 16.000003814697266,
+      "target_rate_limit": 16.0
+    }
+  ],
+  "checks": {
+    "command_projection_reproduced": true,
+    "rate_and_cost_reproduced": true,
+    "actual_state_excess_reproduced": true,
+    "height_cost_reproduced": true
+  },
+  "limits": {
+    "joint_names": [
+      "FL_hip_joint",
+      "FR_hip_joint",
+      "RL_hip_joint",
+      "RR_hip_joint",
+      "FL_thigh_joint",
+      "FR_thigh_joint",
+      "RL_thigh_joint",
+      "RR_thigh_joint",
+      "FL_calf_joint",
+      "FR_calf_joint",
+      "RL_calf_joint",
+      "RR_calf_joint"
+    ],
+    "original_limits": [
+      [
+        -1.0471998453140259,
+        1.0471998453140259
+      ],
+      [
+        -1.0471998453140259,
+        1.0471998453140259
+      ],
+      [
+        -1.0471998453140259,
+        1.0471998453140259
+      ],
+      [
+        -1.0471998453140259,
+        1.0471998453140259
+      ],
+      [
+        -1.5707999467849731,
+        3.4906997680664062
+      ],
+      [
+        -1.5707999467849731,
+        3.4906997680664062
+      ],
+      [
+        -0.5235999226570129,
+        4.537899494171143
+      ],
+      [
+        -0.5235999226570129,
+        4.537899494171143
+      ],
+      [
+        -2.7227001190185547,
+        -0.8377599120140076
+      ],
+      [
+        -2.7227001190185547,
+        -0.8377599120140076
+      ],
+      [
+        -2.7227001190185547,
+        -0.8377599120140076
+      ],
+      [
+        -2.7227001190185547,
+        -0.8377599120140076
+      ]
+    ],
+    "physics_limits": [
+      [
+        -0.9424798488616943,
+        0.9424798488616943
+      ],
+      [
+        -0.9424798488616943,
+        0.9424798488616943
+      ],
+      [
+        -0.9424798488616943,
+        0.9424798488616943
+      ],
+      [
+        -0.9424798488616943,
+        0.9424798488616943
+      ],
+      [
+        -1.3177247047424316,
+        3.2376246452331543
+      ],
+      [
+        -1.3177247047424316,
+        3.2376246452331543
+      ],
+      [
+        -0.2705249786376953,
+        4.284824371337891
+      ],
+      [
+        -0.2705249786376953,
+        4.284824371337891
+      ],
+      [
+        -2.628453016281128,
+        -0.9320070743560791
+      ],
+      [
+        -2.628453016281128,
+        -0.9320070743560791
+      ],
+      [
+        -2.628453016281128,
+        -0.9320070743560791
+      ],
+      [
+        -2.628453016281128,
+        -0.9320070743560791
+      ]
+    ],
+    "target_limits": [
+      [
+        -0.848231852054596,
+        0.848231852054596
+      ],
+      [
+        -0.848231852054596,
+        0.848231852054596
+      ],
+      [
+        -0.848231852054596,
+        0.848231852054596
+      ],
+      [
+        -0.848231852054596,
+        0.848231852054596
+      ],
+      [
+        -1.0899572372436523,
+        3.009857177734375
+      ],
+      [
+        -1.0899572372436523,
+        3.009857177734375
+      ],
+      [
+        -0.042757511138916016,
+        4.057056903839111
+      ],
+      [
+        -0.042757511138916016,
+        4.057056903839111
+      ],
+      [
+        -2.543630599975586,
+        -1.0168293714523315
+      ],
+      [
+        -2.543630599975586,
+        -1.0168293714523315
+      ],
+      [
+        -2.543630599975586,
+        -1.0168293714523315
+      ],
+      [
+        -2.543630599975586,
+        -1.0168293714523315
+      ]
+    ]
+  },
+  "note": "Saved observations only. Physical solver tolerance and command speed are distinct from actual joint velocity."
+}

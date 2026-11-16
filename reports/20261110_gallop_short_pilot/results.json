@@ -1,0 +1,187 @@
+{
+  "train": "runs/isaac/train/unitree_go2_gallop/20261110_214726_dc4067",
+  "evaluation": "runs/isaac/check/unitree_go2_gallop/20261110_215521_45f902",
+  "policy_updates": 500,
+  "summaries": {
+    "parent30k": {
+      "starts": 8,
+      "full_student_10s": 8,
+      "formal_seconds_mean": 21.845,
+      "terminations": 0,
+      "startup_deadline_failures": 0,
+      "full_successes": 0,
+      "mean_vx": 2.4860412776470184,
+      "yaw_rms_deg": 1.9292486201548182,
+      "roll_pitch_rms_deg": [
+        1.1820308009572897,
+        1.729473235816783
+      ],
+      "vx_rmse": 0.15479616151215084,
+      "leap_events": 448,
+      "leap_distance_mean": 0.18916707672178745,
+      "leap_distance_max": 0.2229546755552292,
+      "leap_air_seconds_mean": 0.08228795137256384,
+      "landing_fraction": 0.75,
+      "front_width_fraction": 0.4016341855041191,
+      "hind_width_fraction": 1.0,
+      "raw_clip_fraction": 0.041981354691215694,
+      "filter_fraction": 0.4735542192120279,
+      "actual_guard_failure_fraction": 0.0,
+      "forelimb_gate_pass_count": 8,
+      "foot_height_gate_pass_count": 8,
+      "actual_guard_excess_max_rad": 0.0042656660079956055
+    },
+    "update250": {
+      "starts": 8,
+      "full_student_10s": 8,
+      "formal_seconds_mean": 21.8275,
+      "terminations": 0,
+      "startup_deadline_failures": 0,
+      "full_successes": 0,
+      "mean_vx": 2.465986669063568,
+      "yaw_rms_deg": 2.851363677012789,
+      "roll_pitch_rms_deg": [
+        1.4594272978438663,
+        1.89118412662219
+      ],
+      "vx_rmse": 0.14489570321552692,
+      "leap_events": 447,
+      "leap_distance_mean": 0.20369552625905749,
+      "leap_distance_max": 0.23270410299301147,
+      "leap_air_seconds_mean": 0.088579416958411,
+      "landing_fraction": 0.7085201793721974,
+      "front_width_fraction": 0.6641074977886654,
+      "hind_width_fraction": 0.9781713318908234,
+      "raw_clip_fraction": 0.04198635599841998,
+      "filter_fraction": 0.486628146561225,
+      "actual_guard_failure_fraction": 0.0,
+      "forelimb_gate_pass_count": 8,
+      "foot_height_gate_pass_count": 5,
+      "actual_guard_excess_max_rad": 0.0038567185401916504
+    },
+    "update500": {
+      "starts": 8,
+      "full_student_10s": 8,
+      "formal_seconds_mean": 21.872500000000002,
+      "terminations": 0,
+      "startup_deadline_failures": 0,
+      "full_successes": 0,
+      "mean_vx": 2.4721106588840485,
+      "yaw_rms_deg": 0.7527492928790781,
+      "roll_pitch_rms_deg": [
+        1.7704038828379982,
+        1.4766887170464011
+      ],
+      "vx_rmse": 0.1423820025071645,
+      "leap_events": 452,
+      "leap_distance_mean": 0.2037521809075786,
+      "leap_distance_max": 0.24349179863929749,
+      "leap_air_seconds_mean": 0.08844026000098845,
+      "landing_fraction": 0.7410714285714286,
+      "front_width_fraction": 0.6137715081653684,
+      "hind_width_fraction": 0.9874240085154653,
+      "raw_clip_fraction": 0.04957704120739618,
+      "filter_fraction": 0.4807216041593628,
+      "actual_guard_failure_fraction": 0.0,
+      "forelimb_gate_pass_count": 8,
+      "foot_height_gate_pass_count": 8,
+      "actual_guard_excess_max_rad": 0.0017202496528625488
+    }
+  },
+  "directional_decisions": {
+    "update250": {
+      "directional_pass": false,
+      "criteria": {
+        "full_student": true,
+        "nominal_terminations": true,
+        "flight_retained": true,
+        "actual_guard": true,
+        "raw_clip": true,
+        "speed": true,
+        "yaw": true,
+        "forelimbs": true,
+        "feet": false,
+        "roll_pitch": true,
+        "hind_width": true,
+        "stability_gain": true
+      },
+      "front_width_gain": 0.2624733122845463,
+      "landing_gain": -0.041479820627802644
+    },
+    "update500": {
+      "directional_pass": true,
+      "criteria": {
+        "full_student": true,
+        "nominal_terminations": true,
+        "flight_retained": true,
+        "actual_guard": true,
+        "raw_clip": true,
+        "speed": true,
+        "yaw": true,
+        "forelimbs": true,
+        "feet": true,
+        "roll_pitch": true,
+        "hind_width": true,
+        "stability_gain": true
+      },
+      "front_width_gain": 0.2121373226612493,
+      "landing_gain": -0.008928571428571397
+    }
+  },
+  "training_windows": [
+    {
+      "start_update": 0,
+      "end_update": 125,
+      "episodes": 587,
+      "startup_completed_fraction": 0.7597955706984668,
+      "startup_deadline_failures": 7,
+      "measured_5s": 446,
+      "full_successes": 0,
+      "leap_events": 25455,
+      "mean_leap_m": 0.17324993660725818,
+      "max_leap_m": 0.31713756918907166
+    },
+    {
+      "start_update": 125,
+      "end_update": 250,
+      "episodes": 601,
+      "startup_completed_fraction": 0.8069883527454242,
+      "startup_deadline_failures": 1,
+      "measured_5s": 484,
+      "full_successes": 0,
+      "leap_events": 27659,
+      "mean_leap_m": 0.17715071150393621,
+      "max_leap_m": 0.3168897330760956
+    },
+    {
+      "start_update": 250,
+      "end_update": 375,
+      "episodes": 590,
+      "startup_completed_fraction": 0.8203389830508474,
+      "startup_deadline_failures": 1,
+      "measured_5s": 484,
+      "full_successes": 0,
+      "leap_events": 28365,
+      "mean_leap_m": 0.175218352445866,
+      "max_leap_m": 0.31182652711868286
+    },
+    {
+      "start_update": 375,
+      "end_update": 500,
+      "episodes": 573,
+      "startup_completed_fraction": 0.8656195462478184,
+      "startup_deadline_failures": 0,
+      "measured_5s": 495,
+      "full_successes": 0,
+      "leap_events": 29162,
+      "mean_leap_m": 0.17802954739852989,
+      "max_leap_m": 0.3071328401565552
+    }
+  ],
+  "limitations": [
+    "Nominal plane and eight small paired initial perturbations; a pilot, not staged graduation or broad domain validation.",
+    "Common updated controller and 18cm goal used for all three policies; this isolates checkpoint change under the pilot task, not individual startup/goal effects.",
+    "Training aggregates include noisy randomized episodes and are separate from frozen nominal evaluation.",
+    "No 80cm training or feasibility claim; no new Sim2Sim or hardware test."
+  ]
+}

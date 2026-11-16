@@ -1,0 +1,103 @@
+{
+  "checks": {
+    "actor_exact": true,
+    "critic_exact": true,
+    "initial_std_exact": true,
+    "optimizer_fresh": true,
+    "iteration_zero": true,
+    "std_frozen": true,
+    "entropy_zero": true,
+    "mean_actor_trainable": true,
+    "critic_trainable": true,
+    "fixed_goal_enabled": true,
+    "stage_controller_disabled": true,
+    "annealed_mean_std16": true,
+    "all_mean_weights_preserved": true,
+    "fixed2m_goal": true,
+    "fixed50cm_goal": true,
+    "no_cohorts_or_decisions": true,
+    "no_confirmed_stage_state": true,
+    "target_rates_calf12": true,
+    "actual_calf_limit15p7": true,
+    "target_inside_original": true,
+    "unchanged_original_weights": true
+  },
+  "all_checks_passed": true,
+  "checkpoint": "/home/cvr/GH/go2_animalization/gallop/runs/isaac/train/unitree_go2_gallop/20261111_155012_ad6309/model_final.pt",
+  "sha256": "93394343a7faf50f848e94ec4138c6a354641addb5b0d4e0b65db3f7ad4674a2",
+  "parent_stage": {
+    "index": 1,
+    "goal": {
+      "name": "speed_275",
+      "speed": 2.75,
+      "leap": 0.18,
+      "alpha": 0.0,
+      "period": 0.385,
+      "touchdown": [
+        0.25,
+        0.5,
+        0.0,
+        0.125
+      ],
+      "duty": [
+        0.45,
+        0.3,
+        0.35,
+        0.45
+      ],
+      "air_seconds": 0.077,
+      "flight_min_seconds": 0.06,
+      "flight_prepare_seconds": 0.08,
+      "flight_recovery_seconds": 0.08,
+      "flight_takeoff_vz": 0.4,
+      "flight_max_landing_vz": 1.2
+    },
+    "highest_confirmed_stage": 0,
+    "sha256": "93394343a7faf50f848e94ec4138c6a354641addb5b0d4e0b65db3f7ad4674a2",
+    "stage_iterations": 2000,
+    "cumulative_iterations": 50000
+  },
+  "restored": {
+    "parent_iteration_zero_based": 1999,
+    "parent_stage_iterations": 2000,
+    "actor_critic_restored": true,
+    "noise_restored": true,
+    "optimizer_reset": true,
+    "stage_iteration_start": 0,
+    "actor_observations": [
+      49,
+      49
+    ],
+    "critic_observations": [
+      64,
+      64
+    ],
+    "added_heading_columns_zero": false
+  },
+  "new_goal": {
+    "speed": 2.0,
+    "distance": 0.5,
+    "period": 0.6,
+    "reference_air": 0.3
+  },
+  "initial_std": [
+    0.2183106541633606,
+    0.25593674182891846,
+    0.18886880576610565,
+    0.2125876098871231,
+    0.19019629061222076,
+    0.15348270535469055,
+    0.20189067721366882,
+    0.169297456741333,
+    0.23376424610614777,
+    0.2593441307544708,
+    0.1558968722820282,
+    0.1604236364364624
+  ],
+  "target_std_mean": 0.16,
+  "actor_max_error": 0.0,
+  "critic_max_error": 0.0,
+  "policy_updates": 0,
+  "optimizer_steps": 0,
+  "physics_steps": 0
+}

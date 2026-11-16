@@ -1,0 +1,15 @@
+{
+  "tests/test_gallop_edu_validation.py": "71e1aadfc597d688e0efd3d87879b96cc75399c604c096fcd9b28d74e1e0a7a0",
+  "isaac_task/export.py": "4925b4c4e16364a387441e900e636c67ab5adeb1366d5dfde569c12ff119c5da",
+  "scripts/analysis/collect_guarded_diagnostics.py": "c4dfc4a4318612f1de9de31ca898d9780d20f5192a325125fa50d9a9b9a21356",
+  "scripts/analysis/collect_gallop.py": "759ba61d25e5a9118f451cc4dfc6225a57b99410304647dfa8111831737b9611",
+  "scripts/analysis/collect_edu_validation.py": "c40a58af2b8504209a961fc56b2c470730c1c1738eabca1c6e43e247abd94809",
+  "scripts/validation/sim2sim_gallop.py": "6c7fbe86f069dd43c030ec26d504915772efc594b7e13e3e05da6c762b1b1f15",
+  "scripts/validation/validate_gallop_edu.py": "d3e3ec096da50b8bbaae1b48b7c2212c4e8f6b9ffcc1ec29c677ac9a7e61f13d",
+  "configs/active_gallop_branch.json": "d15ce2109b59a98c2c2337dc5d0c28a24bf47b827b826c9540575c45c23ac7ff",
+  "documentation/README.md": "673d24e4ba4d58d1a5978f7122cc6223a6a7f0aa31a6251d8f314d42c945a91d",
+  "documentation/review_README.md": "7aca3f4dc82f6343c668546a39b6c0bfac0991343f30fadd4fb0d4088e685fc4",
+  "documentation/AGENTS.md": "b773458f214debd9f856697d1a3186536228c5ea2b8f363ae9a6ddb0d59db258",
+  "documentation/docs/CONTINUE_HERE.md": "2a122c403d8eddbeaa9968bf89a1cbc0e363c8a127cff08395ec3057d7c12336",
+  "gpd/rl_mujoco.py": "c8bc9224d542ddb7b4b4d036e84eec728518a1bf49816ab37a7e467447478196"
+}

@@ -1,0 +1,118 @@
+{
+  "all_eligible": {
+    "episodes": 9671,
+    "startup_completed_fraction": 0.8103608727122324,
+    "episodes_with_gallop_metrics": 7836,
+    "reported_success_rate": 0.0,
+    "reported_tracking_pass_fraction": 0.9880040837161818,
+    "natural_timeout_fraction": 0.8046737669320649,
+    "all_stage_weighted_yaw_rmse_rad": 0.06594559199342594,
+    "all_stage_weighted_roll_pitch_rate_rms": [
+      0.8914953826382146,
+      0.6122112569779536
+    ],
+    "all_stage_weighted_quiet_score": 0.6869987148132022,
+    "all_stage_weighted_front_hind_width_m": [
+      0.26335172575024046,
+      0.2893647104998994
+    ],
+    "all_stage_weighted_front_hind_width_scores": [
+      0.6024227154587529,
+      0.741651343086363
+    ],
+    "all_stage_weighted_forward_score": 0.6302526409340521,
+    "measured_flight_events": 422389.0,
+    "qualified_events": 341042.0,
+    "event_weighted_distance_m": 0.163479052683252,
+    "event_weighted_air_seconds": 0.07250550720816694,
+    "stable_landing_fraction_of_finished_recoveries": 0.5809339037236836,
+    "note": "Training aggregates are stochastic, not independent evaluation; posture uses all stages and event means are event-weighted."
+  },
+  "first_200": {
+    "episodes": 898,
+    "startup_completed_fraction": 0.7873051224944321,
+    "episodes_with_gallop_metrics": 707,
+    "reported_success_rate": 0.0,
+    "reported_tracking_pass_fraction": 0.9957567185289957,
+    "natural_timeout_fraction": 0.7828507795100222,
+    "all_stage_weighted_yaw_rmse_rad": 0.06196382117339647,
+    "all_stage_weighted_roll_pitch_rate_rms": [
+      0.8941325938365252,
+      0.6266134291217138
+    ],
+    "all_stage_weighted_quiet_score": 0.6821975957154263,
+    "all_stage_weighted_front_hind_width_m": [
+      0.26107332315131737,
+      0.28941284381704224
+    ],
+    "all_stage_weighted_front_hind_width_scores": [
+      0.5936054204041726,
+      0.7435079967004617
+    ],
+    "all_stage_weighted_forward_score": 0.6264445047455985,
+    "measured_flight_events": 37604.0,
+    "qualified_events": 29966.0,
+    "event_weighted_distance_m": 0.16164582800415334,
+    "event_weighted_air_seconds": 0.07202903592608154,
+    "stable_landing_fraction_of_finished_recoveries": 0.5551512394814646,
+    "note": "Training aggregates are stochastic, not independent evaluation; posture uses all stages and event means are event-weighted."
+  },
+  "last_200": {
+    "episodes": 1031,
+    "startup_completed_fraction": 0.8118331716779825,
+    "episodes_with_gallop_metrics": 837,
+    "reported_success_rate": 0.0,
+    "reported_tracking_pass_fraction": 0.992831541218638,
+    "natural_timeout_fraction": 0.8069835111542192,
+    "all_stage_weighted_yaw_rmse_rad": 0.0683975160626457,
+    "all_stage_weighted_roll_pitch_rate_rms": [
+      0.8866939180585908,
+      0.6042367238165
+    ],
+    "all_stage_weighted_quiet_score": 0.6888107434595991,
+    "all_stage_weighted_front_hind_width_m": [
+      0.263583480064497,
+      0.29141091166988514
+    ],
+    "all_stage_weighted_front_hind_width_scores": [
+      0.5993208984009466,
+      0.7378460687607131
+    ],
+    "all_stage_weighted_forward_score": 0.641047502885453,
+    "measured_flight_events": 45116.0,
+    "qualified_events": 37481.0,
+    "event_weighted_distance_m": 0.16716325971827944,
+    "event_weighted_air_seconds": 0.07406396541676101,
+    "stable_landing_fraction_of_finished_recoveries": 0.6212342308416494,
+    "note": "Training aggregates are stochastic, not independent evaluation; posture uses all stages and event means are event-weighted."
+  },
+  "last_1000": {
+    "episodes": 4970,
+    "startup_completed_fraction": 0.8175050301810866,
+    "episodes_with_gallop_metrics": 4062,
+    "reported_success_rate": 0.0,
+    "reported_tracking_pass_fraction": 0.9864598719842442,
+    "natural_timeout_fraction": 0.8128772635814889,
+    "all_stage_weighted_yaw_rmse_rad": 0.06553564002315587,
+    "all_stage_weighted_roll_pitch_rate_rms": [
+      0.8946210723762079,
+      0.608317716505846
+    ],
+    "all_stage_weighted_quiet_score": 0.688516214836624,
+    "all_stage_weighted_front_hind_width_m": [
+      0.26297117679933246,
+      0.28790450657898004
+    ],
+    "all_stage_weighted_front_hind_width_scores": [
+      0.6022776117324925,
+      0.7417844962246248
+    ],
+    "all_stage_weighted_forward_score": 0.6366155555714497,
+    "measured_flight_events": 217613.0,
+    "qualified_events": 179432.0,
+    "event_weighted_distance_m": 0.16606903970105966,
+    "event_weighted_air_seconds": 0.07338288301563241,
+    "stable_landing_fraction_of_finished_recoveries": 0.5907691401128445,
+    "note": "Training aggregates are stochastic, not independent evaluation; posture uses all stages and event means are event-weighted."
+  }
+}

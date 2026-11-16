@@ -1,0 +1,520 @@
+{
+  "collected_at": "2026-10-27T18:48:50.346658+09:00",
+  "run": "/home/cvr/GH/go2_animalization/gallop/runs/isaac/train/unitree_go2_baseline/2026-10-27_17-59-58",
+  "final_checkpoint": "/home/cvr/GH/go2_animalization/gallop/runs/isaac/train/unitree_go2_baseline/2026-10-27_17-59-58/model_1999.pt",
+  "iteration_zero_based": 1999,
+  "iterations": 2000,
+  "expected_iterations": 2000,
+  "scalar_updates_observed": 2000,
+  "training_completion_supported": true,
+  "num_envs": 256,
+  "rollout_steps_per_env": 24,
+  "total_transitions": 12288000,
+  "policy_dt": 0.02,
+  "episode_target_seconds": 20.0,
+  "final_mean_episode_seconds": 18.065400390625,
+  "last_100_mean_episode_seconds": 17.45871597900391,
+  "first_scalar_time": "2026-10-27T18:00:08.936602+09:00",
+  "last_scalar_time": "2026-10-27T18:38:25.143713+09:00",
+  "scalar_recording_seconds": 2296.207111120224,
+  "checkpoint_count": 21,
+  "checkpoints": [
+    "/home/cvr/GH/go2_animalization/gallop/runs/isaac/train/unitree_go2_baseline/2026-10-27_17-59-58/model_0.pt",
+    "/home/cvr/GH/go2_animalization/gallop/runs/isaac/train/unitree_go2_baseline/2026-10-27_17-59-58/model_100.pt",
+    "/home/cvr/GH/go2_animalization/gallop/runs/isaac/train/unitree_go2_baseline/2026-10-27_17-59-58/model_200.pt",
+    "/home/cvr/GH/go2_animalization/gallop/runs/isaac/train/unitree_go2_baseline/2026-10-27_17-59-58/model_300.pt",
+    "/home/cvr/GH/go2_animalization/gallop/runs/isaac/train/unitree_go2_baseline/2026-10-27_17-59-58/model_400.pt",
+    "/home/cvr/GH/go2_animalization/gallop/runs/isaac/train/unitree_go2_baseline/2026-10-27_17-59-58/model_500.pt",
+    "/home/cvr/GH/go2_animalization/gallop/runs/isaac/train/unitree_go2_baseline/2026-10-27_17-59-58/model_600.pt",
+    "/home/cvr/GH/go2_animalization/gallop/runs/isaac/train/unitree_go2_baseline/2026-10-27_17-59-58/model_700.pt",
+    "/home/cvr/GH/go2_animalization/gallop/runs/isaac/train/unitree_go2_baseline/2026-10-27_17-59-58/model_800.pt",
+    "/home/cvr/GH/go2_animalization/gallop/runs/isaac/train/unitree_go2_baseline/2026-10-27_17-59-58/model_900.pt",
+    "/home/cvr/GH/go2_animalization/gallop/runs/isaac/train/unitree_go2_baseline/2026-10-27_17-59-58/model_1000.pt",
+    "/home/cvr/GH/go2_animalization/gallop/runs/isaac/train/unitree_go2_baseline/2026-10-27_17-59-58/model_1100.pt",
+    "/home/cvr/GH/go2_animalization/gallop/runs/isaac/train/unitree_go2_baseline/2026-10-27_17-59-58/model_1200.pt",
+    "/home/cvr/GH/go2_animalization/gallop/runs/isaac/train/unitree_go2_baseline/2026-10-27_17-59-58/model_1300.pt",
+    "/home/cvr/GH/go2_animalization/gallop/runs/isaac/train/unitree_go2_baseline/2026-10-27_17-59-58/model_1400.pt",
+    "/home/cvr/GH/go2_animalization/gallop/runs/isaac/train/unitree_go2_baseline/2026-10-27_17-59-58/model_1500.pt",
+    "/home/cvr/GH/go2_animalization/gallop/runs/isaac/train/unitree_go2_baseline/2026-10-27_17-59-58/model_1600.pt",
+    "/home/cvr/GH/go2_animalization/gallop/runs/isaac/train/unitree_go2_baseline/2026-10-27_17-59-58/model_1700.pt",
+    "/home/cvr/GH/go2_animalization/gallop/runs/isaac/train/unitree_go2_baseline/2026-10-27_17-59-58/model_1800.pt",
+    "/home/cvr/GH/go2_animalization/gallop/runs/isaac/train/unitree_go2_baseline/2026-10-27_17-59-58/model_1900.pt",
+    "/home/cvr/GH/go2_animalization/gallop/runs/isaac/train/unitree_go2_baseline/2026-10-27_17-59-58/model_1999.pt"
+  ],
+  "model_weight_shapes": {
+    "actor.0.weight": [
+      512,
+      45
+    ],
+    "actor.2.weight": [
+      256,
+      512
+    ],
+    "actor.4.weight": [
+      128,
+      256
+    ],
+    "actor.6.weight": [
+      12,
+      128
+    ],
+    "critic.0.weight": [
+      512,
+      60
+    ],
+    "critic.2.weight": [
+      256,
+      512
+    ],
+    "critic.4.weight": [
+      128,
+      256
+    ],
+    "critic.6.weight": [
+      1,
+      128
+    ]
+  },
+  "agent": {
+    "seed": 42,
+    "device": "cuda:0",
+    "num_steps_per_env": 24,
+    "max_iterations": 2000,
+    "empirical_normalization": false,
+    "obs_groups": {
+      "policy": [
+        "policy"
+      ],
+      "critic": [
+        "critic"
+      ]
+    },
+    "clip_actions": null,
+    "save_interval": 100,
+    "experiment_name": "unitree_go2_baseline",
+    "run_name": "",
+    "logger": "tensorboard",
+    "neptune_project": "isaaclab",
+    "wandb_project": "isaaclab",
+    "resume": false,
+    "load_run": ".*",
+    "load_checkpoint": "model_.*.pt",
+    "class_name": "OnPolicyRunner",
+    "policy": {
+      "class_name": "ActorCritic",
+      "init_noise_std": 1.0,
+      "noise_std_type": "scalar",
+      "state_dependent_std": false,
+      "actor_obs_normalization": false,
+      "critic_obs_normalization": false,
+      "actor_hidden_dims": [
+        512,
+        256,
+        128
+      ],
+      "critic_hidden_dims": [
+        512,
+        256,
+        128
+      ],
+      "activation": "elu"
+    },
+    "algorithm": {
+      "class_name": "PPO",
+      "num_learning_epochs": 5,
+      "num_mini_batches": 4,
+      "learning_rate": 0.001,
+      "schedule": "adaptive",
+      "gamma": 0.99,
+      "lam": 0.95,
+      "entropy_coef": 0.01,
+      "desired_kl": 0.01,
+      "max_grad_norm": 1.0,
+      "value_loss_coef": 1.0,
+      "use_clipped_value_loss": true,
+      "clip_param": 0.2,
+      "normalize_advantage_per_mini_batch": false,
+      "rnd_cfg": null,
+      "symmetry_cfg": null
+    }
+  },
+  "terrain_type": "generator",
+  "deployment_step_dt": 0.02,
+  "tensorboard": {
+    "Episode_Reward/track_lin_vel_xy": {
+      "count": 2000,
+      "first": 0.013898688368499279,
+      "last": 1.054235577583313,
+      "last_100_mean": 0.9554776513576507,
+      "maximum": 1.408843994140625,
+      "maximum_step": 1821
+    },
+    "Episode_Reward/track_ang_vel_z": {
+      "count": 2000,
+      "first": 0.0019219375681132078,
+      "last": 0.5901468396186829,
+      "last_100_mean": 0.5257148379087448,
+      "maximum": 0.6540250778198242,
+      "maximum_step": 1856
+    },
+    "Episode_Reward/base_linear_velocity": {
+      "count": 2000,
+      "first": -0.02311081998050213,
+      "last": -0.011021818034350872,
+      "last_100_mean": -0.009649689220823347,
+      "maximum": -0.0018727810820564628,
+      "maximum_step": 100
+    },
+    "Episode_Reward/base_angular_velocity": {
+      "count": 2000,
+      "first": -0.011119162663817406,
+      "last": -0.06589619070291519,
+      "last_100_mean": -0.057328805290162564,
+      "maximum": -0.011119162663817406,
+      "maximum_step": 0
+    },
+    "Episode_Reward/joint_vel": {
+      "count": 2000,
+      "first": -0.008976652286946774,
+      "last": -0.03072631172835827,
+      "last_100_mean": -0.02682640946470201,
+      "maximum": -0.005592600908130407,
+      "maximum_step": 71
+    },
+    "Episode_Reward/joint_acc": {
+      "count": 2000,
+      "first": -0.011635124683380127,
+      "last": -0.05168353021144867,
+      "last_100_mean": -0.042574811056256295,
+      "maximum": -0.004088913556188345,
+      "maximum_step": 75
+    },
+    "Episode_Reward/joint_torques": {
+      "count": 2000,
+      "first": -0.0015073481481522322,
+      "last": -0.08840085566043854,
+      "last_100_mean": -0.07520525936037302,
+      "maximum": -0.0012091216631233692,
+      "maximum_step": 61
+    },
+    "Episode_Reward/action_rate": {
+      "count": 2000,
+      "first": -0.002521578688174486,
+      "last": -0.04816172271966934,
+      "last_100_mean": -0.04143793672323227,
+      "maximum": -0.0016281884163618088,
+      "maximum_step": 61
+    },
+    "Episode_Reward/dof_pos_limits": {
+      "count": 2000,
+      "first": 0.0,
+      "last": 0.0,
+      "last_100_mean": 0.0,
+      "maximum": 0.0,
+      "maximum_step": 0
+    },
+    "Episode_Reward/energy": {
+      "count": 2000,
+      "first": -8.87084606802091e-05,
+      "last": -0.000944076688028872,
+      "last_100_mean": -0.0008058148631243967,
+      "maximum": -5.8204386732541025e-05,
+      "maximum_step": 71
+    },
+    "Episode_Reward/flat_orientation_l2": {
+      "count": 2000,
+      "first": -0.0003622029908001423,
+      "last": -0.02305089496076107,
+      "last_100_mean": -0.03012446377426386,
+      "maximum": -0.0003622029908001423,
+      "maximum_step": 0
+    },
+    "Episode_Reward/joint_pos": {
+      "count": 2000,
+      "first": -0.0012340955436229706,
+      "last": -0.2985648810863495,
+      "last_100_mean": -0.22600997291505337,
+      "maximum": -0.0012340955436229706,
+      "maximum_step": 0
+    },
+    "Episode_Reward/feet_air_time": {
+      "count": 2000,
+      "first": -4.262500624463428e-06,
+      "last": -0.0019145850092172623,
+      "last_100_mean": -0.0017398478649556636,
+      "maximum": 0.0,
+      "maximum_step": 1
+    },
+    "Episode_Reward/air_time_variance": {
+      "count": 2000,
+      "first": -3.623106749728322e-05,
+      "last": -0.012435182929039001,
+      "last_100_mean": -0.009453672615345568,
+      "maximum": -1.2883471754321363e-05,
+      "maximum_step": 61
+    },
+    "Episode_Reward/foot_clearance": {
+      "count": 2000,
+      "first": -0.00012570995022542775,
+      "last": -0.0075507378205657005,
+      "last_100_mean": -0.007022800331469625,
+      "maximum": -8.59144056448713e-05,
+      "maximum_step": 34
+    },
+    "Episode_Reward/feet_slide": {
+      "count": 2000,
+      "first": -0.0015995710855349898,
+      "last": -0.04028014466166496,
+      "last_100_mean": -0.02959861285984516,
+      "maximum": -0.00040545983938500285,
+      "maximum_step": 64
+    },
+    "Episode_Reward/undesired_contacts": {
+      "count": 2000,
+      "first": 0.0,
+      "last": 0.0,
+      "last_100_mean": 0.0,
+      "maximum": 0.0,
+      "maximum_step": 0
+    },
+    "Curriculum/terrain_levels": {
+      "count": 2000,
+      "first": 1.4630534648895264,
+      "last": 0.0,
+      "last_100_mean": 0.0,
+      "maximum": 1.4630534648895264,
+      "maximum_step": 0
+    },
+    "Curriculum/lin_vel_cmd_levels": {
+      "count": 2000,
+      "first": 0.10000000894069672,
+      "last": 0.40000003576278687,
+      "last_100_mean": 0.3833750319480896,
+      "maximum": 0.40000003576278687,
+      "maximum_step": 1917
+    },
+    "Metrics/base_velocity/error_vel_xy": {
+      "count": 2000,
+      "first": 0.0038324310444295406,
+      "last": 0.533448338508606,
+      "last_100_mean": 0.44156464114785193,
+      "maximum": 0.7181845903396606,
+      "maximum_step": 1996
+    },
+    "Metrics/base_velocity/error_vel_yaw": {
+      "count": 2000,
+      "first": 0.018012521788477898,
+      "last": 0.42520731687545776,
+      "last_100_mean": 0.3433752277493477,
+      "maximum": 1.2505829334259033,
+      "maximum_step": 870
+    },
+    "Episode_Termination/time_out": {
+      "count": 2000,
+      "first": 0.01302083395421505,
+      "last": 0.8232421875,
+      "last_100_mean": 0.7850390803813935,
+      "maximum": 0.875,
+      "maximum_step": 1779
+    },
+    "Episode_Termination/base_contact": {
+      "count": 2000,
+      "first": 0.0061848959885537624,
+      "last": 0.0,
+      "last_100_mean": 0.0,
+      "maximum": 0.0234375,
+      "maximum_step": 3
+    },
+    "Episode_Termination/bad_orientation": {
+      "count": 2000,
+      "first": 0.0,
+      "last": 0.1767578125,
+      "last_100_mean": 0.2149609424173832,
+      "maximum": 1.0,
+      "maximum_step": 18
+    },
+    "Loss/value_function": {
+      "count": 2000,
+      "first": 0.2118307501077652,
+      "last": 0.009556549601256847,
+      "last_100_mean": 0.008639417891390621,
+      "maximum": 0.21248100697994232,
+      "maximum_step": 13
+    },
+    "Loss/surrogate": {
+      "count": 2000,
+      "first": -0.0026299534365534782,
+      "last": -0.005602603312581778,
+      "last_100_mean": -0.004956879593883059,
+      "maximum": 0.01682683825492859,
+      "maximum_step": 514
+    },
+    "Loss/entropy": {
+      "count": 2000,
+      "first": 17.025291442871094,
+      "last": 4.471993446350098,
+      "last_100_mean": 4.481600108146668,
+      "maximum": 17.025291442871094,
+      "maximum_step": 0
+    },
+    "Loss/learning_rate": {
+      "count": 2000,
+      "first": 9.999999747378752e-06,
+      "last": 7.593750342493877e-05,
+      "last_100_mean": 6.312890745903132e-05,
+      "maximum": 0.00038443360244855285,
+      "maximum_step": 58
+    },
+    "Policy/mean_noise_std": {
+      "count": 2000,
+      "first": 0.9997707009315491,
+      "last": 0.37436363101005554,
+      "last_100_mean": 0.37502220571041106,
+      "maximum": 0.9997707009315491,
+      "maximum_step": 0
+    },
+    "Perf/total_fps": {
+      "count": 2000,
+      "first": 2133.0,
+      "last": 5555.0,
+      "last_100_mean": 5586.52,
+      "maximum": 5964.0,
+      "maximum_step": 71
+    },
+    "Perf/collection time": {
+      "count": 2000,
+      "first": 2.7349958419799805,
+      "last": 1.0557348728179932,
+      "last_100_mean": 1.0504997396469116,
+      "maximum": 5.905508041381836,
+      "maximum_step": 1270
+    },
+    "Perf/learning_time": {
+      "count": 2000,
+      "first": 0.14543700218200684,
+      "last": 0.05019330978393555,
+      "last_100_mean": 0.04949473857879639,
+      "maximum": 0.14543700218200684,
+      "maximum_step": 0
+    },
+    "Train/mean_reward": {
+      "count": 2000,
+      "first": -0.9494214653968811,
+      "last": 17.789478302001953,
+      "last_100_mean": 19.33694694519043,
+      "maximum": 21.9095458984375,
+      "maximum_step": 1815
+    },
+    "Train/mean_episode_length": {
+      "count": 2000,
+      "first": 11.88888931274414,
+      "last": 903.27001953125,
+      "last_100_mean": 872.9357989501954,
+      "maximum": 962.47998046875,
+      "maximum_step": 1100
+    },
+    "Train/mean_reward/time": {
+      "count": 2000,
+      "first": -0.9494214653968811,
+      "last": 17.789478302001953,
+      "last_100_mean": 19.33694694519043,
+      "maximum": 21.9095458984375,
+      "maximum_step": 2081
+    },
+    "Train/mean_episode_length/time": {
+      "count": 2000,
+      "first": 11.88888931274414,
+      "last": 903.27001953125,
+      "last_100_mean": 872.9357989501954,
+      "maximum": 962.47998046875,
+      "maximum_step": 1266
+    }
+  },
+  "videos": [
+    {
+      "path": "/home/cvr/GH/go2_animalization/gallop/runs/isaac/train/unitree_go2_baseline/2026-10-27_17-59-58/videos/play/rl-video-step-0.mp4",
+      "kind": "play",
+      "bytes": 1604743,
+      "fps": 50.0,
+      "duration_seconds": 9.98,
+      "resolution": [
+        1280,
+        720
+      ],
+      "codec": "h264"
+    },
+    {
+      "path": "/home/cvr/GH/go2_animalization/gallop/runs/isaac/train/unitree_go2_baseline/2026-10-27_17-59-58/videos/train/rl-video-step-0.mp4",
+      "kind": "train",
+      "bytes": 449580,
+      "fps": 50.0,
+      "duration_seconds": 10.0,
+      "resolution": [
+        1280,
+        720
+      ],
+      "codec": "h264"
+    },
+    {
+      "path": "/home/cvr/GH/go2_animalization/gallop/runs/isaac/train/unitree_go2_baseline/2026-10-27_17-59-58/videos/train/rl-video-step-10000.mp4",
+      "kind": "train",
+      "bytes": 361292,
+      "fps": 50.0,
+      "duration_seconds": 10.0,
+      "resolution": [
+        1280,
+        720
+      ],
+      "codec": "h264"
+    },
+    {
+      "path": "/home/cvr/GH/go2_animalization/gallop/runs/isaac/train/unitree_go2_baseline/2026-10-27_17-59-58/videos/train/rl-video-step-20000.mp4",
+      "kind": "train",
+      "bytes": 362270,
+      "fps": 50.0,
+      "duration_seconds": 10.0,
+      "resolution": [
+        1280,
+        720
+      ],
+      "codec": "h264"
+    },
+    {
+      "path": "/home/cvr/GH/go2_animalization/gallop/runs/isaac/train/unitree_go2_baseline/2026-10-27_17-59-58/videos/train/rl-video-step-30000.mp4",
+      "kind": "train",
+      "bytes": 362457,
+      "fps": 50.0,
+      "duration_seconds": 10.0,
+      "resolution": [
+        1280,
+        720
+      ],
+      "codec": "h264"
+    },
+    {
+      "path": "/home/cvr/GH/go2_animalization/gallop/runs/isaac/train/unitree_go2_baseline/2026-10-27_17-59-58/videos/train/rl-video-step-40000.mp4",
+      "kind": "train",
+      "bytes": 360823,
+      "fps": 50.0,
+      "duration_seconds": 10.0,
+      "resolution": [
+        1280,
+        720
+      ],
+      "codec": "h264"
+    }
+  ],
+  "deterministic_play_evaluation": {
+    "available": false,
+    "reason": "Existing play script saved video only; no numeric state/action/reset trace or evaluation report is present."
+  },
+  "interpretation_notes": [
+    "Training reward and episode length are rolling training statistics, not held-out evaluation results.",
+    "Episode_Termination statistics summarize recent episode endings across training environments; they are not independent test success rates.",
+    "error_vel_xy and error_vel_yaw are command-resampling-time-normalized accumulated errors; they are not RMSE.",
+    "Recorded terrain curriculum ended at 0; broad difficult-terrain competence is not established.",
+    "Highest reward iteration is not necessarily the best checkpoint.",
+    "This is a 45D actor/60D critic/12 joint-action baseline. It is incompatible with direct loading into the 57D/5-action GPD residual model.",
+    "No new simulation, training, or policy updates were performed during collection."
+  ]
+}

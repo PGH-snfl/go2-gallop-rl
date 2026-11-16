@@ -1,0 +1,9 @@
+{
+  "analytic_ballistic_checks": 4,
+  "conditional_boundary_checks": 12,
+  "feasible_in_stance_screen_only": true,
+  "exact_robot_maximum_not_identified": true,
+  "policy_updates": 0,
+  "physics_rollouts": 0,
+  "forward_jacobian_consistency_samples": 101
+}

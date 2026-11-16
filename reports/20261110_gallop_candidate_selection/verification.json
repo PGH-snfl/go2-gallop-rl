@@ -1,0 +1,12 @@
+{
+  "run_completed": true,
+  "all_cases_present": true,
+  "native_old_trace_finite": true,
+  "native_new_trace_finite": true,
+  "warm_old_trace_finite": true,
+  "warm_new_trace_finite": true,
+  "20261106_000029_077a6f/model_final.pt_unchanged": true,
+  "20261110_195814_959c90/model_500.pt_unchanged": true,
+  "20261110_195814_959c90/model_1000.pt_unchanged": true,
+  "20261110_195814_959c90/model_final.pt_unchanged": true
+}

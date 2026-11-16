@@ -1,0 +1,106 @@
+{
+  "runs/isaac/train/unitree_go2_gallop/20261103_191405_bea09f/model_final.pt": {
+    "bytes": 4688895,
+    "sha256": "dc129d38e78654a6559657740b7a46865830ca3cefcf06c908f49cdcef53fea7"
+  },
+  "runs/isaac/train/unitree_go2_gallop/20261103_191405_bea09f/manifest.json": {
+    "bytes": 14978,
+    "sha256": "baef93c42ce8214947d76797db1d37c350a87456b3f0a3c95a2cbb886105cef4"
+  },
+  "runs/isaac/train/unitree_go2_gallop/20261103_191405_bea09f/status.json": {
+    "bytes": 948,
+    "sha256": "e116a64498cddfe9062f434f71ed6fbdda6776e56dd3969e060bb1f3f0a066a9"
+  },
+  "runs/isaac/train/unitree_go2_gallop/20261103_191405_bea09f/gallop_config.json": {
+    "bytes": 5525,
+    "sha256": "95b8536ed81cacdb323deb745bbebf51a0bc5165f2ae1f0c5a40881894668bb4"
+  },
+  "runs/isaac/train/unitree_go2_gallop/20261103_191405_bea09f/params/agent.yaml": {
+    "bytes": 1039,
+    "sha256": "a10f3b2bef1e5773cc7970d9afba2fc7a436d3a70f719137b363ca999f680fef"
+  },
+  "runs/isaac/train/unitree_go2_gallop/20261103_191405_bea09f/params/env.yaml": {
+    "bytes": 32027,
+    "sha256": "d22367e9bcdf73e9464a562c242ce2ce9536c35ad472e308061a8955096ec228"
+  },
+  "runs/isaac/train/unitree_go2_gallop/20261103_191405_bea09f/episodes.jsonl": {
+    "bytes": 32566757,
+    "sha256": "cb9e9c8a568dd78851a11956eb79c838b162b42f6157b093939a6e947593b097"
+  },
+  "runs/isaac/train/unitree_go2_gallop/20261103_191405_bea09f/curriculum_summary.json": {
+    "bytes": 51578,
+    "sha256": "7719a3daadd269195b93a0cc51c110e9b811049372e6edcb653d60599d824356"
+  },
+  "runs/isaac/play/unitree_go2_gallop/20261103_194343_6d76b6/manifest.json": {
+    "bytes": 14629,
+    "sha256": "3c088f68b8e9a5823448ab79d66d03adfaefd007fc650199aba14e3c2a345ef8"
+  },
+  "runs/isaac/play/unitree_go2_gallop/20261103_194343_6d76b6/status.json": {
+    "bytes": 787,
+    "sha256": "2e01e4ed7223ce5c8d251ddd1a7e035b61f5c1de61a9d4c15cc0d84aa7d695ae"
+  },
+  "runs/isaac/play/unitree_go2_gallop/20261103_194343_6d76b6/episodes.jsonl": {
+    "bytes": 3428,
+    "sha256": "3a38c79941cbd7ec5f769bcc5b98ff83e8057e3e4a11848e573f40c1018e6ffc"
+  },
+  "runs/isaac/play/unitree_go2_gallop/20261103_194343_6d76b6/gallop_trace.npz": {
+    "bytes": 674951,
+    "sha256": "0681d98e68b50c7f0b97ba03ac293bb64347f74cffed8ae2aa1f76d9640df342"
+  },
+  "runs/isaac/play/unitree_go2_gallop/20261103_194343_6d76b6/videos/gallop-play-step-0.mp4": {
+    "bytes": 3249479,
+    "sha256": "7ab1ce4296d2e6c91a853ea5fcfe5d7a5076f306447d8ecb206db5dc58b31c1b"
+  },
+  "runs/isaac/train/unitree_go2_gallop/20261106_000029_077a6f/model_final.pt": {
+    "bytes": 4688895,
+    "sha256": "cc05c078abe28c4c9ac2ce0a8a51af7d006e33268cc6c7f57e15621a85535d7b"
+  },
+  "runs/isaac/train/unitree_go2_gallop/20261106_000029_077a6f/manifest.json": {
+    "bytes": 15338,
+    "sha256": "40414cba1c665f4d907f8e82a34f6766d8467d278c2ced8cd841d2517f6d4c38"
+  },
+  "runs/isaac/train/unitree_go2_gallop/20261106_000029_077a6f/status.json": {
+    "bytes": 948,
+    "sha256": "59adea764857786addc51c396a1e89533d44d4a235ea71929e182b2fe9b503d2"
+  },
+  "runs/isaac/train/unitree_go2_gallop/20261106_000029_077a6f/gallop_config.json": {
+    "bytes": 5867,
+    "sha256": "a4bc33641d91f813673bef0d9820e47240c2f4c2e475c9b6d4a7d23ff9ebbeca"
+  },
+  "runs/isaac/train/unitree_go2_gallop/20261106_000029_077a6f/params/agent.yaml": {
+    "bytes": 1039,
+    "sha256": "a10f3b2bef1e5773cc7970d9afba2fc7a436d3a70f719137b363ca999f680fef"
+  },
+  "runs/isaac/train/unitree_go2_gallop/20261106_000029_077a6f/params/env.yaml": {
+    "bytes": 32027,
+    "sha256": "d22367e9bcdf73e9464a562c242ce2ce9536c35ad472e308061a8955096ec228"
+  },
+  "runs/isaac/train/unitree_go2_gallop/20261106_000029_077a6f/episodes.jsonl": {
+    "bytes": 32363047,
+    "sha256": "7538008ea6021b55b3db71a5e2739ba4b2acb58a06e1984468dffdcd6fce13d2"
+  },
+  "runs/isaac/train/unitree_go2_gallop/20261106_000029_077a6f/curriculum_summary.json": {
+    "bytes": 53424,
+    "sha256": "eae0cd1766f3f57edfa3f6a9f159a76614600d169fc90203b70aa3b4926cdd9f"
+  },
+  "runs/isaac/play/unitree_go2_gallop/20261110_193602_5f8664/manifest.json": {
+    "bytes": 14989,
+    "sha256": "328ed4febe6a37f17998ffb564c1fcaa928eace96665d4ca69a6c59a35fe7062"
+  },
+  "runs/isaac/play/unitree_go2_gallop/20261110_193602_5f8664/status.json": {
+    "bytes": 787,
+    "sha256": "37dadf43c02dd7fec19efdad6946e5bf3bda3a1905f896fc5ce2bcb08a926279"
+  },
+  "runs/isaac/play/unitree_go2_gallop/20261110_193602_5f8664/episodes.jsonl": {
+    "bytes": 3415,
+    "sha256": "ac83475503fdad8b8dd8a7c9443ec3e7b5f95f181576331eb5a95a4fb43551d8"
+  },
+  "runs/isaac/play/unitree_go2_gallop/20261110_193602_5f8664/gallop_trace.npz": {
+    "bytes": 674460,
+    "sha256": "6d3b65c880cdf3349307f65b42e2e1cb398614822078783661a03feb0da7e2b3"
+  },
+  "runs/isaac/play/unitree_go2_gallop/20261110_193602_5f8664/videos/gallop-play-step-0.mp4": {
+    "bytes": 3248108,
+    "sha256": "3369771a915afbb5435efeb4b6eda0d87024423be68c143e0eab3923fc51526a"
+  }
+}

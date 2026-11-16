@@ -1,0 +1,22 @@
+{
+  "event_count": 0,
+  "status_counts": {},
+  "qualified_events": 0,
+  "qualified_and_stable_events": 0,
+  "qualified_and_stable_event_ids": [],
+  "event_distance_quantiles_m": null,
+  "event_air_seconds_distribution": {},
+  "terminal_recovering": false,
+  "terminal_recovery_seconds": 0.0,
+  "terminal_pending_distance_score": 0.0,
+  "phase_statistics": [],
+  "physics_samples_per_policy_step": [
+    4.0
+  ],
+  "caveats": [
+    "Event geometry and counters come from the 5ms tracker; CSV timestamps are the following 20ms snapshots.",
+    "A pending recovery at natural timeout is incomplete, not an observed unstable landing.",
+    "No failure reason codes or per-foot velocity traces were saved; aborted recovery causes cannot be fully reconstructed.",
+    "Reference phase and actual recovery flags are different; phase statistics use reference phases."
+  ]
+}

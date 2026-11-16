@@ -1,0 +1,55 @@
+{
+  "policy_updates": 0,
+  "unit_tests_passed": 4,
+  "initial_offsets_equal_to_original_reproduction": true,
+  "frozen_diagnostic": "/home/cvr/GH/go2_animalization/gallop/runs/isaac/check/periodic_curriculum_fixed_20261028",
+  "reset_count_at_expansion": 0,
+  "expansion_event": {
+    "step": 2000,
+    "stage": 1,
+    "eligible_episodes": 258,
+    "normalized_track_reward": 1.412690447744473,
+    "threshold": 1.2000000000000002,
+    "expanded": true,
+    "reason": "expanded",
+    "before": {
+      "lin_vel_x": [
+        -0.1,
+        0.1
+      ],
+      "lin_vel_y": [
+        -0.1,
+        0.1
+      ]
+    },
+    "after": {
+      "lin_vel_x": [
+        -0.2,
+        0.2
+      ],
+      "lin_vel_y": [
+        -0.2,
+        0.2
+      ]
+    },
+    "discarded_initial": 256,
+    "discarded_cross_stage": 0,
+    "expansions": 1
+  },
+  "initial_partial_episodes_discarded": 256,
+  "launcher_check": "/home/cvr/GH/go2_animalization/gallop/runs/isaac/check/curriculum_fixed_launcher_20261028",
+  "env_config_differences": [
+    "/curriculum/lin_vel_cmd_levels"
+  ],
+  "checkpoint_unchanged": true,
+  "policy_state_unchanged": true,
+  "official_source_clean": true,
+  "video": {
+    "path": "/home/cvr/GH/go2_animalization/gallop/runs/isaac/check/curriculum_fixed_launcher_20261028/videos/official-check-step-0.mp4",
+    "frames": 16,
+    "fps": 50.0,
+    "duration": 0.32
+  },
+  "full_training_executed": false,
+  "walking_convergence_verified": false
+}

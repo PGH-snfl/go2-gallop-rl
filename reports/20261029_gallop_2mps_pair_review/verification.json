@@ -1,0 +1,47 @@
+{
+  "status": "passed",
+  "training_complete": true,
+  "model_interface": "47/62/12",
+  "stage_iterations": 2000,
+  "cumulative_iterations": 12000,
+  "new_transitions": 12288000,
+  "changed_policy_tensors_from_parent": 17,
+  "total_policy_tensors": 17,
+  "source_matches_training": {
+    "gallop_core.py": true,
+    "gallop_env.py": true
+  },
+  "raw_files_sha256_verified": 60,
+  "checkpoint_sha256": "de8a7ab341d4febdbb7452bcefc711a68102d4c0ad15bb18047734c027a0214d",
+  "parent_checkpoint_unchanged": true,
+  "matching_play": "/home/cvr/GH/go2_animalization/gallop/runs/isaac/play/unitree_go2_gallop/20261029_130340_aec1b4",
+  "policy_updates_during_collection": 0,
+  "new_simulation_executed": false,
+  "collected_existing_user_play": true,
+  "rollout_samples": 1500,
+  "evaluated_first_segment_samples": 951,
+  "command": [
+    2.0,
+    0.0,
+    0.0
+  ],
+  "mean_vx": 1.9350484180901706,
+  "source_checkout_clean": true,
+  "collector_train_only_and_matching_play_paths_completed": true,
+  "legacy_episode_analysis_compatible": true,
+  "exported_csv_counts_match": true,
+  "video": [
+    {
+      "path": "/home/cvr/GH/go2_animalization/gallop/runs/isaac/play/unitree_go2_gallop/20261029_130340_aec1b4/videos/gallop-play-step-0.mp4",
+      "kind": "play",
+      "frames": 1499,
+      "duration_seconds": 29.98,
+      "fps": 50.0,
+      "resolution": [
+        640,
+        480
+      ]
+    }
+  ],
+  "report_links_valid": true
+}

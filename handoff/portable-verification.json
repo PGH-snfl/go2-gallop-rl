@@ -1,0 +1,22 @@
+{
+  "gallop_tests": 230,
+  "portable_restore_tests": 4,
+  "cpu_checkpoint_restore_checks": 21,
+  "isaac_nontraining_check": {
+    "environments": 2,
+    "control_steps": 20,
+    "status": "completed",
+    "policy_updates": 0,
+    "policy_unchanged": true
+  },
+  "original_full_restore_files": 5426,
+  "original_full_restore_checksums_match": true,
+  "base_environment_created": true,
+  "upstream_revisions_validated": true,
+  "training_executed": false,
+  "hardware_deployment_accepted": false,
+  "notes": [
+    "Actual fresh-path restore and local Isaac launch tested on original host; not a clean GPU/driver install on another computer.",
+    "Local MuJoCo C++/config changes preserved as an informational patch; clean pinned model is used by Python verification."
+  ]
+}

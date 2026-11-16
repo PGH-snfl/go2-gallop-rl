@@ -1,0 +1,37 @@
+{
+  "50k": {
+    "run": "/home/cvr/GH/go2_animalization/gallop/runs/isaac/check/unitree_go2_gallop/20261111_181501_bda33b",
+    "policy_updates": 0,
+    "policy_state_unchanged": true,
+    "episodes": 56,
+    "first_episodes": 16,
+    "first_mean_seconds": 7.52,
+    "first_median_seconds": 7.51,
+    "first_transitions": 0.0,
+    "all_transitions": 1.0,
+    "all_metric_seconds": 0.3199999928474426,
+    "official_terminated": 1.0,
+    "first_mean_peak_velocity_ratio": 1.0470042116940022,
+    "no_decisions": true
+  },
+  "46k": {
+    "run": "/home/cvr/GH/go2_animalization/gallop/runs/isaac/check/unitree_go2_gallop/20261111_181627_710366",
+    "policy_updates": 0,
+    "policy_state_unchanged": true,
+    "episodes": 56,
+    "first_episodes": 16,
+    "first_mean_seconds": 7.48875,
+    "first_median_seconds": 7.5,
+    "first_transitions": 0.0,
+    "all_transitions": 1.0,
+    "all_metric_seconds": 0.0,
+    "official_terminated": 0.0,
+    "first_mean_peak_velocity_ratio": 1.174641028046608,
+    "no_decisions": true
+  },
+  "selection": {
+    "parent": "50k",
+    "reason": "Both restore/connect. First16starts per model had0completed handovers; across56episodes each there was1handover each, with only0.32s/0s full-student measurement. No clear performance winner in this short frozen test. Latest50k is a compatible continuation with lower inherited noise and previously improved Isaac landing, so rollback is not required. This is not proof that50k is the optimal parent.",
+    "not_a_feasibility_pass": true
+  }
+}

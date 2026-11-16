@@ -1,0 +1,8 @@
+# Existing-file collection only; no inference, physics or training.
+# Run from /home/cvr/GH/go2_animalization/gallop
+# Set OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 MKL_NUM_THREADS=1 MPLCONFIGDIR=/tmp/go2-gallop-collection-matplotlib
+.venv/bin/python -m scripts.analysis.collect_gallop --train runs/isaac/train/unitree_go2_gallop/20261102_161522_fe6276 --play runs/isaac/play/unitree_go2_gallop/20261103_091200_02fe98 --output reports/20261103_gallop_stabilization_review
+.venv/bin/python -m scripts.analysis.collect_flight_diagnostics --report reports/20261103_gallop_stabilization_review
+.venv/bin/python -m scripts.analysis.collect_heading_diagnostics --report reports/20261103_gallop_stabilization_review --parent-play runs/isaac/play/unitree_go2_gallop/20261102_152630_4e9e7a
+.venv/bin/python -m scripts.analysis.collect_stabilization_diagnostics --report reports/20261103_gallop_stabilization_review --parent-report reports/20261102_gallop_heading_motion_review
+.venv/bin/python reports/20261103_gallop_stabilization_review/source/verify.py

@@ -1,0 +1,63 @@
+{
+  "assessment": "Higher-speed fine-tuning is physically motivated for longer strides; actual improvement is untested.",
+  "measured_1mps": {
+    "samples": 951,
+    "sample_dt": 0.019999999999999574,
+    "cycle_count": 44,
+    "mean_body_forward_distance_per_imposed_cycle": 0.4241935081102632,
+    "distance_min_max": [
+      0.37044762730598446,
+      0.49621895909309355
+    ],
+    "support_foot_count_distribution": {
+      "0": 0,
+      "1": 133,
+      "2": 438,
+      "3": 380,
+      "4": 0
+    },
+    "minimum_peak_foot_force_newton": 35.65693664550781,
+    "maximum_minimum_foot_clearance_m": 0.0015306100249290466,
+    "all_off_at_thresholds": {
+      "1": 0,
+      "3": 0,
+      "5": 0,
+      "8": 0,
+      "10": 0,
+      "20": 0
+    }
+  },
+  "current_reference_curve": [
+    {
+      "speed": 1.0,
+      "period_seconds": 0.42,
+      "frequency_hz": 2.380952380952381,
+      "target_distance_per_full_cycle": 0.42,
+      "template_air_seconds": 0.063,
+      "template_horizontal_air_distance": 0.063,
+      "thigh_amplitude_rad": 0.45,
+      "swing_foot_clearance_m": 0.065
+    },
+    {
+      "speed": 2.0,
+      "period_seconds": 0.37,
+      "frequency_hz": 2.7027027027027026,
+      "target_distance_per_full_cycle": 0.74,
+      "template_air_seconds": 0.05550000000000001,
+      "template_horizontal_air_distance": 0.11100000000000002,
+      "thigh_amplitude_rad": 0.6,
+      "swing_foot_clearance_m": 0.0925
+    }
+  ],
+  "reference_curve_speed_anchors": [
+    1.0,
+    3.0
+  ],
+  "warning": "Changing start_speed to 2 also changes the reference curve: at speed 2 ratio becomes zero, period resets to 0.42, thigh amplitude to 0.45, and swing height to 0.065. Decouple the initial curriculum cap from reference-speed anchors when implementing a clean comparison.",
+  "flight_sampling_limit": "No all-off sampled at 20 ms cadence in this play segment. Brief unsampled flight or other videos are not excluded. This is not evidence that the 40 ms sustained-flight requirement was met.",
+  "new_training_or_simulation": false,
+  "sources": [
+    "https://energy-locomotion.github.io/",
+    "https://arxiv.org/html/2104.04644v2"
+  ]
+}

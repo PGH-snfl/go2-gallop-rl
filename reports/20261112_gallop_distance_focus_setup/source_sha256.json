@@ -1,0 +1,16 @@
+{
+  "configs/gallop_2mps_50cm_distance_focus.json": "402bce947ed71a8be50d7292f352012d224683a2016c1c44e2df51c1ee6cb03d",
+  "isaac_task/gallop_core.py": "6c982a7f3a90598dc436328c282a358c7df5b85b7db4f8d6cc9e503613ec36e0",
+  "isaac_task/gallop_env.py": "931a3e7137b768a53b952df53c8f1f17b700894ea4ae27328ce56865fa681a13",
+  "scripts/training/gallop_baseline.py": "292ebd28bedea619da297e5e68115bc47b3ac06802be4c29f7e931367808e124",
+  "scripts/validation/check_gallop_fixed_edu.py": "54af8e99434cbceac9fead2f8d806bef30958460ffb2a61c65348332bdec8cb1",
+  "tests/test_gallop_distance_focus.py": "a6da42abf210abbc4bfbd5c96e31b8313aa46203f2a341cc490f59a9bad29dd2",
+  "tests/test_gallop_heading_motion.py": "e0b5a2c3f20c3f07990440e016b1c9f70e287d32020c3ae0331c2b621b237a24",
+  "tests/test_gallop_posture.py": "3bb4fffb7398424cf753c2634994036d612a34dc082dff787e725b294124f349",
+  "tests/test_gallop_long_leap.py": "abbaf4e3767e36eb399957fa42c57cdfac111e9d658c0e56dc6e64a72193d3fb",
+  "docs/gallop_distance_focus.md": "80cee9406e6d3abf952f906ea34b0931555798baa53a4a9298d1e669fb52af67",
+  "configs/active_gallop_branch.json": "0f5b0ea1cdc370cde758d1d130359da47025760293e69002e98ff6e0f5796fc6",
+  "AGENTS.md": "91d6cc91c88f5a0260d51b6a4dd436c6affe3670526af32e5df1ea50c3ba8b10",
+  "README.md": "7003deb9b27ffcf5ab8d0b38a18665cc4350c87ef47e1c7f1a71437f5a5136e0",
+  "docs/CONTINUE_HERE.md": "47ee9cb15c228de9cb0f815f75030e1992225782256bd58bd0480e2edd87d452"
+}

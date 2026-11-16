@@ -1,0 +1,327 @@
+--- parent48k/gallop_core.py
++++ isaac_task/gallop_core.py
+@@ -196,8 +196,15 @@
+     staged_min_dwell_seconds: float = 60.
+     staged_regress_windows: int = 2
+     staged_core_first_enabled: bool = False
++    staged_speed_adaptation_enabled: bool = False
++    staged_noise_target_std: float = .20
++    staged_noise_ramp_iterations: int = 500
+ 
+     def __post_init__(self):
++        if type(self.staged_speed_adaptation_enabled) is not bool or (self.staged_speed_adaptation_enabled and not self.staged_core_first_enabled):
++            raise ValueError('Speed adaptation requires core-first staged promotion')
++        if not math.isfinite(self.staged_noise_target_std) or self.staged_noise_target_std<=0 or type(self.staged_noise_ramp_iterations) is not int or self.staged_noise_ramp_iterations<1:
++            raise ValueError('Invalid managed exploration schedule')
+         if type(self.staged_core_first_enabled) is not bool or (self.staged_core_first_enabled and not self.staged_enabled):
+             raise ValueError('Core-first promotion requires the staged controller and a boolean flag')
+         if self.staged_enabled:
+@@ -582,6 +589,38 @@
+                 pitch=s.pitch_amplitude*torch.sin(2*math.pi*phase))
+ 
+ 
++class CycleSpeedTracker:
++    """Diagnostic only: full measured-cycle velocity, excluding partial/reset cycles."""
++    def __init__(self,like):
++        self.values={k:torch.zeros_like(like) for k in ('points','vx','vx2','command','cycle_points','cycle_error',
++            'cycles','cycle_mean_error2')}
++        self.started=torch.zeros_like(like,dtype=torch.bool);self.all_active=self.started.clone()
++
++    def observe(self,vx,command,active):
++        v=self.values;weight=active.float()
++        v['points']+=weight;v['vx']+=weight*vx;v['vx2']+=weight*vx.square();v['command']+=weight*command
++        v['cycle_points']+=weight;v['cycle_error']+=weight*(vx-command)
++        self.all_active&=active
++
++    def finish_cycles(self,wrapped):
++        v=self.values;good=wrapped&self.started&self.all_active&(v['cycle_points']>0)
++        v['cycles']+=good.float()
++        v['cycle_mean_error2']+=good.float()*(v['cycle_error']/v['cycle_points'].clamp_min(1)).square()
++        v['cycle_points'][wrapped]=0;v['cycle_error'][wrapped]=0
++        self.started|=wrapped;self.all_active=torch.where(wrapped,True,self.all_active)
++
++    def diagnostics(self):
++        v=self.values;n=v['points'].clamp_min(1);mean=v['vx']/n;command=v['command']/n
++        return dict(gallop_mean_vx=mean,gallop_mean_command_vx=command,gallop_mean_vx_error=mean-command,
++            gallop_vx_std=torch.sqrt((v['vx2']/n-mean.square()).clamp_min(0)),
++            gallop_cycle_mean_vx_rmse=torch.sqrt(v['cycle_mean_error2']/v['cycles'].clamp_min(1)),
++            gallop_speed_cycles=v['cycles'],gallop_speed_samples=v['points'])
++
++    def reset(self,ids):
++        for value in self.values.values():value[ids]=0
++        self.started[ids]=False;self.all_active[ids]=False
++
++
+ class LeapDistanceTracker:
+     """First all-off pose to first touchdown, projected onto takeoff heading.
+ 
+--- parent48k/gallop_env.py
++++ isaac_task/gallop_env.py
+@@ -15,7 +15,7 @@
+ from isaac_task.gallop_core import bounded_startup_targets,bounded_limit_cost
+ from isaac_task.gallop_core import GuardedJointController,guarded_physics_limits,guarded_foot_height_cost
+ from isaac_task.gallop_core import RelearnCurriculum,RequestLimitMonitor
+-from isaac_task.gallop_core import StagedGallopCurriculum,StagedEpisodeProfile
++from isaac_task.gallop_core import StagedGallopCurriculum,StagedEpisodeProfile,CycleSpeedTracker
+ 
+ LEGS=('FL','FR','RL','RR')
+ 
+@@ -245,6 +245,7 @@
+         self.training_targets=training_targets;self.cache_step=-1;self.last_episode={}
+         n=env.num_envs;self.phase=torch.zeros(n,device=env.device)
+         self.profile=StagedEpisodeProfile(self.phase,settings,self.curriculum.plan) if settings.staged_enabled else None
++        self.speed_diagnostics=CycleSpeedTracker(self.phase) if settings.staged_speed_adaptation_enabled else None
+         if settings.staged_enabled:self.curriculum.configure_envs(n,env.step_dt)
+         if settings.relearn_enabled:self.curriculum.configure_envs(n)
+         def zeros(*shape):return torch.zeros(n,*shape,device=env.device)
+@@ -386,6 +387,7 @@
+             count_wrap=wrapped&self.cycle_metric_ok
+             self.cycle_metric_ok=torch.where(wrapped,self.metric_active(),self.cycle_metric_ok&self.metric_active())
+         self.leap.begin_step(wrapped)
++        if self.speed_diagnostics is not None:self.speed_diagnostics.finish_cycles(wrapped)
+         if self.flight is not None:self.flight.begin_step(wrapped)
+         self.period=target['period']
+         self.pair.finish_cycles(wrapped,self.robot.data.joint_pos[:,self.joint_ids])
+@@ -479,6 +481,7 @@
+         self.expected=contacts_variants[rows,choice];self.qref=qref[rows,choice];self.height_ref=heights[rows,choice]
+         match=contact_scores[rows,choice]
+         active=self.metric_active()
++        if self.speed_diagnostics is not None:self.speed_diagnostics.observe(v[:,0],self.command[:,0],active)
+         self.metric_used=active.clone()
+         balance_active=(self.age*self.env.step_dt>=self.cfg.metric_warmup_seconds)
+         self.pair.observe(q,force,contact,self.env.step_dt,balance_active)
+@@ -686,6 +689,7 @@
+                        pair_valid_cycles=self.pair.valid_cycles,
+                        **{'pair_'+key+'_cost':self.sums['pair_'+key]/den for key in self.pair_costs})
+         columns.update(stabilization_columns)
++        if self.speed_diagnostics is not None:columns.update(self.speed_diagnostics.diagnostics())
+         columns.update(leap_events=self.leap.events,leap_qualified_events=self.leap.qualified_events,
+                        leap_qualified_fraction=self.leap.qualified_events/self.leap.events.clamp_min(1),
+                        leap_distance_mean=self.leap.distance_sum/self.leap.events.clamp_min(1),leap_distance_max=self.leap.maximum_distance,
+@@ -785,6 +789,7 @@
+         q=self.robot.data.joint_pos[:,self.joint_ids][:,:,1:]
+         self.qmin[ids]=q[ids];self.qmax[ids]=q[ids]
+         self.pair.reset(ids,self.robot.data.joint_pos[:,self.joint_ids])
++        if self.speed_diagnostics is not None:self.speed_diagnostics.reset(ids)
+         for value in self.pair_costs.values():value[ids]=0
+         self.leap.reset(ids)
+         if self.startup is not None:self.startup.reset(ids,self.episode_speed[ids] if self.cfg.stabilization_enabled else None)
+@@ -826,6 +831,8 @@
+             result.update({'Staged/index':self.curriculum.index,'Staged/leap_target':self.curriculum.goal['leap'],
+                 'Staged/air_seconds':self.curriculum.goal['air_seconds'],'Staged/cohort_completed':len(self.curriculum.cohort_seen),
+                 'Staged/highest_confirmed_index':self.curriculum.highest_confirmed_stage if self.curriculum.highest_confirmed_stage is not None else -1})
++        if self.speed_diagnostics is not None:
++            result.update({'StagedAdapt/'+k:v for k,v in self.last_episode.items() if k.startswith('gallop_')})
+         if self.cfg.relearn_enabled:
+             result.update({'Relearn/level':self.curriculum.index,'Relearn/gait':self.curriculum.goal['gait'],
+                 'Relearn/request_tolerance':self.curriculum.goal['request_tolerance']})
+@@ -850,6 +857,7 @@
+             tensors.update(staged_index=self.profile.index,staged_generation=self.level,
+                 staged_flight_min_seconds=self.profile.flight_min_seconds,
+                 staged_touchdown=self.profile.touchdown,staged_duty=self.profile.duty)
++        if self.speed_diagnostics is not None:tensors.update(self.speed_diagnostics.diagnostics())
+         tensors.update({'pair_'+key+'_cost':value for key,value in self.pair_costs.items()})
+         tensors.update({'pair_'+key+'_asymmetry':value for key,value in self.pair.diagnostics.items()})
+         if self.cfg.pair_hip_weight>0:tensors['pair_hip_asymmetry']=self.pair.hip_asymmetry
+--- parent48k/gallop_runtime.py
++++ isaac_task/gallop_runtime.py
+@@ -25,6 +25,10 @@
+         path=directory/'gallop_adaptation.py'
+         if not path.is_file() or hashlib.sha256(path.read_bytes()).hexdigest()!=manifest['adaptation_source_sha256']:
+             raise ValueError(f'Adaptation source snapshot is missing or changed: {path}')
++    if manifest.get('staged_adaptation_source_sha256'):
++        path=directory/'staged_adaptation.py'
++        if not path.is_file() or hashlib.sha256(path.read_bytes()).hexdigest()!=manifest['staged_adaptation_source_sha256']:
++            raise ValueError(f'Staged adaptation source snapshot is missing or changed: {path}')
+     return directory
+ 
+ 
+--- parent48k/logging.py
++++ isaac_task/logging.py
+@@ -28,6 +28,9 @@
+         return f"step={fields['step']} | vx 상한={fields['speed_cap']:.2f} m/s | 성공률={rate_text} | episode={fields['episodes']} | {fields['reason']}"
+     if event == 'RELEARN_EXPLORATION':
+         return f"stage={fields['relearn_level']} | noise std={fields['noise_std']:.3f} | entropy=0"
++    if event == 'STAGED_ADAPTATION':
++        return (f"noise std={fields['parent_noise_mean']:.3f}→{fields['target_noise_mean']:.3f} | "
++                f"ramp={fields['ramp_iterations']} PPO | entropy=0") if 'parent_noise_mean' in fields else f"noise std={fields['noise_mean']:.3f} | target reached"
+     if event == "VELOCITY_CURRICULUM":
+         score = fields['normalized_track_reward']
+         score_text = 'N/A' if score is None else f'{score:.3f}'
+@@ -89,8 +92,9 @@
+                 sys.stdout.write(''.join(line for line in buffer.getvalue().splitlines(keepends=True) if not line.lstrip().startswith(prefixes)))
+                 sys.stdout.flush()
+             else:super().log(locs,*args,**kwargs)
+-            if metrics is not None and self.writer is not None:
+-                for key, value in metrics().items():
++            extra_metrics=metrics() if metrics is not None else {}
++            if self.writer is not None:
++                for key, value in extra_metrics.items():
+                     self.writer.add_scalar(key,value,locs['it'])
+             completed = locs["it"]-locs["start_iter"]+1
+             total = locs["tot_iter"]-locs["start_iter"]
+@@ -102,7 +106,9 @@
+                  transitions=self.tot_timesteps,iteration_s=round(elapsed,3),
+                  collection_s=round(locs["collection_time"],3),learning_s=round(locs["learn_time"],3),
+                  eta_s=round(self.tot_time/completed*(total-completed),1),
+-                 losses={k:float(v) for k,v in locs["loss_dict"].items()})
++                 losses={k:float(v) for k,v in locs["loss_dict"].items()},
++                 **({'diagnostics':{k:v for k,v in extra_metrics.items() if k.startswith('StagedAdapt/')}}
++                    if any(k.startswith('StagedAdapt/') for k in extra_metrics) else {}))
+ 
+         def save(self, path, *args, **kwargs):
+             if self.logger_type in ('neptune','wandb') and self.writer is None and not self.disable_logs:
+--- parent48k/staged_adaptation.py
++++ isaac_task/staged_adaptation.py
+@@ -0,0 +1,94 @@
++"""Rollout-boundary exploration annealing and read-only PPO diagnostics."""
++import math
++
++import torch
++
++
++def gaussian_kl(old_mean,old_std,new_mean,new_std):
++    """KL(old||new) per sample, summed across independent action dimensions."""
++    if not bool((old_std>0).all() and (new_std>0).all()):
++        raise ValueError('Positive Gaussian standard deviations required')
++    return (torch.log(new_std/old_std)+(old_std.square()+(old_mean-new_mean).square())/
++            (2*new_std.square())-.5).sum(-1).clamp_min(0)
++
++
++class StagedSpeedAdaptation:
++    """Keep Gaussian samples/log probabilities intact within each PPO rollout.
++
++    Freeze state-independent variance and anneal its mean toward the configured
++    target while retaining relative per-joint scales. Actor and critic still
++    learn normally. No actions, likelihoods, gradients or optimizer steps are
++    replaced. Full-rollout KL diagnostics are not the internal scheduler's
++    per-minibatch KL, and use deterministic inference without RNG consumption.
++    """
++    def __init__(self,runner,settings,emit=None):
++        self.runner=runner;self.cfg=settings;self.emit=emit;self.calls=0;self.rollout_index=0
++        policy=runner.alg.policy
++        if getattr(policy,'state_dependent_std',False) or getattr(policy,'is_recurrent',False):
++            raise ValueError('Managed exploration requires a feed-forward, state-independent Gaussian')
++        if getattr(runner.alg,'is_multi_gpu',False):raise ValueError('This diagnostic currently supports single-GPU training')
++        self.parameter=getattr(policy,'log_std',None);self.logarithmic=self.parameter is not None
++        if self.parameter is None:self.parameter=policy.std
++        self.initial=(self.parameter.detach().exp() if self.logarithmic else self.parameter.detach()).clone()
++        if not bool(torch.isfinite(self.initial).all() and (self.initial>0).all()):
++            raise ValueError('Invalid parent exploration variance')
++        self.initial_mean=float(self.initial.mean());self.target_mean=min(self.initial_mean,settings.staged_noise_target_std)
++        self.parameter.requires_grad_(False);runner.alg.entropy_coef=0.
++        self.diagnostics=dict(rollout_kl_pre_update=0.,rollout_kl_post_update=0.,rollout_kl_samples=0.)
++        self.target_announced=False;self.apply(0)
++        if emit:emit('STAGED_ADAPTATION',parent_noise_mean=self.initial_mean,target_noise_mean=self.target_mean,
++            ramp_iterations=settings.staged_noise_ramp_iterations,entropy_coef=0.,std_trainable=False,
++            update_boundary='before collection; unchanged throughout PPO update')
++        original_act=runner.alg.act
++        def act(obs):
++            if self.calls%runner.num_steps_per_env==0:self.apply(self.calls//runner.num_steps_per_env)
++            result=original_act(obs);self.calls+=1
++            return result
++        runner.alg.act=act
++        original_update=runner.alg.update
++        def update(*args,**kwargs):
++            storage=runner.alg.storage;count=storage.step
++            if count!=runner.num_steps_per_env:raise ValueError('Diagnostics require one complete PPO rollout')
++            observations=storage.observations[:count].flatten(0,1)
++            old_mean=storage.mu[:count].flatten(0,1).detach()
++            old_std=storage.sigma[:count].flatten(0,1).detach()
++            # RSL clear() only resets counters; these buffers remain readable.
++            pre=self._rollout_kl(observations,old_mean,old_std)
++            result=original_update(*args,**kwargs)
++            post=self._rollout_kl(observations,old_mean,old_std)
++            self.diagnostics.update(rollout_kl_pre_update=pre,rollout_kl_post_update=post,
++                rollout_kl_samples=float(len(old_mean)))
++            return result
++        runner.alg.update=update
++
++    def _rollout_kl(self,observations,old_mean,old_std):
++        with torch.inference_mode():
++            mean=self.runner.alg.policy.act_inference(observations)
++            std=(self.parameter.exp() if self.logarithmic else self.parameter).expand_as(mean)
++            value=gaussian_kl(old_mean,old_std,mean,std).mean()
++            if not bool(torch.isfinite(value)):raise ValueError('Nonfinite rollout KL')
++            return float(value)
++
++    def apply(self,rollout_index):
++        self.rollout_index=rollout_index
++        self.fraction=min(1.,rollout_index/self.cfg.staged_noise_ramp_iterations)
++        mean=self.initial_mean+(self.target_mean-self.initial_mean)*self.fraction
++        desired=self.initial*(mean/self.initial_mean)
++        with torch.no_grad():self.parameter.copy_(desired.log() if self.logarithmic else desired)
++        self.std=mean
++        if self.fraction==1 and not self.target_announced:
++            self.target_announced=True
++            if self.emit:self.emit('STAGED_ADAPTATION',noise_mean=mean,rollout_index=rollout_index,
++                state='annealing_target_reached',entropy_coef=0.)
++
++    def metrics(self):
++        alg=self.runner.alg
++        values=dict(noise_std_mean=self.std,noise_ramp_fraction=self.fraction,
++            entropy_coef=alg.entropy_coef,learning_rate=alg.learning_rate,
++            learning_rate_at_floor=float(alg.learning_rate<=1.00001e-5),**self.diagnostics)
++        return {'StagedAdapt/'+k:v for k,v in values.items()}
++
++    def state(self):
++        return dict(initial_std=self.initial.tolist(),initial_mean=self.initial_mean,target_mean=self.target_mean,
++            last_collected_rollout_index=self.rollout_index,noise_mean=self.std,ramp_fraction=self.fraction,
++            ramp_iterations=self.cfg.staged_noise_ramp_iterations,calls=self.calls,entropy_coef=0.,std_trainable=False)
+--- parent48k/gallop_baseline.py
++++ scripts/training/gallop_baseline.py
+@@ -177,7 +177,7 @@
+     agent.obs_groups={'policy':['policy'],'critic':['critic']}
+     agent.policy.actor_obs_normalization=False;agent.policy.critic_obs_normalization=False
+     agent.algorithm.learning_rate=1e-4 if bounded or guarded else 3e-4
+-    if recovery:agent.algorithm.entropy_coef=0.
++    if recovery or getattr(settings,'staged_speed_adaptation_enabled',False):agent.algorithm.entropy_coef=0.
+     if a.video:cfg.viewer.resolution=(640,480)
+     cfg.validate();agent.validate()
+     if a.mode!='train':
+@@ -282,6 +282,9 @@
+     for path in [Path(__file__),Path(gallop_core.__file__),Path(gallop_env.__file__),Path(inspect.getfile(RobotEnvCfg))]:shutil.copy2(path,src/path.name)
+     shutil.copy2(ROOT/'isaac_task/gallop_runtime.py',src/'gallop_runtime.py')
+     shutil.copy2(ROOT/'isaac_task/logging.py',src/'logging.py')
++    if getattr(settings,'staged_speed_adaptation_enabled',False):
++        shutil.copy2(ROOT/'isaac_task/staged_adaptation.py',src/'staged_adaptation.py')
++        manifest['staged_adaptation_source_sha256']=sha(src/'staged_adaptation.py')
+     if bounded:
+         shutil.copy2(ROOT/'isaac_task/gallop_adaptation.py',src/'gallop_adaptation.py')
+         manifest['adaptation_source_sha256']=sha(src/'gallop_adaptation.py')
+@@ -363,6 +366,8 @@
+         api=video
+     wrapped=RslRlVecEnvWrapper(api,clip_actions=agent.clip_actions)
+     def runner_emit(event,**fields):
++        if event=='CHECKPOINT_SAVED' and adaptation is not None:
++            manifest.setdefault('staged_adaptation_checkpoints',{})[Path(fields['path']).name]=adaptation.state()
+         if staged and event=='CHECKPOINT_SAVED':
+             path=Path(fields['path']);iterations=int(runner.current_learning_iteration)+1
+             inherited=manifest.get('fine_tuning',{}).get('parent_cumulative_iterations',0)
+@@ -385,10 +390,11 @@
+                 highest_confirmed_speed=progress['highest_confirmed_speed'])
+             (out/'manifest.json').write_text(json.dumps(manifest,indent=2))
+         log.emit(event,**fields)
+-    exploration=None
++    exploration=None;adaptation=None
+     def runner_metrics():
+         values=env.gallop.metrics()
+         if exploration is not None:values.update({'Relearn/noise_std':exploration.std,'Relearn/entropy_coef':runner.alg.entropy_coef})
++        if adaptation is not None:values.update(adaptation.metrics())
+         return values
+     runner=logged_runner(OnPolicyRunner,runner_emit,metrics=runner_metrics,compact_episode_log=True)(wrapped,agent.to_dict(),log_dir=str(out) if a.mode=='train' else None,device=a.device)
+     obs=wrapped.get_observations()
+@@ -406,6 +412,13 @@
+         if relearn_parent_progress is not None:info['parent_cumulative_iterations']=int(relearn_parent_progress['cumulative_iterations'])
+         manifest[key]=info;status[key]=info;log.emit('GALLOP_INITIALIZED',**info)
+     elif a.checkpoint:runner.load(str(a.checkpoint.resolve()),load_optimizer=False,map_location=a.device)
++    if getattr(settings,'staged_speed_adaptation_enabled',False) and a.mode=='train':
++        from isaac_task.staged_adaptation import StagedSpeedAdaptation
++        adaptation=StagedSpeedAdaptation(runner,settings,emit=log.emit)
++        manifest['staged_speed_adaptation']=dict(version=1,**adaptation.state(),
++            policy_mean_and_critic_preserved=True,actions_and_log_probabilities_unmodified=True,
++            kl_diagnostics='Full stored rollout pre/post PPO; not adaptive scheduler minibatch KL',
++            optimizer='Fresh Adam; original adaptive LR1e-4 and desired_KL retained')
+     if recovery and a.mode=='train':
+         from isaac_task.gallop_core import RelearnExploration
+         policy=runner.alg.policy

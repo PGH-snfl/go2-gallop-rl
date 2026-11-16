@@ -1,0 +1,451 @@
+[
+  {
+    "index": 0,
+    "title": "Towards Dynamic Quadrupedal Gaits: A Symmetry-Guided RL Hierarchy Enables Free Gait Transitions at Varying Speeds",
+    "url": "https://arxiv.org/html/2403.10723v4",
+    "extracted_characters": 39586,
+    "role": "원문/출판 페이지; 방법 확인 범위는 papers.json 참고"
+  },
+  {
+    "index": 1,
+    "title": "Towards Dynamic Quadrupedal Gaits: A Symmetry-Guided RL Hierarchy Enables Free Gait Transitions at Varying Speeds",
+    "url": "https://arxiv.org/html/2510.10455v1",
+    "extracted_characters": 39723,
+    "role": "원문/출판 페이지; 방법 확인 범위는 papers.json 참고"
+  },
+  {
+    "index": 2,
+    "title": "Frontiers | Discovery of skill-switching criteria for learning agile quadruped locomotion",
+    "url": "https://www.frontiersin.org/journals/robotics-and-ai/articles/10.3389/frobt.2026.1697159/full",
+    "extracted_characters": 53266,
+    "role": "원문/출판 페이지; 방법 확인 범위는 papers.json 참고"
+  },
+  {
+    "index": 3,
+    "title": "AllGaits: Learning All Quadruped Gaits and Transitions",
+    "url": "https://arxiv.org/html/2411.04787",
+    "extracted_characters": 42641,
+    "role": "원문/출판 페이지; 방법 확인 범위는 papers.json 참고"
+  },
+  {
+    "index": 4,
+    "title": "Actuator-Constrained Reinforcement Learning for High-Speed Quadrupedal Locomotion",
+    "url": "https://arxiv.org/html/2312.17507v1",
+    "extracted_characters": 57053,
+    "role": "원문/출판 페이지; 방법 확인 범위는 papers.json 참고"
+  },
+  {
+    "index": 5,
+    "title": "Learning Free Gait Transition for Quadruped Robots Via Phase-Guided Controller",
+    "url": "https://arxiv.org/html/2201.00206",
+    "extracted_characters": 10903,
+    "role": "원문/출판 페이지; 방법 확인 범위는 papers.json 참고"
+  },
+  {
+    "index": 6,
+    "title": "A Learning Framework for Diverse Legged Robot Locomotion Using Barrier-Based Style Rewards",
+    "url": "https://arxiv.org/html/2409.15780v3",
+    "extracted_characters": 41252,
+    "role": "원문/출판 페이지; 방법 확인 범위는 papers.json 참고"
+  },
+  {
+    "index": 7,
+    "title": "Robust Quadruped Jumping via Deep Reinforcement Learning",
+    "url": "https://arxiv.org/html/2011.07089v3",
+    "extracted_characters": 52500,
+    "role": "원문/출판 페이지; 방법 확인 범위는 papers.json 참고"
+  },
+  {
+    "index": 8,
+    "title": "Curriculum-Based Reinforcement Learning for Quadrupedal Jumping: A Reference-free Design",
+    "url": "https://arxiv.org/html/2401.16337",
+    "extracted_characters": 62329,
+    "role": "원문/출판 페이지; 방법 확인 범위는 papers.json 참고"
+  },
+  {
+    "index": 9,
+    "title": "Impedance Matching: Enabling an RL-Based Running Jump in a Quadruped Robot",
+    "url": "https://arxiv.org/html/2404.15096v2",
+    "extracted_characters": 1628,
+    "role": "원문/출판 페이지; 방법 확인 범위는 papers.json 참고"
+  },
+  {
+    "index": 10,
+    "title": "Guided Reinforcement Learning for Omnidirectional 3D Jumping in Quadruped Robots",
+    "url": "https://arxiv.org/html/2507.16481v3",
+    "extracted_characters": 100178,
+    "role": "원문/출판 페이지; 방법 확인 범위는 papers.json 참고"
+  },
+  {
+    "index": 11,
+    "title": "Walk These Ways: Tuning Robot Control for Generalization with Multiplicity of Behavior",
+    "url": "https://arxiv.org/html/2212.03238",
+    "extracted_characters": 56994,
+    "role": "원문/출판 페이지; 방법 확인 범위는 papers.json 참고"
+  },
+  {
+    "index": 12,
+    "title": "Learning Quadruped Locomotion Policies using Logical Rules",
+    "url": "https://arxiv.org/html/2107.10969v3",
+    "extracted_characters": 41797,
+    "role": "원문/출판 페이지; 방법 확인 범위는 papers.json 참고"
+  },
+  {
+    "index": 13,
+    "title": "Not Only Rewards But Also Constraints: Applications on Legged Robot Locomotion",
+    "url": "https://arxiv.org/html/2308.12517",
+    "extracted_characters": 100162,
+    "role": "원문/출판 페이지; 방법 확인 범위는 papers.json 참고"
+  },
+  {
+    "index": 14,
+    "title": "CaT: Constraints as Terminations for Legged Locomotion Reinforcement Learning",
+    "url": "https://arxiv.org/html/2403.18765",
+    "extracted_characters": 48252,
+    "role": "원문/출판 페이지; 방법 확인 범위는 papers.json 참고"
+  },
+  {
+    "index": 15,
+    "title": "Learning Agile Robotic Locomotion Skills by",
+    "url": "https://www.roboticsproceedings.org/rss16/p064.pdf",
+    "extracted_characters": 53830,
+    "role": "원문/출판 페이지; 방법 확인 범위는 papers.json 참고"
+  },
+  {
+    "index": 16,
+    "title": "Adversarial Motion Priors Make Good Substitutes for Complex Reward Functions",
+    "url": "https://xbpeng.github.io/projects/AMP_Locomotion/AMP_Locomotion_2022.pdf",
+    "extracted_characters": 42029,
+    "role": "원문/출판 페이지; 방법 확인 범위는 papers.json 참고"
+  },
+  {
+    "index": 17,
+    "title": "Generalized Animal Imitator: Agile Locomotion with Versatile Motion Prior",
+    "url": "https://arxiv.org/html/2310.01408v2",
+    "extracted_characters": 69222,
+    "role": "원문/출판 페이지; 방법 확인 범위는 papers.json 참고"
+  },
+  {
+    "index": 18,
+    "title": "Learning Highly Dynamic Behaviors for Quadrupedal Robots",
+    "url": "https://arxiv.org/html/2402.13473v1",
+    "extracted_characters": 45320,
+    "role": "원문/출판 페이지; 방법 확인 범위는 papers.json 참고"
+  },
+  {
+    "index": 19,
+    "title": "Lifelike agility and play in quadrupedal robots using reinforcement learning and generative pre-trained models | Nature Machine Intelligence",
+    "url": "https://www.nature.com/articles/s42256-024-00861-3",
+    "extracted_characters": 24833,
+    "role": "원문/출판 페이지; 방법 확인 범위는 papers.json 참고"
+  },
+  {
+    "index": 20,
+    "title": "Quadrupedal Locomotion via Periodic Reward Composition and Deep Reinforcement Learning",
+    "url": "https://john-s-li.github.io/docs/Johnathon%20Li%20-%20MS%20Report%20Final%20Draft-compressed.pdf",
+    "extracted_characters": 31633,
+    "role": "원문/출판 페이지; 방법 확인 범위는 papers.json 참고"
+  },
+  {
+    "index": 21,
+    "title": "Deep Reinforcement Learning with Gait Mode Specification for Quadrupedal Trot-Gallop Energetic Analysis",
+    "url": "https://www.paperhost.org/proceedings/embs/EMBC21/files/0505.pdf",
+    "extracted_characters": 24887,
+    "role": "원문/출판 페이지; 방법 확인 범위는 papers.json 참고"
+  },
+  {
+    "index": 22,
+    "title": "Footstep reward for energy-efficient quadruped gait generation and transition through deep reinforcement learning",
+    "url": "https://doi.org/10.1080/01691864.2024.2442718",
+    "extracted_characters": 7464,
+    "role": "원문/출판 페이지; 방법 확인 범위는 papers.json 참고"
+  },
+  {
+    "index": 23,
+    "title": "Learning Emergent Gaits with Decentralized Phase Oscillators: on the role of Observations, Rewards, and Feedback",
+    "url": "https://arxiv.org/html/2402.08662v2",
+    "extracted_characters": 61946,
+    "role": "원문/출판 페이지; 방법 확인 범위는 papers.json 참고"
+  },
+  {
+    "index": 24,
+    "title": "16 Ways to Gallop: Energetics and Body Dynamics of High-Speed Quadrupedal Gaits",
+    "url": "https://arxiv.org/html/2503.13716",
+    "extracted_characters": 38683,
+    "role": "원문/출판 페이지; 방법 확인 범위는 papers.json 참고"
+  },
+  {
+    "index": 25,
+    "title": "Learning Agile Motor Skills on Quadrupedal Robots using Curriculum Learning",
+    "url": "https://faculty.cc.gatech.edu/~sha9/projects/tang2021learning.pdf",
+    "extracted_characters": 19129,
+    "role": "원문/출판 페이지; 방법 확인 범위는 papers.json 참고"
+  },
+  {
+    "index": 26,
+    "title": "Rapid Locomotion via Reinforcement Learning",
+    "url": "https://arxiv.org/html/2205.02824v1",
+    "extracted_characters": 68644,
+    "role": "원문/출판 페이지; 방법 확인 범위는 papers.json 참고"
+  },
+  {
+    "index": 27,
+    "title": "Fast and Efficient Locomotion via Learned Gait Transitions",
+    "url": "https://arxiv.org/html/2104.04644v2",
+    "extracted_characters": 54509,
+    "role": "원문/출판 페이지; 방법 확인 범위는 papers.json 참고"
+  },
+  {
+    "index": 28,
+    "title": "Leveraging Symmetry in RL-based Legged Locomotion Control",
+    "url": "https://arxiv.org/html/2403.17320v3",
+    "extracted_characters": 53339,
+    "role": "원문/출판 페이지; 방법 확인 범위는 papers.json 참고"
+  },
+  {
+    "index": 29,
+    "title": "Learning to adapt through bio-inspired gait strategies for versatile quadruped locomotion | Nature Machine Intelligence",
+    "url": "https://www.nature.com/articles/s42256-025-01065-z",
+    "extracted_characters": 70385,
+    "role": "원문/출판 페이지; 방법 확인 범위는 papers.json 참고"
+  },
+  {
+    "index": 30,
+    "title": "SayTap: Language to Quadrupedal Locomotion",
+    "url": "https://arxiv.org/html/2306.07580v1",
+    "extracted_characters": 46003,
+    "role": "원문/출판 페이지; 방법 확인 범위는 papers.json 참고"
+  },
+  {
+    "index": 31,
+    "title": "Footstep reward for energy-efficient quadruped gait generation and transition through deep reinforcement learning",
+    "url": "https://www.tandfonline.com/doi/full/10.1080/01691864.2024.2442718",
+    "extracted_characters": 7485,
+    "role": "원문/출판 페이지; 방법 확인 범위는 papers.json 참고"
+  },
+  {
+    "index": 32,
+    "title": "Learning aggressive animal locomotion skills for quadrupedal robots solely from monocular videos | npj Robotics",
+    "url": "https://www.nature.com/articles/s44182-025-00048-x",
+    "extracted_characters": 82552,
+    "role": "원문/출판 페이지; 방법 확인 범위는 papers.json 참고"
+  },
+  {
+    "index": 33,
+    "title": "Learning Robust, Agile, Natural Legged Locomotion Skills in the Wild",
+    "url": "https://arxiv.org/html/2304.10888v3",
+    "extracted_characters": 52420,
+    "role": "원문/출판 페이지; 방법 확인 범위는 papers.json 참고"
+  },
+  {
+    "index": 34,
+    "title": "DeepMimic: Example-Guided Deep Reinforcement Learningof Physics-Based Character Skills",
+    "url": "https://arxiv.org/html/1804.02717v3",
+    "extracted_characters": 85209,
+    "role": "원문/출판 페이지; 방법 확인 범위는 papers.json 참고"
+  },
+  {
+    "index": 35,
+    "title": "Imitation and Adaptation Based on Consistency: A Quadruped Robot Imitates Animals from Videos Using Deep Reinforcement Learning",
+    "url": "https://arxiv.org/html/2203.05973",
+    "extracted_characters": 40183,
+    "role": "원문/출판 페이지; 방법 확인 범위는 papers.json 참고"
+  },
+  {
+    "index": 36,
+    "title": "MA-ROESL: Motion-aware Rapid Reward Optimization for Efficient Robot Skill Learning from Single Videos",
+    "url": "https://arxiv.org/html/2505.08367v1",
+    "extracted_characters": 47089,
+    "role": "원문/출판 페이지; 방법 확인 범위는 papers.json 참고"
+  },
+  {
+    "index": 37,
+    "title": "Spatio-Temporal Motion Retargeting for Quadruped Robots",
+    "url": "https://arxiv.org/html/2404.11557v1",
+    "extracted_characters": 74046,
+    "role": "원문/출판 페이지; 방법 확인 범위는 papers.json 참고"
+  },
+  {
+    "index": 38,
+    "title": "Proceedings of the 5th Conference on Robot Learning (CoRL 2021)",
+    "url": "https://proceedings.mlr.press/v164/fu22a/fu22a.pdf",
+    "extracted_characters": 37727,
+    "role": "원문/출판 페이지; 방법 확인 범위는 papers.json 참고"
+  },
+  {
+    "index": 39,
+    "title": "Symmetry Regularization for Quadruped Locomotion | Ziyin Xiong",
+    "url": "https://ziyin-xiong.github.io/projects/quadruped-locomotion/",
+    "extracted_characters": 7025,
+    "role": "원문/출판 페이지; 방법 확인 범위는 papers.json 참고"
+  },
+  {
+    "index": 40,
+    "title": "From LLM-Generated Specifications to Learned Quadruped Locomotion",
+    "url": "https://arxiv.org/html/2609.07111",
+    "extracted_characters": 42727,
+    "role": "원문/출판 페이지; 방법 확인 범위는 papers.json 참고"
+  },
+  {
+    "index": 41,
+    "title": "Adaptive Energy Regularization for Autonomous Gait Transition and Energy-Efficient Quadruped Locomotion",
+    "url": "https://arxiv.org/html/2403.20001",
+    "extracted_characters": 35977,
+    "role": "원문/출판 페이지; 방법 확인 범위는 papers.json 참고"
+  },
+  {
+    "index": 42,
+    "title": "Breaking Symmetries Leads to Diverse Quadrupedal Gaits",
+    "url": "https://arxiv.org/html/2303.04857v3",
+    "extracted_characters": 55344,
+    "role": "원문/출판 페이지; 방법 확인 범위는 papers.json 참고"
+  },
+  {
+    "index": 43,
+    "title": "S-Cheetah: A Novel Quadrupedal Robot with a 3-DOF Active Spine Learning Agile Locomotion",
+    "url": "https://arxiv.org/html/2605.27909",
+    "extracted_characters": 40905,
+    "role": "원문/출판 페이지; 방법 확인 범위는 papers.json 참고"
+  },
+  {
+    "index": 44,
+    "title": "(no title)",
+    "url": "https://arxiv.org/pdf/2201.00206",
+    "extracted_characters": 42480,
+    "role": "원문/출판 페이지; 방법 확인 범위는 papers.json 참고"
+  },
+  {
+    "index": 45,
+    "title": "(no title)",
+    "url": "https://arxiv.org/pdf/2404.15096",
+    "extracted_characters": 35746,
+    "role": "원문/출판 페이지; 방법 확인 범위는 papers.json 참고"
+  },
+  {
+    "index": 46,
+    "title": "SDS – See it, Do it, Sorted: Quadruped Skill Synthesis from Single Video Demonstration",
+    "url": "https://proceedings.mlr.press/v305/stamatopoulou25a.html",
+    "extracted_characters": 4969,
+    "role": "원문/출판 페이지; 방법 확인 범위는 papers.json 참고"
+  },
+  {
+    "index": 47,
+    "title": "Learning agility and adaptive legged locomotion via curricular hindsight reinforcement learning",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11564515/",
+    "extracted_characters": 53905,
+    "role": "원문/출판 페이지; 방법 확인 범위는 papers.json 참고"
+  },
+  {
+    "index": 48,
+    "title": "Guided Constrained Policy Optimization for Dynamic Quadrupedal Robot Locomotion",
+    "url": "https://www.robots.ox.ac.uk/~mobile/drs/Papers/2020RAL_gangapurwala.pdf",
+    "extracted_characters": 44098,
+    "role": "원문/출판 페이지; 방법 확인 범위는 papers.json 참고"
+  },
+  {
+    "index": 49,
+    "title": "Foot trajectory as a key factor for diverse gait patterns in quadruped robot locomotion | Scientific Reports",
+    "url": "https://www.nature.com/articles/s41598-024-84060-5",
+    "extracted_characters": 50427,
+    "role": "원문/출판 페이지; 방법 확인 범위는 papers.json 참고"
+  },
+  {
+    "index": 50,
+    "title": "A Quadruped Robot Exhibiting Spontaneous Gait Transitions from Walking to Trotting to Galloping | Scientific Reports",
+    "url": "https://www.nature.com/articles/s41598-017-00348-9",
+    "extracted_characters": 52214,
+    "role": "원문/출판 페이지; 방법 확인 범위는 papers.json 참고"
+  },
+  {
+    "index": 51,
+    "title": "Discovery of Skill Switching Criteria for Learning Agile Quadruped Locomotion",
+    "url": "https://arxiv.org/html/2502.06676",
+    "extracted_characters": 42986,
+    "role": "원문/출판 페이지; 방법 확인 범위는 papers.json 참고"
+  },
+  {
+    "index": 52,
+    "title": "[2409.15780] A Learning Framework for Diverse Legged Robot Locomotion Using Barrier-Based Style Rewards",
+    "url": "https://arxiv.org/abs/2409.15780",
+    "extracted_characters": 2107,
+    "role": "원문/출판 페이지; 방법 확인 범위는 papers.json 참고"
+  },
+  {
+    "index": 53,
+    "title": "Towards Dynamic Quadrupedal Gaits: A Symmetry-Guided RL Hierarchy Enables Free Gait Transitions at Varying Speeds",
+    "url": "https://arxiv.org/abs/2403.10723",
+    "extracted_characters": 45819,
+    "role": "원문/출판 페이지; 방법 확인 범위는 papers.json 참고"
+  },
+  {
+    "index": 54,
+    "title": "[2510.10455] Towards Dynamic Quadrupedal Gaits: A Symmetry-Guided RL Hierarchy Enables Free Gait Transitions at Varying Speeds",
+    "url": "https://arxiv.org/abs/2510.10455",
+    "extracted_characters": 2631,
+    "role": "원문/출판 페이지; 방법 확인 범위는 papers.json 참고"
+  },
+  {
+    "index": 55,
+    "title": "Proceedings of the 9th Conference on Robot Learning (CoRL 2025)",
+    "url": "https://raw.githubusercontent.com/mlresearch/v305/main/assets/stamatopoulou25a/stamatopoulou25a.pdf",
+    "extracted_characters": 50608,
+    "role": "원문/출판 페이지; 방법 확인 범위는 papers.json 참고"
+  },
+  {
+    "index": 56,
+    "title": "Sim-to-Real Learning of All Common Bipedal Gaits via Periodic Reward Composition",
+    "url": "https://arxiv.org/pdf/2011.01387v2",
+    "extracted_characters": 39307,
+    "role": "원문/출판 페이지; 방법 확인 범위는 papers.json 참고"
+  },
+  {
+    "index": 57,
+    "title": "Learning and Reusing Quadruped Robot Movement Skills from Biological Dogs for Higher-Level Tasks",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10780440/",
+    "extracted_characters": 54659,
+    "role": "원문/출판 페이지; 방법 확인 범위는 papers.json 참고"
+  },
+  {
+    "index": 58,
+    "title": "A Learning Framework for Diverse Legged Robot Locomotion Using Barrier-Based Style Rewards",
+    "url": "https://arxiv.org/html/2409.15780v4",
+    "extracted_characters": 42991,
+    "role": "원문/출판 페이지; 방법 확인 범위는 papers.json 참고"
+  },
+  {
+    "index": 59,
+    "title": "(no title)",
+    "url": "https://raw.githubusercontent.com/Improbable-AI/walk-these-ways/master/go1_gym/envs/rewards/corl_rewards.py",
+    "extracted_characters": 9212,
+    "role": "공개 구현"
+  },
+  {
+    "index": 60,
+    "title": "(no title)",
+    "url": "https://raw.githubusercontent.com/Improbable-AI/walk-these-ways/master/go1_gym/envs/base/legged_robot_config.py",
+    "extracted_characters": 13296,
+    "role": "공개 구현"
+  },
+  {
+    "index": 61,
+    "title": "DeepTransition: Viability Leads to the Emergence of Gait Transitions in Learning Anticipatory Quadrupedal Locomotion Skills",
+    "url": "https://arxiv.org/html/2306.07419",
+    "extracted_characters": 100224,
+    "role": "원문/출판 페이지; 방법 확인 범위는 papers.json 참고"
+  },
+  {
+    "index": 62,
+    "title": "Learning to adapt through bio-inspired gait strategies for versatile quadruped locomotion | Nature Machine Intelligence",
+    "url": "https://www.nature.com/articles/s42256-025-01065-z",
+    "extracted_characters": 70385,
+    "role": "원문/출판 페이지; 방법 확인 범위는 papers.json 참고"
+  },
+  {
+    "index": 63,
+    "title": "Learning Gait-Aware Quadruped Locomotion with Temporal Logic Specifications",
+    "url": "https://arxiv.org/html/2607.00442",
+    "extracted_characters": 52144,
+    "role": "원문/출판 페이지; 방법 확인 범위는 papers.json 참고"
+  }
+]
+

@@ -1,0 +1,46 @@
+{
+  "prepared": true,
+  "goal": {
+    "speed_mps": 2.0,
+    "air_distance_m": 0.5,
+    "fixed": true,
+    "promotion": false,
+    "regression": false,
+    "cohorts": false,
+    "decision_windows": false
+  },
+  "training_executed": false,
+  "policy_updates": 0,
+  "optimizer_steps": 0,
+  "unit_tests": 214,
+  "final_focused_tests": 25,
+  "parent_cpu_checks": {
+    "50k": 21,
+    "46k": 21
+  },
+  "isaac_frozen_checks": [
+    {
+      "run": "20261111_181501_bda33b",
+      "num_envs": 16,
+      "control_steps": 1500
+    },
+    {
+      "run": "20261111_181627_710366",
+      "num_envs": 16,
+      "control_steps": 1500
+    },
+    {
+      "run": "20261111_182047_ffc1d5",
+      "num_envs": 16,
+      "control_steps": 600
+    }
+  ],
+  "mujoco_adapter_control_steps": 10,
+  "goal_performance_pass": false,
+  "new_sim2sim_performance_pass": false,
+  "parent_selection": "latest50k compatible; superiority not demonstrated",
+  "known_issue": "Prior official-physics MuJoCo common walking teacher startup remains unresolved",
+  "source_hashes": "source_sha256.json",
+  "checkpoints_unchanged": true,
+  "post_physics_changes": "Launcher status label, help text, documentation and plan metadata only"
+}

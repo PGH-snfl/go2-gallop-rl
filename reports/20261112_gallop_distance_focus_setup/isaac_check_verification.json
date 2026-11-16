@@ -1,0 +1,96 @@
+{
+  "run": "/home/cvr/GH/go2_animalization/gallop/runs/isaac/check/unitree_go2_gallop/20261112_121220_74bd6c",
+  "status": {
+    "status": "completed",
+    "mode": "check",
+    "training_variant": "gallop_fixed_goal",
+    "num_envs": 16,
+    "planned_iterations": 6000,
+    "policy_updates": 0,
+    "training_initialization": "restore_gallop_new_optimizer",
+    "fine_tuning": {
+      "parent_iteration_zero_based": 3999,
+      "parent_stage_iterations": 4000,
+      "actor_critic_restored": true,
+      "noise_restored": true,
+      "optimizer_reset": true,
+      "stage_iteration_start": 0,
+      "actor_observations": [
+        49,
+        49
+      ],
+      "critic_observations": [
+        64,
+        64
+      ],
+      "added_heading_columns_zero": false,
+      "parent_cumulative_iterations": 54000
+    },
+    "last_event": {
+      "time": "2026-11-12T12:13:09+09:00",
+      "elapsed_s": 42.32,
+      "event": "COMPLETED",
+      "output": "/home/cvr/GH/go2_animalization/gallop/runs/isaac/check/unitree_go2_gallop/20261112_121220_74bd6c"
+    },
+    "steps": 1000,
+    "reset_count": 2,
+    "policy_state_unchanged": true,
+    "rollout_note": "First segment validity only; reset rows use pre-reset terminal snapshots",
+    "source_clean_after_run": true
+  },
+  "recorded_speed_distance_objective": {
+    "velocity_tracking_weight": 1.5,
+    "velocity_tracking_std": 0.8,
+    "forward_progress_weight": 1.0,
+    "progress_speed_scale_fraction": 0.4,
+    "tracking_rmse_relative": 0.4,
+    "tracking_rmse_absolute_floor": 0.3,
+    "leap_weight": 24.0,
+    "partial_credit": 0.5,
+    "progress_exponent": 2.0,
+    "landing_distance_time_scaled": true,
+    "qualified_distance_score": 1.0,
+    "note": "Unchanged measured distance/time and stable-recovery qualification; no success-based goal adaptation"
+  },
+  "actual_reward_terms": {
+    "track_lin_vel_xy": {
+      "func": "isaaclab.envs.mdp.rewards:track_lin_vel_xy_exp",
+      "params": {
+        "command_name": "base_velocity",
+        "std": 0.8
+      },
+      "weight": 1.5
+    },
+    "gallop_leap_distance": {
+      "func": "isaac_task.gallop_env:gallop_reward",
+      "params": {
+        "key": "leap_distance"
+      },
+      "weight": 24.0
+    },
+    "gallop_flight_takeoff": {
+      "func": "isaac_task.gallop_env:gallop_reward",
+      "params": {
+        "key": "flight_takeoff"
+      },
+      "weight": 2.0
+    },
+    "gallop_flight_drive": {
+      "func": "isaac_task.gallop_env:gallop_reward",
+      "params": {
+        "key": "flight_drive"
+      },
+      "weight": 4.0
+    }
+  },
+  "goal": {
+    "speed_mps": 2.0,
+    "air_distance_m": 0.5,
+    "promotion": false,
+    "regression": false,
+    "cohort_collection": false,
+    "decision_windows": false,
+    "startup": "Stationary hold, frozen walking policy, smooth handover to fixed-speed student"
+  },
+  "performance_claim": false
+}

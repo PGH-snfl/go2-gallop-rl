@@ -1,0 +1,60 @@
+{
+  "available": true,
+  "play_run": "/home/cvr/GH/go2_animalization/gallop/runs/isaac/play/unitree_go2_curriculum_fixed/20261028_145206_497a24",
+  "trace": "/home/cvr/GH/go2_animalization/gallop/runs/isaac/play/unitree_go2_curriculum_fixed/20261028_145206_497a24/play_trace.npz",
+  "completed": true,
+  "total_steps": 1500,
+  "duration_seconds": 30.0,
+  "policy_updates": 0,
+  "warmup_seconds": 3.0,
+  "fixed_command": [
+    0.4,
+    0.0,
+    0.0
+  ],
+  "fixed_command_trace_matches_manifest": true,
+  "environments": [
+    {
+      "env": 0,
+      "reset_count": 1,
+      "reset_times_seconds": [
+        20.0
+      ],
+      "first_episode_end_seconds": 20.0,
+      "evaluated_samples": 850,
+      "evaluated_seconds": 16.999999999999638,
+      "mean_command": [
+        0.4000000059604645,
+        0.0,
+        0.0
+      ],
+      "mean_body_velocity": [
+        0.0002801250463337911,
+        -0.00037658235938151314,
+        8.69383281282995e-05
+      ],
+      "planar_velocity_rmse": [
+        0.4023228883743286,
+        0.03289201855659485
+      ],
+      "yaw_rate_rmse": 0.06231518089771271,
+      "roll_pitch_rms": [
+        0.013678222894668579,
+        0.04378940910100937
+      ],
+      "all_feet_contact_fraction": 0.9952941176470588,
+      "per_foot_contact_fraction": [
+        1.0,
+        1.0,
+        0.9952941176470588,
+        1.0
+      ],
+      "planar_displacement": 0.0031789871864020824
+    }
+  ],
+  "caveats": [
+    "Summary excludes the warmup and all rows at/after the first reset.",
+    "Reset rows contain post-reset states. Reset reasons and pre-terminal states were not logged.",
+    "This play retains original noise/randomization/push events; it is not the nominal acceptance protocol."
+  ]
+}

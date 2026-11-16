@@ -1,0 +1,251 @@
+{
+  "sim2sim_pass": false,
+  "physical_deployment_accepted": false,
+  "policy_updates": 0,
+  "physical_hardware_commands": 0,
+  "runs": [
+    {
+      "run": "/home/cvr/GH/go2_animalization/gallop/runs/mujoco/evaluate/unitree_go2_gallop/20261111_172349_7dc524",
+      "profile": "trained",
+      "physics_dt": 0.005,
+      "seconds": 6.38,
+      "termination_reason": "joint_limit",
+      "startup_completed": false,
+      "formal_gallop_metric_seconds": 0.0,
+      "urdf_position_pass": true,
+      "urdf_target_position_pass": true,
+      "urdf_velocity_pass": false,
+      "urdf_torque_pass": true,
+      "max_abs_calf_velocity_rad_s": 20.653288681816996,
+      "maximum_actual_hip_degrees": 18.13866649398745,
+      "brochure_hip48degree_screen_pass": true,
+      "peak_foot_resultant_n": {
+        "FL": 190.49945068359375,
+        "FR": 119.94990539550781,
+        "RL": 133.77008056640625,
+        "RR": 169.6510467529297
+      },
+      "peak_vertical_force_bw": 2.2645694313368994,
+      "guarded_physics_excess_diagnostics": [
+        {
+          "joint": "RL_calf_joint",
+          "max_project_guard_excess_rad": 0.07061297244402298,
+          "first_exceed_seconds": 6.329999999999887,
+          "total_exceed_seconds": 0.055
+        }
+      ],
+      "end_mix": 0.6092106699943542,
+      "end_command_vx": 2.3572068214416504,
+      "end_actual_vx": 2.296863555908203,
+      "inference_ms_quantiles": [
+        0.076941,
+        0.12345149999999996,
+        0.13716901999999997,
+        0.149691
+      ]
+    },
+    {
+      "run": "/home/cvr/GH/go2_animalization/gallop/runs/mujoco/evaluate/unitree_go2_gallop/20261111_172630_32a6ca",
+      "profile": "trained",
+      "physics_dt": 0.001,
+      "seconds": 6.84,
+      "termination_reason": "joint_limit",
+      "startup_completed": false,
+      "formal_gallop_metric_seconds": 0.0,
+      "urdf_position_pass": true,
+      "urdf_target_position_pass": true,
+      "urdf_velocity_pass": false,
+      "urdf_torque_pass": true,
+      "max_abs_calf_velocity_rad_s": 19.535424839107648,
+      "maximum_actual_hip_degrees": 19.35071217695928,
+      "brochure_hip48degree_screen_pass": true,
+      "peak_foot_resultant_n": {
+        "FL": 168.7731170654297,
+        "FR": 150.9076690673828,
+        "RL": 161.01197814941406,
+        "RR": 146.64627075195312
+      },
+      "peak_vertical_force_bw": 2.411254016583056,
+      "guarded_physics_excess_diagnostics": [
+        {
+          "joint": "RL_thigh_joint",
+          "max_project_guard_excess_rad": 0.05700084822075935,
+          "first_exceed_seconds": 6.590000000000535,
+          "total_exceed_seconds": 0.02
+        },
+        {
+          "joint": "RL_calf_joint",
+          "max_project_guard_excess_rad": 0.08886737465299055,
+          "first_exceed_seconds": 5.906000000000307,
+          "total_exceed_seconds": 0.089
+        }
+      ],
+      "end_mix": 0.6479994654655457,
+      "end_command_vx": 2.6299352645874023,
+      "end_actual_vx": 2.5927610397338867,
+      "inference_ms_quantiles": [
+        0.12939450000000002,
+        0.1973137,
+        0.26151512,
+        0.329485
+      ]
+    },
+    {
+      "run": "/home/cvr/GH/go2_animalization/gallop/runs/mujoco/evaluate/unitree_go2_gallop/20261111_172551_71ad44",
+      "profile": "sdk_proxy",
+      "physics_dt": 0.005,
+      "seconds": 12.02,
+      "termination_reason": "startup_deadline",
+      "startup_completed": false,
+      "formal_gallop_metric_seconds": 0.0,
+      "urdf_position_pass": true,
+      "urdf_target_position_pass": true,
+      "urdf_velocity_pass": true,
+      "urdf_torque_pass": true,
+      "max_abs_calf_velocity_rad_s": 7.991452141089118,
+      "maximum_actual_hip_degrees": 12.5530109443601,
+      "brochure_hip48degree_screen_pass": true,
+      "peak_foot_resultant_n": {
+        "FL": 124.9302978515625,
+        "FR": 124.93341827392578,
+        "RL": 116.38778686523438,
+        "RR": 116.38514709472656
+      },
+      "peak_vertical_force_bw": 2.579154552170938,
+      "guarded_physics_excess_diagnostics": [],
+      "end_mix": 0.0,
+      "end_command_vx": 1.0,
+      "end_actual_vx": 0.0005121539579704404,
+      "inference_ms_quantiles": [
+        0.147946,
+        0.191228,
+        0.224435,
+        0.429551
+      ]
+    },
+    {
+      "run": "/home/cvr/GH/go2_animalization/gallop/runs/mujoco/evaluate/unitree_go2_gallop/20261111_172752_411b17",
+      "profile": "trained",
+      "physics_dt": 0.005,
+      "seconds": 6.38,
+      "termination_reason": "joint_limit",
+      "startup_completed": false,
+      "formal_gallop_metric_seconds": 0.0,
+      "urdf_position_pass": true,
+      "urdf_target_position_pass": true,
+      "urdf_velocity_pass": false,
+      "urdf_torque_pass": true,
+      "max_abs_calf_velocity_rad_s": 20.65328868181688,
+      "maximum_actual_hip_degrees": 18.138666493987863,
+      "brochure_hip48degree_screen_pass": true,
+      "peak_foot_resultant_n": {
+        "FL": 190.49945068359375,
+        "FR": 119.94990539550781,
+        "RL": 133.77008056640625,
+        "RR": 169.6510467529297
+      },
+      "peak_vertical_force_bw": 2.2645694313368994,
+      "guarded_physics_excess_diagnostics": [
+        {
+          "joint": "RL_calf_joint",
+          "max_project_guard_excess_rad": 0.07061297244401998,
+          "first_exceed_seconds": 6.329999999999887,
+          "total_exceed_seconds": 0.055
+        }
+      ],
+      "end_mix": 0.6092106699943542,
+      "end_command_vx": 2.3572068214416504,
+      "end_actual_vx": 2.296863555908203,
+      "inference_ms_quantiles": [
+        0.15133,
+        0.1916451999999999,
+        0.2300817599999999,
+        0.306738
+      ]
+    }
+  ],
+  "videos": [
+    {
+      "path": "/home/cvr/GH/go2_animalization/gallop/runs/mujoco/evaluate/unitree_go2_gallop/20261111_172349_7dc524/mujoco_gallop.mp4",
+      "duration_seconds": 6.38,
+      "fps": 50.0,
+      "frames": 319,
+      "size": [
+        640,
+        480
+      ],
+      "sha256": "e0642e5d242c4fb5833932846399694aba3312d52b716a9937b90846df91e5eb"
+    },
+    {
+      "path": "/home/cvr/GH/go2_animalization/gallop/runs/mujoco/evaluate/unitree_go2_gallop/20261111_172630_32a6ca/mujoco_gallop.mp4",
+      "duration_seconds": 6.84,
+      "fps": 50.0,
+      "frames": 342,
+      "size": [
+        640,
+        480
+      ],
+      "sha256": "855cb118c6c530a42486a220662eb69f71f0e2e5d761207fda897f1f52b32056"
+    },
+    {
+      "path": "/home/cvr/GH/go2_animalization/gallop/runs/mujoco/evaluate/unitree_go2_gallop/20261111_172551_71ad44/mujoco_gallop.mp4",
+      "duration_seconds": 12.02,
+      "fps": 50.0,
+      "frames": 601,
+      "size": [
+        640,
+        480
+      ],
+      "sha256": "7106c75b6c6cfd96709f3306aee2986eb050baa84251f6a363fb1f0393e26ea6"
+    },
+    {
+      "path": "/home/cvr/GH/go2_animalization/gallop/runs/mujoco/evaluate/unitree_go2_gallop/20261111_172752_411b17/mujoco_gallop.mp4",
+      "duration_seconds": 6.38,
+      "fps": 50.0,
+      "frames": 319,
+      "size": [
+        640,
+        480
+      ],
+      "sha256": "c87021fa8d891a567f956b35a7c7fbce0bf7076a4d7a7eea86ea6959b54ddafa"
+    }
+  ],
+  "repeated_nominal_gui_determinism": [
+    {
+      "first": "/home/cvr/GH/go2_animalization/gallop/runs/mujoco/evaluate/unitree_go2_gallop/20261111_172349_7dc524",
+      "second": "/home/cvr/GH/go2_animalization/gallop/runs/mujoco/evaluate/unitree_go2_gallop/20261111_172752_411b17",
+      "same_positions": false,
+      "same_velocities": false,
+      "maximum_position_difference_rad": 8.215650382226158e-14,
+      "maximum_velocity_difference_rad_s": 3.086420008457935e-12,
+      "equivalent_within_1e8_tolerance": true
+    }
+  ],
+  "isaac_saved_hip_abs_max_degrees": 31.664388161963934,
+  "isaac_saved_hip48degree_screen_pass": true,
+  "isaac_actual_joint_velocity_validation": "UNKNOWN: saved Isaac trace has no joint velocity/torque samples; target rate is not actual velocity.",
+  "export_audit": {
+    "generic_export_file": "isaac_task/export.py",
+    "generic_export_clamps_raw_actor_to_minus1_plus1": true,
+    "gallop_cli_supports_export": false,
+    "actual_saved_action_abs_max": 4.185700416564941,
+    "actual_saved_action_elements_outside_minus1_plus1_fraction": 0.3726111111111111,
+    "conclusion": "Generic clamped GPD exporter is incompatible with this unbounded49-to12 Gallop action contract; do not use it."
+  },
+  "unresolved_manufacturer_limits": [
+    "EDU serial/firmware operating limits",
+    "continuous/RMS motor torque",
+    "thermal/current/battery limits",
+    "admissible foot impact or structural load",
+    "joint-specific identified torque-speed envelope"
+  ],
+  "deployment_blockers": [
+    "No successful full Gallop handover in either MuJoCo validation profile.",
+    "Actual calf velocity exceeds15.7rad/s official URDF software bound in trained-profile MuJoCo.",
+    "Saved startup supervisor uses simulator-perfect body linear velocity and height; no verified deployed estimator connected.",
+    "Existing five-action GPD DDS controller is not the49-observation/12-joint Gallop supervisor/filter/teacher runtime.",
+    "No parity-verified Gallop export and official C++/DDS deployment integration.",
+    "No measured end-to-end state age, DDS jitter/deadline or hardware receiver-timeout tests for this policy.",
+    "Official peak torque/URDF bounds do not certify continuous duty or contact impacts."
+  ]
+}

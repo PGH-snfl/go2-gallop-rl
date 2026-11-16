@@ -1,0 +1,16 @@
+{
+  "status": "positive_short_pilot_not_full_gallop_success",
+  "recommended_candidate": "runs/isaac/train/unitree_go2_gallop/20261110_214726_dc4067/model_final.pt",
+  "protected_reference": "runs/isaac/train/unitree_go2_gallop/20261106_000029_077a6f/model_final.pt",
+  "stay_at_goal": {
+    "speed_mps": 2.5,
+    "leap_m": 0.18
+  },
+  "promote_speed": false,
+  "extend_short_training_now": false,
+  "reasons": [
+    "500-update checkpoint passes all predeclared directional checks; 250-update checkpoint fails the foot-height gate.",
+    "Flight distance, front width and heading improve, but stable landing rate does not improve and both landing/width remain below80%.",
+    "Full staged graduation and final80cm feasibility remain unverified."
+  ]
+}

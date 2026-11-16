@@ -1,0 +1,30 @@
+{
+  "status": "verified",
+  "training_executed": false,
+  "policy_updates": 0,
+  "unit_tests_passed": 3,
+  "parent_checkpoint": "/home/cvr/GH/go2_animalization/gallop/runs/isaac/train/unitree_go2_forward_only/20261028_150349_3efb1b/model_final.pt",
+  "parent_checkpoint_sha256": "f9a79323e9848f58bc4cc0f281b2f2d5f74e451568cf5b3590468a3220450302",
+  "forward_command_range": [
+    0.2,
+    1.0
+  ],
+  "actor_command_samples": 9600,
+  "fixed_command": [
+    1.0,
+    0.0,
+    0.0
+  ],
+  "actor_critic_optimizer_restored": true,
+  "optimizer_state_entries": 17,
+  "inherited_learning_rate": 1.0000000000000003e-05,
+  "parent_cumulative_iterations": 2000,
+  "new_stage_iteration_start": 0,
+  "planned_additional_training_iterations": 2000,
+  "policy_unchanged": true,
+  "parent_file_unchanged": true,
+  "official_checkout_clean": true,
+  "check_run": "/home/cvr/GH/go2_animalization/gallop/runs/isaac/check/forward_finetune_1ms_20261028",
+  "reset_count": 4,
+  "performance_acceptance_test": false
+}

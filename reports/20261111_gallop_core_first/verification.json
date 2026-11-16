@@ -1,0 +1,57 @@
+{
+  "checks": {
+    "unit_tests189_passed": true,
+    "config_only_enables_new_policy": true,
+    "safety_limits_unchanged": true,
+    "plan_unchanged": true,
+    "parent_sha_preserved": true,
+    "actual_check_completed": true,
+    "actual_steps1600": true,
+    "zero_PPO": true,
+    "policy_unchanged": true,
+    "runtime_source_clean": true,
+    "actor_critic_std_restored": true,
+    "interface_unchanged": true,
+    "promotion_policy_recorded": true,
+    "core_matches_checked_source": true,
+    "env_matches_checked_source": true,
+    "first16_present": true,
+    "progress_success14": true,
+    "strict_success6": true,
+    "failures_still_rejected": true,
+    "no_false_final_success": true,
+    "stage0_landing60": true,
+    "details_excluded_early": true,
+    "reward_weights_unchanged": true,
+    "trace_finite": true,
+    "executed_angles_valid": true,
+    "executed_rates_valid": true,
+    "actual_joint_excess_within_tolerance": true,
+    "checked_stage0": true,
+    "late_cli_completed": true,
+    "fixture_explicitly_untrained": true,
+    "late_stage8_restored": true,
+    "past_data_thresholds_allow_progress": true
+  },
+  "passed": 32,
+  "total": 32,
+  "actual_isaac_check": "runs/isaac/check/unitree_go2_gallop/20261111_140727_733e54",
+  "actual_first_episodes": {
+    "success": 14,
+    "staged_strict_success": 6,
+    "staged_final_success": 0,
+    "startup_completed": 14,
+    "terminated": 2
+  },
+  "late_fixture_check": "runs/isaac/check/unitree_go2_gallop/20261111_140615_39e424",
+  "policy_updates": 0,
+  "parent_checkpoint_sha256": "32ac3e282cf014ec8ac342ca832a49ea809b1e9a158beb17b490c9fe6b22ecdb",
+  "changed_config_keys": [
+    "staged_core_first_enabled"
+  ],
+  "caveats": [
+    "16 frozen starts are not256-env training promotion or multi-seed deployment validation.",
+    "Stage8 fixture predates regression diagnostics; final regression is unit tested.",
+    "No80cm success or new Sim2Sim performance claim."
+  ]
+}

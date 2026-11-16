@@ -1,0 +1,65 @@
+{
+  "run": "/home/cvr/GH/go2_animalization/gallop/runs/isaac/check/unitree_go2_gallop/20261112_150948_22d0aa",
+  "status": {
+    "status": "completed",
+    "mode": "check",
+    "training_variant": "gallop_fixed_goal",
+    "num_envs": 16,
+    "planned_iterations": 6000,
+    "policy_updates": 0,
+    "training_initialization": "restore_gallop_new_optimizer",
+    "fine_tuning": {
+      "parent_iteration_zero_based": 3999,
+      "parent_stage_iterations": 4000,
+      "actor_critic_restored": true,
+      "noise_restored": true,
+      "optimizer_reset": true,
+      "stage_iteration_start": 0,
+      "actor_observations": [
+        49,
+        49
+      ],
+      "critic_observations": [
+        64,
+        64
+      ],
+      "added_heading_columns_zero": false,
+      "parent_cumulative_iterations": 58000
+    },
+    "last_event": {
+      "time": "2026-11-12T15:10:36+09:00",
+      "elapsed_s": 41.42,
+      "event": "COMPLETED",
+      "output": "/home/cvr/GH/go2_animalization/gallop/runs/isaac/check/unitree_go2_gallop/20261112_150948_22d0aa"
+    },
+    "steps": 1000,
+    "reset_count": 42,
+    "policy_state_unchanged": true,
+    "rollout_note": "First segment validity only; reset rows use pre-reset terminal snapshots",
+    "source_clean_after_run": true
+  },
+  "velocity_safety": {
+    "calf_target_rate": 10.0,
+    "brake_start_margin": 0.8,
+    "brake_gain": 2.0,
+    "pd_stiffness": 25.0,
+    "pd_damping": 0.5,
+    "cost_start_margin": 0.8,
+    "cost_weight": 18.0,
+    "per_control_step_peak_cost_weight": 1.0,
+    "terminate_on_one_physics_exceedance": true,
+    "reset_timing": "Fault latches at physics sampling; environment resets at control-step boundary",
+    "infeasible_brake": "Keep angle/rate bounds, choose closest feasible target and log conflict",
+    "motor_curve": "Unchanged; no artificial braking torque or actual q/dq clipping"
+  },
+  "replayed_first_segment_control_samples": 5180,
+  "max_target_replay_error_rad": 0.0,
+  "episodes": 42,
+  "official_termination_episodes": 35,
+  "completed_handovers": 2,
+  "formal_metric_seconds": 0.0,
+  "brake_active_joint_samples": 98,
+  "brake_infeasible_joint_samples": 3,
+  "policy_updates": 0,
+  "performance_claim": false
+}

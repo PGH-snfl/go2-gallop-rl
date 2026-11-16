@@ -1,0 +1,208 @@
+{
+  "artifacts": {
+    "play_episodes.csv": {
+      "bytes": 2567,
+      "sha256": "df5da0f6f9d29791200b8d0516a2d99b929fb8d0add58937d610112b0b6b5c57"
+    },
+    "README.md": {
+      "bytes": 7752,
+      "sha256": "8dd6ebd82ce2eee58ca0e2837f1ef02c4fb2384141fcd5ef7acbee6cb313d87c"
+    },
+    "play_diagnostics.json": {
+      "bytes": 866,
+      "sha256": "e5e3e70508d47f94a104c7e4bb01e4b6b04fea8f7998850565cd8fb35f33a0f7"
+    },
+    "heading_play_diagnostics.json": {
+      "bytes": 19098,
+      "sha256": "b3729fd65bc624e98592ca958fe4fcb57a1d4fdc51c5d0db3fa251bfbfde75c6"
+    },
+    "reward_contributions_last100.json": {
+      "bytes": 2931,
+      "sha256": "f1a295d2a784ad941f3b79d241e0e8e7957d2eaac9c147e44fdec7cce9229ef2"
+    },
+    "play_analysis.json": {
+      "bytes": 4286,
+      "sha256": "51648af1c9fc4a1e812c1e650361de2fd948c3442b5b0f7bcb7808d6683256ac"
+    },
+    "play_flight_trace.csv": {
+      "bytes": 636400,
+      "sha256": "996e9915fcee47557e31f84d704c5ffa8f3055b827ae2b3c7cc11d2abbc0688d"
+    },
+    "curriculum_decisions.csv": {
+      "bytes": 42074,
+      "sha256": "25c696dc3c3266a648cb95e95286fdbeb192ecfb6dace95dbe441e085465fb64"
+    },
+    "heading_parent_comparison.json": {
+      "bytes": 5693,
+      "sha256": "573a29054c8c1b633fe98b39f2142827a243477d1eafbc1164fc0b7273710ad2"
+    },
+    "criterion_pass_rates.png": {
+      "bytes": 87384,
+      "sha256": "5979a26cf53fc891b2221f6f82450091efeb52edeeec81de5fe7979d546a3872"
+    },
+    "tensorboard_scalars.csv": {
+      "bytes": 38679949,
+      "sha256": "c8dc9aead3a4a424709c233649252889d92f66017d63e0842e15bd8f6b4bcf6f"
+    },
+    "startup_stall_diagnostics.json": {
+      "bytes": 7065,
+      "sha256": "b5e9005a314a90d87471c36a9091f45bebe5b88ad00554b9cc0326ff8aec687a"
+    },
+    "play_keyframes.png": {
+      "bytes": 908182,
+      "sha256": "717ef748d0f26bbc6293df56baba9873165a165566d01757aa0f6303a6b4dc7c"
+    },
+    "evidence_manifest.json": {
+      "bytes": 15663,
+      "sha256": "0230886a240288f09c03525ca2bef87cd4bd4ed63dbfd36a5476405673860a11"
+    },
+    "heading_reward_curves.png": {
+      "bytes": 324207,
+      "sha256": "11c9aa449384848ad64266d7709375bafcfc0e778957462537bed23e56fd6881"
+    },
+    "verification.json": {
+      "bytes": 1268,
+      "sha256": "f4fb5210d77b7a542ed35f71a29892481bf4e22934239d836da82dc595d2b408"
+    },
+    "train_episodes.csv": {
+      "bytes": 14570835,
+      "sha256": "a1787efd2a742f133101af373f7c43f9d4706ddfc517ecbcedf7522305b98945"
+    },
+    "leap_curves.png": {
+      "bytes": 106307,
+      "sha256": "eaf5be346afcf7c907deee0643afbf719bbb47e0765c020c344f36fb375ee40e"
+    },
+    "heading_play_trace.csv": {
+      "bytes": 1858892,
+      "sha256": "39f893e782b9cf9939aba14a4410bb020cd068db647341148e8700892a1af99f"
+    },
+    "training_diagnostics.json": {
+      "bytes": 51625,
+      "sha256": "b08c427378ee3f9d66bb64d7344842207451838e89857b922ff432002d74268b"
+    },
+    "heading_training_diagnostics.json": {
+      "bytes": 4521,
+      "sha256": "679541eb81bf5cf270f2525ffd4febc58228c0cc50c4a274e508906b92df9d8f"
+    },
+    "gallop_config.json": {
+      "bytes": 5865,
+      "sha256": "6e68d396a2826bcefddf3bc1f025b7ad22bf08f1a66bb7981530ba750007ba86"
+    },
+    "pair_reward_curves.png": {
+      "bytes": 235728,
+      "sha256": "46f7d4c74bfa06cdd4e4dc84c753129f86b1898c94e6595149fb420825cd0b3a"
+    },
+    "flight_reward_curves.png": {
+      "bytes": 339665,
+      "sha256": "5d65728db735acfdf77dd278e62b18741f5486ca9553ba51678bf8971e2a481a"
+    },
+    "videos.csv": {
+      "bytes": 211,
+      "sha256": "46f2f1405d9eb99a1988d637007f121dfe4fba7568f67fe4e4696cfee4346dd3"
+    },
+    "startup_stall_trends.png": {
+      "bytes": 173266,
+      "sha256": "54970f51a318131d53317f28ea27fe81f174504f3e4bd03529e762322b46475b"
+    },
+    "play_flight_events.png": {
+      "bytes": 87431,
+      "sha256": "d46d222dd0bd8eccf05d43e40d286ee88ca2cb323149dd1ae11243cf6b5b140b"
+    },
+    "summary.json": {
+      "bytes": 68025,
+      "sha256": "2a032aedba1b8608f43f0111a572fbfd10ba1cf7197414c0fa1a96a3e3de5b4e"
+    },
+    "training_curves.png": {
+      "bytes": 206480,
+      "sha256": "83cec60e866a0d03f8e3cf622a57e6ac134aaa1c25f69c6c22e7150ce2f8d888"
+    },
+    "additional_input_manifest.json": {
+      "bytes": 230,
+      "sha256": "a080f7ae26cf19c6e76eb5523f20338379e8685a2b4301c19012fbb507e88983"
+    },
+    "heading_motion_play.png": {
+      "bytes": 573940,
+      "sha256": "e768cd0b99c4b12ae83c2f0ce04694fe6b2c0b79fc9565dbceccb683dfbbf2e4"
+    },
+    "play_state_trace.csv": {
+      "bytes": 191450,
+      "sha256": "66e93eece78127f1f4832f250dff3f01b36be8c0880111de564294b382a81d1c"
+    },
+    "params/agent.yaml": {
+      "bytes": 1039,
+      "sha256": "0316262ab7d8da6b37f98b1b71fc803a31417eb372d6c607eba53fe1b039aff6"
+    },
+    "params/env.yaml": {
+      "bytes": 32028,
+      "sha256": "9cf6ecff7ce2d38164a95d19ddc2fedf7827028739f811cfe06ec6dbc18bafe9"
+    },
+    "source/AGENTS.md": {
+      "bytes": 56154,
+      "sha256": "264985598b7651540600dfc1ab9831edf8803b52b21d274d83bbfb37018ec165"
+    },
+    "source/verify.py": {
+      "bytes": 5080,
+      "sha256": "67c9bc03f2c38915d5ce2e961e26c9aeed2dda941963fc88f467225e8fd81eac"
+    },
+    "source/isaac_task/gallop_env.py": {
+      "bytes": 63340,
+      "sha256": "7e96a0506d600b6ace62bfd4c24741452b17bd6d765d48526cbf62f6811ed630"
+    },
+    "source/isaac_task/gallop_core.py": {
+      "bytes": 76650,
+      "sha256": "fe03c37af79e45713227bb7e371da70a668b6f4fcfb178a602e490b1dd5a6ddb"
+    },
+    "source/docs/CONTINUE_HERE.md": {
+      "bytes": 105160,
+      "sha256": "1b15e79ba904960eeced40a92ba8a9c7fe599201f23758695cb0a552235408cb"
+    },
+    "source/scripts/analysis/collect_startup_stall.py": {
+      "bytes": 6683,
+      "sha256": "37133072a39535864eb020ee541dcd83bbc53c7848994ac78084fb67ea1e291e"
+    },
+    "source/scripts/analysis/collect_gallop.py": {
+      "bytes": 22907,
+      "sha256": "e3b50fd27ea2d0ee18ab0d3f2f872a55a87ad974511fbb5b050a9dc5a7d52508"
+    },
+    "source/scripts/analysis/collect_heading_diagnostics.py": {
+      "bytes": 15862,
+      "sha256": "134ba6b3ef624df3d7ed90f463f07dde7b9e89a6e8ace8ad27aae054c7881e62"
+    },
+    "source/scripts/analysis/collect_flight_diagnostics.py": {
+      "bytes": 12981,
+      "sha256": "ebb4bcdebe842d04953f6579196711f686ab4e025d7afba4b7e6ffeff6b9516e"
+    },
+    "source/configs/gallop_3ms_80cm_stable.json": {
+      "bytes": 5319,
+      "sha256": "c6196c8473d324f8b0f4176d0c240347520d7c0ac986c18f676e166af4e4a107"
+    },
+    "source/configs/active_gallop_branch.json": {
+      "bytes": 2134,
+      "sha256": "e863a17fb0d9568a52f6ddfc7d7c0a63ba695915b5e9b91ddfa478753515a84c"
+    },
+    "source/logs/gallop-80cm-flight.log": {
+      "bytes": 944,
+      "sha256": "c2b3451af19c93b1e78d291b9f69037bd842d6236945df871cd0edad9da29589"
+    },
+    "source/logs/gallop-80cm-verify.log": {
+      "bytes": 56,
+      "sha256": "3fc22bffe8f7df124432799606e9cd35d5b31757bcc4c78758dc9cf0b7d44174"
+    },
+    "source/logs/gallop-80cm-startup.log": {
+      "bytes": 227,
+      "sha256": "68d5d2620ae9484e7142562373b40b1b82622a71b208e3d32e69cb61e9fbf7b4"
+    },
+    "source/logs/gallop-80cm-collect.log": {
+      "bytes": 4164,
+      "sha256": "4973e58f3beb11f5fd905272680097751ea28a4936f6fba210386173380a2cce"
+    },
+    "source/logs/gallop-80cm-heading.log": {
+      "bytes": 131,
+      "sha256": "b6e62183726e5e2a8069dbcc293a5dbc57b8e8422c56e5ce2621b5d17fe48145"
+    }
+  },
+  "checks": 27,
+  "all_checks_passed": true,
+  "policy_updates": 0,
+  "new_physics_rollouts": 0
+}

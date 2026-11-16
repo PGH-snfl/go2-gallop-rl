@@ -1,0 +1,92 @@
+[
+  {
+    "path": "reports/20261028_official_walking_diagnosis/README.md",
+    "size": 8880,
+    "sha256": "4e27851d0c06887589351b546f513df88268b4994834a0f51f0f110a9747a430"
+  },
+  {
+    "path": "reports/20261028_official_walking_diagnosis/diagnosis.json",
+    "size": 16257,
+    "sha256": "a9ec20ec89cdf6c7a4531c0fa1a9db1913c38909e77109efcbd024101a3163a0"
+  },
+  {
+    "path": "scripts/analysis/analyze_official_walking_failure.py",
+    "size": 4080,
+    "sha256": "22f34af648514007ec555fa889880fbed17647f92c227b9026789ed0555deb93"
+  },
+  {
+    "path": "scripts/validation/diagnose_official_curriculum.py",
+    "size": 10064,
+    "sha256": "ac37f2973d601cf917e57a68b044d944978a7794d9dec09fe9de6e6cb4782587"
+  },
+  {
+    "path": "runs/isaac/check/official_curriculum_random_20261028/diagnostic_source.py",
+    "size": 10064,
+    "sha256": "ac37f2973d601cf917e57a68b044d944978a7794d9dec09fe9de6e6cb4782587"
+  },
+  {
+    "path": "runs/isaac/check/official_curriculum_random_20261028/curriculum_calls.csv",
+    "size": 39777,
+    "sha256": "4e7709d193c96b5cc78f5dbe0602783f7115831bf7a11697fc64ac3d18b92aca"
+  },
+  {
+    "path": "runs/isaac/check/official_curriculum_random_20261028/initial_episode_offsets.npy",
+    "size": 2176,
+    "sha256": "b7697b104dd5e31ebf5dd8a2634be7656277400820d4eebdc15af62ff2763d3d"
+  },
+  {
+    "path": "runs/isaac/check/official_curriculum_random_20261028/curriculum_calls.json",
+    "size": 161793,
+    "sha256": "79bab337156c748ed2ae1c62189140b835ca6e085d691cea9c4558265d8b3490"
+  },
+  {
+    "path": "runs/isaac/check/official_curriculum_random_20261028/status.json",
+    "size": 1549,
+    "sha256": "720756b71e7889a969064659a89903bccb952936178fd1d97a616316889bd572"
+  },
+  {
+    "path": "runs/isaac/check/official_curriculum_random_20261028/summary.json",
+    "size": 11909,
+    "sha256": "794d9891d74e6521664628466e4dd06c9fd95b8822914b1f3a244f0ceaa50334"
+  },
+  {
+    "path": "runs/isaac/check/official_curriculum_random_20261028/console.log",
+    "size": 18255,
+    "sha256": "ea5adb3de0682741e961840ae45331b19e9e057d12f6ff82a8652aa7cfab8d9e"
+  },
+  {
+    "path": "runs/isaac/check/official_curriculum_zero_20261028/diagnostic_source.py",
+    "size": 10064,
+    "sha256": "ac37f2973d601cf917e57a68b044d944978a7794d9dec09fe9de6e6cb4782587"
+  },
+  {
+    "path": "runs/isaac/check/official_curriculum_zero_20261028/curriculum_calls.csv",
+    "size": 9378,
+    "sha256": "7e1b5ffb06d0efb885bafd0b51304f5f329f6f1163bae59059a32d6f51fa2082"
+  },
+  {
+    "path": "runs/isaac/check/official_curriculum_zero_20261028/initial_episode_offsets.npy",
+    "size": 2176,
+    "sha256": "32681f23e9acf6c9dc985c6ea96d92ffb271b2b79bbf5940180bd67323888833"
+  },
+  {
+    "path": "runs/isaac/check/official_curriculum_zero_20261028/curriculum_calls.json",
+    "size": 27313,
+    "sha256": "32202887ebab7048302b13b394453200fb85784c74fd687ecba61662ea47ebbc"
+  },
+  {
+    "path": "runs/isaac/check/official_curriculum_zero_20261028/status.json",
+    "size": 1559,
+    "sha256": "a9e76e1b72f1b0d01457c25fdc5acefa6099267efa8741f89b73d9c6c7398885"
+  },
+  {
+    "path": "runs/isaac/check/official_curriculum_zero_20261028/summary.json",
+    "size": 21053,
+    "sha256": "3fa0fd87223b04d5d3804d13c8a51efcb0b2e9e2025d63702b4d866bde81eff2"
+  },
+  {
+    "path": "runs/isaac/check/official_curriculum_zero_20261028/console.log",
+    "size": 23935,
+    "sha256": "e082bf1f57f5b77df8652b59a8a5e9c7f5f9633802d72c576119d1638c44d566"
+  }
+]

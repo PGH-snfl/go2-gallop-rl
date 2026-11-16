@@ -1,0 +1,26 @@
+{
+  "prepared": true,
+  "unit_tests_passed": 230,
+  "parent_cpu_checks": {
+    "54k": 21,
+    "58k": 21
+  },
+  "isaac_frozen_checks": {
+    "54k": "20261112_150633_1963a0",
+    "58k": "20261112_150948_22d0aa"
+  },
+  "per_check_envs": 16,
+  "per_check_control_steps": 1000,
+  "guard58k_target_replay_error_rad": 0.0,
+  "mujoco_adapter_steps": 10,
+  "policy_updates": 0,
+  "optimizer_steps": 0,
+  "physical_hardware_commands": 0,
+  "original_files_unchanged": 64,
+  "final_parent": "runs/isaac/train/unitree_go2_gallop/20261112_124757_47b3b7/model_final.pt",
+  "final_parent_sha256": "b870c94b016930c17c01b0de4fcebed12a3204ba158d2bc3f0b54b35aaffb8b1",
+  "additional_iterations": 4000,
+  "planned_cumulative_iterations": 62000,
+  "new_policy_performance_verified": false,
+  "deployment_accepted": false
+}

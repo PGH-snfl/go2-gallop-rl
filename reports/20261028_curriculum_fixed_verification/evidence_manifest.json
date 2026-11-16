@@ -1,0 +1,162 @@
+[
+  {
+    "path": "reports/20261028_curriculum_fixed_verification/README.md",
+    "size": 3750,
+    "sha256": "733f431fb4fe8466c51fadfde18b4f0922152ce42c388f82484c134a068f907a"
+  },
+  {
+    "path": "reports/20261028_curriculum_fixed_verification/summary.json",
+    "size": 1451,
+    "sha256": "847043b5a75308bc655d608b4ab57c8d7b03199a9c45e6f7ab264dd0a5d63e1e"
+  },
+  {
+    "path": "isaac_task/velocity_curriculum.py",
+    "size": 6842,
+    "sha256": "cb1b954a06b663f8dd1f6ccc97e1fa1a57fc5a9dfd2855344ce7db67b8ac1a5e"
+  },
+  {
+    "path": "tests/test_velocity_curriculum.py",
+    "size": 3850,
+    "sha256": "94ab20c5d5c55c0805c646996032729b727b30444b27b63f14828c03757b850b"
+  },
+  {
+    "path": "scripts/training/official_baseline.py",
+    "size": 14863,
+    "sha256": "159df4b635912252cdd2a666cce8f73da9fc1b645f7e79a98a6af513e61bca6a"
+  },
+  {
+    "path": "scripts/training/launch_isaac.py",
+    "size": 2358,
+    "sha256": "1b048d94340cc62c883b607781c3551d950c7c9f757b847032dae5ed1527fef0"
+  },
+  {
+    "path": "isaac_task/logging.py",
+    "size": 4163,
+    "sha256": "28193af789a2c1e52debfe827aff460b95f5fda837c25cf50340f6002eba6b23"
+  },
+  {
+    "path": "scripts/validation/evaluate_unitree_baseline.py",
+    "size": 16770,
+    "sha256": "4389710d79af0694c9fdc0b7b240a8a72b7449dec8019288a1c783342ca041f8"
+  },
+  {
+    "path": "docs/curriculum_fixed_baseline.md",
+    "size": 5579,
+    "sha256": "95fafdb2b81c0a8d7f1b63309fffb3a75b24e621feae32a68c61edee177ff450"
+  },
+  {
+    "path": "runs/isaac/check/periodic_curriculum_fixed_20261028/velocity_curriculum.py",
+    "size": 6842,
+    "sha256": "cb1b954a06b663f8dd1f6ccc97e1fa1a57fc5a9dfd2855344ce7db67b8ac1a5e"
+  },
+  {
+    "path": "runs/isaac/check/periodic_curriculum_fixed_20261028/diagnostic_source.py",
+    "size": 10943,
+    "sha256": "a04dff98e2049fcb4e79fbfe05b1676e201e191fdf1fd56dd97f46275321ff1f"
+  },
+  {
+    "path": "runs/isaac/check/periodic_curriculum_fixed_20261028/curriculum_calls.csv",
+    "size": 6,
+    "sha256": "acd5aa135d5dd369d0916cd9b4a45134ff5c023379d79bb2f2c4706e2b3798c2"
+  },
+  {
+    "path": "runs/isaac/check/periodic_curriculum_fixed_20261028/initial_episode_offsets.npy",
+    "size": 2176,
+    "sha256": "b7697b104dd5e31ebf5dd8a2634be7656277400820d4eebdc15af62ff2763d3d"
+  },
+  {
+    "path": "runs/isaac/check/periodic_curriculum_fixed_20261028/curriculum_calls.json",
+    "size": 2,
+    "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  },
+  {
+    "path": "runs/isaac/check/periodic_curriculum_fixed_20261028/status.json",
+    "size": 1533,
+    "sha256": "327a526ceac712cdbb621ba44319064ccbed947134fe77cfc843832e44cefc7f"
+  },
+  {
+    "path": "runs/isaac/check/periodic_curriculum_fixed_20261028/summary.json",
+    "size": 13752,
+    "sha256": "c9d45e6efb5b9400ddc214d088fbd9cac7739e88dbb46722d53e2cd70c2e4cf2"
+  },
+  {
+    "path": "runs/isaac/check/periodic_curriculum_fixed_20261028/console.log",
+    "size": 20110,
+    "sha256": "0a4902e36dbd542cd9927c8973b43841ae4b67eb600177e565a53e695bef2627"
+  },
+  {
+    "path": "runs/isaac/check/curriculum_fixed_launcher_20261028/play_trace.csv",
+    "size": 2049,
+    "sha256": "30a36bc092d2a31cb9374055343b9c9edb8fac6472622c59cc30c9650c0bf24b"
+  },
+  {
+    "path": "runs/isaac/check/curriculum_fixed_launcher_20261028/status.json",
+    "size": 755,
+    "sha256": "cf9cf427d45afa44dbe57e0f2c65eac1852367f5054696a1be8ac8558f22e9fd"
+  },
+  {
+    "path": "runs/isaac/check/curriculum_fixed_launcher_20261028/play_trace.npz",
+    "size": 3611,
+    "sha256": "c7d259b27a08e7c7c520ca2f32a67e408c8c7070e4ecfe6d6b6ea1bf563ff644"
+  },
+  {
+    "path": "runs/isaac/check/curriculum_fixed_launcher_20261028/curriculum_summary.json",
+    "size": 330,
+    "sha256": "b3f034a78098973a055bab090569ff225e1570bd409a1db080023a0b00b2d384"
+  },
+  {
+    "path": "runs/isaac/check/curriculum_fixed_launcher_20261028/manifest.json",
+    "size": 1709,
+    "sha256": "1908a2b131d343ff901ca39c152cb3b0ef98253aa19d0f5544051e04f78d0afe"
+  },
+  {
+    "path": "runs/isaac/check/curriculum_fixed_launcher_20261028/console.log",
+    "size": 17106,
+    "sha256": "25d1c9e5370f74204e5f82f7dfc62f869be41991eb6361408d8430b0e55dec56"
+  },
+  {
+    "path": "runs/isaac/check/curriculum_fixed_launcher_20261028/progress.jsonl",
+    "size": 1206,
+    "sha256": "d506b93f8fee165e68f0bd4fb96f917e6ca100e70499f4b73af1eb110615325d"
+  },
+  {
+    "path": "runs/isaac/check/curriculum_fixed_launcher_20261028/params/agent.yaml",
+    "size": 1048,
+    "sha256": "e3fc4e94347dc44a323361c669e8c0ff4b14c456dd4f8972d487196a1e56825c"
+  },
+  {
+    "path": "runs/isaac/check/curriculum_fixed_launcher_20261028/params/env.yaml",
+    "size": 31902,
+    "sha256": "a3c31e8a119f964e4a6e820136475f90ff2a5831522187ae5067dbdae119147a"
+  },
+  {
+    "path": "runs/isaac/check/curriculum_fixed_launcher_20261028/source/velocity_curriculum.py",
+    "size": 6842,
+    "sha256": "cb1b954a06b663f8dd1f6ccc97e1fa1a57fc5a9dfd2855344ce7db67b8ac1a5e"
+  },
+  {
+    "path": "runs/isaac/check/curriculum_fixed_launcher_20261028/source/official_env_cfg.py",
+    "size": 14840,
+    "sha256": "56859832148dacc724ddba3954a7684b99a43560e4fde561f6361b9daa051b56"
+  },
+  {
+    "path": "runs/isaac/check/curriculum_fixed_launcher_20261028/source/official_ppo_cfg.py",
+    "size": 1042,
+    "sha256": "0f15211f85adc84cf6586770dad448f080d579ea55b4f509aca20a36a11310f7"
+  },
+  {
+    "path": "runs/isaac/check/curriculum_fixed_launcher_20261028/source/official_runtime.py",
+    "size": 14863,
+    "sha256": "159df4b635912252cdd2a666cce8f73da9fc1b645f7e79a98a6af513e61bca6a"
+  },
+  {
+    "path": "runs/isaac/check/curriculum_fixed_launcher_20261028/source/official_robot_cfg.py",
+    "size": 24164,
+    "sha256": "5bb4d9b8cabfde167b0f905d0cfa63a2d8a6ab0209077c4885997edbc25c6a62"
+  },
+  {
+    "path": "runs/isaac/check/curriculum_fixed_launcher_20261028/videos/official-check-step-0.mp4",
+    "size": 73111,
+    "sha256": "dbc27824ceb58d0b4b82caf771c6c240569378dc6d03c765b5a895d5f1a7c8e9"
+  }
+]

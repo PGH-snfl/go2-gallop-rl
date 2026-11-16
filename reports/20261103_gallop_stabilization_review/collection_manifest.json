@@ -1,0 +1,262 @@
+{
+  "reports/20261103_gallop_stabilization_review/play_episodes.csv": {
+    "sha256": "5221b028bfff300c4c3ce75cf749288f4794ba3623fe2be40104e1d9bdcda255",
+    "bytes": 2769
+  },
+  "reports/20261103_gallop_stabilization_review/stabilization_diagnostics.json": {
+    "sha256": "b634783abdfd928a3cc375f241cb1ea15fc25f5ecd5ef81d51513a3f12a8e13a",
+    "bytes": 7053
+  },
+  "reports/20261103_gallop_stabilization_review/README.md": {
+    "sha256": "471a722bbfeddfdc0600e4c6f6f9ca550ed85f14c1b996881c093fc23e8c6cf3",
+    "bytes": 9492
+  },
+  "reports/20261103_gallop_stabilization_review/play_diagnostics.json": {
+    "sha256": "7dc800ec3fde262a93d3e13699230fcda60f00f2144757b76056bbaec278513d",
+    "bytes": 3516
+  },
+  "reports/20261103_gallop_stabilization_review/heading_play_diagnostics.json": {
+    "sha256": "a5732393949dfa394a7e323c928e44a63588b60548d235c5eaa7f821595a1b4e",
+    "bytes": 29452
+  },
+  "reports/20261103_gallop_stabilization_review/reward_contributions_last100.json": {
+    "sha256": "b8d8cbe29a251424bdc4a9269deaff8612b2247f37ad058253fabba562e6e824",
+    "bytes": 2706
+  },
+  "reports/20261103_gallop_stabilization_review/play_analysis.json": {
+    "sha256": "ec7ca2bcd485b6d1b27ee2cf4145696ac9f68ce9b41a8278f10497a3b2d7cea3",
+    "bytes": 6337
+  },
+  "reports/20261103_gallop_stabilization_review/play_flight_trace.csv": {
+    "sha256": "6c262ec670652d3edddbb3075637dfe6c2bb455c7f31c624e99d1c89c05c5d71",
+    "bytes": 903114
+  },
+  "reports/20261103_gallop_stabilization_review/curriculum_decisions.csv": {
+    "sha256": "2b8fd23c62b8b494dde8d68ae674132c53e47c0da3c541a2442dd5ea512e5659",
+    "bytes": 25484
+  },
+  "reports/20261103_gallop_stabilization_review/heading_parent_comparison.json": {
+    "sha256": "8f9c423bcd6db81183bcab746518a245a025c9691162c3282ea12fba4db17a00",
+    "bytes": 10612
+  },
+  "reports/20261103_gallop_stabilization_review/criterion_pass_rates.png": {
+    "sha256": "44d6a1208262879dbe365c1c8e7e028e0e20ed619ca937f3ed5337eb31996048",
+    "bytes": 84643
+  },
+  "reports/20261103_gallop_stabilization_review/tensorboard_scalars.csv": {
+    "sha256": "58d96f37393d5bb4a8b0f395e74cf395d34b7e269b606e500b428f842d1e9a7c",
+    "bytes": 18142257
+  },
+  "reports/20261103_gallop_stabilization_review/joint_motion.png": {
+    "sha256": "c2daf5cac242cf8bc6babc2f67a71bde29061c08ae0980251567bdd6809c2fe4",
+    "bytes": 556795
+  },
+  "reports/20261103_gallop_stabilization_review/play_keyframes.png": {
+    "sha256": "f7791972c4c4fbb700fecfd71dbfcd06027d92dc0ef79c93fe74197c62fa1d0f",
+    "bytes": 900265
+  },
+  "reports/20261103_gallop_stabilization_review/evidence_manifest.json": {
+    "sha256": "08b9302395da6f0add9d3d7b893b72a47b240562118224ba8371c625da11f2af",
+    "bytes": 11899
+  },
+  "reports/20261103_gallop_stabilization_review/gallop_keyframes.png": {
+    "sha256": "17fdabdad3e3e98915459734afda9389a8e7d4562390d87422edff9ef17419c1",
+    "bytes": 746416
+  },
+  "reports/20261103_gallop_stabilization_review/heading_reward_curves.png": {
+    "sha256": "14b2ebc825896244cff906568ea78476ac5dbdd99c9f893789a270f4368016ff",
+    "bytes": 442868
+  },
+  "reports/20261103_gallop_stabilization_review/verification.json": {
+    "sha256": "580b340743932dc6c8b69aac83f54f97adb789f76a8517b2ffc4e8af7100e6e8",
+    "bytes": 1778
+  },
+  "reports/20261103_gallop_stabilization_review/train_episodes.csv": {
+    "sha256": "d2ac3c7a5a8d3fb1b938fa5247f24ffc44df373625e2f5f9698db517ac5c13db",
+    "bytes": 8966666
+  },
+  "reports/20261103_gallop_stabilization_review/leap_curves.png": {
+    "sha256": "eded4ae71451653903f708786fec91309fd7fff8e8b8c85995a9d25e5d6ae5cc",
+    "bytes": 428328
+  },
+  "reports/20261103_gallop_stabilization_review/heading_play_trace.csv": {
+    "sha256": "a5d4d4be484bbbbd38e36ae1a6198d98ec5b172d77aeabbb0627d592188ae6f8",
+    "bytes": 702652
+  },
+  "reports/20261103_gallop_stabilization_review/training_diagnostics.json": {
+    "sha256": "45a5f9e8c7c5f14d91ff355db23eacfe24cf4009b4e4cc283a9684af022cdbd4",
+    "bytes": 61763
+  },
+  "reports/20261103_gallop_stabilization_review/heading_training_diagnostics.json": {
+    "sha256": "95a449200dc9c2fc2226ee87e7c13b1f545d69449ea29877599bcddb8d385b3e",
+    "bytes": 4692
+  },
+  "reports/20261103_gallop_stabilization_review/gallop_config.json": {
+    "sha256": "75b620528f3ec02390e75e099d7eb40d88d39d02aad653c067dbded92f5d0f1d",
+    "bytes": 4730
+  },
+  "reports/20261103_gallop_stabilization_review/pair_reward_curves.png": {
+    "sha256": "ddd8a523c0fd16577b29bc1d08f5712a450493a26936159f6ce11a3961462824",
+    "bytes": 288622
+  },
+  "reports/20261103_gallop_stabilization_review/play_flight_events.csv": {
+    "sha256": "9b4d694e06fe9dd62ee3408dc14c722952d0f7a7f36a9b1ac7b06e40dc393b3d",
+    "bytes": 6844
+  },
+  "reports/20261103_gallop_stabilization_review/flight_reward_curves.png": {
+    "sha256": "0cfff4dae5a727780159b401087b0a861872856a28d4d249b0bad6f2dc71e03e",
+    "bytes": 702818
+  },
+  "reports/20261103_gallop_stabilization_review/videos.csv": {
+    "sha256": "4ef93044c18dc5c1cfccb2ffdccf72d016a181c434747db73603d8357a836130",
+    "bytes": 211
+  },
+  "reports/20261103_gallop_stabilization_review/joint_target_diagnostics.json": {
+    "sha256": "b2cd6586c34a4877c7062dfae76f242c6fe75fb1ede7deea929867c40080aad8",
+    "bytes": 6812
+  },
+  "reports/20261103_gallop_stabilization_review/collection_checks.json": {
+    "sha256": "ecaa09b506360fb10633f6c24023a2cfe43c947f7c08f62bce0959cddd6047b3",
+    "bytes": 211
+  },
+  "reports/20261103_gallop_stabilization_review/play_tracking.png": {
+    "sha256": "408512bddde3ed0c8e92ef455f8f39ffbcbd4332524ed7ce8dce9de75d533e9d",
+    "bytes": 316342
+  },
+  "reports/20261103_gallop_stabilization_review/play_contacts.png": {
+    "sha256": "457589c8d4eb67387669d86a731021fd4dbd326d39deb31ff4ec4c425d032126",
+    "bytes": 312800
+  },
+  "reports/20261103_gallop_stabilization_review/play_flight_events.png": {
+    "sha256": "c74151b18c11ae15767d8983518665fc5610be6c34aa7d20b6a19c22c0597aa9",
+    "bytes": 115464
+  },
+  "reports/20261103_gallop_stabilization_review/summary.json": {
+    "sha256": "d27a8049377894c600da802d166a24071ff02f3a3f73f95abd859644097e60c2",
+    "bytes": 68600
+  },
+  "reports/20261103_gallop_stabilization_review/training_curves.png": {
+    "sha256": "d7cb90bb1368b540de35f5616606e10f955a4badb194ad5236ca32f95e91f464",
+    "bytes": 277159
+  },
+  "reports/20261103_gallop_stabilization_review/additional_input_manifest.json": {
+    "sha256": "a5f56bb809b2a5dca7624ebe6e63d38603a8fb9177b013206818a55a50933822",
+    "bytes": 5780
+  },
+  "reports/20261103_gallop_stabilization_review/heading_motion_play.png": {
+    "sha256": "0c21f958224467925ddb6b8209784eacf12a3ba99e75463473c8d403e73bba0b",
+    "bytes": 685807
+  },
+  "reports/20261103_gallop_stabilization_review/play_state_trace.csv": {
+    "sha256": "5eb0546b545db0449c1987d20e174a7085951f605872e6dc101767ac7308c7b7",
+    "bytes": 185231
+  },
+  "reports/20261103_gallop_stabilization_review/params/agent.yaml": {
+    "sha256": "0916df3c3b5fbbac8e3bce4c48504cf89ec819c7b8d2cc966ccabb7dc87e8a0a",
+    "bytes": 1039
+  },
+  "reports/20261103_gallop_stabilization_review/params/env.yaml": {
+    "sha256": "cb9275bd23f4bfeb0f21ed94d96b8d2163284e675901cea2f84c0482a1fcbc19",
+    "bytes": 31381
+  },
+  "reports/20261103_gallop_stabilization_review/source/collection_commands.txt": {
+    "sha256": "6cadafa29b32a65453853c979a361ff3f57ea677af32c456d6cda8dcc458dd17",
+    "bytes": 1046
+  },
+  "reports/20261103_gallop_stabilization_review/source/go2_gallop_stabilization_collection.log": {
+    "sha256": "0bc52082f36ad555bd48af0735de743781614eb0332323cfc371ad4839af320c",
+    "bytes": 6224
+  },
+  "reports/20261103_gallop_stabilization_review/source/verification_console.log": {
+    "sha256": "551756d202162bcf1fc38e4289e5c34e6c9aeadadb39a5a5c857480148e55c84",
+    "bytes": 56
+  },
+  "reports/20261103_gallop_stabilization_review/source/go2_gallop_stabilization_extra.log": {
+    "sha256": "ed1f315a290c0188494b68e3d0750a2662863774bee145332a2406cc2b6bc5b5",
+    "bytes": 202
+  },
+  "reports/20261103_gallop_stabilization_review/source/go2_gallop_stabilization_heading_collection.log": {
+    "sha256": "d240f67686d96924e4024da546b91a3104cb3c2d9419245868168307ad5cbb79",
+    "bytes": 3654
+  },
+  "reports/20261103_gallop_stabilization_review/source/collect_gallop.py": {
+    "sha256": "749786b110629c8fb6af0eadfeefc46d43228359c236a300082265e442ca3c1f",
+    "bytes": 21623
+  },
+  "reports/20261103_gallop_stabilization_review/source/collect_unitree_baseline.py": {
+    "sha256": "4d6b07f431b54f251712710549aa41a0e1540da4671a9c7c676517b9f3e6d252",
+    "bytes": 10105
+  },
+  "reports/20261103_gallop_stabilization_review/source/collect_heading_diagnostics.py": {
+    "sha256": "209ab01b1b796a6f7b48b9efa0e4324607f9022f6a14b86ff762da291140e222",
+    "bytes": 15168
+  },
+  "reports/20261103_gallop_stabilization_review/source/go2_gallop_stabilization_flight_collection.log": {
+    "sha256": "4242e9cc65ae9f5a386de181c940e6d1615ae07c51b60adbbb66e157e97fa459",
+    "bytes": 2694
+  },
+  "reports/20261103_gallop_stabilization_review/source/collect_stabilization_diagnostics.py": {
+    "sha256": "95fb4559f3993506a9ceef4756bbe3d05512bc25098f3df3910db6cb5fe91b45",
+    "bytes": 6278
+  },
+  "reports/20261103_gallop_stabilization_review/source/verify.py": {
+    "sha256": "fef74947e111d18c4f8febf57dee5899afe5da4b63e4efb89597a7747dd02c1c",
+    "bytes": 8190
+  },
+  "reports/20261103_gallop_stabilization_review/source/collect_flight_diagnostics.py": {
+    "sha256": "2af64ba0d41c7da0df49b93aaece4ac8cc39ac56dbcf21816c7531dad0937c69",
+    "bytes": 12927
+  },
+  "reports/20261103_gallop_stabilization_review/source/documentation/README.md": {
+    "sha256": "1921c4478a813344fa41ffb13534d15ce8b5fe430c56d567258d94aca15b5f5c",
+    "bytes": 20199
+  },
+  "reports/20261103_gallop_stabilization_review/source/documentation/AGENTS.md": {
+    "sha256": "995e0698a4167423fa3f198ca8d56016bd895b4f455f43db83911c0bdbef3556",
+    "bytes": 29585
+  },
+  "reports/20261103_gallop_stabilization_review/source/documentation/docs/gallop_stabilization.md": {
+    "sha256": "9e91caa1bee450b5ca8c4325a79c8d7c531c97f185d3186f12b2d3592f4ac5d1",
+    "bytes": 9487
+  },
+  "reports/20261103_gallop_stabilization_review/source/documentation/docs/CONTINUE_HERE.md": {
+    "sha256": "c98a356d01fcb4e7444bb109fe6e653d2496a0cde84b9b586481e0b10ba40883",
+    "bytes": 64332
+  },
+  "scripts/analysis/collect_gallop.py": {
+    "sha256": "749786b110629c8fb6af0eadfeefc46d43228359c236a300082265e442ca3c1f",
+    "bytes": 21623
+  },
+  "scripts/analysis/collect_unitree_baseline.py": {
+    "sha256": "4d6b07f431b54f251712710549aa41a0e1540da4671a9c7c676517b9f3e6d252",
+    "bytes": 10105
+  },
+  "scripts/analysis/collect_flight_diagnostics.py": {
+    "sha256": "2af64ba0d41c7da0df49b93aaece4ac8cc39ac56dbcf21816c7531dad0937c69",
+    "bytes": 12927
+  },
+  "scripts/analysis/collect_heading_diagnostics.py": {
+    "sha256": "209ab01b1b796a6f7b48b9efa0e4324607f9022f6a14b86ff762da291140e222",
+    "bytes": 15168
+  },
+  "scripts/analysis/collect_stabilization_diagnostics.py": {
+    "sha256": "95fb4559f3993506a9ceef4756bbe3d05512bc25098f3df3910db6cb5fe91b45",
+    "bytes": 6278
+  },
+  "AGENTS.md": {
+    "sha256": "995e0698a4167423fa3f198ca8d56016bd895b4f455f43db83911c0bdbef3556",
+    "bytes": 29585
+  },
+  "README.md": {
+    "sha256": "1921c4478a813344fa41ffb13534d15ce8b5fe430c56d567258d94aca15b5f5c",
+    "bytes": 20199
+  },
+  "docs/CONTINUE_HERE.md": {
+    "sha256": "c98a356d01fcb4e7444bb109fe6e653d2496a0cde84b9b586481e0b10ba40883",
+    "bytes": 64332
+  },
+  "docs/gallop_stabilization.md": {
+    "sha256": "9e91caa1bee450b5ca8c4325a79c8d7c531c97f185d3186f12b2d3592f4ac5d1",
+    "bytes": 9487
+  }
+}

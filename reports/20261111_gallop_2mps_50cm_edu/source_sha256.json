@@ -1,0 +1,18 @@
+{
+  "configs/gallop_2mps_50cm_edu.json": "2cc94123f290c5673e1c847543ecde5b6ae3872d0574cb007267b5d0977e8ae0",
+  "isaac_task/gallop_core.py": "8af4648e4413e0d8d42bf6514f3015001c825dd8403278e14ae5ed3cf48a0dcf",
+  "isaac_task/gallop_env.py": "4d01d6ea349efa74fb8d60b5d91764f68761fe1d98aaad98d6ac36948fdc6635",
+  "scripts/training/gallop_baseline.py": "2493b2e981479bf7497214fb6ad2203fba9b3150d662ebb6ff96d00458a332b7",
+  "gpd/rl_mujoco.py": "c8bc9224d542ddb7b4b4d036e84eec728518a1bf49816ab37a7e467447478196",
+  "scripts/analysis/collect_gallop.py": "f5dbd9ced174b9641bd94c021030b1406470fb64fd7d05853b69028311b5991b",
+  "scripts/analysis/collect_guarded_diagnostics.py": "c4dfc4a4318612f1de9de31ca898d9780d20f5192a325125fa50d9a9b9a21356",
+  "tests/test_gallop_fixed_edu.py": "484335f0713d402b6b7f0197720d69c72fa401712bb6cedee6201a6fdbf4b363",
+  "tests/test_gallop_pair_env.py": "a98ae2a37e5430c4411d220c077b82a936350c65d42678394ec2d6eff8edf3d6",
+  "scripts/validation/check_gallop_fixed_edu.py": "fda85526feccf594548871736d3f2de418e08b192a652790769e61b5d741adf5",
+  "isaac_task/staged_adaptation.py": "29068fe049719c87de9c5f9c666cc5c327e720645663338c2cfc90b1fcf741b5",
+  "docs/gallop_fixed_2mps_50cm_edu.md": "80e85d1f53076177d2bc717251e07a22adf084ff25870a3c78261e2e07245419",
+  "configs/active_gallop_branch.json": "dfb08a5a03c3905abfd8407367aa386226344ef4a79c43653a73b67e41f01a82",
+  "AGENTS.md": "247c426e8752b1f876f04b1a5bb32c5f055831bfde5a9191721f073e640e184a",
+  "README.md": "c35070e36a7296273400d9a71d3e4b7d40b08fa01f83ceb71bb8a0f19fd43437",
+  "docs/CONTINUE_HERE.md": "80cc80328530d8aea77a1e0d25a2dc063a565f8c7086f7c5c85a823b72377b15"
+}

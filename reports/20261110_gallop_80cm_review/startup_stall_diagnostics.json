@@ -1,0 +1,269 @@
+{
+  "formal_samples": 0,
+  "formal_segment_available": false,
+  "stage_sample_counts": {
+    "0": 47,
+    "1": 151,
+    "2": 1302,
+    "3": 0
+  },
+  "final_stage": 2,
+  "final_student_mix": 0.6551842093467712,
+  "final_teacher_mix": 0.34481579065322876,
+  "final_command_mps": 2.310368537902832,
+  "segments": {
+    "all": {
+      "samples": 1500,
+      "seconds": 30.0,
+      "mean_vx": 1.386942943554375,
+      "command_min_max": [
+        0.0,
+        2.310368537902832
+      ],
+      "mean_command": 1.7036572212929217,
+      "mean_absolute_speed_error": 0.31868118047714233,
+      "pose_pass_fraction": 0.9546666666666667,
+      "speed_tracking_pass_fraction": 0.18133333333333335,
+      "pose_rms_degrees": [
+        1.040529944739743,
+        1.6073610296636636,
+        1.6847574663410163
+      ],
+      "mix_first_last": [
+        0.0,
+        0.6551842093467712
+      ],
+      "all_off_contact_fraction": 0.004,
+      "raw_angle_clip_fraction": 0.0044999998062849045,
+      "filter_intervention_fraction": 0.1628333330154419,
+      "actual_joint_max_excess_rad": 0.0
+    },
+    "blend": {
+      "samples": 1302,
+      "seconds": 26.04,
+      "mean_vx": 1.532704151216923,
+      "command_min_max": [
+        1.0,
+        2.310368537902832
+      ],
+      "mean_command": 1.875949187762177,
+      "mean_absolute_speed_error": 0.34468895196914673,
+      "pose_pass_fraction": 0.9577572964669739,
+      "speed_tracking_pass_fraction": 0.09600614439324116,
+      "pose_rms_degrees": [
+        1.0653624456484083,
+        1.2079976171445583,
+        1.4959777586975618
+      ],
+      "mix_first_last": [
+        0.0,
+        0.6551842093467712
+      ],
+      "all_off_contact_fraction": 0.0,
+      "raw_angle_clip_fraction": 0.0011520738480612636,
+      "filter_intervention_fraction": 0.17530721426010132,
+      "actual_joint_max_excess_rad": 0.0
+    },
+    "last10s": {
+      "samples": 501,
+      "seconds": 10.02,
+      "mean_vx": 1.84689014781259,
+      "command_min_max": [
+        2.0749363899230957,
+        2.310368537902832
+      ],
+      "mean_command": 2.26840839462128,
+      "mean_absolute_speed_error": 0.4220695495605469,
+      "pose_pass_fraction": 0.9461077844311377,
+      "speed_tracking_pass_fraction": 0.03792415169660679,
+      "pose_rms_degrees": [
+        1.0766127821756666,
+        1.2517299428726578,
+        0.7118797654620345
+      ],
+      "mix_first_last": [
+        0.5374682545661926,
+        0.6551842093467712
+      ],
+      "all_off_contact_fraction": 0.0,
+      "raw_angle_clip_fraction": 0.0006653360323980451,
+      "filter_intervention_fraction": 0.29507651925086975,
+      "actual_joint_max_excess_rad": 0.0
+    },
+    "last2s": {
+      "samples": 101,
+      "seconds": 2.02,
+      "mean_vx": 1.8627776592084677,
+      "command_min_max": [
+        2.310368537902832,
+        2.310368537902832
+      ],
+      "mean_command": 2.310368537902832,
+      "mean_absolute_speed_error": 0.4475908875465393,
+      "pose_pass_fraction": 0.9900990099009901,
+      "speed_tracking_pass_fraction": 0.0,
+      "pose_rms_degrees": [
+        1.3539807608980894,
+        0.8936424327966385,
+        0.5043186141599935
+      ],
+      "mix_first_last": [
+        0.6551842093467712,
+        0.6551842093467712
+      ],
+      "all_off_contact_fraction": 0.0,
+      "raw_angle_clip_fraction": 0.0008250825339928269,
+      "filter_intervention_fraction": 0.3028052747249603,
+      "actual_joint_max_excess_rad": 0.0
+    }
+  },
+  "training_windows": [
+    {
+      "iteration_start": 0,
+      "iteration_end": 500,
+      "episodes": 2428,
+      "handover_completions": 458,
+      "measured_episodes": 377,
+      "terminated": 680,
+      "flight_events": 5394.0,
+      "max_leap_m": 0.19002962112426758,
+      "stage_counts": {
+        "0": 0,
+        "1": 423,
+        "2": 1547,
+        "3": 458
+      }
+    },
+    {
+      "iteration_start": 500,
+      "iteration_end": 1000,
+      "episodes": 2400,
+      "handover_completions": 382,
+      "measured_episodes": 289,
+      "terminated": 474,
+      "flight_events": 2296.0,
+      "max_leap_m": 0.13327930867671967,
+      "stage_counts": {
+        "0": 0,
+        "1": 360,
+        "2": 1658,
+        "3": 382
+      }
+    },
+    {
+      "iteration_start": 1000,
+      "iteration_end": 1500,
+      "episodes": 2442,
+      "handover_completions": 2,
+      "measured_episodes": 0,
+      "terminated": 525,
+      "flight_events": 0.0,
+      "max_leap_m": 0.0,
+      "stage_counts": {
+        "0": 0,
+        "1": 419,
+        "2": 2021,
+        "3": 2
+      }
+    },
+    {
+      "iteration_start": 1500,
+      "iteration_end": 2000,
+      "episodes": 2478,
+      "handover_completions": 0,
+      "measured_episodes": 0,
+      "terminated": 550,
+      "flight_events": 0.0,
+      "max_leap_m": 0.0,
+      "stage_counts": {
+        "0": 0,
+        "1": 444,
+        "2": 2034,
+        "3": 0
+      }
+    },
+    {
+      "iteration_start": 2000,
+      "iteration_end": 2500,
+      "episodes": 2471,
+      "handover_completions": 0,
+      "measured_episodes": 0,
+      "terminated": 527,
+      "flight_events": 0.0,
+      "max_leap_m": 0.0,
+      "stage_counts": {
+        "0": 0,
+        "1": 451,
+        "2": 2020,
+        "3": 0
+      }
+    },
+    {
+      "iteration_start": 2500,
+      "iteration_end": 3000,
+      "episodes": 2451,
+      "handover_completions": 0,
+      "measured_episodes": 0,
+      "terminated": 503,
+      "flight_events": 0.0,
+      "max_leap_m": 0.0,
+      "stage_counts": {
+        "0": 0,
+        "1": 424,
+        "2": 2027,
+        "3": 0
+      }
+    },
+    {
+      "iteration_start": 3000,
+      "iteration_end": 3500,
+      "episodes": 2482,
+      "handover_completions": 0,
+      "measured_episodes": 0,
+      "terminated": 562,
+      "flight_events": 0.0,
+      "max_leap_m": 0.0,
+      "stage_counts": {
+        "0": 0,
+        "1": 434,
+        "2": 2048,
+        "3": 0
+      }
+    },
+    {
+      "iteration_start": 3500,
+      "iteration_end": 4000,
+      "episodes": 2441,
+      "handover_completions": 0,
+      "measured_episodes": 0,
+      "terminated": 507,
+      "flight_events": 0.0,
+      "max_leap_m": 0.0,
+      "stage_counts": {
+        "0": 0,
+        "1": 395,
+        "2": 2046,
+        "3": 0
+      }
+    }
+  ],
+  "training_episodes": 19593,
+  "eligible_episodes": 19440,
+  "handover_completions": 842,
+  "measured_episodes": 666,
+  "last_handover_iteration": 1144.2916666666667,
+  "full_successes": 0,
+  "maximum_recorded_training_leap_m": 0.19002962112426758,
+  "stage_names": [
+    "hold",
+    "frozen_walk",
+    "blend",
+    "full_student"
+  ],
+  "caveats": [
+    "Saved snapshots follow physics; startup.advance checks before physics, so reconstructed gate fractions are approximate by one control step.",
+    "Formal metric fields remain zero when handover never completes. They are not measured full-student performance.",
+    "Contact air fraction during blend is separately checked from raw saved contacts.",
+    "Several goal, timing and reward changes were combined; reward avoidance is a hypothesis, not a causally isolated result."
+  ]
+}

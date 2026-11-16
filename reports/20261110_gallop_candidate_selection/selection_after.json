@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "selected_at": "2026-11-10T19:53:35.740306+09:00",
+  "active_branch": "gallop_guarded_v4_30000",
+  "checkpoint": "runs/isaac/train/unitree_go2_gallop/20261106_000029_077a6f/model_final.pt",
+  "checkpoint_sha256": "cc05c078abe28c4c9ac2ce0a8a51af7d006e33268cc6c7f57e15621a85535d7b",
+  "config": "configs/gallop_guarded_filter_free.json",
+  "interface": "unitree_go2_gallop_guarded_49_64_12_v4",
+  "cumulative_iterations": 30000,
+  "actual_trained_command_mps": 2.5,
+  "actual_active_leap_target_m": 0.14,
+  "saved_inactive_branches": [
+    {
+      "branch": "walking_relearn_v5",
+      "archive": "archive/branches/walking_relearn_v5_20261105",
+      "manifest": "archive/branches/walking_relearn_v5_20261105/branch_manifest.json"
+    }
+  ],
+  "purpose": "Working baseline selection for subsequent tasks; existing CLI still selects policy explicitly with --checkpoint or --finetune-from. No policy conversion or training was performed.",
+  "next_training_config": null,
+  "next_training_parent_checkpoint": "runs/isaac/train/unitree_go2_gallop/20261106_000029_077a6f/model_final.pt",
+  "next_training_additional_iterations": null,
+  "next_training_cumulative_iterations": null,
+  "training_status": "completed",
+  "next_training_plan_consumed": false,
+  "completed_training_run": "runs/isaac/train/unitree_go2_gallop/20261110_195814_959c90",
+  "latest_completed_checkpoint": "runs/isaac/train/unitree_go2_gallop/20261110_195814_959c90/model_final.pt",
+  "latest_completed_checkpoint_sha256": "2f8bd83968d3e37e4a12a7fc69951dcfc3db0540c9d003ffa355f0a279233af6",
+  "latest_completed_cumulative_iterations": 34000,
+  "latest_comparison_report": "reports/20261110_gallop_filter_free_comparison/README.md",
+  "original_baseline_checkpoint": "runs/isaac/train/unitree_go2_gallop/20261103_191405_bea09f/model_final.pt",
+  "original_baseline_checkpoint_sha256": "dc129d38e78654a6559657740b7a46865830ca3cefcf06c908f49cdcef53fea7",
+  "latest_evaluation_report": "reports/20261110_gallop_80cm_review/README.md",
+  "latest_evaluation_status": "startup_handover_stalled_no_formal_gallop",
+  "selection_verified_at": "2026-11-10T21:31:07.741686+09:00",
+  "latest_candidate_selection_report": "reports/20261110_gallop_candidate_selection",
+  "latest_candidate_selection_status": "exclude_final34k_as_default_gallop_finetuning_parent",
+  "latest_completed_checkpoint_use": "preserved_excluded_as_default_gallop_parent",
+  "previous_consumed_training_plan": {
+    "next_training_config": "configs/gallop_3ms_80cm_stable.json",
+    "next_training_additional_iterations": 4000,
+    "next_training_cumulative_iterations": 34000,
+    "completed_training_run": "runs/isaac/train/unitree_go2_gallop/20261110_195814_959c90"
+  },
+  "next_training_design": "configs/gallop_staged_recovery_plan.json",
+  "next_training_design_status": "plan_only_requires_runtime_implementation"
+}

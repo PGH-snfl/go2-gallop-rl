@@ -1,0 +1,110 @@
+{
+  "README.md": {
+    "bytes": 12158,
+    "sha256": "41ab2eccc8b350cb81e6d62e18eb5b781c73fc41f664cf3c943fbf9d2615d28c"
+  },
+  "criterion_pass_rates.png": {
+    "bytes": 62151,
+    "sha256": "3533ffa55b076422249c01951c7e7e6967e33c47022e373978f86b8823672f51"
+  },
+  "curriculum_decisions.csv": {
+    "bytes": 12026,
+    "sha256": "71520924cb6110f2bdac6c6d5270e925fe95326dcb94b9396870e58df5116400"
+  },
+  "evidence_manifest.json": {
+    "bytes": 11496,
+    "sha256": "a672b42f0fe5335cc9a703b3739117e9516cd9720562ab77af788bb54eedc623"
+  },
+  "gallop_config.json": {
+    "bytes": 1886,
+    "sha256": "ea0b9da13fe92a1765302343fffc23d05b319ce3b66793165df1f53e03b6551b"
+  },
+  "joint_motion.png": {
+    "bytes": 577230,
+    "sha256": "c9ab7370014fc16eff611571f33fffa50087e902282a68ed0bb4b35ad26c6cbb"
+  },
+  "leap_curves.png": {
+    "bytes": 195546,
+    "sha256": "20c250d6a07819c0744f15f5778db4d0f8588fccf6d8662e258da0061e5da229"
+  },
+  "pair_reward_curves.png": {
+    "bytes": 216920,
+    "sha256": "c78a4e0540691323710db403f7513386618608dc35f47ee6fc7a3c2785440c0e"
+  },
+  "params/agent.yaml": {
+    "bytes": 1039,
+    "sha256": "0916df3c3b5fbbac8e3bce4c48504cf89ec819c7b8d2cc966ccabb7dc87e8a0a"
+  },
+  "params/env.yaml": {
+    "bytes": 28959,
+    "sha256": "2bfab63e19b4993a3709f79438cc563f39c48b994a35884580c483e110730ccf"
+  },
+  "play_analysis.json": {
+    "bytes": 3834,
+    "sha256": "248afef825d54dabfdf708c193276325307f9f3b90a595e14cc613e1ed251492"
+  },
+  "play_contacts.png": {
+    "bytes": 389746,
+    "sha256": "3cf28248c78c1c1d16b2c81734b5852c1378af96a3f60ee009b42339b98b9876"
+  },
+  "play_diagnostics.json": {
+    "bytes": 1558,
+    "sha256": "f61a123c5d140476497f2cc3943c2fc1162402807c0fc460e7ba12b4dafbc35d"
+  },
+  "play_episodes.csv": {
+    "bytes": 968,
+    "sha256": "1da7ac5c74d4c1228cff44faca82074f5e9526599f66d2af51be2a7cfa730707"
+  },
+  "play_keyframes.png": {
+    "bytes": 934194,
+    "sha256": "b74f519a9cae57dfd11d2eb823659615a1ef8409048f898ced462844ee692fd2"
+  },
+  "play_leap_trace.csv": {
+    "bytes": 378055,
+    "sha256": "0fd108ec378cc9c91d6feb84c3c046edc1b44e3ec5f2fbf3027d873852141730"
+  },
+  "play_state_trace.csv": {
+    "bytes": 185848,
+    "sha256": "c0f1119f176558024509c2b2daf22d7e6c2070669e7003ea53a49071d695478f"
+  },
+  "play_tracking.png": {
+    "bytes": 355656,
+    "sha256": "7d30838e85dd280630bcf25c789ebb19b67d48a46112a1af388a4890f946dbf2"
+  },
+  "policy_play_comparison.json": {
+    "bytes": 9064,
+    "sha256": "a7ac1a85323965dc5cdb98bec2b7f61fea7d68de4526c9f09dba90084da0d2f1"
+  },
+  "qualified_training_episodes.csv": {
+    "bytes": 2900,
+    "sha256": "d87db97264d2e0dd6ba1b4f2be517a6307fdc5d61229fe6e9f7b55718867aa3b"
+  },
+  "reward_contributions_last100.json": {
+    "bytes": 1594,
+    "sha256": "4d60fc167f811d5d03d58fa4bb5cf371deb54fc9aa2002eebc5e682587337ed9"
+  },
+  "summary.json": {
+    "bytes": 37390,
+    "sha256": "b904a5cfe2d2ae8020afc70312161d645f17e1ec6117d29b9e13943d5b2eb60f"
+  },
+  "tensorboard_scalars.csv": {
+    "bytes": 8914875,
+    "sha256": "f3bc03ace31a4550d3c47c4beeaa4fc71fc5310844a60c49398eebd267de286b"
+  },
+  "train_episodes.csv": {
+    "bytes": 5248062,
+    "sha256": "9f1f00e0df76f6d45f98d7d38d3bbaf77a3af6642214f65f99b28a3608c2835b"
+  },
+  "training_curves.png": {
+    "bytes": 212736,
+    "sha256": "8dfe57cf25324429a547b99ee439be267f4c326a53e77f781a85e210e9902b7f"
+  },
+  "training_diagnostics.json": {
+    "bytes": 34956,
+    "sha256": "5cc7f4dc5d106681ddb755efe666647ae0613030313eb62489a00df322ced409"
+  },
+  "videos.csv": {
+    "bytes": 211,
+    "sha256": "50f77d7507463abbfe9516ec0bcbfa4dee8fac0498d0e41cbd29325ddfa7d2d4"
+  }
+}

@@ -1,0 +1,758 @@
+{
+  "stages": {
+    "2": {
+      "goal": {
+        "name": "walk_precision",
+        "speed": 1.0,
+        "gait": 0.0,
+        "request_tolerance": 0.06,
+        "request_seconds": 0.04,
+        "request_fraction": 0.03
+      },
+      "cohorts": {
+        "all_completed": {
+          "episodes": 792,
+          "rates": {
+            "relearn_stage_success": 0.9696969696969697,
+            "relearn_request_terminated": 0.0,
+            "tracking": 0.9696969696969697,
+            "stabilization_pose": 1.0,
+            "guarded_feet": 0.9696969696969697,
+            "motion": 0.9696969696969697,
+            "front_load": 0.9696969696969697,
+            "front_motion": 0.9696969696969697,
+            "front_cycle": 0.3333333333333333,
+            "pattern": 0.0,
+            "terminated": 0.030303030303030304
+          },
+          "contact_ge_half": 0.9696969696969697,
+          "fore_participation_q10_q50_q90": [
+            0.19803921878337877,
+            0.6078431606292725,
+            0.8039215803146362
+          ],
+          "front_load_share_q10_q50_q90": [
+            0.5084466397762298,
+            0.5158727169036865,
+            0.5238704025745392
+          ],
+          "fore_min_rom_q10_q50_q90": [
+            0.8027972280979156,
+            0.8854168355464935,
+            0.928865110874176
+          ],
+          "duration_q10_q50_q90_s": [
+            30.0,
+            30.0,
+            30.0
+          ],
+          "stage_successes": 768,
+          "front_cycle_passes": 264
+        },
+        "accepted_for_curriculum": {
+          "episodes": 512,
+          "rates": {
+            "relearn_stage_success": 0.984375,
+            "relearn_request_terminated": 0.0,
+            "tracking": 0.984375,
+            "stabilization_pose": 1.0,
+            "guarded_feet": 0.984375,
+            "motion": 0.984375,
+            "front_load": 0.984375,
+            "front_motion": 0.984375,
+            "front_cycle": 0.392578125,
+            "pattern": 0.0,
+            "terminated": 0.015625
+          },
+          "contact_ge_half": 0.984375,
+          "fore_participation_q10_q50_q90": [
+            0.3137255012989044,
+            0.6274510025978088,
+            0.8235294222831726
+          ],
+          "front_load_share_q10_q50_q90": [
+            0.5086892962455749,
+            0.5155277848243713,
+            0.521685254573822
+          ],
+          "fore_min_rom_q10_q50_q90": [
+            0.814601331949234,
+            0.8879359662532806,
+            0.9288342654705047
+          ],
+          "duration_q10_q50_q90_s": [
+            30.0,
+            30.0,
+            30.0
+          ],
+          "stage_successes": 504,
+          "front_cycle_passes": 201
+        }
+      }
+    },
+    "3": {
+      "goal": {
+        "name": "walk_precision_004",
+        "speed": 1.0,
+        "gait": 0.0,
+        "request_tolerance": 0.04,
+        "request_seconds": 0.04,
+        "request_fraction": 0.02
+      },
+      "cohorts": {
+        "all_completed": {
+          "episodes": 1018,
+          "rates": {
+            "relearn_stage_success": 0.9724950884086444,
+            "relearn_request_terminated": 0.0029469548133595285,
+            "tracking": 0.9754420432220039,
+            "stabilization_pose": 1.0,
+            "guarded_feet": 0.9754420432220039,
+            "motion": 0.9754420432220039,
+            "front_load": 0.9754420432220039,
+            "front_motion": 0.9754420432220039,
+            "front_cycle": 0.09724950884086445,
+            "pattern": 0.0,
+            "terminated": 0.0275049115913556
+          },
+          "contact_ge_half": 0.9754420432220039,
+          "fore_participation_q10_q50_q90": [
+            0.019607843831181526,
+            0.29411765933036804,
+            0.686274528503418
+          ],
+          "front_load_share_q10_q50_q90": [
+            0.5105770111083985,
+            0.5206328630447388,
+            0.5329101800918579
+          ],
+          "fore_min_rom_q10_q50_q90": [
+            0.8539191961288453,
+            0.9356924891471863,
+            0.9691908776760102
+          ],
+          "duration_q10_q50_q90_s": [
+            30.0,
+            30.0,
+            30.0
+          ],
+          "stage_successes": 990,
+          "front_cycle_passes": 99
+        },
+        "accepted_for_curriculum": {
+          "episodes": 512,
+          "rates": {
+            "relearn_stage_success": 0.984375,
+            "relearn_request_terminated": 0.0,
+            "tracking": 0.984375,
+            "stabilization_pose": 1.0,
+            "guarded_feet": 0.984375,
+            "motion": 0.984375,
+            "front_load": 0.984375,
+            "front_motion": 0.984375,
+            "front_cycle": 0.119140625,
+            "pattern": 0.0,
+            "terminated": 0.015625
+          },
+          "contact_ge_half": 0.984375,
+          "fore_participation_q10_q50_q90": [
+            0.03921568766236305,
+            0.3529411852359772,
+            0.7254902124404907
+          ],
+          "front_load_share_q10_q50_q90": [
+            0.5086728096008301,
+            0.5183896422386169,
+            0.5309122562408447
+          ],
+          "fore_min_rom_q10_q50_q90": [
+            0.8624221384525299,
+            0.9375063478946686,
+            0.9679547011852264
+          ],
+          "duration_q10_q50_q90_s": [
+            30.0,
+            30.0,
+            30.0
+          ],
+          "stage_successes": 504,
+          "front_cycle_passes": 61
+        }
+      }
+    },
+    "4": {
+      "goal": {
+        "name": "walk_precision_002",
+        "speed": 1.0,
+        "gait": 0.0,
+        "request_tolerance": 0.02,
+        "request_seconds": 0.04,
+        "request_fraction": 0.01
+      },
+      "cohorts": {
+        "all_completed": {
+          "episodes": 817,
+          "rates": {
+            "relearn_stage_success": 0.9608323133414932,
+            "relearn_request_terminated": 0.004895960832313341,
+            "tracking": 0.9657282741738066,
+            "stabilization_pose": 1.0,
+            "guarded_feet": 0.9657282741738066,
+            "motion": 0.966952264381885,
+            "front_load": 0.966952264381885,
+            "front_motion": 0.966952264381885,
+            "front_cycle": 0.042839657282741736,
+            "pattern": 0.0036719706242350062,
+            "terminated": 0.03916768665850673
+          },
+          "contact_ge_half": 0.966952264381885,
+          "fore_participation_q10_q50_q90": [
+            0.0,
+            0.1568627506494522,
+            0.6078431606292725
+          ],
+          "front_load_share_q10_q50_q90": [
+            0.5195772051811218,
+            0.530360758304596,
+            0.5414949655532837
+          ],
+          "fore_min_rom_q10_q50_q90": [
+            0.917524766921997,
+            0.9753764867782593,
+            0.9918916463851929
+          ],
+          "duration_q10_q50_q90_s": [
+            30.0,
+            30.0,
+            30.0
+          ],
+          "stage_successes": 785,
+          "front_cycle_passes": 35
+        },
+        "accepted_for_curriculum": {
+          "episodes": 512,
+          "rates": {
+            "relearn_stage_success": 0.98046875,
+            "relearn_request_terminated": 0.00390625,
+            "tracking": 0.982421875,
+            "stabilization_pose": 1.0,
+            "guarded_feet": 0.982421875,
+            "motion": 0.984375,
+            "front_load": 0.984375,
+            "front_motion": 0.984375,
+            "front_cycle": 0.068359375,
+            "pattern": 0.00390625,
+            "terminated": 0.01953125
+          },
+          "contact_ge_half": 0.984375,
+          "fore_participation_q10_q50_q90": [
+            0.019607843831181526,
+            0.2549019753932953,
+            0.6470588445663452
+          ],
+          "front_load_share_q10_q50_q90": [
+            0.5188215970993042,
+            0.5283812284469604,
+            0.5401121258735657
+          ],
+          "fore_min_rom_q10_q50_q90": [
+            0.9145746290683746,
+            0.9733096063137054,
+            0.9902614116668701
+          ],
+          "duration_q10_q50_q90_s": [
+            30.0,
+            30.0,
+            30.0
+          ],
+          "stage_successes": 502,
+          "front_cycle_passes": 35
+        }
+      }
+    },
+    "5": {
+      "goal": {
+        "name": "walk_limits",
+        "speed": 1.0,
+        "gait": 0.0,
+        "request_tolerance": 0.02,
+        "request_seconds": 0.02,
+        "request_fraction": 0.01
+      },
+      "cohorts": {
+        "all_completed": {
+          "episodes": 826,
+          "rates": {
+            "relearn_stage_success": 0.9092009685230025,
+            "relearn_request_terminated": 0.048426150121065374,
+            "tracking": 0.9467312348668281,
+            "stabilization_pose": 1.0,
+            "guarded_feet": 0.9467312348668281,
+            "motion": 0.9552058111380145,
+            "front_load": 0.9564164648910412,
+            "front_motion": 0.9552058111380145,
+            "front_cycle": 0.024213075060532687,
+            "pattern": 0.0,
+            "terminated": 0.09079903147699758
+          },
+          "contact_ge_half": 0.9564164648910412,
+          "fore_participation_q10_q50_q90": [
+            0.0,
+            0.19607843458652496,
+            0.5980392396450043
+          ],
+          "front_load_share_q10_q50_q90": [
+            0.5072088241577148,
+            0.5204198956489563,
+            0.5339102149009705
+          ],
+          "fore_min_rom_q10_q50_q90": [
+            0.9361914098262787,
+            0.9841600358486176,
+            0.9956271052360535
+          ],
+          "duration_q10_q50_q90_s": [
+            30.0,
+            30.0,
+            30.0
+          ],
+          "stage_successes": 751,
+          "front_cycle_passes": 20
+        },
+        "accepted_for_curriculum": {
+          "episodes": 512,
+          "rates": {
+            "relearn_stage_success": 0.935546875,
+            "relearn_request_terminated": 0.0546875,
+            "tracking": 0.982421875,
+            "stabilization_pose": 1.0,
+            "guarded_feet": 0.982421875,
+            "motion": 0.984375,
+            "front_load": 0.986328125,
+            "front_motion": 0.984375,
+            "front_cycle": 0.02734375,
+            "pattern": 0.0,
+            "terminated": 0.064453125
+          },
+          "contact_ge_half": 0.986328125,
+          "fore_participation_q10_q50_q90": [
+            0.019607843831181526,
+            0.21568627655506134,
+            0.5882353186607361
+          ],
+          "front_load_share_q10_q50_q90": [
+            0.5104730308055878,
+            0.5232017040252686,
+            0.5357366144657135
+          ],
+          "fore_min_rom_q10_q50_q90": [
+            0.952433043718338,
+            0.9880920648574829,
+            0.996594923734665
+          ],
+          "duration_q10_q50_q90_s": [
+            30.0,
+            30.0,
+            30.0
+          ],
+          "stage_successes": 479,
+          "front_cycle_passes": 14
+        }
+      }
+    },
+    "6": {
+      "goal": {
+        "name": "walk_speed",
+        "speed": 1.25,
+        "gait": 0.0,
+        "request_tolerance": 0.02,
+        "request_seconds": 0.02,
+        "request_fraction": 0.01
+      },
+      "cohorts": {
+        "all_completed": {
+          "episodes": 1024,
+          "rates": {
+            "relearn_stage_success": 0.8857421875,
+            "relearn_request_terminated": 0.087890625,
+            "tracking": 0.9404296875,
+            "stabilization_pose": 1.0,
+            "guarded_feet": 0.9404296875,
+            "motion": 0.9619140625,
+            "front_load": 0.966796875,
+            "front_motion": 0.9619140625,
+            "front_cycle": 0.064453125,
+            "pattern": 0.0263671875,
+            "terminated": 0.1142578125
+          },
+          "contact_ge_half": 0.9677734375,
+          "fore_participation_q10_q50_q90": [
+            0.0,
+            0.23529411852359772,
+            0.6538461446762085
+          ],
+          "front_load_share_q10_q50_q90": [
+            0.5073568940162658,
+            0.5227977335453033,
+            0.5370005965232849
+          ],
+          "fore_min_rom_q10_q50_q90": [
+            0.9649848878383637,
+            0.9914240539073944,
+            0.9974404811859131
+          ],
+          "duration_q10_q50_q90_s": [
+            24.754000000000016,
+            30.0,
+            30.0
+          ],
+          "stage_successes": 907,
+          "front_cycle_passes": 66
+        },
+        "accepted_for_curriculum": {
+          "episodes": 512,
+          "rates": {
+            "relearn_stage_success": 0.88671875,
+            "relearn_request_terminated": 0.08984375,
+            "tracking": 0.94921875,
+            "stabilization_pose": 1.0,
+            "guarded_feet": 0.94921875,
+            "motion": 0.96875,
+            "front_load": 0.974609375,
+            "front_motion": 0.96875,
+            "front_cycle": 0.08203125,
+            "pattern": 0.02734375,
+            "terminated": 0.11328125
+          },
+          "contact_ge_half": 0.974609375,
+          "fore_participation_q10_q50_q90": [
+            0.019607843831181526,
+            0.27450981736183167,
+            0.6730769276618958
+          ],
+          "front_load_share_q10_q50_q90": [
+            0.5212291181087494,
+            0.5286309123039246,
+            0.5394923567771912
+          ],
+          "fore_min_rom_q10_q50_q90": [
+            0.968981808423996,
+            0.9932659566402435,
+            0.9980304718017579
+          ],
+          "duration_q10_q50_q90_s": [
+            26.770000000000003,
+            30.0,
+            30.0
+          ],
+          "stage_successes": 454,
+          "front_cycle_passes": 42
+        }
+      }
+    },
+    "7": {
+      "goal": {
+        "name": "walk_speed",
+        "speed": 1.5,
+        "gait": 0.0,
+        "request_tolerance": 0.02,
+        "request_seconds": 0.02,
+        "request_fraction": 0.01
+      },
+      "cohorts": {
+        "all_completed": {
+          "episodes": 13615,
+          "rates": {
+            "relearn_stage_success": 0.8852735952993023,
+            "relearn_request_terminated": 0.07256702166727874,
+            "tracking": 0.9388909291222916,
+            "stabilization_pose": 0.9985310319500551,
+            "guarded_feet": 0.9393316195372751,
+            "motion": 0.9532133676092545,
+            "front_load": 0.9560778553066471,
+            "front_motion": 0.95306647080426,
+            "front_cycle": 0.09107601909658465,
+            "pattern": 0.07021667278736687,
+            "terminated": 0.11472640470069775
+          },
+          "contact_ge_half": 0.9563716489166361,
+          "fore_participation_q10_q50_q90": [
+            0.0,
+            0.25,
+            0.692307710647583
+          ],
+          "front_load_share_q10_q50_q90": [
+            0.5102030277252197,
+            0.5285705327987671,
+            0.5414885878562927
+          ],
+          "fore_min_rom_q10_q50_q90": [
+            0.8462580442428589,
+            0.9430508017539978,
+            0.9918561100959777
+          ],
+          "duration_q10_q50_q90_s": [
+            24.76,
+            30.0,
+            30.0
+          ],
+          "stage_successes": 12053,
+          "front_cycle_passes": 1240
+        },
+        "accepted_for_curriculum": {
+          "episodes": 7680,
+          "rates": {
+            "relearn_stage_success": 0.9127604166666666,
+            "relearn_request_terminated": 0.06549479166666666,
+            "tracking": 0.9643229166666667,
+            "stabilization_pose": 0.998828125,
+            "guarded_feet": 0.9645833333333333,
+            "motion": 0.9748697916666667,
+            "front_load": 0.9768229166666667,
+            "front_motion": 0.9747395833333333,
+            "front_cycle": 0.12265625,
+            "pattern": 0.08385416666666666,
+            "terminated": 0.08723958333333333
+          },
+          "contact_ge_half": 0.9772135416666666,
+          "fore_participation_q10_q50_q90": [
+            0.01923076994717121,
+            0.3076923191547394,
+            0.7307692170143127
+          ],
+          "front_load_share_q10_q50_q90": [
+            0.5102286338806152,
+            0.5281854271888733,
+            0.5412693023681641
+          ],
+          "fore_min_rom_q10_q50_q90": [
+            0.8686910927295685,
+            0.9505865573883057,
+            0.9929170429706573
+          ],
+          "duration_q10_q50_q90_s": [
+            30.0,
+            30.0,
+            30.0
+          ],
+          "stage_successes": 7010,
+          "front_cycle_passes": 942
+        }
+      }
+    },
+    "8": {
+      "goal": {
+        "name": "gallop_shape",
+        "speed": 1.5,
+        "gait": 0.25,
+        "request_tolerance": 0.02,
+        "request_seconds": 0.02,
+        "request_fraction": 0.01
+      },
+      "cohorts": {
+        "all_completed": {
+          "episodes": 7916,
+          "rates": {
+            "relearn_stage_success": 0.011116725618999495,
+            "relearn_request_terminated": 0.059120768064679134,
+            "tracking": 0.9345629105608894,
+            "stabilization_pose": 0.9973471450227388,
+            "guarded_feet": 0.9355735219807984,
+            "motion": 0.9490904497220819,
+            "front_load": 0.9509853461344113,
+            "front_motion": 0.948711470439616,
+            "front_cycle": 0.011495704901465387,
+            "pattern": 0.04181404749873673,
+            "terminated": 0.10750378979282466
+          },
+          "contact_ge_half": 0.9513643254168772,
+          "fore_participation_q10_q50_q90": [
+            0.0,
+            0.09615384787321091,
+            0.48076921701431274
+          ],
+          "front_load_share_q10_q50_q90": [
+            0.5096278488636017,
+            0.5307103991508484,
+            0.5441945195198059
+          ],
+          "fore_min_rom_q10_q50_q90": [
+            0.8065984845161438,
+            0.9358446300029755,
+            0.9862436354160309
+          ],
+          "duration_q10_q50_q90_s": [
+            26.17,
+            30.0,
+            30.0
+          ],
+          "stage_successes": 88,
+          "front_cycle_passes": 91
+        },
+        "accepted_for_curriculum": {
+          "episodes": 3840,
+          "rates": {
+            "relearn_stage_success": 0.0049479166666666664,
+            "relearn_request_terminated": 0.0546875,
+            "tracking": 0.9450520833333333,
+            "stabilization_pose": 0.9963541666666667,
+            "guarded_feet": 0.94609375,
+            "motion": 0.95859375,
+            "front_load": 0.9614583333333333,
+            "front_motion": 0.9578125,
+            "front_cycle": 0.0049479166666666664,
+            "pattern": 0.03619791666666667,
+            "terminated": 0.09401041666666667
+          },
+          "contact_ge_half": 0.9614583333333333,
+          "fore_participation_q10_q50_q90": [
+            0.0,
+            0.09615384787321091,
+            0.4423076808452606
+          ],
+          "front_load_share_q10_q50_q90": [
+            0.5118193447589874,
+            0.531378448009491,
+            0.5438981056213379
+          ],
+          "fore_min_rom_q10_q50_q90": [
+            0.790446949005127,
+            0.926314502954483,
+            0.98395916223526
+          ],
+          "duration_q10_q50_q90_s": [
+            30.0,
+            30.0,
+            30.0
+          ],
+          "stage_successes": 19,
+          "front_cycle_passes": 19
+        }
+      }
+    }
+  },
+  "last_1000_iterations": {
+    "7": {
+      "episodes": 2726,
+      "rates": {
+        "relearn_stage_success": 0.8921496698459281,
+        "relearn_request_terminated": 0.0685986793837124,
+        "front_cycle": 0.1012472487160675,
+        "front_motion": 0.9552457813646368,
+        "motion": 0.9552457813646368,
+        "tracking": 0.9424064563462949
+      }
+    },
+    "8": {
+      "episodes": 1638,
+      "rates": {
+        "relearn_stage_success": 0.0,
+        "relearn_request_terminated": 0.051892551892551896,
+        "front_cycle": 0.0,
+        "front_motion": 0.9584859584859585,
+        "motion": 0.9590964590964591,
+        "tracking": 0.9426129426129426
+      }
+    }
+  },
+  "evaluated_stage8_windows": [
+    {
+      "step": 32000,
+      "episodes": 256,
+      "success_rate": 0.00390625,
+      "reason": "regress"
+    },
+    {
+      "step": 40000,
+      "episodes": 256,
+      "success_rate": 0.0,
+      "reason": "regress"
+    },
+    {
+      "step": 48000,
+      "episodes": 256,
+      "success_rate": 0.01171875,
+      "reason": "regress"
+    },
+    {
+      "step": 56000,
+      "episodes": 256,
+      "success_rate": 0.05078125,
+      "reason": "regress"
+    },
+    {
+      "step": 64000,
+      "episodes": 256,
+      "success_rate": 0.00390625,
+      "reason": "regress"
+    },
+    {
+      "step": 72000,
+      "episodes": 256,
+      "success_rate": 0.0,
+      "reason": "regress"
+    },
+    {
+      "step": 80000,
+      "episodes": 256,
+      "success_rate": 0.00390625,
+      "reason": "regress"
+    },
+    {
+      "step": 88000,
+      "episodes": 256,
+      "success_rate": 0.0,
+      "reason": "regress"
+    },
+    {
+      "step": 96000,
+      "episodes": 256,
+      "success_rate": 0.0,
+      "reason": "regress"
+    },
+    {
+      "step": 104000,
+      "episodes": 256,
+      "success_rate": 0.0,
+      "reason": "regress"
+    },
+    {
+      "step": 112000,
+      "episodes": 256,
+      "success_rate": 0.0,
+      "reason": "regress"
+    },
+    {
+      "step": 120000,
+      "episodes": 256,
+      "success_rate": 0.0,
+      "reason": "regress"
+    },
+    {
+      "step": 128000,
+      "episodes": 256,
+      "success_rate": 0.0,
+      "reason": "regress"
+    },
+    {
+      "step": 136000,
+      "episodes": 256,
+      "success_rate": 0.0,
+      "reason": "regress"
+    },
+    {
+      "step": 144000,
+      "episodes": 256,
+      "success_rate": 0.0,
+      "reason": "regress"
+    }
+  ],
+  "fore_cycle_definition": {
+    "min_stance_seconds": 0.06,
+    "min_swing_seconds": 0.04,
+    "min_swing_height_m": 0.035,
+    "min_fraction_each_foreleg": 0.7
+  },
+  "no_new_policy_updates": true,
+  "limitation": "Per imposed phase cycle, not independently measured natural strides. Multiple criteria and configuration changes prevent isolating a single intervention causal effect."
+}

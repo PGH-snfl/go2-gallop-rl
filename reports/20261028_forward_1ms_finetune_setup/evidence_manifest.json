@@ -1,0 +1,117 @@
+[
+  {
+    "path": "reports/20261028_forward_1ms_finetune_setup/summary.json",
+    "size": 995,
+    "sha256": "dc61a02d0d08328cbc18070eba1d6e3edaf189ffc978967553ad11fdae109fa8"
+  },
+  {
+    "path": "reports/20261028_forward_1ms_finetune_setup/unit_tests.log",
+    "size": 2766,
+    "sha256": "5cbb77c144bd4bcfde3814b91b0286684a200385ea88c8ca1ad33a8555740f0d"
+  },
+  {
+    "path": "docs/forward_1ms_finetune.md",
+    "size": 3803,
+    "sha256": "5056e277f675c902facf12b83f8ab1595a2f2345934333972c4ef3b4cbaffc24"
+  },
+  {
+    "path": "isaac_task/finetune.py",
+    "size": 1128,
+    "sha256": "b30db5c36d0e0338ec570bdcc19238d8f01c7c0928da62f5e16e2b83c859d8c8"
+  },
+  {
+    "path": "isaac_task/forward_only.py",
+    "size": 1096,
+    "sha256": "17a4e5a7c17b0d77775116c1ce246c8c04cff1f671e6ef7db3c15a5842cfa002"
+  },
+  {
+    "path": "scripts/training/official_baseline.py",
+    "size": 19913,
+    "sha256": "c0ebb6ae35d256186b23ce183b847be26dee4d0760527a23a6c30c7f236fb760"
+  },
+  {
+    "path": "scripts/analysis/collect_unitree_baseline.py",
+    "size": 10105,
+    "sha256": "4d6b07f431b54f251712710549aa41a0e1540da4671a9c7c676517b9f3e6d252"
+  },
+  {
+    "path": "tests/test_forward_finetune.py",
+    "size": 3773,
+    "sha256": "a60392e90e59aac6e2919b65d851713cd21a30ca96eea6ebb78ff4744866dfe8"
+  },
+  {
+    "path": "runs/isaac/check/forward_finetune_1ms_20261028/play_trace.csv",
+    "size": 945246,
+    "sha256": "c29721350c48a52bcf514f65a694ea268d6dc41af05d7f40b0ef159f205e8c31"
+  },
+  {
+    "path": "runs/isaac/check/forward_finetune_1ms_20261028/status.json",
+    "size": 1440,
+    "sha256": "4ba995688b6b4429036e77ba089bcc195e6531c9ca644df44489f9d710a1d432"
+  },
+  {
+    "path": "runs/isaac/check/forward_finetune_1ms_20261028/play_trace.npz",
+    "size": 945488,
+    "sha256": "82f53bed93eaefffa6615a0223050f94b1ccccf03dfda5daaf0528333fd65476"
+  },
+  {
+    "path": "runs/isaac/check/forward_finetune_1ms_20261028/manifest.json",
+    "size": 2761,
+    "sha256": "95969700a8faf62e6d4bdf579f031fcc0379078f47b8324bdc068121a3acaef3"
+  },
+  {
+    "path": "runs/isaac/check/forward_finetune_1ms_20261028/console.log",
+    "size": 15916,
+    "sha256": "0aba20c78d7b874e71fb9bc1600846e3816dbf3f4e60556fcf1fe278f0945e9d"
+  },
+  {
+    "path": "runs/isaac/check/forward_finetune_1ms_20261028/progress.jsonl",
+    "size": 1918,
+    "sha256": "31d57e8831eae8ac9fd28ca77172e483933f408410c948e5a82a69d95ef0264d"
+  },
+  {
+    "path": "runs/isaac/check/forward_finetune_1ms_20261028/params/agent.yaml",
+    "size": 1044,
+    "sha256": "5038e9a4cb5934b9ebcf4e737239857b9f34457cec2aad28b75c33cff155e4e0"
+  },
+  {
+    "path": "runs/isaac/check/forward_finetune_1ms_20261028/params/env.yaml",
+    "size": 31902,
+    "sha256": "7f14d88480a37ac0caeca41dca773347a0a3f59c73eb56e4a7e877410bdc325f"
+  },
+  {
+    "path": "runs/isaac/check/forward_finetune_1ms_20261028/source/official_env_cfg.py",
+    "size": 14840,
+    "sha256": "56859832148dacc724ddba3954a7684b99a43560e4fde561f6361b9daa051b56"
+  },
+  {
+    "path": "runs/isaac/check/forward_finetune_1ms_20261028/source/official_ppo_cfg.py",
+    "size": 1042,
+    "sha256": "0f15211f85adc84cf6586770dad448f080d579ea55b4f509aca20a36a11310f7"
+  },
+  {
+    "path": "runs/isaac/check/forward_finetune_1ms_20261028/source/finetune.py",
+    "size": 1128,
+    "sha256": "b30db5c36d0e0338ec570bdcc19238d8f01c7c0928da62f5e16e2b83c859d8c8"
+  },
+  {
+    "path": "runs/isaac/check/forward_finetune_1ms_20261028/source/parent_manifest.json",
+    "size": 1789,
+    "sha256": "da73df3ec1d86a257973bc380a99bd349844e1333ca70539a5a75b2e136772b9"
+  },
+  {
+    "path": "runs/isaac/check/forward_finetune_1ms_20261028/source/official_runtime.py",
+    "size": 19705,
+    "sha256": "39d3bbfb7b068581610e2632cec8b2dad69f12baad4af14e121a0ae352f8aeb5"
+  },
+  {
+    "path": "runs/isaac/check/forward_finetune_1ms_20261028/source/official_robot_cfg.py",
+    "size": 24164,
+    "sha256": "5bb4d9b8cabfde167b0f905d0cfa63a2d8a6ab0209077c4885997edbc25c6a62"
+  },
+  {
+    "path": "runs/isaac/check/forward_finetune_1ms_20261028/source/forward_only.py",
+    "size": 1096,
+    "sha256": "17a4e5a7c17b0d77775116c1ce246c8c04cff1f671e6ef7db3c15a5842cfa002"
+  }
+]

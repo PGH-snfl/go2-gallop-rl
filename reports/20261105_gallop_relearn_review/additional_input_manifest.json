@@ -1,0 +1,26 @@
+{
+  "runs/isaac/train/unitree_go2_forward_only/20261028_160258_54620c/model_final.pt": {
+    "sha256": "d4bd406a2e0cc97b1370610a3791bf115c31cac8b718056322d95df2f9d192bf",
+    "bytes": 4639999
+  },
+  "runs/isaac/train/unitree_go2_forward_only/20261028_160258_54620c/manifest.json": {
+    "sha256": "f507fc3530fc3befff5a2d05d5e9e42012bd6f3a3359f394e967b9e0aa9d8d94",
+    "bytes": 2734
+  },
+  "runs/isaac/train/unitree_go2_forward_only/20261028_160258_54620c/params/agent.yaml": {
+    "sha256": "5038e9a4cb5934b9ebcf4e737239857b9f34457cec2aad28b75c33cff155e4e0",
+    "bytes": 1044
+  },
+  "runs/isaac/train/unitree_go2_forward_only/20261028_160258_54620c/params/env.yaml": {
+    "sha256": "68db56c304aa947c272b54b1d045fbf85babfe581d134026dd196feecb2dada3",
+    "bytes": 31902
+  },
+  "/home/cvr/miniconda3/envs/kine2go/lib/python3.11/site-packages/rsl_rl/algorithms/ppo.py": {
+    "sha256": "4373ac1b2f9fdf14d9da57516968fc95d8f605d2967fee01dc61bf0d09423478",
+    "bytes": 20267
+  },
+  "/home/cvr/miniconda3/envs/kine2go/lib/python3.11/site-packages/rsl_rl/modules/actor_critic.py": {
+    "sha256": "614eb6e14d21c46504ce2046f04c9ab70a8c3cf679502ef2a220987e506a959a",
+    "bytes": 7997
+  }
+}

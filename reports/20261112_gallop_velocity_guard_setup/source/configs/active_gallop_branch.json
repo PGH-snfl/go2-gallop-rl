@@ -1,0 +1,137 @@
+{
+  "schema_version": 1,
+  "selected_at": "2026-11-10T19:53:35.740306+09:00",
+  "active_branch": "gallop_guarded_v4_30000",
+  "checkpoint": "runs/isaac/train/unitree_go2_gallop/20261106_000029_077a6f/model_final.pt",
+  "checkpoint_sha256": "cc05c078abe28c4c9ac2ce0a8a51af7d006e33268cc6c7f57e15621a85535d7b",
+  "config": "configs/gallop_guarded_filter_free.json",
+  "interface": "unitree_go2_gallop_guarded_49_64_12_v4",
+  "cumulative_iterations": 30000,
+  "actual_trained_command_mps": 2.5,
+  "actual_active_leap_target_m": 0.14,
+  "saved_inactive_branches": [
+    {
+      "branch": "walking_relearn_v5",
+      "archive": "archive/branches/walking_relearn_v5_20261105",
+      "manifest": "archive/branches/walking_relearn_v5_20261105/branch_manifest.json"
+    }
+  ],
+  "purpose": "Working baseline selection for subsequent tasks; existing CLI still selects policy explicitly with --checkpoint or --finetune-from. No policy conversion or training was performed.",
+  "next_training_config": "configs/gallop_2mps_50cm_velocity_guard.json",
+  "next_training_parent_checkpoint": "runs/isaac/train/unitree_go2_gallop/20261112_124757_47b3b7/model_final.pt",
+  "next_training_additional_iterations": 4000,
+  "next_training_cumulative_iterations": 62000,
+  "training_status": "velocity_guard_prepared_user_execution_pending",
+  "next_training_plan_consumed": false,
+  "completed_training_run": "runs/isaac/train/unitree_go2_gallop/20261112_124757_47b3b7",
+  "latest_completed_checkpoint": "runs/isaac/train/unitree_go2_gallop/20261112_124757_47b3b7/model_final.pt",
+  "latest_completed_checkpoint_sha256": "b870c94b016930c17c01b0de4fcebed12a3204ba158d2bc3f0b54b35aaffb8b1",
+  "latest_completed_cumulative_iterations": 58000,
+  "latest_comparison_report": "reports/20261110_gallop_filter_free_comparison/README.md",
+  "original_baseline_checkpoint": "runs/isaac/train/unitree_go2_gallop/20261103_191405_bea09f/model_final.pt",
+  "original_baseline_checkpoint_sha256": "dc129d38e78654a6559657740b7a46865830ca3cefcf06c908f49cdcef53fea7",
+  "latest_evaluation_report": "reports/20261112_gallop_54000_sim2sim_review/README.md",
+  "latest_evaluation_status": "isaac_survived50cm_failed_actual_velocity_failed_mujoco_transition_failed",
+  "selection_verified_at": "2026-11-10T21:31:07.741686+09:00",
+  "latest_candidate_selection_report": "reports/20261110_gallop_candidate_selection",
+  "latest_candidate_selection_status": "exclude_final34k_as_default_gallop_finetuning_parent",
+  "latest_completed_checkpoint_use": "58k selected as compatible continuation parent; no deployment acceptance and no proven50cm performance.",
+  "previous_consumed_training_plan": {
+    "next_training_config": "configs/gallop_3ms_80cm_stable.json",
+    "next_training_additional_iterations": 4000,
+    "next_training_cumulative_iterations": 34000,
+    "completed_training_run": "runs/isaac/train/unitree_go2_gallop/20261110_195814_959c90"
+  },
+  "next_training_design": "docs/gallop_velocity_guard.md",
+  "next_training_design_status": "measured_velocity_braking_and_single_sample_fault_prepared_not_trained",
+  "latest_pilot_run": "runs/isaac/train/unitree_go2_gallop/20261110_214726_dc4067",
+  "latest_pilot_checkpoint": "runs/isaac/train/unitree_go2_gallop/20261110_214726_dc4067/model_final.pt",
+  "latest_pilot_checkpoint_sha256": "ff22ee3135ffab981054d0d730447c292c90a16eaf45cc515fdc922117464e1f",
+  "latest_pilot_cumulative_iterations": 30500,
+  "latest_pilot_report": "reports/20261110_gallop_short_pilot/README.md",
+  "latest_pilot_status": "directional_pass_not_graduated",
+  "recommended_continuation_checkpoint": "runs/isaac/train/unitree_go2_gallop/20261112_124757_47b3b7/model_final.pt",
+  "recommended_continuation_goal": {
+    "speed_mps": 2.0,
+    "leap_m": 0.5,
+    "fixed": true,
+    "promotion_enabled": false,
+    "regression_enabled": false,
+    "purpose": "Velocity braking/cost/termination adaptation; latest58k compatible, no superiority demonstrated"
+  },
+  "pilot_completed_at": "2026-11-10T21:58:44.226161+09:00",
+  "next_training_validation_report": "reports/20261112_gallop_velocity_guard_setup/README.md",
+  "latest_staged_training_report": "reports/20261111_gallop_50000_sim2sim_review/README.md",
+  "latest_staged_training_index": 1,
+  "latest_staged_training_goal": {
+    "speed_mps": 2.75,
+    "leap_m": 0.18
+  },
+  "latest_staged_promotions": 0,
+  "latest_collection_at": "2026-11-12T12:06:17.762630+09:00",
+  "previous_consumed_staged_training_plan": {
+    "next_training_config": "configs/gallop_staged_80cm.json",
+    "next_training_parent_checkpoint": "runs/isaac/train/unitree_go2_gallop/20261110_214726_dc4067/model_final.pt",
+    "next_training_additional_iterations": 15500,
+    "next_training_cumulative_iterations": 46000,
+    "completed_training_run": "runs/isaac/train/unitree_go2_gallop/20261110_223314_cef16b"
+  },
+  "next_training_parent_checkpoint_sha256": "b870c94b016930c17c01b0de4fcebed12a3204ba158d2bc3f0b54b35aaffb8b1",
+  "core_first_prepared_at": "2026-11-11T14:10:53.146129+09:00",
+  "latest_staged_regressions": 0,
+  "improvement_candidates_not_applied": [
+    "stage adaptation60to180simseconds",
+    "separate action-noise reduction experiment aroundstd.20",
+    "log per-cycle and mean speed before changing precision gate"
+  ],
+  "previous_consumed_core_first_plan": {
+    "next_training_config": "configs/gallop_staged_core_first.json",
+    "next_training_parent_checkpoint": "runs/isaac/train/unitree_go2_gallop/20261110_223314_cef16b/model_final.pt",
+    "next_training_additional_iterations": 2000,
+    "next_training_cumulative_iterations": 48000,
+    "completed_training_run": "runs/isaac/train/unitree_go2_gallop/20261111_141724_6a1661"
+  },
+  "speed_adaptation_prepared_at": "2026-11-11T15:42:15.888641+09:00",
+  "latest_sim2sim_report": "reports/20261112_gallop_54000_sim2sim_review/edu_sim2sim_verdict.json",
+  "latest_sim2sim_pass": false,
+  "hardware_deployment_accepted": false,
+  "latest_sim2sim_checkpoint": "runs/isaac/train/unitree_go2_gallop/20261111_182833_2552ed/model_final.pt",
+  "latest_sim2sim_checkpoint_sha256": "2d0de1f15c57043af564e8800116c321df2befae02a3c87e497a976d815a78bc",
+  "latest_sim2sim_cumulative_iterations": 54000,
+  "latest_sim2sim_target_speed_mps": 2.0,
+  "latest_sim2sim_collected_at": "2026-11-12T12:06:17.762630+09:00",
+  "previous_consumed_speed_adaptation_plan": {
+    "next_training_config": "configs/gallop_staged_speed_adaptation.json",
+    "next_training_parent_checkpoint": "runs/isaac/train/unitree_go2_gallop/20261111_141724_6a1661/model_final.pt",
+    "next_training_additional_iterations": 2000,
+    "next_training_cumulative_iterations": 50000,
+    "completed_training_run": "runs/isaac/train/unitree_go2_gallop/20261111_155012_ad6309"
+  },
+  "recommended_continuation_checkpoint_sha256": "b870c94b016930c17c01b0de4fcebed12a3204ba158d2bc3f0b54b35aaffb8b1",
+  "fixed_goal_prepared_at": "2026-11-11T18:26:31.213620+09:00",
+  "latest_fixed_goal_training_report": "reports/20261112_gallop_54000_sim2sim_review/README.md",
+  "latest_fixed_goal_training_goal": {
+    "speed_mps": 2.0,
+    "leap_m": 0.5,
+    "promotion": false
+  },
+  "recommended_continuation_review_status": "58k completion found and independently restored; performance superiority not tested",
+  "previous_consumed_fixed_goal_plan": {
+    "config": "configs/gallop_2mps_50cm_edu.json",
+    "parent": "runs/isaac/train/unitree_go2_gallop/20261111_155012_ad6309/model_final.pt",
+    "additional_iterations": 4000,
+    "completed_cumulative_iterations": 54000,
+    "completed_training_run": "runs/isaac/train/unitree_go2_gallop/20261111_182833_2552ed"
+  },
+  "distance_focus_prepared_at": "2026-11-12T12:14:44.945980+09:00",
+  "previous_consumed_distance_focus_plan": {
+    "next_training_config": "configs/gallop_2mps_50cm_distance_focus.json",
+    "next_training_parent_checkpoint": "runs/isaac/train/unitree_go2_gallop/20261111_182833_2552ed/model_final.pt",
+    "next_training_additional_iterations": 4000,
+    "next_training_cumulative_iterations": 58000,
+    "completed_run": "runs/isaac/train/unitree_go2_gallop/20261112_124757_47b3b7"
+  },
+  "latest_completed_collection_status": "58k completion and checkpoint restoration verified; full training result and performance collection pending",
+  "latest_full_collection_checkpoint": "runs/isaac/train/unitree_go2_gallop/20261111_182833_2552ed/model_final.pt",
+  "velocity_guard_prepared_at": "2026-11-12T15:11:45.973995+09:00"
+}

@@ -1,0 +1,13 @@
+{
+  "steps": 10,
+  "physics_samples": 40,
+  "fixed_speed": 2.0,
+  "fixed_distance": 0.5,
+  "no_curriculum_decisions": true,
+  "official_monitor_active": true,
+  "official_sample_seconds": 0.19999994337558746,
+  "trace_body_rise": true,
+  "policy_state_unchanged": true,
+  "policy_updates": 0,
+  "performance_claim": false
+}

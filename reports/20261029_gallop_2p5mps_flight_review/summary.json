@@ -1,0 +1,1636 @@
+{
+  "collected_at": "2026-10-29T15:49:43.657305+09:00",
+  "train": "/home/cvr/GH/go2_animalization/gallop/runs/isaac/train/unitree_go2_gallop/20261029_151901_f393b4",
+  "play": "/home/cvr/GH/go2_animalization/gallop/runs/isaac/play/unitree_go2_gallop/20261029_154656_8d5ba5",
+  "checkpoint": "/home/cvr/GH/go2_animalization/gallop/runs/isaac/train/unitree_go2_gallop/20261029_151901_f393b4/model_final.pt",
+  "checkpoint_sha256": "0ff9b94db4a5cc5d8b8dd7ae8d26fd532adb27436e1b4e0e4b7840d60b54785d",
+  "training_status": {
+    "status": "completed",
+    "mode": "train",
+    "training_variant": "gallop_success_curriculum",
+    "num_envs": 256,
+    "planned_iterations": 2000,
+    "policy_updates": 2000,
+    "training_initialization": "restore_gallop_new_optimizer",
+    "fine_tuning": {
+      "parent_iteration_zero_based": 1999,
+      "parent_stage_iterations": 2000,
+      "actor_critic_restored": true,
+      "noise_restored": true,
+      "optimizer_reset": true,
+      "stage_iteration_start": 0,
+      "parent_cumulative_iterations": 14000
+    },
+    "last_event": {
+      "time": "2026-10-29T15:46:21+09:00",
+      "elapsed_s": 1635.05,
+      "event": "COMPLETED",
+      "output": "/home/cvr/GH/go2_animalization/gallop/runs/isaac/train/unitree_go2_gallop/20261029_151901_f393b4"
+    },
+    "cumulative_iterations": 16000,
+    "source_clean_after_run": true
+  },
+  "play_status": {
+    "status": "completed",
+    "mode": "play",
+    "training_variant": "gallop_success_curriculum",
+    "num_envs": 1,
+    "planned_iterations": 6000,
+    "policy_updates": 0,
+    "training_initialization": "load_gallop",
+    "last_event": {
+      "time": "2026-10-29T15:49:08+09:00",
+      "elapsed_s": 121.06,
+      "event": "COMPLETED",
+      "output": "/home/cvr/GH/go2_animalization/gallop/runs/isaac/play/unitree_go2_gallop/20261029_154656_8d5ba5"
+    },
+    "steps": 1500,
+    "reset_count": 1,
+    "policy_state_unchanged": true,
+    "rollout_note": "First segment validity only; reset rows use pre-reset terminal snapshots",
+    "videos": [
+      "/home/cvr/GH/go2_animalization/gallop/runs/isaac/play/unitree_go2_gallop/20261029_154656_8d5ba5/videos/gallop-play-step-0.mp4"
+    ],
+    "source_clean_after_run": true
+  },
+  "provenance": {
+    "interface": "unitree_go2_gallop_47_62_12_v1",
+    "training_variant": "gallop_success_curriculum",
+    "official_repo": "/home/cvr/GH/unitree/unitree_rl_lab_official",
+    "official_commit": "4960b84732b0c2ec593dccbfe963fda1bcd7b1e3",
+    "environment_source_sha256": "56859832148dacc724ddba3954a7684b99a43560e4fde561f6361b9daa051b56",
+    "asset_path": "/home/cvr/GH/unitree/unitree_rl_lab/unitree_model/Go2/usd/go2.usd",
+    "asset_sha256": "fd3c8c23c97cea3208fae1ab5eeacba4ffa616fe5f1397be6c7edf4feb93f180",
+    "gallop_settings": {
+      "start_speed": 2.5,
+      "max_speed": 2.5,
+      "reference_start_speed": 1.0,
+      "reference_max_speed": 3.0,
+      "speed_band": 0.0,
+      "speed_increment": 0.25,
+      "promote_success": 0.8,
+      "regress_success": 0.5,
+      "pass_windows": 2,
+      "min_episodes": 128,
+      "decision_steps": 1000,
+      "slow_period": 0.42,
+      "fast_period": 0.32,
+      "touchdown": [
+        0.25,
+        0.5,
+        0.0,
+        0.125
+      ],
+      "duty": [
+        0.45,
+        0.3,
+        0.35,
+        0.45
+      ],
+      "action_scale": 0.5,
+      "thigh_amplitude_slow": 0.45,
+      "thigh_amplitude_fast": 0.75,
+      "calf_amplitude_slow": 0.45,
+      "calf_amplitude_fast": 0.8,
+      "swing_height_slow": 0.065,
+      "swing_height_fast": 0.12,
+      "pitch_amplitude": 0.08,
+      "reward_ramp_iterations": 500,
+      "initial_gait_weight": 1.0,
+      "contact_on": 8.0,
+      "contact_off": 3.0,
+      "flight_min_seconds": 0.06,
+      "flight_cycle_fraction": 0.6,
+      "metric_warmup_seconds": 1.0,
+      "contact_accuracy": 0.6,
+      "order_accuracy": 0.8,
+      "require_touchdown_order": false,
+      "order_reward_weight": 0.1,
+      "flexible_left_right": true,
+      "min_cycles": 8,
+      "min_rom_fraction": 0.7,
+      "min_fore_rom_fraction": 0.7,
+      "min_each_fore_rom_fraction": 0.5,
+      "min_fore_load_share": 0.25,
+      "min_each_fore_load_share": 0.08,
+      "min_hind_load_share": 0.25,
+      "min_fore_participation": 0.7,
+      "min_fore_swing_height": 0.035,
+      "min_fore_stance_seconds": 0.06,
+      "min_fore_swing_seconds": 0.04,
+      "max_action_clipping": 0.1,
+      "max_attitude_rms": 0.25,
+      "tracking_relative_rmse": 0.25,
+      "tracking_absolute_rmse": 0.15,
+      "min_height": 0.18,
+      "max_height": 0.6,
+      "foot_radius": 0.022,
+      "pair_joint_weight": 1.0,
+      "pair_rom_weight": 0.5,
+      "pair_load_weight": 0.75,
+      "pair_stance_weight": 0.3,
+      "pair_joint_tolerance": 0.15,
+      "pair_joint_scale": 0.4,
+      "pair_rom_tolerance": 0.25,
+      "pair_load_tolerance": 0.2,
+      "pair_stance_tolerance": 0.15,
+      "leap_reward_weight": 3.0,
+      "leap_min_distance": 0.16,
+      "leap_require_forelimbs": true,
+      "leap_partial_credit": 1.0,
+      "pair_hip_weight": 0.75,
+      "pair_hip_tolerance": 0.2,
+      "flight_shaping_enabled": true,
+      "flight_prepare_seconds": 0.08,
+      "flight_recovery_seconds": 0.08,
+      "flight_takeoff_vz": 0.4,
+      "flight_clearance": 0.025,
+      "flight_landing_min_air_seconds": 0.02,
+      "flight_max_tilt": 0.3,
+      "flight_max_angular_speed": 2.0,
+      "flight_max_lateral_speed": 0.35,
+      "flight_max_landing_vz": 1.2,
+      "flight_max_force_bw": 3.0,
+      "flight_max_foot_slide": 0.5,
+      "flight_air_reward_floor": 0.2,
+      "flight_drive_weight": 2.0,
+      "flight_clearance_weight": 2.0,
+      "flight_support_weight": 8.0,
+      "flight_balance_weight": 1.5,
+      "flight_takeoff_weight": 0.5,
+      "flight_landing_weight": 1.0,
+      "flight_impact_weight": 1.0,
+      "flight_clip_weight": 1.0
+    },
+    "gallop_core_sha256": "0b727a5fe52e85d4572e4dc997716bc290c843179614f8cf3f119de67ea0b4e5",
+    "gallop_env_sha256": "93caf1b9f7e57157c4c05e952f239f9ff980c09c92c9c396311672317e566770",
+    "observation_dim": 47,
+    "critic_observation_dim": 62,
+    "action_dim": 12,
+    "action_scale": 0.5,
+    "gait_goal": "Gallop-style: relaxed foot order, required forelimb participation and suspension",
+    "speed_increase_rule": "Fixed positive forward command 2.5 m/s; no speed promotion",
+    "replay_source": null,
+    "source_checkpoint": {
+      "path": "/home/cvr/GH/go2_animalization/gallop/runs/isaac/train/unitree_go2_gallop/20261029_140301_dbb121/model_final.pt",
+      "sha256": "7f1b6f63aeb66ca84bacf5ddca28b6c476f57cb6f33cf29981776019dd0a554d"
+    },
+    "leap_measurement": {
+      "min_distance_m": 0.16,
+      "min_air_seconds": 0.06,
+      "physics_sample_seconds": 0.005,
+      "position": "first all-off body pose to first touchdown; projected onto takeoff forward heading",
+      "reward_weight": 3.0,
+      "max_score_per_phase_cycle": 1.0,
+      "forelimbs_required": true,
+      "initial_free_fall_excluded": true,
+      "completed_landings_only": true
+    },
+    "flight_design": {
+      "version": 1,
+      "prepare_seconds": 0.08,
+      "shared_air_phase_start": 0.8,
+      "recovery_seconds": 0.08,
+      "distance_reward_confirmation": "continuous stable supported recovery after actual flight",
+      "partial_distance_credit": 1.0,
+      "takeoff_vertical_speed_mps": 0.4,
+      "force_normalization": "sum of positive vertical foot force / measured robot weight",
+      "touchdown_order_required": false,
+      "gait_reward_floor_during_flight_violation": 0.2
+    },
+    "fine_tuning": {
+      "parent_iteration_zero_based": 1999,
+      "parent_stage_iterations": 2000,
+      "actor_critic_restored": true,
+      "noise_restored": true,
+      "optimizer_reset": true,
+      "stage_iteration_start": 0,
+      "parent_cumulative_iterations": 14000
+    },
+    "stage_iterations": 2000,
+    "cumulative_iterations": 16000,
+    "trained_speed_cap": 2.5
+  },
+  "iterations": 2000,
+  "training_complete": true,
+  "inherited_iterations": 14000,
+  "cumulative_iterations": 16000,
+  "new_transitions": 12288000,
+  "first_scalar_time": "2026-10-29T15:19:10.291643+09:00",
+  "last_scalar_time": "2026-10-29T15:46:21.765544+09:00",
+  "policy_dt": 0.02,
+  "tensorboard": {
+    "Episode_Reward/track_lin_vel_xy": {
+      "count": 2000,
+      "first": 5.399360816227272e-07,
+      "last": 2.518737316131592,
+      "last_100_mean": 2.464743502140045
+    },
+    "Episode_Reward/track_ang_vel_z": {
+      "count": 2000,
+      "first": 0.005239106249064207,
+      "last": 0.5516133308410645,
+      "last_100_mean": 0.5437713423371315
+    },
+    "Episode_Reward/base_linear_velocity": {
+      "count": 2000,
+      "first": -0.00017570580530446023,
+      "last": -0.012432051822543144,
+      "last_100_mean": -0.010632395287975669
+    },
+    "Episode_Reward/base_angular_velocity": {
+      "count": 2000,
+      "first": -0.0007241889252327383,
+      "last": -0.02338571846485138,
+      "last_100_mean": -0.023144561536610125
+    },
+    "Episode_Reward/joint_vel": {
+      "count": 2000,
+      "first": -0.003744345623999834,
+      "last": -0.7706791758537292,
+      "last_100_mean": -0.7679581809043884
+    },
+    "Episode_Reward/joint_acc": {
+      "count": 2000,
+      "first": -0.0018157635349780321,
+      "last": -0.3336416482925415,
+      "last_100_mean": -0.33088998481631277
+    },
+    "Episode_Reward/joint_torques": {
+      "count": 2000,
+      "first": -0.0012131509138271213,
+      "last": -0.2386760711669922,
+      "last_100_mean": -0.2515112660825253
+    },
+    "Episode_Reward/action_rate": {
+      "count": 2000,
+      "first": -0.0008466475992463529,
+      "last": -0.12087764590978622,
+      "last_100_mean": -0.12327188603579999
+    },
+    "Episode_Reward/dof_pos_limits": {
+      "count": 2000,
+      "first": 0.0,
+      "last": -0.1259784698486328,
+      "last_100_mean": -0.11594708189368248
+    },
+    "Episode_Reward/energy": {
+      "count": 2000,
+      "first": -5.19435343449004e-05,
+      "last": -0.010806258767843246,
+      "last_100_mean": -0.011160471416078508
+    },
+    "Episode_Reward/feet_slide": {
+      "count": 2000,
+      "first": -0.0005289955297484994,
+      "last": -0.10062162578105927,
+      "last_100_mean": -0.09967161074280739
+    },
+    "Episode_Reward/undesired_contacts": {
+      "count": 2000,
+      "first": -0.00016666667943354696,
+      "last": -0.011541664600372314,
+      "last_100_mean": -0.013090902948752045
+    },
+    "Episode_Reward/gallop_contact": {
+      "count": 2000,
+      "first": 0.002959991805255413,
+      "last": 1.6812198162078857,
+      "last_100_mean": 1.6199774557352067
+    },
+    "Episode_Reward/gallop_order": {
+      "count": 2000,
+      "first": 2.6450717882653407e-07,
+      "last": 2.5513956643408164e-05,
+      "last_100_mean": 3.742033811533929e-05
+    },
+    "Episode_Reward/gallop_swing": {
+      "count": 2000,
+      "first": 0.0010501256911084056,
+      "last": 0.7039327621459961,
+      "last_100_mean": 0.6763936668634415
+    },
+    "Episode_Reward/gallop_joint": {
+      "count": 2000,
+      "first": 0.0006759361713193357,
+      "last": 0.2187175452709198,
+      "last_100_mean": 0.22546189174056053
+    },
+    "Episode_Reward/gallop_motion": {
+      "count": 2000,
+      "first": 0.0004597684310283512,
+      "last": 0.9570338726043701,
+      "last_100_mean": 0.927034141421318
+    },
+    "Episode_Reward/gallop_flight": {
+      "count": 2000,
+      "first": 0.0,
+      "last": 0.0751306340098381,
+      "last_100_mean": 0.07721630096435547
+    },
+    "Episode_Reward/gallop_fore_use": {
+      "count": 2000,
+      "first": 0.0004012549470644444,
+      "last": 0.9578410387039185,
+      "last_100_mean": 0.9266546282172203
+    },
+    "Episode_Reward/gallop_attitude": {
+      "count": 2000,
+      "first": -0.0001412976998835802,
+      "last": -0.011153087019920349,
+      "last_100_mean": -0.01111716968473047
+    },
+    "Episode_Reward/gallop_pair_joint": {
+      "count": 2000,
+      "first": 0.0,
+      "last": -0.31412041187286377,
+      "last_100_mean": -0.2999358382821083
+    },
+    "Episode_Reward/gallop_pair_rom": {
+      "count": 2000,
+      "first": 0.0,
+      "last": -1.8098166947311256e-06,
+      "last_100_mean": -1.523073847366163e-05
+    },
+    "Episode_Reward/gallop_pair_load": {
+      "count": 2000,
+      "first": 0.0,
+      "last": -0.017742060124874115,
+      "last_100_mean": -0.01340781731531024
+    },
+    "Episode_Reward/gallop_pair_stance": {
+      "count": 2000,
+      "first": 0.0,
+      "last": -1.2154821433796315e-06,
+      "last_100_mean": -1.851693707379809e-05
+    },
+    "Episode_Reward/gallop_leap_distance": {
+      "count": 2000,
+      "first": 0.0,
+      "last": 1.5939865112304688,
+      "last_100_mean": 1.4653036105632782
+    },
+    "Episode_Reward/gallop_pair_hip": {
+      "count": 2000,
+      "first": 0.0,
+      "last": -0.016500096768140793,
+      "last_100_mean": -0.02424998551607132
+    },
+    "Episode_Reward/gallop_flight_drive": {
+      "count": 2000,
+      "first": 0.0,
+      "last": 0.23072996735572815,
+      "last_100_mean": 0.2585977051407099
+    },
+    "Episode_Reward/gallop_flight_clearance": {
+      "count": 2000,
+      "first": 0.0,
+      "last": 0.21921232342720032,
+      "last_100_mean": 0.22220585346221924
+    },
+    "Episode_Reward/gallop_flight_support": {
+      "count": 2000,
+      "first": 0.0,
+      "last": -0.19845819473266602,
+      "last_100_mean": -0.17470850244164468
+    },
+    "Episode_Reward/gallop_flight_balance": {
+      "count": 2000,
+      "first": 0.0,
+      "last": -0.1341373175382614,
+      "last_100_mean": -0.11889218434691429
+    },
+    "Episode_Reward/gallop_flight_takeoff": {
+      "count": 2000,
+      "first": 0.0,
+      "last": 1.0351433753967285,
+      "last_100_mean": 0.980128543972969
+    },
+    "Episode_Reward/gallop_flight_landing": {
+      "count": 2000,
+      "first": 0.0,
+      "last": 0.6638246774673462,
+      "last_100_mean": 0.6689081607758999
+    },
+    "Episode_Reward/gallop_flight_impact": {
+      "count": 2000,
+      "first": 0.0,
+      "last": -0.010625909082591534,
+      "last_100_mean": -0.010034225713461638
+    },
+    "Episode_Reward/gallop_flight_clip": {
+      "count": 2000,
+      "first": 0.0,
+      "last": -0.14878536760807037,
+      "last_100_mean": -0.14825500786304474
+    },
+    "Metrics/base_velocity/error_vel_xy": {
+      "count": 2000,
+      "first": 0.03557572513818741,
+      "last": 0.4449324607849121,
+      "last_100_mean": 0.4157910469174385
+    },
+    "Metrics/base_velocity/error_vel_yaw": {
+      "count": 2000,
+      "first": 0.003962765913456678,
+      "last": 0.5304453372955322,
+      "last_100_mean": 0.49165729314088824
+    },
+    "Episode_Termination/time_out": {
+      "count": 2000,
+      "first": 0.01416015625,
+      "last": 0.96875,
+      "last_100_mean": 0.9571744871139526
+    },
+    "Episode_Termination/base_contact": {
+      "count": 2000,
+      "first": 0.0,
+      "last": 0.0,
+      "last_100_mean": 0.0
+    },
+    "Episode_Termination/bad_orientation": {
+      "count": 2000,
+      "first": 0.0,
+      "last": 0.015625,
+      "last_100_mean": 0.020758463740348815
+    },
+    "Episode_Termination/gallop_height": {
+      "count": 2000,
+      "first": 0.0,
+      "last": 0.015625,
+      "last_100_mean": 0.022067057457752524
+    },
+    "Loss/value_function": {
+      "count": 2000,
+      "first": 0.2666616141796112,
+      "last": 0.3776482939720154,
+      "last_100_mean": 0.4891068455576897
+    },
+    "Loss/surrogate": {
+      "count": 2000,
+      "first": 0.34697088599205017,
+      "last": -0.0076010641641914845,
+      "last_100_mean": -0.006806195985991508
+    },
+    "Loss/entropy": {
+      "count": 2000,
+      "first": -2.932065486907959,
+      "last": -2.352797508239746,
+      "last_100_mean": -2.4881905484199525
+    },
+    "Loss/learning_rate": {
+      "count": 2000,
+      "first": 9.999999747378752e-06,
+      "last": 5.062499985797331e-05,
+      "last_100_mean": 3.792499994233367e-05
+    },
+    "Policy/mean_noise_std": {
+      "count": 2000,
+      "first": 0.1949411779642105,
+      "last": 0.22155077755451202,
+      "last_100_mean": 0.21928649127483368
+    },
+    "Perf/total_fps": {
+      "count": 2000,
+      "first": 3997.0,
+      "last": 7421.0,
+      "last_100_mean": 7551.83
+    },
+    "Perf/collection time": {
+      "count": 2000,
+      "first": 1.4140887260437012,
+      "last": 0.7760472297668457,
+      "last_100_mean": 0.7632689213752747
+    },
+    "Perf/learning_time": {
+      "count": 2000,
+      "first": 0.1230008602142334,
+      "last": 0.05179572105407715,
+      "last_100_mean": 0.050486941337585446
+    },
+    "Train/mean_reward": {
+      "count": 2000,
+      "first": 0.026095731183886528,
+      "last": 167.81381225585938,
+      "last_100_mean": 168.14036865234374
+    },
+    "Train/mean_episode_length": {
+      "count": 2000,
+      "first": 7.599999904632568,
+      "last": 955.280029296875,
+      "last_100_mean": 962.9861004638672
+    },
+    "Train/mean_reward/time": {
+      "count": 2000,
+      "first": 0.026095731183886528,
+      "last": 167.81381225585938,
+      "last_100_mean": 168.14036865234374
+    },
+    "Train/mean_episode_length/time": {
+      "count": 2000,
+      "first": 7.599999904632568,
+      "last": 955.280029296875,
+      "last_100_mean": 962.9861004638672
+    },
+    "Gallop/speed_cap": {
+      "count": 2000,
+      "first": 2.5,
+      "last": 2.5,
+      "last_100_mean": 2.5
+    },
+    "Gallop/gait_weight": {
+      "count": 2000,
+      "first": 1.0,
+      "last": 1.0,
+      "last_100_mean": 1.0
+    },
+    "Gallop/success_rate": {
+      "count": 2000,
+      "first": 0.0,
+      "last": 0.0,
+      "last_100_mean": 0.0
+    },
+    "Gallop/last_vx_rmse": {
+      "count": 2000,
+      "first": 0.0,
+      "last": 0.15113727748394012,
+      "last_100_mean": 0.16759619139134885
+    },
+    "Gallop/last_contact_accuracy": {
+      "count": 2000,
+      "first": 0.0,
+      "last": 0.8730283975601196,
+      "last_100_mean": 0.836852352321148
+    },
+    "Gallop/last_order_accuracy": {
+      "count": 2000,
+      "first": 0.2857142984867096,
+      "last": 0.004273504484444857,
+      "last_100_mean": 0.012506658681668342
+    },
+    "Gallop/last_flight_fraction": {
+      "count": 2000,
+      "first": 0.0,
+      "last": 0.7719298005104065,
+      "last_100_mean": 0.4604315083473921
+    },
+    "Gallop/last_rom_fraction": {
+      "count": 2000,
+      "first": 0.8298279643058777,
+      "last": 0.9941776394844055,
+      "last_100_mean": 0.9923044514656066
+    },
+    "Gallop/last_action_clip_fraction": {
+      "count": 2000,
+      "first": 0.0,
+      "last": 0.15448646247386932,
+      "last_100_mean": 0.1563712713122368
+    },
+    "Gallop/last_pair_valid_cycles": {
+      "count": 2000,
+      "first": 0.0,
+      "last": 54.0,
+      "last_100_mean": 51.41
+    },
+    "Gallop/last_pair_joint_cost": {
+      "count": 2000,
+      "first": 0.0,
+      "last": 0.33872079849243164,
+      "last_100_mean": 0.3194655328989029
+    },
+    "Gallop/last_pair_rom_cost": {
+      "count": 2000,
+      "first": 0.0,
+      "last": 3.350068254803773e-06,
+      "last_100_mean": 1.180651471556271e-05
+    },
+    "Gallop/last_pair_load_cost": {
+      "count": 2000,
+      "first": 0.0,
+      "last": 0.030190767720341682,
+      "last_100_mean": 0.01847975954413414
+    },
+    "Gallop/last_pair_stance_cost": {
+      "count": 2000,
+      "first": 0.0,
+      "last": 0.0,
+      "last_100_mean": 0.00012462409191357437
+    },
+    "Gallop/last_pair_hip_cost": {
+      "count": 2000,
+      "first": 0.0,
+      "last": 0.01994306407868862,
+      "last_100_mean": 0.03533535620197654
+    },
+    "Gallop/last_leap_events": {
+      "count": 2000,
+      "first": 0.0,
+      "last": 55.0,
+      "last_100_mean": 52.81
+    },
+    "Gallop/last_leap_qualified_events": {
+      "count": 2000,
+      "first": 0.0,
+      "last": 22.0,
+      "last_100_mean": 7.17
+    },
+    "Gallop/last_leap_qualified_fraction": {
+      "count": 2000,
+      "first": 0.0,
+      "last": 0.4000000059604645,
+      "last_100_mean": 0.13051985366269947
+    },
+    "Gallop/last_leap_distance_mean": {
+      "count": 2000,
+      "first": 0.0,
+      "last": 0.15264084935188293,
+      "last_100_mean": 0.12492707706987857
+    },
+    "Gallop/last_leap_distance_max": {
+      "count": 2000,
+      "first": 0.0,
+      "last": 0.19449979066848755,
+      "last_100_mean": 0.16975538700819015
+    },
+    "Gallop/last_leap_air_seconds_mean": {
+      "count": 2000,
+      "first": 0.0,
+      "last": 0.0629090666770935,
+      "last_100_mean": 0.05279908038675785
+    },
+    "Gallop/last_leap_reward_points": {
+      "count": 2000,
+      "first": 0.0,
+      "last": 28.093006134033203,
+      "last_100_mean": 28.450546112060547
+    },
+    "Gallop/last_leap_reward_steps": {
+      "count": 2000,
+      "first": 0.0,
+      "last": 18.0,
+      "last_100_mean": 21.8
+    },
+    "Gallop/last_leap_physics_samples": {
+      "count": 2000,
+      "first": 84.0,
+      "last": 4000.0,
+      "last_100_mean": 3814.52
+    },
+    "Gallop/last_flight_takeoffs": {
+      "count": 2000,
+      "first": 0.0,
+      "last": 54.0,
+      "last_100_mean": 52.18
+    },
+    "Gallop/last_flight_landings": {
+      "count": 2000,
+      "first": 0.0,
+      "last": 54.0,
+      "last_100_mean": 51.52
+    },
+    "Gallop/last_flight_stable_landings": {
+      "count": 2000,
+      "first": 0.0,
+      "last": 18.0,
+      "last_100_mean": 22.11
+    },
+    "Gallop/last_flight_aborted_landings": {
+      "count": 2000,
+      "first": 0.0,
+      "last": 35.0,
+      "last_100_mean": 28.86
+    },
+    "Gallop/last_flight_landing_peak_force_bw": {
+      "count": 2000,
+      "first": 0.0,
+      "last": 1.9157127141952515,
+      "last_100_mean": 1.867593742609024
+    },
+    "Gallop/last_flight_landing_peak_down_vz": {
+      "count": 2000,
+      "first": 0.0,
+      "last": 0.6444104909896851,
+      "last_100_mean": 0.5992161154747009
+    },
+    "Gallop/last_flight_takeoff_vz_mean": {
+      "count": 2000,
+      "first": 0.0,
+      "last": 0.4016478955745697,
+      "last_100_mean": 0.3362183555960655
+    },
+    "Gallop/last_flight_balance_cost": {
+      "count": 2000,
+      "first": 0.0,
+      "last": 0.09919559955596924,
+      "last_100_mean": 0.09543128550052643
+    },
+    "Gallop/last_flight_support_cost": {
+      "count": 2000,
+      "first": 0.0,
+      "last": 0.02809239737689495,
+      "last_100_mean": 0.0250003126822412
+    }
+  },
+  "episodes": {
+    "total": 18876,
+    "eligible": 18620,
+    "eligible_statistics": {
+      "count": 18620,
+      "success_rate": 0.0,
+      "criterion_pass_rates": {
+        "tracking": 0.7042427497314715,
+        "pattern": 0.6502148227712138,
+        "flight": 0.049570354457572505,
+        "motion": 0.835499462943072,
+        "front_load": 0.8936627282491945,
+        "front_motion": 0.8163802363050483,
+        "front_cycle": 0.7081632653061225,
+        "stable": 0.0,
+        "mature": 1.0
+      },
+      "measures": {
+        "vx_rmse": {
+          "mean": 0.2637319475624442,
+          "q10_q50_q90": [
+            0.0,
+            0.12949423491954803,
+            0.41829918324947934
+          ]
+        },
+        "contact_accuracy": {
+          "mean": 0.6079858611272818,
+          "q10_q50_q90": [
+            0.0,
+            0.8433032035827637,
+            0.8777602314949036
+          ]
+        },
+        "order_accuracy": {
+          "mean": 0.14994889633889108,
+          "q10_q50_q90": [
+            0.0042553190141916275,
+            0.016877636313438416,
+            0.5
+          ]
+        },
+        "flight_fraction": {
+          "mean": 0.09288430531258134,
+          "q10_q50_q90": [
+            0.0,
+            0.0,
+            0.4035087823867798
+          ]
+        },
+        "rom_fraction": {
+          "mean": 0.8200595307426986,
+          "q10_q50_q90": [
+            0.0,
+            0.9898438155651093,
+            0.9964167058467865
+          ]
+        },
+        "fore_load_share": {
+          "mean": 0.48701306592541016,
+          "q10_q50_q90": [
+            0.4357272744178772,
+            0.4617059677839279,
+            0.6039545357227326
+          ]
+        },
+        "fore_min_load_share": {
+          "mean": 0.17350109088706078,
+          "q10_q50_q90": [
+            0.08025988340377808,
+            0.1621374636888504,
+            0.24100245386362076
+          ]
+        },
+        "fore_rom_fraction": {
+          "mean": 0.798342744361061,
+          "q10_q50_q90": [
+            0.0,
+            0.9883471131324768,
+            0.9931873679161072
+          ]
+        },
+        "fore_min_rom_fraction": {
+          "mean": 0.7805116574775135,
+          "q10_q50_q90": [
+            0.0,
+            0.9835492372512817,
+            0.9898837804794312
+          ]
+        },
+        "fore_participation": {
+          "mean": 0.7449881414157588,
+          "q10_q50_q90": [
+            0.0,
+            0.9824561476707458,
+            1.0
+          ]
+        },
+        "attitude_rms": {
+          "mean": 0.0714911891039457,
+          "q10_q50_q90": [
+            0.0,
+            0.044792553409934044,
+            0.10746445506811242
+          ]
+        },
+        "action_clip_fraction": {
+          "mean": 0.11292164271535346,
+          "q10_q50_q90": [
+            0.0,
+            0.14852777123451233,
+            0.16132140159606934
+          ]
+        },
+        "terminated": {
+          "mean": 0.36933404940923736,
+          "q10_q50_q90": [
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        "timed_out": {
+          "mean": 0.6306659505907626,
+          "q10_q50_q90": [
+            0.0,
+            1.0,
+            1.0
+          ]
+        },
+        "pair_joint_cost": {
+          "mean": 0.23404380420160856,
+          "q10_q50_q90": [
+            0.0,
+            0.26273201406002045,
+            0.34480758607387624
+          ]
+        },
+        "pair_rom_cost": {
+          "mean": 0.000347409253161513,
+          "q10_q50_q90": [
+            0.0,
+            0.0,
+            5.5433913439628755e-05
+          ]
+        },
+        "pair_load_cost": {
+          "mean": 0.008806651988050404,
+          "q10_q50_q90": [
+            0.0,
+            0.0014619933208450675,
+            0.017211089096963405
+          ]
+        },
+        "pair_stance_cost": {
+          "mean": 0.0007326404506053368,
+          "q10_q50_q90": [
+            0.0,
+            0.0,
+            5.413168764789589e-05
+          ]
+        },
+        "pair_hip_cost": {
+          "mean": 0.03492758725575621,
+          "q10_q50_q90": [
+            0.0,
+            0.03203149326145649,
+            0.08077245876193048
+          ]
+        },
+        "pair_valid_cycles": {
+          "mean": 34.64436090225564,
+          "q10_q50_q90": [
+            0.0,
+            54.0,
+            54.0
+          ]
+        },
+        "leap_events": {
+          "mean": 23.282438238453278,
+          "q10_q50_q90": [
+            0.0,
+            3.0,
+            56.0
+          ]
+        },
+        "leap_qualified_events": {
+          "mean": 1.128249194414608,
+          "q10_q50_q90": [
+            0.0,
+            0.0,
+            3.0
+          ]
+        },
+        "leap_qualified_fraction": {
+          "mean": 0.020596760965355548,
+          "q10_q50_q90": [
+            0.0,
+            0.0,
+            0.0535714291036129
+          ]
+        },
+        "leap_distance_mean": {
+          "mean": 0.04332936018292104,
+          "q10_q50_q90": [
+            0.0,
+            0.014814646448940039,
+            0.12700489461421968
+          ]
+        },
+        "leap_distance_max": {
+          "mean": 0.06399093543986906,
+          "q10_q50_q90": [
+            0.0,
+            0.02351807150989771,
+            0.17252520769834528
+          ]
+        },
+        "leap_air_seconds_mean": {
+          "mean": 0.018888838279359124,
+          "q10_q50_q90": [
+            0.0,
+            0.006999999284744263,
+            0.053573926538229046
+          ]
+        },
+        "leap_reward_points": {
+          "mean": 6.369424615705948,
+          "q10_q50_q90": [
+            0.0,
+            0.0,
+            24.24049644470215
+          ]
+        },
+        "leap_reward_steps": {
+          "mean": 6.061600429645543,
+          "q10_q50_q90": [
+            0.0,
+            0.0,
+            21.0
+          ]
+        },
+        "leap_physics_samples": {
+          "mean": 2610.7503759398496,
+          "q10_q50_q90": [
+            64.0,
+            4000.0,
+            4000.0
+          ]
+        },
+        "flight_takeoffs": {
+          "mean": 22.739473684210527,
+          "q10_q50_q90": [
+            0.0,
+            2.0,
+            55.0
+          ]
+        },
+        "flight_landings": {
+          "mean": 19.154403866809883,
+          "q10_q50_q90": [
+            0.0,
+            0.0,
+            55.0
+          ]
+        },
+        "flight_stable_landings": {
+          "mean": 6.118850698174007,
+          "q10_q50_q90": [
+            0.0,
+            0.0,
+            22.0
+          ]
+        },
+        "flight_aborted_landings": {
+          "mean": 12.865789473684211,
+          "q10_q50_q90": [
+            0.0,
+            0.0,
+            39.0
+          ]
+        },
+        "flight_takeoff_vz_mean": {
+          "mean": 0.09554136225245219,
+          "q10_q50_q90": [
+            -0.08319491297006607,
+            0.0,
+            0.3517512142658234
+          ]
+        },
+        "flight_landing_peak_force_bw": {
+          "mean": 0.7391697330182272,
+          "q10_q50_q90": [
+            0.0,
+            0.0,
+            1.990170681476594
+          ]
+        },
+        "flight_landing_peak_down_vz": {
+          "mean": 0.252174880036486,
+          "q10_q50_q90": [
+            0.0,
+            0.0,
+            0.6455905854701995
+          ]
+        },
+        "flight_balance_cost": {
+          "mean": 0.15397466198400175,
+          "q10_q50_q90": [
+            0.0,
+            0.08761613443493843,
+            0.24963345229625708
+          ]
+        },
+        "flight_support_cost": {
+          "mean": 0.03738226213199351,
+          "q10_q50_q90": [
+            0.0,
+            0.026447607204318047,
+            0.0732908621430397
+          ]
+        }
+      },
+      "failure_combinations": {
+        "pattern,flight,motion,front_load,front_motion,front_cycle,stable": 1736,
+        "pattern,flight,front_cycle,stable": 699,
+        "pattern,flight,front_motion,front_cycle,stable": 38,
+        "pattern,flight,motion,front_motion,front_cycle,stable": 1327,
+        "pattern,flight,stable": 760,
+        "pattern,flight,front_load,front_cycle,stable": 87,
+        "pattern,flight,front_load,stable": 122,
+        "pattern,front_load,front_cycle,stable": 3,
+        "tracking,pattern,flight,front_cycle,stable": 1188,
+        "tracking,pattern,flight,front_motion,front_cycle,stable": 213,
+        "tracking,pattern,flight,stable": 184,
+        "tracking,pattern,flight,front_load,front_cycle,stable": 9,
+        "tracking,pattern,flight,front_load,front_motion,front_cycle,stable": 14,
+        "tracking,pattern,flight,front_motion,stable": 8,
+        "pattern,stable": 20,
+        "tracking,flight,front_cycle,stable": 64,
+        "tracking,flight,front_motion,front_cycle,stable": 6,
+        "pattern,front_cycle,stable": 20,
+        "pattern,flight,front_load,front_motion,front_cycle,stable": 6,
+        "pattern,front_load,stable": 2,
+        "tracking,flight,stable": 3342,
+        "flight,stable": 7862,
+        "pattern,front_motion,front_cycle,stable": 19,
+        "pattern,flight,front_motion,stable": 32,
+        "tracking,pattern,front_cycle,stable": 5,
+        "pattern,front_motion,stable": 20,
+        "tracking,stable": 473,
+        "tracking,pattern,front_load,stable": 1,
+        "stable": 360
+      }
+    },
+    "recent_window_start_control_step": 24000,
+    "recent_statistics": {
+      "count": 6420,
+      "success_rate": 0.0,
+      "criterion_pass_rates": {
+        "tracking": 0.5710280373831775,
+        "pattern": 0.9668224299065421,
+        "flight": 0.14034267912772586,
+        "motion": 1.0,
+        "front_load": 0.9998442367601246,
+        "front_motion": 0.985202492211838,
+        "front_cycle": 0.9825545171339564,
+        "stable": 0.0,
+        "mature": 1.0
+      },
+      "measures": {
+        "vx_rmse": {
+          "mean": 0.16625181831349836,
+          "q10_q50_q90": [
+            0.1184733398258686,
+            0.13982804864645004,
+            0.19867910891771318
+          ]
+        },
+        "contact_accuracy": {
+          "mean": 0.8488714518948136,
+          "q10_q50_q90": [
+            0.8519979119300842,
+            0.8706624507904053,
+            0.8835436105728149
+          ]
+        },
+        "order_accuracy": {
+          "mean": 0.01649909724765733,
+          "q10_q50_q90": [
+            0.0042372881434857845,
+            0.008547008968889713,
+            0.025104602798819542
+          ]
+        },
+        "flight_fraction": {
+          "mean": 0.25942286487169725,
+          "q10_q50_q90": [
+            0.0,
+            0.15789473056793213,
+            0.6666666865348816
+          ]
+        },
+        "rom_fraction": {
+          "mean": 0.9910174637104492,
+          "q10_q50_q90": [
+            0.9883802652359008,
+            0.9942715764045715,
+            0.99676473736763
+          ]
+        },
+        "fore_load_share": {
+          "mean": 0.4403072300822564,
+          "q10_q50_q90": [
+            0.43286138474941255,
+            0.44122314453125,
+            0.4490400105714798
+          ]
+        },
+        "fore_min_load_share": {
+          "mean": 0.15392080065895836,
+          "q10_q50_q90": [
+            0.14741823971271514,
+            0.15343909710645676,
+            0.15987211614847183
+          ]
+        },
+        "fore_rom_fraction": {
+          "mean": 0.9822151625917708,
+          "q10_q50_q90": [
+            0.9871065020561218,
+            0.9909162521362305,
+            0.9934666156768799
+          ]
+        },
+        "fore_min_rom_fraction": {
+          "mean": 0.9724844061093538,
+          "q10_q50_q90": [
+            0.9808940589427948,
+            0.9860810935497284,
+            0.9898892879486084
+          ]
+        },
+        "fore_participation": {
+          "mean": 0.9787900387869446,
+          "q10_q50_q90": [
+            0.9824561476707458,
+            1.0,
+            1.0
+          ]
+        },
+        "attitude_rms": {
+          "mean": 0.05715271493483834,
+          "q10_q50_q90": [
+            0.04066814556717872,
+            0.051016511395573616,
+            0.0670611672103405
+          ]
+        },
+        "action_clip_fraction": {
+          "mean": 0.15074524716459609,
+          "q10_q50_q90": [
+            0.14379578679800034,
+            0.15404829382896423,
+            0.16228529959917068
+          ]
+        },
+        "terminated": {
+          "mean": 0.061838006230529596,
+          "q10_q50_q90": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "timed_out": {
+          "mean": 0.9381619937694704,
+          "q10_q50_q90": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        "pair_joint_cost": {
+          "mean": 0.3059409624551687,
+          "q10_q50_q90": [
+            0.29289053082466127,
+            0.3094981759786606,
+            0.3272429287433624
+          ]
+        },
+        "pair_rom_cost": {
+          "mean": 9.80654319102847e-05,
+          "q10_q50_q90": [
+            0.0,
+            5.443680777261761e-07,
+            4.114385519642383e-05
+          ]
+        },
+        "pair_load_cost": {
+          "mean": 0.013635094305652153,
+          "q10_q50_q90": [
+            0.00825955467298627,
+            0.012806578539311886,
+            0.019153055921196937
+          ]
+        },
+        "pair_stance_cost": {
+          "mean": 0.00023380112807117428,
+          "q10_q50_q90": [
+            0.0,
+            0.0,
+            5.413168764789589e-05
+          ]
+        },
+        "pair_hip_cost": {
+          "mean": 0.06422651514193074,
+          "q10_q50_q90": [
+            0.033532156422734265,
+            0.06040897034108639,
+            0.1044752985239029
+          ]
+        },
+        "pair_valid_cycles": {
+          "mean": 51.58021806853583,
+          "q10_q50_q90": [
+            54.0,
+            54.0,
+            54.0
+          ]
+        },
+        "leap_events": {
+          "mean": 52.93785046728972,
+          "q10_q50_q90": [
+            55.0,
+            55.0,
+            56.0
+          ]
+        },
+        "leap_qualified_events": {
+          "mean": 3.270872274143302,
+          "q10_q50_q90": [
+            0.0,
+            0.0,
+            12.0
+          ]
+        },
+        "leap_qualified_fraction": {
+          "mean": 0.05954669770984867,
+          "q10_q50_q90": [
+            0.0,
+            0.0,
+            0.2181818187236786
+          ]
+        },
+        "leap_distance_mean": {
+          "mean": 0.10834882451617377,
+          "q10_q50_q90": [
+            0.07438868954777718,
+            0.11061699315905571,
+            0.14349666684865953
+          ]
+        },
+        "leap_distance_max": {
+          "mean": 0.15362627439340867,
+          "q10_q50_q90": [
+            0.11748781129717827,
+            0.15672137588262558,
+            0.19358683973550797
+          ]
+        },
+        "leap_air_seconds_mean": {
+          "mean": 0.046310968908359444,
+          "q10_q50_q90": [
+            0.03266930729150772,
+            0.047550493851304054,
+            0.05982140824198723
+          ]
+        },
+        "leap_reward_points": {
+          "mean": 18.35131582843366,
+          "q10_q50_q90": [
+            4.521354103088379,
+            18.123705863952637,
+            32.45973777770997
+          ]
+        },
+        "leap_reward_steps": {
+          "mean": 17.203894080996886,
+          "q10_q50_q90": [
+            8.0,
+            17.0,
+            26.0
+          ]
+        },
+        "leap_physics_samples": {
+          "mean": 3828.2847352024924,
+          "q10_q50_q90": [
+            4000.0,
+            4000.0,
+            4000.0
+          ]
+        },
+        "flight_takeoffs": {
+          "mean": 52.04143302180685,
+          "q10_q50_q90": [
+            52.0,
+            55.0,
+            56.0
+          ]
+        },
+        "flight_landings": {
+          "mean": 51.100467289719624,
+          "q10_q50_q90": [
+            49.0,
+            54.0,
+            55.0
+          ]
+        },
+        "flight_stable_landings": {
+          "mean": 17.36993769470405,
+          "q10_q50_q90": [
+            8.0,
+            18.0,
+            26.0
+          ]
+        },
+        "flight_aborted_landings": {
+          "mean": 33.264953271028034,
+          "q10_q50_q90": [
+            25.0,
+            35.0,
+            42.0
+          ]
+        },
+        "flight_takeoff_vz_mean": {
+          "mean": 0.3094882727333713,
+          "q10_q50_q90": [
+            0.23267488777637482,
+            0.3260273188352585,
+            0.3760003983974457
+          ]
+        },
+        "flight_landing_peak_force_bw": {
+          "mean": 1.8009673684278382,
+          "q10_q50_q90": [
+            1.5012952446937562,
+            1.8298991918563843,
+            2.1833874225616454
+          ]
+        },
+        "flight_landing_peak_down_vz": {
+          "mean": 0.6036062920054078,
+          "q10_q50_q90": [
+            0.5538179159164429,
+            0.6167148649692535,
+            0.6893982887268066
+          ]
+        },
+        "flight_balance_cost": {
+          "mean": 0.10065675187142235,
+          "q10_q50_q90": [
+            0.07229430973529816,
+            0.08939336612820625,
+            0.11612889245152473
+          ]
+        },
+        "flight_support_cost": {
+          "mean": 0.025837020618649564,
+          "q10_q50_q90": [
+            0.020723870024085045,
+            0.02414495125412941,
+            0.0319083109498024
+          ]
+        }
+      },
+      "failure_combinations": {
+        "flight,stable": 3174,
+        "tracking,flight,stable": 2199,
+        "tracking,pattern,flight,stable": 31,
+        "tracking,pattern,flight,front_motion,front_cycle,stable": 12,
+        "pattern,flight,front_cycle,stable": 15,
+        "pattern,front_cycle,stable": 17,
+        "pattern,flight,front_motion,front_cycle,stable": 18,
+        "tracking,pattern,flight,front_cycle,stable": 32,
+        "pattern,flight,stable": 6,
+        "pattern,stable": 13,
+        "pattern,flight,front_motion,stable": 29,
+        "tracking,pattern,flight,front_motion,stable": 2,
+        "pattern,front_motion,stable": 20,
+        "pattern,front_motion,front_cycle,stable": 14,
+        "tracking,stable": 473,
+        "tracking,pattern,front_load,stable": 1,
+        "stable": 360,
+        "tracking,pattern,front_cycle,stable": 3,
+        "tracking,flight,front_cycle,stable": 1
+      }
+    }
+  },
+  "curriculum": {
+    "decisions": 48,
+    "speed_caps": [
+      2.5
+    ],
+    "last_decision": {
+      "step": 48000,
+      "speed_before": 2.5,
+      "speed_cap": 2.5,
+      "level": 0,
+      "episodes": 262,
+      "success_rate": 0.0,
+      "reason": "hold",
+      "streak": 0,
+      "criterion_rates": {
+        "tracking": 0.41603053435114506,
+        "pattern": 0.9809160305343512,
+        "flight": 0.35877862595419846,
+        "motion": 1.0,
+        "front_load": 1.0,
+        "front_motion": 0.9885496183206107,
+        "front_cycle": 0.9885496183206107,
+        "stable": 0.0,
+        "mature": 1.0
+      },
+      "discarded_cross_level": 0
+    },
+    "promotions": 0,
+    "reason_counts": {
+      "hold": 48
+    }
+  },
+  "rollout": {
+    "duration_seconds": 30.0,
+    "dt": 0.019999999999999574,
+    "environments": [
+      {
+        "env": 0,
+        "warmup_seconds": 1.0,
+        "evaluated_samples": 951,
+        "evaluated_seconds": 19.019999999999595,
+        "first_segment_end_seconds": 20.0,
+        "reset_times_seconds": [
+          20.0
+        ],
+        "mean_command": [
+          2.5,
+          0.0,
+          0.0
+        ],
+        "mean_body_velocity": [
+          2.5263278223613335,
+          0.012107298075839422,
+          -0.017923743493921594
+        ],
+        "planar_velocity_rmse": [
+          0.13092340510446843,
+          0.09128063685272793
+        ],
+        "yaw_rmse": 0.2539687516511912,
+        "roll_pitch_rms": [
+          0.04077244346631385,
+          0.025511804483608427
+        ],
+        "height_min_max": [
+          0.25707098841667175,
+          0.35464298725128174
+        ],
+        "net_planar_displacement": 47.64103317260742,
+        "all_feet_contact_fraction": 0.006309148264984227,
+        "airborne_time_fraction": 0.15457413249211358,
+        "longest_steady_air_seconds": 0.05999999999999872,
+        "longest_full_first_segment_air_seconds": 0.05999999999999872,
+        "foot_contact_duty": [
+          0.3280757097791798,
+          0.5289169295478444,
+          0.5478443743427971,
+          0.5184016824395373
+        ],
+        "vertical_impulse_share": [
+          0.13732224702835083,
+          0.30729150772094727,
+          0.29244351387023926,
+          0.26294276118278503
+        ],
+        "mean_action_clip": 0.1523834466934204,
+        "action_clip_quantiles": [
+          0.0,
+          0.1666666716337204,
+          0.25,
+          0.25
+        ],
+        "complete_phase_cycles_used_for_rom": 54,
+        "mean_cycle_joint_excursion_degrees": [
+          [
+            18.85804557800293,
+            97.35730743408203,
+            61.13276290893555
+          ],
+          [
+            15.028395652770996,
+            101.76313018798828,
+            50.905399322509766
+          ],
+          [
+            13.7555570602417,
+            97.49333953857422,
+            49.19694519042969
+          ],
+          [
+            24.637601852416992,
+            72.6911392211914,
+            49.37998962402344
+          ]
+        ],
+        "reported_episode": {
+          "age": 1000.0,
+          "level": 0.0,
+          "eligible": 1.0,
+          "success": 0.0,
+          "tracking": 1.0,
+          "pattern": 1.0,
+          "flight": 1.0,
+          "motion": 1.0,
+          "front_load": 1.0,
+          "front_motion": 1.0,
+          "front_cycle": 1.0,
+          "stable": 0.0,
+          "mature": 1.0,
+          "vx_rmse": 0.12980251014232635,
+          "contact_accuracy": 0.875394344329834,
+          "order_accuracy": 0.012711863964796066,
+          "flight_fraction": 0.6315789222717285,
+          "rom_fraction": 0.9964591860771179,
+          "fore_load_share": 0.4446136951446533,
+          "fore_min_load_share": 0.13732220232486725,
+          "fore_rom_fraction": 0.992095410823822,
+          "fore_min_rom_fraction": 0.9872715473175049,
+          "fore_participation": 1.0,
+          "cycles": 57.0,
+          "sequences": 0.0,
+          "attitude_rms": 0.04077242687344551,
+          "action_clip_fraction": 0.15238331258296967,
+          "terminated": 0.0,
+          "timed_out": 1.0,
+          "pair_valid_cycles": 54.0,
+          "pair_joint_cost": 0.33145949244499207,
+          "pair_rom_cost": 0.0,
+          "pair_load_cost": 0.03077704645693302,
+          "pair_stance_cost": 0.0,
+          "pair_hip_cost": 0.014332502149045467,
+          "leap_events": 55.0,
+          "leap_qualified_events": 4.0,
+          "leap_qualified_fraction": 0.072727270424366,
+          "leap_distance_mean": 0.14163713157176971,
+          "leap_distance_max": 0.16856130957603455,
+          "leap_air_seconds_mean": 0.059272702783346176,
+          "leap_reward_points": 48.37493896484375,
+          "leap_reward_steps": 29.0,
+          "leap_physics_samples": 4000.0,
+          "flight_takeoffs": 54.0,
+          "flight_landings": 54.0,
+          "flight_stable_landings": 29.0,
+          "flight_aborted_landings": 24.0,
+          "flight_landing_peak_force_bw": 1.852199912071228,
+          "flight_landing_peak_down_vz": 0.5424686670303345,
+          "flight_takeoff_vz_mean": 0.3936891257762909,
+          "flight_balance_cost": 0.0404311902821064,
+          "flight_support_cost": 0.028158189728856087,
+          "env": 0,
+          "step": 1000
+        }
+      }
+    ],
+    "note": "Only first contiguous segment is analyzed; reset rows are pre-reset snapshots. Steady metrics exclude warmup. Runtime episode velocity sums precede interval events, whereas saved snapshots follow them."
+  },
+  "rollout_status": "collected",
+  "videos": [
+    {
+      "path": "/home/cvr/GH/go2_animalization/gallop/runs/isaac/play/unitree_go2_gallop/20261029_154656_8d5ba5/videos/gallop-play-step-0.mp4",
+      "kind": "play",
+      "frames": 1499,
+      "duration_seconds": 29.98,
+      "fps": 50.0,
+      "resolution": [
+        640,
+        480
+      ]
+    }
+  ],
+  "policy_updates_during_collection": 0,
+  "caveats": [
+    "Training criterion rates are not independent evaluation success rates.",
+    "stable combines timeout/survival, attitude and target-clipping gates; it does not mean falls alone.",
+    "Runtime flight_fraction counts cycles with sufficient air, not fraction of time airborne.",
+    "Target clipping is target-angle saturation, not actual joint-limit violation.",
+    "Reported joint excursions are per imposed phase cycle, not independently classified gait strides.",
+    "Original physics/noise/pushes remain active in play. No additional simulation or training was performed."
+  ],
+  "source_matches_training": {
+    "gallop_core.py": true,
+    "gallop_env.py": true
+  }
+}

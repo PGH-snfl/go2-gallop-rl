@@ -1,0 +1,186 @@
+{
+  "runs/isaac/train/20261007_124336_0e2927/model_final.pt": {
+    "sha256": "5a490dae96fe2870e69ccd55382cc6555ea2d3452dbd888db1eb36db46dc7aac",
+    "bytes": 599983
+  },
+  "runs/isaac/train/20261007_124336_0e2927/model_999.pt": {
+    "sha256": "f3b4363b6d1777ef3a682212a72e7eb510073f3b34af5be828086dc28933f12d",
+    "bytes": 599867
+  },
+  "runs/isaac/train/20261007_124336_0e2927/actor.pt": {
+    "sha256": "0908f2697360fe81dddfb271bda8fd8554b888fb38eb546cf9dc8b3677e7381a",
+    "bytes": 108677
+  },
+  "runs/isaac/train/20261007_124336_0e2927/config.json": {
+    "sha256": "b9bc3b74ed4f875f5ee74176548c0ffc655f41956e8b616e84c54d811149d2d3",
+    "bytes": 1685
+  },
+  "runs/isaac/train/20261007_124336_0e2927/agent.json": {
+    "sha256": "fc3a2bc6a432677030bbcbfa8a046bc4bca1ae5840aeceadeff778a910b3c4b9",
+    "bytes": 894
+  },
+  "runs/isaac/train/20261007_124336_0e2927/manifest.json": {
+    "sha256": "3a098b1a3693b7575a5baba2ed91ed6e01c59955f43442152795298aac352893",
+    "bytes": 854
+  },
+  "runs/isaac/train/20261007_124336_0e2927/export_validation.json": {
+    "sha256": "58ee83b95ff55443c7dcc72694e855e266c3ffeeeee01621644e3fa82164bfb4",
+    "bytes": 172
+  },
+  "runs/isaac/train/20261007_124336_0e2927/status.json": {
+    "sha256": "513ba1af226eb566c608b3cdbc94fb0f59bc4989c29dfc23c061919eceee084b",
+    "bytes": 605
+  },
+  "runs/isaac/train/20261007_124336_0e2927/progress.jsonl": {
+    "sha256": "87c38974ebdc8244058daa07dea151d88f5cb43261c67c913838b4965e98b14e",
+    "bytes": 1493930
+  },
+  "runs/isaac/train/20261007_124336_0e2927/console.log": {
+    "sha256": "b2e9f5080bbe169456dafcd54300c8197255dc00440d66afb0da1ac82cc9073d",
+    "bytes": 2010574
+  },
+  "runs/isaac/play/20261008_093942_61876e/status.json": {
+    "sha256": "af5f23b77a7d591835d11063985297c13991574b1831dc22c2739fbcaf9a5c77",
+    "bytes": 516
+  },
+  "runs/isaac/play/20261008_093942_61876e/config.json": {
+    "sha256": "b9bc3b74ed4f875f5ee74176548c0ffc655f41956e8b616e84c54d811149d2d3",
+    "bytes": 1685
+  },
+  "runs/isaac/play/20261008_093942_61876e/manifest.json": {
+    "sha256": "0e2d642b8d54bbf6428f8f77d588832826e5c154f58c533b8e62373718b08e78",
+    "bytes": 681
+  },
+  "runs/isaac/play/20261008_093942_61876e/evaluation.json": {
+    "sha256": "1d19a60423f4f45e4b8820da7505f7100ea38156508c15ccdc8a8e6baa1ee549",
+    "bytes": 32920
+  },
+  "runs/isaac/play/20261008_093942_61876e/progress.jsonl": {
+    "sha256": "dcfd9ae9f7cd83a9d366631f3019eddc4bdbed3e43f334cb280e1a208de17d23",
+    "bytes": 43123
+  },
+  "runs/isaac/play/20261008_093942_61876e/console.log": {
+    "sha256": "3a77d61d5438cc65d34c72d2ba24c6d06be29bf757c6b55a9a73f594674901f0",
+    "bytes": 35065
+  },
+  "runs/isaac/train/20261007_124336_0e2927/events.out.tfevents.1791344634.cvr-laptop.2912554.0": {
+    "sha256": "bfbbbc97f7e8d0c8fdc43f887a005a1a9366e976eca1741c352fd44862dc7e11",
+    "bytes": 696496
+  },
+  "runs/isaac/play/20261008_093942_61876e/episode_28.npz": {
+    "sha256": "52daf4c901bbe9abed15aae61855d6069a8e2dac6660450f7f92bbf33f597e75",
+    "bytes": 79475
+  },
+  "runs/isaac/play/20261008_093942_61876e/episode_3.npz": {
+    "sha256": "c2e3127a0daddee430bc68a8e88f656e89bed343cdfec9402c19f662f91e9362",
+    "bytes": 79457
+  },
+  "runs/isaac/play/20261008_093942_61876e/episode_24.npz": {
+    "sha256": "a506114019e99cae29331df1de14f3104153721e82f8dceebd990438c45c4430",
+    "bytes": 79463
+  },
+  "runs/isaac/play/20261008_093942_61876e/episode_12.npz": {
+    "sha256": "1004f423066454058925a893bfb26943916f7a62f3d83c5c6fef9d1d7a07d8a9",
+    "bytes": 79477
+  },
+  "runs/isaac/play/20261008_093942_61876e/episode_16.npz": {
+    "sha256": "55e6ed39282b1f5f21104936759ad96a1345bc6866518e30bd2b4e196e99d746",
+    "bytes": 79455
+  },
+  "runs/isaac/play/20261008_093942_61876e/episode_18.npz": {
+    "sha256": "bac1fb11cda49b24185d82fa23ab566d8dcb56d758c287d5ce060f7f92bb0619",
+    "bytes": 79464
+  },
+  "runs/isaac/play/20261008_093942_61876e/episode_20.npz": {
+    "sha256": "678475fa6926260af7a634786ab237c9dc6579c7afc49536d20bb57cdf3cde95",
+    "bytes": 79459
+  },
+  "runs/isaac/play/20261008_093942_61876e/episode_0.npz": {
+    "sha256": "4716d3db12e10d2f5dd67d29f01fcc3f845afc395004d00f9769356647c69cb5",
+    "bytes": 79477
+  },
+  "runs/isaac/play/20261008_093942_61876e/episode_26.npz": {
+    "sha256": "10f2a6cb7718fdb020dc6c81ea719ea34d568c0849935dedb294974f6970115a",
+    "bytes": 79480
+  },
+  "runs/isaac/play/20261008_093942_61876e/episode_2.npz": {
+    "sha256": "2448c323f5d9279f48add32abd2c20a3568254446c48d486a6baacfcd463489d",
+    "bytes": 79468
+  },
+  "runs/isaac/play/20261008_093942_61876e/episode_8.npz": {
+    "sha256": "aae12705739f12dc5a7890503321bfdc5ba44bc73330531c89a1526b4cb5603a",
+    "bytes": 79462
+  },
+  "runs/isaac/play/20261008_093942_61876e/episode_1.npz": {
+    "sha256": "d524f1172a7473a6018a9d9fbe395db525ffbed4ad9e0fc0fdee0d6287b5ff54",
+    "bytes": 79469
+  },
+  "runs/isaac/play/20261008_093942_61876e/episode_6.npz": {
+    "sha256": "b39798a909216052628caf0b23143ebec23429dd5a6e23f8013b57147614a350",
+    "bytes": 79454
+  },
+  "runs/isaac/play/20261008_093942_61876e/episode_22.npz": {
+    "sha256": "5f9c63cfb6199e6c6cdcb7645042a3797d7b692a8fde976538e0a5659774bc07",
+    "bytes": 79461
+  },
+  "runs/isaac/play/20261008_093942_61876e/episode_10.npz": {
+    "sha256": "2fb99852ba81b5b675996cb38fffcb5bd5e64dd83b1eea6da4f140928fab7c3c",
+    "bytes": 79459
+  },
+  "runs/isaac/play/20261008_093942_61876e/episode_11.npz": {
+    "sha256": "828594cae5679825abdbb9c9f0397c3727be608a71ecbecc13c698ee92c81881",
+    "bytes": 79463
+  },
+  "runs/isaac/play/20261008_093942_61876e/episode_17.npz": {
+    "sha256": "28b5ca131651e893a2dfd6a39be3a752294d79981aa4986e120aa43348b646c5",
+    "bytes": 79473
+  },
+  "runs/isaac/play/20261008_093942_61876e/episode_21.npz": {
+    "sha256": "520945fb26baa7a05ed8071410e8fd514da9e315fa44f6936dbcada0150551c4",
+    "bytes": 79460
+  },
+  "runs/isaac/play/20261008_093942_61876e/episode_13.npz": {
+    "sha256": "04f4d585297e7c4895db46c1b7e7efb6e25dc97aaa304f6cd9015200385ece53",
+    "bytes": 79461
+  },
+  "runs/isaac/play/20261008_093942_61876e/episode_25.npz": {
+    "sha256": "7cd45acf410f541be853877cf85ebb72c1779905d583b3a7de76d8da0fc895ea",
+    "bytes": 79468
+  },
+  "runs/isaac/play/20261008_093942_61876e/episode_19.npz": {
+    "sha256": "1c237d853ce28d4ca40ccdaea63e3dec7a14352135255626141c096f80725a1f",
+    "bytes": 79462
+  },
+  "runs/isaac/play/20261008_093942_61876e/episode_27.npz": {
+    "sha256": "0bb5d95512b359d4a6d72251976bca7541cb26fc3a18e1c5fa5c04aff2c18ee1",
+    "bytes": 79471
+  },
+  "runs/isaac/play/20261008_093942_61876e/episode_5.npz": {
+    "sha256": "87ea5166a7ce4f7879babbe13c58390ccf674771e90b4feb322516703f696a32",
+    "bytes": 79458
+  },
+  "runs/isaac/play/20261008_093942_61876e/episode_15.npz": {
+    "sha256": "173407d25c2920ffa333dabb5e76f1153233f916c7472186ffc0b0f7114bdc13",
+    "bytes": 79461
+  },
+  "runs/isaac/play/20261008_093942_61876e/episode_7.npz": {
+    "sha256": "48863ba93e770671105f9b17eeda22418d085188ef974aba25cbfdcec6c4e4b9",
+    "bytes": 79450
+  },
+  "runs/isaac/play/20261008_093942_61876e/episode_23.npz": {
+    "sha256": "4066435c745ac41e69b37864b6b1da03ff93e7d6e44ee9f1d685ecf862e0016d",
+    "bytes": 79459
+  },
+  "runs/isaac/play/20261008_093942_61876e/episode_14.npz": {
+    "sha256": "211a6542284f27c6d4e6b33043bea054e5d33391866704bcc570282178144ed5",
+    "bytes": 79467
+  },
+  "runs/isaac/play/20261008_093942_61876e/episode_9.npz": {
+    "sha256": "6bcaa5792108ead71a82af4ddb6ace565ac155a8790371de449aaa95bf84e4ee",
+    "bytes": 79461
+  },
+  "runs/isaac/play/20261008_093942_61876e/episode_4.npz": {
+    "sha256": "ee969cdaaf86d57d479f320facd7c2170d304994b3057072d7e48bcc262475c1",
+    "bytes": 79461
+  }
+}

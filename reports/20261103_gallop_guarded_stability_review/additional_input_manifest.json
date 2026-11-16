@@ -1,0 +1,38 @@
+{
+  "reports/20261103_gallop_guarded_3mps_leap_review/summary.json": {
+    "sha256": "2bb93607bebfa30a6ea3142eb94bf4308a75b186bedf5ab457f8267dca404d44",
+    "bytes": 78447
+  },
+  "reports/20261103_gallop_guarded_3mps_leap_review/guarded_play_diagnostics.json": {
+    "sha256": "f72ca505807955dcc1576574305112929efc67e0288d3ecd14da1938aa913c22",
+    "bytes": 9089
+  },
+  "reports/20261103_gallop_guarded_3mps_leap_review/guarded_training_diagnostics.json": {
+    "sha256": "46410716198a27033630135bc84b1aac6ef93e60d6d1c839383cf915e43ce317",
+    "bytes": 4236
+  },
+  "reports/20261103_gallop_guarded_3mps_leap_review/heading_play_diagnostics.json": {
+    "sha256": "3921fdd9d083edf80f33ea5668d17943b05ed358fac8e0edb7d01a80a0be1fa2",
+    "bytes": 29492
+  },
+  "reports/20261103_gallop_guarded_3mps_leap_review/verification.json": {
+    "sha256": "617a19623e48801e8483eaac2b77be13a152572de3c50ab94b983c2350c997b3",
+    "bytes": 2017
+  },
+  "runs/isaac/play/unitree_go2_gallop/20261103_173835_024b20/gallop_trace.npz": {
+    "sha256": "8ee3b7fca467d7bf8eb7e207d7b5d073f60914e934e0463bedc1377cdd99f9d3",
+    "bytes": 676911
+  },
+  "runs/isaac/play/unitree_go2_gallop/20261103_173835_024b20/manifest.json": {
+    "sha256": "9e07f3c02dc93aeae70b56fec684844713bca22efc8919dd57035c643dfde51c",
+    "bytes": 14629
+  },
+  "runs/isaac/play/unitree_go2_gallop/20261103_173835_024b20/episodes.jsonl": {
+    "sha256": "1c0372b75cd587d11a4ea1580ef3554532a7080f7db9b5fab04ace8cd30b890d",
+    "bytes": 3430
+  },
+  "runs/isaac/train/unitree_go2_gallop/20261103_165217_19801a/model_final.pt": {
+    "sha256": "57607c19b9635ef21567e7a90fdbe75acce1cab532b9f78a44637a937696939d",
+    "bytes": 4688895
+  }
+}

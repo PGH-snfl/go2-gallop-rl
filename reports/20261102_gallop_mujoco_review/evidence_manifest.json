@@ -1,0 +1,177 @@
+[
+  {
+    "path": "/home/cvr/GH/go2_animalization/gallop/reports/20261102_gallop_mujoco_review/README.md",
+    "bytes": 8699,
+    "sha256": "ffeb361e5845b5a1b8e171ac9e76ccef2362406adad02d12b383029f9187ccdd"
+  },
+  {
+    "path": "/home/cvr/GH/go2_animalization/gallop/reports/20261102_gallop_mujoco_review/diagnostics.json",
+    "bytes": 2065,
+    "sha256": "50ca7e2a1f77579ce30ffaab944e713dd98c509da2dc43f2438517258a0c645b"
+  },
+  {
+    "path": "/home/cvr/GH/go2_animalization/gallop/reports/20261102_gallop_mujoco_review/physical_flight_events.csv",
+    "bytes": 16760,
+    "sha256": "54fbe333109414cd76b365d3eb224aa6040b320afc48511306b615e636454546"
+  },
+  {
+    "path": "/home/cvr/GH/go2_animalization/gallop/reports/20261102_gallop_mujoco_review/source/assets/go2_isaac_contract.json",
+    "bytes": 9433,
+    "sha256": "9c8ca0c6cff67684ae00641ac6ab580129e53cf5a9f11ce145095c8cfd49b5a9"
+  },
+  {
+    "path": "/home/cvr/GH/go2_animalization/gallop/reports/20261102_gallop_mujoco_review/source/gpd/rl_mujoco.py",
+    "bytes": 16171,
+    "sha256": "fe1ccc3cff7a8bd10643d3e54d86c7da2a61cffa07f9011eec7f34f9eefd7dbb"
+  },
+  {
+    "path": "/home/cvr/GH/go2_animalization/gallop/reports/20261102_gallop_mujoco_review/source/scripts/validation/sim2sim_gallop.py",
+    "bytes": 7024,
+    "sha256": "6c7fbe86f069dd43c030ec26d504915772efc594b7e13e3e05da6c762b1b1f15"
+  },
+  {
+    "path": "/home/cvr/GH/go2_animalization/gallop/reports/20261102_gallop_mujoco_review/source/tests/test_rl_mujoco.py",
+    "bytes": 3304,
+    "sha256": "1c0233e879ccf2566872ad18a3b4b071a9122d3770a7e1ea47ef1ef4800ebf0f"
+  },
+  {
+    "path": "/home/cvr/GH/go2_animalization/gallop/reports/20261102_gallop_mujoco_review/source/verify.py",
+    "bytes": 7140,
+    "sha256": "e6e980426f32f4162a1006b656c0f61f15efa1951256d1349375e3b37627c11b"
+  },
+  {
+    "path": "/home/cvr/GH/go2_animalization/gallop/reports/20261102_gallop_mujoco_review/transition_comparison.png",
+    "bytes": 394389,
+    "sha256": "39d3e663fdaa788b6c13c8f015c59dd2f2ffb4cf71f7ad681d85b8c73fd01bbb"
+  },
+  {
+    "path": "/home/cvr/GH/go2_animalization/gallop/reports/20261102_gallop_mujoco_review/transition_trace.csv",
+    "bytes": 247762,
+    "sha256": "7c9a238a536e5901583f1322d0e79c8dbb84d82694598c8f5ae08112c993a82c"
+  },
+  {
+    "path": "/home/cvr/GH/go2_animalization/gallop/reports/20261102_gallop_mujoco_review/verification.json",
+    "bytes": 1754,
+    "sha256": "a3dfb5c15b6650b5dc2ce5a88a452bdb073e16d7ed3f74cd6c8f27b40ecd64fb"
+  },
+  {
+    "path": "/home/cvr/GH/go2_animalization/gallop/reports/20261102_gallop_mujoco_review/video_metadata.json",
+    "bytes": 90,
+    "sha256": "fd2dc2183c32a251ceadc0d05e066a3e0b98976441ebd31f6d92f75fd5cd86d9"
+  },
+  {
+    "path": "/home/cvr/GH/go2_animalization/gallop/reports/20261102_gallop_mujoco_review/video_preview.png",
+    "bytes": 144761,
+    "sha256": "5be270ee2c229a11fb15179366a9edef1f2e81dd4e0ae85fb5d9c9a3531399d9"
+  },
+  {
+    "path": "/home/cvr/GH/go2_animalization/gallop/runs/isaac/play/unitree_go2_gallop/20261102_140231_b1e215/episodes.jsonl",
+    "bytes": 1875,
+    "sha256": "5d2f268f448c6cc4244c5abef923a60df9d31811a4fba7676c25e20644ee8d99"
+  },
+  {
+    "path": "/home/cvr/GH/go2_animalization/gallop/runs/isaac/play/unitree_go2_gallop/20261102_140231_b1e215/gallop_trace.npz",
+    "bytes": 371817,
+    "sha256": "79e3854287f628c781ec8d1677ff41118c66affd1c65ecafa6cf305ebf781d1c"
+  },
+  {
+    "path": "/home/cvr/GH/go2_animalization/gallop/runs/isaac/play/unitree_go2_gallop/20261102_140231_b1e215/manifest.json",
+    "bytes": 6329,
+    "sha256": "db642af0bf99c5e149ee568d2160b13a08dd3f3db68acd7f5662bb488687d419"
+  },
+  {
+    "path": "/home/cvr/GH/go2_animalization/gallop/runs/isaac/train/unitree_go2_gallop/20261102_133218_92ee54/manifest.json",
+    "bytes": 6528,
+    "sha256": "987bf5d40199c77eb927a9b2811c75b05a28705c199dc4288d28438e00e80dbf"
+  },
+  {
+    "path": "/home/cvr/GH/go2_animalization/gallop/runs/isaac/train/unitree_go2_gallop/20261102_133218_92ee54/model_final.pt",
+    "bytes": 4664319,
+    "sha256": "f2a426bec14b43b240ec1a26e924b9b482fbbb8a52789879bb8d1bcc9a924d69"
+  },
+  {
+    "path": "/home/cvr/GH/go2_animalization/gallop/runs/isaac/train/unitree_go2_gallop/20261102_133218_92ee54/params/agent.yaml",
+    "bytes": 1039,
+    "sha256": "0916df3c3b5fbbac8e3bce4c48504cf89ec819c7b8d2cc966ccabb7dc87e8a0a"
+  },
+  {
+    "path": "/home/cvr/GH/go2_animalization/gallop/runs/isaac/train/unitree_go2_gallop/20261102_133218_92ee54/params/env.yaml",
+    "bytes": 30043,
+    "sha256": "afed013408727ac72ce5322ec206e1dc1402c267348c2c3b4fd3910f9d157608"
+  },
+  {
+    "path": "/home/cvr/GH/go2_animalization/gallop/runs/isaac/train/unitree_go2_gallop/20261102_133218_92ee54/source/gallop_core.py",
+    "bytes": 39655,
+    "sha256": "23669830a7054587a222663c8fe9e3b64398442c9c24c9284e78193651caad37"
+  },
+  {
+    "path": "/home/cvr/GH/go2_animalization/gallop/runs/isaac/train/unitree_go2_gallop/20261102_133218_92ee54/source/gallop_env.py",
+    "bytes": 34553,
+    "sha256": "81684d82ce9832e790de1ef544e9e9f767e3ff834183d93c4cf2eeb80cb5aa90"
+  },
+  {
+    "path": "/home/cvr/GH/go2_animalization/gallop/runs/isaac/train/unitree_go2_gallop/20261102_133218_92ee54/source/walking_teacher.pt",
+    "bytes": 4639999,
+    "sha256": "d4bd406a2e0cc97b1370610a3791bf115c31cac8b718056322d95df2f9d192bf"
+  },
+  {
+    "path": "/home/cvr/GH/go2_animalization/gallop/runs/mujoco/evaluate/unitree_go2_gallop/20261102_141502_01c472/episodes.jsonl",
+    "bytes": 1558,
+    "sha256": "bf39170bc52565f5b033fa4b4c74035f926dbd5ba01d87e4b8b9b8d486819308"
+  },
+  {
+    "path": "/home/cvr/GH/go2_animalization/gallop/runs/mujoco/evaluate/unitree_go2_gallop/20261102_141502_01c472/gallop_trace.npz",
+    "bytes": 899885,
+    "sha256": "d817edb41bf0a8ede8b4b7d74d9d40066bd094ab30dc3ad5e1281f88c5c308e5"
+  },
+  {
+    "path": "/home/cvr/GH/go2_animalization/gallop/runs/mujoco/evaluate/unitree_go2_gallop/20261102_141502_01c472/model_contract.json",
+    "bytes": 3007,
+    "sha256": "aaef17a413b9ee3a805b762517dbafa50ea9e680b1cb70ba42a19f0edeb96f1a"
+  },
+  {
+    "path": "/home/cvr/GH/go2_animalization/gallop/runs/mujoco/evaluate/unitree_go2_gallop/20261102_141502_01c472/mujoco_gallop.mp4",
+    "bytes": 2766676,
+    "sha256": "e82b465d009e1c315c1e1d4350dc382376d4ca0eb34424cfb7f4c5bb2a094703"
+  },
+  {
+    "path": "/home/cvr/GH/go2_animalization/gallop/runs/mujoco/evaluate/unitree_go2_gallop/20261102_141502_01c472/physics_trace.npz",
+    "bytes": 878218,
+    "sha256": "055582f8d6ff986fda0523c0e7671dfcaa3504f4a1c6ef99a538ccf3301fa298"
+  },
+  {
+    "path": "/home/cvr/GH/go2_animalization/gallop/runs/mujoco/evaluate/unitree_go2_gallop/20261102_141502_01c472/progress.jsonl",
+    "bytes": 2560,
+    "sha256": "15b81d925e730ca969de0b0c573b151f3018fc4fc0594e0deb5161ddeff75993"
+  },
+  {
+    "path": "/home/cvr/GH/go2_animalization/gallop/runs/mujoco/evaluate/unitree_go2_gallop/20261102_141502_01c472/report.json",
+    "bytes": 14003,
+    "sha256": "57923da0f582ccfd200916d0f6c775b0abc68e1d3cff5200dc3e4deb0407b020"
+  },
+  {
+    "path": "/home/cvr/GH/go2_animalization/gallop/runs/mujoco/evaluate/unitree_go2_gallop/20261102_141502_01c472/scene.xml",
+    "bytes": 14913,
+    "sha256": "c4aeb9abffa6cd3e08deebbd0de02753e7afc983a7963af34bd95844ad381fd7"
+  },
+  {
+    "path": "/home/cvr/GH/go2_animalization/gallop/runs/mujoco/evaluate/unitree_go2_gallop/20261102_141502_01c472/status.json",
+    "bytes": 529,
+    "sha256": "5e466c13560b82e3f7b299a97f4bf78146d6ea35295a7ce3a952dce4fe577417"
+  },
+  {
+    "path": "/home/cvr/GH/go2_animalization/results/standard_trot/20261001_204847_train_vDgt9p/physical_snapshot.json",
+    "bytes": 11916,
+    "sha256": "5561875756d631bde4b77aa206831eb97ed6d7fefebebcf61b22b10c6a22bcd0"
+  },
+  {
+    "path": "/home/cvr/GH/unitree/unitree_mujoco/unitree_robots/go2/go2.xml",
+    "bytes": 14881,
+    "sha256": "2014a3d76e30f17ab9447d8a67bd015291f74fa4d71ae30d005f1a32bd693d4b"
+  },
+  {
+    "path": "/home/cvr/GH/unitree/unitree_rl_lab/unitree_model/Go2/usd/go2.usd",
+    "bytes": 1601,
+    "sha256": "fd3c8c23c97cea3208fae1ab5eeacba4ffa616fe5f1397be6c7edf4feb93f180"
+  }
+]

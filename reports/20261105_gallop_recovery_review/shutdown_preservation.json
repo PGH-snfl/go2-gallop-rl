@@ -1,0 +1,148 @@
+{
+  "play": "/home/cvr/GH/go2_animalization/gallop/runs/isaac/play/unitree_go2_gallop/20261105_154904_4a0e1e",
+  "backup": "/home/cvr/GH/go2_animalization/gallop/runs/isaac/check/unitree_go2_gallop/20261105_160030_b93db2/preserved_play",
+  "status_before_stop": {
+    "status": "completed",
+    "mode": "play",
+    "training_variant": "gallop_from_walk_constraints",
+    "num_envs": 1,
+    "planned_iterations": 6000,
+    "policy_updates": 0,
+    "training_initialization": "load_gallop",
+    "last_event": {
+      "time": "2026-11-05T15:51:39+09:00",
+      "elapsed_s": 144.21,
+      "event": "COMPLETED",
+      "output": "/home/cvr/GH/go2_animalization/gallop/runs/isaac/play/unitree_go2_gallop/20261105_154904_4a0e1e"
+    },
+    "steps": 1500,
+    "reset_count": 1,
+    "policy_state_unchanged": true,
+    "rollout_note": "First segment validity only; reset rows use pre-reset terminal snapshots",
+    "videos": [
+      "/home/cvr/GH/go2_animalization/gallop/runs/isaac/play/unitree_go2_gallop/20261105_154904_4a0e1e/videos/gallop-play-step-0.mp4"
+    ],
+    "source_clean_after_run": true
+  },
+  "files": {
+    "episodes.jsonl": {
+      "bytes": 3464,
+      "sha256": "e1cb2d1f4e9e0dcd38055bcdd54e403783a15142d092d775825de56f2934a121"
+    },
+    "gallop_trace.npz": {
+      "bytes": 684518,
+      "sha256": "c6d0964edfcf046334014561af4aba951e5a66c1be422e060f4b0a97e81ed402"
+    },
+    "gallop_config.json": {
+      "bytes": 5866,
+      "sha256": "cf2927a3670b3042d30754358ac350599d03f50267c341a063a8b65c976b6f63"
+    },
+    "status.json": {
+      "bytes": 790,
+      "sha256": "402afcbeac6699d31c90e64b09c29256e16d714fc4e33b7d605a2c422c1d9c65"
+    },
+    "curriculum_summary.json": {
+      "bytes": 3953,
+      "sha256": "8d35a40a41132777f46ce903f87a5008bc7ac93437ef6d445c973ad8f7a6c63e"
+    },
+    "manifest.json": {
+      "bytes": 22742,
+      "sha256": "30916aadfad13bf65e90302394e1c3b691698581e7e8d5af251e5dd28cad284a"
+    },
+    "console.log": {
+      "bytes": 19356,
+      "sha256": "047e1a8ea36ee8d4cc4ad2f5fe2a87d488bc7a3c417b7c5ce5f99585f95941fb"
+    },
+    "progress.jsonl": {
+      "bytes": 2048,
+      "sha256": "c8cde2ee5fcb3df82b2d5bdb88e827c01d967252766838e4ce0cd7d06ec0e951"
+    },
+    "params/agent.yaml": {
+      "bytes": 1038,
+      "sha256": "a2c59d947b547e0b6014101b00880bf0970d9bc93897f6e5471c0a48baeb946a"
+    },
+    "params/env.yaml": {
+      "bytes": 32144,
+      "sha256": "f5ea139f339c385227db2df55bd725780100296cd5db45311d83c9d7ed17c726"
+    },
+    "source/velocity_env_cfg.py": {
+      "bytes": 14840,
+      "sha256": "56859832148dacc724ddba3954a7684b99a43560e4fde561f6361b9daa051b56"
+    },
+    "source/gallop_env.py": {
+      "bytes": 63340,
+      "sha256": "7e96a0506d600b6ace62bfd4c24741452b17bd6d765d48526cbf62f6811ed630"
+    },
+    "source/walking_teacher.pt": {
+      "bytes": 4639999,
+      "sha256": "d4bd406a2e0cc97b1370610a3791bf115c31cac8b718056322d95df2f9d192bf"
+    },
+    "source/logging.py": {
+      "bytes": 5670,
+      "sha256": "e6fbb91d2ae025b1631745ad86f9e138a8c674fc54c727bfdd25b14e1f91763d"
+    },
+    "source/parent_manifest.json": {
+      "bytes": 40048,
+      "sha256": "94be698cc53599f3f7eaa838494a4d2c723139e33dcde515c52e77b56748a22c"
+    },
+    "source/gallop_core.py": {
+      "bytes": 76650,
+      "sha256": "fe03c37af79e45713227bb7e371da70a668b6f4fcfb178a602e490b1dd5a6ddb"
+    },
+    "source/gallop_baseline.py": {
+      "bytes": 37615,
+      "sha256": "ef807fea502bd2158ee722530cb8be9fb1e9d361ea413c62724a17d2c7da30fe"
+    },
+    "source/gallop_runtime.py": {
+      "bytes": 3662,
+      "sha256": "6e84cddc5eb402aeb5c41e658b5cdb73d0f51615174697955aff3d653054568a"
+    },
+    "videos/gallop-play-step-0.mp4": {
+      "bytes": 2603381,
+      "sha256": "64d532d2455defa3e705747f92f0d57a4de880bdf765f4a40064290a3a050629"
+    }
+  },
+  "trace": {
+    "steps": 1500,
+    "seconds": 30.0,
+    "finite": true
+  },
+  "videos": [
+    {
+      "path": "/home/cvr/GH/go2_animalization/gallop/runs/isaac/play/unitree_go2_gallop/20261105_154904_4a0e1e/videos/gallop-play-step-0.mp4",
+      "frames": 1499,
+      "duration": 29.98,
+      "sha256": "64d532d2455defa3e705747f92f0d57a4de880bdf765f4a40064290a3a050629"
+    }
+  ],
+  "checkpoint_sha256": "526f221fb8cb4897bbd5931b9575300d8803d2be4763361268128cbd73439207",
+  "target_pid": 3565171,
+  "target_parent_pid": 3565169,
+  "termination": "killed_after_saved_completion",
+  "signals": [
+    {
+      "pid": 3565171,
+      "signal": "SIGINT",
+      "time": 1793862044.4322526
+    },
+    {
+      "pid": 3565171,
+      "signal": "SIGTERM",
+      "time": 1793862076.8533506
+    },
+    {
+      "pid": 3565171,
+      "signal": "SIGKILL",
+      "time": 1793862118.8476076
+    }
+  ],
+  "child_alive": false,
+  "launcher_alive": false,
+  "verified_after_stop": {
+    "gallop_trace.npz": true,
+    "episodes.jsonl": true,
+    "videos/gallop-play-step-0.mp4": true,
+    "manifest.json": true,
+    "status.json": true
+  }
+}

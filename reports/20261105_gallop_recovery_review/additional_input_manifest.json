@@ -1,0 +1,10 @@
+{
+  "/home/cvr/GH/go2_animalization/gallop/runs/isaac/train/unitree_go2_gallop/20261104_144742_917f16/model_final.pt": {
+    "bytes": 4688895,
+    "sha256": "959457e283918bcc480e71c1d6ce026cffb63feb5a1b9e0834b78f60f09a8200"
+  },
+  "/home/cvr/GH/go2_animalization/gallop/runs/isaac/train/unitree_go2_gallop/20261104_144742_917f16/manifest.json": {
+    "bytes": 53064,
+    "sha256": "997d00abd6e697a8e5d45f82072f0e67b05d4fa344a301a075183faf07616e26"
+  }
+}

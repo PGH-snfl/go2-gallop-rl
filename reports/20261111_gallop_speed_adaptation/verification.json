@@ -1,0 +1,77 @@
+{
+  "checks": {
+    "unit_tests204": true,
+    "runner_tests3": true,
+    "parent_checks27": true,
+    "parent_sha_preserved": true,
+    "stage_adaptation180": true,
+    "speed_gate025_unchanged": true,
+    "safety_preserved": true,
+    "reward_weights_preserved": true,
+    "isaac_completed": true,
+    "isaac_steps1600": true,
+    "isaac_zero_PPO": true,
+    "isaac_policy_unchanged": true,
+    "isaac_source_clean": true,
+    "core_hash_matches": true,
+    "env_hash_matches": true,
+    "adaptation_hash_matches": true,
+    "speed_columns_present": true,
+    "samples_match_mask": true,
+    "velocity_identity": true,
+    "no_false_final_success": true,
+    "task_reward_weights_match": true,
+    "adaptive_lr_and_KL_preserved": true,
+    "entropy_zero": true,
+    "trace_finite": true,
+    "target_angles_valid": true,
+    "target_rates_valid": true,
+    "stage1_restored": true,
+    "actual_joints_within_guard_tolerance": true,
+    "mujoco_compatibility10steps": true
+  },
+  "passed": 29,
+  "total": 29,
+  "changed_config_fields": {
+    "staged_min_dwell_seconds": {
+      "before": 60.0,
+      "after": 180.0
+    },
+    "staged_speed_adaptation_enabled": {
+      "before": null,
+      "after": true
+    },
+    "staged_noise_target_std": {
+      "before": null,
+      "after": 0.2
+    },
+    "staged_noise_ramp_iterations": {
+      "before": null,
+      "after": 500
+    }
+  },
+  "parent_sha256": "8fcf582b9a6aeabd46cfb5da35be2b75391be3784dc60734c1d6af9c90be10af",
+  "parent_iterations": 48000,
+  "isaac_check": "runs/isaac/check/unitree_go2_gallop/20261111_153025_d3c9dd",
+  "first_episodes": {
+    "success": 13,
+    "staged_strict_success": 0,
+    "staged_final_success": 0,
+    "startup_completed": 14,
+    "terminated": 2
+  },
+  "max_actual_joint_excess_rad": 0.0020842552185058594,
+  "policy_updates": 0,
+  "supervised_updates": 0,
+  "physical_validation_steps": {
+    "isaac_policy_steps": 1600,
+    "isaac_envs": 16,
+    "mujoco_adapter_steps": 10
+  },
+  "limitations": [
+    "Frozen means checked in Isaac; managed noise is training-only.",
+    "No production PPO/optimizer update executed; KL wrapper uses no-op unit tests; backward checked without parameter update.",
+    "KL is full-rollout pre/post,not scheduler minibatch KL.",
+    "No new trained model,improved speed or80cm claim."
+  ]
+}

@@ -1,0 +1,338 @@
+{
+  "schema_version": 1,
+  "status": "design_only_not_executable_training_config",
+  "parent_checkpoint": "runs/isaac/train/unitree_go2_gallop/20261106_000029_077a6f/model_final.pt",
+  "excluded_default_parent": "runs/isaac/train/unitree_go2_gallop/20261110_195814_959c90/model_final.pt",
+  "stages": [
+    {
+      "index": 0,
+      "name": "entry",
+      "goal_speed_mps": 2.5,
+      "active_leap_target_m": 0.14,
+      "reference_period_seconds": 0.39,
+      "reference_air_fraction": 0.2,
+      "reference_air_seconds": 0.07800000000000001,
+      "minimum_air_seconds": 0.06,
+      "template_interpolation_alpha": 0,
+      "focus": "전환 회복",
+      "gate": "entry_diagnostic",
+      "achieved": false,
+      "planned_touchdown": [
+        0.25,
+        0.5,
+        0.0,
+        0.125
+      ],
+      "planned_duty": [
+        0.45,
+        0.3,
+        0.35,
+        0.45
+      ],
+      "planned_takeoff_vz_mps": 0.4,
+      "planned_landing_vz_reward_scale_mps": 1.2
+    },
+    {
+      "index": 1,
+      "name": "stability",
+      "goal_speed_mps": 2.5,
+      "active_leap_target_m": 0.18,
+      "reference_period_seconds": 0.39,
+      "reference_air_fraction": 0.2,
+      "reference_air_seconds": 0.07800000000000001,
+      "minimum_air_seconds": 0.06,
+      "template_interpolation_alpha": 0,
+      "focus": "폭·착지 안정화",
+      "gate": "full_staged_success",
+      "achieved": false,
+      "planned_touchdown": [
+        0.25,
+        0.5,
+        0.0,
+        0.125
+      ],
+      "planned_duty": [
+        0.45,
+        0.3,
+        0.35,
+        0.45
+      ],
+      "planned_takeoff_vz_mps": 0.4,
+      "planned_landing_vz_reward_scale_mps": 1.2
+    },
+    {
+      "index": 2,
+      "name": "speed_275",
+      "goal_speed_mps": 2.75,
+      "active_leap_target_m": 0.18,
+      "reference_period_seconds": 0.385,
+      "reference_air_fraction": 0.2,
+      "reference_air_seconds": 0.07700000000000001,
+      "minimum_air_seconds": 0.06,
+      "template_interpolation_alpha": 0,
+      "focus": "속도만 증가",
+      "gate": "full_staged_success",
+      "achieved": false,
+      "planned_touchdown": [
+        0.25,
+        0.5,
+        0.0,
+        0.125
+      ],
+      "planned_duty": [
+        0.45,
+        0.3,
+        0.35,
+        0.45
+      ],
+      "planned_takeoff_vz_mps": 0.4,
+      "planned_landing_vz_reward_scale_mps": 1.2
+    },
+    {
+      "index": 3,
+      "name": "speed_300",
+      "goal_speed_mps": 3.0,
+      "active_leap_target_m": 0.18,
+      "reference_period_seconds": 0.38,
+      "reference_air_fraction": 0.2,
+      "reference_air_seconds": 0.07600000000000001,
+      "minimum_air_seconds": 0.06,
+      "template_interpolation_alpha": 0,
+      "focus": "속도만 증가",
+      "gate": "full_staged_success",
+      "achieved": false,
+      "planned_touchdown": [
+        0.25,
+        0.5,
+        0.0,
+        0.125
+      ],
+      "planned_duty": [
+        0.45,
+        0.3,
+        0.35,
+        0.45
+      ],
+      "planned_takeoff_vz_mps": 0.4,
+      "planned_landing_vz_reward_scale_mps": 1.2
+    },
+    {
+      "index": 4,
+      "name": "leap_020",
+      "goal_speed_mps": 3.0,
+      "active_leap_target_m": 0.2,
+      "reference_period_seconds": 0.38,
+      "reference_air_fraction": 0.2,
+      "reference_air_seconds": 0.07600000000000001,
+      "minimum_air_seconds": 0.06,
+      "template_interpolation_alpha": 0,
+      "focus": "거리 기준만 증가",
+      "gate": "full_staged_success",
+      "achieved": false,
+      "planned_touchdown": [
+        0.25,
+        0.5,
+        0.0,
+        0.125
+      ],
+      "planned_duty": [
+        0.45,
+        0.3,
+        0.35,
+        0.45
+      ],
+      "planned_takeoff_vz_mps": 0.4,
+      "planned_landing_vz_reward_scale_mps": 1.2
+    },
+    {
+      "index": 5,
+      "name": "leap_030",
+      "goal_speed_mps": 3.0,
+      "active_leap_target_m": 0.3,
+      "reference_period_seconds": 0.4354316445282742,
+      "reference_air_fraction": 0.2755886061749193,
+      "reference_air_seconds": 0.12000000000000002,
+      "minimum_air_seconds": 0.1,
+      "template_interpolation_alpha": 0.2519620205830644,
+      "focus": "거리·비행 시간의 물리적 정합성 조정",
+      "gate": "full_staged_success",
+      "achieved": false,
+      "planned_touchdown": [
+        0.22228417773586293,
+        0.44456835547172585,
+        0.0,
+        0.11114208886793146
+      ],
+      "planned_duty": [
+        0.40716645650087907,
+        0.27984303835335483,
+        0.3323626585591855,
+        0.40716645650087907
+      ],
+      "planned_takeoff_vz_mps": 0.6771582226413708,
+      "planned_landing_vz_reward_scale_mps": 1.3511772123498387
+    },
+    {
+      "index": 6,
+      "name": "leap_040",
+      "goal_speed_mps": 3.0,
+      "active_leap_target_m": 0.4,
+      "reference_period_seconds": 0.47342677903599784,
+      "reference_air_fraction": 0.3274001532309061,
+      "reference_air_seconds": 0.15500000000000003,
+      "minimum_air_seconds": 0.13,
+      "template_interpolation_alpha": 0.4246671774363536,
+      "focus": "거리·비행 시간의 물리적 정합성 조정",
+      "gate": "full_staged_success",
+      "achieved": false,
+      "planned_touchdown": [
+        0.2032866104820011,
+        0.4065732209640022,
+        0.0,
+        0.10164330524100056
+      ],
+      "planned_duty": [
+        0.3778065798358199,
+        0.26602662580509173,
+        0.3202732975794552,
+        0.3778065798358199
+      ],
+      "planned_takeoff_vz_mps": 0.8671338951799891,
+      "planned_landing_vz_reward_scale_mps": 1.454800306461812
+    },
+    {
+      "index": 7,
+      "name": "leap_050",
+      "goal_speed_mps": 3.0,
+      "active_leap_target_m": 0.5,
+      "reference_period_seconds": 0.5077477892543524,
+      "reference_air_fraction": 0.3742015308013895,
+      "reference_air_seconds": 0.18999999999999997,
+      "minimum_air_seconds": 0.165,
+      "template_interpolation_alpha": 0.580671769337965,
+      "focus": "거리·비행 시간의 물리적 정합성 조정",
+      "gate": "full_staged_success",
+      "achieved": false,
+      "planned_touchdown": [
+        0.18612610537282387,
+        0.37225221074564774,
+        0.0,
+        0.09306305268641193
+      ],
+      "planned_duty": [
+        0.351285799212546,
+        0.2535462584529628,
+        0.3093529761463425,
+        0.351285799212546
+      ],
+      "planned_takeoff_vz_mps": 1.0387389462717616,
+      "planned_landing_vz_reward_scale_mps": 1.548403061602779
+    },
+    {
+      "index": 8,
+      "name": "leap_065",
+      "goal_speed_mps": 3.0,
+      "active_leap_target_m": 0.65,
+      "reference_period_seconds": 0.5521102463771856,
+      "reference_air_fraction": 0.434695790514344,
+      "reference_air_seconds": 0.23999999999999994,
+      "minimum_air_seconds": 0.215,
+      "template_interpolation_alpha": 0.7823193017144799,
+      "focus": "거리·비행 시간의 물리적 정합성 조정",
+      "gate": "full_staged_success",
+      "achieved": false,
+      "planned_touchdown": [
+        0.16394487681140724,
+        0.3278897536228145,
+        0.0,
+        0.08197243840570362
+      ],
+      "planned_duty": [
+        0.31700571870853844,
+        0.2374144558628416,
+        0.29523764887998644,
+        0.31700571870853844
+      ],
+      "planned_takeoff_vz_mps": 1.260551231885928,
+      "planned_landing_vz_reward_scale_mps": 1.669391581028688
+    },
+    {
+      "index": 9,
+      "name": "leap_080",
+      "goal_speed_mps": 3.0,
+      "active_leap_target_m": 0.8,
+      "reference_period_seconds": 0.6,
+      "reference_air_fraction": 0.49999999999999994,
+      "reference_air_seconds": 0.29999999999999993,
+      "minimum_air_seconds": 0.26,
+      "template_interpolation_alpha": 0.9999999999999998,
+      "focus": "거리·비행 시간의 물리적 정합성 조정",
+      "gate": "full_staged_success",
+      "achieved": false,
+      "planned_touchdown": [
+        0.14000000000000004,
+        0.2800000000000001,
+        0.0,
+        0.07000000000000002
+      ],
+      "planned_duty": [
+        0.2800000000000001,
+        0.22,
+        0.28,
+        0.2800000000000001
+      ],
+      "planned_takeoff_vz_mps": 1.4999999999999996,
+      "planned_landing_vz_reward_scale_mps": 1.7999999999999998
+    }
+  ],
+  "promotion": {
+    "minimum_complete_cohort_episodes": 128,
+    "required_success_rate": 0.8,
+    "consecutive_complete_cohorts": 2,
+    "minimum_student_metric_seconds": 10,
+    "minimum_cycles": 8,
+    "minimum_completed_landings": 10,
+    "front_width_fraction": 0.8,
+    "hind_width_fraction": 0.8,
+    "stable_landing_fraction": 0.8,
+    "qualified_distance_fraction": 0.6,
+    "reference_air_cycle_fraction": 0.6,
+    "max_vx_rmse_mps": 0.25,
+    "max_yaw_rms_degrees": 3,
+    "minimum_each_front_load_share": 0.08,
+    "minimum_total_front_load_share": 0.25,
+    "minimum_front_participation": 0.7,
+    "maximum_raw_angle_clip_fraction": 0.1,
+    "maximum_total_filter_fraction": 1.0,
+    "minimum_distinct_frozen_eval_starts": 32,
+    "frozen_eval_seed_count": 4,
+    "maximum_frozen_eval_terminations": 0,
+    "frozen_eval_required_success_rate": 0.8
+  },
+  "startup_design": {
+    "status": "requires_implementation_and_validation",
+    "full_student_deadline_seconds": 12,
+    "pose_guard_retained": true,
+    "command_ramp_independent_of_tracking_gated_blend": true,
+    "fail_incomplete_handover": true,
+    "entry_goal_distinct_from_full_gallop_success": true
+  },
+  "invariants": [
+    "Isaac learning only; user runs training; this task performs no optimizer updates.",
+    "Preserve motor torque-speed envelope, original and guarded angle/rate limits and real-joint monitoring.",
+    "Keep total filter allowance at 100%; separately retain raw requested angle clip gate at 10%.",
+    "No strict individual touchdown order requirement.",
+    "Reset-latched stage goal and complete per-environment episode cohorts; no first-finisher-only promotion.",
+    "Keep original parent, failed final and intermediate checkpoints unchanged."
+  ],
+  "notes": [
+    "Reference air time and ballistic estimates are planning calculations, not demonstrated feasible jumps.",
+    "Warm evaluation bypasses startup solely for diagnosis. It is not a proposed deployment controller.",
+    "For stages 5-9 audit clearance/absolute foot-height costs, takeoff, recovery and landing vertical-speed references together; do not lift hardware limits.",
+    "Stage 0 is a diagnostic entry gate. Stage 1 must satisfy full stability/forelimb/gait conditions before increasing speed.",
+    "The final 80cm goal remains conditional on physically validated intermediate stages.",
+    "The old and final touchdown/duty templates may be interpolated by alpha; period is interpolated from .38 to .60 for distance stages."
+  ],
+  "parent_selection_status": "verified_for_staged_recovery_from_old_task_not_direct_80cm",
+  "verification_report": "reports/20261110_gallop_candidate_selection"
+}

@@ -1,0 +1,20 @@
+{
+  "parent50k": {
+    "checkpoint": "runs/isaac/train/unitree_go2_gallop/20261111_155012_ad6309/model_final.pt",
+    "sha256": "93394343a7faf50f848e94ec4138c6a354641addb5b0d4e0b65db3f7ad4674a2",
+    "expected_sha256": "93394343a7faf50f848e94ec4138c6a354641addb5b0d4e0b65db3f7ad4674a2",
+    "unchanged": true
+  },
+  "parent46k": {
+    "checkpoint": "runs/isaac/train/unitree_go2_gallop/20261110_223314_cef16b/model_final.pt",
+    "sha256": "32ac3e282cf014ec8ac342ca832a49ea809b1e9a158beb17b490c9fe6b22ecdb",
+    "expected_sha256": "32ac3e282cf014ec8ac342ca832a49ea809b1e9a158beb17b490c9fe6b22ecdb",
+    "unchanged": true
+  },
+  "protected30k": {
+    "checkpoint": "runs/isaac/train/unitree_go2_gallop/20261106_000029_077a6f/model_final.pt",
+    "sha256": "cc05c078abe28c4c9ac2ce0a8a51af7d006e33268cc6c7f57e15621a85535d7b",
+    "expected_sha256": "cc05c078abe28c4c9ac2ce0a8a51af7d006e33268cc6c7f57e15621a85535d7b",
+    "unchanged": true
+  }
+}

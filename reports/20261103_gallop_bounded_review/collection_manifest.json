@@ -1,0 +1,282 @@
+{
+  "reports/20261103_gallop_bounded_review/play_episodes.csv": {
+    "sha256": "18d0cb5c0fa39d8e56f2c717a72a84bfab4867cfd3184693959211f5f31a587c",
+    "bytes": 2972
+  },
+  "reports/20261103_gallop_bounded_review/stabilization_diagnostics.json": {
+    "sha256": "3bbd3049e24e46b0d947658b3fbf78fbb1e0d77aae372e69f72441a183571ffd",
+    "bytes": 7716
+  },
+  "reports/20261103_gallop_bounded_review/README.md": {
+    "sha256": "1d5c855ba80ec17ae1babe32f980e227ff6f8dd63f6d36de6d5e7cd383a32763",
+    "bytes": 10058
+  },
+  "reports/20261103_gallop_bounded_review/play_diagnostics.json": {
+    "sha256": "79f72e579f2c8c371b84eeda1639531c9c0cdd601329b28500b19ab155b2e2bb",
+    "bytes": 3511
+  },
+  "reports/20261103_gallop_bounded_review/heading_play_diagnostics.json": {
+    "sha256": "85cbd9b23be54bd822a18b0210711fd4c264a55f860295b77c160ba3eb97d29b",
+    "bytes": 29448
+  },
+  "reports/20261103_gallop_bounded_review/reward_contributions_last100.json": {
+    "sha256": "dbb26e77d494b4509c555e6bf81f0fa45daff1d8689a00df706705e0318f93d7",
+    "bytes": 2823
+  },
+  "reports/20261103_gallop_bounded_review/play_analysis.json": {
+    "sha256": "fb6847b6e6f46c9beb7c813996dccdff8679cb48a791f5ce1040752b766906fa",
+    "bytes": 6580
+  },
+  "reports/20261103_gallop_bounded_review/play_flight_trace.csv": {
+    "sha256": "ba3f2fbd058d3b1e0636a72eefa4453be35ff523b1942f259f1490ac74f4b076",
+    "bytes": 892571
+  },
+  "reports/20261103_gallop_bounded_review/curriculum_decisions.csv": {
+    "sha256": "629478f79100b652c97307d640738a0364c527413c07916e6cf967c433ece342",
+    "bytes": 26581
+  },
+  "reports/20261103_gallop_bounded_review/heading_parent_comparison.json": {
+    "sha256": "78e92416757519cc0867b6ae0001917ef45ec08b6a869b2121c46a4c0689e586",
+    "bytes": 10688
+  },
+  "reports/20261103_gallop_bounded_review/criterion_pass_rates.png": {
+    "sha256": "687b9a5487d2d6e3c488d81704cb287c148f9f05d97e933e4212c5becd9e8bf5",
+    "bytes": 87047
+  },
+  "reports/20261103_gallop_bounded_review/tensorboard_scalars.csv": {
+    "sha256": "5bc84231181e499e25077c0f41b006f323e7d61a8e3acdde12075e7e0a004cd4",
+    "bytes": 19236381
+  },
+  "reports/20261103_gallop_bounded_review/joint_motion.png": {
+    "sha256": "3d3047ad02c77a796540de4aab81ca1f9750b959b650c9c5f29b626d69f8a5ef",
+    "bytes": 549356
+  },
+  "reports/20261103_gallop_bounded_review/play_keyframes.png": {
+    "sha256": "5a1f63f89bfbbd33656521311e1773d28359a4d4183f999ba1b438ae37a5dd63",
+    "bytes": 904384
+  },
+  "reports/20261103_gallop_bounded_review/evidence_manifest.json": {
+    "sha256": "fd0a1aefceb3730643ced7284a213d6aa45d0bf61a5a5241f38d5562fbe24dc6",
+    "bytes": 14979
+  },
+  "reports/20261103_gallop_bounded_review/gallop_keyframes.png": {
+    "sha256": "7e6941357abf9269aec39fe3f00fd7c482c0028841690c5b286ec4d2d7d43178",
+    "bytes": 758697
+  },
+  "reports/20261103_gallop_bounded_review/heading_reward_curves.png": {
+    "sha256": "b63c954f0e3f8e70f47b8f9d2039313b7a21db52385e8e6ce7e9859e72cd5da3",
+    "bytes": 489298
+  },
+  "reports/20261103_gallop_bounded_review/verification.json": {
+    "sha256": "25f315543b51c595d520575ed3adb211bfdb88e58355234c12c7aa7b8cdcf148",
+    "bytes": 1518
+  },
+  "reports/20261103_gallop_bounded_review/train_episodes.csv": {
+    "sha256": "e551461d35d9feaf526c82807d2216f46a82d54746c4ae6ed17745219c2cd403",
+    "bytes": 9614429
+  },
+  "reports/20261103_gallop_bounded_review/leap_curves.png": {
+    "sha256": "53beca583004c1769d9cc4ab4d116d1b2daa9f8ccca8d0195cbde2b0e83d0538",
+    "bytes": 439695
+  },
+  "reports/20261103_gallop_bounded_review/heading_play_trace.csv": {
+    "sha256": "21ff46cfbf32bd0e5a539bae2f23ffcec21b1025bbcf82db41bdcba479283227",
+    "bytes": 1431104
+  },
+  "reports/20261103_gallop_bounded_review/training_diagnostics.json": {
+    "sha256": "fdc0740e031dfc8cdc700b238008c96d42602c66608fa126550ba57499bb1069",
+    "bytes": 67545
+  },
+  "reports/20261103_gallop_bounded_review/heading_training_diagnostics.json": {
+    "sha256": "dbce6e1e0022c07825aa76aeefd242f9584ff8ea23f0f5f9766469584dca1683",
+    "bytes": 4711
+  },
+  "reports/20261103_gallop_bounded_review/gallop_config.json": {
+    "sha256": "72adcc17dd013c7aacf871e57ef931f9d06fe270146830b5341825df8b7e7303",
+    "bytes": 4969
+  },
+  "reports/20261103_gallop_bounded_review/pair_reward_curves.png": {
+    "sha256": "d39e65dbca073051beda9a521a80c72e4609c72b51f739845a6b8ca7d75e6c47",
+    "bytes": 345197
+  },
+  "reports/20261103_gallop_bounded_review/play_flight_events.csv": {
+    "sha256": "67af791a9551e5e55a5c5dbdf71f841f3fc364e858a7d1b72a312494287c497a",
+    "bytes": 6760
+  },
+  "reports/20261103_gallop_bounded_review/flight_reward_curves.png": {
+    "sha256": "cf11282d554427fcc9ccaf94fb607b7e94d92eb309a03c2f68506a00e667037c",
+    "bytes": 655568
+  },
+  "reports/20261103_gallop_bounded_review/retraining_design.md": {
+    "sha256": "6ffdb66790687f2270cf9f974488526bd80e31bef2db1c243ad8968aa7bd952d",
+    "bytes": 6094
+  },
+  "reports/20261103_gallop_bounded_review/bounded_command_projection.npz": {
+    "sha256": "a04afdb8a8a3e042469f4eae1f4954bf4f817aba4ff391a29202c623c6431d2e",
+    "bytes": 152232
+  },
+  "reports/20261103_gallop_bounded_review/videos.csv": {
+    "sha256": "0d957846e9117fec7aee04b4808f0b41e1a24e8234d24f4a7169a024b35c5b42",
+    "bytes": 1042
+  },
+  "reports/20261103_gallop_bounded_review/joint_target_diagnostics.json": {
+    "sha256": "f3987cbaf7065ddad18f81a89aaa1d91f1d6ada53437138d9df2848b3d316e4c",
+    "bytes": 6358
+  },
+  "reports/20261103_gallop_bounded_review/collection_checks.json": {
+    "sha256": "6b1225f78cf11a14dfe25db2a1ff1938a58b2c0a981fe38647073b9189325e37",
+    "bytes": 312
+  },
+  "reports/20261103_gallop_bounded_review/bounded_motion_diagnostics.json": {
+    "sha256": "8061bf5f936a392f60a2ddb40d2dd32981e2d4a6e384dc5cd54602971014f746",
+    "bytes": 18579
+  },
+  "reports/20261103_gallop_bounded_review/play_tracking.png": {
+    "sha256": "f897ca50b74cb04fc9b06dbcaacc0a0badb775ee2d370059ec127df145a5f91d",
+    "bytes": 233821
+  },
+  "reports/20261103_gallop_bounded_review/play_contacts.png": {
+    "sha256": "47615b24be7763b2bc853b7e923a54ffd71fb0e3ff7849e5032f8cb29283b060",
+    "bytes": 320130
+  },
+  "reports/20261103_gallop_bounded_review/play_flight_events.png": {
+    "sha256": "2d5cb788d776e05bb8c4252244c5ac5260883875b4e373cfd336108d2d4a7219",
+    "bytes": 118438
+  },
+  "reports/20261103_gallop_bounded_review/summary.json": {
+    "sha256": "f46e172691cd7f6010b558135dbf29e74cb34f96dd7bc9a888c316d8fa0b0b2a",
+    "bytes": 116753
+  },
+  "reports/20261103_gallop_bounded_review/bounded_joint_tracking.png": {
+    "sha256": "b51ff4ac4dc253aa1c361015dbc47a27cdad4b8f18ddc7f4d38c4899421f94fb",
+    "bytes": 458681
+  },
+  "reports/20261103_gallop_bounded_review/training_curves.png": {
+    "sha256": "6a5fd5cd32c6ae32a91488bf4eba39374edf657903591783b2f6774a5d48329e",
+    "bytes": 285650
+  },
+  "reports/20261103_gallop_bounded_review/additional_input_manifest.json": {
+    "sha256": "cf7c11c624c82c400e2dbf113ceaf479092da253e31f66b1e609ac1aa838d3a3",
+    "bytes": 3366
+  },
+  "reports/20261103_gallop_bounded_review/heading_motion_play.png": {
+    "sha256": "0d98a88daeab00409562dfd58212791bf7326ce2dfb73cd66f4bcf20ea3167c8",
+    "bytes": 704586
+  },
+  "reports/20261103_gallop_bounded_review/play_state_trace.csv": {
+    "sha256": "dd193460bbaa57fbeb3d37e96d5e56f61aa2bb262763d4c4713414aef0d6f592",
+    "bytes": 179775
+  },
+  "reports/20261103_gallop_bounded_review/params/agent.yaml": {
+    "sha256": "a10f3b2bef1e5773cc7970d9afba2fc7a436d3a70f719137b363ca999f680fef",
+    "bytes": 1039
+  },
+  "reports/20261103_gallop_bounded_review/params/env.yaml": {
+    "sha256": "cd14bbc7e5970855619c80e0545fb0c5c11dfbc58706e9c35a10b2966d48f116",
+    "bytes": 31649
+  },
+  "reports/20261103_gallop_bounded_review/source/go2_bounded_flight.log": {
+    "sha256": "51131055dfe6290fc50b35061d6ee51d0bc3bc139c2ed787e5c319d8c8629365",
+    "bytes": 2683
+  },
+  "reports/20261103_gallop_bounded_review/source/go2_bounded_motion.log": {
+    "sha256": "a2efc852b8da3f897a5d5b5d4519736ff38833375a75d232d497b3bd76506d13",
+    "bytes": 1206
+  },
+  "reports/20261103_gallop_bounded_review/source/go2_bounded_collection.log": {
+    "sha256": "f7b72ff81a9b45d65b35f595d4aa68904b300ed23c0b2b7107be10fc044debd5",
+    "bytes": 6461
+  },
+  "reports/20261103_gallop_bounded_review/source/collect_gallop.py": {
+    "sha256": "81470b27ce4f87762c1f849a59bd58bf41c70793c9a7f267e25453270018c3ca",
+    "bytes": 21887
+  },
+  "reports/20261103_gallop_bounded_review/source/collect_unitree_baseline.py": {
+    "sha256": "4d6b07f431b54f251712710549aa41a0e1540da4671a9c7c676517b9f3e6d252",
+    "bytes": 10105
+  },
+  "reports/20261103_gallop_bounded_review/source/collect_heading_diagnostics.py": {
+    "sha256": "815b00ad795343e5b5ce79f8f486536552b3d447d6ea4274ce2c379a85620e3f",
+    "bytes": 15179
+  },
+  "reports/20261103_gallop_bounded_review/source/collect_bounded_motion_diagnostics.py": {
+    "sha256": "d3acf3e7015c8ca141d4042d6c627704233a893e91eb79ca098264675f69412b",
+    "bytes": 9743
+  },
+  "reports/20261103_gallop_bounded_review/source/collect_stabilization_diagnostics.py": {
+    "sha256": "8396d4e47e0fc9033c26777ccff9ed4d424c2abda18ac84ce299765bd6f36d7f",
+    "bytes": 6626
+  },
+  "reports/20261103_gallop_bounded_review/source/verify.py": {
+    "sha256": "14e94a3c5e057b539578e412be1258e5d64029c98f80159363893db3fc6e58fe",
+    "bytes": 6592
+  },
+  "reports/20261103_gallop_bounded_review/source/go2_bounded_heading.log": {
+    "sha256": "d9bcff5da1bf6fd260587794956b63c08a1075d908032a7f138dd32ca1c9fa1d",
+    "bytes": 3643
+  },
+  "reports/20261103_gallop_bounded_review/source/go2_bounded_stabilization.log": {
+    "sha256": "2740d9d52f3493cf64b356a02e9dd55c06a1e6cd1adc139c0dd104fdb1330d1b",
+    "bytes": 169
+  },
+  "reports/20261103_gallop_bounded_review/source/collect_flight_diagnostics.py": {
+    "sha256": "2af64ba0d41c7da0df49b93aaece4ac8cc39ac56dbcf21816c7531dad0937c69",
+    "bytes": 12927
+  },
+  "reports/20261103_gallop_bounded_review/source/documentation/README.md": {
+    "sha256": "bfd6af5ec60a8e26a42516ebec5bd162c15bd3afa5d8cfc8ca76aa197c3b6b97",
+    "bytes": 22199
+  },
+  "reports/20261103_gallop_bounded_review/source/documentation/AGENTS.md": {
+    "sha256": "b7d8b70d9a77166cb63158ac8efefb1d1efbfe2f2ce71165b90c93ff514ce7f6",
+    "bytes": 34393
+  },
+  "reports/20261103_gallop_bounded_review/source/documentation/docs/gallop_bounded.md": {
+    "sha256": "dcaac2ded1c25f7c7aafaf1f82bc12357bf74b2a28ab564d1f2260f0168a0581",
+    "bytes": 10954
+  },
+  "reports/20261103_gallop_bounded_review/source/documentation/docs/CONTINUE_HERE.md": {
+    "sha256": "dfaf85e78ac79bae0bf0e05a15a569f2169a77c17a0c410058bfaa76f6012fb9",
+    "bytes": 70905
+  },
+  "scripts/analysis/collect_gallop.py": {
+    "sha256": "81470b27ce4f87762c1f849a59bd58bf41c70793c9a7f267e25453270018c3ca",
+    "bytes": 21887
+  },
+  "scripts/analysis/collect_unitree_baseline.py": {
+    "sha256": "4d6b07f431b54f251712710549aa41a0e1540da4671a9c7c676517b9f3e6d252",
+    "bytes": 10105
+  },
+  "scripts/analysis/collect_flight_diagnostics.py": {
+    "sha256": "2af64ba0d41c7da0df49b93aaece4ac8cc39ac56dbcf21816c7531dad0937c69",
+    "bytes": 12927
+  },
+  "scripts/analysis/collect_heading_diagnostics.py": {
+    "sha256": "815b00ad795343e5b5ce79f8f486536552b3d447d6ea4274ce2c379a85620e3f",
+    "bytes": 15179
+  },
+  "scripts/analysis/collect_stabilization_diagnostics.py": {
+    "sha256": "8396d4e47e0fc9033c26777ccff9ed4d424c2abda18ac84ce299765bd6f36d7f",
+    "bytes": 6626
+  },
+  "scripts/analysis/collect_bounded_motion_diagnostics.py": {
+    "sha256": "d3acf3e7015c8ca141d4042d6c627704233a893e91eb79ca098264675f69412b",
+    "bytes": 9743
+  },
+  "README.md": {
+    "sha256": "bfd6af5ec60a8e26a42516ebec5bd162c15bd3afa5d8cfc8ca76aa197c3b6b97",
+    "bytes": 22199
+  },
+  "AGENTS.md": {
+    "sha256": "b7d8b70d9a77166cb63158ac8efefb1d1efbfe2f2ce71165b90c93ff514ce7f6",
+    "bytes": 34393
+  },
+  "docs/CONTINUE_HERE.md": {
+    "sha256": "dfaf85e78ac79bae0bf0e05a15a569f2169a77c17a0c410058bfaa76f6012fb9",
+    "bytes": 70905
+  },
+  "docs/gallop_bounded.md": {
+    "sha256": "dcaac2ded1c25f7c7aafaf1f82bc12357bf74b2a28ab564d1f2260f0168a0581",
+    "bytes": 10954
+  }
+}

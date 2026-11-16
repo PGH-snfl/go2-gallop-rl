@@ -1,0 +1,3491 @@
+{
+  "collected_at": "2026-11-11T17:20:55.552699+09:00",
+  "train": "/home/cvr/GH/go2_animalization/gallop/runs/isaac/train/unitree_go2_gallop/20261111_155012_ad6309",
+  "play": "/home/cvr/GH/go2_animalization/gallop/runs/isaac/play/unitree_go2_gallop/20261111_170803_4c378d",
+  "checkpoint": "/home/cvr/GH/go2_animalization/gallop/runs/isaac/train/unitree_go2_gallop/20261111_155012_ad6309/model_final.pt",
+  "checkpoint_sha256": "93394343a7faf50f848e94ec4138c6a354641addb5b0d4e0b65db3f7ad4674a2",
+  "training_status": {
+    "status": "completed",
+    "mode": "train",
+    "training_variant": "gallop_staged_80cm",
+    "num_envs": 256,
+    "planned_iterations": 2000,
+    "policy_updates": 2000,
+    "training_initialization": "restore_gallop_new_optimizer",
+    "fine_tuning": {
+      "parent_iteration_zero_based": 1999,
+      "parent_stage_iterations": 2000,
+      "actor_critic_restored": true,
+      "noise_restored": true,
+      "optimizer_reset": true,
+      "stage_iteration_start": 0,
+      "actor_observations": [
+        49,
+        49
+      ],
+      "critic_observations": [
+        64,
+        64
+      ],
+      "added_heading_columns_zero": false,
+      "parent_cumulative_iterations": 48000
+    },
+    "last_event": {
+      "time": "2026-11-11T16:19:55+09:00",
+      "elapsed_s": 1776.6,
+      "event": "COMPLETED",
+      "output": "/home/cvr/GH/go2_animalization/gallop/runs/isaac/train/unitree_go2_gallop/20261111_155012_ad6309"
+    },
+    "cumulative_iterations": 50000,
+    "source_clean_after_run": true
+  },
+  "play_status": {
+    "status": "completed",
+    "mode": "play",
+    "training_variant": "gallop_staged_80cm",
+    "num_envs": 1,
+    "planned_iterations": 6000,
+    "policy_updates": 0,
+    "training_initialization": "load_gallop",
+    "last_event": {
+      "time": "2026-11-11T17:10:24+09:00",
+      "elapsed_s": 130.29,
+      "event": "COMPLETED",
+      "output": "/home/cvr/GH/go2_animalization/gallop/runs/isaac/play/unitree_go2_gallop/20261111_170803_4c378d"
+    },
+    "steps": 1500,
+    "reset_count": 1,
+    "policy_state_unchanged": true,
+    "rollout_note": "First segment validity only; reset rows use pre-reset terminal snapshots",
+    "videos": [
+      "/home/cvr/GH/go2_animalization/gallop/runs/isaac/play/unitree_go2_gallop/20261111_170803_4c378d/videos/gallop-play-step-0.mp4"
+    ],
+    "source_clean_after_run": true
+  },
+  "provenance": {
+    "interface": "unitree_go2_gallop_guarded_49_64_12_v4",
+    "training_variant": "gallop_staged_80cm",
+    "official_repo": "/home/cvr/GH/unitree/unitree_rl_lab_official",
+    "official_commit": "4960b84732b0c2ec593dccbfe963fda1bcd7b1e3",
+    "environment_source_sha256": "56859832148dacc724ddba3954a7684b99a43560e4fde561f6361b9daa051b56",
+    "asset_path": "/home/cvr/GH/unitree/unitree_rl_lab/unitree_model/Go2/usd/go2.usd",
+    "asset_sha256": "fd3c8c23c97cea3208fae1ab5eeacba4ffa616fe5f1397be6c7edf4feb93f180",
+    "gallop_settings": {
+      "start_speed": 2.5,
+      "max_speed": 3.0,
+      "reference_start_speed": 1.0,
+      "reference_max_speed": 3.0,
+      "speed_band": 0.0,
+      "speed_increment": 0.1,
+      "promote_success": 0.8,
+      "regress_success": 0.5,
+      "pass_windows": 2,
+      "min_episodes": 128,
+      "decision_steps": 1000,
+      "slow_period": 0.42,
+      "fast_period": 0.38,
+      "touchdown": [
+        0.25,
+        0.5,
+        0.0,
+        0.125
+      ],
+      "duty": [
+        0.45,
+        0.3,
+        0.35,
+        0.45
+      ],
+      "action_scale": 0.5,
+      "thigh_amplitude_slow": 0.45,
+      "thigh_amplitude_fast": 0.75,
+      "calf_amplitude_slow": 0.45,
+      "calf_amplitude_fast": 0.8,
+      "swing_height_slow": 0.06,
+      "swing_height_fast": 0.1,
+      "pitch_amplitude": 0.0,
+      "reward_ramp_iterations": 500,
+      "initial_gait_weight": 1.0,
+      "contact_on": 8.0,
+      "contact_off": 3.0,
+      "flight_min_seconds": 0.06,
+      "flight_cycle_fraction": 0.6,
+      "metric_warmup_seconds": 1.0,
+      "contact_accuracy": 0.6,
+      "order_accuracy": 0.8,
+      "require_touchdown_order": false,
+      "order_reward_weight": 0.1,
+      "flexible_left_right": true,
+      "min_cycles": 8,
+      "min_rom_fraction": 0.7,
+      "min_fore_rom_fraction": 0.7,
+      "min_each_fore_rom_fraction": 0.5,
+      "min_fore_load_share": 0.25,
+      "min_each_fore_load_share": 0.08,
+      "min_hind_load_share": 0.25,
+      "min_fore_participation": 0.7,
+      "min_fore_swing_height": 0.035,
+      "min_fore_stance_seconds": 0.06,
+      "min_fore_swing_seconds": 0.04,
+      "max_action_clipping": 0.1,
+      "max_attitude_rms": 0.25,
+      "tracking_relative_rmse": 0.25,
+      "tracking_absolute_rmse": 0.15,
+      "min_height": 0.18,
+      "max_height": 0.6,
+      "foot_radius": 0.022,
+      "pair_joint_weight": 1.0,
+      "pair_rom_weight": 0.5,
+      "pair_load_weight": 0.75,
+      "pair_stance_weight": 0.3,
+      "pair_joint_tolerance": 0.15,
+      "pair_joint_scale": 0.4,
+      "pair_rom_tolerance": 0.25,
+      "pair_load_tolerance": 0.2,
+      "pair_stance_tolerance": 0.15,
+      "leap_reward_weight": 4.0,
+      "leap_min_distance": 0.8,
+      "leap_require_forelimbs": true,
+      "leap_partial_credit": 0.5,
+      "pair_hip_weight": 0.75,
+      "pair_hip_tolerance": 0.2,
+      "flight_shaping_enabled": true,
+      "flight_prepare_seconds": 0.08,
+      "flight_recovery_seconds": 0.08,
+      "flight_takeoff_vz": 0.4,
+      "flight_clearance": 0.025,
+      "flight_landing_min_air_seconds": 0.02,
+      "flight_max_tilt": 0.3,
+      "flight_max_angular_speed": 2.0,
+      "flight_max_lateral_speed": 0.35,
+      "flight_max_landing_vz": 1.2,
+      "flight_max_force_bw": 3.0,
+      "flight_max_foot_slide": 0.5,
+      "flight_air_reward_floor": 0.2,
+      "flight_drive_weight": 2.0,
+      "flight_clearance_weight": 2.0,
+      "flight_support_weight": 8.0,
+      "flight_balance_weight": 3.0,
+      "flight_takeoff_weight": 0.5,
+      "flight_landing_weight": 4.0,
+      "flight_impact_weight": 2.5,
+      "flight_clip_weight": 1.0,
+      "startup_enabled": true,
+      "startup_settle_seconds": 0.5,
+      "startup_walk_speed": 1.0,
+      "startup_walk_ramp_seconds": 1.5,
+      "startup_walk_min_seconds": 3.0,
+      "startup_ready_seconds": 0.5,
+      "startup_blend_seconds": 3.0,
+      "startup_max_tilt": 0.18,
+      "startup_max_angular_speed": 1.5,
+      "startup_tracking_error": 0.25,
+      "startup_episode_seconds": 30.0,
+      "startup_pose_handover": true,
+      "startup_deadline_seconds": 12.0,
+      "posture_enabled": true,
+      "upright_weight": 0.0,
+      "upright_tolerance": 0.05,
+      "upright_scale": 0.2,
+      "stance_width_weight": 7.0,
+      "stance_center_weight": 0.0,
+      "front_stance_width": 0.2698,
+      "hind_stance_width": 0.2698,
+      "stance_width_tolerance": 0.005,
+      "stance_width_scale": 0.08,
+      "stance_center_tolerance": 0.015,
+      "stance_center_scale": 0.04,
+      "stance_swing_tolerance_multiplier": 1.5,
+      "heading_motion_enabled": true,
+      "target_yaw": 0.0,
+      "yaw_penalty_weight": 2.0,
+      "yaw_error_scale": 0.35,
+      "roll_pitch_quiet_weight": 3.0,
+      "roll_pitch_rate_scale": 1.0,
+      "forward_progress_weight": 2.0,
+      "progress_direction_scale": 0.15,
+      "front_shoulder_width": 0.284,
+      "hind_shoulder_width": 0.284,
+      "stance_shoulder_ratio": 0.95,
+      "stabilization_enabled": true,
+      "stabilization_min_leap_distance": 0.18,
+      "stabilization_roll_deadband": 0.05235987755982989,
+      "stabilization_pitch_deadband": 0.08726646259971647,
+      "stabilization_roll_scale": 0.10471975511965978,
+      "stabilization_pitch_scale": 0.13962634015954636,
+      "stabilization_roll_limit": 0.08726646259971647,
+      "stabilization_pitch_limit": 0.13962634015954636,
+      "stabilization_air_width_weight": 0.3,
+      "stabilization_yaw_rate_weight": 1.0,
+      "stabilization_yaw_rate_scale": 0.3,
+      "stabilization_excess_weight": 2.0,
+      "stabilization_excess_scale": 0.35,
+      "stabilization_calf_multiplier": 0.85,
+      "stabilization_width_min": 0.24,
+      "stabilization_width_max": 0.3,
+      "stabilization_width_fraction": 0.8,
+      "stabilization_min_support_samples": 10,
+      "stabilization_min_recoveries": 10,
+      "stabilization_landing_fraction": 0.8,
+      "stabilization_distance_fraction": 0.6,
+      "stabilization_min_metric_seconds": 5.0,
+      "bounded_actions_enabled": false,
+      "bounded_limit_margin": 0.05,
+      "bounded_limit_weight": 1.0,
+      "bounded_target_rate_weight": 0.05,
+      "bounded_target_rate_scale": 10.0,
+      "bounded_max_limit_fraction": 0.1,
+      "bounded_latent_std": 0.1,
+      "guarded_enabled": true,
+      "guarded_sim_limit_factor": 0.9,
+      "guarded_target_margin": 0.05,
+      "guarded_hip_rate": 6.0,
+      "guarded_leg_rate": 16.0,
+      "guarded_projection_scale": 0.25,
+      "guarded_projection_weight": 8.0,
+      "guarded_actual_scale": 0.03,
+      "guarded_actual_weight": 8.0,
+      "guarded_actual_tolerance": 0.01,
+      "guarded_violation_seconds": 0.06,
+      "guarded_max_intervention": 1.0,
+      "guarded_front_height": 0.16,
+      "guarded_hind_height": 0.1,
+      "guarded_height_scale": 0.04,
+      "guarded_height_weight": 3.5,
+      "guarded_max_high_fraction": 0.1,
+      "relearn_enabled": false,
+      "relearn_gallop_start_speed": 1.5,
+      "relearn_initial_request_tolerance": 0.12,
+      "relearn_final_request_tolerance": 1e-06,
+      "relearn_initial_request_seconds": 0.06,
+      "relearn_final_request_seconds": 0.02,
+      "relearn_recovery_enabled": false,
+      "relearn_noise_std_start": 0.12,
+      "relearn_noise_std_end": 0.06,
+      "staged_enabled": true,
+      "staged_max_vx_rmse": 0.25,
+      "staged_max_yaw_rms": 0.05235987755982989,
+      "staged_min_metric_seconds": 10.0,
+      "staged_min_dwell_seconds": 180.0,
+      "staged_regress_windows": 2,
+      "staged_core_first_enabled": true,
+      "staged_speed_adaptation_enabled": true,
+      "staged_noise_target_std": 0.2,
+      "staged_noise_ramp_iterations": 500
+    },
+    "gallop_core_sha256": "232d2cd5c7b234f731f01768e1acc50514b2a79a3afb986821a9c191d30bb927",
+    "gallop_env_sha256": "cbbbc8c4dbcb6bc05b149d14a0905174238f8745613bc3b9d16689f431d41f9b",
+    "observation_dim": 49,
+    "critic_observation_dim": 64,
+    "action_dim": 12,
+    "action_scale": 0.5,
+    "gait_goal": "Gallop-style: relaxed foot order, required forelimb participation and suspension",
+    "speed_increase_rule": "Complete-cohort success controls nine speed/distance stages; no time-only promotion",
+    "replay_source": null,
+    "source_checkpoint": {
+      "path": "/home/cvr/GH/go2_animalization/gallop/runs/isaac/train/unitree_go2_gallop/20261111_141724_6a1661/model_final.pt",
+      "sha256": "8fcf582b9a6aeabd46cfb5da35be2b75391be3784dc60734c1d6af9c90be10af"
+    },
+    "walking_teacher": {
+      "original_checkpoint": "/home/cvr/GH/go2_animalization/gallop/runs/isaac/train/unitree_go2_forward_only/20261028_160258_54620c/model_final.pt",
+      "sha256": "d4bd406a2e0cc97b1370610a3791bf115c31cac8b718056322d95df2f9d192bf",
+      "action_scale": 0.25,
+      "bundled_file": "source/walking_teacher.pt",
+      "activation": "elu"
+    },
+    "startup_controller": {
+      "stages": [
+        "hold",
+        "walk",
+        "blend",
+        "gallop"
+      ],
+      "teacher_control_until_blend": true,
+      "blend_pauses_on_instability": true,
+      "phase_observation_radius": [
+        0.0,
+        0.5,
+        1.0
+      ],
+      "random_initial_episode_length": false,
+      "metrics": "full Gallop only, after per-episode metric warmup",
+      "version": 2,
+      "blend_tracking_gate": false,
+      "command_progress": "elapsed blend-stage time, independent of policy mixture",
+      "blend_progress": "pose/height/angular/lateral guard, independent of speed error",
+      "incomplete_startup_failure_seconds": 12.0,
+      "terminal_failure_reward": -20.0
+    },
+    "posture_design": {
+      "version": 3,
+      "target_yaw_rad": 0.0,
+      "heading_observation": "append sin(target-yaw), cos(target-yaw)-1 after gait phase",
+      "yaw_penalty": "wrapped absolute world heading error squared",
+      "roll_pitch_reward": "positive temporal quiet score multiplied by soft pose quality",
+      "front_shoulder_width_m": 0.284,
+      "hind_shoulder_width_m": 0.284,
+      "width_ratio": 0.95,
+      "front_width_m": 0.2698,
+      "hind_width_m": 0.2698,
+      "width_reward": "independent positive 1/(1+normalized_error^2), support weight 1 and configured air weight",
+      "foot_center_penalty": false,
+      "static_roll_pitch_penalty": false,
+      "direction_reward": "actual world velocity projected onto target heading, with speed and travel-angle scores; no stationary credit",
+      "reset_yaw_rad": 0.0,
+      "stages": "all phases, no gait strength or full-Gallop mask"
+    },
+    "leap_measurement": {
+      "min_distance_m": 0.8,
+      "min_air_seconds": 0.06,
+      "physics_sample_seconds": 0.005,
+      "position": "first all-off body pose to first touchdown; projected onto takeoff forward heading",
+      "reward_weight": 4.0,
+      "max_score_per_phase_cycle": 1.0,
+      "forelimbs_required": true,
+      "initial_free_fall_excluded": true,
+      "completed_landings_only": true,
+      "target_rule": "Per-environment staged distance, independent of speed after reaching3m/s",
+      "initial_min_distance_m": 0.18,
+      "final_min_distance_m": 0.8,
+      "min_distance_m_is_final": true
+    },
+    "flight_design": {
+      "version": 1,
+      "prepare_seconds": 0.08,
+      "shared_air_phase_start": 0.8,
+      "recovery_seconds": 0.08,
+      "distance_reward_confirmation": "continuous stable supported recovery after actual flight",
+      "partial_distance_credit": 0.5,
+      "takeoff_vertical_speed_mps": 0.4,
+      "force_normalization": "sum of positive vertical foot force / measured robot weight",
+      "touchdown_order_required": false,
+      "gait_reward_floor_during_flight_violation": 0.2
+    },
+    "stabilization_design": {
+      "version": 1,
+      "initial_speed": 2.5,
+      "final_speed": 3.0,
+      "initial_leap_m": 0.18,
+      "final_leap_m": 0.8,
+      "target_update": "latch both speed and leap on environment reset; never change an ongoing episode",
+      "promotion": "full gait gates plus pose/support width/landing/distance; >=128 episodes, >=80% for two windows",
+      "regression": "below 50% at raised cap, return one speed step",
+      "width_reward": "1/(1+normalized_error^2), contact priority",
+      "pose_reward": "positive quiet score multiplied by soft pose quality",
+      "calf_control": "student only, smoothly 1.0 to 0.85 with startup blend; frozen teacher unchanged",
+      "calf_multiplier": 0.85,
+      "target_excess": "pre-clip target excess Huber, calf weight x2"
+    },
+    "guarded_design": {
+      "version": 1,
+      "imitation": false,
+      "action_semantics": "legacy default + 0.5 * mixed delta; student calf multiplier retained",
+      "physics_limit_factor_of_original": 0.9,
+      "target_margin_fraction": 0.05,
+      "target_rate_rad_s": {
+        "hip": 6.0,
+        "thigh_calf": 16.0
+      },
+      "foot_height_caps_m": {
+        "front": 0.16,
+        "hind": 0.1
+      },
+      "physical_limit_write": "Isaac articulation write_joint_position_limit_to_sim; soft factor 1 prevents double shrink",
+      "actual_limit_monitor": "Measured excess penalty plus sustained violation termination; never overwrite actual positions"
+    },
+    "staged_adaptation_source_sha256": "29068fe049719c87de9c5f9c666cc5c327e720645663338c2cfc90b1fcf741b5",
+    "guarded_runtime_joint_contract": {
+      "joint_names": [
+        "FL_hip_joint",
+        "FR_hip_joint",
+        "RL_hip_joint",
+        "RR_hip_joint",
+        "FL_thigh_joint",
+        "FR_thigh_joint",
+        "RL_thigh_joint",
+        "RR_thigh_joint",
+        "FL_calf_joint",
+        "FR_calf_joint",
+        "RL_calf_joint",
+        "RR_calf_joint"
+      ],
+      "original_limits": [
+        [
+          -1.0471998453140259,
+          1.0471998453140259
+        ],
+        [
+          -1.0471998453140259,
+          1.0471998453140259
+        ],
+        [
+          -1.0471998453140259,
+          1.0471998453140259
+        ],
+        [
+          -1.0471998453140259,
+          1.0471998453140259
+        ],
+        [
+          -1.5707999467849731,
+          3.4906997680664062
+        ],
+        [
+          -1.5707999467849731,
+          3.4906997680664062
+        ],
+        [
+          -0.5235999226570129,
+          4.537899494171143
+        ],
+        [
+          -0.5235999226570129,
+          4.537899494171143
+        ],
+        [
+          -2.7227001190185547,
+          -0.8377599120140076
+        ],
+        [
+          -2.7227001190185547,
+          -0.8377599120140076
+        ],
+        [
+          -2.7227001190185547,
+          -0.8377599120140076
+        ],
+        [
+          -2.7227001190185547,
+          -0.8377599120140076
+        ]
+      ],
+      "physics_limits": [
+        [
+          -0.9424798488616943,
+          0.9424798488616943
+        ],
+        [
+          -0.9424798488616943,
+          0.9424798488616943
+        ],
+        [
+          -0.9424798488616943,
+          0.9424798488616943
+        ],
+        [
+          -0.9424798488616943,
+          0.9424798488616943
+        ],
+        [
+          -1.3177247047424316,
+          3.2376246452331543
+        ],
+        [
+          -1.3177247047424316,
+          3.2376246452331543
+        ],
+        [
+          -0.2705249786376953,
+          4.284824371337891
+        ],
+        [
+          -0.2705249786376953,
+          4.284824371337891
+        ],
+        [
+          -2.628453016281128,
+          -0.9320070743560791
+        ],
+        [
+          -2.628453016281128,
+          -0.9320070743560791
+        ],
+        [
+          -2.628453016281128,
+          -0.9320070743560791
+        ],
+        [
+          -2.628453016281128,
+          -0.9320070743560791
+        ]
+      ],
+      "target_limits": [
+        [
+          -0.848231852054596,
+          0.848231852054596
+        ],
+        [
+          -0.848231852054596,
+          0.848231852054596
+        ],
+        [
+          -0.848231852054596,
+          0.848231852054596
+        ],
+        [
+          -0.848231852054596,
+          0.848231852054596
+        ],
+        [
+          -1.0899572372436523,
+          3.009857177734375
+        ],
+        [
+          -1.0899572372436523,
+          3.009857177734375
+        ],
+        [
+          -0.042757511138916016,
+          4.057056903839111
+        ],
+        [
+          -0.042757511138916016,
+          4.057056903839111
+        ],
+        [
+          -2.543630599975586,
+          -1.0168293714523315
+        ],
+        [
+          -2.543630599975586,
+          -1.0168293714523315
+        ],
+        [
+          -2.543630599975586,
+          -1.0168293714523315
+        ],
+        [
+          -2.543630599975586,
+          -1.0168293714523315
+        ]
+      ]
+    },
+    "staged_design": {
+      "version": 1,
+      "plan": [
+        {
+          "name": "stability",
+          "speed": 2.5,
+          "leap": 0.18,
+          "alpha": 0.0,
+          "period": 0.39,
+          "touchdown": [
+            0.25,
+            0.5,
+            0.0,
+            0.125
+          ],
+          "duty": [
+            0.45,
+            0.3,
+            0.35,
+            0.45
+          ],
+          "air_seconds": 0.078,
+          "flight_min_seconds": 0.06,
+          "flight_prepare_seconds": 0.08,
+          "flight_recovery_seconds": 0.08,
+          "flight_takeoff_vz": 0.4,
+          "flight_max_landing_vz": 1.2
+        },
+        {
+          "name": "speed_275",
+          "speed": 2.75,
+          "leap": 0.18,
+          "alpha": 0.0,
+          "period": 0.385,
+          "touchdown": [
+            0.25,
+            0.5,
+            0.0,
+            0.125
+          ],
+          "duty": [
+            0.45,
+            0.3,
+            0.35,
+            0.45
+          ],
+          "air_seconds": 0.077,
+          "flight_min_seconds": 0.06,
+          "flight_prepare_seconds": 0.08,
+          "flight_recovery_seconds": 0.08,
+          "flight_takeoff_vz": 0.4,
+          "flight_max_landing_vz": 1.2
+        },
+        {
+          "name": "speed_300",
+          "speed": 3.0,
+          "leap": 0.18,
+          "alpha": 0.0,
+          "period": 0.38,
+          "touchdown": [
+            0.25,
+            0.5,
+            0.0,
+            0.125
+          ],
+          "duty": [
+            0.45,
+            0.3,
+            0.35,
+            0.45
+          ],
+          "air_seconds": 0.076,
+          "flight_min_seconds": 0.06,
+          "flight_prepare_seconds": 0.08,
+          "flight_recovery_seconds": 0.08,
+          "flight_takeoff_vz": 0.4,
+          "flight_max_landing_vz": 1.2
+        },
+        {
+          "name": "leap_020",
+          "speed": 3.0,
+          "leap": 0.2,
+          "alpha": 0.0,
+          "period": 0.38,
+          "touchdown": [
+            0.25,
+            0.5,
+            0.0,
+            0.125
+          ],
+          "duty": [
+            0.45,
+            0.3,
+            0.35,
+            0.45
+          ],
+          "air_seconds": 0.076,
+          "flight_min_seconds": 0.06,
+          "flight_prepare_seconds": 0.08,
+          "flight_recovery_seconds": 0.08,
+          "flight_takeoff_vz": 0.4,
+          "flight_max_landing_vz": 1.2
+        },
+        {
+          "name": "leap_030",
+          "speed": 3.0,
+          "leap": 0.3,
+          "alpha": 0.25196202058306444,
+          "period": 0.4354316445282742,
+          "touchdown": [
+            0.22228417773586293,
+            0.44456835547172585,
+            0.0,
+            0.11114208886793146
+          ],
+          "duty": [
+            0.40716645650087907,
+            0.2798430383533549,
+            0.3323626585591855,
+            0.40716645650087907
+          ],
+          "air_seconds": 0.12,
+          "flight_min_seconds": 0.1,
+          "flight_prepare_seconds": 0.08503924041166129,
+          "flight_recovery_seconds": 0.09007848082332258,
+          "flight_takeoff_vz": 0.6771582226413709,
+          "flight_max_landing_vz": 1.3511772123498387
+        },
+        {
+          "name": "leap_040",
+          "speed": 3.0,
+          "leap": 0.4,
+          "alpha": 0.4246671774363537,
+          "period": 0.4734267790359977,
+          "touchdown": [
+            0.20328661048200108,
+            0.40657322096400217,
+            0.0,
+            0.10164330524100054
+          ],
+          "duty": [
+            0.3778065798358199,
+            0.2660266258050917,
+            0.3202732975794552,
+            0.3778065798358199
+          ],
+          "air_seconds": 0.155,
+          "flight_min_seconds": 0.13,
+          "flight_prepare_seconds": 0.08849334354872708,
+          "flight_recovery_seconds": 0.09698668709745414,
+          "flight_takeoff_vz": 0.8671338951799892,
+          "flight_max_landing_vz": 1.454800306461812
+        },
+        {
+          "name": "leap_050",
+          "speed": 3.0,
+          "leap": 0.5,
+          "alpha": 0.5806717693379652,
+          "period": 0.5077477892543523,
+          "touchdown": [
+            0.18612610537282384,
+            0.3722522107456477,
+            0.0,
+            0.09306305268641192
+          ],
+          "duty": [
+            0.35128579921254593,
+            0.2535462584529628,
+            0.30935297614634244,
+            0.35128579921254593
+          ],
+          "air_seconds": 0.19,
+          "flight_min_seconds": 0.165,
+          "flight_prepare_seconds": 0.09161343538675931,
+          "flight_recovery_seconds": 0.10322687077351861,
+          "flight_takeoff_vz": 1.0387389462717618,
+          "flight_max_landing_vz": 1.548403061602779
+        },
+        {
+          "name": "leap_065",
+          "speed": 3.0,
+          "leap": 0.65,
+          "alpha": 0.7823193017144799,
+          "period": 0.5521102463771855,
+          "touchdown": [
+            0.16394487681140724,
+            0.3278897536228145,
+            0.0,
+            0.08197243840570362
+          ],
+          "duty": [
+            0.31700571870853844,
+            0.2374144558628416,
+            0.29523764887998644,
+            0.31700571870853844
+          ],
+          "air_seconds": 0.24,
+          "flight_min_seconds": 0.215,
+          "flight_prepare_seconds": 0.0956463860342896,
+          "flight_recovery_seconds": 0.11129277206857921,
+          "flight_takeoff_vz": 1.260551231885928,
+          "flight_max_landing_vz": 1.669391581028688
+        },
+        {
+          "name": "leap_080",
+          "speed": 3.0,
+          "leap": 0.8,
+          "alpha": 0.9999999999999998,
+          "period": 0.6,
+          "touchdown": [
+            0.14000000000000004,
+            0.2800000000000001,
+            0.0,
+            0.07000000000000002
+          ],
+          "duty": [
+            0.2800000000000001,
+            0.22,
+            0.28,
+            0.2800000000000001
+          ],
+          "air_seconds": 0.3,
+          "flight_min_seconds": 0.26,
+          "flight_prepare_seconds": 0.1,
+          "flight_recovery_seconds": 0.12,
+          "flight_takeoff_vz": 1.5,
+          "flight_max_landing_vz": 1.7999999999999998
+        }
+      ],
+      "evaluation": "One completed episode per environment per cohort; all environments and >=128 episodes; >=80% two consecutive windows",
+      "regression": "Two complete cohorts below50% core safety/landing success regress; final style failures alone retain final-stage refinement",
+      "targets": "Per-environment speed, distance, touchdown/duty and flight timing/scales latch only on reset",
+      "success": "success is active-stage progress; staged_strict_success retains original strict criteria; staged_final_success requires final80cm strict success",
+      "fresh_optimizer_on_finetune": true,
+      "window_counts_reset_on_finetune": true,
+      "promotion_policy": "core_first_v1",
+      "quality_gates": {
+        "landing_fraction": [
+          0.6,
+          0.6,
+          0.6,
+          0.6,
+          0.65,
+          0.65,
+          0.7,
+          0.75,
+          0.8
+        ],
+        "roll_degrees": [
+          10,
+          10,
+          10,
+          10,
+          8,
+          8,
+          8,
+          6,
+          5.0
+        ],
+        "pitch_degrees": [
+          12,
+          12,
+          12,
+          12,
+          10,
+          10,
+          10,
+          9,
+          8.0
+        ],
+        "yaw_degrees": [
+          8,
+          8,
+          8,
+          8,
+          5,
+          5,
+          5,
+          4,
+          3.0000000000000004
+        ],
+        "width_and_foot_height": "Rewarded throughout; mandatory only for final80cm certification"
+      },
+      "always_required": "Survival, full student measurement, tracking, contact, suspension, forelimb use, ROM, active distance, raw request cap and measured joint limits"
+    },
+    "fine_tuning": {
+      "parent_iteration_zero_based": 1999,
+      "parent_stage_iterations": 2000,
+      "actor_critic_restored": true,
+      "noise_restored": true,
+      "optimizer_reset": true,
+      "stage_iteration_start": 0,
+      "actor_observations": [
+        49,
+        49
+      ],
+      "critic_observations": [
+        64,
+        64
+      ],
+      "added_heading_columns_zero": false,
+      "parent_cumulative_iterations": 48000
+    },
+    "staged_speed_adaptation": {
+      "version": 1,
+      "initial_std": [
+        0.31227511167526245,
+        0.3660960793495178,
+        0.2701610028743744,
+        0.3040887713432312,
+        0.2720598578453064,
+        0.21954414248466492,
+        0.28878769278526306,
+        0.24216581881046295,
+        0.334380179643631,
+        0.3709700405597687,
+        0.22299741208553314,
+        0.2294725775718689
+      ],
+      "initial_mean": 0.28608325123786926,
+      "target_mean": 0.2,
+      "last_collected_rollout_index": 0,
+      "noise_mean": 0.28608325123786926,
+      "ramp_fraction": 0.0,
+      "ramp_iterations": 500,
+      "calls": 0,
+      "entropy_coef": 0.0,
+      "std_trainable": false,
+      "policy_mean_and_critic_preserved": true,
+      "actions_and_log_probabilities_unmodified": true,
+      "kl_diagnostics": "Full stored rollout pre/post PPO; not adaptive scheduler minibatch KL",
+      "optimizer": "Fresh Adam; original adaptive LR1e-4 and desired_KL retained"
+    },
+    "staged_adaptation_checkpoints": {
+      "model_0.pt": {
+        "initial_std": [
+          0.31227511167526245,
+          0.3660960793495178,
+          0.2701610028743744,
+          0.3040887713432312,
+          0.2720598578453064,
+          0.21954414248466492,
+          0.28878769278526306,
+          0.24216581881046295,
+          0.334380179643631,
+          0.3709700405597687,
+          0.22299741208553314,
+          0.2294725775718689
+        ],
+        "initial_mean": 0.28608325123786926,
+        "target_mean": 0.2,
+        "last_collected_rollout_index": 0,
+        "noise_mean": 0.28608325123786926,
+        "ramp_fraction": 0.0,
+        "ramp_iterations": 500,
+        "calls": 24,
+        "entropy_coef": 0.0,
+        "std_trainable": false
+      },
+      "model_500.pt": {
+        "initial_std": [
+          0.31227511167526245,
+          0.3660960793495178,
+          0.2701610028743744,
+          0.3040887713432312,
+          0.2720598578453064,
+          0.21954414248466492,
+          0.28878769278526306,
+          0.24216581881046295,
+          0.334380179643631,
+          0.3709700405597687,
+          0.22299741208553314,
+          0.2294725775718689
+        ],
+        "initial_mean": 0.28608325123786926,
+        "target_mean": 0.2,
+        "last_collected_rollout_index": 500,
+        "noise_mean": 0.2,
+        "ramp_fraction": 1.0,
+        "ramp_iterations": 500,
+        "calls": 12024,
+        "entropy_coef": 0.0,
+        "std_trainable": false
+      },
+      "model_1000.pt": {
+        "initial_std": [
+          0.31227511167526245,
+          0.3660960793495178,
+          0.2701610028743744,
+          0.3040887713432312,
+          0.2720598578453064,
+          0.21954414248466492,
+          0.28878769278526306,
+          0.24216581881046295,
+          0.334380179643631,
+          0.3709700405597687,
+          0.22299741208553314,
+          0.2294725775718689
+        ],
+        "initial_mean": 0.28608325123786926,
+        "target_mean": 0.2,
+        "last_collected_rollout_index": 1000,
+        "noise_mean": 0.2,
+        "ramp_fraction": 1.0,
+        "ramp_iterations": 500,
+        "calls": 24024,
+        "entropy_coef": 0.0,
+        "std_trainable": false
+      },
+      "model_1500.pt": {
+        "initial_std": [
+          0.31227511167526245,
+          0.3660960793495178,
+          0.2701610028743744,
+          0.3040887713432312,
+          0.2720598578453064,
+          0.21954414248466492,
+          0.28878769278526306,
+          0.24216581881046295,
+          0.334380179643631,
+          0.3709700405597687,
+          0.22299741208553314,
+          0.2294725775718689
+        ],
+        "initial_mean": 0.28608325123786926,
+        "target_mean": 0.2,
+        "last_collected_rollout_index": 1500,
+        "noise_mean": 0.2,
+        "ramp_fraction": 1.0,
+        "ramp_iterations": 500,
+        "calls": 36024,
+        "entropy_coef": 0.0,
+        "std_trainable": false
+      },
+      "model_1999.pt": {
+        "initial_std": [
+          0.31227511167526245,
+          0.3660960793495178,
+          0.2701610028743744,
+          0.3040887713432312,
+          0.2720598578453064,
+          0.21954414248466492,
+          0.28878769278526306,
+          0.24216581881046295,
+          0.334380179643631,
+          0.3709700405597687,
+          0.22299741208553314,
+          0.2294725775718689
+        ],
+        "initial_mean": 0.28608325123786926,
+        "target_mean": 0.2,
+        "last_collected_rollout_index": 1999,
+        "noise_mean": 0.2,
+        "ramp_fraction": 1.0,
+        "ramp_iterations": 500,
+        "calls": 48000,
+        "entropy_coef": 0.0,
+        "std_trainable": false
+      },
+      "model_final.pt": {
+        "initial_std": [
+          0.31227511167526245,
+          0.3660960793495178,
+          0.2701610028743744,
+          0.3040887713432312,
+          0.2720598578453064,
+          0.21954414248466492,
+          0.28878769278526306,
+          0.24216581881046295,
+          0.334380179643631,
+          0.3709700405597687,
+          0.22299741208553314,
+          0.2294725775718689
+        ],
+        "initial_mean": 0.28608325123786926,
+        "target_mean": 0.2,
+        "last_collected_rollout_index": 1999,
+        "noise_mean": 0.2,
+        "ramp_fraction": 1.0,
+        "ramp_iterations": 500,
+        "calls": 48000,
+        "entropy_coef": 0.0,
+        "std_trainable": false
+      }
+    },
+    "staged_checkpoints": {
+      "model_0.pt": {
+        "index": 1,
+        "goal": {
+          "name": "speed_275",
+          "speed": 2.75,
+          "leap": 0.18,
+          "alpha": 0.0,
+          "period": 0.385,
+          "touchdown": [
+            0.25,
+            0.5,
+            0.0,
+            0.125
+          ],
+          "duty": [
+            0.45,
+            0.3,
+            0.35,
+            0.45
+          ],
+          "air_seconds": 0.077,
+          "flight_min_seconds": 0.06,
+          "flight_prepare_seconds": 0.08,
+          "flight_recovery_seconds": 0.08,
+          "flight_takeoff_vz": 0.4,
+          "flight_max_landing_vz": 1.2
+        },
+        "highest_confirmed_stage": 0,
+        "sha256": "128af4b1f29f6a3e2e48eb7249ffd83424bd586f61415e9b224804ea301d1bb1",
+        "stage_iterations": 1,
+        "cumulative_iterations": 48001
+      },
+      "model_500.pt": {
+        "index": 1,
+        "goal": {
+          "name": "speed_275",
+          "speed": 2.75,
+          "leap": 0.18,
+          "alpha": 0.0,
+          "period": 0.385,
+          "touchdown": [
+            0.25,
+            0.5,
+            0.0,
+            0.125
+          ],
+          "duty": [
+            0.45,
+            0.3,
+            0.35,
+            0.45
+          ],
+          "air_seconds": 0.077,
+          "flight_min_seconds": 0.06,
+          "flight_prepare_seconds": 0.08,
+          "flight_recovery_seconds": 0.08,
+          "flight_takeoff_vz": 0.4,
+          "flight_max_landing_vz": 1.2
+        },
+        "highest_confirmed_stage": 0,
+        "sha256": "569af60243d5f29d218e865a4b1a6fdc63a0a6617d6f04ca4d8e589929a0d07f",
+        "stage_iterations": 501,
+        "cumulative_iterations": 48501
+      },
+      "model_1000.pt": {
+        "index": 1,
+        "goal": {
+          "name": "speed_275",
+          "speed": 2.75,
+          "leap": 0.18,
+          "alpha": 0.0,
+          "period": 0.385,
+          "touchdown": [
+            0.25,
+            0.5,
+            0.0,
+            0.125
+          ],
+          "duty": [
+            0.45,
+            0.3,
+            0.35,
+            0.45
+          ],
+          "air_seconds": 0.077,
+          "flight_min_seconds": 0.06,
+          "flight_prepare_seconds": 0.08,
+          "flight_recovery_seconds": 0.08,
+          "flight_takeoff_vz": 0.4,
+          "flight_max_landing_vz": 1.2
+        },
+        "highest_confirmed_stage": 0,
+        "sha256": "3b01a49bc7975845caefa187aef0e108dd5c2f1b3159b7812649074a63d7eb46",
+        "stage_iterations": 1001,
+        "cumulative_iterations": 49001
+      },
+      "model_1500.pt": {
+        "index": 1,
+        "goal": {
+          "name": "speed_275",
+          "speed": 2.75,
+          "leap": 0.18,
+          "alpha": 0.0,
+          "period": 0.385,
+          "touchdown": [
+            0.25,
+            0.5,
+            0.0,
+            0.125
+          ],
+          "duty": [
+            0.45,
+            0.3,
+            0.35,
+            0.45
+          ],
+          "air_seconds": 0.077,
+          "flight_min_seconds": 0.06,
+          "flight_prepare_seconds": 0.08,
+          "flight_recovery_seconds": 0.08,
+          "flight_takeoff_vz": 0.4,
+          "flight_max_landing_vz": 1.2
+        },
+        "highest_confirmed_stage": 0,
+        "sha256": "9c4565dae5515266ba7091ea9dbaea39ae5dca253f050d02f64abe71fd2b8d76",
+        "stage_iterations": 1501,
+        "cumulative_iterations": 49501
+      },
+      "model_1999.pt": {
+        "index": 1,
+        "goal": {
+          "name": "speed_275",
+          "speed": 2.75,
+          "leap": 0.18,
+          "alpha": 0.0,
+          "period": 0.385,
+          "touchdown": [
+            0.25,
+            0.5,
+            0.0,
+            0.125
+          ],
+          "duty": [
+            0.45,
+            0.3,
+            0.35,
+            0.45
+          ],
+          "air_seconds": 0.077,
+          "flight_min_seconds": 0.06,
+          "flight_prepare_seconds": 0.08,
+          "flight_recovery_seconds": 0.08,
+          "flight_takeoff_vz": 0.4,
+          "flight_max_landing_vz": 1.2
+        },
+        "highest_confirmed_stage": 0,
+        "sha256": "0f4e8e6d65e98bfe9384879e798706d5d3defb1607fc5d4ca86ecd35ddfe9106",
+        "stage_iterations": 2000,
+        "cumulative_iterations": 50000
+      },
+      "model_final.pt": {
+        "index": 1,
+        "goal": {
+          "name": "speed_275",
+          "speed": 2.75,
+          "leap": 0.18,
+          "alpha": 0.0,
+          "period": 0.385,
+          "touchdown": [
+            0.25,
+            0.5,
+            0.0,
+            0.125
+          ],
+          "duty": [
+            0.45,
+            0.3,
+            0.35,
+            0.45
+          ],
+          "air_seconds": 0.077,
+          "flight_min_seconds": 0.06,
+          "flight_prepare_seconds": 0.08,
+          "flight_recovery_seconds": 0.08,
+          "flight_takeoff_vz": 0.4,
+          "flight_max_landing_vz": 1.2
+        },
+        "highest_confirmed_stage": 0,
+        "sha256": "93394343a7faf50f848e94ec4138c6a354641addb5b0d4e0b65db3f7ad4674a2",
+        "stage_iterations": 2000,
+        "cumulative_iterations": 50000
+      }
+    },
+    "trained_staged_index": 1,
+    "trained_speed_cap": 2.75,
+    "stage_iterations": 2000,
+    "cumulative_iterations": 50000,
+    "highest_confirmed_speed": 2.5
+  },
+  "iterations": 2000,
+  "training_complete": true,
+  "inherited_iterations": 48000,
+  "cumulative_iterations": 50000,
+  "new_transitions": 12288000,
+  "first_scalar_time": "2026-11-11T15:50:26.270869+09:00",
+  "last_scalar_time": "2026-11-11T16:19:55.188056+09:00",
+  "policy_dt": 0.02,
+  "tensorboard": {
+    "Episode_Reward/track_lin_vel_xy": {
+      "count": 2000,
+      "first": 0.0,
+      "last": 2.417614459991455,
+      "last_100_mean": 1.9343294368684292
+    },
+    "Episode_Reward/track_ang_vel_z": {
+      "count": 2000,
+      "first": 0.0,
+      "last": 0.6350913047790527,
+      "last_100_mean": 0.5050091259926558
+    },
+    "Episode_Reward/base_linear_velocity": {
+      "count": 2000,
+      "first": 0.0,
+      "last": -0.02128569781780243,
+      "last_100_mean": -0.016619117623195054
+    },
+    "Episode_Reward/base_angular_velocity": {
+      "count": 2000,
+      "first": 0.0,
+      "last": -0.031179828569293022,
+      "last_100_mean": -0.02690215816255659
+    },
+    "Episode_Reward/joint_vel": {
+      "count": 2000,
+      "first": 0.0,
+      "last": -0.655591607093811,
+      "last_100_mean": -0.4953170115919784
+    },
+    "Episode_Reward/joint_acc": {
+      "count": 2000,
+      "first": 0.0,
+      "last": -0.31234100461006165,
+      "last_100_mean": -0.23435834101517686
+    },
+    "Episode_Reward/joint_torques": {
+      "count": 2000,
+      "first": 0.0,
+      "last": -0.1741032600402832,
+      "last_100_mean": -0.13097426433116197
+    },
+    "Episode_Reward/action_rate": {
+      "count": 2000,
+      "first": 0.0,
+      "last": -0.034493327140808105,
+      "last_100_mean": -0.026088991855503993
+    },
+    "Episode_Reward/dof_pos_limits": {
+      "count": 2000,
+      "first": 0.0,
+      "last": -7.611247632155482e-09,
+      "last_100_mean": -8.134010673953307e-07
+    },
+    "Episode_Reward/energy": {
+      "count": 2000,
+      "first": 0.0,
+      "last": -0.008099665865302086,
+      "last_100_mean": -0.006024061338830506
+    },
+    "Episode_Reward/feet_slide": {
+      "count": 2000,
+      "first": 0.0,
+      "last": -0.15731748938560486,
+      "last_100_mean": -0.12027138208039105
+    },
+    "Episode_Reward/undesired_contacts": {
+      "count": 2000,
+      "first": 0.0,
+      "last": -0.07161729037761688,
+      "last_100_mean": -0.055112292733974756
+    },
+    "Episode_Reward/gallop_startup_failure": {
+      "count": 2000,
+      "first": 0.0,
+      "last": 0.0,
+      "last_100_mean": -0.004166666828095913
+    },
+    "Episode_Reward/gallop_contact": {
+      "count": 2000,
+      "first": 0.0,
+      "last": 1.5716780424118042,
+      "last_100_mean": 1.2391049725562333
+    },
+    "Episode_Reward/gallop_order": {
+      "count": 2000,
+      "first": 0.0,
+      "last": 8.701908313923923e-07,
+      "last_100_mean": 4.533209034143226e-06
+    },
+    "Episode_Reward/gallop_swing": {
+      "count": 2000,
+      "first": 0.0,
+      "last": 0.2848362326622009,
+      "last_100_mean": 0.22439164666458963
+    },
+    "Episode_Reward/gallop_joint": {
+      "count": 2000,
+      "first": 0.0,
+      "last": 0.24361340701580048,
+      "last_100_mean": 0.18402681091800333
+    },
+    "Episode_Reward/gallop_motion": {
+      "count": 2000,
+      "first": 0.0,
+      "last": 0.797304630279541,
+      "last_100_mean": 0.604347033649683
+    },
+    "Episode_Reward/gallop_flight": {
+      "count": 2000,
+      "first": 0.0,
+      "last": 0.1039857268333435,
+      "last_100_mean": 0.0801513718161732
+    },
+    "Episode_Reward/gallop_fore_use": {
+      "count": 2000,
+      "first": 0.0,
+      "last": 0.7984414100646973,
+      "last_100_mean": 0.6044671077281236
+    },
+    "Episode_Reward/gallop_attitude": {
+      "count": 2000,
+      "first": 0.0,
+      "last": 0.0,
+      "last_100_mean": 0.0
+    },
+    "Episode_Reward/gallop_pair_joint": {
+      "count": 2000,
+      "first": 0.0,
+      "last": -0.1450718343257904,
+      "last_100_mean": -0.11247729423455893
+    },
+    "Episode_Reward/gallop_pair_rom": {
+      "count": 2000,
+      "first": 0.0,
+      "last": -0.00026035646442323923,
+      "last_100_mean": -0.00017202225722030563
+    },
+    "Episode_Reward/gallop_pair_load": {
+      "count": 2000,
+      "first": 0.0,
+      "last": -0.0003881626471411437,
+      "last_100_mean": -0.0018346478606690653
+    },
+    "Episode_Reward/gallop_pair_stance": {
+      "count": 2000,
+      "first": 0.0,
+      "last": -2.96424047974142e-07,
+      "last_100_mean": -9.822651245897873e-05
+    },
+    "Episode_Reward/gallop_leap_distance": {
+      "count": 2000,
+      "first": 0.0,
+      "last": 3.2628564834594727,
+      "last_100_mean": 2.5395412155985833
+    },
+    "Episode_Reward/gallop_pair_hip": {
+      "count": 2000,
+      "first": 0.0,
+      "last": -0.004615734331309795,
+      "last_100_mean": -0.0031721437227679415
+    },
+    "Episode_Reward/gallop_yaw_heading": {
+      "count": 2000,
+      "first": 0.0,
+      "last": -0.07966150343418121,
+      "last_100_mean": -0.04533073398750275
+    },
+    "Episode_Reward/gallop_roll_pitch_quiet": {
+      "count": 2000,
+      "first": 0.0,
+      "last": 2.2507400512695312,
+      "last_100_mean": 1.7373551550507544
+    },
+    "Episode_Reward/gallop_front_width": {
+      "count": 2000,
+      "first": 0.0,
+      "last": 2.0268712043762207,
+      "last_100_mean": 1.6032921439409256
+    },
+    "Episode_Reward/gallop_hind_width": {
+      "count": 2000,
+      "first": 0.0,
+      "last": 2.5590274333953857,
+      "last_100_mean": 1.978982303440571
+    },
+    "Episode_Reward/gallop_forward_progress": {
+      "count": 2000,
+      "first": 0.0,
+      "last": 1.2582721710205078,
+      "last_100_mean": 1.013057901978027
+    },
+    "Episode_Reward/gallop_yaw_damping": {
+      "count": 2000,
+      "first": 0.0,
+      "last": -0.26400503516197205,
+      "last_100_mean": -0.1991243779286742
+    },
+    "Episode_Reward/gallop_target_excess": {
+      "count": 2000,
+      "first": 0.0,
+      "last": -0.004992747213691473,
+      "last_100_mean": -0.0035803730023326354
+    },
+    "Episode_Reward/gallop_flight_drive": {
+      "count": 2000,
+      "first": 0.0,
+      "last": 0.2303965985774994,
+      "last_100_mean": 0.16796466374769806
+    },
+    "Episode_Reward/gallop_flight_clearance": {
+      "count": 2000,
+      "first": 0.0,
+      "last": 0.24771976470947266,
+      "last_100_mean": 0.18645614447072148
+    },
+    "Episode_Reward/gallop_flight_support": {
+      "count": 2000,
+      "first": 0.0,
+      "last": -0.06780137866735458,
+      "last_100_mean": -0.03401902106590569
+    },
+    "Episode_Reward/gallop_flight_balance": {
+      "count": 2000,
+      "first": 0.0,
+      "last": -0.2822922468185425,
+      "last_100_mean": -0.23006855878978968
+    },
+    "Episode_Reward/gallop_flight_takeoff": {
+      "count": 2000,
+      "first": 0.0,
+      "last": 0.8015736937522888,
+      "last_100_mean": 0.5906455689668655
+    },
+    "Episode_Reward/gallop_flight_landing": {
+      "count": 2000,
+      "first": 0.0,
+      "last": 3.3679957389831543,
+      "last_100_mean": 2.6464755561947824
+    },
+    "Episode_Reward/gallop_flight_impact": {
+      "count": 2000,
+      "first": 0.0,
+      "last": -0.012322655878961086,
+      "last_100_mean": -0.008999162602704018
+    },
+    "Episode_Reward/gallop_flight_clip": {
+      "count": 2000,
+      "first": 0.0,
+      "last": -0.02996680699288845,
+      "last_100_mean": -0.024638475195970386
+    },
+    "Episode_Reward/gallop_guarded_projection": {
+      "count": 2000,
+      "first": 0.0,
+      "last": -1.3091590404510498,
+      "last_100_mean": -0.9908546346053481
+    },
+    "Episode_Reward/gallop_guarded_actual": {
+      "count": 2000,
+      "first": 0.0,
+      "last": -1.4216089416763111e-10,
+      "last_100_mean": -1.9343012556463082e-07
+    },
+    "Episode_Reward/gallop_guarded_front_height": {
+      "count": 2000,
+      "first": 0.0,
+      "last": -0.07802928984165192,
+      "last_100_mean": -0.055789191410876814
+    },
+    "Episode_Reward/gallop_guarded_hind_height": {
+      "count": 2000,
+      "first": 0.0,
+      "last": -0.03400110453367233,
+      "last_100_mean": -0.034885725150816144
+    },
+    "Metrics/base_velocity/error_vel_xy": {
+      "count": 2000,
+      "first": 0.0,
+      "last": 0.6500371098518372,
+      "last_100_mean": 0.49454143330454825
+    },
+    "Metrics/base_velocity/error_vel_yaw": {
+      "count": 2000,
+      "first": 0.0,
+      "last": 0.5209493637084961,
+      "last_100_mean": 0.3973990224301815
+    },
+    "Episode_Termination/time_out": {
+      "count": 2000,
+      "first": 0.0,
+      "last": 0.859375,
+      "last_100_mean": 0.873523775935173
+    },
+    "Episode_Termination/base_contact": {
+      "count": 2000,
+      "first": 0.0,
+      "last": 0.0,
+      "last_100_mean": 0.0
+    },
+    "Episode_Termination/bad_orientation": {
+      "count": 2000,
+      "first": 0.0,
+      "last": 0.1015625,
+      "last_100_mean": 0.09637858189642429
+    },
+    "Episode_Termination/gallop_startup_deadline": {
+      "count": 2000,
+      "first": 0.0,
+      "last": 0.0078125,
+      "last_100_mean": 0.004537760419771076
+    },
+    "Episode_Termination/guarded_joint_limit": {
+      "count": 2000,
+      "first": 0.0,
+      "last": 0.0,
+      "last_100_mean": 0.0
+    },
+    "Episode_Termination/gallop_height": {
+      "count": 2000,
+      "first": 0.0,
+      "last": 0.03125,
+      "last_100_mean": 0.025852864738553763
+    },
+    "Loss/value_function": {
+      "count": 2000,
+      "first": 1.0328470468521118,
+      "last": 1.9476044178009033,
+      "last_100_mean": 1.700021324157715
+    },
+    "Loss/surrogate": {
+      "count": 2000,
+      "first": 0.007597420364618301,
+      "last": -0.00879766047000885,
+      "last_100_mean": -0.007097975223678077
+    },
+    "Loss/entropy": {
+      "count": 2000,
+      "first": 1.821550726890564,
+      "last": -2.4740352630615234,
+      "last_100_mean": -2.4740352630615234
+    },
+    "Loss/learning_rate": {
+      "count": 2000,
+      "first": 1.316872385359602e-05,
+      "last": 9.999999747378752e-06,
+      "last_100_mean": 1.6437499780295184e-05
+    },
+    "Policy/mean_noise_std": {
+      "count": 2000,
+      "first": 0.2860832214355469,
+      "last": 0.20000000298023224,
+      "last_100_mean": 0.20000000298023224
+    },
+    "Perf/total_fps": {
+      "count": 2000,
+      "first": 5559.0,
+      "last": 7024.0,
+      "last_100_mean": 7007.13
+    },
+    "Perf/collection time": {
+      "count": 2000,
+      "first": 0.983588695526123,
+      "last": 0.8151137828826904,
+      "last_100_mean": 0.8278485345840454
+    },
+    "Perf/learning_time": {
+      "count": 2000,
+      "first": 0.12150764465332031,
+      "last": 0.0596003532409668,
+      "last_100_mean": 0.04910496234893799
+    },
+    "Gallop/speed_cap": {
+      "count": 2000,
+      "first": 2.75,
+      "last": 2.75,
+      "last_100_mean": 2.75
+    },
+    "Gallop/gait_weight": {
+      "count": 2000,
+      "first": 1.0,
+      "last": 1.0,
+      "last_100_mean": 1.0
+    },
+    "Gallop/success_rate": {
+      "count": 2000,
+      "first": 0.0,
+      "last": 0.7808988690376282,
+      "last_100_mean": 0.7339672440290451
+    },
+    "Staged/index": {
+      "count": 2000,
+      "first": 1.0,
+      "last": 1.0,
+      "last_100_mean": 1.0
+    },
+    "Staged/leap_target": {
+      "count": 2000,
+      "first": 0.18000000715255737,
+      "last": 0.18000000715255737,
+      "last_100_mean": 0.18000000715255737
+    },
+    "Staged/air_seconds": {
+      "count": 2000,
+      "first": 0.07699999958276749,
+      "last": 0.07699999958276749,
+      "last_100_mean": 0.07699999958276749
+    },
+    "Staged/cohort_completed": {
+      "count": 2000,
+      "first": 0.0,
+      "last": 178.0,
+      "last_100_mean": 129.59
+    },
+    "Staged/highest_confirmed_index": {
+      "count": 2000,
+      "first": 0.0,
+      "last": 0.0,
+      "last_100_mean": 0.0
+    },
+    "StagedAdapt/noise_std_mean": {
+      "count": 2000,
+      "first": 0.28608325123786926,
+      "last": 0.20000000298023224,
+      "last_100_mean": 0.20000000298023224
+    },
+    "StagedAdapt/noise_ramp_fraction": {
+      "count": 2000,
+      "first": 0.0,
+      "last": 1.0,
+      "last_100_mean": 1.0
+    },
+    "StagedAdapt/entropy_coef": {
+      "count": 2000,
+      "first": 0.0,
+      "last": 0.0,
+      "last_100_mean": 0.0
+    },
+    "StagedAdapt/learning_rate": {
+      "count": 2000,
+      "first": 1.316872385359602e-05,
+      "last": 9.999999747378752e-06,
+      "last_100_mean": 1.6437499780295184e-05
+    },
+    "StagedAdapt/learning_rate_at_floor": {
+      "count": 2000,
+      "first": 0.0,
+      "last": 1.0,
+      "last_100_mean": 0.68
+    },
+    "StagedAdapt/rollout_kl_pre_update": {
+      "count": 2000,
+      "first": 0.0,
+      "last": 0.0,
+      "last_100_mean": 0.0
+    },
+    "StagedAdapt/rollout_kl_post_update": {
+      "count": 2000,
+      "first": 0.006769591011106968,
+      "last": 0.010572883300483227,
+      "last_100_mean": 0.011523868353106082
+    },
+    "StagedAdapt/rollout_kl_samples": {
+      "count": 2000,
+      "first": 6144.0,
+      "last": 6144.0,
+      "last_100_mean": 6144.0
+    },
+    "Train/mean_reward": {
+      "count": 1995,
+      "first": 23.385536193847656,
+      "last": 557.2984619140625,
+      "last_100_mean": 469.49419921875
+    },
+    "Train/mean_episode_length": {
+      "count": 1995,
+      "first": 143.0,
+      "last": 1409.1800537109375,
+      "last_100_mean": 1227.3997961425782
+    },
+    "Train/mean_reward/time": {
+      "count": 1995,
+      "first": 23.385536193847656,
+      "last": 557.2984619140625,
+      "last_100_mean": 469.49419921875
+    },
+    "Train/mean_episode_length/time": {
+      "count": 1995,
+      "first": 143.0,
+      "last": 1409.1800537109375,
+      "last_100_mean": 1227.3997961425782
+    },
+    "Gallop/last_vx_rmse": {
+      "count": 1995,
+      "first": 0.0,
+      "last": 0.22468207776546478,
+      "last_100_mean": 0.17382065325975418
+    },
+    "Gallop/last_contact_accuracy": {
+      "count": 1995,
+      "first": 0.0,
+      "last": 0.7789179086685181,
+      "last_100_mean": 0.6670289951562881
+    },
+    "Gallop/last_order_accuracy": {
+      "count": 1995,
+      "first": 0.0,
+      "last": 0.04560260474681854,
+      "last_100_mean": 0.052747687101364134
+    },
+    "Gallop/last_flight_fraction": {
+      "count": 1995,
+      "first": 0.0,
+      "last": 0.9636363387107849,
+      "last_100_mean": 0.8176355069875717
+    },
+    "Gallop/last_rom_fraction": {
+      "count": 1995,
+      "first": 0.0,
+      "last": 1.0,
+      "last_100_mean": 0.8299969381093979
+    },
+    "Gallop/last_action_clip_fraction": {
+      "count": 1995,
+      "first": 0.0,
+      "last": 0.0330379456281662,
+      "last_100_mean": 0.02647606672719121
+    },
+    "Gallop/last_pair_valid_cycles": {
+      "count": 1995,
+      "first": 2.0,
+      "last": 71.0,
+      "last_100_mean": 59.59
+    },
+    "Gallop/last_pair_joint_cost": {
+      "count": 1995,
+      "first": 0.0,
+      "last": 0.17148053646087646,
+      "last_100_mean": 0.15248562827706336
+    },
+    "Gallop/last_pair_rom_cost": {
+      "count": 1995,
+      "first": 0.0,
+      "last": 0.0,
+      "last_100_mean": 5.828589610246126e-07
+    },
+    "Gallop/last_pair_load_cost": {
+      "count": 1995,
+      "first": 0.0,
+      "last": 0.0011321492493152618,
+      "last_100_mean": 0.0014028406937723048
+    },
+    "Gallop/last_pair_stance_cost": {
+      "count": 1995,
+      "first": 0.0,
+      "last": 0.0,
+      "last_100_mean": 0.0
+    },
+    "Gallop/last_pair_hip_cost": {
+      "count": 1995,
+      "first": 0.0,
+      "last": 0.004417955409735441,
+      "last_100_mean": 0.004096240988001227
+    },
+    "Gallop/last_stabilization_front_support_samples": {
+      "count": 1995,
+      "first": 0.0,
+      "last": 377.0,
+      "last_100_mean": 314.52
+    },
+    "Gallop/last_stabilization_front_width_fraction": {
+      "count": 1995,
+      "first": 0.0,
+      "last": 0.8090185523033142,
+      "last_100_mean": 0.6910575002431869
+    },
+    "Gallop/last_stabilization_hind_support_samples": {
+      "count": 1995,
+      "first": 0.0,
+      "last": 618.0,
+      "last_100_mean": 503.39
+    },
+    "Gallop/last_stabilization_hind_width_fraction": {
+      "count": 1995,
+      "first": 0.0,
+      "last": 0.8786407709121704,
+      "last_100_mean": 0.703447767496109
+    },
+    "Gallop/last_stabilization_pose": {
+      "count": 1995,
+      "first": 1.0,
+      "last": 1.0,
+      "last_100_mean": 1.0
+    },
+    "Gallop/last_stabilization_width": {
+      "count": 1995,
+      "first": 0.0,
+      "last": 1.0,
+      "last_100_mean": 0.56
+    },
+    "Gallop/last_stabilization_landing": {
+      "count": 1995,
+      "first": 0.0,
+      "last": 0.0,
+      "last_100_mean": 0.45
+    },
+    "Gallop/last_stabilization_distance": {
+      "count": 1995,
+      "first": 0.0,
+      "last": 1.0,
+      "last_100_mean": 0.82
+    },
+    "Gallop/last_stabilization_measured": {
+      "count": 1995,
+      "first": 0.0,
+      "last": 1.0,
+      "last_100_mean": 0.83
+    },
+    "Gallop/last_stabilization_landing_fraction": {
+      "count": 1995,
+      "first": 0.0,
+      "last": 0.7857142686843872,
+      "last_100_mean": 0.66995674431324
+    },
+    "Gallop/last_stabilization_target_speed": {
+      "count": 1995,
+      "first": 2.75,
+      "last": 2.75,
+      "last_100_mean": 2.75
+    },
+    "Gallop/last_stabilization_leap_target": {
+      "count": 1995,
+      "first": 0.18000000715255737,
+      "last": 0.18000000715255737,
+      "last_100_mean": 0.18000000715255737
+    },
+    "Gallop/last_stabilization_excess_cost": {
+      "count": 1995,
+      "first": 0.0,
+      "last": 0.002798226196318865,
+      "last_100_mean": 0.0023098986386321484
+    },
+    "Gallop/last_stabilization_highest_confirmed_speed": {
+      "count": 1995,
+      "first": 2.5,
+      "last": 2.5,
+      "last_100_mean": 2.5
+    },
+    "Gallop/last_leap_events": {
+      "count": 1995,
+      "first": 0.0,
+      "last": 57.0,
+      "last_100_mean": 47.17
+    },
+    "Gallop/last_leap_qualified_events": {
+      "count": 1995,
+      "first": 0.0,
+      "last": 54.0,
+      "last_100_mean": 42.5
+    },
+    "Gallop/last_leap_qualified_fraction": {
+      "count": 1995,
+      "first": 0.0,
+      "last": 0.9473684430122375,
+      "last_100_mean": 0.7489400219917297
+    },
+    "Gallop/last_leap_distance_mean": {
+      "count": 1995,
+      "first": 0.0,
+      "last": 0.20886662602424622,
+      "last_100_mean": 0.17213485777378082
+    },
+    "Gallop/last_leap_distance_max": {
+      "count": 1995,
+      "first": 0.0,
+      "last": 0.24276717007160187,
+      "last_100_mean": 0.2051071548461914
+    },
+    "Gallop/last_leap_air_seconds_mean": {
+      "count": 1995,
+      "first": 0.0,
+      "last": 0.08605263382196426,
+      "last_100_mean": 0.06985678732395172
+    },
+    "Gallop/last_leap_reward_points": {
+      "count": 1995,
+      "first": 0.0,
+      "last": 102.54244232177734,
+      "last_100_mean": 84.2880850982666
+    },
+    "Gallop/last_leap_reward_steps": {
+      "count": 1995,
+      "first": 0.0,
+      "last": 44.0,
+      "last_100_mean": 36.77
+    },
+    "Gallop/last_leap_physics_samples": {
+      "count": 1995,
+      "first": 576.0,
+      "last": 6000.0,
+      "last_100_mean": 5110.08
+    },
+    "Gallop/last_guarded_limits": {
+      "count": 1995,
+      "first": 0.0,
+      "last": 1.0,
+      "last_100_mean": 0.83
+    },
+    "Gallop/last_guarded_feet": {
+      "count": 1995,
+      "first": 0.0,
+      "last": 0.0,
+      "last_100_mean": 0.62
+    },
+    "Gallop/last_guarded_intervention": {
+      "count": 1995,
+      "first": 0.0,
+      "last": 0.5586130023002625,
+      "last_100_mean": 0.4645052444934845
+    },
+    "Gallop/last_guarded_actual": {
+      "count": 1995,
+      "first": 0.0,
+      "last": 0.0,
+      "last_100_mean": 0.0
+    },
+    "Gallop/last_guarded_front_high": {
+      "count": 1995,
+      "first": 0.0,
+      "last": 0.09794776141643524,
+      "last_100_mean": 0.06961273789405822
+    },
+    "Gallop/last_guarded_hind_high": {
+      "count": 1995,
+      "first": 0.0,
+      "last": 0.10960821062326431,
+      "last_100_mean": 0.07502366121858359
+    },
+    "Gallop/last_guarded_front_cost": {
+      "count": 1995,
+      "first": 0.0,
+      "last": 0.037742991000413895,
+      "last_100_mean": 0.0224230582639575
+    },
+    "Gallop/last_guarded_hind_cost": {
+      "count": 1995,
+      "first": 0.0,
+      "last": 0.02432050183415413,
+      "last_100_mean": 0.011219082958996296
+    },
+    "Gallop/last_guarded_tracking_rmse": {
+      "count": 1995,
+      "first": 0.0,
+      "last": 0.3912903368473053,
+      "last_100_mean": 0.3281849911808968
+    },
+    "Gallop/last_flight_takeoffs": {
+      "count": 1995,
+      "first": 0.0,
+      "last": 57.0,
+      "last_100_mean": 46.89
+    },
+    "Gallop/last_flight_landings": {
+      "count": 1995,
+      "first": 0.0,
+      "last": 56.0,
+      "last_100_mean": 45.82
+    },
+    "Gallop/last_flight_stable_landings": {
+      "count": 1995,
+      "first": 0.0,
+      "last": 44.0,
+      "last_100_mean": 36.79
+    },
+    "Gallop/last_flight_aborted_landings": {
+      "count": 1995,
+      "first": 0.0,
+      "last": 12.0,
+      "last_100_mean": 8.8
+    },
+    "Gallop/last_flight_landing_peak_force_bw": {
+      "count": 1995,
+      "first": 0.0,
+      "last": 1.6158299446105957,
+      "last_100_mean": 1.143075805902481
+    },
+    "Gallop/last_flight_landing_peak_down_vz": {
+      "count": 1995,
+      "first": 0.0,
+      "last": 0.7512860298156738,
+      "last_100_mean": 0.6221089017391205
+    },
+    "Gallop/last_flight_takeoff_vz_mean": {
+      "count": 1995,
+      "first": 0.0,
+      "last": 0.41698184609413147,
+      "last_100_mean": 0.33703583121299746
+    },
+    "Gallop/last_flight_balance_cost": {
+      "count": 1995,
+      "first": 0.1025620847940445,
+      "last": 0.07877518236637115,
+      "last_100_mean": 0.10280434593558312
+    },
+    "Gallop/last_flight_support_cost": {
+      "count": 1995,
+      "first": 0.0,
+      "last": 0.007276252843439579,
+      "last_100_mean": 0.004563359036110342
+    },
+    "Gallop/last_posture_seconds": {
+      "count": 1995,
+      "first": 2.879997968673706,
+      "last": 30.00049591064453,
+      "last_100_mean": 25.550811121463777
+    },
+    "Gallop/last_posture_rate_samples": {
+      "count": 1995,
+      "first": 143.0,
+      "last": 1499.0,
+      "last_100_mean": 1276.52
+    },
+    "Gallop/last_posture_yaw_rmse": {
+      "count": 1995,
+      "first": 0.032511644065380096,
+      "last": 0.05982469767332077,
+      "last_100_mean": 0.05029853723943233
+    },
+    "Gallop/last_posture_roll_rate_rms": {
+      "count": 1995,
+      "first": 1.023905634880066,
+      "last": 0.7006545066833496,
+      "last_100_mean": 0.8250989335775375
+    },
+    "Gallop/last_posture_pitch_rate_rms": {
+      "count": 1995,
+      "first": 0.9442437291145325,
+      "last": 0.5254241824150085,
+      "last_100_mean": 0.5820679798722267
+    },
+    "Gallop/last_posture_cross_speed_rms": {
+      "count": 1995,
+      "first": 0.05956810712814331,
+      "last": 0.11777529120445251,
+      "last_100_mean": 0.12229885395616293
+    },
+    "Gallop/last_posture_quiet_score": {
+      "count": 1995,
+      "first": 0.7471639513969421,
+      "last": 0.7426956295967102,
+      "last_100_mean": 0.7310015559196472
+    },
+    "Gallop/last_posture_front_width": {
+      "count": 1995,
+      "first": 0.3514719009399414,
+      "last": 0.25694218277931213,
+      "last_100_mean": 0.27902024328708647
+    },
+    "Gallop/last_posture_hind_width": {
+      "count": 1995,
+      "first": 0.3536109924316406,
+      "last": 0.2823491394519806,
+      "last_100_mean": 0.29312087923288344
+    },
+    "Gallop/last_posture_front_width_score": {
+      "count": 1995,
+      "first": 0.5091685056686401,
+      "last": 0.5808419585227966,
+      "last_100_mean": 0.5661446830630302
+    },
+    "Gallop/last_posture_hind_width_score": {
+      "count": 1995,
+      "first": 0.4169035255908966,
+      "last": 0.7343488931655884,
+      "last_100_mean": 0.6832726213335991
+    },
+    "Gallop/last_posture_forward_score": {
+      "count": 1995,
+      "first": 0.009493710473179817,
+      "last": 0.6584928631782532,
+      "last_100_mean": 0.5689809488225728
+    },
+    "Gallop/last_posture_along_speed": {
+      "count": 1995,
+      "first": 0.1325942724943161,
+      "last": 2.2142014503479004,
+      "last_100_mean": 1.8773505699634552
+    },
+    "Gallop/last_posture_pose_quality": {
+      "count": 1995,
+      "first": 0.8763071298599243,
+      "last": 0.9873095154762268,
+      "last_100_mean": 0.9579823505878449
+    },
+    "Gallop/last_posture_yaw_rate_rms": {
+      "count": 1995,
+      "first": 0.34897440671920776,
+      "last": 0.23998504877090454,
+      "last_100_mean": 0.2275249969959259
+    },
+    "Gallop/last_startup_stage": {
+      "count": 1995,
+      "first": 1.0,
+      "last": 3.0,
+      "last_100_mean": 2.66
+    },
+    "Gallop/last_startup_completed": {
+      "count": 1995,
+      "first": 0.0,
+      "last": 1.0,
+      "last_100_mean": 0.83
+    },
+    "Gallop/last_startup_failed": {
+      "count": 1995,
+      "first": 0.0,
+      "last": 0.0,
+      "last_100_mean": 0.0
+    },
+    "Gallop/last_startup_hold_seconds": {
+      "count": 1995,
+      "first": 1.079999566078186,
+      "last": 0.9799996018409729,
+      "last_100_mean": 1.0543995773792267
+    },
+    "Gallop/last_startup_walk_seconds": {
+      "count": 1995,
+      "first": 1.7799988985061646,
+      "last": 3.0199978351593018,
+      "last_100_mean": 2.9737978780269625
+    },
+    "Gallop/last_startup_blend_seconds": {
+      "count": 1995,
+      "first": 0.0,
+      "last": 3.5399973392486572,
+      "last_100_mean": 2.9523977875709533
+    },
+    "Gallop/last_startup_gallop_seconds": {
+      "count": 1995,
+      "first": 0.0,
+      "last": 22.440322875976562,
+      "last_100_mean": 18.550066261291505
+    },
+    "StagedAdapt/gallop_mean_vx": {
+      "count": 1995,
+      "first": 0.0,
+      "last": 2.597111701965332,
+      "last_100_mean": 2.1536933159828187
+    },
+    "StagedAdapt/gallop_mean_command_vx": {
+      "count": 1995,
+      "first": 0.0,
+      "last": 2.75,
+      "last_100_mean": 2.2825
+    },
+    "StagedAdapt/gallop_mean_vx_error": {
+      "count": 1995,
+      "first": 0.0,
+      "last": -0.15288829803466797,
+      "last_100_mean": -0.1288066840171814
+    },
+    "StagedAdapt/gallop_vx_std": {
+      "count": 1995,
+      "first": 0.0,
+      "last": 0.16468040645122528,
+      "last_100_mean": 0.11232603698968888
+    },
+    "StagedAdapt/gallop_cycle_mean_vx_rmse": {
+      "count": 1995,
+      "first": 0.0,
+      "last": 0.15975046157836914,
+      "last_100_mean": 0.1352474196255207
+    },
+    "StagedAdapt/gallop_speed_cycles": {
+      "count": 1995,
+      "first": 0.0,
+      "last": 55.0,
+      "last_100_mean": 45.41
+    },
+    "StagedAdapt/gallop_speed_samples": {
+      "count": 1995,
+      "first": 0.0,
+      "last": 1072.0,
+      "last_100_mean": 885.99
+    },
+    "StagedAdapt/gallop_metric_seconds": {
+      "count": 1995,
+      "first": 0.0,
+      "last": 21.439998626708984,
+      "last_100_mean": 17.719799613952638
+    }
+  },
+  "episodes": {
+    "total": 9684,
+    "eligible": 9684,
+    "eligible_statistics": {
+      "count": 9684,
+      "success_rate": 0.5899421726559273,
+      "criterion_pass_rates": {
+        "tracking": 0.8072077653862041,
+        "pattern": 0.8090665014456836,
+        "flight": 0.8092730276745147,
+        "motion": 0.8092730276745147,
+        "front_load": 0.8092730276745147,
+        "front_motion": 0.8092730276745147,
+        "front_cycle": 0.8092730276745147,
+        "stable": 0.520239570425444,
+        "mature": 0.8092730276745147,
+        "stabilization_pose": 0.9996902106567535,
+        "stabilization_width": 0.12711689384551839,
+        "stabilization_landing": 0.47996695580338705,
+        "stabilization_distance": 0.7929574555968608,
+        "stabilization_measured": 0.808963238331268,
+        "guarded_limits": 0.8088599752168525,
+        "guarded_feet": 0.5210656753407683
+      },
+      "measures": {
+        "vx_rmse": {
+          "mean": 0.18142909476920524,
+          "q10_q50_q90": [
+            0.0,
+            0.20299416035413742,
+            0.28536258339881904
+          ]
+        },
+        "contact_accuracy": {
+          "mean": 0.6568594212401065,
+          "q10_q50_q90": [
+            0.0,
+            0.809601902961731,
+            0.8221188843250274
+          ]
+        },
+        "order_accuracy": {
+          "mean": 0.05507815111130753,
+          "q10_q50_q90": [
+            0.025974025949835777,
+            0.03536977618932724,
+            0.1428571492433548
+          ]
+        },
+        "flight_fraction": {
+          "mean": 0.79542969327877,
+          "q10_q50_q90": [
+            0.0,
+            0.9818181991577148,
+            1.0
+          ]
+        },
+        "rom_fraction": {
+          "mean": 0.8092486792571384,
+          "q10_q50_q90": [
+            0.0,
+            1.0,
+            1.0
+          ]
+        },
+        "fore_load_share": {
+          "mean": 0.2837217367942399,
+          "q10_q50_q90": [
+            0.0,
+            0.34566178917884827,
+            0.36693360209465026
+          ]
+        },
+        "fore_min_load_share": {
+          "mean": 0.12028411268504727,
+          "q10_q50_q90": [
+            0.0,
+            0.14702680706977844,
+            0.15471502244472504
+          ]
+        },
+        "fore_rom_fraction": {
+          "mean": 0.8091787194009163,
+          "q10_q50_q90": [
+            0.0,
+            1.0,
+            1.0
+          ]
+        },
+        "fore_min_rom_fraction": {
+          "mean": 0.8090911685731085,
+          "q10_q50_q90": [
+            0.0,
+            1.0,
+            1.0
+          ]
+        },
+        "fore_participation": {
+          "mean": 0.8091507642562603,
+          "q10_q50_q90": [
+            0.0,
+            1.0,
+            1.0
+          ]
+        },
+        "attitude_rms": {
+          "mean": 0.043516641667359676,
+          "q10_q50_q90": [
+            0.0,
+            0.048483144491910934,
+            0.06756427437067032
+          ]
+        },
+        "action_clip_fraction": {
+          "mean": 0.026713643429430802,
+          "q10_q50_q90": [
+            0.0,
+            0.03157157823443413,
+            0.03687383309006691
+          ]
+        },
+        "terminated": {
+          "mean": 0.19227591904171829,
+          "q10_q50_q90": [
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        "timed_out": {
+          "mean": 0.8077240809582817,
+          "q10_q50_q90": [
+            0.0,
+            1.0,
+            1.0
+          ]
+        },
+        "pair_joint_cost": {
+          "mean": 0.16009931378328127,
+          "q10_q50_q90": [
+            0.0,
+            0.19422052055597305,
+            0.21201576590538027
+          ]
+        },
+        "pair_rom_cost": {
+          "mean": 4.598668117643579e-06,
+          "q10_q50_q90": [
+            0.0,
+            0.0,
+            8.798054568615046e-06
+          ]
+        },
+        "pair_load_cost": {
+          "mean": 0.0015261478044693347,
+          "q10_q50_q90": [
+            0.0,
+            0.0012816605158150196,
+            0.0034125974169000985
+          ]
+        },
+        "pair_stance_cost": {
+          "mean": 9.731561458459302e-07,
+          "q10_q50_q90": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "pair_hip_cost": {
+          "mean": 0.0055518752179552966,
+          "q10_q50_q90": [
+            0.0,
+            0.005857465090230107,
+            0.009867475554347041
+          ]
+        },
+        "pair_valid_cycles": {
+          "mean": 58.29347377116894,
+          "q10_q50_q90": [
+            4.0,
+            71.0,
+            71.0
+          ]
+        },
+        "leap_events": {
+          "mean": 46.028500619578686,
+          "q10_q50_q90": [
+            0.0,
+            56.0,
+            59.0
+          ]
+        },
+        "leap_qualified_events": {
+          "mean": 40.55576208178439,
+          "q10_q50_q90": [
+            0.0,
+            50.0,
+            55.0
+          ]
+        },
+        "leap_qualified_fraction": {
+          "mean": 0.7147279221846121,
+          "q10_q50_q90": [
+            0.0,
+            0.8793103694915771,
+            0.9821428656578064
+          ]
+        },
+        "leap_distance_mean": {
+          "mean": 0.16595477355549473,
+          "q10_q50_q90": [
+            0.0,
+            0.20170505344867706,
+            0.222243370115757
+          ]
+        },
+        "leap_distance_max": {
+          "mean": 0.20075270457394062,
+          "q10_q50_q90": [
+            0.0,
+            0.2402532771229744,
+            0.2714611202478409
+          ]
+        },
+        "leap_air_seconds_mean": {
+          "mean": 0.06785505144629521,
+          "q10_q50_q90": [
+            0.0,
+            0.08303572237491608,
+            0.08868422359228134
+          ]
+        },
+        "leap_reward_points": {
+          "mean": 80.58644025978694,
+          "q10_q50_q90": [
+            0.0,
+            96.99878692626953,
+            112.69617767333985
+          ]
+        },
+        "leap_reward_steps": {
+          "mean": 35.42998760842627,
+          "q10_q50_q90": [
+            0.0,
+            43.0,
+            48.0
+          ]
+        },
+        "leap_physics_samples": {
+          "mean": 5013.630318050393,
+          "q10_q50_q90": [
+            728.0,
+            6000.0,
+            6000.0
+          ]
+        },
+        "flight_takeoffs": {
+          "mean": 45.68917802560925,
+          "q10_q50_q90": [
+            0.0,
+            56.0,
+            59.0
+          ]
+        },
+        "flight_landings": {
+          "mean": 44.47490706319702,
+          "q10_q50_q90": [
+            0.0,
+            55.0,
+            56.0
+          ]
+        },
+        "flight_stable_landings": {
+          "mean": 35.690726972325486,
+          "q10_q50_q90": [
+            0.0,
+            43.0,
+            48.0
+          ]
+        },
+        "flight_aborted_landings": {
+          "mean": 8.546571664601405,
+          "q10_q50_q90": [
+            0.0,
+            9.0,
+            15.0
+          ]
+        },
+        "flight_takeoff_vz_mean": {
+          "mean": 0.3354313493002697,
+          "q10_q50_q90": [
+            0.0,
+            0.4102364033460617,
+            0.4334303915500641
+          ]
+        },
+        "flight_landing_peak_force_bw": {
+          "mean": 1.1225181644438516,
+          "q10_q50_q90": [
+            0.0,
+            1.3150182366371155,
+            1.5513182640075684
+          ]
+        },
+        "flight_landing_peak_down_vz": {
+          "mean": 0.6088457541899561,
+          "q10_q50_q90": [
+            0.0,
+            0.7427039444446564,
+            0.7828036487102509
+          ]
+        },
+        "flight_balance_cost": {
+          "mean": 0.10397551702073891,
+          "q10_q50_q90": [
+            0.08598704859614373,
+            0.10113261640071869,
+            0.12057318165898326
+          ]
+        },
+        "flight_support_cost": {
+          "mean": 0.004179520138399246,
+          "q10_q50_q90": [
+            0.0,
+            0.004080016631633043,
+            0.007482358720153576
+          ]
+        },
+        "guarded_intervention": {
+          "mean": 0.4555181065456575,
+          "q10_q50_q90": [
+            0.0,
+            0.5567458868026733,
+            0.5814216792583465
+          ]
+        },
+        "guarded_actual": {
+          "mean": 8.511632203498763e-09,
+          "q10_q50_q90": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "guarded_front_high": {
+          "mean": 0.07042693459566948,
+          "q10_q50_q90": [
+            0.0,
+            0.07835821062326431,
+            0.11316963955760002
+          ]
+        },
+        "guarded_hind_high": {
+          "mean": 0.05350570096049607,
+          "q10_q50_q90": [
+            0.0,
+            0.05731409601867199,
+            0.09518739208579065
+          ]
+        },
+        "guarded_front_cost": {
+          "mean": 0.022053072923143888,
+          "q10_q50_q90": [
+            0.0,
+            0.022315953858196735,
+            0.04139144532382488
+          ]
+        },
+        "guarded_hind_cost": {
+          "mean": 0.006154297811854298,
+          "q10_q50_q90": [
+            0.0,
+            0.0048838520888239145,
+            0.01376193538308144
+          ]
+        },
+        "guarded_tracking_rmse": {
+          "mean": 0.3193682991106714,
+          "q10_q50_q90": [
+            0.0,
+            0.3892553746700287,
+            0.4127069890499115
+          ]
+        }
+      },
+      "failure_combinations": {
+        "tracking,pattern,flight,motion,front_load,front_motion,front_cycle,stable,mature,stabilization_width,stabilization_landing,stabilization_distance,stabilization_measured,guarded_limits,guarded_feet": 1847,
+        "stabilization_width,stabilization_landing": 533,
+        "stable,stabilization_width,stabilization_landing,guarded_limits": 1,
+        "stable,stabilization_width,stabilization_landing,guarded_feet": 247,
+        "stabilization_width,stabilization_landing,stabilization_distance": 74,
+        "stable,stabilization_width,guarded_feet": 228,
+        "stabilization_width": 549,
+        "": 161,
+        "stabilization_width,stabilization_distance": 33,
+        "tracking,stabilization_width,stabilization_landing": 6,
+        "tracking,stabilization_width,stabilization_landing,stabilization_distance": 1,
+        "stable,stabilization_pose,stabilization_width,stabilization_landing": 1,
+        "stabilization_landing": 148,
+        "stable,stabilization_width,stabilization_distance,guarded_feet": 7,
+        "stable,stabilization_width,stabilization_landing,stabilization_distance,guarded_feet": 16,
+        "stabilization_landing,stabilization_distance": 15,
+        "stable,guarded_feet": 52,
+        "tracking,stable,stabilization_width,guarded_feet": 2,
+        "stable,stabilization_landing,guarded_feet": 28,
+        "tracking,pattern,stable,stabilization_width,stabilization_landing,stabilization_distance,stabilization_measured,guarded_limits,guarded_feet": 2,
+        "tracking,stabilization_distance": 1,
+        "tracking,stabilization_landing": 2,
+        "tracking,stable,stabilization_pose,stabilization_width,guarded_feet": 1,
+        "tracking": 1,
+        "stabilization_distance": 7,
+        "stable,stabilization_width,stabilization_landing": 2,
+        "tracking,stable,stabilization_pose,stabilization_width,stabilization_landing,stabilization_distance,stabilization_measured,guarded_limits,guarded_feet": 1,
+        "tracking,stabilization_landing,stabilization_distance": 1,
+        "tracking,stable,stabilization_landing": 1,
+        "stable,stabilization_landing": 1,
+        "tracking,stable,stabilization_width,stabilization_landing": 1,
+        "stable,stabilization_width": 1
+      }
+    },
+    "recent_window_start_control_step": 24000,
+    "recent_statistics": {
+      "count": 4975,
+      "success_rate": 0.6440201005025126,
+      "criterion_pass_rates": {
+        "tracking": 0.8154773869346734,
+        "pattern": 0.817286432160804,
+        "flight": 0.817286432160804,
+        "motion": 0.817286432160804,
+        "front_load": 0.817286432160804,
+        "front_motion": 0.817286432160804,
+        "front_cycle": 0.817286432160804,
+        "stable": 0.4355778894472362,
+        "mature": 0.817286432160804,
+        "stabilization_pose": 0.9997989949748743,
+        "stabilization_width": 0.16542713567839196,
+        "stabilization_landing": 0.5336683417085427,
+        "stabilization_distance": 0.8048241206030151,
+        "stabilization_measured": 0.8170854271356784,
+        "guarded_limits": 0.8170854271356784,
+        "guarded_feet": 0.43678391959798996
+      },
+      "measures": {
+        "vx_rmse": {
+          "mean": 0.17621194327296924,
+          "q10_q50_q90": [
+            0.0,
+            0.19655029475688934,
+            0.26989552974700926
+          ]
+        },
+        "contact_accuracy": {
+          "mean": 0.6627815910679611,
+          "q10_q50_q90": [
+            0.0,
+            0.8091372847557068,
+            0.8213260531425476
+          ]
+        },
+        "order_accuracy": {
+          "mean": 0.05353798623716262,
+          "q10_q50_q90": [
+            0.025974025949835777,
+            0.03536977618932724,
+            0.1428571492433548
+          ]
+        },
+        "flight_fraction": {
+          "mean": 0.8038403688004269,
+          "q10_q50_q90": [
+            0.0,
+            0.9818181991577148,
+            1.0
+          ]
+        },
+        "rom_fraction": {
+          "mean": 0.8172736143227198,
+          "q10_q50_q90": [
+            0.0,
+            1.0,
+            1.0
+          ]
+        },
+        "fore_load_share": {
+          "mean": 0.2871826358236859,
+          "q10_q50_q90": [
+            0.0,
+            0.34696510434150696,
+            0.36801317930221555
+          ]
+        },
+        "fore_min_load_share": {
+          "mean": 0.12192246680283667,
+          "q10_q50_q90": [
+            0.0,
+            0.1476922333240509,
+            0.15558284223079683
+          ]
+        },
+        "fore_rom_fraction": {
+          "mean": 0.8172376787722411,
+          "q10_q50_q90": [
+            0.0,
+            1.0,
+            1.0
+          ]
+        },
+        "fore_min_rom_fraction": {
+          "mean": 0.8171977151578396,
+          "q10_q50_q90": [
+            0.0,
+            1.0,
+            1.0
+          ]
+        },
+        "fore_participation": {
+          "mean": 0.8171609306335449,
+          "q10_q50_q90": [
+            0.0,
+            1.0,
+            1.0
+          ]
+        },
+        "attitude_rms": {
+          "mean": 0.0436139323700912,
+          "q10_q50_q90": [
+            0.0,
+            0.04806578531861305,
+            0.0668973982334137
+          ]
+        },
+        "action_clip_fraction": {
+          "mean": 0.026399005618152307,
+          "q10_q50_q90": [
+            0.0,
+            0.031738631427288055,
+            0.034467680007219316
+          ]
+        },
+        "terminated": {
+          "mean": 0.18472361809045226,
+          "q10_q50_q90": [
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        "timed_out": {
+          "mean": 0.8152763819095478,
+          "q10_q50_q90": [
+            0.0,
+            1.0,
+            1.0
+          ]
+        },
+        "pair_joint_cost": {
+          "mean": 0.1561684300701822,
+          "q10_q50_q90": [
+            0.0,
+            0.18768370151519775,
+            0.2035488098859787
+          ]
+        },
+        "pair_rom_cost": {
+          "mean": 2.209695550130628e-06,
+          "q10_q50_q90": [
+            0.0,
+            0.0,
+            6.233777185116224e-07
+          ]
+        },
+        "pair_load_cost": {
+          "mean": 0.0014786558050124867,
+          "q10_q50_q90": [
+            0.0,
+            0.0012159701436758041,
+            0.0032993264961987735
+          ]
+        },
+        "pair_stance_cost": {
+          "mean": 1.4040740943208439e-06,
+          "q10_q50_q90": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "pair_hip_cost": {
+          "mean": 0.005324753891903645,
+          "q10_q50_q90": [
+            0.0,
+            0.005566426552832127,
+            0.009501000307500363
+          ]
+        },
+        "pair_valid_cycles": {
+          "mean": 58.812060301507536,
+          "q10_q50_q90": [
+            4.0,
+            71.0,
+            71.0
+          ]
+        },
+        "leap_events": {
+          "mean": 46.54814070351759,
+          "q10_q50_q90": [
+            0.0,
+            56.0,
+            59.0
+          ]
+        },
+        "leap_qualified_events": {
+          "mean": 41.369849246231155,
+          "q10_q50_q90": [
+            0.0,
+            51.0,
+            55.0
+          ]
+        },
+        "leap_qualified_fraction": {
+          "mean": 0.7280500723848391,
+          "q10_q50_q90": [
+            0.0,
+            0.8947368264198303,
+            0.9821428656578064
+          ]
+        },
+        "leap_distance_mean": {
+          "mean": 0.1683964514103367,
+          "q10_q50_q90": [
+            0.0,
+            0.20311251282691956,
+            0.2228065997362137
+          ]
+        },
+        "leap_distance_max": {
+          "mean": 0.20214459692413483,
+          "q10_q50_q90": [
+            0.0,
+            0.24014043807983398,
+            0.26949586868286135
+          ]
+        },
+        "leap_air_seconds_mean": {
+          "mean": 0.06855713570462399,
+          "q10_q50_q90": [
+            0.0,
+            0.08324561268091202,
+            0.08866070955991745
+          ]
+        },
+        "leap_reward_points": {
+          "mean": 83.48513388168871,
+          "q10_q50_q90": [
+            0.0,
+            99.8289566040039,
+            114.17313079833984
+          ]
+        },
+        "leap_reward_steps": {
+          "mean": 36.34854271356784,
+          "q10_q50_q90": [
+            0.0,
+            44.0,
+            49.0
+          ]
+        },
+        "leap_physics_samples": {
+          "mean": 5054.007638190955,
+          "q10_q50_q90": [
+            745.6000000000001,
+            6000.0,
+            6000.0
+          ]
+        },
+        "flight_takeoffs": {
+          "mean": 46.22291457286432,
+          "q10_q50_q90": [
+            0.0,
+            56.0,
+            59.0
+          ]
+        },
+        "flight_landings": {
+          "mean": 44.99798994974874,
+          "q10_q50_q90": [
+            0.0,
+            55.0,
+            56.0
+          ]
+        },
+        "flight_stable_landings": {
+          "mean": 36.56562814070352,
+          "q10_q50_q90": [
+            0.0,
+            44.0,
+            49.0
+          ]
+        },
+        "flight_aborted_landings": {
+          "mean": 8.201005025125628,
+          "q10_q50_q90": [
+            0.0,
+            9.0,
+            14.0
+          ]
+        },
+        "flight_takeoff_vz_mean": {
+          "mean": 0.3389283450823932,
+          "q10_q50_q90": [
+            0.0,
+            0.41113001108169556,
+            0.432287734746933
+          ]
+        },
+        "flight_landing_peak_force_bw": {
+          "mean": 1.1298031793048033,
+          "q10_q50_q90": [
+            0.0,
+            1.310802698135376,
+            1.5478103399276735
+          ]
+        },
+        "flight_landing_peak_down_vz": {
+          "mean": 0.6103652783614307,
+          "q10_q50_q90": [
+            0.0,
+            0.738789439201355,
+            0.7754227876663208
+          ]
+        },
+        "flight_balance_cost": {
+          "mean": 0.1033166032554067,
+          "q10_q50_q90": [
+            0.08579337149858475,
+            0.10006482899188995,
+            0.12004464864730835
+          ]
+        },
+        "flight_support_cost": {
+          "mean": 0.00419469625678998,
+          "q10_q50_q90": [
+            0.0,
+            0.004098905716091394,
+            0.0074802766554057645
+          ]
+        },
+        "guarded_intervention": {
+          "mean": 0.4543073506091707,
+          "q10_q50_q90": [
+            0.0,
+            0.5526522994041443,
+            0.568043339252472
+          ]
+        },
+        "guarded_actual": {
+          "mean": 0.0,
+          "q10_q50_q90": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "guarded_front_high": {
+          "mean": 0.07645347142114711,
+          "q10_q50_q90": [
+            0.0,
+            0.08728652447462082,
+            0.1134711727499962
+          ]
+        },
+        "guarded_hind_high": {
+          "mean": 0.06216895543787647,
+          "q10_q50_q90": [
+            0.0,
+            0.06923791766166687,
+            0.10334574431180954
+          ]
+        },
+        "guarded_front_cost": {
+          "mean": 0.025050924108293487,
+          "q10_q50_q90": [
+            0.0,
+            0.02693798393011093,
+            0.04142572656273842
+          ]
+        },
+        "guarded_hind_cost": {
+          "mean": 0.007976044113303174,
+          "q10_q50_q90": [
+            0.0,
+            0.006879700347781181,
+            0.016978872194886214
+          ]
+        },
+        "guarded_tracking_rmse": {
+          "mean": 0.3213425607417696,
+          "q10_q50_q90": [
+            0.0,
+            0.3879755735397339,
+            0.4116824328899384
+          ]
+        }
+      },
+      "failure_combinations": {
+        "stabilization_width": 207,
+        "stabilization_distance": 3,
+        "stabilization_width,stabilization_distance": 15,
+        "stabilization_width,stabilization_landing": 146,
+        "": 87,
+        "tracking,pattern,flight,motion,front_load,front_motion,front_cycle,stable,mature,stabilization_width,stabilization_landing,stabilization_distance,stabilization_measured,guarded_limits,guarded_feet": 909,
+        "stabilization_landing": 73,
+        "stabilization_width,stabilization_landing,stabilization_distance": 21,
+        "stabilization_landing,stabilization_distance": 9,
+        "stable,stabilization_width,stabilization_landing": 2,
+        "tracking,stabilization_width,stabilization_landing": 3,
+        "tracking,stable,stabilization_pose,stabilization_width,stabilization_landing,stabilization_distance,stabilization_measured,guarded_limits,guarded_feet": 1,
+        "stable,stabilization_width,stabilization_landing,guarded_feet": 80,
+        "stable,stabilization_landing,guarded_feet": 25,
+        "stable,stabilization_width,guarded_feet": 122,
+        "stable,guarded_feet": 49,
+        "tracking,stabilization_landing,stabilization_distance": 1,
+        "tracking,stable,stabilization_landing": 1,
+        "stable,stabilization_width,stabilization_distance,guarded_feet": 6,
+        "stable,stabilization_width,stabilization_landing,stabilization_distance,guarded_feet": 6,
+        "stable,stabilization_landing": 1,
+        "tracking,stable,stabilization_width,guarded_feet": 1,
+        "tracking,stable,stabilization_width,stabilization_landing": 1,
+        "tracking,stabilization_landing": 1,
+        "stable,stabilization_width": 1
+      }
+    }
+  },
+  "curriculum": {
+    "decisions": 48,
+    "speed_caps": [
+      2.75
+    ],
+    "last_decision": {
+      "step": 48000,
+      "speed_before": 2.75,
+      "speed_cap": 2.75,
+      "level": 0,
+      "staged_index_before": 1,
+      "staged_index": 1,
+      "staged_goal_before": {
+        "name": "speed_275",
+        "speed": 2.75,
+        "leap": 0.18,
+        "alpha": 0.0,
+        "period": 0.385,
+        "touchdown": [
+          0.25,
+          0.5,
+          0.0,
+          0.125
+        ],
+        "duty": [
+          0.45,
+          0.3,
+          0.35,
+          0.45
+        ],
+        "air_seconds": 0.077,
+        "flight_min_seconds": 0.06,
+        "flight_prepare_seconds": 0.08,
+        "flight_recovery_seconds": 0.08,
+        "flight_takeoff_vz": 0.4,
+        "flight_max_landing_vz": 1.2
+      },
+      "staged_goal": {
+        "name": "speed_275",
+        "speed": 2.75,
+        "leap": 0.18,
+        "alpha": 0.0,
+        "period": 0.385,
+        "touchdown": [
+          0.25,
+          0.5,
+          0.0,
+          0.125
+        ],
+        "duty": [
+          0.45,
+          0.3,
+          0.35,
+          0.45
+        ],
+        "air_seconds": 0.077,
+        "flight_min_seconds": 0.06,
+        "flight_prepare_seconds": 0.08,
+        "flight_recovery_seconds": 0.08,
+        "flight_takeoff_vz": 0.4,
+        "flight_max_landing_vz": 1.2
+      },
+      "episodes": 178,
+      "success_rate": 0.7808988764044944,
+      "reason": "waiting_for_cohort",
+      "streak": 0,
+      "failure_streak": 0,
+      "criterion_rates": {
+        "tracking": 0.9382022471910112,
+        "pattern": 0.9382022471910112,
+        "flight": 0.9382022471910112,
+        "motion": 0.9382022471910112,
+        "front_load": 0.9382022471910112,
+        "front_motion": 0.9382022471910112,
+        "front_cycle": 0.9382022471910112,
+        "stable": 0.4887640449438202,
+        "mature": 0.9382022471910112,
+        "stabilization_pose": 1.0,
+        "stabilization_width": 0.42696629213483145,
+        "stabilization_landing": 0.6123595505617978,
+        "stabilization_distance": 0.9269662921348315,
+        "stabilization_measured": 0.9382022471910112,
+        "guarded_limits": 0.9382022471910112,
+        "guarded_feet": 0.4943820224719101,
+        "staged_measured": 0.9325842696629213,
+        "staged_tracking": 0.7191011235955056,
+        "staged_core": 0.7808988764044944,
+        "staged_pose": 1.0,
+        "staged_heading": 1.0,
+        "staged_landing": 0.9382022471910112,
+        "staged_details": 1.0,
+        "staged_regression": 0.7808988764044944
+      },
+      "cohort_size": 256,
+      "cohort_completed": 178,
+      "cohort_rounds": 19,
+      "repeated_env_episodes": 2977,
+      "discarded_cross_level": 0,
+      "adaptation_discarded": 1665,
+      "leap_target": 0.18,
+      "highest_confirmed_speed": 2.5,
+      "highest_confirmed_stage": 0,
+      "core_safety_success_rate": 0.7808988764044944
+    },
+    "promotions": 0,
+    "regressions": 0,
+    "reason_counts": {
+      "adapting_stage": 8,
+      "waiting_for_cohort": 21,
+      "hold": 18,
+      "confirming_success": 1
+    }
+  },
+  "rollout": {
+    "duration_seconds": 30.0,
+    "dt": 0.019999999999999574,
+    "environments": [
+      {
+        "env": 0,
+        "warmup_seconds": 1.0,
+        "evaluated_samples": 1034,
+        "metric_segment_start_seconds": 9.34,
+        "metric_segment_available": true,
+        "evaluated_seconds": 20.67999999999956,
+        "first_segment_end_seconds": 30.0,
+        "reset_times_seconds": [
+          30.0
+        ],
+        "mean_command": [
+          2.75,
+          0.0,
+          0.0
+        ],
+        "mean_body_velocity": [
+          2.638256520782264,
+          0.04997800230479806,
+          -0.0904188368052228
+        ],
+        "planar_velocity_rmse": [
+          0.20525551094251837,
+          0.07178998953151518
+        ],
+        "yaw_rmse": 0.19805036331176726,
+        "roll_pitch_rms": [
+          0.03012185614292629,
+          0.03842722392002534
+        ],
+        "height_min_max": [
+          0.2165866494178772,
+          0.3220917284488678
+        ],
+        "net_planar_displacement": 54.6035041809082,
+        "all_feet_contact_fraction": 0.17794970986460348,
+        "airborne_time_fraction": 0.20889748549323017,
+        "longest_steady_air_seconds": 0.09999999999999787,
+        "longest_full_first_segment_air_seconds": 0.11999999999999744,
+        "foot_contact_duty": [
+          0.3520309477756286,
+          0.4497098646034816,
+          0.648936170212766,
+          0.6150870406189555
+        ],
+        "vertical_impulse_share": [
+          0.14723078906536102,
+          0.2021002173423767,
+          0.31837889552116394,
+          0.33229008316993713
+        ],
+        "mean_action_clip": 0.023372018709778786,
+        "action_clip_quantiles": [
+          0.0,
+          0.0,
+          0.0833333358168602,
+          0.1666666716337204
+        ],
+        "complete_phase_cycles_used_for_rom": 53,
+        "mean_cycle_joint_excursion_degrees": [
+          [
+            27.061861038208008,
+            124.3459243774414,
+            58.73930358886719
+          ],
+          [
+            25.447498321533203,
+            117.51477813720703,
+            52.132259368896484
+          ],
+          [
+            10.940168380737305,
+            107.35957336425781,
+            52.20823669433594
+          ],
+          [
+            10.750994682312012,
+            107.78451538085938,
+            47.3929328918457
+          ]
+        ],
+        "reported_episode": {
+          "age": 1500.0,
+          "level": 0.0,
+          "eligible": 1.0,
+          "success": 1.0,
+          "tracking": 1.0,
+          "pattern": 1.0,
+          "flight": 1.0,
+          "motion": 1.0,
+          "front_load": 1.0,
+          "front_motion": 1.0,
+          "front_cycle": 1.0,
+          "stable": 1.0,
+          "mature": 1.0,
+          "vx_rmse": 0.20349201560020447,
+          "contact_accuracy": 0.8089941740036011,
+          "order_accuracy": 0.03947368264198303,
+          "flight_fraction": 1.0,
+          "rom_fraction": 1.0,
+          "fore_load_share": 0.34933120012283325,
+          "fore_min_load_share": 0.1472308486700058,
+          "fore_rom_fraction": 1.0,
+          "fore_min_rom_fraction": 1.0,
+          "fore_participation": 1.0,
+          "cycles": 53.0,
+          "sequences": 0.0,
+          "attitude_rms": 0.0384272076189518,
+          "action_clip_fraction": 0.023372018709778786,
+          "terminated": 0.0,
+          "timed_out": 1.0,
+          "pair_valid_cycles": 71.0,
+          "pair_joint_cost": 0.19350866973400116,
+          "pair_rom_cost": 0.0,
+          "pair_load_cost": 0.0015345418360084295,
+          "pair_stance_cost": 0.0,
+          "pair_hip_cost": 0.001879656920209527,
+          "stabilization_front_support_samples": 364.0,
+          "stabilization_front_width_fraction": 0.7032967209815979,
+          "stabilization_hind_support_samples": 583.0,
+          "stabilization_hind_width_fraction": 0.9348198771476746,
+          "stabilization_pose": 1.0,
+          "stabilization_width": 0.0,
+          "stabilization_landing": 1.0,
+          "stabilization_distance": 1.0,
+          "stabilization_measured": 1.0,
+          "stabilization_landing_fraction": 0.8888888955116272,
+          "stabilization_target_speed": 2.75,
+          "stabilization_leap_target": 0.18000000715255737,
+          "stabilization_excess_cost": 0.0006711675086989999,
+          "stabilization_highest_confirmed_speed": 2.5,
+          "gallop_mean_vx": 2.6379623413085938,
+          "gallop_mean_command_vx": 2.75,
+          "gallop_mean_vx_error": -0.11203765869140625,
+          "gallop_vx_std": 0.16984188556671143,
+          "gallop_cycle_mean_vx_rmse": 0.13337931036949158,
+          "gallop_speed_cycles": 53.0,
+          "gallop_speed_samples": 1034.0,
+          "leap_events": 56.0,
+          "leap_qualified_events": 53.0,
+          "leap_qualified_fraction": 0.9464285969734192,
+          "leap_distance_mean": 0.2110346257686615,
+          "leap_distance_max": 0.2539421617984772,
+          "leap_air_seconds_mean": 0.08517857640981674,
+          "leap_reward_points": 112.4793930053711,
+          "leap_reward_steps": 48.0,
+          "leap_physics_samples": 6000.0,
+          "guarded_limits": 1.0,
+          "guarded_feet": 1.0,
+          "guarded_intervention": 0.5220823884010315,
+          "guarded_actual": 0.0,
+          "guarded_front_high": 0.09381044656038284,
+          "guarded_hind_high": 0.09816247224807739,
+          "guarded_front_cost": 0.03747936338186264,
+          "guarded_hind_cost": 0.016849365085363388,
+          "guarded_tracking_rmse": 0.3893710672855377,
+          "flight_takeoffs": 56.0,
+          "flight_landings": 54.0,
+          "flight_stable_landings": 48.0,
+          "flight_aborted_landings": 6.0,
+          "flight_landing_peak_force_bw": 1.4268137216567993,
+          "flight_landing_peak_down_vz": 0.7020273804664612,
+          "flight_takeoff_vz_mean": 0.43710964918136597,
+          "flight_balance_cost": 0.07854360342025757,
+          "flight_support_cost": 0.002342190593481064,
+          "posture_seconds": 30.00049591064453,
+          "posture_rate_samples": 1499.0,
+          "posture_yaw_rmse": 0.04386954754590988,
+          "posture_roll_rate_rms": 0.5798615217208862,
+          "posture_pitch_rate_rms": 0.5015837550163269,
+          "posture_cross_speed_rms": 0.09766543656587601,
+          "posture_quiet_score": 0.8066242337226868,
+          "posture_front_width": 0.25473544001579285,
+          "posture_hind_width": 0.2775858938694,
+          "posture_front_width_score": 0.5679815411567688,
+          "posture_hind_width_score": 0.7484235763549805,
+          "posture_forward_score": 0.7181218862533569,
+          "posture_along_speed": 2.240405321121216,
+          "posture_pose_quality": 0.9915772080421448,
+          "posture_yaw_rate_rms": 0.19048574566841125,
+          "startup_stage": 3.0,
+          "startup_completed": 1.0,
+          "startup_failed": 0.0,
+          "startup_hold_seconds": 0.9399996399879456,
+          "startup_walk_seconds": 3.0199978351593018,
+          "startup_blend_seconds": 4.339996814727783,
+          "startup_gallop_seconds": 21.68030548095703,
+          "gallop_metric_seconds": 20.68000030517578,
+          "staged_core": 1.0,
+          "staged_pose": 1.0,
+          "staged_heading": 1.0,
+          "staged_landing": 1.0,
+          "staged_details": 1.0,
+          "staged_regression": 1.0,
+          "staged_required_landing_fraction": 0.6000000238418579,
+          "staged_required_yaw_rms": 0.13962633907794952,
+          "staged_details_required": 0.0,
+          "staged_index": 1.0,
+          "staged_measured": 1.0,
+          "staged_tracking": 1.0,
+          "staged_yaw_rms": 0.035324979573488235,
+          "staged_generation": 0.0,
+          "staged_leap_target": 0.18000000715255737,
+          "staged_strict_success": 0.0,
+          "staged_final_success": 0.0,
+          "staged_flight_min_seconds": 0.05999999865889549,
+          "env": 0,
+          "step": 1500
+        }
+      }
+    ],
+    "note": "Only first contiguous segment is analyzed; reset rows are pre-reset snapshots. Steady metrics exclude warmup. Runtime episode velocity sums precede interval events, whereas saved snapshots follow them."
+  },
+  "rollout_status": "collected",
+  "videos": [
+    {
+      "path": "/home/cvr/GH/go2_animalization/gallop/runs/isaac/play/unitree_go2_gallop/20261111_170803_4c378d/videos/gallop-play-step-0.mp4",
+      "kind": "play",
+      "frames": 1499,
+      "duration_seconds": 29.98,
+      "fps": 50.0,
+      "resolution": [
+        640,
+        480
+      ]
+    }
+  ],
+  "policy_updates_during_collection": 0,
+  "caveats": [
+    "Training criterion rates are not independent evaluation success rates.",
+    "stable combines timeout/survival, attitude and target-clipping gates; it does not mean falls alone.",
+    "Runtime flight_fraction counts cycles with sufficient air, not fraction of time airborne.",
+    "Target clipping is target-angle saturation, not actual joint-limit violation.",
+    "Reported joint excursions are per imposed phase cycle, not independently classified gait strides.",
+    "Original physics/noise/pushes remain active in play. No additional simulation or training was performed.",
+    "Leap target is latched per episode; final leap_min_distance is not the target for every training episode."
+  ],
+  "completion_evidence": {
+    "complete": true,
+    "checks": {
+      "status_completed": true,
+      "checkpoint_count": true,
+      "status_update_count": true,
+      "loss_iterations_complete": true
+    },
+    "note": "Mean reward/episode length may omit early iterations with no completed episodes; loss steps and checkpoint counters establish completion."
+  },
+  "source_matches_training": {
+    "gallop_core.py": true,
+    "gallop_env.py": true
+  },
+  "staged_review": {
+    "recorded_episodes": 9684,
+    "accepted_episodes": 5042,
+    "complete_cohorts": 19,
+    "promotions": 0,
+    "cohort_success_rate_max": 0.81640625,
+    "cohort_success_rate_last": 0.78515625,
+    "reproduced_all_decisions": true,
+    "final_checkpoint": {
+      "index": 1,
+      "goal": {
+        "name": "speed_275",
+        "speed": 2.75,
+        "leap": 0.18,
+        "alpha": 0.0,
+        "period": 0.385,
+        "touchdown": [
+          0.25,
+          0.5,
+          0.0,
+          0.125
+        ],
+        "duty": [
+          0.45,
+          0.3,
+          0.35,
+          0.45
+        ],
+        "air_seconds": 0.077,
+        "flight_min_seconds": 0.06,
+        "flight_prepare_seconds": 0.08,
+        "flight_recovery_seconds": 0.08,
+        "flight_takeoff_vz": 0.4,
+        "flight_max_landing_vz": 1.2
+      },
+      "highest_confirmed_stage": 0,
+      "sha256": "93394343a7faf50f848e94ec4138c6a354641addb5b0d4e0b65db3f7ad4674a2",
+      "stage_iterations": 2000,
+      "cumulative_iterations": 50000
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "all_first_episode": {
+    "samples": 1500,
+    "physical_requested_clip_fraction": 0.0025555556640028954,
+    "operating_requested_overflow_fraction": 0.009333333333333334,
+    "actual_joint_max_excess_rad": 0.0,
+    "filter_intervention_fraction": 0.03927777707576752
+  },
+  "frozen_startup_and_blend": {
+    "samples": 365,
+    "physical_requested_clip_fraction": 0.010502283461391926,
+    "operating_requested_overflow_fraction": 0.038356164383561646,
+    "actual_joint_max_excess_rad": 0.0,
+    "filter_intervention_fraction": 0.05000000074505806
+  },
+  "formal_student_walking": {
+    "samples": 1084,
+    "physical_requested_clip_fraction": 0.0,
+    "operating_requested_overflow_fraction": 0.0,
+    "actual_joint_max_excess_rad": 0.0,
+    "filter_intervention_fraction": 0.036515988409519196
+  },
+  "note": "Frozen startup requests have different clipping statistics from student walking; execution filters and actual joint monitoring remain active in every phase."
+}

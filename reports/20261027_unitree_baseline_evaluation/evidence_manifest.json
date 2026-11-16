@@ -1,0 +1,134 @@
+{
+  "runs/isaac/check/unitree_baseline_nominal_v2_20261027/state_trace.csv": {
+    "sha256": "b32081cf03e19b85f37d2d14d471ee883c13797ce9ba5cd20a9583db529068db",
+    "bytes": 1348801
+  },
+  "runs/isaac/check/unitree_baseline_nominal_v2_20261027/tracking.png": {
+    "sha256": "96211326aa1ce51cd8b41c3c95a1941d4309c1138dfefcc62afb86e0fe211244",
+    "bytes": 461470
+  },
+  "runs/isaac/check/unitree_baseline_nominal_v2_20261027/agent.yaml": {
+    "sha256": "79dbe7f34b21ace3a8fff696512d67787f56dcd8bdaeff59dc2f43e0ac3bfbd0",
+    "bytes": 1040
+  },
+  "runs/isaac/check/unitree_baseline_nominal_v2_20261027/forward_04_contacts.png": {
+    "sha256": "41fa0cc9108344dcff244eb4a8c57a44905c66426244466dec2b8f0b180cf93a",
+    "bytes": 47775
+  },
+  "runs/isaac/check/unitree_baseline_nominal_v2_20261027/report.json": {
+    "sha256": "dbe09ad7087c776f7b341a323a8cf18b9dd267dfa9b1d919e1553cc5ea4482ef",
+    "bytes": 7177
+  },
+  "runs/isaac/check/unitree_baseline_nominal_v2_20261027/protocol.json": {
+    "sha256": "f7098710bbc4dd20c2f5302a32517a7f65a57f89bd85bf243b2b557d7d17d2ba",
+    "bytes": 1535
+  },
+  "runs/isaac/check/unitree_baseline_nominal_v2_20261027/trials.csv": {
+    "sha256": "9fa443a38b68c029ed1dda3d7255f95a7d0815e4251c73822f43463800b0df64",
+    "bytes": 1488
+  },
+  "runs/isaac/check/unitree_baseline_nominal_v2_20261027/status.json": {
+    "sha256": "2dbe99ada451ba44637bca57249fa51cd7fa934fbab5d8df541200ca530d1aee",
+    "bytes": 1572
+  },
+  "runs/isaac/check/unitree_baseline_nominal_v2_20261027/console.log": {
+    "sha256": "deb2c4d5bc06b3b505e7d3a632c3345180e242b9d9cb029aa29206450f50fcd1",
+    "bytes": 20841
+  },
+  "runs/isaac/check/unitree_baseline_nominal_v2_20261027/trace.npz": {
+    "sha256": "b223762a235defda0bac067fe4cbe032ffdecb51cce07a2a959f75472bb14472",
+    "bytes": 1956844
+  },
+  "runs/isaac/check/unitree_baseline_nominal_v2_20261027/videos/forward_04.mp4": {
+    "sha256": "0ac00df067fcbdde31312260ed2a8f82351211902eac0d18a956636059b2f47e",
+    "bytes": 396114
+  },
+  "runs/isaac/check/unitree_baseline_randomized_20261027/state_trace.csv": {
+    "sha256": "0a41b7c8395137ae28510c5154a9b32450c48b36dfd28da2809cf2b15365b6bf",
+    "bytes": 3898262
+  },
+  "runs/isaac/check/unitree_baseline_randomized_20261027/tracking.png": {
+    "sha256": "add5311bc33aab5c9e12c1c5d45ee92bb44d46de7cca8cbf61215f9f73a0699f",
+    "bytes": 1508819
+  },
+  "runs/isaac/check/unitree_baseline_randomized_20261027/agent.yaml": {
+    "sha256": "79dbe7f34b21ace3a8fff696512d67787f56dcd8bdaeff59dc2f43e0ac3bfbd0",
+    "bytes": 1040
+  },
+  "runs/isaac/check/unitree_baseline_randomized_20261027/forward_04_contacts.png": {
+    "sha256": "00ebec63d9f7eadff6d85cf17234645ca45423931de209924e127e040cb6dadc",
+    "bytes": 92817
+  },
+  "runs/isaac/check/unitree_baseline_randomized_20261027/report.json": {
+    "sha256": "a7b28e3873b90c2961b6459ca27234ba88b55bfba8bb3aa5c462075a085976e8",
+    "bytes": 19417
+  },
+  "runs/isaac/check/unitree_baseline_randomized_20261027/protocol.json": {
+    "sha256": "9185a8ccac4b08fa8c1ccb44da287ecbccce742117981b1484d4b3b0c74712aa",
+    "bytes": 3671
+  },
+  "runs/isaac/check/unitree_baseline_randomized_20261027/trials.csv": {
+    "sha256": "3eabcc1b011c1c921e0a59508eafe0f6d47dc73bbf761fb4f2f30a8bc6ab51c1",
+    "bytes": 4009
+  },
+  "runs/isaac/check/unitree_baseline_randomized_20261027/status.json": {
+    "sha256": "86a4df928987cd3eb7d0e5af47fd8361188f758ffd044182bb76ec5a79e787be",
+    "bytes": 3708
+  },
+  "runs/isaac/check/unitree_baseline_randomized_20261027/console.log": {
+    "sha256": "6722b3a11ff7b1bf2681f1437e738ef959c7ef43542dc0ded7b0364a203796fa",
+    "bytes": 30456
+  },
+  "runs/isaac/check/unitree_baseline_randomized_20261027/trace.npz": {
+    "sha256": "ec69ccaff8ca8c3640c6da919746a89267a54da82ba7a1a9fb10a50e15b3299e",
+    "bytes": 6140576
+  },
+  "runs/isaac/check/unitree_baseline_randomized_20261027/videos/forward_04.mp4": {
+    "sha256": "f94ec055764b2457613a18a5bfbef3dbea1990323e19f10842c89b3a57ddf3de",
+    "bytes": 802197
+  },
+  "runs/isaac/check/unitree_baseline_immediate_20261027/state_trace.csv": {
+    "sha256": "f91cf5a6c9b7a63f94e429289bfccae48d13131413f7c5df4e25de0d187d4263",
+    "bytes": 1204237
+  },
+  "runs/isaac/check/unitree_baseline_immediate_20261027/tracking.png": {
+    "sha256": "0e0bf7ca7098e598c1bbbcd58aac328ea3aff6983784bdcf759df5cbccf6b6ea",
+    "bytes": 426699
+  },
+  "runs/isaac/check/unitree_baseline_immediate_20261027/agent.yaml": {
+    "sha256": "79dbe7f34b21ace3a8fff696512d67787f56dcd8bdaeff59dc2f43e0ac3bfbd0",
+    "bytes": 1040
+  },
+  "runs/isaac/check/unitree_baseline_immediate_20261027/forward_04_contacts.png": {
+    "sha256": "603ad0765bfa8f0e85969b865f977630d81bf9f273e26a6fa2b74f1d3b2daf2c",
+    "bytes": 43343
+  },
+  "runs/isaac/check/unitree_baseline_immediate_20261027/report.json": {
+    "sha256": "954e6cb45ef38ee85d054c07c92120eedbfa2c97f519d005a8556dccc15ae747",
+    "bytes": 7190
+  },
+  "runs/isaac/check/unitree_baseline_immediate_20261027/protocol.json": {
+    "sha256": "deceb5a1b0e55ab6eb1b38343bc4648a6953d998643121385444f47268a55806",
+    "bytes": 1564
+  },
+  "runs/isaac/check/unitree_baseline_immediate_20261027/trials.csv": {
+    "sha256": "05f33ddb18169c8b44bb22d241a8e82617be22cf2dc5c5113ef940db1a570516",
+    "bytes": 1480
+  },
+  "runs/isaac/check/unitree_baseline_immediate_20261027/status.json": {
+    "sha256": "75ca4be6b4087fb2c35bbd79b369ac6526dbe3f11c1f0c38536ed2ef56ee2be7",
+    "bytes": 1601
+  },
+  "runs/isaac/check/unitree_baseline_immediate_20261027/console.log": {
+    "sha256": "4ad8c8e67438544ce24b1d3b314c76cf385ff15eb2e023cd41c3697998e3051d",
+    "bytes": 19125
+  },
+  "runs/isaac/check/unitree_baseline_immediate_20261027/trace.npz": {
+    "sha256": "344814b40ca2ceaac9fa95a2c1cd1a3ae04be6cec557ef88a76ceb9115c02cbf",
+    "bytes": 1724802
+  },
+  "runs/isaac/train/unitree_go2_baseline/2026-10-27_17-59-58/model_1999.pt": {
+    "sha256": "c5ba096c7588554c3c1f647d7991f60d335e1c7413218a72cd376162d25fc2b8",
+    "bytes": 4639669
+  }
+}

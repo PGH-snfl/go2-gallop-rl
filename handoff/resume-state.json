@@ -1,0 +1,22 @@
+{
+  "snapshot_date": "2026-11-16",
+  "latest_completed_checkpoint": "runs/isaac/train/unitree_go2_gallop/20261112_124757_47b3b7/model_final.pt",
+  "sha256": "b870c94b016930c17c01b0de4fcebed12a3204ba158d2bc3f0b54b35aaffb8b1",
+  "completed_cumulative_iterations": 58000,
+  "next_training_config": "configs/gallop_2mps_50cm_velocity_guard.json",
+  "next_training_additional_iterations": 4000,
+  "next_training_planned_cumulative_iterations": 62000,
+  "next_training_executed": false,
+  "goal": {
+    "speed_mps": 2.0,
+    "air_distance_m": 0.5,
+    "minimum_air_seconds": 0.24,
+    "promotion": false
+  },
+  "hardware_deployment_accepted": false,
+  "notes": [
+    "58k completion/restoration verified; full58k performance review pending.",
+    "54k did not reach50cm, showed actual joint overspeed and failed MuJoCo transfer.",
+    "New velocity guard verified without PPO; existing frozen policies frequently terminate."
+  ]
+}

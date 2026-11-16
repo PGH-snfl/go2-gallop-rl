@@ -1,0 +1,1503 @@
+[
+  {
+    "angle": "direct_gait",
+    "title": "Symmetry-Guided Reinforcement Learning for Versatile Quadrupedal Gait Generation",
+    "url": "https://arxiv.org/html/2403.10723v3"
+  },
+  {
+    "angle": "direct_gait",
+    "title": "Proceedings of the 5th Conference on Robot Learning (CoRL 2021)",
+    "url": "https://proceedings.mlr.press/v164/fu22a/fu22a.pdf"
+  },
+  {
+    "angle": "direct_gait",
+    "title": "Fast and Efficient Locomotion via Learned Gait Transitions",
+    "url": "https://arxiv.org/html/2104.04644v2"
+  },
+  {
+    "angle": "direct_gait",
+    "title": "Learning Control of Quadruped Robot Galloping",
+    "url": "https://jbe.jlu.edu.cn/CN/Y2018/V15/I2/329"
+  },
+  {
+    "angle": "direct_gait",
+    "title": "16 Ways to Gallop: Energetics and Body Dynamics of High-Speed Quadrupedal Gaits",
+    "url": "https://arxiv.org/html/2503.13716"
+  },
+  {
+    "angle": "direct_gait",
+    "title": "Towards Dynamic Quadrupedal Gaits: A Symmetry-Guided RL Hierarchy Enables Free Gait Transitions at Varying Speeds",
+    "url": "https://arxiv.org/html/2510.10455v1"
+  },
+  {
+    "angle": "direct_gait",
+    "title": "A 3D Galloping Quadruped Robot | Springer Nature Link",
+    "url": "https://link.springer.com/chapter/10.1007/3-540-26415-9_56"
+  },
+  {
+    "angle": "direct_gait",
+    "title": "Frontiers | Discovery of skill-switching criteria for learning agile quadruped locomotion",
+    "url": "https://www.frontiersin.org/journals/robotics-and-ai/articles/10.3389/frobt.2026.1697159/full"
+  },
+  {
+    "angle": "direct_gait",
+    "title": "[1909.08399] DeepGait: Planning and Control of Quadrupedal Gaits using Deep Reinforcement Learning",
+    "url": "https://ar5iv.labs.arxiv.org/html/1909.08399"
+  },
+  {
+    "angle": "direct_gait",
+    "title": "Viability leads to the emergence of gait transitions in learning agile quadrupedal locomotion on challenging terrains",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11271497/"
+  },
+  {
+    "angle": "animal_imitation",
+    "title": "Learning Agile Robotic Locomotion Skills by",
+    "url": "https://roboticsproceedings.org/rss16/p064.pdf"
+  },
+  {
+    "angle": "animal_imitation",
+    "title": "Learning Highly Dynamic Behaviors for Quadrupedal Robots",
+    "url": "https://arxiv.org/html/2402.13473v1"
+  },
+  {
+    "angle": "animal_imitation",
+    "title": "Generalized Animal Imitator: Agile Locomotion with Versatile Motion Prior",
+    "url": "https://arxiv.org/html/2310.01408v2"
+  },
+  {
+    "angle": "animal_imitation",
+    "title": "Spatio-Temporal Motion Retargeting for Quadruped Robots",
+    "url": "https://arxiv.org/html/2404.11557v1"
+  },
+  {
+    "angle": "animal_imitation",
+    "title": "Run Like a Dog: Learning Based Whole-Body Control Framework for Quadruped Gait Style Transfer",
+    "url": "https://doi.org/10.1109/iros51168.2021.9636805"
+  },
+  {
+    "angle": "animal_imitation",
+    "title": "Learning Diverse Natural Behaviors for Enhancing the Agility of Quadrupedal Robots",
+    "url": "https://arxiv.org/html/2505.09979v1"
+  },
+  {
+    "angle": "animal_imitation",
+    "title": "Learning and Reusing Quadruped Robot Movement Skills from Biological Dogs for Higher-Level Tasks",
+    "url": "https://www.mdpi.com/1424-8220/24/1/28"
+  },
+  {
+    "angle": "animal_imitation",
+    "title": "Learning and Reusing Quadruped Robot Movement Skills from Biological Dogs for Higher-Level Tasks",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10780440/"
+  },
+  {
+    "angle": "animal_imitation",
+    "title": "Imitation and Adaptation Based on Consistency: A Quadruped Robot Imitates Animals from Videos Using Deep Reinforcement Learning",
+    "url": "https://doi.org/10.48550/arxiv.2203.05973"
+  },
+  {
+    "angle": "animal_imitation",
+    "title": "Learning aggressive animal locomotion skills for quadrupedal robots solely from monocular videos | npj Robotics",
+    "url": "https://www.nature.com/articles/s44182-025-00048-x"
+  },
+  {
+    "angle": "flight_jump",
+    "title": "[2404.15096] Impedance Matching: Enabling an RL-Based Running Jump in a Quadruped Robot",
+    "url": "https://ar5iv.labs.arxiv.org/html/2404.15096v2"
+  },
+  {
+    "angle": "flight_jump",
+    "title": "Towards Jumping Skill Learning by Target-guided Policy Optimization for Quadruped Robots",
+    "url": "https://www.mi-research.net/article/doi/10.1007/s11633-023-1429-5"
+  },
+  {
+    "angle": "flight_jump",
+    "title": "Curriculum-Based Reinforcement Learning for Quadrupedal Jumping: A Reference-free Design",
+    "url": "https://arxiv.org/html/2401.16337"
+  },
+  {
+    "angle": "flight_jump",
+    "title": "Towards Quadrupedal Jumping and Walking for Dynamic Locomotion using Reinforcement Learning",
+    "url": "https://arxiv.org/html/2510.24584"
+  },
+  {
+    "angle": "flight_jump",
+    "title": "Robust Quadruped Jumping via Deep Reinforcement Learning",
+    "url": "https://arxiv.org/html/2011.07089v3"
+  },
+  {
+    "angle": "flight_jump",
+    "title": "Guided Reinforcement Learning for Omnidirectional 3D Jumping in Quadruped Robots",
+    "url": "https://arxiv.org/html/2507.16481v2"
+  },
+  {
+    "angle": "flight_jump",
+    "title": "Explosive Jumping with Rigid and Articulated Soft Quadrupeds via Example Guided Reinforcement Learning",
+    "url": "https://arxiv.org/html/2503.16197"
+  },
+  {
+    "angle": "flight_jump",
+    "title": "Integrating Trajectory Optimization and Reinforcement Learning for Quadrupedal Jumping with Terrain-Adaptive Landing",
+    "url": "https://arxiv.org/html/2509.12776"
+  },
+  {
+    "angle": "flight_jump",
+    "title": "Distance-Controllable Long Jump of Quadruped Robot Based on Parameter Optimization Using Deep Reinforcement Learning",
+    "url": "https://doi.org/10.1109/access.2023.3313637"
+  },
+  {
+    "angle": "flight_jump",
+    "title": "Explosive Jumping with Rigid and Articulated Soft Quadrupeds via Example Guided Reinforcement Learning",
+    "url": "https://arxiv.org/html/2503.16197v2"
+  },
+  {
+    "angle": "force_gait",
+    "title": "Learning Free Gait Transition for Quadruped",
+    "url": "https://arxiv.org/pdf/2201.00206v1.pdf"
+  },
+  {
+    "angle": "force_gait",
+    "title": "Actuator-Constrained Reinforcement Learning for High-Speed Quadrupedal Locomotion",
+    "url": "https://arxiv.org/html/2312.17507v1"
+  },
+  {
+    "angle": "force_gait",
+    "title": "A Study on the Energy Efficiency of Various Gaits for Quadruped Robots: Generation and Evaluation",
+    "url": "https://www.scitepress.org/Papers/2023/122346/122346.pdf"
+  },
+  {
+    "angle": "force_gait",
+    "title": "Learning Emergent Gaits with Decentralized Phase Oscillators: on the role of Observations, Rewards, and Feedback",
+    "url": "https://doi.org/10.48550/arxiv.2402.08662"
+  },
+  {
+    "angle": "force_gait",
+    "title": "N/A",
+    "url": "https://arxiv.org/pdf/2112.04741"
+  },
+  {
+    "angle": "force_gait",
+    "title": "Towards Dynamic Quadrupedal Gaits: A Symmetry-Guided RL Hierarchy Enables Free Gait Transitions at Varying Speeds",
+    "url": "https://arxiv.org/html/2403.10723v4"
+  },
+  {
+    "angle": "force_gait",
+    "title": "Full article: Deep reinforcement learning of quadrupedal gaits without motion references: emergence of pace and other locomotion patterns",
+    "url": "https://www.tandfonline.com/doi/full/10.1080/01691864.2025.2587837"
+  },
+  {
+    "angle": "force_gait",
+    "title": "Robust High-Speed Running for Quadruped Robots via Deep Reinforcement Learning",
+    "url": "https://arxiv.org/pdf/2103.06484v2.pdf"
+  },
+  {
+    "angle": "force_gait",
+    "title": "Footstep reward for energy-efficient quadruped gait generation and transition through deep reinforcement learning",
+    "url": "https://doi.org/10.1080/01691864.2024.2442718"
+  },
+  {
+    "angle": "force_gait",
+    "title": "AllGaits: Learning All Quadruped Gaits and Transitions",
+    "url": "https://arxiv.org/html/2411.04787"
+  },
+  {
+    "angle": "constraints_stability",
+    "title": "Reinforcement Learning for Quadrupedal Locomotion: Current Advancements and Future Perspectives",
+    "url": "https://arxiv.org/html/2410.10438v1"
+  },
+  {
+    "angle": "constraints_stability",
+    "title": "Symmetry Regularization for Quadruped Locomotion | Ziyin Xiong",
+    "url": "https://ziyin-xiong.github.io/projects/quadruped-locomotion/"
+  },
+  {
+    "angle": "constraints_stability",
+    "title": "N/A",
+    "url": "http://arxiv.org/pdf/2411.04787"
+  },
+  {
+    "angle": "constraints_stability",
+    "title": "Towards Dynamic Quadrupedal Gaits: A Symmetry-Guided RL Hierarchy Enables Free Gait Transitions at Varying Speeds",
+    "url": "https://arxiv.org/html/2403.10723v4"
+  },
+  {
+    "angle": "constraints_stability",
+    "title": "Learning-based legged locomotion; state of the art and future perspectives",
+    "url": "https://arxiv.org/html/2406.01152v2"
+  },
+  {
+    "angle": "constraints_stability",
+    "title": "[1804.10332] Sim-to-Real: Learning Agile Locomotion For Quadruped Robots",
+    "url": "https://ar5iv.labs.arxiv.org/html/1804.10332"
+  },
+  {
+    "angle": "constraints_stability",
+    "title": "[1909.08399] DeepGait: Planning and Control of Quadrupedal Gaits using Deep Reinforcement Learning",
+    "url": "https://ar5iv.labs.arxiv.org/html/1909.08399v1"
+  },
+  {
+    "angle": "constraints_stability",
+    "title": "[2008.12228] Towards General and Autonomous Learning of Core Skills: A Case Study in Locomotion",
+    "url": "https://ar5iv.labs.arxiv.org/html/2008.12228"
+  },
+  {
+    "angle": "constraints_stability",
+    "title": "Learning Highly Dynamic Behaviors for Quadrupedal Robots",
+    "url": "https://arxiv.org/html/2402.13473v1"
+  },
+  {
+    "angle": "constraints_stability",
+    "title": "Deep reinforcement learning for real-world quadrupedal locomotion: a comprehensive review",
+    "url": "https://www.oaepublish.com/articles/ir.2022.20"
+  },
+  {
+    "angle": "curriculum",
+    "title": "Robust High-Speed Running for Quadruped Robots via Deep Reinforcement Learning",
+    "url": "https://arxiv.org/pdf/2103.06484v2.pdf"
+  },
+  {
+    "angle": "curriculum",
+    "title": "Towards Dynamic Quadrupedal Gaits: A Symmetry-Guided RL Hierarchy Enables Free Gait Transitions at Varying Speeds",
+    "url": "https://arxiv.org/html/2403.10723v4"
+  },
+  {
+    "angle": "curriculum",
+    "title": "Learning agility and adaptive legged locomotion via curricular hindsight reinforcement learning",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11564515/"
+  },
+  {
+    "angle": "curriculum",
+    "title": "Fast and Efficient Locomotion via Learned Gait Transitions",
+    "url": "https://arxiv.org/html/2104.04644v2"
+  },
+  {
+    "angle": "curriculum",
+    "title": "Learning Agile Motor Skills on Quadrupedal Robots using Curriculum Learning",
+    "url": "https://faculty.cc.gatech.edu/~sha9/projects/tang2021learning.pdf"
+  },
+  {
+    "angle": "curriculum",
+    "title": "AllGaits: Learning All Quadruped Gaits and Transitions",
+    "url": "https://arxiv.org/html/2411.04787"
+  },
+  {
+    "angle": "curriculum",
+    "title": "Frontiers | Discovery of skill-switching criteria for learning agile quadruped locomotion",
+    "url": "https://www.frontiersin.org/journals/robotics-and-ai/articles/10.3389/frobt.2026.1697159/full"
+  },
+  {
+    "angle": "curriculum",
+    "title": "Learning Control of Quadruped Robot Galloping",
+    "url": "https://jbe.jlu.edu.cn/CN/Y2018/V15/I2/329"
+  },
+  {
+    "angle": "curriculum",
+    "title": "16 Ways to Gallop: Energetics and Body Dynamics of High-Speed Quadrupedal Gaits",
+    "url": "https://arxiv.org/html/2503.13716v1"
+  },
+  {
+    "angle": "curriculum",
+    "title": "DeepTransition: Viability Leads to the Emergence of Gait Transitions in Learning Anticipatory Quadrupedal Locomotion Skills",
+    "url": "https://arxiv.org/html/2306.07419"
+  },
+  {
+    "angle": "phase_templates",
+    "title": "Walk These Ways: Tuning Robot Control for Generalization with Multiplicity of Behavior",
+    "url": "https://proceedings.mlr.press/v205/margolis23a.html"
+  },
+  {
+    "angle": "phase_templates",
+    "title": "Walk These Ways: Tuning Robot Control for Generalization with Multiplicity of Behavior",
+    "url": "https://gmargo11.github.io/walk-these-ways/"
+  },
+  {
+    "angle": "phase_templates",
+    "title": "Improbable-AI/walk-these-ways",
+    "url": "https://github.com/Improbable-AI/walk-these-ways/"
+  },
+  {
+    "angle": "phase_templates",
+    "title": "Proceedings of the 6th Conference on Robot Learning (CoRL 2022)",
+    "url": "https://proceedings.mlr.press/v205/margolis23a/margolis23a.pdf"
+  },
+  {
+    "angle": "phase_templates",
+    "title": "⛕ Walk These Ways #",
+    "url": "https://leggedgym-ex-doc.readthedocs.io/en/latest/user_guide/blind_locomotion/walk_these_ways.html"
+  },
+  {
+    "angle": "phase_templates",
+    "title": "Walk These Ways: Tuning Robot Control for Generalization with Multiplicity of Behavior | IAIFI Research Explorer",
+    "url": "https://research.iaifi.org/posts/walk-these-ways-tuning-robot-control-for-generalization-with-multiplicity-of-beh/"
+  },
+  {
+    "angle": "phase_templates",
+    "title": "Walk These Ways: Tuning Robot Control for Generalization with",
+    "url": "https://www.alphaxiv.org/abs/2212.03238"
+  },
+  {
+    "angle": "phase_templates",
+    "title": "N/A",
+    "url": "https://export.arxiv.org/pdf/2212.03238v1.pdf"
+  },
+  {
+    "angle": "phase_templates",
+    "title": "Walk These Ways: Tuning Robot Control for Generalization…",
+    "url": "https://lacuna.tiptreesystems.com/work/walk-these-ways-tuning-robot-control-for-generalization"
+  },
+  {
+    "angle": "phase_templates",
+    "title": "N/A",
+    "url": "https://www.youtube.com/watch?v=FViNnwLk5wI"
+  },
+  {
+    "angle": "symmetry_penalty",
+    "title": "Symmetry Regularization for Quadruped Locomotion | Ziyin Xiong",
+    "url": "https://ziyin-xiong.github.io/projects/quadruped-locomotion/"
+  },
+  {
+    "angle": "symmetry_penalty",
+    "title": "On Learning Symmetric Locomotion",
+    "url": "https://www.cs.ubc.ca/~van/papers/2019-MIG-symmetry/2019-MIG-symmetry.pdf"
+  },
+  {
+    "angle": "symmetry_penalty",
+    "title": "Towards Dynamic Quadrupedal Gaits: A Symmetry-Guided RL Hierarchy Enables Free Gait Transitions at Varying Speeds",
+    "url": "https://arxiv.org/html/2403.10723v4"
+  },
+  {
+    "angle": "symmetry_penalty",
+    "title": "Learning Symmetric Legged Locomotion via State Distribution Symmetrization | IEEE Conference Publication | IEEE Xplore",
+    "url": "https://ieeexplore.ieee.org/document/11246183"
+  },
+  {
+    "angle": "symmetry_penalty",
+    "title": "N/A",
+    "url": "http://arxiv.org/pdf/2411.04787"
+  },
+  {
+    "angle": "symmetry_penalty",
+    "title": "Leveraging Symmetry in RL-based Legged Locomotion Control",
+    "url": "https://arxiv.org/html/2403.17320v3"
+  },
+  {
+    "angle": "symmetry_penalty",
+    "title": "Towards Dynamic Quadrupedal Gaits: A Symmetry-Guided RL Hierarchy Enables Free Gait Transitions at Varying Speeds",
+    "url": "https://arxiv.org/html/2403.10723"
+  },
+  {
+    "angle": "symmetry_penalty",
+    "title": "well-iam/biologically-inspired-anymal",
+    "url": "https://github.com/well-iam/biologically-inspired-anymal"
+  },
+  {
+    "angle": "symmetry_penalty",
+    "title": "Evolving Coordinated Quadruped Gaits with the HyperNEAT Generative Encoding",
+    "url": "https://jeffclune.com/publications/Clune-EvolvingCoordinatedGaitsWithHyperNEAT.pdf"
+  },
+  {
+    "angle": "symmetry_penalty",
+    "title": "[1904.12336] Learning Walk and Trot from the Same Objective Using Different Types of Exploration",
+    "url": "https://ar5iv.labs.arxiv.org/html/1904.12336v1"
+  },
+  {
+    "angle": "stance_width",
+    "title": "Reinforcement Learning for Quadrupedal Locomotion: Current Advancements and Future Perspectives",
+    "url": "https://arxiv.org/html/2410.10438v1"
+  },
+  {
+    "angle": "stance_width",
+    "title": "A Single Proprioceptive Policy for Sim-to-Real Quadruped Locomotion Across a Wide Velocity Range",
+    "url": "https://www.ias.informatik.tu-darmstadt.de/uploads/Team/JoaoCarvalho/A_Single_Proprioceptive_Policy.pdf"
+  },
+  {
+    "angle": "stance_width",
+    "title": "Learning Quadruped Locomotion Policies Using Logical Rules",
+    "url": "https://doi.org/10.1609/icaps.v34i1.31470"
+  },
+  {
+    "angle": "stance_width",
+    "title": "Gait-Parameterized Reinforcement Learning for a Hydraulic Quadruped Robot",
+    "url": "https://doi.org/10.1109/lra.2026.3673991"
+  },
+  {
+    "angle": "stance_width",
+    "title": "[1909.08399] DeepGait: Planning and Control of Quadrupedal Gaits using Deep Reinforcement Learning",
+    "url": "https://ar5iv.labs.arxiv.org/html/1909.08399"
+  },
+  {
+    "angle": "stance_width",
+    "title": "A Learning Framework for Diverse Legged Robot Locomotion Using Barrier-Based Style Rewards",
+    "url": "https://arxiv.org/html/2409.15780v3"
+  },
+  {
+    "angle": "stance_width",
+    "title": "Symmetry-Guided Reinforcement Learning for Versatile Quadrupedal Gait Generation",
+    "url": "https://arxiv.org/html/2403.10723v3"
+  },
+  {
+    "angle": "stance_width",
+    "title": "Towards Dynamic Quadrupedal Gaits: A Symmetry-Guided RL Hierarchy Enables Free Gait Transitions at Varying Speeds",
+    "url": "https://arxiv.org/html/2510.10455v1"
+  },
+  {
+    "angle": "stance_width",
+    "title": "Quadrupedal Locomotion via Periodic Reward Composition and Deep Reinforcement Learning",
+    "url": "https://john-s-li.github.io/docs/Johnathon%20Li%20-%20MS%20Report%20Final%20Draft-compressed.pdf"
+  },
+  {
+    "angle": "stance_width",
+    "title": "N/A",
+    "url": "http://arxiv.org/pdf/2411.04787"
+  },
+  {
+    "angle": "forelimb_load",
+    "title": "16 Ways to Gallop: Energetics and Body Dynamics of High-Speed Quadrupedal Gaits",
+    "url": "https://arxiv.org/html/2503.13716"
+  },
+  {
+    "angle": "forelimb_load",
+    "title": "AllGaits: Learning All Quadruped Gaits and Transitions",
+    "url": "https://arxiv.org/html/2411.04787v1"
+  },
+  {
+    "angle": "forelimb_load",
+    "title": "Towards Dynamic Quadrupedal Gaits: A Symmetry-Guided RL Hierarchy Enables Free Gait Transitions at Varying Speeds",
+    "url": "https://arxiv.org/html/2510.10455v1"
+  },
+  {
+    "angle": "forelimb_load",
+    "title": "DeepTransition: Viability Leads to the Emergence of Gait Transitions in Learning Anticipatory Quadrupedal Locomotion Skills",
+    "url": "https://arxiv.org/html/2306.07419"
+  },
+  {
+    "angle": "forelimb_load",
+    "title": "A Study on the Energy Efficiency of Various Gaits for Quadruped Robots: Generation and Evaluation",
+    "url": "https://www.scitepress.org/Papers/2023/122346/122346.pdf"
+  },
+  {
+    "angle": "forelimb_load",
+    "title": "Learning Quadruped Locomotion Policies using Logical Rules",
+    "url": "https://arxiv.org/html/2107.10969v3"
+  },
+  {
+    "angle": "forelimb_load",
+    "title": "Reinforcement Learning for Quadrupedal Locomotion: Current Advancements and Future Perspectives",
+    "url": "https://arxiv.org/html/2410.10438v1"
+  },
+  {
+    "angle": "forelimb_load",
+    "title": "Discovery of skill-switching criteria for learning agile quadruped locomotion - PMC",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12957656/"
+  },
+  {
+    "angle": "forelimb_load",
+    "title": "A Learning Framework for Diverse Legged Robot Locomotion ",
+    "url": "https://arxiv.org/html/2409.15780v2"
+  },
+  {
+    "angle": "forelimb_load",
+    "title": "[1804.10332] Sim-to-Real: Learning Agile Locomotion For Quadruped Robots",
+    "url": "https://ar5iv.labs.arxiv.org/html/1804.10332"
+  },
+  {
+    "angle": "landing_distance",
+    "title": "Towards Quadrupedal Jumping and Walking for Dynamic Locomotion using Reinforcement Learning",
+    "url": "https://arxiv.org/html/2510.24584"
+  },
+  {
+    "angle": "landing_distance",
+    "title": "Curriculum-Based Reinforcement Learning for Quadrupedal Jumping: A Reference-free Design",
+    "url": "https://arxiv.org/html/2401.16337"
+  },
+  {
+    "angle": "landing_distance",
+    "title": "Guided Reinforcement Learning for Omnidirectional 3D Jumping in Quadruped Robots",
+    "url": "https://arxiv.org/html/2507.16481v3"
+  },
+  {
+    "angle": "landing_distance",
+    "title": "Robust Quadruped Jumping via Deep Reinforcement Learning",
+    "url": "https://arxiv.org/html/2011.07089v3"
+  },
+  {
+    "angle": "landing_distance",
+    "title": "Trajectory Generation for Flight Phase of a Quadruped Robot Jump",
+    "url": "https://research.sabanciuniv.edu/id/eprint/47172/1/10481007.pdf"
+  },
+  {
+    "angle": "landing_distance",
+    "title": "RL-BASED OMNIDIRECTIONAL 3D",
+    "url": "https://iit-dlslab.github.io/mastertheses/bussola24ms.pdf"
+  },
+  {
+    "angle": "landing_distance",
+    "title": "Distance-Controllable Long Jump of Quadruped Robot Based on Parameter Optimization Using Deep Reinforcement Learning",
+    "url": "https://doi.org/10.1109/access.2023.3313637"
+  },
+  {
+    "angle": "landing_distance",
+    "title": "Learning to Leap | Daniel Skauge",
+    "url": "https://www.danielskauge.com/projects/learning-to-leap/"
+  },
+  {
+    "angle": "landing_distance",
+    "title": "Towards Low-Gravity Planetary Exploration using Reinforcement Learning for Walking, Jumping, and In-flight Attitude Control",
+    "url": "https://arxiv.org/html/2605.24643v1"
+  },
+  {
+    "angle": "landing_distance",
+    "title": "Quadruped-Frog: Rapid Online Optimization of Continuous Quadruped Jumping",
+    "url": "https://arxiv.org/html/2403.06954"
+  },
+  {
+    "angle": "periodic_composition",
+    "title": "Quadrupedal Locomotion via Periodic Reward Composition and Deep Reinforcement Learning",
+    "url": "https://john-s-li.github.io/docs/Johnathon%20Li%20-%20MS%20Report%20Final%20Draft-compressed.pdf"
+  },
+  {
+    "angle": "periodic_composition",
+    "title": "AN ABSTRACT OF THE THESIS OF",
+    "url": "https://ir.library.oregonstate.edu/downloads/gq67k0526"
+  },
+  {
+    "angle": "periodic_composition",
+    "title": "Sim-to-Real Learning of All Common Bipedal Gaits via Periodic Reward Composition",
+    "url": "https://doi.org/10.1109/icra48506.2021.9561814"
+  },
+  {
+    "angle": "periodic_composition",
+    "title": "N/A",
+    "url": "https://arxiv.org/pdf/2011.01387"
+  },
+  {
+    "angle": "periodic_composition",
+    "title": "AllGaits: Learning All Quadruped Gaits and Transitions",
+    "url": "https://arxiv.org/html/2411.04787"
+  },
+  {
+    "angle": "periodic_composition",
+    "title": "Sim-to-Real Learning of All Common Bipedal Gaits via Periodic Reward Composition — Lacuna",
+    "url": "https://lacuna.tiptreesystems.com/work/sim-to-real-learning-of-all-common-bipedal-wqpp"
+  },
+  {
+    "angle": "periodic_composition",
+    "title": "Towards Dynamic Quadrupedal Gaits: A Symmetry-Guided RL Hierarchy Enables Free Gait Transitions at Varying Speeds",
+    "url": "https://arxiv.org/html/2403.10723v4"
+  },
+  {
+    "angle": "periodic_composition",
+    "title": "Sim-to-Real Learning of All Common Bipedal Gaits via Periodic Reward Composition",
+    "url": "https://arxiv.org/pdf/2011.01387v2.pdf"
+  },
+  {
+    "angle": "periodic_composition",
+    "title": "Towards Dynamic Quadrupedal Gaits: A Symmetry-Guided RL Hierarchy Enables Free Gait Transitions at Varying Speeds",
+    "url": "https://arxiv.org/html/2403.10723"
+  },
+  {
+    "angle": "periodic_composition",
+    "title": "DRAIL",
+    "url": "https://mime.engineering.oregonstate.edu/research/drl/research.html"
+  },
+  {
+    "angle": "adversarial_robot",
+    "title": "Learning Robust and Agile Legged Locomotion Using Adversarial Motion Priors",
+    "url": "https://doi.org/10.1109/lra.2023.3290509"
+  },
+  {
+    "angle": "adversarial_robot",
+    "title": "Lifelike agility and play in quadrupedal robots using reinforcement learning and generative pre-trained models | Nature Machine Intelligence",
+    "url": "https://www.nature.com/articles/s42256-024-00861-3"
+  },
+  {
+    "angle": "adversarial_robot",
+    "title": "Adversarial Motion Priors Make Good Substitutes for Complex Reward Functions",
+    "url": "https://xbpeng.github.io/projects/AMP_Locomotion/AMP_Locomotion_2022.pdf"
+  },
+  {
+    "angle": "adversarial_robot",
+    "title": "Tencent-RoboticsX/lifelike-agility-and-play",
+    "url": "https://github.com/Tencent-RoboticsX/lifelike-agility-and-play"
+  },
+  {
+    "angle": "adversarial_robot",
+    "title": "AMP: Adversarial Motion Priors for Stylized Physics-Based Character Control",
+    "url": "https://arxiv.org/html/2104.02180v2"
+  },
+  {
+    "angle": "adversarial_robot",
+    "title": "seyoungree/legged_rl_gym",
+    "url": "https://github.com/seyoungree/legged_rl_gym"
+  },
+  {
+    "angle": "adversarial_robot",
+    "title": "Adversarial Motion Priors Make Good Substitutes for ...",
+    "url": "https://xbpeng.github.io/projects/AMP_Locomotion/"
+  },
+  {
+    "angle": "adversarial_robot",
+    "title": "Motion Priors for Real World RL",
+    "url": "https://sites.google.com/berkeley.edu/amp-in-real/home"
+  },
+  {
+    "angle": "adversarial_robot",
+    "title": "Learning Robust, Agile, Natural Legged Locomotion Skills in the Wild",
+    "url": "https://arxiv.org/html/2304.10888v3"
+  },
+  {
+    "angle": "adversarial_robot",
+    "title": "Reproduce natural motion with Adversarial Motion Priors | Arm Learning Paths",
+    "url": "https://learn.arm.com/learning-paths/laptops-and-desktops/dgx_spark_isaac_robotics2/4_amp/"
+  },
+  {
+    "angle": "constraints_hardware",
+    "title": "Not Only Rewards But Also Constraints: Applications on Legged Robot Locomotion",
+    "url": "https://arxiv.org/html/2308.12517"
+  },
+  {
+    "angle": "constraints_hardware",
+    "title": "Guided Constrained Policy Optimization for Dynamic Quadrupedal Robot Locomotion",
+    "url": "https://www.robots.ox.ac.uk/~mobile/drs/Papers/2020RAL_gangapurwala.pdf"
+  },
+  {
+    "angle": "constraints_hardware",
+    "title": "CaT: Constraints as Terminations for Legged Locomotion Reinforcement Learning",
+    "url": "https://arxiv.org/html/2403.18765"
+  },
+  {
+    "angle": "constraints_hardware",
+    "title": "Actuator-Constrained Reinforcement Learning for High-Speed Quadrupedal Locomotion",
+    "url": "https://arxiv.org/html/2312.17507"
+  },
+  {
+    "angle": "constraints_hardware",
+    "title": "N/A",
+    "url": "https://arxiv.org/pdf/2309.15430"
+  },
+  {
+    "angle": "constraints_hardware",
+    "title": "High-Speed Quadruped Locomotion under Actuator Velocity Constraints via Reinforcement Learning",
+    "url": "https://doi.org/10.1109/icus66297.2025.11294513"
+  },
+  {
+    "angle": "constraints_hardware",
+    "title": "Reinforcement Learning for High-Speed Quadrupedal Locomotion With Motor Operating Region Constraints: Mitigating Motor Model Discrepancies through Torque Clipping in Realistic Motor Operating Region - IEEE Robotics & Automation Magazine",
+    "url": "https://ramagazine.ieee.org/2025/06/24/reinforcement-learning-for-high-speed-quadrupedal-locomotion-with-motor-operating-region-constraints-mitigating-motor-model-discrepancies-through-torque-clipping-in-realistic-motor-operating-region/"
+  },
+  {
+    "angle": "constraints_hardware",
+    "title": "Extending the Speed Limit of Quadrupedal Locomotion via Refined Actuator Modeling and Adaptive Command Scheduling",
+    "url": "https://arxiv.org/html/2609.13289"
+  },
+  {
+    "angle": "constraints_hardware",
+    "title": "Towards Dynamic Quadrupedal Gaits: A Symmetry-Guided RL Hierarchy Enables Free Gait Transitions at Varying Speeds",
+    "url": "https://arxiv.org/html/2510.10455v1"
+  },
+  {
+    "angle": "constraints_hardware",
+    "title": "Fast and Efficient Locomotion via Learned Gait Transitions",
+    "url": "https://arxiv.org/html/2104.04644v2"
+  },
+  {
+    "angle": "direct_footstep",
+    "title": "Footstep reward for energy-efficient quadruped gait generation and transition through deep reinforcement learning",
+    "url": "https://doi.org/10.1080/01691864.2024.2442718"
+  },
+  {
+    "angle": "direct_footstep",
+    "title": "Footstep reward for energy-efficient quadruped gait generation and transition through deep reinforcement learning",
+    "url": "https://tohoku.elsevierpure.com/en/publications/footstep-reward-for-energy-efficient-quadruped-gait-generation-an/"
+  },
+  {
+    "angle": "direct_footstep",
+    "title": "Footstep reward for energy-efficient quadruped gait generation and transition through deep reinforcement learning - researchr publication",
+    "url": "https://researchr.org/publication/SulpiceOH25"
+  },
+  {
+    "angle": "direct_footstep",
+    "title": "Matilda - Footstep reward for energy-efficient quadruped gait generation and transition through deep reinforcement learning",
+    "url": "https://matilda.science/work/7d4e6a6a-173b-44d5-9c55-1c0a97a6545b"
+  },
+  {
+    "angle": "direct_footstep",
+    "title": "Deep Reinforcement Learning with Gait Mode Specification for Quadrupedal Trot-Gallop Energetic Analysis - PubMed",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/34892236/"
+  },
+  {
+    "angle": "direct_footstep",
+    "title": "Deep Reinforcement Learning with Gait Mode Specification for Quadrupedal Trot-Gallop Energetic Analysis",
+    "url": "https://www.paperhost.org/proceedings/embs/EMBC21/files/0505.pdf"
+  },
+  {
+    "angle": "direct_footstep",
+    "title": "Rapid Speed Change for Quadruped Robots via Deep Reinforcement Learning",
+    "url": "https://doi.org/10.1109/icdl55364.2023.10364428"
+  },
+  {
+    "angle": "direct_footstep",
+    "title": "Towards Dynamic Quadrupedal Gaits: A Symmetry-Guided RL Hierarchy Enables Free Gait Transitions at Varying Speeds",
+    "url": "https://arxiv.org/html/2403.10723v4"
+  },
+  {
+    "angle": "direct_footstep",
+    "title": "Economical Quadrupedal Multi-Gait Locomotion via Gait-Heuristic Reinforcement Learning",
+    "url": "https://jbe.jlu.edu.cn/EN/10.1007/s42235-024-00517-3"
+  },
+  {
+    "angle": "direct_footstep",
+    "title": "Fast and Efficient Locomotion via Learned Gait Transitions",
+    "url": "https://proceedings.mlr.press/v164/yang22d.html"
+  },
+  {
+    "angle": "periodic_thesis",
+    "title": "Quadrupedal Locomotion via Periodic Reward Composition and Deep Reinforcement Learning",
+    "url": "https://john-s-li.github.io/docs/Johnathon%20Li%20-%20MS%20Report%20Final%20Draft-compressed.pdf"
+  },
+  {
+    "angle": "periodic_thesis",
+    "title": "Johnathon Li: MS Capstone",
+    "url": "https://john-s-li.github.io/html/mscapstone.html"
+  },
+  {
+    "angle": "periodic_thesis",
+    "title": "Johnathon Li: Home",
+    "url": "https://john-s-li.github.io/"
+  },
+  {
+    "angle": "periodic_thesis",
+    "title": "Sim-to-Real Learning of All Common Bipedal Gaits via Periodic Reward Composition",
+    "url": "https://arxiv.org/pdf/2011.01387v2.pdf"
+  },
+  {
+    "angle": "periodic_thesis",
+    "title": "Quadrupedal Locomotion via Central Pattern Generator and Reinforcement Learning | Chengkun Li",
+    "url": "https://charlieleee.github.io/project/legged-robots/"
+  },
+  {
+    "angle": "periodic_thesis",
+    "title": "Deep Reinforcement Learning with Gait Mode Specification for Quadrupedal Trot-Gallop Energetic Analysis",
+    "url": "https://www.paperhost.org/proceedings/embs/EMBC21/files/0505.pdf"
+  },
+  {
+    "angle": "periodic_thesis",
+    "title": "Fast and Efficient Locomotion via Learned Gait Transitions",
+    "url": "https://arxiv.org/html/2104.04644v2"
+  },
+  {
+    "angle": "periodic_thesis",
+    "title": "Learning Quadruped Locomotion Policies using Logical Rules",
+    "url": "https://arxiv.org/html/2107.10969v3"
+  },
+  {
+    "angle": "periodic_thesis",
+    "title": "apexrl/awesome-rl-for-legged-locomotion",
+    "url": "https://github.com/apexrl/awesome-rl-for-legged-locomotion"
+  },
+  {
+    "angle": "periodic_thesis",
+    "title": "Deep reinforcement learning for real-world quadrupedal locomotion: a comprehensive review",
+    "url": "https://www.oaepublish.com/articles/ir.2022.20"
+  },
+  {
+    "angle": "bio_priors",
+    "title": "Full article: Deep reinforcement learning of quadrupedal gaits without motion references: emergence of pace and other locomotion patterns",
+    "url": "https://www.tandfonline.com/doi/full/10.1080/01691864.2025.2587837"
+  },
+  {
+    "angle": "bio_priors",
+    "title": "Symmetry-Guided Reinforcement Learning for Versatile Quadrupedal Gait Generation",
+    "url": "https://arxiv.org/html/2403.10723v3"
+  },
+  {
+    "angle": "bio_priors",
+    "title": "Learning Omnidirectional Locomotion for a Salamander-Like Quadruped Robot",
+    "url": "https://doi.org/10.48550/arxiv.2511.08299"
+  },
+  {
+    "angle": "bio_priors",
+    "title": "[2402.08662] Learning Emergent Gaits with Decentralized Phase Oscillators: on the role of Observations, Rewards, and Feedback",
+    "url": "https://ar5iv.labs.arxiv.org/html/2402.08662"
+  },
+  {
+    "angle": "bio_priors",
+    "title": "Fast and Efficient Locomotion via Learned Gait Transitions",
+    "url": "https://arxiv.org/html/2104.04644v2"
+  },
+  {
+    "angle": "bio_priors",
+    "title": "Learning to adapt through bio-inspired gait strategies for versatile quadruped locomotion | Nature Machine Intelligence",
+    "url": "https://www.nature.com/articles/s42256-025-01065-z"
+  },
+  {
+    "angle": "bio_priors",
+    "title": "AllGaits: Learning All Quadruped Gaits and Transitions",
+    "url": "https://arxiv.org/html/2411.04787"
+  },
+  {
+    "angle": "bio_priors",
+    "title": "Learning Symmetric and Low-Energy Locomotion",
+    "url": "https://sites.cc.gatech.edu/home/turk/paper_pages/2018_symmetric_locomotion/symmetric_low_energy_locomotion.pdf"
+  },
+  {
+    "angle": "bio_priors",
+    "title": "Discovery of skill-switching criteria for learning agile quadruped locomotion",
+    "url": "https://www.frontiersin.org/journals/robotics-and-ai/articles/10.3389/frobt.2026.1697159/pdf"
+  },
+  {
+    "angle": "bio_priors",
+    "title": "Towards Dynamic Quadrupedal Gaits: A Symmetry-Guided RL Hierarchy Enables Free Gait Transitions at Varying Speeds",
+    "url": "https://arxiv.org/html/2510.10455v1"
+  },
+  {
+    "angle": "highspeed_rao",
+    "title": "Rapid Locomotion via Reinforcement Learning",
+    "url": "https://www.roboticsproceedings.org/rss18/p022.pdf"
+  },
+  {
+    "angle": "highspeed_rao",
+    "title": "Improbable-AI/rapid-locomotion-rl",
+    "url": "https://github.com/Improbable-AI/rapid-locomotion-rl/"
+  },
+  {
+    "angle": "highspeed_rao",
+    "title": "Rapid Locomotion via Reinforcement Learning",
+    "url": "https://agility.csail.mit.edu/"
+  },
+  {
+    "angle": "highspeed_rao",
+    "title": "Rapid Locomotion via Reinforcement Learning",
+    "url": "https://arxiv.org/html/2205.02824v1"
+  },
+  {
+    "angle": "highspeed_rao",
+    "title": "Robust High-Speed Running for Quadruped Robots via Deep Reinforcement Learning",
+    "url": "https://arxiv.org/pdf/2103.06484v2.pdf"
+  },
+  {
+    "angle": "highspeed_rao",
+    "title": "Towards Dynamic Quadrupedal Gaits: A Symmetry-Guided RL Hierarchy Enables Free Gait Transitions at Varying Speeds",
+    "url": "https://arxiv.org/html/2510.10455v1"
+  },
+  {
+    "angle": "highspeed_rao",
+    "title": "Locomotion: Training a Unitree Go2 with PPO in",
+    "url": "https://adgonzalez2018.github.io/papers/RLPROJ2.pdf"
+  },
+  {
+    "angle": "highspeed_rao",
+    "title": "A Single Proprioceptive Policy for Sim-to-Real Quadruped Locomotion Across a Wide Velocity Range",
+    "url": "https://www.ias.informatik.tu-darmstadt.de/uploads/Team/JoaoCarvalho/A_Single_Proprioceptive_Policy.pdf"
+  },
+  {
+    "angle": "highspeed_rao",
+    "title": "Proceedings of the 5th Conference on Robot Learning (CoRL 2021)",
+    "url": "https://proceedings.mlr.press/v164/fu22a/fu22a.pdf"
+  },
+  {
+    "angle": "highspeed_rao",
+    "title": "High-speed quadrupedal locomotion by imitation-relaxation reinforcement learning",
+    "url": "https://doi.org/10.1038/s42256-022-00576-3"
+  },
+  {
+    "angle": "jump_curriculum",
+    "title": "Learning Agile Motor Skills on Quadrupedal Robots using Curriculum Learning",
+    "url": "https://faculty.cc.gatech.edu/~sha9/projects/tang2021learning.pdf"
+  },
+  {
+    "angle": "jump_curriculum",
+    "title": "Learning agile and dynamic motor skills for legged robots | Science Robotics",
+    "url": "https://www.science.org/doi/10.1126/scirobotics.aau5872"
+  },
+  {
+    "angle": "jump_curriculum",
+    "title": "TransCurriculum: Multi-Dimensional Curriculum Learning for Fast & Stable Locomotion",
+    "url": "https://people.cs.gmu.edu/~xiao/papers/transcurriculum.pdf"
+  },
+  {
+    "angle": "jump_curriculum",
+    "title": "Curriculum-Based Reinforcement Learning for Quadrupedal Jumping: A Reference-free Design",
+    "url": "https://arxiv.org/html/2401.16337v2"
+  },
+  {
+    "angle": "jump_curriculum",
+    "title": "Discovery of Skill Switching Criteria for Learning",
+    "url": "https://discovery.ucl.ac.uk/id/eprint/10224193/1/Discovery_of_skill_switching_criteria_for_learning_agile_quadruped_locomotion.pdf"
+  },
+  {
+    "angle": "jump_curriculum",
+    "title": "Sim-to-Real: Learning Agile Locomotion For Quadruped Robots",
+    "url": "https://arxiv.org/html/1804.10332v2"
+  },
+  {
+    "angle": "jump_curriculum",
+    "title": "Learning Agile Robotic Locomotion Skills by Imitating Animals",
+    "url": "https://doi.org/10.15607/rss.2020.xvi.064"
+  },
+  {
+    "angle": "jump_curriculum",
+    "title": "[2310.15583] Learning Agility and Adaptive Legged Locomotion via Curricular Hindsight Reinforcement Learning",
+    "url": "https://ar5iv.labs.arxiv.org/html/2310.15583"
+  },
+  {
+    "angle": "jump_curriculum",
+    "title": "Curriculum-Based Reinforcement Learning for Quadrupedal Jumping: A Reference-Free Design",
+    "url": "https://doi.org/10.1109/mra.2024.3487325"
+  },
+  {
+    "angle": "jump_curriculum",
+    "title": "Learning Agile Locomotion Skills with a Mentor",
+    "url": "https://doi.org/10.1109/icra48506.2021.9561567"
+  },
+  {
+    "angle": "recent_gait",
+    "title": "Symmetry Regularization for Quadruped Locomotion | Ziyin Xiong",
+    "url": "https://ziyin-xiong.github.io/projects/quadruped-locomotion/"
+  },
+  {
+    "angle": "recent_gait",
+    "title": "Towards Dynamic Quadrupedal Gaits: A Symmetry-Guided RL Hierarchy Enables Free Gait Transitions at Varying Speeds",
+    "url": "https://arxiv.org/html/2403.10723v4"
+  },
+  {
+    "angle": "recent_gait",
+    "title": "16 Ways to Gallop: Energetics and Body Dynamics of High-Speed Quadrupedal Gaits",
+    "url": "https://arxiv.org/html/2503.13716"
+  },
+  {
+    "angle": "recent_gait",
+    "title": "S-Cheetah: A Novel Quadrupedal Robot with a 3-DOF Active Spine Learning Agile Locomotion",
+    "url": "https://arxiv.org/html/2605.27909"
+  },
+  {
+    "angle": "recent_gait",
+    "title": "LoComposition: Terrain-Adaptive Energy-Efficient Quadruped Locomotion without Gait Priors",
+    "url": "https://arxiv.org/html/2606.15896v1"
+  },
+  {
+    "angle": "recent_gait",
+    "title": "Towards Dynamic Quadrupedal Gaits: A Symmetry-Guided RL Hierarchy Enables Free Gait Transitions at Varying Speeds",
+    "url": "https://arxiv.org/abs/2510.10455"
+  },
+  {
+    "angle": "recent_gait",
+    "title": "Discovery of Skill Switching Criteria for Learning Agile Quadruped Locomotion",
+    "url": "https://arxiv.org/html/2502.06676"
+  },
+  {
+    "angle": "recent_gait",
+    "title": "Breaking Symmetries Leads to Diverse Quadrupedal Gaits",
+    "url": "https://arxiv.org/html/2303.04857v3"
+  },
+  {
+    "angle": "recent_gait",
+    "title": "Full article: Deep reinforcement learning of quadrupedal gaits without motion references: emergence of pace and other locomotion patterns",
+    "url": "https://www.tandfonline.com/doi/full/10.1080/01691864.2025.2587837"
+  },
+  {
+    "angle": "recent_gait",
+    "title": "A Trainable CPG Framework for Quadruped Locomotion",
+    "url": "https://arxiv.org/abs/2610.36537"
+  },
+  {
+    "angle": "mocap_robots",
+    "title": "Learning Agile Robotic Locomotion Skills by",
+    "url": "https://www.roboticsproceedings.org/rss16/p064.pdf"
+  },
+  {
+    "angle": "mocap_robots",
+    "title": "DeepMimic: Example-Guided Deep Reinforcement Learningof Physics-Based Character Skills",
+    "url": "https://arxiv.org/html/1804.02717v3"
+  },
+  {
+    "angle": "mocap_robots",
+    "title": "apexrl/awesome-rl-for-legged-locomotion",
+    "url": "https://github.com/apexrl/awesome-rl-for-legged-locomotion"
+  },
+  {
+    "angle": "mocap_robots",
+    "title": "Learning Agile Robotic Locomotion Skills by Imitating ...",
+    "url": "https://xbpeng.github.io/projects/Robotic_Imitation/"
+  },
+  {
+    "angle": "mocap_robots",
+    "title": "Robots Learning to Move like Animals",
+    "url": "https://bair.berkeley.edu/blog/2020/04/03/laikago/"
+  },
+  {
+    "angle": "mocap_robots",
+    "title": "Learning to Kick from Demonstration with Deep Reinforcement Learning",
+    "url": "https://tams-www.informatik.uni-hamburg.de/lectures/2021ss/seminar/oberseminar/doc/presentation_timon_engelke.pdf"
+  },
+  {
+    "angle": "mocap_robots",
+    "title": "Generalized Animal Imitator: Agile Locomotion with Versatile Motion Prior",
+    "url": "https://rchalyang.github.io/VIM/"
+  },
+  {
+    "angle": "mocap_robots",
+    "title": "Generalized Animal Imitator: Agile Locomotion with Versatile Motion Prior",
+    "url": "https://proceedings.mlr.press/v270/yang25b.html"
+  },
+  {
+    "angle": "mocap_robots",
+    "title": "FastMimic: Model-based Motion Imitation for Agile, Diverse and Generalizable Quadrupedal Locomotion",
+    "url": "https://arxiv.org/html/2109.13362"
+  },
+  {
+    "angle": "mocap_robots",
+    "title": "Discovery of skill-switching criteria for learning agile quadruped locomotion",
+    "url": "https://www.frontiersin.org/journals/robotics-and-ai/articles/10.3389/frobt.2026.1697159/pdf"
+  },
+  {
+    "angle": "gait_observations",
+    "title": "Learning Emergent Gaits with Decentralized Phase ...",
+    "url": "https://arxiv.org/html/2402.08662v2"
+  },
+  {
+    "angle": "gait_observations",
+    "title": "[2402.08662] Learning Emergent Gaits with Decentralized Phase Oscillators: on the role of Observations, Rewards, and Feedback",
+    "url": "https://arxiv.org/abs/2402.08662"
+  },
+  {
+    "angle": "gait_observations",
+    "title": "Learning Emergent Gaits with Decentralized Phase Oscillators:",
+    "url": "https://dspace.mit.edu/entities/publication/e96df60c-038a-452f-af23-dfab07419dfa"
+  },
+  {
+    "angle": "gait_observations",
+    "title": "Learning Emergent Gaits with Decentralized Phase Oscillators: on the role of Observations, Rewards, and Feedback - Steve Heim",
+    "url": "https://sheim.github.io/publication/2024-01-01-Learning-Emergent-Gaits-with-Decentralized-Phase-Oscillators-on-the-role-of-Observations-Rewards-and-Feedback"
+  },
+  {
+    "angle": "gait_observations",
+    "title": "Learning Emergent Gaits with Decentralized Phase Oscillators: on the role of Observations, Rewards, and Feedback",
+    "url": "https://doi.org/10.1109/icra57147.2024.10611045"
+  },
+  {
+    "angle": "gait_observations",
+    "title": "[PDF] Learning Emergent Gaits with Decentralized Phase Oscillators: on the role of Observations, Rewards, and Feedback | Semantic Scholar",
+    "url": "https://www.semanticscholar.org/paper/Learning-Emergent-Gaits-with-Decentralized-Phase-on-Zhang-Heim/74c115d617c31e5fe3b064498b280196ad23f26f"
+  },
+  {
+    "angle": "gait_observations",
+    "title": "[2402.08662] Learning Emergent Gaits with Decentralized Phase Oscillators: on the role of Observations, Rewards, and Feedback",
+    "url": "https://ar5iv.labs.arxiv.org/html/2402.08662"
+  },
+  {
+    "angle": "gait_observations",
+    "title": "Learning Emergent Gaits with Decentralized Phase Oscillators: on the role of Observations, Rewards, and Feedback | alphaXiv",
+    "url": "https://www.alphaxiv.org/abs/2402.08662"
+  },
+  {
+    "angle": "gait_observations",
+    "title": "mit-biomimetics/ORCAgym",
+    "url": "https://github.com/mit-biomimetics/ORCAgym"
+  },
+  {
+    "angle": "gait_observations",
+    "title": "Learning Emergent Gaits with Decentralized Phase Oscillators - ICRA 2024",
+    "url": "https://www.youtube.com/watch?v=1NKQ0rSV3jU"
+  },
+  {
+    "angle": "foreload_ablation",
+    "title": "[2402.08662] Learning Emergent Gaits with Decentralized Phase Oscillators: on the role of Observations, Rewards, and Feedback",
+    "url": "https://ar5iv.labs.arxiv.org/html/2402.08662"
+  },
+  {
+    "angle": "foreload_ablation",
+    "title": "[2402.08662] Learning Emergent Gaits with Decentralized Phase Oscillators: on the role of Observations, Rewards, and Feedback",
+    "url": "https://arxiv.org/abs/2402.08662"
+  },
+  {
+    "angle": "foreload_ablation",
+    "title": "Learning Emergent Gaits with Decentralized Phase Oscillators - ICRA 2024",
+    "url": "https://www.youtube.com/watch?v=1NKQ0rSV3jU"
+  },
+  {
+    "angle": "foreload_ablation",
+    "title": "Learning Emergent Gaits with Decentralized Phase Oscillators: on the role of Observations, Rewards, and Feedback — Lacuna",
+    "url": "https://lacuna.tiptreesystems.com/work/learning-emergent-gaits-with-decentralized-phase-oscillators"
+  },
+  {
+    "angle": "foreload_ablation",
+    "title": "Learning Emergent Gaits with Decentralized Phase Oscillators:",
+    "url": "https://dspace.mit.edu/entities/publication/e96df60c-038a-452f-af23-dfab07419dfa"
+  },
+  {
+    "angle": "foreload_ablation",
+    "title": "Learning Emergent Gaits with Decentralized Phase Oscillators: on the role of Observations, Rewards, and Feedback",
+    "url": "https://doi.org/10.1109/icra57147.2024.10611045"
+  },
+  {
+    "angle": "foreload_ablation",
+    "title": "Learning Emergent Gaits with Decentralized Phase Oscillators: on the role of Observations, Rewards, and Feedback - Steve Heim",
+    "url": "https://sheim.github.io/publication/2024-01-01-Learning-Emergent-Gaits-with-Decentralized-Phase-Oscillators-on-the-role-of-Observations-Rewards-and-Feedback"
+  },
+  {
+    "angle": "foreload_ablation",
+    "title": "A Quadruped Robot Exhibiting Spontaneous Gait Transitions from Walking to Trotting to Galloping | Scientific Reports",
+    "url": "https://www.nature.com/articles/s41598-017-00348-9"
+  },
+  {
+    "angle": "foreload_ablation",
+    "title": "Learning Emergent Gaits with Decentralized Phase Oscillators: on the role of Observations, Rewards, and Feedback | alphaXiv",
+    "url": "https://www.alphaxiv.org/abs/2402.08662"
+  },
+  {
+    "angle": "foreload_ablation",
+    "title": "Learning Emergent Gaits with Decentralized Phase Oscillators: on the role of Observations, Rewards, and Feedback",
+    "url": "https://www.catalyzex.com/paper/learning-emergent-gaits-with-decentralized"
+  },
+  {
+    "angle": "footstep_fulltext",
+    "title": "Footstep reward for energy-efficient quadruped gait generation and transition through deep reinforcement learning",
+    "url": "https://doi.org/10.1080/01691864.2024.2442718"
+  },
+  {
+    "angle": "footstep_fulltext",
+    "title": "Footstep reward for energy-efficient quadruped gait generation and transition through deep reinforcement learning",
+    "url": "https://tohoku.elsevierpure.com/en/publications/footstep-reward-for-energy-efficient-quadruped-gait-generation-an/"
+  },
+  {
+    "angle": "footstep_fulltext",
+    "title": "Footstep reward for energy-efficient quadruped gait ...",
+    "url": "https://www.semanticscholar.org/paper/Footstep-reward-for-energy-efficient-quadruped-gait-Sulpice-Owaki/c16dc92d75cebfd6da610b8e59e28c182d0d598d"
+  },
+  {
+    "angle": "footstep_fulltext",
+    "title": "Publications(研究業績) – Neuro-Robotics Lab",
+    "url": "https://neuro.mech.tohoku.ac.jp/publications/"
+  },
+  {
+    "angle": "footstep_fulltext",
+    "title": "Footstep reward for energy-efficient quadruped gait generation and transition through deep reinforcement learning - researchr publication",
+    "url": "https://researchr.org/publication/SulpiceOH25"
+  },
+  {
+    "angle": "footstep_fulltext",
+    "title": "Two-stage Learning Framework Combining Joint-level Reinforcement Learning and Muscle-level Adaptation for Musculoskeletal Locomotion",
+    "url": "https://doi.org/10.1109/iros60139.2025.11246973"
+  },
+  {
+    "angle": "footstep_fulltext",
+    "title": "Neuro-Robotics Lab – Hayashibe-Owaki Lab, Department of Robotics, Tohoku University",
+    "url": "https://neuro.mech.tohoku.ac.jp/"
+  },
+  {
+    "angle": "footstep_fulltext",
+    "title": "Supplementary Material",
+    "url": "https://openreview.net/attachment?id=9ZerDaRxp3&name=supplemtary_material"
+  },
+  {
+    "angle": "footstep_fulltext",
+    "title": "Foot trajectory as a key factor for diverse gait patterns in ...",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/39805866/"
+  },
+  {
+    "angle": "footstep_fulltext",
+    "title": "昆虫の「歩き方」をAIが解読しロボットへ ―数歩分... | プレスリリース・研究成果 | 東北大学 -TOHOKU UNIVERSITY-",
+    "url": "https://www.tohoku.ac.jp/japanese/2026/08/press20260819-04-locomotion.html"
+  },
+  {
+    "angle": "embc_gallop_reward",
+    "title": "Deep Reinforcement Learning with Gait Mode Specification for Quadrupedal Trot-Gallop Energetic Analysis",
+    "url": "https://www.paperhost.org/proceedings/embs/EMBC21/files/0505.pdf"
+  },
+  {
+    "angle": "embc_gallop_reward",
+    "title": "Deep Reinforcement Learning with Gait Mode Specification for Quadrupedal Trot-Gallop Energetic Analysis - PubMed",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/34892236/"
+  },
+  {
+    "angle": "embc_gallop_reward",
+    "title": "Deep Reinforcement Learning with Gait Mode Specification for Quadrupedal Trot-Gallop Energetic Analysis",
+    "url": "https://doi.org/10.1109/embc46164.2021.9630547"
+  },
+  {
+    "angle": "embc_gallop_reward",
+    "title": "Publications(研究業績) – Neuro-Robotics Lab",
+    "url": "https://neuro.mech.tohoku.ac.jp/publications/"
+  },
+  {
+    "angle": "embc_gallop_reward",
+    "title": "Footstep reward for energy-efficient quadruped gait generation and transition through deep reinforcement learning",
+    "url": "https://doi.org/10.1080/01691864.2024.2442718"
+  },
+  {
+    "angle": "embc_gallop_reward",
+    "title": "Deep Reinforcement Learning with Gait Mode Specification for Quadrupedal Trot-Gallop Energetic Analysis - researchr publication",
+    "url": "https://researchr.org/publication/ChaiOH21"
+  },
+  {
+    "angle": "embc_gallop_reward",
+    "title": "Footstep reward for energy-efficient quadruped gait generation and transition through deep reinforcement learning",
+    "url": "https://tohoku.elsevierpure.com/en/publications/footstep-reward-for-energy-efficient-quadruped-gait-generation-an/"
+  },
+  {
+    "angle": "embc_gallop_reward",
+    "title": "Discovery of Skill Switching Criteria for Learning",
+    "url": "https://discovery.ucl.ac.uk/id/eprint/10224193/1/Discovery_of_skill_switching_criteria_for_learning_agile_quadruped_locomotion.pdf"
+  },
+  {
+    "angle": "embc_gallop_reward",
+    "title": "Learning Quadruped Locomotion Policies using Logical Rules",
+    "url": "https://arxiv.org/html/2107.10969v3"
+  },
+  {
+    "angle": "embc_gallop_reward",
+    "title": "N/A",
+    "url": "https://arxiv.org/pdf/2111.01674"
+  },
+  {
+    "angle": "barrier_evidence",
+    "title": "sri299792458/Barrier-Loco",
+    "url": "https://github.com/sri299792458/Barrier-Loco"
+  },
+  {
+    "angle": "barrier_evidence",
+    "title": "A Learning Framework for Diverse Legged Robot Locomotion Using Barrier-Based Style Rewards",
+    "url": "https://pure.kaist.ac.kr/en/publications/a-learning-framework-for-diverse-legged-robot-locomotion-using-ba/"
+  },
+  {
+    "angle": "barrier_evidence",
+    "title": "apexrl/awesome-rl-for-legged-locomotion",
+    "url": "https://github.com/apexrl/awesome-rl-for-legged-locomotion"
+  },
+  {
+    "angle": "barrier_evidence",
+    "title": "A Learning Framework for Diverse Legged Robot Locomotion Using Barrier-Based Style Rewards",
+    "url": "https://arxiv.org/html/2409.15780"
+  },
+  {
+    "angle": "barrier_evidence",
+    "title": "A Learning Framework for Diverse Legged Robot Locomotion Using Barrier-Based Style Rewards | IEEE Conference Publication | IEEE Xplore",
+    "url": "https://ieeexplore.ieee.org/abstract/document/11128517"
+  },
+  {
+    "angle": "barrier_evidence",
+    "title": "[2409.15780] A Learning Framework for Diverse Legged Robot Locomotion Using Barrier-Based Style Rewards",
+    "url": "https://arxiv.org/abs/2409.15780"
+  },
+  {
+    "angle": "barrier_evidence",
+    "title": "A Learning Framework for Diverse Legged Robot Locomotion Using Barrier-Based Style Rewards",
+    "url": "https://doi.org/10.1109/icra55743.2025.11128517"
+  },
+  {
+    "angle": "barrier_evidence",
+    "title": "[Literature Review] A Learning Framework for Diverse ...",
+    "url": "https://www.themoonlight.io/en/review/a-learning-framework-for-diverse-legged-robot-locomotion-using-barrier-based-style-rewards"
+  },
+  {
+    "angle": "barrier_evidence",
+    "title": "docs/topic-atlas/2025/ICRA/topic-006.md",
+    "url": "https://github.com/zhihengli-casia/AI-Paper-Trends/blob/main/docs/topic-atlas/2025/ICRA/topic-006.md"
+  },
+  {
+    "angle": "barrier_evidence",
+    "title": "A Learning Framework for Diverse Legged Robot Locomotion Using Barrier-Based Style Rewards",
+    "url": "https://arxiv.org/html/2409.15780v4"
+  },
+  {
+    "angle": "new_recent",
+    "title": "Frontiers | Discovery of skill-switching criteria for learning agile quadruped locomotion",
+    "url": "https://www.frontiersin.org/journals/robotics-and-ai/articles/10.3389/frobt.2026.1697159/full"
+  },
+  {
+    "angle": "new_recent",
+    "title": "16 Ways to Gallop: Energetics and Body Dynamics of High-Speed Quadrupedal Gaits",
+    "url": "https://doi.org/10.1109/iros60139.2025.11247619"
+  },
+  {
+    "angle": "new_recent",
+    "title": "Learning Highly Dynamic Skills Transition for Quadruped Jumping Through Constrained Space",
+    "url": "https://arxiv.org/html/2608.19977v1"
+  },
+  {
+    "angle": "new_recent",
+    "title": "Foot trajectory as a key factor for diverse gait patterns in quadruped robot locomotion | Scientific Reports",
+    "url": "https://www.nature.com/articles/s41598-024-84060-5"
+  },
+  {
+    "angle": "new_recent",
+    "title": "A 3D Galloping Quadruped Robot | Springer Nature Link",
+    "url": "https://link.springer.com/chapter/10.1007/3-540-26415-9_56"
+  },
+  {
+    "angle": "new_recent",
+    "title": "Frontiers | A simple robot suggests trunk rotation is essential for emergence of inside leading limb during quadruped galloping turns",
+    "url": "https://www.frontiersin.org/journals/neurorobotics/articles/10.3389/fnbot.2025.1628368/full"
+  },
+  {
+    "angle": "new_recent",
+    "title": "Towards Dynamic Quadrupedal Gaits: A Symmetry-Guided RL Hierarchy Enables Free Gait Transitions at Varying Speeds",
+    "url": "https://arxiv.org/html/2510.10455v1"
+  },
+  {
+    "angle": "new_recent",
+    "title": "S-Cheetah: A Novel Quadrupedal Robot with a 3-DOF Active Spine Learning Agile Locomotion",
+    "url": "https://arxiv.org/html/2605.27909"
+  },
+  {
+    "angle": "new_recent",
+    "title": "Learning to adapt through bio-inspired gait strategies for versatile quadruped locomotion | Nature Machine Intelligence",
+    "url": "https://www.nature.com/articles/s42256-025-01065-z"
+  },
+  {
+    "angle": "new_recent",
+    "title": "well-iam/biologically-inspired-anymal",
+    "url": "https://github.com/well-iam/biologically-inspired-anymal"
+  },
+  {
+    "angle": "safety_forces",
+    "title": "Symmetry Regularization for Quadruped Locomotion | Ziyin Xiong",
+    "url": "https://ziyin-xiong.github.io/projects/quadruped-locomotion/"
+  },
+  {
+    "angle": "safety_forces",
+    "title": "Actuator-Constrained Reinforcement Learning for High-Speed Quadrupedal Locomotion",
+    "url": "https://arxiv.org/html/2312.17507v1"
+  },
+  {
+    "angle": "safety_forces",
+    "title": "Towards Dynamic Quadrupedal Gaits: A Symmetry-Guided RL Hierarchy Enables Free Gait Transitions at Varying Speeds",
+    "url": "https://arxiv.org/html/2403.10723v4"
+  },
+  {
+    "angle": "safety_forces",
+    "title": "Footstep reward for energy-efficient quadruped gait generation and transition through deep reinforcement learning",
+    "url": "https://doi.org/10.1080/01691864.2024.2442718"
+  },
+  {
+    "angle": "safety_forces",
+    "title": "Adaptive Energy Regularization for Autonomous Gait Transition and Energy-Efficient Quadruped Locomotion",
+    "url": "https://arxiv.org/html/2403.20001"
+  },
+  {
+    "angle": "safety_forces",
+    "title": "Proceedings of the 5th Conference on Robot Learning (CoRL 2021)",
+    "url": "https://proceedings.mlr.press/v164/yang22d/yang22d.pdf"
+  },
+  {
+    "angle": "safety_forces",
+    "title": "Learning Omnidirectional Locomotion for a Salamander-Like Quadruped Robot",
+    "url": "https://doi.org/10.48550/arxiv.2511.08299"
+  },
+  {
+    "angle": "safety_forces",
+    "title": "Towards Dynamic Quadrupedal Gaits: A Symmetry-Guided RL Hierarchy Enables Free Gait Transitions at Varying Speeds",
+    "url": "https://arxiv.org/html/2403.10723"
+  },
+  {
+    "angle": "safety_forces",
+    "title": "Learning Quadruped Locomotion Policies using Logical Rules",
+    "url": "https://arxiv.org/html/2107.10969v3"
+  },
+  {
+    "angle": "safety_forces",
+    "title": "Learning Robust, Agile, Natural Legged Locomotion Skills in the Wild",
+    "url": "https://arxiv.org/html/2304.10888"
+  },
+  {
+    "angle": "natural_simplereward",
+    "title": "Gait-Parameterized Reinforcement Learning for a Hydraulic Quadruped Robot",
+    "url": "https://doi.org/10.1109/lra.2026.3673991"
+  },
+  {
+    "angle": "natural_simplereward",
+    "title": "Symmetry-Guided Reinforcement Learning for Versatile Quadrupedal Gait Generation",
+    "url": "https://arxiv.org/html/2403.10723v3"
+  },
+  {
+    "angle": "natural_simplereward",
+    "title": "SayTap: Language to Quadrupedal Locomotion",
+    "url": "https://arxiv.org/html/2306.07580v1"
+  },
+  {
+    "angle": "natural_simplereward",
+    "title": "well-iam/biologically-inspired-anymal",
+    "url": "https://github.com/well-iam/biologically-inspired-anymal"
+  },
+  {
+    "angle": "natural_simplereward",
+    "title": "Learning Quadruped Locomotion Policies Using Logical Rules",
+    "url": "https://doi.org/10.1609/icaps.v34i1.31470"
+  },
+  {
+    "angle": "natural_simplereward",
+    "title": "Learning Emergent Gaits with Decentralized Phase Oscillators: on the role of Observations, Rewards, and Feedback",
+    "url": "https://doi.org/10.48550/arxiv.2402.08662"
+  },
+  {
+    "angle": "natural_simplereward",
+    "title": "A Learning Framework for Diverse Legged Robot Locomotion Using Barrier-Based Style Rewards",
+    "url": "https://arxiv.org/html/2409.15780v3"
+  },
+  {
+    "angle": "natural_simplereward",
+    "title": "[2609.07111] From LLM-Generated Specifications to Learned Quadruped Locomotion",
+    "url": "https://arxiv.org/abs/2609.07111"
+  },
+  {
+    "angle": "natural_simplereward",
+    "title": "Discovery of skill-switching criteria for learning agile quadruped locomotion",
+    "url": "https://doi.org/10.3389/frobt.2026.1697159"
+  },
+  {
+    "angle": "natural_simplereward",
+    "title": "Learning Smooth and Coordinated Quadruped Motions via Incremental Foot Position Control | Pattern Recognition and Computer Vision",
+    "url": "https://dl.acm.org/doi/abs/10.1007/978-981-95-4398-4_20"
+  },
+  {
+    "angle": "video_imitation_full",
+    "title": "Learning aggressive animal locomotion skills for quadrupedal robots solely from monocular videos | npj Robotics",
+    "url": "https://www.nature.com/articles/s44182-025-00048-x"
+  },
+  {
+    "angle": "video_imitation_full",
+    "title": "arclab-hku/Imitation_from_video",
+    "url": "https://github.com/arclab-hku/Imitation_from_video"
+  },
+  {
+    "angle": "video_imitation_full",
+    "title": "Table 1 Randomized simulation parameters",
+    "url": "https://www.nature.com/articles/s44182-025-00048-x/tables/1"
+  },
+  {
+    "angle": "video_imitation_full",
+    "title": "Learning aggressive animal locomotion skills for quadrupedal robots solely from monocular videos",
+    "url": "https://www.reopsintellitech.com/blogs/learning-aggressive-animal-locomotion-skills-for-quadrupedal-robots-solely-from-monocular-videos"
+  },
+  {
+    "angle": "video_imitation_full",
+    "title": "N/A",
+    "url": "https://nature.com/articles/s44182-025-00048-x.pdf"
+  },
+  {
+    "angle": "video_imitation_full",
+    "title": "SDS – See it, Do it, Sorted: Quadruped Skill Synthesis from Single Video Demonstration",
+    "url": "https://proceedings.mlr.press/v305/stamatopoulou25a.html"
+  },
+  {
+    "angle": "video_imitation_full",
+    "title": "MA-ROESL: Motion-aware Rapid Reward Optimization for Efficient Robot Skill Learning from Single Videos",
+    "url": "https://arxiv.org/html/2505.08367v1"
+  },
+  {
+    "angle": "video_imitation_full",
+    "title": "Learning aggressive animal locomotion skills for quadrupedal robots solely from",
+    "url": "https://hub.hku.hk/bitstream/10722/375434/1/content.pdf"
+  },
+  {
+    "angle": "video_imitation_full",
+    "title": "Towards Scalable Quadruped Imitation | Luyang Hu",
+    "url": "https://huluwulu.dev/projects/3_project/"
+  },
+  {
+    "angle": "video_imitation_full",
+    "title": "HKU Scholars Hub: Learning aggressive animal locomotion skills for quadrupedal robots solely from monocular videos",
+    "url": "https://hub.hku.hk/handle/10722/375434"
+  }
+]
+

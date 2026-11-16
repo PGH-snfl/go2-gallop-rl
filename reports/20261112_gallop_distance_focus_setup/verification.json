@@ -1,0 +1,28 @@
+{
+  "prepared": true,
+  "training_executed": false,
+  "policy_updates": 0,
+  "optimizer_steps": 0,
+  "unit_tests_passed": 222,
+  "parent_restore_checks_passed": 21,
+  "isaac_check": {
+    "run": "/home/cvr/GH/go2_animalization/gallop/runs/isaac/check/unitree_go2_gallop/20261112_121220_74bd6c",
+    "environments": 16,
+    "control_steps": 1000,
+    "completed": true,
+    "policy_unchanged": true,
+    "reward_parameters_verified": true,
+    "no_curriculum_events": true
+  },
+  "fixed_goal": {
+    "speed_mps": 2.0,
+    "distance_m": 0.5,
+    "air_seconds": 0.24
+  },
+  "safety_options_unchanged": true,
+  "protected_original_files_unchanged": 35,
+  "parent": "runs/isaac/train/unitree_go2_gallop/20261111_182833_2552ed/model_final.pt",
+  "parent_sha256": "2d0de1f15c57043af564e8800116c321df2befae02a3c87e497a976d815a78bc",
+  "goal_performance_verified": false,
+  "sim2sim_improvement_verified": false
+}

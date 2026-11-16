@@ -1,0 +1,29 @@
+{
+  "status": "passed",
+  "offline_only": true,
+  "policy_updates": 0,
+  "model_unchanged": true,
+  "source_matches_training": {
+    "gallop_core.py": true,
+    "gallop_env.py": true
+  },
+  "original_files_sha256_verified": 108,
+  "exported_counts_match": true,
+  "report_links_valid": true,
+  "finite_trace": true,
+  "policy_shape": {
+    "actor": 47,
+    "critic": 62,
+    "actions": 12
+  },
+  "official_checkout": {
+    "head": "4960b84732b0c2ec593dccbfe963fda1bcd7b1e3",
+    "clean": true
+  },
+  "independent_trace_check": {
+    "samples": 951,
+    "mean_vx": 1.0108635715756382,
+    "action_clip": 0.1473010778427124,
+    "steady_air_fraction": 0.0
+  }
+}

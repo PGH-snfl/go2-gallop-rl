@@ -1,0 +1,68 @@
+{
+  "cycle_count": 58,
+  "mean_body_forward_distance_per_phase_cycle": 0.9481085661361959,
+  "cycle_distance_quantiles": [
+    0.8729538154602052,
+    0.9416664366722115,
+    0.9503389835357662,
+    0.9593642745017978,
+    0.9854204511642464
+  ],
+  "supporting_feet_counts": {
+    "0": 0,
+    "1": 237,
+    "2": 465,
+    "3": 249,
+    "4": 0
+  },
+  "minimum_maximum_foot_force": 40.338218688964844,
+  "maximum_minimum_foot_clearance": 0.0012916065752506256,
+  "pair_metrics": {
+    "pair_joint_cost": 0.2385110419579477,
+    "pair_rom_cost": 0.0,
+    "pair_load_cost": 0.0,
+    "pair_stance_cost": 0.0,
+    "pair_rom_asymmetry": [
+      0.04896826764762589,
+      0.029083753848834243
+    ],
+    "pair_load_asymmetry": [
+      0.05019544031555235,
+      0.06335190416839596
+    ],
+    "pair_stance_asymmetry": [
+      0.0010515242094246496,
+      0.008412197686645636
+    ]
+  },
+  "leap_terminal": {
+    "leap_active": false,
+    "leap_current_distance": 0.0,
+    "leap_air_seconds": 0.0,
+    "leap_landed": 0.0,
+    "leap_qualified_landed": 0.0,
+    "leap_last_distance": 0.0,
+    "leap_last_seconds": 0.0,
+    "leap_takeoff_position": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "leap_landing_position": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "leap_reward_score": 0.0,
+    "leap_events": 0.0,
+    "leap_qualified_events": 0.0,
+    "leap_distance_sum": 0.0,
+    "leap_air_seconds_sum": 0.0,
+    "leap_distance_max": 0.0,
+    "leap_physics_samples": 4000.0,
+    "leap_reward_points_total": 0.0
+  },
+  "physics_samples_per_policy_step": [
+    4.0
+  ]
+}

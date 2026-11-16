@@ -1,0 +1,58 @@
+{
+  "verified_at": "2026-11-02T06:37:36.455563+00:00",
+  "all_checks_passed": true,
+  "checks": {
+    "frozen_source_and_teacher_verified": true,
+    "checkpoint_matches_play_and_collection": true,
+    "parent_checkpoint_unchanged": true,
+    "teacher_original_unchanged": true,
+    "training_usd_unchanged": true,
+    "2000_checkpoint_updates_and_20000_lineage": true,
+    "49_64_12_interface": true,
+    "heading_columns_have_been_trained": true,
+    "loss_2000_reward_1994_coverage": true,
+    "training_completion_true": true,
+    "completion_rejects_missing_updates_or_losses": true,
+    "correct_transition_count": true,
+    "play_completed_1500_without_updates": true,
+    "finite_trace_and_time_20ms": true,
+    "first_episode_ends_only_at_30s": true,
+    "all_startup_stages_completed": true,
+    "formal_944_samples_from_11p14s": true,
+    "6000_physics_samples_4_per_step": true,
+    "yaw_error_matches_orientation": true,
+    "roll_pitch_rate_matches_temporal_difference": true,
+    "quiet_score_matches_saved_rate": true,
+    "first_rate_sample_excluded": true,
+    "front_width_score_matches_geometry": true,
+    "hind_width_score_matches_geometry": true,
+    "forward_score_matches_real_motion": true,
+    "single_timeout_without_fall": true,
+    "tracking_failure_is_body_z_angular_speed": true,
+    "stable_failure_is_target_clipping": true,
+    "57_flights_38_qualified_45_stable_12_aborted": true,
+    "27_distance_time_and_stable_landings": true,
+    "flight_mean_matches_episode": true,
+    "8377_training_eligible_8138_measured": true,
+    "no_actual_training_tracking_pass_hidden_by_empty_metrics": true,
+    "one_29p98s_play_video_no_training_video": true,
+    "official_checkout_clean": true
+  },
+  "details": {
+    "learned_heading_column_norms": {
+      "actor.0.weight": [
+        2.3039603233337402,
+        0.26698338985443115
+      ],
+      "critic.0.weight": [
+        2.514024496078491,
+        7.195213317871094
+      ]
+    },
+    "forward_score_max_recompute_error": 1.1920928955078125e-07,
+    "reported_training_tracking_passes_without_metrics": 239
+  },
+  "new_policy_updates": 0,
+  "new_simulation_runs": 0,
+  "raw_checkpoint_and_logs_preserved": true
+}

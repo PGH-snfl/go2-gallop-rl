@@ -1,0 +1,27 @@
+{
+  "url": "https://www.unitree.com/go2/",
+  "retrieved_on": "2026-11-11",
+  "edu_table": {
+    "speed_mps": "0–3.7 (MAX approx5)",
+    "peak_joint_torque_nm": "about45",
+    "range_of_motion_printed": {
+      "body_deg": [
+        -48,
+        48
+      ],
+      "thigh_deg": [
+        -200,
+        90
+      ],
+      "shank_deg": [
+        -156,
+        -48
+      ]
+    }
+  },
+  "cautions": [
+    "Public product table uses conventions different from joint-by-joint URDF; front/rear thigh coordinate equivalence is not established by this table.",
+    "Peak torque is not continuous torque or a per-joint simultaneous torque/speed capability.",
+    "No admissible dynamic foot-impact rating verified."
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "verified_at": "2026-11-02T05:23:44.469933+00:00",
+  "all_checks_passed": true,
+  "checks": {
+    "checkpoint_hash_matches_run_and_isaac": true,
+    "frozen_sources_and_teacher_hash_verified": true,
+    "teacher_matches_original": true,
+    "training_usd_unchanged": true,
+    "original_xml_unchanged": true,
+    "physical_joint_order_evidence_unchanged": true,
+    "completed_single_30_second_episode": true,
+    "no_training_or_weight_mutation": true,
+    "no_hardware_or_early_termination": true,
+    "finite_policy_and_physics_arrays": true,
+    "policy_trace_1500_at_20ms": true,
+    "physics_trace_6000_at_5ms": true,
+    "no_formal_gallop_metric_segment": true,
+    "transition_incomplete": true,
+    "mix_peak_matches_diagnostics": true,
+    "all_501_last10s_speed_errors_exceed_limit": true,
+    "tail_mean_and_command_match": true,
+    "independent_flight_counts_123_52_8": true,
+    "independent_long_flight_averages_match": true,
+    "independent_recovery_51_fail_1_pending": true,
+    "video_has_1500_frames_30s_50fps": true,
+    "nominal_mass_difference_disclosed": true,
+    "official_checkout_clean": true,
+    "report_links_exist": true
+  },
+  "missing_report_links": [],
+  "policy_updates": 0,
+  "new_simulation_in_this_recheck": false,
+  "software_tests": {
+    "tests": 5,
+    "passed": 5,
+    "command": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 MKL_NUM_THREADS=1 .venv/bin/python -m unittest tests.test_rl_mujoco -v",
+    "note": "Five adapter tests passed before the nominal run; not rerun by this evidence-only script."
+  },
+  "decision": {
+    "nominal_episode_completed": true,
+    "transition_passed": false,
+    "formal_gallop_metrics_available": false,
+    "physical_flight_proxy_is_not_a_formal_gallop_pass": true
+  }
+}

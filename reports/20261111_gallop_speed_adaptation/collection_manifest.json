@@ -1,0 +1,170 @@
+{
+  "README.md": {
+    "bytes": 6911,
+    "sha256": "87511dfc759ecd210a023d0f06c15050d3e3d1c6c1cbb20731d4aedf73607b90"
+  },
+  "implementation.diff": {
+    "bytes": 20614,
+    "sha256": "5f40cdd0efda5cddcae13e9770465a3d587ca1e5a6ddf6cb8a738135c5d0c33a"
+  },
+  "parent_validation.log": {
+    "bytes": 1905,
+    "sha256": "427283df6820b2e89300ef06ec23bc3cb2018f3e233ba85cecf4eb51d394f6c1"
+  },
+  "evidence_manifest.json": {
+    "bytes": 1719,
+    "sha256": "c817d7088dfdbafdb5c98ad89382efb59ff5550d6e97aa356e0c0ca873803af4"
+  },
+  "verification.json": {
+    "bytes": 2310,
+    "sha256": "0821eb67d8dab79c1a62cbfee1741ef0a14dc6856d2c7b2130c5fbc8d1f80432"
+  },
+  "runner_tests.log": {
+    "bytes": 2171,
+    "sha256": "2e1b486d2ae63f14cfbc76c10636d868c8496c035165456b45f031b7268c6cb4"
+  },
+  "selection_before.json": {
+    "bytes": 5039,
+    "sha256": "a8a1155d6cd13949368090f3326778c1ded0bdd0156d5a8ece07abe2294ce70f"
+  },
+  "mujoco_adapter_verification.json": {
+    "bytes": 589,
+    "sha256": "8e6e24d4e57b4218e5e3b9de5f57a8f85197f6b13288bb51909a355bcdddb468"
+  },
+  "unit_tests.log": {
+    "bytes": 9991,
+    "sha256": "b54e9255307663c03457e9e55f73f4f84ef77cb977a3015f998c74fae87202df"
+  },
+  "selection_after.json": {
+    "bytes": 5553,
+    "sha256": "cea17d98ff703f1278a6530184a99a63776e2a76e6509e4612ecf0a142e696dc"
+  },
+  "parent_verification.json": {
+    "bytes": 9135,
+    "sha256": "0ef6b4d281270abbe4785da61b7ce4b5bcaff59a2a05df990ed2a2b5401aff6d"
+  },
+  "isaac_first_episodes.json": {
+    "bytes": 75317,
+    "sha256": "e16069a5d421ff66995f3b779ee7adeff1033db9d35c6d8589ffadfbb8b032a0"
+  },
+  "focused_tests.log": {
+    "bytes": 3419,
+    "sha256": "58b5666af78819f586d64c06eb942cad98866be3d72df30b8b3cf8dd842e35c9"
+  },
+  "fixtures/replay/frozen_fixture.pt": {
+    "bytes": 4688895,
+    "sha256": "8fcf582b9a6aeabd46cfb5da35be2b75391be3784dc60734c1d6af9c90be10af"
+  },
+  "fixtures/replay/gallop_config.json": {
+    "bytes": 6294,
+    "sha256": "e5f7e9142e3b00543fd84065983289a311c2fa363e4d9bcc9f42759e6f45acde"
+  },
+  "fixtures/replay/manifest.json": {
+    "bytes": 24429,
+    "sha256": "d520c7c7871f1775b3373b49eb4eea83a0985a5ba2bd0660e878be3e4716355b"
+  },
+  "fixtures/replay/params/agent.yaml": {
+    "bytes": 1038,
+    "sha256": "a2c59d947b547e0b6014101b00880bf0970d9bc93897f6e5471c0a48baeb946a"
+  },
+  "fixtures/replay/params/env.yaml": {
+    "bytes": 32245,
+    "sha256": "8d69a0ea1e7a96a81fe9248ef63034ad970cb03bea7be73ecca573c2e64a2724"
+  },
+  "fixtures/replay/source/velocity_env_cfg.py": {
+    "bytes": 14840,
+    "sha256": "56859832148dacc724ddba3954a7684b99a43560e4fde561f6361b9daa051b56"
+  },
+  "fixtures/replay/source/gallop_env.py": {
+    "bytes": 70938,
+    "sha256": "cbbbc8c4dbcb6bc05b149d14a0905174238f8745613bc3b9d16689f431d41f9b"
+  },
+  "fixtures/replay/source/walking_teacher.pt": {
+    "bytes": 4639999,
+    "sha256": "d4bd406a2e0cc97b1370610a3791bf115c31cac8b718056322d95df2f9d192bf"
+  },
+  "fixtures/replay/source/logging.py": {
+    "bytes": 6675,
+    "sha256": "33fd55ec4a2a008e02420ad16910eb18d23821db0823970534184bf798bd386a"
+  },
+  "fixtures/replay/source/staged_adaptation.py": {
+    "bytes": 5616,
+    "sha256": "29068fe049719c87de9c5f9c666cc5c327e720645663338c2cfc90b1fcf741b5"
+  },
+  "fixtures/replay/source/parent_manifest.json": {
+    "bytes": 28882,
+    "sha256": "c5cfde9155441115d645e6454b34a8e62ccb3bc388adcb161ca1ce79277e9e1e"
+  },
+  "fixtures/replay/source/gallop_core.py": {
+    "bytes": 91148,
+    "sha256": "232d2cd5c7b234f731f01768e1acc50514b2a79a3afb986821a9c191d30bb927"
+  },
+  "fixtures/replay/source/gallop_baseline.py": {
+    "bytes": 44257,
+    "sha256": "26c8ae7abc1471732c7a702b6af61fe5fd68fce0c74918f47c413ac065342b15"
+  },
+  "fixtures/replay/source/gallop_runtime.py": {
+    "bytes": 4957,
+    "sha256": "42d5377201fc570c0856fe316eabaffade1cb03c76e246160f05eb88eeb7f691"
+  },
+  "source/AGENTS.md": {
+    "bytes": 65339,
+    "sha256": "7872eb934fab35380b23ccf07f81a7e5a7e07e0f501de3e52d0f550eafebaca9"
+  },
+  "source/tests/test_gallop_relearn.py": {
+    "bytes": 13566,
+    "sha256": "e5a0aece42ae7db7225ddb13865dcc7050247d4c0f447c2f07086d9b640b8f40"
+  },
+  "source/tests/test_gallop_pair_env.py": {
+    "bytes": 5596,
+    "sha256": "374a7fc5de93ee3dba5d471f83e6de11903528ab750cf214e164c2d53fdb2637"
+  },
+  "source/tests/test_gallop_speed_adaptation.py": {
+    "bytes": 10954,
+    "sha256": "7d2a1a734424fa55ce8fc9b10f4618feaa1b936a49870d2d1e89c29f1b97055a"
+  },
+  "source/tests/test_gallop_staged.py": {
+    "bytes": 13685,
+    "sha256": "16694688ad7b2d227de35bb912d432f259b8c7f9cd1ab2ebaa3168d2e8a3e638"
+  },
+  "source/isaac_task/gallop_env.py": {
+    "bytes": 70938,
+    "sha256": "cbbbc8c4dbcb6bc05b149d14a0905174238f8745613bc3b9d16689f431d41f9b"
+  },
+  "source/isaac_task/logging.py": {
+    "bytes": 6675,
+    "sha256": "33fd55ec4a2a008e02420ad16910eb18d23821db0823970534184bf798bd386a"
+  },
+  "source/isaac_task/staged_adaptation.py": {
+    "bytes": 5616,
+    "sha256": "29068fe049719c87de9c5f9c666cc5c327e720645663338c2cfc90b1fcf741b5"
+  },
+  "source/isaac_task/gallop_core.py": {
+    "bytes": 91148,
+    "sha256": "232d2cd5c7b234f731f01768e1acc50514b2a79a3afb986821a9c191d30bb927"
+  },
+  "source/isaac_task/gallop_runtime.py": {
+    "bytes": 4957,
+    "sha256": "42d5377201fc570c0856fe316eabaffade1cb03c76e246160f05eb88eeb7f691"
+  },
+  "source/docs/gallop_staged_speed_adaptation.md": {
+    "bytes": 5252,
+    "sha256": "8d58adeab521febb163f35dee01ab25f5daf2560ac62b26570ecd17cbace6387"
+  },
+  "source/docs/CONTINUE_HERE.md": {
+    "bytes": 112744,
+    "sha256": "54fa2bb91159517f7443748dbd10dab8c9b3f1ae826e428f21d6bb597de891a4"
+  },
+  "source/scripts/training/gallop_baseline.py": {
+    "bytes": 44257,
+    "sha256": "26c8ae7abc1471732c7a702b6af61fe5fd68fce0c74918f47c413ac065342b15"
+  },
+  "source/scripts/validation/check_gallop_speed_adaptation.py": {
+    "bytes": 6350,
+    "sha256": "da38cc9db5bc1f1d211da9aa7de0dafdcdcef9ce310c4fae5fcf55da81273eee"
+  },
+  "source/configs/gallop_staged_speed_adaptation.json": {
+    "bytes": 5748,
+    "sha256": "eb4fd80d536f2f433da319128440be01b89af73bdc03043ae1c7e874ce2f92b6"
+  }
+}

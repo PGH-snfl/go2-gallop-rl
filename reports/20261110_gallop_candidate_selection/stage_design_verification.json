@@ -1,0 +1,75 @@
+{
+  "kind": "static_design_only_not_physics",
+  "checks": [
+    {
+      "stage": "entry",
+      "settings_constructor_validation": true,
+      "air_window_consistent": true,
+      "nominal_speed_times_air_exceeds_goal": true,
+      "hardware_limits_unchanged": true
+    },
+    {
+      "stage": "stability",
+      "settings_constructor_validation": true,
+      "air_window_consistent": true,
+      "nominal_speed_times_air_exceeds_goal": true,
+      "hardware_limits_unchanged": true
+    },
+    {
+      "stage": "speed_275",
+      "settings_constructor_validation": true,
+      "air_window_consistent": true,
+      "nominal_speed_times_air_exceeds_goal": true,
+      "hardware_limits_unchanged": true
+    },
+    {
+      "stage": "speed_300",
+      "settings_constructor_validation": true,
+      "air_window_consistent": true,
+      "nominal_speed_times_air_exceeds_goal": true,
+      "hardware_limits_unchanged": true
+    },
+    {
+      "stage": "leap_020",
+      "settings_constructor_validation": true,
+      "air_window_consistent": true,
+      "nominal_speed_times_air_exceeds_goal": true,
+      "hardware_limits_unchanged": true
+    },
+    {
+      "stage": "leap_030",
+      "settings_constructor_validation": true,
+      "air_window_consistent": true,
+      "nominal_speed_times_air_exceeds_goal": true,
+      "hardware_limits_unchanged": true
+    },
+    {
+      "stage": "leap_040",
+      "settings_constructor_validation": true,
+      "air_window_consistent": true,
+      "nominal_speed_times_air_exceeds_goal": true,
+      "hardware_limits_unchanged": true
+    },
+    {
+      "stage": "leap_050",
+      "settings_constructor_validation": true,
+      "air_window_consistent": true,
+      "nominal_speed_times_air_exceeds_goal": true,
+      "hardware_limits_unchanged": true
+    },
+    {
+      "stage": "leap_065",
+      "settings_constructor_validation": true,
+      "air_window_consistent": true,
+      "nominal_speed_times_air_exceeds_goal": true,
+      "hardware_limits_unchanged": true
+    },
+    {
+      "stage": "leap_080",
+      "settings_constructor_validation": true,
+      "air_window_consistent": true,
+      "nominal_speed_times_air_exceeds_goal": true,
+      "hardware_limits_unchanged": true
+    }
+  ]
+}

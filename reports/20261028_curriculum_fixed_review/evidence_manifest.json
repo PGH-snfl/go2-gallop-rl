@@ -1,0 +1,266 @@
+{
+  "runs/isaac/train/unitree_go2_curriculum_fixed/20261028_141745_8d9837/model_900.pt": {
+    "sha256": "bdd67c2401a1405a580a6384833a0afe080dd815310e172ba4bc89f7a5b297fc",
+    "bytes": 4639595
+  },
+  "runs/isaac/train/unitree_go2_curriculum_fixed/20261028_141745_8d9837/model_800.pt": {
+    "sha256": "f0f85785e267c9feda3a588bd1e60cfbdb562c346116c5d11feeda11e2c99231",
+    "bytes": 4639595
+  },
+  "runs/isaac/train/unitree_go2_curriculum_fixed/20261028_141745_8d9837/model_1400.pt": {
+    "sha256": "9e89e78dd0f3e60fc688b19d0baf8e64b952f0a0d3d847d8c052f1fced0fb950",
+    "bytes": 4639669
+  },
+  "runs/isaac/train/unitree_go2_curriculum_fixed/20261028_141745_8d9837/model_400.pt": {
+    "sha256": "b903a96abf9641703eb219a389547f58edb8c1df170a4d6f7d871e5d5f721891",
+    "bytes": 4639595
+  },
+  "runs/isaac/train/unitree_go2_curriculum_fixed/20261028_141745_8d9837/events.out.tfevents.1793164674.cvr-laptop.1280731.0": {
+    "sha256": "acb37dd672b60161781b2a72b5959fb1694731c57bcb6c6c2a6566f5110b344a",
+    "bytes": 5206070
+  },
+  "runs/isaac/train/unitree_go2_curriculum_fixed/20261028_141745_8d9837/model_1100.pt": {
+    "sha256": "04c267d718c9bda0ac662c531f9a61e2f5812be4dd8648fbfac2ca7b34ea0c33",
+    "bytes": 4639669
+  },
+  "runs/isaac/train/unitree_go2_curriculum_fixed/20261028_141745_8d9837/model_1300.pt": {
+    "sha256": "7db1853c08354280e7e284b95ac6c8fa7409edc9b9065b675603a0767ca6d889",
+    "bytes": 4639669
+  },
+  "runs/isaac/train/unitree_go2_curriculum_fixed/20261028_141745_8d9837/model_100.pt": {
+    "sha256": "c50e8f9f453b889b1a6b6ec80a701d0aa56c9eb65f7d1d0276c5b477e3abb131",
+    "bytes": 4639595
+  },
+  "runs/isaac/train/unitree_go2_curriculum_fixed/20261028_141745_8d9837/model_500.pt": {
+    "sha256": "f285422fec3209f22a692fb18631cc3ba5dff847b78619f2bee76a4050029415",
+    "bytes": 4639595
+  },
+  "runs/isaac/train/unitree_go2_curriculum_fixed/20261028_141745_8d9837/model_700.pt": {
+    "sha256": "e0b1cdbd2d918b86c063f2c5fbb10db9908fb9025f2102bd9170207fa51bc87f",
+    "bytes": 4639595
+  },
+  "runs/isaac/train/unitree_go2_curriculum_fixed/20261028_141745_8d9837/model_1000.pt": {
+    "sha256": "67a0fcdf39baa3d9daad921a913a6c8f4b906d76b43e8a143b32a9f0b9c3dc78",
+    "bytes": 4639669
+  },
+  "runs/isaac/train/unitree_go2_curriculum_fixed/20261028_141745_8d9837/model_200.pt": {
+    "sha256": "a3344a1216a939ea63dbff27470c2a3e3da2bba79918804c7280424d75c765a2",
+    "bytes": 4639595
+  },
+  "runs/isaac/train/unitree_go2_curriculum_fixed/20261028_141745_8d9837/model_1999.pt": {
+    "sha256": "a435f1d99d4c469587628345cf9fbacc020361a0c779f362998df67c328b5ff1",
+    "bytes": 4639669
+  },
+  "runs/isaac/train/unitree_go2_curriculum_fixed/20261028_141745_8d9837/model_1700.pt": {
+    "sha256": "32fe66bd9725e999875cbda3cd3ee83a75805c17104616898ef75c2d15c43c59",
+    "bytes": 4639669
+  },
+  "runs/isaac/train/unitree_go2_curriculum_fixed/20261028_141745_8d9837/model_1200.pt": {
+    "sha256": "21b22b39d153e0bb0713ea46ccf6c68eee271eb91e874a690be9350a56e07bc2",
+    "bytes": 4639669
+  },
+  "runs/isaac/train/unitree_go2_curriculum_fixed/20261028_141745_8d9837/status.json": {
+    "sha256": "c6f7b5bee71866ad9b7fdc0c5c734027ce9d8f4852d60398f1dc705330c53535",
+    "bytes": 602
+  },
+  "runs/isaac/train/unitree_go2_curriculum_fixed/20261028_141745_8d9837/model_final.pt": {
+    "sha256": "d2ef45499337dc840200f2dcc2f7ef2633dc20fcb67ab405ed792c11045cb107",
+    "bytes": 4639743
+  },
+  "runs/isaac/train/unitree_go2_curriculum_fixed/20261028_141745_8d9837/curriculum_summary.json": {
+    "sha256": "4735aca9389a41b063d033d7c16ffafd6a152f25c270bb0811637d0c92437f33",
+    "bytes": 33603
+  },
+  "runs/isaac/train/unitree_go2_curriculum_fixed/20261028_141745_8d9837/model_300.pt": {
+    "sha256": "c558521b536f447951326e8160728f061cb1adb33cdde4606d005a8c2fe7bf52",
+    "bytes": 4639595
+  },
+  "runs/isaac/train/unitree_go2_curriculum_fixed/20261028_141745_8d9837/model_1800.pt": {
+    "sha256": "4dd0e67e33d7c50d893a5d6f57a3a758e541e91a188c57b7e9186e4a9d668cba",
+    "bytes": 4639669
+  },
+  "runs/isaac/train/unitree_go2_curriculum_fixed/20261028_141745_8d9837/manifest.json": {
+    "sha256": "6d0b8d3a4f7eec32282913dd2cf0899c974041ec05d6ca3194be668c4cb6b361",
+    "bytes": 1713
+  },
+  "runs/isaac/train/unitree_go2_curriculum_fixed/20261028_141745_8d9837/model_1900.pt": {
+    "sha256": "cf6a9d5802a2e1b399701562b59e1ae66a7042d53a7b8b7851382681613eafe3",
+    "bytes": 4639669
+  },
+  "runs/isaac/train/unitree_go2_curriculum_fixed/20261028_141745_8d9837/console.log": {
+    "sha256": "96434dce91a0e9863f48b52bc84596b17c46031c54b365e9868dce671a7c5c26",
+    "bytes": 3481494
+  },
+  "runs/isaac/train/unitree_go2_curriculum_fixed/20261028_141745_8d9837/model_600.pt": {
+    "sha256": "4a51f303f6ab2f5ae20ed7a98798f281d9361d4e5b57dc2c7156c9b1aca17748",
+    "bytes": 4639595
+  },
+  "runs/isaac/train/unitree_go2_curriculum_fixed/20261028_141745_8d9837/model_1600.pt": {
+    "sha256": "550da472141fa83360e6e310ee208cfd02bc8c5cb2619232a6388d189fd9ffe9",
+    "bytes": 4639669
+  },
+  "runs/isaac/train/unitree_go2_curriculum_fixed/20261028_141745_8d9837/model_1500.pt": {
+    "sha256": "4262811104a5c39ec154e603bd21cc7fb2b277128dc803285ce58e9bae8deba7",
+    "bytes": 4639669
+  },
+  "runs/isaac/train/unitree_go2_curriculum_fixed/20261028_141745_8d9837/model_0.pt": {
+    "sha256": "b4a2600a4099d1b451dd22d73f23a9fe5bd1bd155ba21e3914f12651ad2e7d99",
+    "bytes": 4638999
+  },
+  "runs/isaac/train/unitree_go2_curriculum_fixed/20261028_141745_8d9837/progress.jsonl": {
+    "sha256": "1f7f211c0fdd32bdb4230d6cac6169c997d9c8277ed553552cda9c8ed47cb08e",
+    "bytes": 914059
+  },
+  "runs/isaac/train/unitree_go2_curriculum_fixed/20261028_141745_8d9837/params/agent.yaml": {
+    "sha256": "e3fc4e94347dc44a323361c669e8c0ff4b14c456dd4f8972d487196a1e56825c",
+    "bytes": 1048
+  },
+  "runs/isaac/train/unitree_go2_curriculum_fixed/20261028_141745_8d9837/params/env.yaml": {
+    "sha256": "1a054c0492e14d80268196a1073f5bec72fd217f66d603a76c6a489f1eee2262",
+    "bytes": 31905
+  },
+  "runs/isaac/train/unitree_go2_curriculum_fixed/20261028_141745_8d9837/source/velocity_curriculum.py": {
+    "sha256": "cb1b954a06b663f8dd1f6ccc97e1fa1a57fc5a9dfd2855344ce7db67b8ac1a5e",
+    "bytes": 6842
+  },
+  "runs/isaac/train/unitree_go2_curriculum_fixed/20261028_141745_8d9837/source/official_env_cfg.py": {
+    "sha256": "56859832148dacc724ddba3954a7684b99a43560e4fde561f6361b9daa051b56",
+    "bytes": 14840
+  },
+  "runs/isaac/train/unitree_go2_curriculum_fixed/20261028_141745_8d9837/source/official_ppo_cfg.py": {
+    "sha256": "0f15211f85adc84cf6586770dad448f080d579ea55b4f509aca20a36a11310f7",
+    "bytes": 1042
+  },
+  "runs/isaac/train/unitree_go2_curriculum_fixed/20261028_141745_8d9837/source/official_runtime.py": {
+    "sha256": "159df4b635912252cdd2a666cce8f73da9fc1b645f7e79a98a6af513e61bca6a",
+    "bytes": 14863
+  },
+  "runs/isaac/train/unitree_go2_curriculum_fixed/20261028_141745_8d9837/source/official_robot_cfg.py": {
+    "sha256": "5bb4d9b8cabfde167b0f905d0cfa63a2d8a6ab0209077c4885997edbc25c6a62",
+    "bytes": 24164
+  },
+  "runs/isaac/play/unitree_go2_curriculum_fixed/20261028_145206_497a24/play_trace.csv": {
+    "sha256": "1472a40bd689428fe8cdd487b600385ce0965cf455eb17b4a973f712d8d5edf3",
+    "bytes": 151787
+  },
+  "runs/isaac/play/unitree_go2_curriculum_fixed/20261028_145206_497a24/status.json": {
+    "sha256": "27638485c7b63136484bd8af9807babad1e107892045a117817bd76f1e59ef83",
+    "bytes": 869
+  },
+  "runs/isaac/play/unitree_go2_curriculum_fixed/20261028_145206_497a24/play_trace.npz": {
+    "sha256": "192c2acba4c8574bb654e5e2330fa76c88c9cbe5e65bdf59cfd8451cc165e0da",
+    "bytes": 152813
+  },
+  "runs/isaac/play/unitree_go2_curriculum_fixed/20261028_145206_497a24/manifest.json": {
+    "sha256": "a3e2060b0664f49fe2432e447aa7f5a9cc84294fa6d716ad761839c8f780696f",
+    "bytes": 1737
+  },
+  "runs/isaac/play/unitree_go2_curriculum_fixed/20261028_145206_497a24/console.log": {
+    "sha256": "9705c1943edd63e828964aee63c09a2395f4abbf830ac60e8e8fd758ca886005",
+    "bytes": 17463
+  },
+  "runs/isaac/play/unitree_go2_curriculum_fixed/20261028_145206_497a24/progress.jsonl": {
+    "sha256": "d155c68fe5be204e8298dd65f44bd30196b4fc556ac18a2ea8f43ecff2ef3bda",
+    "bytes": 1307
+  },
+  "runs/isaac/play/unitree_go2_curriculum_fixed/20261028_145206_497a24/params/agent.yaml": {
+    "sha256": "e3fc4e94347dc44a323361c669e8c0ff4b14c456dd4f8972d487196a1e56825c",
+    "bytes": 1048
+  },
+  "runs/isaac/play/unitree_go2_curriculum_fixed/20261028_145206_497a24/params/env.yaml": {
+    "sha256": "a3c31e8a119f964e4a6e820136475f90ff2a5831522187ae5067dbdae119147a",
+    "bytes": 31902
+  },
+  "runs/isaac/play/unitree_go2_curriculum_fixed/20261028_145206_497a24/source/velocity_curriculum.py": {
+    "sha256": "cb1b954a06b663f8dd1f6ccc97e1fa1a57fc5a9dfd2855344ce7db67b8ac1a5e",
+    "bytes": 6842
+  },
+  "runs/isaac/play/unitree_go2_curriculum_fixed/20261028_145206_497a24/source/official_env_cfg.py": {
+    "sha256": "56859832148dacc724ddba3954a7684b99a43560e4fde561f6361b9daa051b56",
+    "bytes": 14840
+  },
+  "runs/isaac/play/unitree_go2_curriculum_fixed/20261028_145206_497a24/source/official_ppo_cfg.py": {
+    "sha256": "0f15211f85adc84cf6586770dad448f080d579ea55b4f509aca20a36a11310f7",
+    "bytes": 1042
+  },
+  "runs/isaac/play/unitree_go2_curriculum_fixed/20261028_145206_497a24/source/official_runtime.py": {
+    "sha256": "159df4b635912252cdd2a666cce8f73da9fc1b645f7e79a98a6af513e61bca6a",
+    "bytes": 14863
+  },
+  "runs/isaac/play/unitree_go2_curriculum_fixed/20261028_145206_497a24/source/official_robot_cfg.py": {
+    "sha256": "5bb4d9b8cabfde167b0f905d0cfa63a2d8a6ab0209077c4885997edbc25c6a62",
+    "bytes": 24164
+  },
+  "runs/isaac/play/unitree_go2_curriculum_fixed/20261028_145206_497a24/videos/official-play-step-0.mp4": {
+    "sha256": "54548dea0a05cfb44c683b4a217c413173324e515ed885034f137af314cde38b",
+    "bytes": 309019
+  },
+  "runs/isaac/check/curriculum_fixed_commands_20261028/state_trace.csv": {
+    "sha256": "a6a1a39cb16b3143711c60f01f3f59fedc3c2c18ca8639ed18accfb2d19b4bb6",
+    "bytes": 1335519
+  },
+  "runs/isaac/check/curriculum_fixed_commands_20261028/tracking.png": {
+    "sha256": "b3c7fa6f3c74777a0fe6a43aad278fe8a87d6d62cc12fb255ccdd8e99d9060cd",
+    "bytes": 746296
+  },
+  "runs/isaac/check/curriculum_fixed_commands_20261028/agent.yaml": {
+    "sha256": "e3fc4e94347dc44a323361c669e8c0ff4b14c456dd4f8972d487196a1e56825c",
+    "bytes": 1048
+  },
+  "runs/isaac/check/curriculum_fixed_commands_20261028/forward_04_contacts.png": {
+    "sha256": "0ab2a54efa1a835a9e7593be1e354a69c1bdc95f3cf02e012c089fb3f1227f64",
+    "bytes": 49869
+  },
+  "runs/isaac/check/curriculum_fixed_commands_20261028/report.json": {
+    "sha256": "4175c12fec072efe6e19ee773caf0324a00485b358a43045d9812c66a6f68625",
+    "bytes": 7575
+  },
+  "runs/isaac/check/curriculum_fixed_commands_20261028/protocol.json": {
+    "sha256": "3229f83a5b3e3851a9ac98391fe46bc186829c3b31c9bb6cda1c8276455a901e",
+    "bytes": 1740
+  },
+  "runs/isaac/check/curriculum_fixed_commands_20261028/trials.csv": {
+    "sha256": "cab0ffb626b4d7394153d045fd66f7dc5b058aa4c7e1d48069483f3b04ded93d",
+    "bytes": 1484
+  },
+  "runs/isaac/check/curriculum_fixed_commands_20261028/status.json": {
+    "sha256": "a2a7a2d80cc3dd0d128da27bfc06cd30a7145a7b85681fc978130f00bd37eace",
+    "bytes": 1777
+  },
+  "runs/isaac/check/curriculum_fixed_commands_20261028/console.log": {
+    "sha256": "05ce1ee9e8fc3285f50f73fd0ad856910eea2bc2e83e3a6e029ebdcfeb4f8952",
+    "bytes": 21130
+  },
+  "runs/isaac/check/curriculum_fixed_commands_20261028/trace.npz": {
+    "sha256": "6637e8cc061ddbddb9fb51ead4d012eabc33409a87e49c861c0f0f7d10b51aa4",
+    "bytes": 1978250
+  },
+  "runs/isaac/check/curriculum_fixed_commands_20261028/videos/forward_04.mp4": {
+    "sha256": "f12ee94b0165fc2d2adca9f59f20d4277de3e83007931be6619b0039a96f24ab",
+    "bytes": 409087
+  },
+  "scripts/analysis/collect_unitree_baseline.py": {
+    "sha256": "d8d465fdcaac402498b1b326e557b5e1cafbb60dafdf3ea904133bd19891d704",
+    "bytes": 9714
+  },
+  "scripts/analysis/summarize_baseline_play.py": {
+    "sha256": "4283554a7f1be02c5ac16e60d8d5a4af925e50c3b335e218661c3f09a5009e95",
+    "bytes": 6354
+  },
+  "reports/20261028_curriculum_fixed_review/README.md": {
+    "sha256": "f6932e56c636b26c49795618e1334eabf587bdf638815f0e6a4ce0f4b37e924e",
+    "bytes": 5240
+  },
+  "reports/20261028_curriculum_fixed_review/summary.json": {
+    "sha256": "626733bb6b0ae3be737942d204955ed0428c078983e7efaf453b5378bef222c6",
+    "bytes": 66941
+  },
+  "reports/20261028_curriculum_fixed_review/play_analysis.json": {
+    "sha256": "9bf324bc455421a373f99cb3ac188fcc5c6a1b232791fcb56d71256bc06c0703",
+    "bytes": 1724
+  },
+  "reports/20261028_curriculum_fixed_review/evaluation_report.json": {
+    "sha256": "60088bee5f4be5d972a6d067282bcc1807e90910310539e0efb561aa73a8b627",
+    "bytes": 8120
+  }
+}

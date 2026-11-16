@@ -1,0 +1,15 @@
+{
+  "original_train_play_files_verified": 73,
+  "original_hashes_unchanged": true,
+  "checkpoint_sha256": "32ac3e282cf014ec8ac342ca832a49ea809b1e9a158beb17b490c9fe6b22ecdb",
+  "completed_validation_runs": 3,
+  "recordings_readable": 3,
+  "no_policy_updates": true,
+  "policies_unchanged": true,
+  "every_run_same_checkpoint": true,
+  "final_original_hashes_rechecked": true,
+  "validation_sources_match_snapshot": true,
+  "local_report_links_exist": true,
+  "latest_trained50k_and_protected_selection_preserved": true,
+  "physical_hardware_commands": 0
+}

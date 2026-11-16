@@ -1,0 +1,265 @@
+.........../home/cvr/miniconda3/envs/kine2go/lib/python3.11/site-packages/rsl_rl/runners/on_policy_runner.py:405: DeprecationWarning: The `empirical_normalization` parameter is deprecated. Please set `actor_obs_normalization` and `critic_obs_normalization` as part of the `policy` configuration instead.
+  warnings.warn(
+........................................................................................................................................................................--------------------------------------------------------------------------------
+Resolved observation sets: 
+	 policy :  ['policy']
+	 critic :  ['critic']
+--------------------------------------------------------------------------------
+Actor MLP: MLP(
+  (0): Linear(in_features=49, out_features=512, bias=True)
+  (1): ELU(alpha=1.0)
+  (2): Linear(in_features=512, out_features=256, bias=True)
+  (3): ELU(alpha=1.0)
+  (4): Linear(in_features=256, out_features=128, bias=True)
+  (5): ELU(alpha=1.0)
+  (6): Linear(in_features=128, out_features=12, bias=True)
+)
+Critic MLP: MLP(
+  (0): Linear(in_features=64, out_features=512, bias=True)
+  (1): ELU(alpha=1.0)
+  (2): Linear(in_features=512, out_features=256, bias=True)
+  (3): ELU(alpha=1.0)
+  (4): Linear(in_features=256, out_features=128, bias=True)
+  (5): ELU(alpha=1.0)
+  (6): Linear(in_features=128, out_features=1, bias=True)
+)
+--------------------------------------------------------------------------------
+Resolved observation sets: 
+	 policy :  ['policy']
+	 critic :  ['critic']
+--------------------------------------------------------------------------------
+Actor MLP: MLP(
+  (0): Linear(in_features=47, out_features=8, bias=True)
+  (1): ELU(alpha=1.0)
+  (2): Linear(in_features=8, out_features=12, bias=True)
+)
+Critic MLP: MLP(
+  (0): Linear(in_features=62, out_features=8, bias=True)
+  (1): ELU(alpha=1.0)
+  (2): Linear(in_features=8, out_features=1, bias=True)
+)
+--------------------------------------------------------------------------------
+Resolved observation sets: 
+	 policy :  ['policy']
+	 critic :  ['critic']
+--------------------------------------------------------------------------------
+Actor MLP: MLP(
+  (0): Linear(in_features=47, out_features=8, bias=True)
+  (1): ELU(alpha=1.0)
+  (2): Linear(in_features=8, out_features=12, bias=True)
+)
+Critic MLP: MLP(
+  (0): Linear(in_features=62, out_features=8, bias=True)
+  (1): ELU(alpha=1.0)
+  (2): Linear(in_features=8, out_features=1, bias=True)
+)
+--------------------------------------------------------------------------------
+Resolved observation sets: 
+	 policy :  ['policy']
+	 critic :  ['critic']
+--------------------------------------------------------------------------------
+Actor MLP: MLP(
+  (0): Linear(in_features=47, out_features=8, bias=True)
+  (1): ELU(alpha=1.0)
+  (2): Linear(in_features=8, out_features=12, bias=True)
+)
+Critic MLP: MLP(
+  (0): Linear(in_features=62, out_features=8, bias=True)
+  (1): ELU(alpha=1.0)
+  (2): Linear(in_features=8, out_features=1, bias=True)
+)
+--------------------------------------------------------------------------------
+Resolved observation sets: 
+	 policy :  ['policy']
+	 critic :  ['critic']
+--------------------------------------------------------------------------------
+Actor MLP: MLP(
+  (0): Linear(in_features=45, out_features=8, bias=True)
+  (1): ELU(alpha=1.0)
+  (2): Linear(in_features=8, out_features=12, bias=True)
+)
+Critic MLP: MLP(
+  (0): Linear(in_features=60, out_features=8, bias=True)
+  (1): ELU(alpha=1.0)
+  (2): Linear(in_features=8, out_features=1, bias=True)
+)
+--------------------------------------------------------------------------------
+Resolved observation sets: 
+	 policy :  ['policy']
+	 critic :  ['critic']
+--------------------------------------------------------------------------------
+Actor MLP: MLP(
+  (0): Linear(in_features=47, out_features=8, bias=True)
+  (1): ELU(alpha=1.0)
+  (2): Linear(in_features=8, out_features=12, bias=True)
+)
+Critic MLP: MLP(
+  (0): Linear(in_features=62, out_features=8, bias=True)
+  (1): ELU(alpha=1.0)
+  (2): Linear(in_features=8, out_features=1, bias=True)
+)
+--------------------------------------------------------------------------------
+Resolved observation sets: 
+	 policy :  ['policy']
+	 critic :  ['critic']
+--------------------------------------------------------------------------------
+Actor MLP: MLP(
+  (0): Linear(in_features=45, out_features=8, bias=True)
+  (1): ELU(alpha=1.0)
+  (2): Linear(in_features=8, out_features=12, bias=True)
+)
+Critic MLP: MLP(
+  (0): Linear(in_features=60, out_features=8, bias=True)
+  (1): ELU(alpha=1.0)
+  (2): Linear(in_features=8, out_features=1, bias=True)
+)
+--------------------------------------------------------------------------------
+Resolved observation sets: 
+	 policy :  ['policy']
+	 critic :  ['critic']
+--------------------------------------------------------------------------------
+Actor MLP: MLP(
+  (0): Linear(in_features=49, out_features=8, bias=True)
+  (1): ELU(alpha=1.0)
+  (2): Linear(in_features=8, out_features=12, bias=True)
+)
+Critic MLP: MLP(
+  (0): Linear(in_features=64, out_features=8, bias=True)
+  (1): ELU(alpha=1.0)
+  (2): Linear(in_features=8, out_features=1, bias=True)
+)
+--------------------------------------------------------------------------------
+Resolved observation sets: 
+	 policy :  ['policy']
+	 critic :  ['critic']
+--------------------------------------------------------------------------------
+Actor MLP: MLP(
+  (0): Linear(in_features=49, out_features=8, bias=True)
+  (1): ELU(alpha=1.0)
+  (2): Linear(in_features=8, out_features=12, bias=True)
+)
+Critic MLP: MLP(
+  (0): Linear(in_features=64, out_features=8, bias=True)
+  (1): ELU(alpha=1.0)
+  (2): Linear(in_features=8, out_features=1, bias=True)
+)
+--------------------------------------------------------------------------------
+Resolved observation sets: 
+	 policy :  ['policy']
+	 critic :  ['critic']
+--------------------------------------------------------------------------------
+Actor MLP: MLP(
+  (0): Linear(in_features=49, out_features=8, bias=True)
+  (1): ELU(alpha=1.0)
+  (2): Linear(in_features=8, out_features=12, bias=True)
+)
+Critic MLP: MLP(
+  (0): Linear(in_features=64, out_features=8, bias=True)
+  (1): ELU(alpha=1.0)
+  (2): Linear(in_features=8, out_features=1, bias=True)
+)
+--------------------------------------------------------------------------------
+Resolved observation sets: 
+	 policy :  ['policy']
+	 critic :  ['critic']
+--------------------------------------------------------------------------------
+Actor MLP: MLP(
+  (0): Linear(in_features=49, out_features=8, bias=True)
+  (1): ELU(alpha=1.0)
+  (2): Linear(in_features=8, out_features=12, bias=True)
+)
+Critic MLP: MLP(
+  (0): Linear(in_features=64, out_features=8, bias=True)
+  (1): ELU(alpha=1.0)
+  (2): Linear(in_features=8, out_features=1, bias=True)
+)
+--------------------------------------------------------------------------------
+Resolved observation sets: 
+	 policy :  ['policy']
+	 critic :  ['critic']
+--------------------------------------------------------------------------------
+Actor MLP: MLP(
+  (0): Linear(in_features=49, out_features=8, bias=True)
+  (1): ELU(alpha=1.0)
+  (2): Linear(in_features=8, out_features=12, bias=True)
+)
+Critic MLP: MLP(
+  (0): Linear(in_features=64, out_features=8, bias=True)
+  (1): ELU(alpha=1.0)
+  (2): Linear(in_features=8, out_features=1, bias=True)
+)
+--------------------------------------------------------------------------------
+Resolved observation sets: 
+	 policy :  ['policy']
+	 critic :  ['critic']
+--------------------------------------------------------------------------------
+Actor MLP: MLP(
+  (0): Linear(in_features=49, out_features=8, bias=True)
+  (1): ELU(alpha=1.0)
+  (2): Linear(in_features=8, out_features=12, bias=True)
+)
+Critic MLP: MLP(
+  (0): Linear(in_features=64, out_features=8, bias=True)
+  (1): ELU(alpha=1.0)
+  (2): Linear(in_features=8, out_features=1, bias=True)
+)
+--------------------------------------------------------------------------------
+Resolved observation sets: 
+	 policy :  ['policy']
+	 critic :  ['critic']
+--------------------------------------------------------------------------------
+Actor MLP: MLP(
+  (0): Linear(in_features=49, out_features=8, bias=True)
+  (1): ELU(alpha=1.0)
+  (2): Linear(in_features=8, out_features=12, bias=True)
+)
+Critic MLP: MLP(
+  (0): Linear(in_features=64, out_features=8, bias=True)
+  (1): ELU(alpha=1.0)
+  (2): Linear(in_features=8, out_features=1, bias=True)
+)
+--------------------------------------------------------------------------------
+Resolved observation sets: 
+	 policy :  ['policy']
+	 critic :  ['critic']
+--------------------------------------------------------------------------------
+Actor MLP: MLP(
+  (0): Linear(in_features=49, out_features=8, bias=True)
+  (1): ELU(alpha=1.0)
+  (2): Linear(in_features=8, out_features=12, bias=True)
+)......................................./home/cvr/miniconda3/envs/kine2go/lib/python3.11/site-packages/rsl_rl/runners/on_policy_runner.py:405: DeprecationWarning: The `empirical_normalization` parameter is deprecated. Please set `actor_obs_normalization` and `critic_obs_normalization` as part of the `policy` configuration instead.
+  warnings.warn(
+............
+----------------------------------------------------------------------
+Ran 230 tests in 23.137s
+
+OK
+
+Critic MLP: MLP(
+  (0): Linear(in_features=64, out_features=8, bias=True)
+  (1): ELU(alpha=1.0)
+  (2): Linear(in_features=8, out_features=1, bias=True)
+)
+--------------------------------------------------------------------------------
+Resolved observation sets: 
+	 policy :  ['policy']
+	 critic :  ['critic']
+--------------------------------------------------------------------------------
+Actor MLP: MLP(
+  (0): Linear(in_features=45, out_features=512, bias=True)
+  (1): ELU(alpha=1.0)
+  (2): Linear(in_features=512, out_features=256, bias=True)
+  (3): ELU(alpha=1.0)
+  (4): Linear(in_features=256, out_features=128, bias=True)
+  (5): ELU(alpha=1.0)
+  (6): Linear(in_features=128, out_features=12, bias=True)
+)
+Critic MLP: MLP(
+  (0): Linear(in_features=60, out_features=512, bias=True)
+  (1): ELU(alpha=1.0)
+  (2): Linear(in_features=512, out_features=256, bias=True)
+  (3): ELU(alpha=1.0)
+  (4): Linear(in_features=256, out_features=128, bias=True)
+  (5): ELU(alpha=1.0)
+  (6): Linear(in_features=128, out_features=1, bias=True)
+)

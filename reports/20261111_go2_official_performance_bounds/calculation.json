@@ -1,0 +1,483 @@
+{
+  "exact_trainable_maximum_speed_mps": null,
+  "exact_trainable_maximum_air_distance_m": null,
+  "reason": "Independent position/velocity/effort maxima do not identify joint torque-speed-temperature capability, contact dynamics or a feasible stable periodic gait.",
+  "official_product_spec": {
+    "edu_listed_speed_mps": 3.7,
+    "laboratory_max_approx_mps": 5.0,
+    "url": "https://www.unitree.com/go2/",
+    "not_a_custom_gallop_certification": true
+  },
+  "inputs": {
+    "official_joint_limits": {
+      "hip": {
+        "lower": -1.0472,
+        "upper": 1.0472,
+        "effort": 23.7,
+        "velocity": 30.1
+      },
+      "front_thigh": {
+        "lower": -1.5708,
+        "upper": 3.4907,
+        "effort": 23.7,
+        "velocity": 30.1
+      },
+      "rear_thigh": {
+        "lower": -0.5236,
+        "upper": 4.5379,
+        "effort": 23.7,
+        "velocity": 30.1
+      },
+      "calf": {
+        "lower": -2.7227,
+        "upper": -0.83776,
+        "effort": 45.43,
+        "velocity": 15.7
+      }
+    },
+    "thigh_length_m": 0.213,
+    "calf_length_m": 0.213,
+    "maximum_sagittal_thigh_root_to_foot_centre_reach_m": 0.3891701952340812,
+    "urdf_path": "/home/cvr/GH/go2_animalization/gallop/reports/20261111_gallop_46000_sim2sim_review/sources/official_go2_description.urdf",
+    "urdf_sha256": "8f4571b49f35ce04b8833d561c403bddeb9cd8f7077e2ddbee82895726de487c",
+    "mjcf_path": "/home/cvr/GH/go2_animalization/gallop/reports/20261111_gallop_46000_sim2sim_review/sources/local_original_go2.xml",
+    "mjcf_sha256": "2014a3d76e30f17ab9447d8a67bd015291f74fa4d71ae30d005f1a32bd693d4b"
+  },
+  "stance_screens": [
+    {
+      "reference": "current18cm_reference",
+      "period_s": 0.39,
+      "max_leg_duty": 0.45,
+      "thigh_root_to_foot_centre_height_m": 0.24,
+      "stance_seconds": 0.17550000000000002,
+      "angular_velocity_factor": 1.0,
+      "geometry_only_speed_mps": 3.491226091093319,
+      "conditional_stance_speed_mps": 2.7857190001157632,
+      "feasible": true,
+      "position_ok": true,
+      "velocity_ratio": 0.9999999999999989,
+      "calf_peak_rad_s": 15.699999999999982,
+      "thigh_peak_rad_s": 13.54704557367945,
+      "thigh_min_max_rad": [
+        -0.1580335300796779,
+        1.4436937445772164
+      ],
+      "calf_min_max_rad": [
+        -1.944649670821236,
+        -1.2730871832717676
+      ]
+    },
+    {
+      "reference": "current18cm_reference",
+      "period_s": 0.39,
+      "max_leg_duty": 0.45,
+      "thigh_root_to_foot_centre_height_m": 0.24,
+      "stance_seconds": 0.17550000000000002,
+      "angular_velocity_factor": 0.9,
+      "geometry_only_speed_mps": 3.491226091093319,
+      "conditional_stance_speed_mps": 2.664076060056325,
+      "feasible": true,
+      "position_ok": true,
+      "velocity_ratio": 0.9999999999999998,
+      "calf_peak_rad_s": 14.129999999999995,
+      "thigh_peak_rad_s": 12.761037172718485,
+      "thigh_min_max_rad": [
+        -0.10653331455723236,
+        1.4436937888562107
+      ],
+      "calf_min_max_rad": [
+        -1.944649670821236,
+        -1.3314429678709667
+      ]
+    },
+    {
+      "reference": "current18cm_reference",
+      "period_s": 0.39,
+      "max_leg_duty": 0.45,
+      "thigh_root_to_foot_centre_height_m": 0.28,
+      "stance_seconds": 0.17550000000000002,
+      "angular_velocity_factor": 1.0,
+      "geometry_only_speed_mps": 3.0801595484292505,
+      "conditional_stance_speed_mps": 2.675520525821617,
+      "feasible": true,
+      "position_ok": true,
+      "velocity_ratio": 0.9999999999999984,
+      "calf_peak_rad_s": 15.699999999999974,
+      "thigh_peak_rad_s": 13.460729454466643,
+      "thigh_min_max_rad": [
+        -0.1578658206982999,
+        1.2508095453974053
+      ],
+      "calf_min_max_rad": [
+        -1.7071927559957956,
+        -1.0798149042666259
+      ]
+    },
+    {
+      "reference": "current18cm_reference",
+      "period_s": 0.39,
+      "max_leg_duty": 0.45,
+      "thigh_root_to_foot_centre_height_m": 0.28,
+      "stance_seconds": 0.17550000000000002,
+      "angular_velocity_factor": 0.9,
+      "geometry_only_speed_mps": 3.0801595484292505,
+      "conditional_stance_speed_mps": 2.5714612786053053,
+      "feasible": true,
+      "position_ok": true,
+      "velocity_ratio": 0.9999999999999838,
+      "calf_peak_rad_s": 14.12999999999977,
+      "thigh_peak_rad_s": 12.632827571906988,
+      "thigh_min_max_rad": [
+        -0.11248468501996922,
+        1.2508095679696158
+      ],
+      "calf_min_max_rad": [
+        -1.7071927559957956,
+        -1.1316597931675616
+      ]
+    },
+    {
+      "reference": "current18cm_reference",
+      "period_s": 0.39,
+      "max_leg_duty": 0.45,
+      "thigh_root_to_foot_centre_height_m": 0.32,
+      "stance_seconds": 0.17550000000000002,
+      "angular_velocity_factor": 1.0,
+      "geometry_only_speed_mps": 2.5239899021326075,
+      "conditional_stance_speed_mps": 2.481912661982364,
+      "feasible": true,
+      "position_ok": true,
+      "velocity_ratio": 1.0000000000000007,
+      "calf_peak_rad_s": 15.700000000000008,
+      "thigh_peak_rad_s": 13.150699996991545,
+      "thigh_min_max_rad": [
+        -0.16679805234621747,
+        1.044484787858039
+      ],
+      "calf_min_max_rad": [
+        -1.441915953981511,
+        -0.8615597656177192
+      ]
+    },
+    {
+      "reference": "current18cm_reference",
+      "period_s": 0.39,
+      "max_leg_duty": 0.45,
+      "thigh_root_to_foot_centre_height_m": 0.32,
+      "stance_seconds": 0.17550000000000002,
+      "angular_velocity_factor": 0.9,
+      "geometry_only_speed_mps": 2.5239899021326075,
+      "conditional_stance_speed_mps": 2.3982306203836785,
+      "feasible": true,
+      "position_ok": true,
+      "velocity_ratio": 0.999999999999975,
+      "calf_peak_rad_s": 14.129999999999646,
+      "thigh_peak_rad_s": 12.29677830986528,
+      "thigh_min_max_rad": [
+        -0.12853690338332102,
+        1.044484843620161
+      ],
+      "calf_min_max_rad": [
+        -1.441915953981511,
+        -0.9063805400435152
+      ]
+    },
+    {
+      "reference": "final80cm_reference",
+      "period_s": 0.6,
+      "max_leg_duty": 0.28,
+      "thigh_root_to_foot_centre_height_m": 0.24,
+      "stance_seconds": 0.168,
+      "angular_velocity_factor": 1.0,
+      "geometry_only_speed_mps": 3.6470843987314137,
+      "conditional_stance_speed_mps": 2.8575061973715323,
+      "feasible": true,
+      "position_ok": true,
+      "velocity_ratio": 0.9999999999999998,
+      "calf_peak_rad_s": 15.699999999999996,
+      "thigh_peak_rad_s": 13.802380904256191,
+      "thigh_min_max_rad": [
+        -0.13663071038426,
+        1.4436937816625033
+      ],
+      "calf_min_max_rad": [
+        -1.944649670821236,
+        -1.2976620670207684
+      ]
+    },
+    {
+      "reference": "final80cm_reference",
+      "period_s": 0.6,
+      "max_leg_duty": 0.28,
+      "thigh_root_to_foot_centre_height_m": 0.24,
+      "stance_seconds": 0.168,
+      "angular_velocity_factor": 0.9,
+      "geometry_only_speed_mps": 3.6470843987314137,
+      "conditional_stance_speed_mps": 2.7302316924000594,
+      "feasible": true,
+      "position_ok": true,
+      "velocity_ratio": 1.0,
+      "calf_peak_rad_s": 14.129999999999999,
+      "thigh_peak_rad_s": 13.011242190340742,
+      "thigh_min_max_rad": [
+        -0.08535334629904368,
+        1.4436937749957508
+      ],
+      "calf_min_max_rad": [
+        -1.944649670821236,
+        -1.3546696091211423
+      ]
+    },
+    {
+      "reference": "final80cm_reference",
+      "period_s": 0.6,
+      "max_leg_duty": 0.28,
+      "thigh_root_to_foot_centre_height_m": 0.28,
+      "stance_seconds": 0.168,
+      "angular_velocity_factor": 1.0,
+      "geometry_only_speed_mps": 3.217666671126985,
+      "conditional_stance_speed_mps": 2.7501474729900064,
+      "feasible": true,
+      "position_ok": true,
+      "velocity_ratio": 0.999999999999996,
+      "calf_peak_rad_s": 15.699999999999937,
+      "thigh_peak_rad_s": 13.693973905082181,
+      "thigh_min_max_rad": [
+        -0.13902486908389033,
+        1.2508095373851762
+      ],
+      "calf_min_max_rad": [
+        -1.7071927559957956,
+        -1.1016029994942123
+      ]
+    },
+    {
+      "reference": "final80cm_reference",
+      "period_s": 0.6,
+      "max_leg_duty": 0.28,
+      "thigh_root_to_foot_centre_height_m": 0.28,
+      "stance_seconds": 0.168,
+      "angular_velocity_factor": 0.9,
+      "geometry_only_speed_mps": 3.217666671126985,
+      "conditional_stance_speed_mps": 2.6407226622663758,
+      "feasible": true,
+      "position_ok": true,
+      "velocity_ratio": 0.9999999999999614,
+      "calf_peak_rad_s": 14.129999999999454,
+      "thigh_peak_rad_s": 12.859488302341283,
+      "thigh_min_max_rad": [
+        -0.09377686417030917,
+        1.2508094301540833
+      ],
+      "calf_min_max_rad": [
+        -1.7071927559957956,
+        -1.1524003448995195
+      ]
+    },
+    {
+      "reference": "final80cm_reference",
+      "period_s": 0.6,
+      "max_leg_duty": 0.28,
+      "thigh_root_to_foot_centre_height_m": 0.32,
+      "stance_seconds": 0.168,
+      "angular_velocity_factor": 1.0,
+      "geometry_only_speed_mps": 2.6366680227635273,
+      "conditional_stance_speed_mps": 2.5568426479911692,
+      "feasible": true,
+      "position_ok": true,
+      "velocity_ratio": 1.0000000000000004,
+      "calf_peak_rad_s": 15.700000000000005,
+      "thigh_peak_rad_s": 13.358648242347323,
+      "thigh_min_max_rad": [
+        -0.15094584389985066,
+        1.0444847238741075
+      ],
+      "calf_min_max_rad": [
+        -1.441915953981511,
+        -0.8803375985841213
+      ]
+    },
+    {
+      "reference": "final80cm_reference",
+      "period_s": 0.6,
+      "max_leg_duty": 0.28,
+      "thigh_root_to_foot_centre_height_m": 0.32,
+      "stance_seconds": 0.168,
+      "angular_velocity_factor": 0.9,
+      "geometry_only_speed_mps": 2.6366680227635273,
+      "conditional_stance_speed_mps": 2.468259663251525,
+      "feasible": true,
+      "position_ok": true,
+      "velocity_ratio": 0.9999999999995447,
+      "calf_peak_rad_s": 14.129999999993565,
+      "thigh_peak_rad_s": 12.497682502123187,
+      "thigh_min_max_rad": [
+        -0.11268666466558447,
+        1.0444848109011597
+      ],
+      "calf_min_max_rad": [
+        -1.441915953981511,
+        -0.9244473133252077
+      ]
+    }
+  ],
+  "ballistic80cm": [
+    {
+      "forward_speed_mps": 2.0,
+      "air_distance_m": 0.8,
+      "flight_seconds": 0.4,
+      "vertical_takeoff_and_landing_speed_mps": 1.9620000000000002,
+      "com_apex_rise_m": 0.1962,
+      "required_min_average_vertical_force_bw_period060": 3.0000000000000004,
+      "required_min_average_vertical_force_bw_period039": null,
+      "air_distance_in030s_m": 0.6,
+      "air_distance_in0078s_m": 0.156,
+      "minimum_landing_compression_m_if_force_globally_capped3bw": 0.0981
+    },
+    {
+      "forward_speed_mps": 2.5,
+      "air_distance_m": 0.8,
+      "flight_seconds": 0.32,
+      "vertical_takeoff_and_landing_speed_mps": 1.5696,
+      "com_apex_rise_m": 0.125568,
+      "required_min_average_vertical_force_bw_period060": 2.142857142857143,
+      "required_min_average_vertical_force_bw_period039": 5.571428571428571,
+      "air_distance_in030s_m": 0.75,
+      "air_distance_in0078s_m": 0.195,
+      "minimum_landing_compression_m_if_force_globally_capped3bw": 0.062784
+    },
+    {
+      "forward_speed_mps": 2.75,
+      "air_distance_m": 0.8,
+      "flight_seconds": 0.29090909090909095,
+      "vertical_takeoff_and_landing_speed_mps": 1.4269090909090911,
+      "com_apex_rise_m": 0.10377520661157028,
+      "required_min_average_vertical_force_bw_period060": 1.9411764705882357,
+      "required_min_average_vertical_force_bw_period039": 3.9357798165137625,
+      "air_distance_in030s_m": 0.825,
+      "air_distance_in0078s_m": 0.2145,
+      "minimum_landing_compression_m_if_force_globally_capped3bw": 0.05188760330578514
+    },
+    {
+      "forward_speed_mps": 3.0,
+      "air_distance_m": 0.8,
+      "flight_seconds": 0.26666666666666666,
+      "vertical_takeoff_and_landing_speed_mps": 1.308,
+      "com_apex_rise_m": 0.0872,
+      "required_min_average_vertical_force_bw_period060": 1.8,
+      "required_min_average_vertical_force_bw_period039": 3.162162162162162,
+      "air_distance_in030s_m": 0.8999999999999999,
+      "air_distance_in0078s_m": 0.23399999999999999,
+      "minimum_landing_compression_m_if_force_globally_capped3bw": 0.0436
+    },
+    {
+      "forward_speed_mps": 3.7,
+      "air_distance_m": 0.8,
+      "flight_seconds": 0.21621621621621623,
+      "vertical_takeoff_and_landing_speed_mps": 1.0605405405405406,
+      "com_apex_rise_m": 0.05732651570489408,
+      "required_min_average_vertical_force_bw_period060": 1.563380281690141,
+      "required_min_average_vertical_force_bw_period039": 2.244167962674961,
+      "air_distance_in030s_m": 1.11,
+      "air_distance_in0078s_m": 0.2886,
+      "minimum_landing_compression_m_if_force_globally_capped3bw": 0.02866325785244704
+    }
+  ],
+  "reference_shape_speed_budgets": [
+    {
+      "name": "stability",
+      "speed_mps": 2.5,
+      "period_s": 0.39,
+      "reference_air_s": 0.078,
+      "reference_air_distance_budget_m": 0.195,
+      "reference_thigh_peak_rad_s": 18.124573001479575,
+      "reference_calf_peak_rad_s": 10.43536021297309
+    },
+    {
+      "name": "speed_275",
+      "speed_mps": 2.75,
+      "period_s": 0.385,
+      "reference_air_s": 0.077,
+      "reference_air_distance_budget_m": 0.21175,
+      "reference_thigh_peak_rad_s": 19.37995468123574,
+      "reference_calf_peak_rad_s": 11.21997376282069
+    },
+    {
+      "name": "speed_300",
+      "speed_mps": 3.0,
+      "period_s": 0.38,
+      "reference_air_s": 0.076,
+      "reference_air_distance_budget_m": 0.22799999999999998,
+      "reference_thigh_peak_rad_s": 20.668372720985484,
+      "reference_calf_peak_rad_s": 12.02523503766428
+    },
+    {
+      "name": "leap_020",
+      "speed_mps": 3.0,
+      "period_s": 0.38,
+      "reference_air_s": 0.076,
+      "reference_air_distance_budget_m": 0.22799999999999998,
+      "reference_thigh_peak_rad_s": 20.668372720985484,
+      "reference_calf_peak_rad_s": 12.02523503766428
+    },
+    {
+      "name": "leap_030",
+      "speed_mps": 3.0,
+      "period_s": 0.4354316445282742,
+      "reference_air_s": 0.12,
+      "reference_air_distance_budget_m": 0.36,
+      "reference_thigh_peak_rad_s": 19.3364453888736,
+      "reference_calf_peak_rad_s": 9.736146568922578
+    },
+    {
+      "name": "leap_040",
+      "speed_mps": 3.0,
+      "period_s": 0.4734267790359977,
+      "reference_air_s": 0.155,
+      "reference_air_distance_budget_m": 0.46499999999999997,
+      "reference_thigh_peak_rad_s": 18.708251956801075,
+      "reference_calf_peak_rad_s": 8.532211763929872
+    },
+    {
+      "name": "leap_050",
+      "speed_mps": 3.0,
+      "period_s": 0.5077477892543523,
+      "reference_air_s": 0.19,
+      "reference_air_distance_budget_m": 0.5700000000000001,
+      "reference_thigh_peak_rad_s": 18.30230923198876,
+      "reference_calf_peak_rad_s": 7.630243779565889
+    },
+    {
+      "name": "leap_065",
+      "speed_mps": 3.0,
+      "period_s": 0.5521102463771855,
+      "reference_air_s": 0.24,
+      "reference_air_distance_budget_m": 0.72,
+      "reference_thigh_peak_rad_s": 17.9753837158828,
+      "reference_calf_peak_rad_s": 6.664951373843682
+    },
+    {
+      "name": "leap_080",
+      "speed_mps": 3.0,
+      "period_s": 0.6,
+      "reference_air_s": 0.3,
+      "reference_air_distance_budget_m": 0.8999999999999999,
+      "reference_thigh_peak_rad_s": 17.849958259032913,
+      "reference_calf_peak_rad_s": 5.817764173314432
+    }
+  ],
+  "assumptions": [
+    "Stance screen: symmetric sagittal stance, zero body rotation, constant thigh-root height, no foot slip; swing return and forces/inertia omitted.",
+    "Height is thigh-root to foot-centre vertical distance, not measured trunk height or ground clearance.",
+    "The90percent velocity factor is a proposed engineering margin, not a Unitree official rating.",
+    "Ballistics: constant horizontal COM velocity, equal COM takeoff/first-touchdown height, gravity9.81, no external aerial force.",
+    "The ballistic model and constant-height stance screen are separate necessary-budget models; not a dynamically consistent complete trajectory.",
+    "The3BW global-force assumption is an illustrative project constraint, not a manufacturer rating; existing3BW landing checks do not impose a whole-cycle cap.",
+    "Periodic impulse assumes no other flight phase; any additional flight makes the required mean stance force larger.",
+    "Body-root air distance in existing logs can differ from COM air distance as the robot changes orientation/configuration.",
+    "Reference-shape derivatives do not prove actual joint tracking or dynamically attainable speed; the calf reference has derivative changes at stance/swing boundaries."
+  ],
+  "policy_updates": 0,
+  "physics_rollouts": 0,
+  "physical_hardware": false
+}

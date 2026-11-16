@@ -1,0 +1,38 @@
+{
+  "tag": "handoff-2026-11-16",
+  "assets": {
+    "resume-pack.tar.gz": {
+      "bytes": 360043027,
+      "sha256": "56ed7c3b5debcf5aa30f8dc271380d5980650224c86a27b3c3a137612fa2ec11"
+    },
+    "full-snapshot.tar.zst.part01": {
+      "bytes": 1073741824,
+      "sha256": "cccb84a6ac760f2b6f6d61fd404e56dee2300c1620fe72db061587786fc2a0ed"
+    },
+    "full-snapshot.tar.zst.part02": {
+      "bytes": 1073741824,
+      "sha256": "3621a32e38cb9e0855861587dd47fe87c6aa05d000df9df96b7f95a882705d25"
+    },
+    "full-snapshot.tar.zst.part03": {
+      "bytes": 1073741824,
+      "sha256": "ef632bfdec9ef04606a2ec7e8939b6be37ee11172cbc5e77b25b42d3a2381466"
+    },
+    "full-snapshot.tar.zst.part04": {
+      "bytes": 1073741824,
+      "sha256": "60a2f552cd15b67a1c89d33b0f72db5bba8204071c69ecf1f2664b8cf12d70c0"
+    },
+    "full-snapshot.tar.zst.part05": {
+      "bytes": 727506796,
+      "sha256": "c252beff62c4d97c4ad46fae0c344340a7175cdea47475b03cf8c837740ab1a1"
+    }
+  },
+  "full_parts": [
+    "full-snapshot.tar.zst.part01",
+    "full-snapshot.tar.zst.part02",
+    "full-snapshot.tar.zst.part03",
+    "full-snapshot.tar.zst.part04",
+    "full-snapshot.tar.zst.part05"
+  ],
+  "repository": "PGH-snfl/go2-gallop-rl",
+  "inventory": "handoff/artifact-files.json"
+}

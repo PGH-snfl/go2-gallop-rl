@@ -1,0 +1,73 @@
+{
+  "parent": {
+    "checkpoint_sha256": "70ca957fb986b4c04538eea1a78e053db0f1782746ca8ba3311eb7b5578aee92",
+    "play": "/home/cvr/GH/go2_animalization/gallop/runs/isaac/play/unitree_go2_gallop/20261103_160608_cf586d",
+    "formal_seconds": 20.819999999999556,
+    "command_speed": 2.5,
+    "actual_vx": 2.489193583428001,
+    "vx_rmse": 0.16492742230048849,
+    "leap_mean_m": 0.174122154712677,
+    "leap_max_m": 0.21467095613479614,
+    "air_mean_seconds": 0.07458332180976868,
+    "stable_landings": 41.0,
+    "aborted_landings": 19.0,
+    "landing_fraction": 0.6833333373069763,
+    "front_support_width_m": 0.2447216957807541,
+    "hind_support_width_m": 0.2809399366378784,
+    "front_width_fraction": 0.717277467250824,
+    "hind_width_fraction": 0.9572490453720093,
+    "front_max_height_m": 0.17189018428325653,
+    "hind_max_height_m": 0.10370482504367828,
+    "front_high_fraction": 0.0019212295301258564,
+    "hind_high_fraction": 0.0014409221475943923,
+    "filter_intervention": 0.5350624399615754,
+    "tracking_rmse_rad": 0.38958582282066345,
+    "roll_pitch_rms_deg": [
+      1.3253080735076976,
+      3.4714330310455144
+    ],
+    "roll_pitch_rate_rms": [
+      0.6515773102800864,
+      0.4595959924802741
+    ],
+    "yaw_rms_deg": 1.0552734386674478,
+    "max_cross_track_m": 0.549132227897644,
+    "actual_physical_max_excess_rad": 0.001002490520477295
+  },
+  "current": {
+    "checkpoint_sha256": "57607c19b9635ef21567e7a90fdbe75acce1cab532b9f78a44637a937696939d",
+    "play": "/home/cvr/GH/go2_animalization/gallop/runs/isaac/play/unitree_go2_gallop/20261103_173835_024b20",
+    "formal_seconds": 20.259999999999568,
+    "command_speed": 2.5,
+    "actual_vx": 2.4410490637823483,
+    "vx_rmse": 0.179226260925852,
+    "leap_mean_m": 0.18566380441188812,
+    "leap_max_m": 0.21381624042987823,
+    "air_mean_seconds": 0.08173076063394547,
+    "stable_landings": 34.0,
+    "aborted_landings": 18.0,
+    "landing_fraction": 0.6538461446762085,
+    "front_support_width_m": 0.22847120463848114,
+    "hind_support_width_m": 0.26409244537353516,
+    "front_width_fraction": 0.2178477644920349,
+    "hind_width_fraction": 0.980879545211792,
+    "front_max_height_m": 0.22658711671829224,
+    "hind_max_height_m": 0.12847135961055756,
+    "front_high_fraction": 0.059723593294620514,
+    "hind_high_fraction": 0.0409674234688282,
+    "filter_intervention": 0.5000822639025996,
+    "tracking_rmse_rad": 0.3851187527179718,
+    "roll_pitch_rms_deg": [
+      1.8156553018673414,
+      1.9076784761723518
+    ],
+    "roll_pitch_rate_rms": [
+      0.7002384983164693,
+      0.529967492779085
+    ],
+    "yaw_rms_deg": 1.5388629281213415,
+    "max_cross_track_m": 0.7510068416595459,
+    "actual_physical_max_excess_rad": 0.002979576587677002
+  },
+  "scope": "Same nominal 2.5m/s command, separate deterministic single-episode plays. Cadence/reward weights differ; not a causal ablation or multi-seed success estimate."
+}

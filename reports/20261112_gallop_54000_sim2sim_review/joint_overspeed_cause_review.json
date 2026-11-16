@@ -1,0 +1,77 @@
+{
+  "physics_run": "/home/cvr/GH/go2_animalization/gallop/runs/mujoco/evaluate/unitree_go2_gallop/20261112_120141_8a75a9",
+  "profile": "trained",
+  "physics_dt": 0.001,
+  "control_dt": 0.02,
+  "policy_updates": 0,
+  "per_joint": [
+    {
+      "joint": "FR_calf_joint",
+      "overspeed_physics_samples": 44,
+      "first_overspeed_s": 6.952000000000656,
+      "peak_s": 7.663000000000894,
+      "peak_actual_velocity_rad_s": -19.721419497525552,
+      "peak_target_angle_rad": -1.016829252243042,
+      "peak_actual_angle_rad": -1.4078574655609364,
+      "peak_tracking_error_rad": 0.3910282133178944,
+      "peak_applied_motor_torque_nm": 14.583508560320034,
+      "peak_constraint_torque_nm": -17.863312411124465,
+      "max_control_sampled_target_rate_rad_s": 12.000000953674316,
+      "overspeed_samples_with_braking_motor_fraction": 1.0,
+      "overspeed_samples_with_same_foot_contact_fraction": 1.0,
+      "peak_same_foot_force_n": [
+        23.92104721069336,
+        -8.699332237243652,
+        81.52949523925781
+      ]
+    },
+    {
+      "joint": "RL_calf_joint",
+      "overspeed_physics_samples": 16,
+      "first_overspeed_s": 6.855000000000624,
+      "peak_s": 6.858000000000625,
+      "peak_actual_velocity_rad_s": -15.993373897090118,
+      "peak_target_angle_rad": -1.016829252243042,
+      "peak_actual_angle_rad": -1.4052559656305503,
+      "peak_tracking_error_rad": 0.38842671338750834,
+      "peak_applied_motor_torque_nm": 17.303093336019653,
+      "peak_constraint_torque_nm": -19.716306504951195,
+      "max_control_sampled_target_rate_rad_s": 12.000000953674316,
+      "overspeed_samples_with_braking_motor_fraction": 1.0,
+      "overspeed_samples_with_same_foot_contact_fraction": 1.0,
+      "peak_same_foot_force_n": [
+        -16.20102882385254,
+        -9.672636985778809,
+        103.86739349365234
+      ]
+    },
+    {
+      "joint": "RR_calf_joint",
+      "overspeed_physics_samples": 14,
+      "first_overspeed_s": 7.525000000000848,
+      "peak_s": 7.53100000000085,
+      "peak_actual_velocity_rad_s": -16.910904461288467,
+      "peak_target_angle_rad": -1.016829252243042,
+      "peak_actual_angle_rad": -1.441195698979351,
+      "peak_tracking_error_rad": 0.4243664467363091,
+      "peak_applied_motor_torque_nm": 18.58974449869001,
+      "peak_constraint_torque_nm": -21.023232523532812,
+      "max_control_sampled_target_rate_rad_s": 12.000000953674316,
+      "overspeed_samples_with_braking_motor_fraction": 1.0,
+      "overspeed_samples_with_same_foot_contact_fraction": 1.0,
+      "peak_same_foot_force_n": [
+        -35.3358039855957,
+        16.359142303466797,
+        129.95574951171875
+      ]
+    }
+  ],
+  "confirmed": [
+    "All overspeed samples for these calf joints had braking motor power and same-foot contact.",
+    "Bounded target change rate is not a bound on actual joint velocity.",
+    "Saved actuator has no velocity_limit_sim; all joints use GO2HV X1=13.5/X2=30/Y2=23.4.",
+    "The existing torque-speed curve scales braking as well as driving torque."
+  ],
+  "interpretation": "Contact-constrained joint motion against finite braking is supported by measured signs; these observational traces do not isolate all coupled-body and constraint effects or identify real EDU hardware.",
+  "constraints": "Official15.7rad/s boundary and20ms sustained termination unchanged. No actual q/dq clipping, new physics or training."
+}

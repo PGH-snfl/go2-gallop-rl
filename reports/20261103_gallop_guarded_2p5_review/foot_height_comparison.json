@@ -1,0 +1,38 @@
+{
+  "parent_22k": {
+    "checkpoint_sha256": "c2439fd522a98e5b782e5e08b749aabd01c64f50a73edb6c6ad020e6d2cdbf5a",
+    "play": "/home/cvr/GH/go2_animalization/gallop/runs/isaac/play/unitree_go2_gallop/20261103_091200_02fe98",
+    "front_max_m": 0.32730942964553833,
+    "hind_max_m": 0.11588291823863983,
+    "per_foot_p95_m": [
+      0.22551882565021514,
+      0.2717187166213989,
+      0.09222928807139397,
+      0.0975341871380806
+    ]
+  },
+  "bounded_24k": {
+    "checkpoint_sha256": "167504719e5f3b0523893b69bc1a9c12bde5eeefb477a6fc26d1301abccb926d",
+    "play": "/home/cvr/GH/go2_animalization/gallop/runs/isaac/play/unitree_go2_gallop/20261103_123515_36ff0c",
+    "front_max_m": 0.36962902545928955,
+    "hind_max_m": 0.11777885258197784,
+    "per_foot_p95_m": [
+      0.33430446684360504,
+      0.3458040952682495,
+      0.09217142686247826,
+      0.08968123234808445
+    ]
+  },
+  "guarded_24k": {
+    "checkpoint_sha256": "70ca957fb986b4c04538eea1a78e053db0f1782746ca8ba3311eb7b5578aee92",
+    "play": "/home/cvr/GH/go2_animalization/gallop/runs/isaac/play/unitree_go2_gallop/20261103_160608_cf586d",
+    "front_max_m": 0.17189018428325653,
+    "hind_max_m": 0.10370482504367828,
+    "per_foot_p95_m": [
+      0.14261837303638458,
+      0.11008498072624207,
+      0.0884704738855362,
+      0.0698370486497879
+    ]
+  }
+}

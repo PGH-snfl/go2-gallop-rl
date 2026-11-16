@@ -1,0 +1,73 @@
+{
+  "checks": {
+    "actor_exact": true,
+    "critic_exact": true,
+    "initial_std_exact": true,
+    "optimizer_fresh": true,
+    "iteration_zero": true,
+    "std_frozen": true,
+    "entropy_zero": true,
+    "mean_actor_trainable": true,
+    "critic_trainable": true,
+    "fixed_goal_enabled": true,
+    "stage_controller_disabled": true,
+    "annealed_mean_std16": true,
+    "all_mean_weights_preserved": true,
+    "fixed2m_goal": true,
+    "fixed50cm_goal": true,
+    "no_cohorts_or_decisions": true,
+    "no_confirmed_stage_state": true,
+    "target_rates_match_config": true,
+    "actual_calf_limit15p7": true,
+    "target_inside_original": true,
+    "unchanged_original_weights": true
+  },
+  "all_checks_passed": true,
+  "checkpoint": "/home/cvr/GH/go2_animalization/gallop/runs/isaac/train/unitree_go2_gallop/20261111_182833_2552ed/model_final.pt",
+  "sha256": "2d0de1f15c57043af564e8800116c321df2befae02a3c87e497a976d815a78bc",
+  "config": "/home/cvr/GH/go2_animalization/gallop/configs/gallop_2mps_50cm_velocity_guard.json",
+  "parent_stage": null,
+  "restored": {
+    "parent_iteration_zero_based": 3999,
+    "parent_stage_iterations": 4000,
+    "actor_critic_restored": true,
+    "noise_restored": true,
+    "optimizer_reset": true,
+    "stage_iteration_start": 0,
+    "actor_observations": [
+      49,
+      49
+    ],
+    "critic_observations": [
+      64,
+      64
+    ],
+    "added_heading_columns_zero": false
+  },
+  "new_goal": {
+    "speed": 2.0,
+    "distance": 0.5,
+    "period": 0.6,
+    "reference_air": 0.3
+  },
+  "initial_std": [
+    0.17464855313301086,
+    0.20474942028522491,
+    0.15109506249427795,
+    0.1700701117515564,
+    0.15215705335140228,
+    0.12278618663549423,
+    0.1615125685930252,
+    0.1354379802942276,
+    0.18701142072677612,
+    0.20747533440589905,
+    0.12471751868724823,
+    0.12833893299102783
+  ],
+  "target_std_mean": 0.16,
+  "actor_max_error": 0.0,
+  "critic_max_error": 0.0,
+  "policy_updates": 0,
+  "optimizer_steps": 0,
+  "physics_steps": 0
+}

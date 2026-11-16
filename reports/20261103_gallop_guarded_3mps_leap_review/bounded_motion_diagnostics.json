@@ -1,0 +1,557 @@
+{
+  "current": {
+    "samples": 1013,
+    "first_second": 9.76,
+    "target_soft_limit_violation_fraction": 0.0,
+    "max_target_soft_excess_rad": 0.0,
+    "near_limit_fraction": 0.01949654491609082,
+    "actual_soft_limit_violation_fraction": 0.00024679170779861795,
+    "actual_soft_max_excess_rad": 0.0029794146926169773,
+    "actual_hard_limit_violation_fraction": 0.00024679170779861795,
+    "actual_hard_max_excess_rad": 0.0029794146926168663,
+    "tracking_rmse_rad": 0.38511875690550607,
+    "target_rate_abs_p95_rad_s": 15.999999642372472,
+    "target_rate_abs_max_rad_s": 16.00000262260471,
+    "per_joint": [
+      {
+        "joint": "FL_hip_joint",
+        "tracking_rmse_rad": 0.08420711228698315,
+        "actual_min_max_rad": [
+          -0.4304920732975006,
+          0.1629789173603058
+        ],
+        "soft_limits_rad": [
+          -0.9424798933162964,
+          0.9424798933162964
+        ],
+        "hard_limits_rad": [
+          -0.9424798933162964,
+          0.9424798933162964
+        ],
+        "near_limit_fraction": 0.0,
+        "actual_soft_violation_fraction": 0.0,
+        "actual_hard_violation_fraction": 0.0,
+        "target_rate_p95_rad_s": 6.000000238418709,
+        "target_rate_max_rad_s": 6.000001728534826
+      },
+      {
+        "joint": "FR_hip_joint",
+        "tracking_rmse_rad": 0.1784614785565521,
+        "actual_min_max_rad": [
+          -0.19954723119735718,
+          0.45032355189323425
+        ],
+        "soft_limits_rad": [
+          -0.9424798933162964,
+          0.9424798933162964
+        ],
+        "hard_limits_rad": [
+          -0.9424798933162964,
+          0.9424798933162964
+        ],
+        "near_limit_fraction": 0.0,
+        "actual_soft_violation_fraction": 0.0,
+        "actual_hard_violation_fraction": 0.0,
+        "target_rate_p95_rad_s": 6.000000238418709,
+        "target_rate_max_rad_s": 6.000001728534826
+      },
+      {
+        "joint": "RL_hip_joint",
+        "tracking_rmse_rad": 0.235962839943759,
+        "actual_min_max_rad": [
+          -0.1306973695755005,
+          0.10586659610271454
+        ],
+        "soft_limits_rad": [
+          -0.9424798933162964,
+          0.9424798933162964
+        ],
+        "hard_limits_rad": [
+          -0.9424798933162964,
+          0.9424798933162964
+        ],
+        "near_limit_fraction": 0.0,
+        "actual_soft_violation_fraction": 0.0,
+        "actual_hard_violation_fraction": 0.0,
+        "target_rate_p95_rad_s": 6.000000238418709,
+        "target_rate_max_rad_s": 6.000001728534826
+      },
+      {
+        "joint": "RR_hip_joint",
+        "tracking_rmse_rad": 0.19703787734772069,
+        "actual_min_max_rad": [
+          -0.1456717848777771,
+          0.2146880030632019
+        ],
+        "soft_limits_rad": [
+          -0.9424798933162964,
+          0.9424798933162964
+        ],
+        "hard_limits_rad": [
+          -0.9424798933162964,
+          0.9424798933162964
+        ],
+        "near_limit_fraction": 0.0,
+        "actual_soft_violation_fraction": 0.0,
+        "actual_hard_violation_fraction": 0.0,
+        "target_rate_p95_rad_s": 6.000000238418709,
+        "target_rate_max_rad_s": 6.000001728534826
+      },
+      {
+        "joint": "FL_thigh_joint",
+        "tracking_rmse_rad": 0.4122977663339093,
+        "actual_min_max_rad": [
+          -0.891826868057251,
+          1.454565405845642
+        ],
+        "soft_limits_rad": [
+          -1.3177249368099724,
+          3.2376247977331594
+        ],
+        "hard_limits_rad": [
+          -1.3177249368099724,
+          3.2376247977331594
+        ],
+        "near_limit_fraction": 0.0,
+        "actual_soft_violation_fraction": 0.0,
+        "actual_hard_violation_fraction": 0.0,
+        "target_rate_p95_rad_s": 16.00000262260471,
+        "target_rate_max_rad_s": 16.00000262260471
+      },
+      {
+        "joint": "FR_thigh_joint",
+        "tracking_rmse_rad": 0.38904811492649805,
+        "actual_min_max_rad": [
+          -0.6363201141357422,
+          1.3341691493988037
+        ],
+        "soft_limits_rad": [
+          -1.3177249368099724,
+          3.2376247977331594
+        ],
+        "hard_limits_rad": [
+          -1.3177249368099724,
+          3.2376247977331594
+        ],
+        "near_limit_fraction": 0.0,
+        "actual_soft_violation_fraction": 0.0,
+        "actual_hard_violation_fraction": 0.0,
+        "target_rate_p95_rad_s": 16.00000262260471,
+        "target_rate_max_rad_s": 16.00000262260471
+      },
+      {
+        "joint": "RL_thigh_joint",
+        "tracking_rmse_rad": 0.5538779534151032,
+        "actual_min_max_rad": [
+          -0.2705250382423401,
+          1.6074069738388062
+        ],
+        "soft_limits_rad": [
+          -0.27052495714335567,
+          4.284824747439214
+        ],
+        "hard_limits_rad": [
+          -0.27052495714335567,
+          4.284824747439214
+        ],
+        "near_limit_fraction": 0.11154985192497532,
+        "actual_soft_violation_fraction": 0.0,
+        "actual_hard_violation_fraction": 0.0,
+        "target_rate_p95_rad_s": 15.999999642372472,
+        "target_rate_max_rad_s": 16.00000262260471
+      },
+      {
+        "joint": "RR_thigh_joint",
+        "tracking_rmse_rad": 0.4542683326965575,
+        "actual_min_max_rad": [
+          -0.24316902458667755,
+          1.6189475059509277
+        ],
+        "soft_limits_rad": [
+          -0.27052495714335567,
+          4.284824747439214
+        ],
+        "hard_limits_rad": [
+          -0.27052495714335567,
+          4.284824747439214
+        ],
+        "near_limit_fraction": 0.12240868706811452,
+        "actual_soft_violation_fraction": 0.0,
+        "actual_hard_violation_fraction": 0.0,
+        "target_rate_p95_rad_s": 15.999999642372472,
+        "target_rate_max_rad_s": 16.00000262260471
+      },
+      {
+        "joint": "FL_calf_joint",
+        "tracking_rmse_rad": 0.40961678767692444,
+        "actual_min_max_rad": [
+          -2.2430472373962402,
+          -1.2259374856948853
+        ],
+        "soft_limits_rad": [
+          -2.628453043698617,
+          -0.9320069124610191
+        ],
+        "hard_limits_rad": [
+          -2.628453043698617,
+          -0.932006912461019
+        ],
+        "near_limit_fraction": 0.0,
+        "actual_soft_violation_fraction": 0.0,
+        "actual_hard_violation_fraction": 0.0,
+        "target_rate_p95_rad_s": 15.999996662140234,
+        "target_rate_max_rad_s": 16.00000262260471
+      },
+      {
+        "joint": "FR_calf_joint",
+        "tracking_rmse_rad": 0.4348457071642819,
+        "actual_min_max_rad": [
+          -2.0657248497009277,
+          -1.1206161975860596
+        ],
+        "soft_limits_rad": [
+          -2.628453043698617,
+          -0.9320069124610191
+        ],
+        "hard_limits_rad": [
+          -2.628453043698617,
+          -0.932006912461019
+        ],
+        "near_limit_fraction": 0.0,
+        "actual_soft_violation_fraction": 0.0,
+        "actual_hard_violation_fraction": 0.0,
+        "target_rate_p95_rad_s": 16.00000262260471,
+        "target_rate_max_rad_s": 16.00000262260471
+      },
+      {
+        "joint": "RL_calf_joint",
+        "tracking_rmse_rad": 0.5078222578896472,
+        "actual_min_max_rad": [
+          -2.0909664630889893,
+          -0.9290274977684021
+        ],
+        "soft_limits_rad": [
+          -2.628453043698617,
+          -0.9320069124610191
+        ],
+        "hard_limits_rad": [
+          -2.628453043698617,
+          -0.932006912461019
+        ],
+        "near_limit_fraction": 0.0,
+        "actual_soft_violation_fraction": 0.0029615004935834156,
+        "actual_hard_violation_fraction": 0.0029615004935834156,
+        "target_rate_p95_rad_s": 15.999996662140234,
+        "target_rate_max_rad_s": 16.00000262260471
+      },
+      {
+        "joint": "RR_calf_joint",
+        "tracking_rmse_rad": 0.4439675916064957,
+        "actual_min_max_rad": [
+          -2.019951581954956,
+          -1.0519098043441772
+        ],
+        "soft_limits_rad": [
+          -2.628453043698617,
+          -0.9320069124610191
+        ],
+        "hard_limits_rad": [
+          -2.628453043698617,
+          -0.932006912461019
+        ],
+        "near_limit_fraction": 0.0,
+        "actual_soft_violation_fraction": 0.0,
+        "actual_hard_violation_fraction": 0.0,
+        "target_rate_p95_rad_s": 15.999996662140234,
+        "target_rate_max_rad_s": 16.00000262260471
+      }
+    ],
+    "note": "Targets are end-of-policy-step commands; tracking compares end-of-step actual angles. Actual-limit fractions use 0.001rad tolerance. No motor fault is inferred from tracking error alone.",
+    "hard_limit_semantics": "per-run guarded simulator range"
+  },
+  "parent": {
+    "samples": 1041,
+    "first_second": 9.200000000000001,
+    "target_soft_limit_violation_fraction": 0.0,
+    "max_target_soft_excess_rad": 0.0,
+    "near_limit_fraction": 0.019932756964457253,
+    "actual_soft_limit_violation_fraction": 8.005123278898494e-05,
+    "actual_soft_max_excess_rad": 0.0010023286254172703,
+    "actual_hard_limit_violation_fraction": 8.005123278898494e-05,
+    "actual_hard_max_excess_rad": 0.0010023286254171593,
+    "tracking_rmse_rad": 0.38958580666659226,
+    "target_rate_abs_p95_rad_s": 15.999999642372472,
+    "target_rate_abs_max_rad_s": 16.00000262260471,
+    "per_joint": [
+      {
+        "joint": "FL_hip_joint",
+        "tracking_rmse_rad": 0.06205360207188272,
+        "actual_min_max_rad": [
+          -0.3981045186519623,
+          0.1332952380180359
+        ],
+        "soft_limits_rad": [
+          -0.9424798933162964,
+          0.9424798933162964
+        ],
+        "hard_limits_rad": [
+          -0.9424798933162964,
+          0.9424798933162964
+        ],
+        "near_limit_fraction": 0.0,
+        "actual_soft_violation_fraction": 0.0,
+        "actual_hard_violation_fraction": 0.0,
+        "target_rate_p95_rad_s": 6.000000238418709,
+        "target_rate_max_rad_s": 6.000001728534826
+      },
+      {
+        "joint": "FR_hip_joint",
+        "tracking_rmse_rad": 0.19447885015775584,
+        "actual_min_max_rad": [
+          -0.25851717591285706,
+          0.27457526326179504
+        ],
+        "soft_limits_rad": [
+          -0.9424798933162964,
+          0.9424798933162964
+        ],
+        "hard_limits_rad": [
+          -0.9424798933162964,
+          0.9424798933162964
+        ],
+        "near_limit_fraction": 0.0,
+        "actual_soft_violation_fraction": 0.0,
+        "actual_hard_violation_fraction": 0.0,
+        "target_rate_p95_rad_s": 6.000000238418709,
+        "target_rate_max_rad_s": 6.000001728534826
+      },
+      {
+        "joint": "RL_hip_joint",
+        "tracking_rmse_rad": 0.28922665166816575,
+        "actual_min_max_rad": [
+          -0.15280352532863617,
+          0.1345677673816681
+        ],
+        "soft_limits_rad": [
+          -0.9424798933162964,
+          0.9424798933162964
+        ],
+        "hard_limits_rad": [
+          -0.9424798933162964,
+          0.9424798933162964
+        ],
+        "near_limit_fraction": 0.0,
+        "actual_soft_violation_fraction": 0.0,
+        "actual_hard_violation_fraction": 0.0,
+        "target_rate_p95_rad_s": 6.000000238418709,
+        "target_rate_max_rad_s": 6.000001728534826
+      },
+      {
+        "joint": "RR_hip_joint",
+        "tracking_rmse_rad": 0.21834101001141842,
+        "actual_min_max_rad": [
+          -0.07605131715536118,
+          0.1484256535768509
+        ],
+        "soft_limits_rad": [
+          -0.9424798933162964,
+          0.9424798933162964
+        ],
+        "hard_limits_rad": [
+          -0.9424798933162964,
+          0.9424798933162964
+        ],
+        "near_limit_fraction": 0.0,
+        "actual_soft_violation_fraction": 0.0,
+        "actual_hard_violation_fraction": 0.0,
+        "target_rate_p95_rad_s": 6.000000238418709,
+        "target_rate_max_rad_s": 6.000001728534826
+      },
+      {
+        "joint": "FL_thigh_joint",
+        "tracking_rmse_rad": 0.44299859074528986,
+        "actual_min_max_rad": [
+          -0.8113674521446228,
+          1.3816121816635132
+        ],
+        "soft_limits_rad": [
+          -1.3177249368099724,
+          3.2376247977331594
+        ],
+        "hard_limits_rad": [
+          -1.3177249368099724,
+          3.2376247977331594
+        ],
+        "near_limit_fraction": 0.0,
+        "actual_soft_violation_fraction": 0.0,
+        "actual_hard_violation_fraction": 0.0,
+        "target_rate_p95_rad_s": 16.00000262260471,
+        "target_rate_max_rad_s": 16.00000262260471
+      },
+      {
+        "joint": "FR_thigh_joint",
+        "tracking_rmse_rad": 0.39422838060794735,
+        "actual_min_max_rad": [
+          -0.6604771018028259,
+          1.2497494220733643
+        ],
+        "soft_limits_rad": [
+          -1.3177249368099724,
+          3.2376247977331594
+        ],
+        "hard_limits_rad": [
+          -1.3177249368099724,
+          3.2376247977331594
+        ],
+        "near_limit_fraction": 0.0,
+        "actual_soft_violation_fraction": 0.0,
+        "actual_hard_violation_fraction": 0.0,
+        "target_rate_p95_rad_s": 16.00000262260471,
+        "target_rate_max_rad_s": 16.00000262260471
+      },
+      {
+        "joint": "RL_thigh_joint",
+        "tracking_rmse_rad": 0.5827521539767576,
+        "actual_min_max_rad": [
+          -0.2705250680446625,
+          1.4142459630966187
+        ],
+        "soft_limits_rad": [
+          -0.27052495714335567,
+          4.284824747439214
+        ],
+        "hard_limits_rad": [
+          -0.27052495714335567,
+          4.284824747439214
+        ],
+        "near_limit_fraction": 0.11527377521613832,
+        "actual_soft_violation_fraction": 0.0,
+        "actual_hard_violation_fraction": 0.0,
+        "target_rate_p95_rad_s": 15.999999642372472,
+        "target_rate_max_rad_s": 16.00000262260471
+      },
+      {
+        "joint": "RR_thigh_joint",
+        "tracking_rmse_rad": 0.42756252485330914,
+        "actual_min_max_rad": [
+          -0.2368793487548828,
+          1.451663613319397
+        ],
+        "soft_limits_rad": [
+          -0.27052495714335567,
+          4.284824747439214
+        ],
+        "hard_limits_rad": [
+          -0.27052495714335567,
+          4.284824747439214
+        ],
+        "near_limit_fraction": 0.1239193083573487,
+        "actual_soft_violation_fraction": 0.0,
+        "actual_hard_violation_fraction": 0.0,
+        "target_rate_p95_rad_s": 15.999999642372472,
+        "target_rate_max_rad_s": 16.00000262260471
+      },
+      {
+        "joint": "FL_calf_joint",
+        "tracking_rmse_rad": 0.3530753146696023,
+        "actual_min_max_rad": [
+          -2.224672794342041,
+          -1.2260863780975342
+        ],
+        "soft_limits_rad": [
+          -2.628453043698617,
+          -0.9320069124610191
+        ],
+        "hard_limits_rad": [
+          -2.628453043698617,
+          -0.932006912461019
+        ],
+        "near_limit_fraction": 0.0,
+        "actual_soft_violation_fraction": 0.0,
+        "actual_hard_violation_fraction": 0.0,
+        "target_rate_p95_rad_s": 15.999996662140234,
+        "target_rate_max_rad_s": 16.00000262260471
+      },
+      {
+        "joint": "FR_calf_joint",
+        "tracking_rmse_rad": 0.43985921930823335,
+        "actual_min_max_rad": [
+          -2.1278319358825684,
+          -1.1319247484207153
+        ],
+        "soft_limits_rad": [
+          -2.628453043698617,
+          -0.9320069124610191
+        ],
+        "hard_limits_rad": [
+          -2.628453043698617,
+          -0.932006912461019
+        ],
+        "near_limit_fraction": 0.0,
+        "actual_soft_violation_fraction": 0.0,
+        "actual_hard_violation_fraction": 0.0,
+        "target_rate_p95_rad_s": 15.999996662140234,
+        "target_rate_max_rad_s": 16.00000262260471
+      },
+      {
+        "joint": "RL_calf_joint",
+        "tracking_rmse_rad": 0.5061306259248151,
+        "actual_min_max_rad": [
+          -2.0151426792144775,
+          -0.9310045838356018
+        ],
+        "soft_limits_rad": [
+          -2.628453043698617,
+          -0.9320069124610191
+        ],
+        "hard_limits_rad": [
+          -2.628453043698617,
+          -0.932006912461019
+        ],
+        "near_limit_fraction": 0.0,
+        "actual_soft_violation_fraction": 0.0009606147934678194,
+        "actual_hard_violation_fraction": 0.0009606147934678194,
+        "target_rate_p95_rad_s": 15.999996662140234,
+        "target_rate_max_rad_s": 16.00000262260471
+      },
+      {
+        "joint": "RR_calf_joint",
+        "tracking_rmse_rad": 0.44715501725335993,
+        "actual_min_max_rad": [
+          -2.0074682235717773,
+          -1.1094399690628052
+        ],
+        "soft_limits_rad": [
+          -2.628453043698617,
+          -0.9320069124610191
+        ],
+        "hard_limits_rad": [
+          -2.628453043698617,
+          -0.932006912461019
+        ],
+        "near_limit_fraction": 0.0,
+        "actual_soft_violation_fraction": 0.0,
+        "actual_hard_violation_fraction": 0.0,
+        "target_rate_p95_rad_s": 15.999996662140234,
+        "target_rate_max_rad_s": 16.00000262260471
+      }
+    ],
+    "note": "Targets are end-of-policy-step commands; tracking compares end-of-step actual angles. Actual-limit fractions use 0.001rad tolerance. No motor fault is inferred from tracking error alone.",
+    "hard_limit_semantics": "per-run guarded simulator range"
+  },
+  "policy_drift": {
+    "note": "No imitation stage in this run; no adapted checkpoint comparison"
+  },
+  "constraint_feasibility": {
+    "operating_margin_fraction": 0.05,
+    "hip_rate_rad_s": 6.0,
+    "thigh_calf_rate_rad_s": 16.0,
+    "angle_and_rate_constraints_satisfied": true,
+    "projection_change_rmse_rad": 1.309134664823861e-08,
+    "changed_joint_command_fraction": 0.0,
+    "note": "Candidate engineering limits only. Saved commands projected offline; actual motion/reward after filtering is unknown. No runtime policy/control/reward was changed."
+  },
+  "policy_updates": 0,
+  "supervised_updates": 0,
+  "new_simulations": 0
+}

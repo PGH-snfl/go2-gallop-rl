@@ -1,0 +1,298 @@
+{
+  "collected_at": "2026-11-05T12:59:52.160974+09:00",
+  "files": {
+    "README.md": {
+      "sha256": "fbca538912a8ab69d1e0d9aceb921f8dc9fd5e25008e866861e8cb2629a2b5d6",
+      "bytes": 11657
+    },
+    "additional_input_manifest.json": {
+      "sha256": "47f20761e0354579da8c45d3a81d99f6a1483ae5b4e3cd1f33f9e2741633826e",
+      "bytes": 1185
+    },
+    "criterion_pass_rates.png": {
+      "sha256": "699cc2cfa4a1cf35fc1aab74f4ddb26ebe1c948bb2a00befc3f2ebab84ffb5bc",
+      "bytes": 100652
+    },
+    "curriculum_decisions.csv": {
+      "sha256": "923f2b2b93ff4edea1c99f3b2c355351479e9491520fc396077b47d6943023fc",
+      "bytes": 251075
+    },
+    "evidence_manifest.json": {
+      "sha256": "99f15dd292d32f89955c3039ecc134e524428a4b285750a1315a058709b2207d",
+      "bytes": 30727
+    },
+    "flight_reward_curves.png": {
+      "sha256": "96e76fbdcbe9f7ee86352a8a315886d8eff7f603891a95ca382b9910065c07b5",
+      "bytes": 199894
+    },
+    "gallop_config.json": {
+      "sha256": "92a35baadfd5fc0ff49cd54bb69e0448c848805ef85fc3429731dc59b95f2f56",
+      "bytes": 5762
+    },
+    "gallop_keyframes.png": {
+      "sha256": "76de01ef898f18e402e8044ce061c173a9c202cf99924c13e00f8cce1abaa7b1",
+      "bytes": 764765
+    },
+    "guarded_height_and_intervention.png": {
+      "sha256": "5b019d5c3777e94227bb4ebbe3b26c9d6dd9f8690e9078cd209d78538eb2fa06",
+      "bytes": 448317
+    },
+    "guarded_joint_diagnostics.csv": {
+      "sha256": "7c2e173415e21d13e34104a50cc3b9c1dcd02e3ae94553d9874d27146b095a1f",
+      "bytes": 1295
+    },
+    "guarded_play_diagnostics.json": {
+      "sha256": "c28334b9d9b159b9ce22af1505c31b6082d7dadcea079c4798afc37cb129f886",
+      "bytes": 8862
+    },
+    "guarded_training_diagnostics.json": {
+      "sha256": "14f9bb8645876494d309659bb323c824848e1252a4fbceb79ac53c98728fea9d",
+      "bytes": 3852
+    },
+    "heading_motion_play.png": {
+      "sha256": "01309f0c94cffad518cc64598868a3c32643af7ff8c08147d01ea5795d5d50ce",
+      "bytes": 555892
+    },
+    "heading_parent_comparison.json": {
+      "sha256": "2803287849afdefa9b1038c035e0d6beb416597d857abe667653fa531e356de9",
+      "bytes": 156
+    },
+    "heading_play_diagnostics.json": {
+      "sha256": "b4c615b2d58e2c12704e6911834e12c4c6c08df5df27d956acd1a56dfd5dc6f6",
+      "bytes": 27117
+    },
+    "heading_play_trace.csv": {
+      "sha256": "ec081d7f9e547cd85bc27c550b2bb54f85559e0fb6b5946f463bc2a725fcd6e9",
+      "bytes": 1856773
+    },
+    "heading_reward_curves.png": {
+      "sha256": "50fef8894d9a67363041e32c76eb4c7a919281eb6cebecd2f8ac5754ef105595",
+      "bytes": 295246
+    },
+    "heading_training_diagnostics.json": {
+      "sha256": "3ff1dc2b8057c7b45d51f1ce9b3f579773d63b8b05381bbc0a3854ddc8e36646",
+      "bytes": 4609
+    },
+    "joint_motion.png": {
+      "sha256": "5eb0828ece2f85187e06c142ffbc851099bc6a06dc1024e2fe89331f5eb91434",
+      "bytes": 547793
+    },
+    "leap_curves.png": {
+      "sha256": "3466486e9f1d911a9e10d2c1411ae49b04f8febf64d6d53b66c5496362f46800",
+      "bytes": 95859
+    },
+    "pair_reward_curves.png": {
+      "sha256": "cfd803db141cb1c3c6a4905bf0e31a840723968b2b327a033ad1525722612e1f",
+      "bytes": 177060
+    },
+    "params/agent.yaml": {
+      "sha256": "64a0651e2ac329a314b381b5339806725931c1100ef20f9b39eea4b930addf39",
+      "bytes": 1040
+    },
+    "params/env.yaml": {
+      "sha256": "57825e3aef7abc582d7d449fafc6ffae55e3157b34bef70b46e9f080bf30231f",
+      "bytes": 32147
+    },
+    "play_analysis.json": {
+      "sha256": "8dc0616f95ad96c14fe346aa8aa5fd86c58cbd433b422412632381f4527c25a1",
+      "bytes": 6639
+    },
+    "play_contacts.png": {
+      "sha256": "c017efbe5e548bd444152ba9c95dae992711afc9130d507b4fe1768866178067",
+      "bytes": 342717
+    },
+    "play_diagnostics.json": {
+      "sha256": "72f62d290bbac67d61701af2b401f875ebd32479ed822f5a57e65733de15b582",
+      "bytes": 2812
+    },
+    "play_episodes.csv": {
+      "sha256": "e038b5bbc681277bc23ea3b19201cfe08eed5fed3a5213783f7a7bce036cfead",
+      "bytes": 2970
+    },
+    "play_flight_events.png": {
+      "sha256": "7962f8106149b229d6b721a6232700dacb19b161bff715a6be78eb875e4dd09a",
+      "bytes": 91113
+    },
+    "play_flight_trace.csv": {
+      "sha256": "66795afb8d458f5fac995f8c2ec634fb8d4fbd141983888c58deacc2effb5bfc",
+      "bytes": 593451
+    },
+    "play_keyframes.png": {
+      "sha256": "640e069992ebd5145e3c200110476a54c02ea56017729ab57f4daa1bfa87fdca",
+      "bytes": 912289
+    },
+    "play_state_trace.csv": {
+      "sha256": "af81420d3834d4749dd1ad794077fca2da1e1e746eb43f63e9f210fddc5b1b37",
+      "bytes": 186851
+    },
+    "play_tracking.png": {
+      "sha256": "c18cf61faabe8d2ef1aaf61f1c3bc013502fcefb79ff9e86bf06b7e6e19ddbc8",
+      "bytes": 206408
+    },
+    "relearn_checkpoint_trends.csv": {
+      "sha256": "abcd629b926f794d1aa7aef065eeae0d04ae9059fe30865db5608ce249797819",
+      "bytes": 13581
+    },
+    "relearn_episode_diagnostics.csv": {
+      "sha256": "beb168f39c506241c41baafa497db979a78c12d845a3733b0ee6b1e070121ae1",
+      "bytes": 6337572
+    },
+    "relearn_noise_cases.csv": {
+      "sha256": "26ac13cfa3bd378f77cee03d6596e51316c6ed8693b391129612c9b2bc2199a7",
+      "bytes": 1311
+    },
+    "relearn_noise_diagnostics.json": {
+      "sha256": "62c18748f68fe7b76d72cec4df82a3731fe89ee558e1ec9c8b51db1292cfa6b6",
+      "bytes": 6502
+    },
+    "relearn_stage_visits.csv": {
+      "sha256": "194d713b559c5c537457022bdc2f5f812f66e40e53fc82ee9f4940a51f9634e9",
+      "bytes": 6181
+    },
+    "relearn_training_diagnostics.json": {
+      "sha256": "3c84211d506c5fb3c7b1cdbcc8718b6829fed60c908ed6f6a747310c2958521c",
+      "bytes": 88296
+    },
+    "relearn_trends.png": {
+      "sha256": "33a65dcefbecf43673f13a08ef93521404c9ba7c1a049fd403bbd4db224c9301",
+      "bytes": 311323
+    },
+    "reward_contributions_last100.json": {
+      "sha256": "ea6fd1794467bba0652340bff2685c55c97320b89f46c44b960611d1a34e3fb8",
+      "bytes": 2765
+    },
+    "source/AGENTS.md": {
+      "sha256": "be61555af314d17da640fd71f8da0547cc8923a5f181cee7e1ae685d7d184415",
+      "bytes": 46790
+    },
+    "source/README.md": {
+      "sha256": "4b9f70b2bb2c27fe474ca4eec575dc756f57a09e2780a25d97ee12fe187f5a14",
+      "bytes": 28373
+    },
+    "source/configs/gallop_relearn.json": {
+      "sha256": "7bf301b5eb3a98fa73f4e58d5137c8b494c7c50dc3fee2ee03c86d7e2ef166cd",
+      "bytes": 5559
+    },
+    "source/docs/CONTINUE_HERE.md": {
+      "sha256": "0c65852a1fdd922609ec997f836da9fd1e1ca521a0586e0125cd4a5a1f632ac4",
+      "bytes": 92318
+    },
+    "source/docs/gallop_relearn.md": {
+      "sha256": "3f5bf81a6bb752cb37dbfed602a96a6194f38ae20792234f6d319156712c106c",
+      "bytes": 9301
+    },
+    "source/isaac_task/gallop_core.py": {
+      "sha256": "15631bd5ae1c132a612511ea8130ef9496442910a8dcca80b35dc0f61247f9b0",
+      "bytes": 71088
+    },
+    "source/isaac_task/gallop_env.py": {
+      "sha256": "580235a7aad373ec448664993d6e61162aab11e2846c85d972ce12bcab673174",
+      "bytes": 63088
+    },
+    "source/isaac_task/gallop_runtime.py": {
+      "sha256": "4b02092af6be41e239d15a88fb31c2c0992c5fbc15af95b55240be7b47023974",
+      "bytes": 2823
+    },
+    "source/logs/go2_relearn_collect_flight_diagnostics.log": {
+      "sha256": "8c06b4485bc09dcf34de1bd96b71cc2977544504970545d56805bc83e96bb190",
+      "bytes": 2273
+    },
+    "source/logs/go2_relearn_collect_guarded_diagnostics.log": {
+      "sha256": "f8ca2a15fdef8b3a961514ef1178c1b3ddb67ff9bcae557a58ecb510864b43d4",
+      "bytes": 1570
+    },
+    "source/logs/go2_relearn_collect_heading_diagnostics.log": {
+      "sha256": "3ebd86060cb3134f29cdc73bd33daa713bc8db176165c649689ed7225f5586c1",
+      "bytes": 3108
+    },
+    "source/logs/go2_relearn_collect_main.log": {
+      "sha256": "52cbeedbb0e892fd54a45fa614d2832273fc68e877785d6c3eb06f53046e710f",
+      "bytes": 6521
+    },
+    "source/logs/go2_relearn_trend_analysis.log": {
+      "sha256": "ddc8a9f8728afe85309ee520573f4a1786f852c8678b8b587c5d05dc71e9e888",
+      "bytes": 278
+    },
+    "source/scripts/analysis/collect_flight_diagnostics.py": {
+      "sha256": "ebb4bcdebe842d04953f6579196711f686ab4e025d7afba4b7e6ffeff6b9516e",
+      "bytes": 12981
+    },
+    "source/scripts/analysis/collect_gallop.py": {
+      "sha256": "e3b50fd27ea2d0ee18ab0d3f2f872a55a87ad974511fbb5b050a9dc5a7d52508",
+      "bytes": 22907
+    },
+    "source/scripts/analysis/collect_guarded_diagnostics.py": {
+      "sha256": "23c7d595ec76f897f11e2ee6ed0fbaf46e9320cb2998ee2dbf2d9ba2ed3bc3c8",
+      "bytes": 10009
+    },
+    "source/scripts/analysis/collect_heading_diagnostics.py": {
+      "sha256": "134ba6b3ef624df3d7ed90f463f07dde7b9e89a6e8ace8ad27aae054c7881e62",
+      "bytes": 15862
+    },
+    "source/scripts/analysis/collect_relearn_diagnostics.py": {
+      "sha256": "14076b8cc5e887f957cd94c72cd9bcfeaf2f0751710619b8381a4463432161d2",
+      "bytes": 14955
+    },
+    "source/scripts/analysis/collect_unitree_baseline.py": {
+      "sha256": "4d6b07f431b54f251712710549aa41a0e1540da4671a9c7c676517b9f3e6d252",
+      "bytes": 10105
+    },
+    "source/upstream_rsl/algorithms/ppo.py": {
+      "sha256": "4373ac1b2f9fdf14d9da57516968fc95d8f605d2967fee01dc61bf0d09423478",
+      "bytes": 20267
+    },
+    "source/upstream_rsl/modules/actor_critic.py": {
+      "sha256": "614eb6e14d21c46504ce2046f04c9ab70a8c3cf679502ef2a220987e506a959a",
+      "bytes": 7997
+    },
+    "source/verify.py": {
+      "sha256": "11789479fbe82df1c3bc1ae13ae290bdf1ed3020bc50e6599f55031bb27ee271",
+      "bytes": 9425
+    },
+    "summary.json": {
+      "sha256": "0b144adc5041d5d719ed760e3805a31c0b6606837a2c63b885961e720533c1d5",
+      "bytes": 131767
+    },
+    "tensorboard_scalars.csv": {
+      "sha256": "d52ddce8d8f708354e2db8ce36093713738d536f8e84007c909342ef030e181f",
+      "bytes": 125593980
+    },
+    "train_episodes.csv": {
+      "sha256": "73ea25ec5591e65c984abae7c222ecf2e00bde3f691eefea9aaa4aa9cc019877",
+      "bytes": 72548239
+    },
+    "training_curves.png": {
+      "sha256": "bb02cebb5f173f926ff1417b2cde6b89d12f589935972b3bcd0cee0e42c46b3d",
+      "bytes": 356193
+    },
+    "training_diagnostics.json": {
+      "sha256": "7cc9a35f49f4a92e474e0d1fb2e02ab8bc6b53012b92ae42e7a3da55186f1299",
+      "bytes": 79189
+    },
+    "verification.json": {
+      "sha256": "e6db5d1ca4d444c1a49d07c263821544c878bc61dd8be044a8668e20a0a51f6f",
+      "bytes": 2199
+    },
+    "videos.csv": {
+      "sha256": "240f4b7bcaf1ed6146a20192842bb91c896ecbbad630d2a0b7d8b36f02f895c1",
+      "bytes": 211
+    }
+  },
+  "artifact_count": 69,
+  "validation_checks": 41,
+  "all_checks_passed": true,
+  "new_policy_updates": 0,
+  "new_supervised_updates": 0,
+  "new_physics_rollouts": 0,
+  "scope": "Saved v5 training and playback collection, cohort trends, production-controller replay and fixed-state Gaussian probability audit.",
+  "runtime_configuration_policy_preserved": true,
+  "episode_outcomes_reconstructed": 66644,
+  "controller_decisions_replayed": 288,
+  "analysis_changes": [
+    "Added collect_relearn_diagnostics.py",
+    "Heading collection accepts no matched parent and labels walking frames correctly"
+  ],
+  "train": "runs/isaac/train/unitree_go2_gallop/20261104_144742_917f16",
+  "play": "runs/isaac/play/unitree_go2_gallop/20261104_174822_1a4f51",
+  "reproduction": "Run copied source/analysis modules with this --report; collect_gallop requires a fresh --output. Integrity validation is source/verify.py. Noise probabilities assume the recorded state sequence stays fixed and are not actual survival predictions."
+}

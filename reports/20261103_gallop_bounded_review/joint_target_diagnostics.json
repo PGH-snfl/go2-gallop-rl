@@ -1,0 +1,213 @@
+{
+  "current": {
+    "samples": 1066,
+    "overall_clip_fraction": 0.0,
+    "mean_excess_rad": 0.0,
+    "comparable_excess_cost": 0.0,
+    "per_joint": [
+      {
+        "joint": "FL_hip_joint",
+        "clip_fraction": 0.0,
+        "lower_clip_fraction": 0.0,
+        "upper_clip_fraction": 0.0,
+        "mean_excess_rad": 0.0,
+        "max_excess_rad": 0.0
+      },
+      {
+        "joint": "FR_hip_joint",
+        "clip_fraction": 0.0,
+        "lower_clip_fraction": 0.0,
+        "upper_clip_fraction": 0.0,
+        "mean_excess_rad": 0.0,
+        "max_excess_rad": 0.0
+      },
+      {
+        "joint": "RL_hip_joint",
+        "clip_fraction": 0.0,
+        "lower_clip_fraction": 0.0,
+        "upper_clip_fraction": 0.0,
+        "mean_excess_rad": 0.0,
+        "max_excess_rad": 0.0
+      },
+      {
+        "joint": "RR_hip_joint",
+        "clip_fraction": 0.0,
+        "lower_clip_fraction": 0.0,
+        "upper_clip_fraction": 0.0,
+        "mean_excess_rad": 0.0,
+        "max_excess_rad": 0.0
+      },
+      {
+        "joint": "FL_thigh_joint",
+        "clip_fraction": 0.0,
+        "lower_clip_fraction": 0.0,
+        "upper_clip_fraction": 0.0,
+        "mean_excess_rad": 0.0,
+        "max_excess_rad": 0.0
+      },
+      {
+        "joint": "FR_thigh_joint",
+        "clip_fraction": 0.0,
+        "lower_clip_fraction": 0.0,
+        "upper_clip_fraction": 0.0,
+        "mean_excess_rad": 0.0,
+        "max_excess_rad": 0.0
+      },
+      {
+        "joint": "RL_thigh_joint",
+        "clip_fraction": 0.0,
+        "lower_clip_fraction": 0.0,
+        "upper_clip_fraction": 0.0,
+        "mean_excess_rad": 0.0,
+        "max_excess_rad": 0.0
+      },
+      {
+        "joint": "RR_thigh_joint",
+        "clip_fraction": 0.0,
+        "lower_clip_fraction": 0.0,
+        "upper_clip_fraction": 0.0,
+        "mean_excess_rad": 0.0,
+        "max_excess_rad": 0.0
+      },
+      {
+        "joint": "FL_calf_joint",
+        "clip_fraction": 0.0,
+        "lower_clip_fraction": 0.0,
+        "upper_clip_fraction": 0.0,
+        "mean_excess_rad": 0.0,
+        "max_excess_rad": 0.0
+      },
+      {
+        "joint": "FR_calf_joint",
+        "clip_fraction": 0.0,
+        "lower_clip_fraction": 0.0,
+        "upper_clip_fraction": 0.0,
+        "mean_excess_rad": 0.0,
+        "max_excess_rad": 0.0
+      },
+      {
+        "joint": "RL_calf_joint",
+        "clip_fraction": 0.0,
+        "lower_clip_fraction": 0.0,
+        "upper_clip_fraction": 0.0,
+        "mean_excess_rad": 0.0,
+        "max_excess_rad": 0.0
+      },
+      {
+        "joint": "RR_calf_joint",
+        "clip_fraction": 0.0,
+        "lower_clip_fraction": 0.0,
+        "upper_clip_fraction": 0.0,
+        "mean_excess_rad": 0.0,
+        "max_excess_rad": 0.0
+      }
+    ],
+    "note": "Command saturation, not physical joint-limit violation. Excess cost uses the same current formula for both policies."
+  },
+  "parent": {
+    "samples": 1063,
+    "overall_clip_fraction": 0.22475697710881154,
+    "mean_excess_rad": 0.07395565888812816,
+    "comparable_excess_cost": 0.22452143317408793,
+    "per_joint": [
+      {
+        "joint": "FL_hip_joint",
+        "clip_fraction": 0.0,
+        "lower_clip_fraction": 0.0,
+        "upper_clip_fraction": 0.0,
+        "mean_excess_rad": 0.0,
+        "max_excess_rad": 0.0
+      },
+      {
+        "joint": "FR_hip_joint",
+        "clip_fraction": 0.0,
+        "lower_clip_fraction": 0.0,
+        "upper_clip_fraction": 0.0,
+        "mean_excess_rad": 0.0,
+        "max_excess_rad": 0.0
+      },
+      {
+        "joint": "RL_hip_joint",
+        "clip_fraction": 0.0,
+        "lower_clip_fraction": 0.0,
+        "upper_clip_fraction": 0.0,
+        "mean_excess_rad": 0.0,
+        "max_excess_rad": 0.0
+      },
+      {
+        "joint": "RR_hip_joint",
+        "clip_fraction": 0.0,
+        "lower_clip_fraction": 0.0,
+        "upper_clip_fraction": 0.0,
+        "mean_excess_rad": 0.0,
+        "max_excess_rad": 0.0
+      },
+      {
+        "joint": "FL_thigh_joint",
+        "clip_fraction": 0.0,
+        "lower_clip_fraction": 0.0,
+        "upper_clip_fraction": 0.0,
+        "mean_excess_rad": 0.0,
+        "max_excess_rad": 0.0
+      },
+      {
+        "joint": "FR_thigh_joint",
+        "clip_fraction": 0.0,
+        "lower_clip_fraction": 0.0,
+        "upper_clip_fraction": 0.0,
+        "mean_excess_rad": 0.0,
+        "max_excess_rad": 0.0
+      },
+      {
+        "joint": "RL_thigh_joint",
+        "clip_fraction": 0.1636876763875823,
+        "lower_clip_fraction": 0.1636876763875823,
+        "upper_clip_fraction": 0.0,
+        "mean_excess_rad": 0.10269430634371207,
+        "max_excess_rad": 1.2192912316689002
+      },
+      {
+        "joint": "RR_thigh_joint",
+        "clip_fraction": 0.14487300094073377,
+        "lower_clip_fraction": 0.14487300094073377,
+        "upper_clip_fraction": 0.0,
+        "mean_excess_rad": 0.0458457658081567,
+        "max_excess_rad": 0.6172571397194373
+      },
+      {
+        "joint": "FL_calf_joint",
+        "clip_fraction": 0.44214487300094074,
+        "lower_clip_fraction": 0.062088428974600186,
+        "upper_clip_fraction": 0.38005644402634053,
+        "mean_excess_rad": 0.11560249134137097,
+        "max_excess_rad": 0.6177805235297446
+      },
+      {
+        "joint": "FR_calf_joint",
+        "clip_fraction": 0.748824082784572,
+        "lower_clip_fraction": 0.10159924741298212,
+        "upper_clip_fraction": 0.6472248353715898,
+        "mean_excess_rad": 0.29280316036883985,
+        "max_excess_rad": 1.0239719917685752
+      },
+      {
+        "joint": "RL_calf_joint",
+        "clip_fraction": 0.658513640639699,
+        "lower_clip_fraction": 0.07525870178739416,
+        "upper_clip_fraction": 0.5832549388523048,
+        "mean_excess_rad": 0.15962890635479124,
+        "max_excess_rad": 0.6473254730612997
+      },
+      {
+        "joint": "RR_calf_joint",
+        "clip_fraction": 0.5390404515522107,
+        "lower_clip_fraction": 0.05174035747883349,
+        "upper_clip_fraction": 0.4873000940733772,
+        "mean_excess_rad": 0.1708932764406672,
+        "max_excess_rad": 0.7207647135169272
+      }
+    ],
+    "note": "Command saturation, not physical joint-limit violation. Excess cost uses the same current formula for both policies."
+  },
+  "note": "Different commanded speeds and episodes; this comparison does not isolate any single reward or calf scaling effect."
+}

@@ -1,0 +1,340 @@
+{
+  "parent_play": "/home/cvr/GH/go2_animalization/gallop/runs/isaac/play/unitree_go2_gallop/20261102_152630_4e9e7a",
+  "parent_formal": {
+    "samples": 944,
+    "seconds": 18.879999999999598,
+    "first_seconds": 11.14,
+    "last_seconds": 30.0,
+    "body_velocity_mean": [
+      2.923312773391352,
+      0.020266881600067697,
+      -0.10075299135188304
+    ],
+    "body_velocity_rmse": [
+      0.2032279348568721,
+      0.07014128160802331
+    ],
+    "body_z_angular_speed_rms": 0.4779103073196309,
+    "roll_pitch_mean_rad": [
+      0.19373124661081928,
+      -0.028696370831990645
+    ],
+    "roll_pitch_std_rad": [
+      0.01795990378082879,
+      0.0176023601340103
+    ],
+    "roll_pitch_rms_rad": [
+      0.19456195429014045,
+      0.03366488944307584
+    ],
+    "roll_pitch_rate_rms": [
+      0.29633485901384343,
+      0.31600166538401264
+    ],
+    "yaw_target_rmse_rad": 0.0481657771712266,
+    "yaw_drift_from_first_sample_rmse_rad": 0.0481657771712266,
+    "initial_yaw_rad": 0.0,
+    "action_clip_fraction": 0.24240820109844208,
+    "root_displacement_xyz": [
+      55.0953483581543,
+      -1.293679118156433,
+      -0.025357812643051147
+    ],
+    "quiet_score": 0.9150100946426392,
+    "pure_rate_quiet_score": 0.9150100946426392,
+    "forward_score": 0.8607615828514099,
+    "along_speed_mean": 2.9224226474761963,
+    "world_cross_speed_rms": 0.11350812594115697,
+    "movement_direction_rms_rad": 0.03933144490895413,
+    "cross_track_max_abs_from_start_m": 1.398726224899292,
+    "cross_track_first_last_from_start_m": [
+      1.237831473350525,
+      -0.05584767460823059
+    ],
+    "foot_widths": {
+      "front": {
+        "target_m": 0.2698,
+        "mean_m": 0.12722064554691315,
+        "std_m": 0.10407131165266037,
+        "q0_q10_q50_q90_q100_m": [
+          0.00011589750647544861,
+          0.02338209450244904,
+          0.07245859503746033,
+          0.29484779536724093,
+          0.3281911611557007
+        ],
+        "rmse_m": 0.17652113735675812,
+        "fraction_within_1cm": 0.05614406779661017,
+        "score_mean": 0.21167422831058502,
+        "by_contacts": {
+          "both_air": {
+            "samples": 488,
+            "mean_m": 0.20585383474826813,
+            "q10_q50_q90_m": [
+              0.06781084537506103,
+              0.2301623448729515,
+              0.30715765357017516
+            ],
+            "fraction_within_1cm": 0.10860655737704918,
+            "fraction_in_success_width_band": 0.3237704918032787
+          },
+          "one_support": {
+            "samples": 208,
+            "mean_m": 0.044344380497932434,
+            "q10_q50_q90_m": [
+              0.0207605829462409,
+              0.044677985832095146,
+              0.06907963454723358
+            ],
+            "fraction_within_1cm": 0.0,
+            "fraction_in_success_width_band": 0.0
+          },
+          "both_support": {
+            "samples": 248,
+            "mean_m": 0.0419999323785305,
+            "q10_q50_q90_m": [
+              0.009688591584563255,
+              0.04275466501712799,
+              0.07393795102834703
+            ],
+            "fraction_within_1cm": 0.0,
+            "fraction_in_success_width_band": 0.0
+          }
+        },
+        "success_width_band_m": [
+          0.23979999999999999,
+          0.29979999999999996
+        ]
+      },
+      "hind": {
+        "target_m": 0.2698,
+        "mean_m": 0.25143569707870483,
+        "std_m": 0.049030277878046036,
+        "q0_q10_q50_q90_q100_m": [
+          0.11209869384765625,
+          0.16817720234394073,
+          0.27029964327812195,
+          0.2995620906352997,
+          0.3344096541404724
+        ],
+        "rmse_m": 0.052356619387865067,
+        "fraction_within_1cm": 0.336864406779661,
+        "score_mean": 0.6858750581741333,
+        "by_contacts": {
+          "both_air": {
+            "samples": 259,
+            "mean_m": 0.18591190874576569,
+            "q10_q50_q90_m": [
+              0.1395922362804413,
+              0.18093420565128326,
+              0.24803308248519898
+            ],
+            "fraction_within_1cm": 0.02702702702702703,
+            "fraction_in_success_width_band": 0.13127413127413126
+          },
+          "one_support": {
+            "samples": 292,
+            "mean_m": 0.27731481194496155,
+            "q10_q50_q90_m": [
+              0.22992756068706513,
+              0.27653470635414124,
+              0.31419705748558047
+            ],
+            "fraction_within_1cm": 0.2568493150684932,
+            "fraction_in_success_width_band": 0.5547945205479452
+          },
+          "both_support": {
+            "samples": 393,
+            "mean_m": 0.27538979053497314,
+            "q10_q50_q90_m": [
+              0.26275641918182374,
+              0.27487441897392273,
+              0.28759507536888124
+            ],
+            "fraction_within_1cm": 0.6005089058524173,
+            "fraction_in_success_width_band": 1.0
+          }
+        },
+        "success_width_band_m": [
+          0.23979999999999999,
+          0.29979999999999996
+        ]
+      }
+    }
+  },
+  "current_formal": {
+    "samples": 1063,
+    "seconds": 21.259999999999547,
+    "first_seconds": 8.76,
+    "last_seconds": 30.0,
+    "body_velocity_mean": [
+      2.4253006285356107,
+      0.00950921918337802,
+      -0.12390828071114356
+    ],
+    "body_velocity_rmse": [
+      0.2706959842688649,
+      0.05763746804673606
+    ],
+    "body_z_angular_speed_rms": 0.18170033100149197,
+    "roll_pitch_mean_rad": [
+      0.06691405645318449,
+      -0.048982847443416445
+    ],
+    "roll_pitch_std_rad": [
+      0.014839541297885415,
+      0.02418487102142621
+    ],
+    "roll_pitch_rms_rad": [
+      0.06853979090245028,
+      0.0546280818809157
+    ],
+    "roll_pitch_rate_rms": [
+      0.31896029647917784,
+      0.43777268451210677
+    ],
+    "yaw_target_rmse_rad": 0.03775966881605723,
+    "yaw_drift_from_first_sample_rmse_rad": 0.03775966881605723,
+    "initial_yaw_rad": 0.0,
+    "action_clip_fraction": 0.22475698590278625,
+    "root_displacement_xyz": [
+      51.52061080932617,
+      -1.3616849184036255,
+      0.00394827127456665
+    ],
+    "quiet_score": 0.8405619859695435,
+    "pure_rate_quiet_score": 0.8722370266914368,
+    "forward_score": 0.7527397274971008,
+    "along_speed_mean": 2.428300380706787,
+    "world_cross_speed_rms": 0.08994943822920587,
+    "movement_direction_rms_rad": 0.03769637290644782,
+    "cross_track_max_abs_from_start_m": 0.7226741313934326,
+    "cross_track_first_last_from_start_m": [
+      0.7220178842544556,
+      -0.6396670341491699
+    ],
+    "pose_quality_mean": 0.9627879858016968,
+    "yaw_damping_cost_mean": 0.17974461615085602,
+    "foot_widths": {
+      "front": {
+        "target_m": 0.2698,
+        "mean_m": 0.28491634130477905,
+        "std_m": 0.04939016327261925,
+        "q0_q10_q50_q90_q100_m": [
+          0.20328670740127563,
+          0.24078526198863984,
+          0.2672297954559326,
+          0.3753859341144562,
+          0.42898452281951904
+        ],
+        "rmse_m": 0.05165163055062294,
+        "fraction_within_1cm": 0.32267168391345247,
+        "score_mean": 0.5632649660110474,
+        "by_contacts": {
+          "both_air": {
+            "samples": 582,
+            "mean_m": 0.30881214141845703,
+            "q10_q50_q90_m": [
+              0.24939541071653365,
+              0.2887828201055527,
+              0.39124937951564787
+            ],
+            "fraction_within_1cm": 0.2766323024054983,
+            "fraction_in_success_width_band": 0.4793814432989691
+          },
+          "one_support": {
+            "samples": 176,
+            "mean_m": 0.25908681750297546,
+            "q10_q50_q90_m": [
+              0.2466656118631363,
+              0.25884436070919037,
+              0.2721708416938782
+            ],
+            "fraction_within_1cm": 0.4375,
+            "fraction_in_success_width_band": 0.9545454545454546
+          },
+          "both_support": {
+            "samples": 305,
+            "mean_m": 0.2542232275009155,
+            "q10_q50_q90_m": [
+              0.2349984884262085,
+              0.2549072504043579,
+              0.27147223949432375
+            ],
+            "fraction_within_1cm": 0.3442622950819672,
+            "fraction_in_success_width_band": 0.8262295081967214
+          }
+        },
+        "success_width_band_m": [
+          0.24,
+          0.3
+        ]
+      },
+      "hind": {
+        "target_m": 0.2698,
+        "mean_m": 0.24927429854869843,
+        "std_m": 0.018877027556300163,
+        "q0_q10_q50_q90_q100_m": [
+          0.20729848742485046,
+          0.22783180475234985,
+          0.24587714672088623,
+          0.2798965394496918,
+          0.3034655451774597
+        ],
+        "rmse_m": 0.02788630686700344,
+        "fraction_within_1cm": 0.13640639698965193,
+        "score_mean": 0.7833845615386963,
+        "by_contacts": {
+          "both_air": {
+            "samples": 259,
+            "mean_m": 0.2357456237077713,
+            "q10_q50_q90_m": [
+              0.21960012316703797,
+              0.2325078845024109,
+              0.25862702131271365
+            ],
+            "fraction_within_1cm": 0.0694980694980695,
+            "fraction_in_success_width_band": 0.28957528957528955
+          },
+          "one_support": {
+            "samples": 365,
+            "mean_m": 0.2628883123397827,
+            "q10_q50_q90_m": [
+              0.23461387753486634,
+              0.267528235912323,
+              0.28818397521972655
+            ],
+            "fraction_within_1cm": 0.3013698630136986,
+            "fraction_in_success_width_band": 0.8054794520547945
+          },
+          "both_support": {
+            "samples": 439,
+            "mean_m": 0.245936781167984,
+            "q10_q50_q90_m": [
+              0.23567484617233275,
+              0.24593976140022278,
+              0.2553127288818359
+            ],
+            "fraction_within_1cm": 0.0387243735763098,
+            "fraction_in_success_width_band": 0.7813211845102506
+          }
+        },
+        "success_width_band_m": [
+          0.24,
+          0.3
+        ]
+      }
+    }
+  },
+  "roll_pitch_rate_reduction_fraction": [
+    -0.07635091443722941,
+    -0.38534929548588015
+  ],
+  "absolute_yaw_directly_comparable": true,
+  "caveats": [
+    "Both use the same heading reference.",
+    "Different checkpoints, commanded speeds, reward definitions and random states; these observations do not identify the effect of a single reward.",
+    "Formal Gallop windows differ in duration because handover times differ.",
+    "Quiet and width reward formulas/weights can differ; compare physical pose, rates and widths separately."
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "staged_files": 1228,
+  "bytes": 135122407,
+  "credential_pattern_hits": 0,
+  "large_files_over50MiB": 0,
+  "excluded": [
+    "virtualenvs",
+    "builds",
+    "caches",
+    "Git credentials",
+    "SSH keys"
+  ],
+  "large_results": "Release assets with per-file hashes"
+}

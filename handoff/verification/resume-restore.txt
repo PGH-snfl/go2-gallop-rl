@@ -1,0 +1,1 @@
+{"restored_files": 139, "destination": "/home/cvr/GH/go2-gallop-rl", "full": false, "checksums_verified": true}

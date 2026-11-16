@@ -1,0 +1,39 @@
+{
+  "configured_learning_rate": 0.0001,
+  "schedule": "adaptive",
+  "desired_kl": 0.01,
+  "entropy_coef": 0.01,
+  "learning_rate_updates": 2000,
+  "learning_rate_mean": 2.301641589929204e-05,
+  "learning_rate_quantiles": [
+    9.999999747378752e-06,
+    9.999999747378752e-06,
+    5.062499985797331e-05,
+    0.00038443360244855285
+  ],
+  "per_joint_action_std": [
+    0.31227511167526245,
+    0.3660960793495178,
+    0.2701610028743744,
+    0.3040887713432312,
+    0.2720598578453064,
+    0.21954414248466492,
+    0.28878769278526306,
+    0.24216581881046295,
+    0.334380179643631,
+    0.3709700405597687,
+    0.22299741208553314,
+    0.2294725775718689
+  ],
+  "mean_action_std": 0.2860832214355469,
+  "approx_mean_raw_target_noise_radians": 0.14304161071777344,
+  "kl_scalar_available": false,
+  "ppo_implementation": {
+    "path": "/home/cvr/miniconda3/envs/kine2go/lib/python3.11/site-packages/rsl_rl/algorithms/ppo.py",
+    "sha256": "4373ac1b2f9fdf14d9da57516968fc95d8f605d2967fee01dc61bf0d09423478",
+    "adaptive_lr_lines": "259\u2013282; entropy loss313"
+  },
+  "limits": "Observational evidence only; no causal attribution to LR or entropy without controlled comparison; no training/settings changes.",
+  "learning_rate_floor": 1e-05,
+  "learning_rate_fraction_at_floor": 0.606
+}

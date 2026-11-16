@@ -1,0 +1,250 @@
+{
+  "runs/isaac/train/unitree_go2_gallop/20261103_151318_e95d61/model_900.pt": {
+    "sha256": "5ba9b69d851a08838c680ad0cae5b6550d00d7fe25be4f07efc01b5442b17daf",
+    "bytes": 4688747
+  },
+  "runs/isaac/train/unitree_go2_gallop/20261103_151318_e95d61/model_800.pt": {
+    "sha256": "a160feb3b75940ad2f307411aa66b88d775d8aa6efd7edc0b3a75ebb1a264cc8",
+    "bytes": 4688747
+  },
+  "runs/isaac/train/unitree_go2_gallop/20261103_151318_e95d61/model_1400.pt": {
+    "sha256": "b5894d40482bd3c176e0d3887163b66326fbf49efe098e624ed9c641892893b2",
+    "bytes": 4688821
+  },
+  "runs/isaac/train/unitree_go2_gallop/20261103_151318_e95d61/model_400.pt": {
+    "sha256": "2f247d4256ec6e290937a8227241e0987f5e4917074eea98892c372ec1e7a8df",
+    "bytes": 4688747
+  },
+  "runs/isaac/train/unitree_go2_gallop/20261103_151318_e95d61/episodes.jsonl": {
+    "sha256": "4b045fab519f6ccc4e633b3c25d2256b6d0e573b9d8359de28d3c757adc80319",
+    "bytes": 34313282
+  },
+  "runs/isaac/train/unitree_go2_gallop/20261103_151318_e95d61/model_1100.pt": {
+    "sha256": "0f2967aadbf9dc7e4bb9a075d596bdd633de052b10c3612bade85928101a75b9",
+    "bytes": 4688821
+  },
+  "runs/isaac/train/unitree_go2_gallop/20261103_151318_e95d61/model_1300.pt": {
+    "sha256": "7dfd5a547a1de05ed2fc8a50b31b10fdde4c0220dfcdd168d400b07d1a49d8dd",
+    "bytes": 4688821
+  },
+  "runs/isaac/train/unitree_go2_gallop/20261103_151318_e95d61/model_100.pt": {
+    "sha256": "92bd8cc988fec1d2060505a6e9e184ef7f914ebe452ff613699375c5ddedf020",
+    "bytes": 4688747
+  },
+  "runs/isaac/train/unitree_go2_gallop/20261103_151318_e95d61/gallop_config.json": {
+    "sha256": "0a72111f5861a9705d9f1e3e0450f8cea0147192f808cb71a423af42b07aa47e",
+    "bytes": 5525
+  },
+  "runs/isaac/train/unitree_go2_gallop/20261103_151318_e95d61/model_500.pt": {
+    "sha256": "1f06642fdf44bd679dfe4839b6ed9f0d6cca06f670bb3b6d8d7c8c443edd5743",
+    "bytes": 4688747
+  },
+  "runs/isaac/train/unitree_go2_gallop/20261103_151318_e95d61/model_700.pt": {
+    "sha256": "e327d4f0595564434bcc6a933d9119a133648044ff722f4f740be0f7ad27b525",
+    "bytes": 4688747
+  },
+  "runs/isaac/train/unitree_go2_gallop/20261103_151318_e95d61/model_1000.pt": {
+    "sha256": "75231370cae9ee841711d3e784101e58ba8ec5ddbd87f832d20277d473ce363a",
+    "bytes": 4688821
+  },
+  "runs/isaac/train/unitree_go2_gallop/20261103_151318_e95d61/model_200.pt": {
+    "sha256": "49d051e19b15757e1c6adb79dc014fa69154bb3483376446ebb7714104c99a19",
+    "bytes": 4688747
+  },
+  "runs/isaac/train/unitree_go2_gallop/20261103_151318_e95d61/model_1999.pt": {
+    "sha256": "c66e72ca06a5710ab604d540dc6a95f40bc8ed08ce8e0def122ef9885dcdfc3e",
+    "bytes": 4688821
+  },
+  "runs/isaac/train/unitree_go2_gallop/20261103_151318_e95d61/model_1700.pt": {
+    "sha256": "dac51668f498e265f279c18c9fc4aedd753831a13b5446c569311765fdce34a1",
+    "bytes": 4688821
+  },
+  "runs/isaac/train/unitree_go2_gallop/20261103_151318_e95d61/model_1200.pt": {
+    "sha256": "1d7395c29ae99dfbf0eb017811dd5e925840037849436842429964966d17fdc2",
+    "bytes": 4688821
+  },
+  "runs/isaac/train/unitree_go2_gallop/20261103_151318_e95d61/status.json": {
+    "sha256": "d200647a4c15e8cb2633d30708422cd6c98db649facaa9fd9020dc8838f0abd7",
+    "bytes": 948
+  },
+  "runs/isaac/train/unitree_go2_gallop/20261103_151318_e95d61/model_final.pt": {
+    "sha256": "70ca957fb986b4c04538eea1a78e053db0f1782746ca8ba3311eb7b5578aee92",
+    "bytes": 4688895
+  },
+  "runs/isaac/train/unitree_go2_gallop/20261103_151318_e95d61/curriculum_summary.json": {
+    "sha256": "cbcfc3b9f4f9647ce85c430ff2f24f81623af405529a47bca9f9d82ec854a34b",
+    "bytes": 50964
+  },
+  "runs/isaac/train/unitree_go2_gallop/20261103_151318_e95d61/model_300.pt": {
+    "sha256": "28ddfc08ad952b5c2a56a42582e64291b80940e7fbd29aed35e060dccd8c091c",
+    "bytes": 4688747
+  },
+  "runs/isaac/train/unitree_go2_gallop/20261103_151318_e95d61/model_1800.pt": {
+    "sha256": "7f10ce2346ac3b14c441a9c00725bd09f3ccb778b1cef1b464f1ce1fc6ee5ac5",
+    "bytes": 4688821
+  },
+  "runs/isaac/train/unitree_go2_gallop/20261103_151318_e95d61/manifest.json": {
+    "sha256": "8074ed62d86fb29ac14a8ebadb1c693871c7e581aa59e3f3ae022b1f07def4b7",
+    "bytes": 14901
+  },
+  "runs/isaac/train/unitree_go2_gallop/20261103_151318_e95d61/model_1900.pt": {
+    "sha256": "37e4711c50aebda23703cb3b3593d7d1a5f5c3022326088d38525f32f537779e",
+    "bytes": 4688821
+  },
+  "runs/isaac/train/unitree_go2_gallop/20261103_151318_e95d61/console.log": {
+    "sha256": "72e50dea8866bddbaa23cbff5f5dfd9130ff53c1f1f30857dd461479bd87fe67",
+    "bytes": 1557909
+  },
+  "runs/isaac/train/unitree_go2_gallop/20261103_151318_e95d61/events.out.tfevents.1793686405.cvr-laptop.1677476.0": {
+    "sha256": "600c38353e5281658685b052118864346a830ced707ab659a4cd8ad0d0ee953f",
+    "bytes": 19604793
+  },
+  "runs/isaac/train/unitree_go2_gallop/20261103_151318_e95d61/model_600.pt": {
+    "sha256": "6029be618424d7b22b3a7c0bd61d166bd892ca493ce9da68340f154b81dce33c",
+    "bytes": 4688747
+  },
+  "runs/isaac/train/unitree_go2_gallop/20261103_151318_e95d61/model_1600.pt": {
+    "sha256": "1f4072b90b827e6466b2e90086ef68e1aeb382c59afe965703600137a084f29e",
+    "bytes": 4688821
+  },
+  "runs/isaac/train/unitree_go2_gallop/20261103_151318_e95d61/model_1500.pt": {
+    "sha256": "be4a43ee57311b1542c5d0847582fecf157c57d8c3e1611af065d74728c51da5",
+    "bytes": 4688821
+  },
+  "runs/isaac/train/unitree_go2_gallop/20261103_151318_e95d61/model_0.pt": {
+    "sha256": "d86e9d714849d855ea6e850bc0e10dbc8740eb64718551aef192f6c45e6b18fb",
+    "bytes": 4688151
+  },
+  "runs/isaac/train/unitree_go2_gallop/20261103_151318_e95d61/progress.jsonl": {
+    "sha256": "c537dffeab0038b00832dcb13b3ae84a63bbb359059f58c963e15262d0691bbd",
+    "bytes": 923358
+  },
+  "runs/isaac/train/unitree_go2_gallop/20261103_151318_e95d61/params/agent.yaml": {
+    "sha256": "a10f3b2bef1e5773cc7970d9afba2fc7a436d3a70f719137b363ca999f680fef",
+    "bytes": 1039
+  },
+  "runs/isaac/train/unitree_go2_gallop/20261103_151318_e95d61/params/env.yaml": {
+    "sha256": "14f4c5faff4e3ef2d510f63fc00e46d2d36be732b9983087b4ab99ad3558ee40",
+    "bytes": 32027
+  },
+  "runs/isaac/train/unitree_go2_gallop/20261103_151318_e95d61/source/velocity_env_cfg.py": {
+    "sha256": "56859832148dacc724ddba3954a7684b99a43560e4fde561f6361b9daa051b56",
+    "bytes": 14840
+  },
+  "runs/isaac/train/unitree_go2_gallop/20261103_151318_e95d61/source/gallop_env.py": {
+    "sha256": "b113e075feb27f6b187200e7856b06c4969db79cbe15f7aec5898e9831b57ffc",
+    "bytes": 57456
+  },
+  "runs/isaac/train/unitree_go2_gallop/20261103_151318_e95d61/source/walking_teacher.pt": {
+    "sha256": "d4bd406a2e0cc97b1370610a3791bf115c31cac8b718056322d95df2f9d192bf",
+    "bytes": 4639999
+  },
+  "runs/isaac/train/unitree_go2_gallop/20261103_151318_e95d61/source/logging.py": {
+    "sha256": "3bfb47ae241c1bff77a2efebde001ba39791d4254b6a43941ebc0014a56c4ced",
+    "bytes": 5531
+  },
+  "runs/isaac/train/unitree_go2_gallop/20261103_151318_e95d61/source/parent_manifest.json": {
+    "sha256": "52167e9111bdedff8ef1123faa01eb361a1ffeaa68af439a19afcb62dbd6c92f",
+    "bytes": 10371
+  },
+  "runs/isaac/train/unitree_go2_gallop/20261103_151318_e95d61/source/gallop_core.py": {
+    "sha256": "df03215b64ac8566ed4f975e88ea7f8ad0a862fd31c3cdf0c4fb7393911c695c",
+    "bytes": 64512
+  },
+  "runs/isaac/train/unitree_go2_gallop/20261103_151318_e95d61/source/gallop_baseline.py": {
+    "sha256": "56a9eeb7654c2fa749fcb319ec6a6d6e5e4e08a5eec725245c0e966022dc180b",
+    "bytes": 32146
+  },
+  "runs/isaac/train/unitree_go2_gallop/20261103_151318_e95d61/source/gallop_runtime.py": {
+    "sha256": "250126db52ced4a71d7b223d48c0ede6cf0bd9d282fd13a0bdb5b9c5bdfc347f",
+    "bytes": 2297
+  },
+  "runs/isaac/train/unitree_go2_gallop/20261103_151318_e95d61/source/__pycache__/gallop_core.cpython-311.pyc": {
+    "sha256": "8baa502ff9a4429848d650331e3564482f48bb147cb819d1c689957c06090e69",
+    "bytes": 119293
+  },
+  "runs/isaac/train/unitree_go2_gallop/20261103_151318_e95d61/source/__pycache__/gallop_env.cpython-311.pyc": {
+    "sha256": "c9395d211812cc3ad6f948a4d3716209d4de3fc93e869083cba41b4acc792de1",
+    "bytes": 99492
+  },
+  "runs/isaac/train/unitree_go2_gallop/20261103_151318_e95d61/source/__pycache__/logging.cpython-311.pyc": {
+    "sha256": "30faa25da193b66a9b49adb3f3a548dee83726645560fd73252cc1d6a55b376f",
+    "bytes": 11900
+  },
+  "runs/isaac/play/unitree_go2_gallop/20261103_160608_cf586d/episodes.jsonl": {
+    "sha256": "9be7e55d5bb91516534b279efe54c2d93244203edee5d7c17ecdbc45958a0eef",
+    "bytes": 3420
+  },
+  "runs/isaac/play/unitree_go2_gallop/20261103_160608_cf586d/gallop_trace.npz": {
+    "sha256": "51d4a8ad5fa0871d6fcf17335b34237a163939ca75313fed7c0a54e39c5f09d1",
+    "bytes": 652139
+  },
+  "runs/isaac/play/unitree_go2_gallop/20261103_160608_cf586d/gallop_config.json": {
+    "sha256": "0a72111f5861a9705d9f1e3e0450f8cea0147192f808cb71a423af42b07aa47e",
+    "bytes": 5525
+  },
+  "runs/isaac/play/unitree_go2_gallop/20261103_160608_cf586d/status.json": {
+    "sha256": "38320db611a8cbd9a10e1f233fcabc817a66e78c1ec29047aad490b635524e3f",
+    "bytes": 787
+  },
+  "runs/isaac/play/unitree_go2_gallop/20261103_160608_cf586d/curriculum_summary.json": {
+    "sha256": "82be2e1d61ff6f302d516a1e759972e30159652fde142a3a7b7adbd947f37e7a",
+    "bytes": 3881
+  },
+  "runs/isaac/play/unitree_go2_gallop/20261103_160608_cf586d/manifest.json": {
+    "sha256": "652af5af86cd442c281f3c714d82bd0e047124a41120be0749b2dd87e18db742",
+    "bytes": 14552
+  },
+  "runs/isaac/play/unitree_go2_gallop/20261103_160608_cf586d/console.log": {
+    "sha256": "cecac9d610e184c880f90c58d4246396e75cf0cd86068b45f3a2fa7cd3b98801",
+    "bytes": 19011
+  },
+  "runs/isaac/play/unitree_go2_gallop/20261103_160608_cf586d/progress.jsonl": {
+    "sha256": "f37b0c21321ecae7ecea3e0a5382951b6761d1b175a06fbe8e420a38a3158bd5",
+    "bytes": 1882
+  },
+  "runs/isaac/play/unitree_go2_gallop/20261103_160608_cf586d/params/agent.yaml": {
+    "sha256": "d961471b88bc3798d5daf37ceb1d5897364df6f78f3e94bdbd1644abef8b4b20",
+    "bytes": 1039
+  },
+  "runs/isaac/play/unitree_go2_gallop/20261103_160608_cf586d/params/env.yaml": {
+    "sha256": "2dec373ca07bc2ac01120a293e1cf1a9e7fcd79437c12770dd956e1aa6e1d67e",
+    "bytes": 32024
+  },
+  "runs/isaac/play/unitree_go2_gallop/20261103_160608_cf586d/source/velocity_env_cfg.py": {
+    "sha256": "56859832148dacc724ddba3954a7684b99a43560e4fde561f6361b9daa051b56",
+    "bytes": 14840
+  },
+  "runs/isaac/play/unitree_go2_gallop/20261103_160608_cf586d/source/gallop_env.py": {
+    "sha256": "b113e075feb27f6b187200e7856b06c4969db79cbe15f7aec5898e9831b57ffc",
+    "bytes": 57456
+  },
+  "runs/isaac/play/unitree_go2_gallop/20261103_160608_cf586d/source/walking_teacher.pt": {
+    "sha256": "d4bd406a2e0cc97b1370610a3791bf115c31cac8b718056322d95df2f9d192bf",
+    "bytes": 4639999
+  },
+  "runs/isaac/play/unitree_go2_gallop/20261103_160608_cf586d/source/logging.py": {
+    "sha256": "3bfb47ae241c1bff77a2efebde001ba39791d4254b6a43941ebc0014a56c4ced",
+    "bytes": 5531
+  },
+  "runs/isaac/play/unitree_go2_gallop/20261103_160608_cf586d/source/parent_manifest.json": {
+    "sha256": "8074ed62d86fb29ac14a8ebadb1c693871c7e581aa59e3f3ae022b1f07def4b7",
+    "bytes": 14901
+  },
+  "runs/isaac/play/unitree_go2_gallop/20261103_160608_cf586d/source/gallop_core.py": {
+    "sha256": "df03215b64ac8566ed4f975e88ea7f8ad0a862fd31c3cdf0c4fb7393911c695c",
+    "bytes": 64512
+  },
+  "runs/isaac/play/unitree_go2_gallop/20261103_160608_cf586d/source/gallop_baseline.py": {
+    "sha256": "56a9eeb7654c2fa749fcb319ec6a6d6e5e4e08a5eec725245c0e966022dc180b",
+    "bytes": 32146
+  },
+  "runs/isaac/play/unitree_go2_gallop/20261103_160608_cf586d/source/gallop_runtime.py": {
+    "sha256": "250126db52ced4a71d7b223d48c0ede6cf0bd9d282fd13a0bdb5b9c5bdfc347f",
+    "bytes": 2297
+  },
+  "runs/isaac/play/unitree_go2_gallop/20261103_160608_cf586d/videos/gallop-play-step-0.mp4": {
+    "sha256": "22b2b71af8472db8a4a903a3ff21501430ab0e76cafe93ae2c3cbc8151b4b336",
+    "bytes": 3239798
+  }
+}

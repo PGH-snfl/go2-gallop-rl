@@ -1,0 +1,170 @@
+{
+  "all_eligible": {
+    "episodes": 9666,
+    "measured_episodes": 7853,
+    "success": 5112,
+    "terminated_fraction": 0.19077177736395615,
+    "measured_episodes_with_actual_excess": 3,
+    "criteria": {
+      "guarded_limits": 0.8121249741361474,
+      "guarded_feet": 0.4941030415890751,
+      "tracking": 0.8038485412787089,
+      "flight": 0.8128491620111732,
+      "stabilization_width": 0.04272708462652597,
+      "stabilization_landing": 0.13066418373680944
+    },
+    "measured_quantiles": {
+      "guarded_intervention": [
+        0.5885430216789246,
+        0.6010196805000305,
+        0.6136550426483154
+      ],
+      "guarded_actual": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "guarded_front_high": [
+        0.06934172958135605,
+        0.09451796114444733,
+        0.1197690263390541
+      ],
+      "guarded_hind_high": [
+        0.03271297886967659,
+        0.0579439252614975,
+        0.08592430502176285
+      ],
+      "guarded_tracking_rmse": [
+        0.377376389503479,
+        0.39859557151794434,
+        0.42082483768463136
+      ]
+    }
+  },
+  "first_200": {
+    "episodes": 929,
+    "measured_episodes": 715,
+    "success": 611,
+    "terminated_fraction": 0.23358449946178686,
+    "measured_episodes_with_actual_excess": 2,
+    "criteria": {
+      "guarded_limits": 0.767491926803014,
+      "guarded_feet": 0.534983853606028,
+      "tracking": 0.7631862217438106,
+      "flight": 0.7696447793326158,
+      "stabilization_width": 0.012917115177610334,
+      "stabilization_landing": 0.10871905274488698
+    },
+    "measured_quantiles": {
+      "guarded_intervention": [
+        0.5833182096481323,
+        0.5945273041725159,
+        0.6080224514007568
+      ],
+      "guarded_actual": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "guarded_front_high": [
+        0.0705573171377182,
+        0.09108341485261917,
+        0.11079862713813782
+      ],
+      "guarded_hind_high": [
+        0.02518567964434624,
+        0.04588015004992485,
+        0.06905162781476974
+      ],
+      "guarded_tracking_rmse": [
+        0.3724269926548004,
+        0.394841730594635,
+        0.416942298412323
+      ]
+    }
+  },
+  "last_200": {
+    "episodes": 1029,
+    "measured_episodes": 850,
+    "success": 418,
+    "terminated_fraction": 0.17589893100097181,
+    "measured_episodes_with_actual_excess": 0,
+    "criteria": {
+      "guarded_limits": 0.826044703595724,
+      "guarded_feet": 0.42662779397473277,
+      "tracking": 0.8221574344023324,
+      "flight": 0.827016520894072,
+      "stabilization_width": 0.0009718172983479105,
+      "stabilization_landing": 0.12342079689018465
+    },
+    "measured_quantiles": {
+      "guarded_intervention": [
+        0.5948766589164733,
+        0.6059816479682922,
+        0.6163754224777221
+      ],
+      "guarded_actual": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "guarded_front_high": [
+        0.08035632222890854,
+        0.09929744526743889,
+        0.12061109766364098
+      ],
+      "guarded_hind_high": [
+        0.027445889078080658,
+        0.054230960085988045,
+        0.08486120626330376
+      ],
+      "guarded_tracking_rmse": [
+        0.37804122269153595,
+        0.3963482230901718,
+        0.41740895211696627
+      ]
+    }
+  },
+  "last_1000": {
+    "episodes": 4956,
+    "measured_episodes": 4075,
+    "success": 2513,
+    "terminated_fraction": 0.18099273607748184,
+    "measured_episodes_with_actual_excess": 1,
+    "criteria": {
+      "guarded_limits": 0.8220338983050848,
+      "guarded_feet": 0.326271186440678,
+      "tracking": 0.8107344632768362,
+      "flight": 0.822639225181598,
+      "stabilization_width": 0.04398708635996772,
+      "stabilization_landing": 0.1483050847457627
+    },
+    "measured_quantiles": {
+      "guarded_intervention": [
+        0.591439151763916,
+        0.6026481986045837,
+        0.6144874930381775
+      ],
+      "guarded_actual": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "guarded_front_high": [
+        0.08341305553913117,
+        0.10460829734802246,
+        0.12682518362998962
+      ],
+      "guarded_hind_high": [
+        0.03421304821968078,
+        0.06022408977150917,
+        0.09020502269268034
+      ],
+      "guarded_tracking_rmse": [
+        0.37787080407142637,
+        0.3976254463195801,
+        0.41888685822486876
+      ]
+    }
+  }
+}

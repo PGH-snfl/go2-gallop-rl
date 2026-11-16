@@ -1,0 +1,38 @@
+{
+  "status": "completed",
+  "mode": "check",
+  "training_variant": "gallop_fixed_goal",
+  "num_envs": 2,
+  "planned_iterations": 6000,
+  "policy_updates": 0,
+  "training_initialization": "restore_gallop_new_optimizer",
+  "fine_tuning": {
+    "parent_iteration_zero_based": 3999,
+    "parent_stage_iterations": 4000,
+    "actor_critic_restored": true,
+    "noise_restored": true,
+    "optimizer_reset": true,
+    "stage_iteration_start": 0,
+    "actor_observations": [
+      49,
+      49
+    ],
+    "critic_observations": [
+      64,
+      64
+    ],
+    "added_heading_columns_zero": false,
+    "parent_cumulative_iterations": 58000
+  },
+  "last_event": {
+    "time": "2026-11-16T16:11:00+09:00",
+    "elapsed_s": 2.83,
+    "event": "COMPLETED",
+    "output": "/home/cvr/GH/go2-gallop-rl/runs/isaac/check/unitree_go2_gallop/20261116_161052_405548"
+  },
+  "steps": 20,
+  "reset_count": 0,
+  "policy_state_unchanged": true,
+  "rollout_note": "First segment validity only; reset rows use pre-reset terminal snapshots",
+  "source_clean_after_run": true
+}

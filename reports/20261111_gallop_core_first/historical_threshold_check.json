@@ -1,0 +1,1305 @@
+{
+  "type": "retrospective stage0 threshold check, not new training",
+  "recorded_episodes": 75656,
+  "complete_original_cohorts": 184,
+  "conservative_cohorts_at80percent": 41,
+  "old_max_rate": 0.03515625,
+  "conservative_max_rate": 0.88671875,
+  "last10_conservative_mean": 0.839453125,
+  "two_consecutive_conservative_passes": true,
+  "cohorts": [
+    {
+      "step": 5000,
+      "episodes": 256,
+      "old_successes": 0,
+      "conservative_new_successes": 72,
+      "optimistic_new_successes": 72
+    },
+    {
+      "step": 7000,
+      "episodes": 256,
+      "old_successes": 0,
+      "conservative_new_successes": 95,
+      "optimistic_new_successes": 95
+    },
+    {
+      "step": 9000,
+      "episodes": 256,
+      "old_successes": 1,
+      "conservative_new_successes": 111,
+      "optimistic_new_successes": 111
+    },
+    {
+      "step": 11000,
+      "episodes": 256,
+      "old_successes": 0,
+      "conservative_new_successes": 96,
+      "optimistic_new_successes": 96
+    },
+    {
+      "step": 13000,
+      "episodes": 256,
+      "old_successes": 0,
+      "conservative_new_successes": 107,
+      "optimistic_new_successes": 107
+    },
+    {
+      "step": 15000,
+      "episodes": 256,
+      "old_successes": 0,
+      "conservative_new_successes": 105,
+      "optimistic_new_successes": 105
+    },
+    {
+      "step": 17000,
+      "episodes": 256,
+      "old_successes": 0,
+      "conservative_new_successes": 122,
+      "optimistic_new_successes": 122
+    },
+    {
+      "step": 19000,
+      "episodes": 256,
+      "old_successes": 0,
+      "conservative_new_successes": 115,
+      "optimistic_new_successes": 115
+    },
+    {
+      "step": 21000,
+      "episodes": 256,
+      "old_successes": 0,
+      "conservative_new_successes": 132,
+      "optimistic_new_successes": 132
+    },
+    {
+      "step": 23000,
+      "episodes": 256,
+      "old_successes": 0,
+      "conservative_new_successes": 126,
+      "optimistic_new_successes": 126
+    },
+    {
+      "step": 25000,
+      "episodes": 256,
+      "old_successes": 0,
+      "conservative_new_successes": 115,
+      "optimistic_new_successes": 115
+    },
+    {
+      "step": 27000,
+      "episodes": 256,
+      "old_successes": 0,
+      "conservative_new_successes": 123,
+      "optimistic_new_successes": 123
+    },
+    {
+      "step": 29000,
+      "episodes": 256,
+      "old_successes": 0,
+      "conservative_new_successes": 118,
+      "optimistic_new_successes": 118
+    },
+    {
+      "step": 31000,
+      "episodes": 256,
+      "old_successes": 0,
+      "conservative_new_successes": 118,
+      "optimistic_new_successes": 118
+    },
+    {
+      "step": 33000,
+      "episodes": 256,
+      "old_successes": 0,
+      "conservative_new_successes": 114,
+      "optimistic_new_successes": 114
+    },
+    {
+      "step": 35000,
+      "episodes": 256,
+      "old_successes": 0,
+      "conservative_new_successes": 116,
+      "optimistic_new_successes": 116
+    },
+    {
+      "step": 37000,
+      "episodes": 256,
+      "old_successes": 0,
+      "conservative_new_successes": 131,
+      "optimistic_new_successes": 131
+    },
+    {
+      "step": 39000,
+      "episodes": 256,
+      "old_successes": 0,
+      "conservative_new_successes": 146,
+      "optimistic_new_successes": 146
+    },
+    {
+      "step": 41000,
+      "episodes": 256,
+      "old_successes": 0,
+      "conservative_new_successes": 129,
+      "optimistic_new_successes": 129
+    },
+    {
+      "step": 43000,
+      "episodes": 256,
+      "old_successes": 0,
+      "conservative_new_successes": 151,
+      "optimistic_new_successes": 151
+    },
+    {
+      "step": 45000,
+      "episodes": 256,
+      "old_successes": 0,
+      "conservative_new_successes": 130,
+      "optimistic_new_successes": 130
+    },
+    {
+      "step": 47000,
+      "episodes": 256,
+      "old_successes": 0,
+      "conservative_new_successes": 136,
+      "optimistic_new_successes": 136
+    },
+    {
+      "step": 49000,
+      "episodes": 256,
+      "old_successes": 0,
+      "conservative_new_successes": 150,
+      "optimistic_new_successes": 150
+    },
+    {
+      "step": 51000,
+      "episodes": 256,
+      "old_successes": 0,
+      "conservative_new_successes": 150,
+      "optimistic_new_successes": 150
+    },
+    {
+      "step": 53000,
+      "episodes": 256,
+      "old_successes": 0,
+      "conservative_new_successes": 156,
+      "optimistic_new_successes": 156
+    },
+    {
+      "step": 55000,
+      "episodes": 256,
+      "old_successes": 0,
+      "conservative_new_successes": 146,
+      "optimistic_new_successes": 146
+    },
+    {
+      "step": 57000,
+      "episodes": 256,
+      "old_successes": 0,
+      "conservative_new_successes": 156,
+      "optimistic_new_successes": 156
+    },
+    {
+      "step": 59000,
+      "episodes": 256,
+      "old_successes": 0,
+      "conservative_new_successes": 154,
+      "optimistic_new_successes": 154
+    },
+    {
+      "step": 61000,
+      "episodes": 256,
+      "old_successes": 0,
+      "conservative_new_successes": 149,
+      "optimistic_new_successes": 149
+    },
+    {
+      "step": 63000,
+      "episodes": 256,
+      "old_successes": 0,
+      "conservative_new_successes": 148,
+      "optimistic_new_successes": 148
+    },
+    {
+      "step": 65000,
+      "episodes": 256,
+      "old_successes": 0,
+      "conservative_new_successes": 151,
+      "optimistic_new_successes": 151
+    },
+    {
+      "step": 67000,
+      "episodes": 256,
+      "old_successes": 0,
+      "conservative_new_successes": 166,
+      "optimistic_new_successes": 166
+    },
+    {
+      "step": 69000,
+      "episodes": 256,
+      "old_successes": 1,
+      "conservative_new_successes": 153,
+      "optimistic_new_successes": 153
+    },
+    {
+      "step": 71000,
+      "episodes": 256,
+      "old_successes": 0,
+      "conservative_new_successes": 166,
+      "optimistic_new_successes": 166
+    },
+    {
+      "step": 73000,
+      "episodes": 256,
+      "old_successes": 1,
+      "conservative_new_successes": 150,
+      "optimistic_new_successes": 150
+    },
+    {
+      "step": 75000,
+      "episodes": 256,
+      "old_successes": 0,
+      "conservative_new_successes": 158,
+      "optimistic_new_successes": 158
+    },
+    {
+      "step": 77000,
+      "episodes": 256,
+      "old_successes": 0,
+      "conservative_new_successes": 148,
+      "optimistic_new_successes": 148
+    },
+    {
+      "step": 79000,
+      "episodes": 256,
+      "old_successes": 0,
+      "conservative_new_successes": 163,
+      "optimistic_new_successes": 163
+    },
+    {
+      "step": 81000,
+      "episodes": 256,
+      "old_successes": 0,
+      "conservative_new_successes": 137,
+      "optimistic_new_successes": 137
+    },
+    {
+      "step": 83000,
+      "episodes": 256,
+      "old_successes": 0,
+      "conservative_new_successes": 148,
+      "optimistic_new_successes": 148
+    },
+    {
+      "step": 85000,
+      "episodes": 256,
+      "old_successes": 0,
+      "conservative_new_successes": 142,
+      "optimistic_new_successes": 142
+    },
+    {
+      "step": 87000,
+      "episodes": 256,
+      "old_successes": 1,
+      "conservative_new_successes": 134,
+      "optimistic_new_successes": 134
+    },
+    {
+      "step": 89000,
+      "episodes": 256,
+      "old_successes": 0,
+      "conservative_new_successes": 144,
+      "optimistic_new_successes": 144
+    },
+    {
+      "step": 91000,
+      "episodes": 256,
+      "old_successes": 0,
+      "conservative_new_successes": 157,
+      "optimistic_new_successes": 157
+    },
+    {
+      "step": 93000,
+      "episodes": 256,
+      "old_successes": 1,
+      "conservative_new_successes": 168,
+      "optimistic_new_successes": 168
+    },
+    {
+      "step": 95000,
+      "episodes": 256,
+      "old_successes": 1,
+      "conservative_new_successes": 172,
+      "optimistic_new_successes": 172
+    },
+    {
+      "step": 97000,
+      "episodes": 256,
+      "old_successes": 0,
+      "conservative_new_successes": 177,
+      "optimistic_new_successes": 177
+    },
+    {
+      "step": 99000,
+      "episodes": 256,
+      "old_successes": 0,
+      "conservative_new_successes": 171,
+      "optimistic_new_successes": 171
+    },
+    {
+      "step": 101000,
+      "episodes": 256,
+      "old_successes": 0,
+      "conservative_new_successes": 185,
+      "optimistic_new_successes": 185
+    },
+    {
+      "step": 103000,
+      "episodes": 256,
+      "old_successes": 0,
+      "conservative_new_successes": 175,
+      "optimistic_new_successes": 175
+    },
+    {
+      "step": 105000,
+      "episodes": 256,
+      "old_successes": 2,
+      "conservative_new_successes": 149,
+      "optimistic_new_successes": 149
+    },
+    {
+      "step": 107000,
+      "episodes": 256,
+      "old_successes": 1,
+      "conservative_new_successes": 171,
+      "optimistic_new_successes": 171
+    },
+    {
+      "step": 109000,
+      "episodes": 256,
+      "old_successes": 0,
+      "conservative_new_successes": 169,
+      "optimistic_new_successes": 169
+    },
+    {
+      "step": 111000,
+      "episodes": 256,
+      "old_successes": 0,
+      "conservative_new_successes": 178,
+      "optimistic_new_successes": 178
+    },
+    {
+      "step": 113000,
+      "episodes": 256,
+      "old_successes": 0,
+      "conservative_new_successes": 166,
+      "optimistic_new_successes": 166
+    },
+    {
+      "step": 115000,
+      "episodes": 256,
+      "old_successes": 0,
+      "conservative_new_successes": 170,
+      "optimistic_new_successes": 170
+    },
+    {
+      "step": 117000,
+      "episodes": 256,
+      "old_successes": 2,
+      "conservative_new_successes": 169,
+      "optimistic_new_successes": 169
+    },
+    {
+      "step": 119000,
+      "episodes": 256,
+      "old_successes": 0,
+      "conservative_new_successes": 169,
+      "optimistic_new_successes": 169
+    },
+    {
+      "step": 121000,
+      "episodes": 256,
+      "old_successes": 0,
+      "conservative_new_successes": 177,
+      "optimistic_new_successes": 177
+    },
+    {
+      "step": 123000,
+      "episodes": 256,
+      "old_successes": 0,
+      "conservative_new_successes": 190,
+      "optimistic_new_successes": 190
+    },
+    {
+      "step": 125000,
+      "episodes": 256,
+      "old_successes": 0,
+      "conservative_new_successes": 172,
+      "optimistic_new_successes": 172
+    },
+    {
+      "step": 127000,
+      "episodes": 256,
+      "old_successes": 0,
+      "conservative_new_successes": 192,
+      "optimistic_new_successes": 192
+    },
+    {
+      "step": 129000,
+      "episodes": 256,
+      "old_successes": 0,
+      "conservative_new_successes": 177,
+      "optimistic_new_successes": 177
+    },
+    {
+      "step": 131000,
+      "episodes": 256,
+      "old_successes": 1,
+      "conservative_new_successes": 169,
+      "optimistic_new_successes": 169
+    },
+    {
+      "step": 133000,
+      "episodes": 256,
+      "old_successes": 0,
+      "conservative_new_successes": 170,
+      "optimistic_new_successes": 170
+    },
+    {
+      "step": 135000,
+      "episodes": 256,
+      "old_successes": 0,
+      "conservative_new_successes": 162,
+      "optimistic_new_successes": 162
+    },
+    {
+      "step": 137000,
+      "episodes": 256,
+      "old_successes": 0,
+      "conservative_new_successes": 184,
+      "optimistic_new_successes": 184
+    },
+    {
+      "step": 139000,
+      "episodes": 256,
+      "old_successes": 4,
+      "conservative_new_successes": 183,
+      "optimistic_new_successes": 183
+    },
+    {
+      "step": 141000,
+      "episodes": 256,
+      "old_successes": 7,
+      "conservative_new_successes": 172,
+      "optimistic_new_successes": 172
+    },
+    {
+      "step": 143000,
+      "episodes": 256,
+      "old_successes": 4,
+      "conservative_new_successes": 178,
+      "optimistic_new_successes": 178
+    },
+    {
+      "step": 145000,
+      "episodes": 256,
+      "old_successes": 1,
+      "conservative_new_successes": 198,
+      "optimistic_new_successes": 198
+    },
+    {
+      "step": 147000,
+      "episodes": 256,
+      "old_successes": 5,
+      "conservative_new_successes": 190,
+      "optimistic_new_successes": 190
+    },
+    {
+      "step": 149000,
+      "episodes": 256,
+      "old_successes": 0,
+      "conservative_new_successes": 192,
+      "optimistic_new_successes": 192
+    },
+    {
+      "step": 151000,
+      "episodes": 256,
+      "old_successes": 0,
+      "conservative_new_successes": 192,
+      "optimistic_new_successes": 192
+    },
+    {
+      "step": 153000,
+      "episodes": 256,
+      "old_successes": 2,
+      "conservative_new_successes": 184,
+      "optimistic_new_successes": 184
+    },
+    {
+      "step": 155000,
+      "episodes": 256,
+      "old_successes": 2,
+      "conservative_new_successes": 193,
+      "optimistic_new_successes": 193
+    },
+    {
+      "step": 157000,
+      "episodes": 256,
+      "old_successes": 2,
+      "conservative_new_successes": 186,
+      "optimistic_new_successes": 186
+    },
+    {
+      "step": 159000,
+      "episodes": 256,
+      "old_successes": 6,
+      "conservative_new_successes": 195,
+      "optimistic_new_successes": 195
+    },
+    {
+      "step": 161000,
+      "episodes": 256,
+      "old_successes": 2,
+      "conservative_new_successes": 192,
+      "optimistic_new_successes": 192
+    },
+    {
+      "step": 163000,
+      "episodes": 256,
+      "old_successes": 0,
+      "conservative_new_successes": 188,
+      "optimistic_new_successes": 188
+    },
+    {
+      "step": 165000,
+      "episodes": 256,
+      "old_successes": 0,
+      "conservative_new_successes": 189,
+      "optimistic_new_successes": 189
+    },
+    {
+      "step": 167000,
+      "episodes": 256,
+      "old_successes": 0,
+      "conservative_new_successes": 201,
+      "optimistic_new_successes": 201
+    },
+    {
+      "step": 169000,
+      "episodes": 256,
+      "old_successes": 2,
+      "conservative_new_successes": 200,
+      "optimistic_new_successes": 200
+    },
+    {
+      "step": 171000,
+      "episodes": 256,
+      "old_successes": 1,
+      "conservative_new_successes": 194,
+      "optimistic_new_successes": 194
+    },
+    {
+      "step": 173000,
+      "episodes": 256,
+      "old_successes": 2,
+      "conservative_new_successes": 195,
+      "optimistic_new_successes": 195
+    },
+    {
+      "step": 175000,
+      "episodes": 256,
+      "old_successes": 1,
+      "conservative_new_successes": 194,
+      "optimistic_new_successes": 194
+    },
+    {
+      "step": 177000,
+      "episodes": 256,
+      "old_successes": 1,
+      "conservative_new_successes": 180,
+      "optimistic_new_successes": 180
+    },
+    {
+      "step": 179000,
+      "episodes": 256,
+      "old_successes": 0,
+      "conservative_new_successes": 198,
+      "optimistic_new_successes": 198
+    },
+    {
+      "step": 181000,
+      "episodes": 256,
+      "old_successes": 0,
+      "conservative_new_successes": 199,
+      "optimistic_new_successes": 199
+    },
+    {
+      "step": 183000,
+      "episodes": 256,
+      "old_successes": 0,
+      "conservative_new_successes": 196,
+      "optimistic_new_successes": 196
+    },
+    {
+      "step": 185000,
+      "episodes": 256,
+      "old_successes": 0,
+      "conservative_new_successes": 183,
+      "optimistic_new_successes": 183
+    },
+    {
+      "step": 187000,
+      "episodes": 256,
+      "old_successes": 0,
+      "conservative_new_successes": 174,
+      "optimistic_new_successes": 174
+    },
+    {
+      "step": 189000,
+      "episodes": 256,
+      "old_successes": 1,
+      "conservative_new_successes": 185,
+      "optimistic_new_successes": 185
+    },
+    {
+      "step": 191000,
+      "episodes": 256,
+      "old_successes": 0,
+      "conservative_new_successes": 196,
+      "optimistic_new_successes": 196
+    },
+    {
+      "step": 193000,
+      "episodes": 256,
+      "old_successes": 1,
+      "conservative_new_successes": 199,
+      "optimistic_new_successes": 199
+    },
+    {
+      "step": 195000,
+      "episodes": 256,
+      "old_successes": 0,
+      "conservative_new_successes": 188,
+      "optimistic_new_successes": 188
+    },
+    {
+      "step": 197000,
+      "episodes": 256,
+      "old_successes": 0,
+      "conservative_new_successes": 190,
+      "optimistic_new_successes": 190
+    },
+    {
+      "step": 199000,
+      "episodes": 256,
+      "old_successes": 1,
+      "conservative_new_successes": 190,
+      "optimistic_new_successes": 190
+    },
+    {
+      "step": 201000,
+      "episodes": 256,
+      "old_successes": 1,
+      "conservative_new_successes": 195,
+      "optimistic_new_successes": 195
+    },
+    {
+      "step": 203000,
+      "episodes": 256,
+      "old_successes": 0,
+      "conservative_new_successes": 199,
+      "optimistic_new_successes": 199
+    },
+    {
+      "step": 205000,
+      "episodes": 256,
+      "old_successes": 0,
+      "conservative_new_successes": 194,
+      "optimistic_new_successes": 194
+    },
+    {
+      "step": 207000,
+      "episodes": 256,
+      "old_successes": 0,
+      "conservative_new_successes": 201,
+      "optimistic_new_successes": 201
+    },
+    {
+      "step": 209000,
+      "episodes": 256,
+      "old_successes": 0,
+      "conservative_new_successes": 179,
+      "optimistic_new_successes": 179
+    },
+    {
+      "step": 211000,
+      "episodes": 256,
+      "old_successes": 1,
+      "conservative_new_successes": 189,
+      "optimistic_new_successes": 189
+    },
+    {
+      "step": 213000,
+      "episodes": 256,
+      "old_successes": 0,
+      "conservative_new_successes": 195,
+      "optimistic_new_successes": 195
+    },
+    {
+      "step": 215000,
+      "episodes": 256,
+      "old_successes": 0,
+      "conservative_new_successes": 200,
+      "optimistic_new_successes": 200
+    },
+    {
+      "step": 217000,
+      "episodes": 256,
+      "old_successes": 0,
+      "conservative_new_successes": 196,
+      "optimistic_new_successes": 196
+    },
+    {
+      "step": 219000,
+      "episodes": 256,
+      "old_successes": 0,
+      "conservative_new_successes": 203,
+      "optimistic_new_successes": 203
+    },
+    {
+      "step": 221000,
+      "episodes": 256,
+      "old_successes": 0,
+      "conservative_new_successes": 201,
+      "optimistic_new_successes": 201
+    },
+    {
+      "step": 223000,
+      "episodes": 256,
+      "old_successes": 0,
+      "conservative_new_successes": 187,
+      "optimistic_new_successes": 187
+    },
+    {
+      "step": 225000,
+      "episodes": 256,
+      "old_successes": 3,
+      "conservative_new_successes": 202,
+      "optimistic_new_successes": 202
+    },
+    {
+      "step": 227000,
+      "episodes": 256,
+      "old_successes": 0,
+      "conservative_new_successes": 214,
+      "optimistic_new_successes": 214
+    },
+    {
+      "step": 229000,
+      "episodes": 256,
+      "old_successes": 1,
+      "conservative_new_successes": 199,
+      "optimistic_new_successes": 199
+    },
+    {
+      "step": 231000,
+      "episodes": 256,
+      "old_successes": 0,
+      "conservative_new_successes": 209,
+      "optimistic_new_successes": 209
+    },
+    {
+      "step": 233000,
+      "episodes": 256,
+      "old_successes": 0,
+      "conservative_new_successes": 196,
+      "optimistic_new_successes": 196
+    },
+    {
+      "step": 235000,
+      "episodes": 256,
+      "old_successes": 0,
+      "conservative_new_successes": 184,
+      "optimistic_new_successes": 184
+    },
+    {
+      "step": 237000,
+      "episodes": 256,
+      "old_successes": 1,
+      "conservative_new_successes": 198,
+      "optimistic_new_successes": 198
+    },
+    {
+      "step": 239000,
+      "episodes": 256,
+      "old_successes": 0,
+      "conservative_new_successes": 209,
+      "optimistic_new_successes": 209
+    },
+    {
+      "step": 241000,
+      "episodes": 256,
+      "old_successes": 3,
+      "conservative_new_successes": 207,
+      "optimistic_new_successes": 207
+    },
+    {
+      "step": 243000,
+      "episodes": 256,
+      "old_successes": 1,
+      "conservative_new_successes": 197,
+      "optimistic_new_successes": 197
+    },
+    {
+      "step": 245000,
+      "episodes": 256,
+      "old_successes": 9,
+      "conservative_new_successes": 201,
+      "optimistic_new_successes": 201
+    },
+    {
+      "step": 247000,
+      "episodes": 256,
+      "old_successes": 3,
+      "conservative_new_successes": 183,
+      "optimistic_new_successes": 183
+    },
+    {
+      "step": 249000,
+      "episodes": 256,
+      "old_successes": 6,
+      "conservative_new_successes": 195,
+      "optimistic_new_successes": 195
+    },
+    {
+      "step": 251000,
+      "episodes": 256,
+      "old_successes": 4,
+      "conservative_new_successes": 201,
+      "optimistic_new_successes": 201
+    },
+    {
+      "step": 253000,
+      "episodes": 256,
+      "old_successes": 3,
+      "conservative_new_successes": 195,
+      "optimistic_new_successes": 195
+    },
+    {
+      "step": 255000,
+      "episodes": 256,
+      "old_successes": 1,
+      "conservative_new_successes": 210,
+      "optimistic_new_successes": 210
+    },
+    {
+      "step": 257000,
+      "episodes": 256,
+      "old_successes": 1,
+      "conservative_new_successes": 199,
+      "optimistic_new_successes": 199
+    },
+    {
+      "step": 259000,
+      "episodes": 256,
+      "old_successes": 0,
+      "conservative_new_successes": 187,
+      "optimistic_new_successes": 187
+    },
+    {
+      "step": 261000,
+      "episodes": 256,
+      "old_successes": 0,
+      "conservative_new_successes": 202,
+      "optimistic_new_successes": 202
+    },
+    {
+      "step": 263000,
+      "episodes": 256,
+      "old_successes": 2,
+      "conservative_new_successes": 196,
+      "optimistic_new_successes": 196
+    },
+    {
+      "step": 265000,
+      "episodes": 256,
+      "old_successes": 2,
+      "conservative_new_successes": 194,
+      "optimistic_new_successes": 194
+    },
+    {
+      "step": 267000,
+      "episodes": 256,
+      "old_successes": 1,
+      "conservative_new_successes": 192,
+      "optimistic_new_successes": 192
+    },
+    {
+      "step": 269000,
+      "episodes": 256,
+      "old_successes": 5,
+      "conservative_new_successes": 196,
+      "optimistic_new_successes": 196
+    },
+    {
+      "step": 271000,
+      "episodes": 256,
+      "old_successes": 1,
+      "conservative_new_successes": 194,
+      "optimistic_new_successes": 194
+    },
+    {
+      "step": 273000,
+      "episodes": 256,
+      "old_successes": 7,
+      "conservative_new_successes": 195,
+      "optimistic_new_successes": 195
+    },
+    {
+      "step": 275000,
+      "episodes": 256,
+      "old_successes": 3,
+      "conservative_new_successes": 186,
+      "optimistic_new_successes": 186
+    },
+    {
+      "step": 277000,
+      "episodes": 256,
+      "old_successes": 0,
+      "conservative_new_successes": 209,
+      "optimistic_new_successes": 209
+    },
+    {
+      "step": 279000,
+      "episodes": 256,
+      "old_successes": 0,
+      "conservative_new_successes": 200,
+      "optimistic_new_successes": 200
+    },
+    {
+      "step": 281000,
+      "episodes": 256,
+      "old_successes": 0,
+      "conservative_new_successes": 198,
+      "optimistic_new_successes": 198
+    },
+    {
+      "step": 283000,
+      "episodes": 256,
+      "old_successes": 0,
+      "conservative_new_successes": 197,
+      "optimistic_new_successes": 197
+    },
+    {
+      "step": 285000,
+      "episodes": 256,
+      "old_successes": 0,
+      "conservative_new_successes": 207,
+      "optimistic_new_successes": 207
+    },
+    {
+      "step": 287000,
+      "episodes": 256,
+      "old_successes": 1,
+      "conservative_new_successes": 204,
+      "optimistic_new_successes": 204
+    },
+    {
+      "step": 289000,
+      "episodes": 256,
+      "old_successes": 0,
+      "conservative_new_successes": 209,
+      "optimistic_new_successes": 209
+    },
+    {
+      "step": 291000,
+      "episodes": 256,
+      "old_successes": 1,
+      "conservative_new_successes": 197,
+      "optimistic_new_successes": 197
+    },
+    {
+      "step": 293000,
+      "episodes": 256,
+      "old_successes": 2,
+      "conservative_new_successes": 202,
+      "optimistic_new_successes": 202
+    },
+    {
+      "step": 295000,
+      "episodes": 256,
+      "old_successes": 2,
+      "conservative_new_successes": 197,
+      "optimistic_new_successes": 197
+    },
+    {
+      "step": 297000,
+      "episodes": 256,
+      "old_successes": 4,
+      "conservative_new_successes": 205,
+      "optimistic_new_successes": 205
+    },
+    {
+      "step": 299000,
+      "episodes": 256,
+      "old_successes": 2,
+      "conservative_new_successes": 210,
+      "optimistic_new_successes": 210
+    },
+    {
+      "step": 301000,
+      "episodes": 256,
+      "old_successes": 5,
+      "conservative_new_successes": 209,
+      "optimistic_new_successes": 209
+    },
+    {
+      "step": 303000,
+      "episodes": 256,
+      "old_successes": 0,
+      "conservative_new_successes": 205,
+      "optimistic_new_successes": 205
+    },
+    {
+      "step": 305000,
+      "episodes": 256,
+      "old_successes": 0,
+      "conservative_new_successes": 202,
+      "optimistic_new_successes": 202
+    },
+    {
+      "step": 307000,
+      "episodes": 256,
+      "old_successes": 0,
+      "conservative_new_successes": 211,
+      "optimistic_new_successes": 211
+    },
+    {
+      "step": 309000,
+      "episodes": 256,
+      "old_successes": 4,
+      "conservative_new_successes": 209,
+      "optimistic_new_successes": 209
+    },
+    {
+      "step": 311000,
+      "episodes": 256,
+      "old_successes": 0,
+      "conservative_new_successes": 215,
+      "optimistic_new_successes": 215
+    },
+    {
+      "step": 313000,
+      "episodes": 256,
+      "old_successes": 1,
+      "conservative_new_successes": 207,
+      "optimistic_new_successes": 207
+    },
+    {
+      "step": 315000,
+      "episodes": 256,
+      "old_successes": 6,
+      "conservative_new_successes": 204,
+      "optimistic_new_successes": 204
+    },
+    {
+      "step": 317000,
+      "episodes": 256,
+      "old_successes": 0,
+      "conservative_new_successes": 208,
+      "optimistic_new_successes": 208
+    },
+    {
+      "step": 319000,
+      "episodes": 256,
+      "old_successes": 1,
+      "conservative_new_successes": 206,
+      "optimistic_new_successes": 206
+    },
+    {
+      "step": 321000,
+      "episodes": 256,
+      "old_successes": 3,
+      "conservative_new_successes": 215,
+      "optimistic_new_successes": 215
+    },
+    {
+      "step": 323000,
+      "episodes": 256,
+      "old_successes": 0,
+      "conservative_new_successes": 212,
+      "optimistic_new_successes": 212
+    },
+    {
+      "step": 325000,
+      "episodes": 256,
+      "old_successes": 0,
+      "conservative_new_successes": 218,
+      "optimistic_new_successes": 218
+    },
+    {
+      "step": 327000,
+      "episodes": 256,
+      "old_successes": 1,
+      "conservative_new_successes": 207,
+      "optimistic_new_successes": 207
+    },
+    {
+      "step": 329000,
+      "episodes": 256,
+      "old_successes": 0,
+      "conservative_new_successes": 198,
+      "optimistic_new_successes": 198
+    },
+    {
+      "step": 331000,
+      "episodes": 256,
+      "old_successes": 0,
+      "conservative_new_successes": 208,
+      "optimistic_new_successes": 208
+    },
+    {
+      "step": 333000,
+      "episodes": 256,
+      "old_successes": 0,
+      "conservative_new_successes": 210,
+      "optimistic_new_successes": 210
+    },
+    {
+      "step": 335000,
+      "episodes": 256,
+      "old_successes": 1,
+      "conservative_new_successes": 209,
+      "optimistic_new_successes": 209
+    },
+    {
+      "step": 337000,
+      "episodes": 256,
+      "old_successes": 0,
+      "conservative_new_successes": 222,
+      "optimistic_new_successes": 222
+    },
+    {
+      "step": 339000,
+      "episodes": 256,
+      "old_successes": 0,
+      "conservative_new_successes": 227,
+      "optimistic_new_successes": 227
+    },
+    {
+      "step": 341000,
+      "episodes": 256,
+      "old_successes": 0,
+      "conservative_new_successes": 222,
+      "optimistic_new_successes": 222
+    },
+    {
+      "step": 343000,
+      "episodes": 256,
+      "old_successes": 2,
+      "conservative_new_successes": 225,
+      "optimistic_new_successes": 225
+    },
+    {
+      "step": 345000,
+      "episodes": 256,
+      "old_successes": 0,
+      "conservative_new_successes": 223,
+      "optimistic_new_successes": 223
+    },
+    {
+      "step": 347000,
+      "episodes": 256,
+      "old_successes": 1,
+      "conservative_new_successes": 203,
+      "optimistic_new_successes": 203
+    },
+    {
+      "step": 349000,
+      "episodes": 256,
+      "old_successes": 2,
+      "conservative_new_successes": 215,
+      "optimistic_new_successes": 215
+    },
+    {
+      "step": 351000,
+      "episodes": 256,
+      "old_successes": 2,
+      "conservative_new_successes": 218,
+      "optimistic_new_successes": 218
+    },
+    {
+      "step": 353000,
+      "episodes": 256,
+      "old_successes": 0,
+      "conservative_new_successes": 220,
+      "optimistic_new_successes": 220
+    },
+    {
+      "step": 355000,
+      "episodes": 256,
+      "old_successes": 0,
+      "conservative_new_successes": 202,
+      "optimistic_new_successes": 202
+    },
+    {
+      "step": 357000,
+      "episodes": 256,
+      "old_successes": 0,
+      "conservative_new_successes": 208,
+      "optimistic_new_successes": 208
+    },
+    {
+      "step": 359000,
+      "episodes": 256,
+      "old_successes": 0,
+      "conservative_new_successes": 216,
+      "optimistic_new_successes": 216
+    },
+    {
+      "step": 361000,
+      "episodes": 256,
+      "old_successes": 0,
+      "conservative_new_successes": 217,
+      "optimistic_new_successes": 217
+    },
+    {
+      "step": 363000,
+      "episodes": 256,
+      "old_successes": 0,
+      "conservative_new_successes": 218,
+      "optimistic_new_successes": 218
+    },
+    {
+      "step": 365000,
+      "episodes": 256,
+      "old_successes": 0,
+      "conservative_new_successes": 220,
+      "optimistic_new_successes": 220
+    },
+    {
+      "step": 367000,
+      "episodes": 256,
+      "old_successes": 2,
+      "conservative_new_successes": 218,
+      "optimistic_new_successes": 218
+    },
+    {
+      "step": 369000,
+      "episodes": 256,
+      "old_successes": 2,
+      "conservative_new_successes": 216,
+      "optimistic_new_successes": 216
+    },
+    {
+      "step": 371000,
+      "episodes": 256,
+      "old_successes": 0,
+      "conservative_new_successes": 214,
+      "optimistic_new_successes": 214
+    }
+  ],
+  "limitations": [
+    "Old records save max(roll,pitch) RMS, not each axis separately; conservative uses10deg for both, optimistic12deg for both. Exact new pose gates cannot be fully reconstructed.",
+    "Original stage0 cohorts only; no claim about future stage1+ states or speed/distance learning.",
+    "This is threshold compatibility, not an independent policy evaluation."
+  ]
+}

@@ -1,0 +1,976 @@
+{
+  "episode_rows": 12493,
+  "groups": {
+    "all_eligible": {
+      "count": 12237,
+      "success_rate": 0.0,
+      "criterion_pass_rates": {
+        "tracking": 0.9847184767508377,
+        "pattern": 0.986516303015445,
+        "flight": 0.001144071259295579,
+        "motion": 1.0,
+        "front_load": 0.9996731224973441,
+        "front_motion": 0.9897850780420038,
+        "front_cycle": 0.9871700580207567,
+        "stable": 0.0,
+        "mature": 1.0
+      },
+      "measures": {
+        "vx_rmse": {
+          "mean": 0.1247591140774464,
+          "q10_q50_q90": [
+            0.0915596216917038,
+            0.10871686041355133,
+            0.13690701723098755
+          ]
+        },
+        "contact_accuracy": {
+          "mean": 0.8181834061390104,
+          "q10_q50_q90": [
+            0.8015246987342834,
+            0.8254469037055969,
+            0.8477917909622192
+          ]
+        },
+        "order_accuracy": {
+          "mean": 0.013487680631209415,
+          "q10_q50_q90": [
+            0.0,
+            0.00913241971284151,
+            0.022522522136569023
+          ]
+        },
+        "flight_fraction": {
+          "mean": 0.02470325273758077,
+          "q10_q50_q90": [
+            0.01886792480945587,
+            0.01886792480945587,
+            0.01923076994717121
+          ]
+        },
+        "rom_fraction": {
+          "mean": 0.9782386073793784,
+          "q10_q50_q90": [
+            0.9581295251846313,
+            0.9829840064048767,
+            0.9933457612991333
+          ]
+        },
+        "fore_load_share": {
+          "mean": 0.5092642249854121,
+          "q10_q50_q90": [
+            0.5002476215362549,
+            0.5078918933868408,
+            0.5155294179916382
+          ]
+        },
+        "fore_min_load_share": {
+          "mean": 0.2481567327898488,
+          "q10_q50_q90": [
+            0.24075194895267488,
+            0.24866589903831482,
+            0.2543470859527588
+          ]
+        },
+        "fore_rom_fraction": {
+          "mean": 0.9479601143222234,
+          "q10_q50_q90": [
+            0.9115254878997803,
+            0.9568209052085876,
+            0.9822084069252014
+          ]
+        },
+        "fore_min_rom_fraction": {
+          "mean": 0.931492888213636,
+          "q10_q50_q90": [
+            0.8918210148811341,
+            0.9393015503883362,
+            0.9789994478225708
+          ]
+        },
+        "fore_participation": {
+          "mean": 0.97719283308811,
+          "q10_q50_q90": [
+            0.9622641801834106,
+            0.9811320900917053,
+            1.0
+          ]
+        },
+        "attitude_rms": {
+          "mean": 0.05599885525940982,
+          "q10_q50_q90": [
+            0.04300901591777802,
+            0.050896599888801575,
+            0.06707672923803329
+          ]
+        },
+        "action_clip_fraction": {
+          "mean": 0.159777516103557,
+          "q10_q50_q90": [
+            0.1519451767206192,
+            0.16202248632907867,
+            0.1675429791212082
+          ]
+        },
+        "terminated": {
+          "mean": 0.020511563291656452,
+          "q10_q50_q90": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "timed_out": {
+          "mean": 0.9794884367083435,
+          "q10_q50_q90": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        "pair_joint_cost": {
+          "mean": 0.09653874927070918,
+          "q10_q50_q90": [
+            0.06695334762334823,
+            0.09066953510046005,
+            0.1309427887201309
+          ]
+        },
+        "pair_rom_cost": {
+          "mean": 0.0001796141663451143,
+          "q10_q50_q90": [
+            0.0,
+            4.829136742046103e-05,
+            0.00032417561742477115
+          ]
+        },
+        "pair_load_cost": {
+          "mean": 0.0005403169231926482,
+          "q10_q50_q90": [
+            0.0,
+            3.877305789501406e-05,
+            0.0010771632660180324
+          ]
+        },
+        "pair_stance_cost": {
+          "mean": 0.00013494143675494742,
+          "q10_q50_q90": [
+            0.0,
+            3.0746091397304554e-06,
+            0.0001264013408217579
+          ]
+        },
+        "pair_valid_cycles": {
+          "mean": 49.06104437362099,
+          "q10_q50_q90": [
+            49.0,
+            50.0,
+            50.0
+          ]
+        }
+      },
+      "failure_combinations": {
+        "pattern,stable": 2,
+        "pattern,flight,front_motion,front_cycle,stable": 57,
+        "tracking,pattern,flight,front_motion,front_cycle,stable": 53,
+        "tracking,pattern,flight,front_motion,stable": 6,
+        "tracking,pattern,flight,front_cycle,stable": 26,
+        "flight,stable": 11972,
+        "tracking,flight,stable": 100,
+        "pattern,front_motion,front_cycle,stable": 5,
+        "pattern,flight,front_load,front_motion,front_cycle,stable": 3,
+        "tracking,pattern,front_cycle,stable": 1,
+        "pattern,flight,front_cycle,stable": 5,
+        "pattern,front_cycle,stable": 6,
+        "tracking,pattern,flight,front_load,front_motion,front_cycle,stable": 1
+      },
+      "stable_failures": {
+        "total": 12237,
+        "clip_exceeded": 12138,
+        "attitude_exceeded": 83,
+        "terminated": 251,
+        "short_episode": 251
+      },
+      "stable_failure_combinations": {
+        "terminated,short": 78,
+        "clipping,attitude,terminated,short": 62,
+        "attitude,terminated,short": 21,
+        "clipping,terminated,short": 90,
+        "clipping": 11986
+      }
+    },
+    "first_200_iterations": {
+      "count": 1091,
+      "success_rate": 0.0,
+      "criterion_pass_rates": {
+        "tracking": 0.9395050412465628,
+        "pattern": 0.916590284142988,
+        "flight": 0.005499541704857928,
+        "motion": 1.0,
+        "front_load": 0.997250229147571,
+        "front_motion": 0.928505957836847,
+        "front_cycle": 0.923006416131989,
+        "stable": 0.0,
+        "mature": 1.0
+      },
+      "measures": {
+        "vx_rmse": {
+          "mean": 0.2190406791572173,
+          "q10_q50_q90": [
+            0.08951637148857117,
+            0.1242729052901268,
+            0.35482680797576904
+          ]
+        },
+        "contact_accuracy": {
+          "mean": 0.7714951688220586,
+          "q10_q50_q90": [
+            0.7731335163116455,
+            0.8141430020332336,
+            0.8314931392669678
+          ]
+        },
+        "order_accuracy": {
+          "mean": 0.047525897770642034,
+          "q10_q50_q90": [
+            0.004651162773370743,
+            0.022522522136569023,
+            0.07954545319080353
+          ]
+        },
+        "flight_fraction": {
+          "mean": 0.053829007578021774,
+          "q10_q50_q90": [
+            0.01886792480945587,
+            0.01886792480945587,
+            0.01923076994717121
+          ]
+        },
+        "rom_fraction": {
+          "mean": 0.9639304308143917,
+          "q10_q50_q90": [
+            0.9384973049163818,
+            0.9766134023666382,
+            0.9862478971481323
+          ]
+        },
+        "fore_load_share": {
+          "mean": 0.5179952460347131,
+          "q10_q50_q90": [
+            0.4994412362575531,
+            0.5072400569915771,
+            0.5354648232460022
+          ]
+        },
+        "fore_min_load_share": {
+          "mean": 0.2504872487811841,
+          "q10_q50_q90": [
+            0.24171610176563263,
+            0.24941712617874146,
+            0.25982579588890076
+          ]
+        },
+        "fore_rom_fraction": {
+          "mean": 0.9026464014617158,
+          "q10_q50_q90": [
+            0.8431031703948975,
+            0.9408082962036133,
+            0.9616094827651978
+          ]
+        },
+        "fore_min_rom_fraction": {
+          "mean": 0.8592394603762902,
+          "q10_q50_q90": [
+            0.793489396572113,
+            0.9047523140907288,
+            0.9389771223068237
+          ]
+        },
+        "fore_participation": {
+          "mean": 0.9262217831628023,
+          "q10_q50_q90": [
+            0.9056603908538818,
+            0.9811320900917053,
+            1.0
+          ]
+        },
+        "attitude_rms": {
+          "mean": 0.08023450002893737,
+          "q10_q50_q90": [
+            0.05480203777551651,
+            0.06441272050142288,
+            0.07495880126953125
+          ]
+        },
+        "action_clip_fraction": {
+          "mean": 0.14459175990397619,
+          "q10_q50_q90": [
+            0.14160533249378204,
+            0.15238340198993683,
+            0.15834210813045502
+          ]
+        },
+        "terminated": {
+          "mean": 0.09440879926672777,
+          "q10_q50_q90": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "timed_out": {
+          "mean": 0.9055912007332723,
+          "q10_q50_q90": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        "pair_joint_cost": {
+          "mean": 0.14484547597964786,
+          "q10_q50_q90": [
+            0.11773040145635605,
+            0.14114496111869812,
+            0.1701640784740448
+          ]
+        },
+        "pair_rom_cost": {
+          "mean": 0.0008433370393426688,
+          "q10_q50_q90": [
+            4.220280061417725e-06,
+            0.00016693721408955753,
+            0.002101846504956484
+          ]
+        },
+        "pair_load_cost": {
+          "mean": 0.0018800011873164818,
+          "q10_q50_q90": [
+            0.0,
+            4.3272906623315066e-05,
+            0.0018876953981816769
+          ]
+        },
+        "pair_stance_cost": {
+          "mean": 0.0007240260116520764,
+          "q10_q50_q90": [
+            0.0,
+            3.0745968615519814e-06,
+            0.0003562776546459645
+          ]
+        },
+        "pair_valid_cycles": {
+          "mean": 45.46287809349221,
+          "q10_q50_q90": [
+            49.0,
+            50.0,
+            50.0
+          ]
+        }
+      },
+      "failure_combinations": {
+        "pattern,stable": 2,
+        "pattern,flight,front_motion,front_cycle,stable": 35,
+        "tracking,pattern,flight,front_motion,front_cycle,stable": 32,
+        "tracking,pattern,flight,front_motion,stable": 5,
+        "tracking,pattern,flight,front_cycle,stable": 10,
+        "flight,stable": 982,
+        "tracking,flight,stable": 18,
+        "pattern,front_motion,front_cycle,stable": 3,
+        "pattern,flight,front_load,front_motion,front_cycle,stable": 3,
+        "tracking,pattern,front_cycle,stable": 1
+      },
+      "stable_failures": {
+        "total": 1091,
+        "clip_exceeded": 1036,
+        "attitude_exceeded": 46,
+        "terminated": 103,
+        "short_episode": 103
+      },
+      "stable_failure_combinations": {
+        "terminated,short": 43,
+        "clipping,attitude,terminated,short": 34,
+        "attitude,terminated,short": 12,
+        "clipping,terminated,short": 14,
+        "clipping": 988
+      }
+    },
+    "last_200_iterations": {
+      "count": 1168,
+      "success_rate": 0.0,
+      "criterion_pass_rates": {
+        "tracking": 0.9940068493150684,
+        "pattern": 0.9965753424657534,
+        "flight": 0.0,
+        "motion": 1.0,
+        "front_load": 1.0,
+        "front_motion": 0.997431506849315,
+        "front_cycle": 0.9965753424657534,
+        "stable": 0.0,
+        "mature": 1.0
+      },
+      "measures": {
+        "vx_rmse": {
+          "mean": 0.11509895644928902,
+          "q10_q50_q90": [
+            0.09622829705476761,
+            0.11209996789693832,
+            0.13410208970308304
+          ]
+        },
+        "contact_accuracy": {
+          "mean": 0.8306213718366949,
+          "q10_q50_q90": [
+            0.8101997971534729,
+            0.8343848586082458,
+            0.8533123135566711
+          ]
+        },
+        "order_accuracy": {
+          "mean": 0.007970546827929043,
+          "q10_q50_q90": [
+            0.004566209856420755,
+            0.004672897048294544,
+            0.013761468231678009
+          ]
+        },
+        "flight_fraction": {
+          "mean": 0.020120428522653264,
+          "q10_q50_q90": [
+            0.01886792480945587,
+            0.01886792480945587,
+            0.01923076994717121
+          ]
+        },
+        "rom_fraction": {
+          "mean": 0.9787240865295881,
+          "q10_q50_q90": [
+            0.9563213586807251,
+            0.9837569296360016,
+            0.994014436006546
+          ]
+        },
+        "fore_load_share": {
+          "mean": 0.5085483491165589,
+          "q10_q50_q90": [
+            0.5041544914245606,
+            0.5082501769065857,
+            0.5127212822437286
+          ]
+        },
+        "fore_min_load_share": {
+          "mean": 0.2489020942952739,
+          "q10_q50_q90": [
+            0.24329052716493607,
+            0.24970528483390808,
+            0.25374373495578767
+          ]
+        },
+        "fore_rom_fraction": {
+          "mean": 0.9541166855966392,
+          "q10_q50_q90": [
+            0.9128042817115783,
+            0.9623501896858215,
+            0.9840596675872803
+          ]
+        },
+        "fore_min_rom_fraction": {
+          "mean": 0.9467766336484315,
+          "q10_q50_q90": [
+            0.903794264793396,
+            0.9538449048995972,
+            0.9816295862197876
+          ]
+        },
+        "fore_participation": {
+          "mean": 0.9828800376096408,
+          "q10_q50_q90": [
+            0.9622641801834106,
+            0.9811320900917053,
+            1.0
+          ]
+        },
+        "attitude_rms": {
+          "mean": 0.048038941572024804,
+          "q10_q50_q90": [
+            0.04202812090516091,
+            0.04739809408783913,
+            0.05315622128546238
+          ]
+        },
+        "action_clip_fraction": {
+          "mean": 0.16363789506052454,
+          "q10_q50_q90": [
+            0.15834209322929382,
+            0.16447597742080688,
+            0.168769770860672
+          ]
+        },
+        "terminated": {
+          "mean": 0.012842465753424657,
+          "q10_q50_q90": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "timed_out": {
+          "mean": 0.9871575342465754,
+          "q10_q50_q90": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        "pair_joint_cost": {
+          "mean": 0.07551578478249785,
+          "q10_q50_q90": [
+            0.06385485082864761,
+            0.07333504408597946,
+            0.08962286040186881
+          ]
+        },
+        "pair_rom_cost": {
+          "mean": 6.50468797701856e-05,
+          "q10_q50_q90": [
+            0.0,
+            2.043923086603172e-05,
+            0.0001871613611001521
+          ]
+        },
+        "pair_load_cost": {
+          "mean": 0.000352304959245335,
+          "q10_q50_q90": [
+            0.0,
+            4.9751637561712414e-05,
+            0.0010749390581622719
+          ]
+        },
+        "pair_stance_cost": {
+          "mean": 5.650036350436326e-05,
+          "q10_q50_q90": [
+            0.0,
+            1.3702950127481017e-05,
+            0.00012332685582805425
+          ]
+        },
+        "pair_valid_cycles": {
+          "mean": 49.4888698630137,
+          "q10_q50_q90": [
+            49.0,
+            50.0,
+            50.0
+          ]
+        }
+      },
+      "failure_combinations": {
+        "flight,stable": 1158,
+        "tracking,flight,stable": 6,
+        "tracking,pattern,flight,front_cycle,stable": 1,
+        "pattern,flight,front_motion,front_cycle,stable": 3
+      },
+      "stable_failures": {
+        "total": 1168,
+        "clip_exceeded": 1165,
+        "attitude_exceeded": 1,
+        "terminated": 15,
+        "short_episode": 15
+      },
+      "stable_failure_combinations": {
+        "clipping": 1153,
+        "clipping,terminated,short": 11,
+        "clipping,attitude,terminated,short": 1,
+        "terminated,short": 3
+      }
+    },
+    "last_1000_iterations": {
+      "count": 6189,
+      "success_rate": 0.0,
+      "criterion_pass_rates": {
+        "tracking": 0.9917595734367426,
+        "pattern": 0.9961221522055259,
+        "flight": 0.0004847309743092584,
+        "motion": 1.0,
+        "front_load": 1.0,
+        "front_motion": 0.9974147681370172,
+        "front_cycle": 0.9961221522055259,
+        "stable": 0.0,
+        "mature": 1.0
+      },
+      "measures": {
+        "vx_rmse": {
+          "mean": 0.11494688854514734,
+          "q10_q50_q90": [
+            0.09327558577060699,
+            0.10890468955039978,
+            0.13138027787208556
+          ]
+        },
+        "contact_accuracy": {
+          "mean": 0.8285521817411509,
+          "q10_q50_q90": [
+            0.8067823052406311,
+            0.831756055355072,
+            0.8519979119300842
+          ]
+        },
+        "order_accuracy": {
+          "mean": 0.008507674617283823,
+          "q10_q50_q90": [
+            0.0,
+            0.004651162773370743,
+            0.0138248847797513
+          ]
+        },
+        "flight_fraction": {
+          "mean": 0.02065198537456448,
+          "q10_q50_q90": [
+            0.01886792480945587,
+            0.01886792480945587,
+            0.01923076994717121
+          ]
+        },
+        "rom_fraction": {
+          "mean": 0.9780275075592427,
+          "q10_q50_q90": [
+            0.9567285537719726,
+            0.9823570847511292,
+            0.9936020612716675
+          ]
+        },
+        "fore_load_share": {
+          "mean": 0.5100274479414231,
+          "q10_q50_q90": [
+            0.5038604021072388,
+            0.5095731019973755,
+            0.5156069993972778
+          ]
+        },
+        "fore_min_load_share": {
+          "mean": 0.2491214979896832,
+          "q10_q50_q90": [
+            0.24253230392932892,
+            0.24985259771347046,
+            0.2547035813331604
+          ]
+        },
+        "fore_rom_fraction": {
+          "mean": 0.9513245582734658,
+          "q10_q50_q90": [
+            0.9102463841438293,
+            0.9587128162384033,
+            0.9833729982376098
+          ]
+        },
+        "fore_min_rom_fraction": {
+          "mean": 0.9407278948323101,
+          "q10_q50_q90": [
+            0.8960346102714538,
+            0.9469813704490662,
+            0.9807237267494202
+          ]
+        },
+        "fore_participation": {
+          "mean": 0.9842054520502366,
+          "q10_q50_q90": [
+            0.9622641801834106,
+            0.9811320900917053,
+            1.0
+          ]
+        },
+        "attitude_rms": {
+          "mean": 0.04911595126464999,
+          "q10_q50_q90": [
+            0.04166572690010071,
+            0.04753607511520386,
+            0.0545728862285614
+          ]
+        },
+        "action_clip_fraction": {
+          "mean": 0.16388951232700477,
+          "q10_q50_q90": [
+            0.1598317176103592,
+            0.1643008291721344,
+            0.16841924488544463
+          ]
+        },
+        "terminated": {
+          "mean": 0.010664081434803683,
+          "q10_q50_q90": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "timed_out": {
+          "mean": 0.9893359185651963,
+          "q10_q50_q90": [
+            1.0,
+            1.0,
+            1.0
+          ]
+        },
+        "pair_joint_cost": {
+          "mean": 0.07982875044927264,
+          "q10_q50_q90": [
+            0.06379214823246002,
+            0.07701712846755981,
+            0.09798516929149627
+          ]
+        },
+        "pair_rom_cost": {
+          "mean": 9.918678728396894e-05,
+          "q10_q50_q90": [
+            0.0,
+            3.6016994272358716e-05,
+            0.00024582252372056245
+          ]
+        },
+        "pair_load_cost": {
+          "mean": 0.0003695375026254335,
+          "q10_q50_q90": [
+            0.0,
+            4.507563426159322e-05,
+            0.0010742187499999999
+          ]
+        },
+        "pair_stance_cost": {
+          "mean": 5.960184045171708e-05,
+          "q10_q50_q90": [
+            0.0,
+            1.3702919204661157e-05,
+            0.00012412365176714957
+          ]
+        },
+        "pair_valid_cycles": {
+          "mean": 49.540959767329134,
+          "q10_q50_q90": [
+            49.0,
+            50.0,
+            50.0
+          ]
+        }
+      },
+      "failure_combinations": {
+        "flight,stable": 6128,
+        "tracking,flight,stable": 37,
+        "tracking,pattern,flight,front_motion,front_cycle,stable": 10,
+        "pattern,flight,front_motion,front_cycle,stable": 6,
+        "pattern,front_cycle,stable": 3,
+        "tracking,pattern,flight,front_cycle,stable": 4,
+        "pattern,flight,front_cycle,stable": 1
+      },
+      "stable_failures": {
+        "total": 6189,
+        "clip_exceeded": 6176,
+        "attitude_exceeded": 14,
+        "terminated": 66,
+        "short_episode": 66
+      },
+      "stable_failure_combinations": {
+        "clipping": 6123,
+        "clipping,terminated,short": 42,
+        "clipping,attitude,terminated,short": 11,
+        "terminated,short": 10,
+        "attitude,terminated,short": 3
+      }
+    }
+  },
+  "tensorboard": {
+    "Episode_Reward/gallop_flight": {
+      "n": 2000,
+      "first": 0.0,
+      "last": 0.0,
+      "first100": 1.8750000162981451e-06,
+      "last100": 9.375000081490726e-07
+    },
+    "Episode_Reward/gallop_fore_use": {
+      "n": 2000,
+      "first": 0.0004957001656293869,
+      "last": 0.9680358171463013,
+      "first100": 0.6711306841112673,
+      "last100": 0.9629238110780716
+    },
+    "Episode_Reward/gallop_pair_joint": {
+      "n": 2000,
+      "first": 0.0,
+      "last": -0.044181257486343384,
+      "first100": -0.05669964233529754,
+      "last100": -0.04352098505944014
+    },
+    "Episode_Reward/gallop_pair_rom": {
+      "n": 2000,
+      "first": 0.0,
+      "last": -6.50720321573317e-05,
+      "first100": -0.0004366424701765936,
+      "last100": -3.825510459734005e-05
+    },
+    "Episode_Reward/gallop_pair_load": {
+      "n": 2000,
+      "first": 0.0,
+      "last": -0.000216588843613863,
+      "first100": -0.0006394274409746004,
+      "last100": -0.00021765646890173685
+    },
+    "Episode_Reward/gallop_pair_stance": {
+      "n": 2000,
+      "first": 0.0,
+      "last": -4.723917299997993e-06,
+      "first100": -0.00012888250601636564,
+      "last100": -1.8663353574766007e-05
+    },
+    "Episode_Termination/time_out": {
+      "n": 2000,
+      "first": 0.01416015625,
+      "last": 0.98046875,
+      "first100": 0.6119742922484874,
+      "last100": 0.990325523018837
+    },
+    "Episode_Termination/base_contact": {
+      "n": 2000,
+      "first": 0.0,
+      "last": 0.0,
+      "first100": 0.0,
+      "last100": 0.0
+    },
+    "Episode_Termination/bad_orientation": {
+      "n": 2000,
+      "first": 0.0,
+      "last": 0.01953125,
+      "first100": 0.2690250677987933,
+      "last100": 0.009064127639867366
+    },
+    "Episode_Termination/gallop_height": {
+      "n": 2000,
+      "first": 0.001953125,
+      "last": 0.0,
+      "first100": 0.0036979166706441902,
+      "last100": 0.0006103515625
+    },
+    "Train/mean_reward": {
+      "n": 2000,
+      "first": -0.0005524593289010227,
+      "last": 140.1737060546875,
+      "first100": 74.56282581952124,
+      "last100": 140.6501676940918
+    },
+    "Train/mean_episode_length": {
+      "n": 2000,
+      "first": 10.857142448425293,
+      "last": 989.030029296875,
+      "first100": 610.5832703304291,
+      "last100": 992.0330993652344
+    },
+    "Train/mean_reward/time": {
+      "n": 2000,
+      "first": -0.0005524593289010227,
+      "last": 140.1737060546875,
+      "first100": 74.56282581952124,
+      "last100": 140.6501676940918
+    },
+    "Train/mean_episode_length/time": {
+      "n": 2000,
+      "first": 10.857142448425293,
+      "last": 989.030029296875,
+      "first100": 610.5832703304291,
+      "last100": 992.0330993652344
+    },
+    "Gallop/speed_cap": {
+      "n": 2000,
+      "first": 2.0,
+      "last": 2.0,
+      "first100": 2.0,
+      "last100": 2.0
+    },
+    "Gallop/gait_weight": {
+      "n": 2000,
+      "first": 1.0,
+      "last": 1.0,
+      "first100": 1.0,
+      "last100": 1.0
+    },
+    "Gallop/success_rate": {
+      "n": 2000,
+      "first": 0.0,
+      "last": 0.0,
+      "first100": 0.0,
+      "last100": 0.0
+    },
+    "Gallop/last_vx_rmse": {
+      "n": 2000,
+      "first": 0.0,
+      "last": 0.10250793397426605,
+      "first100": 0.3822759736329317,
+      "last100": 0.11543321520090104
+    },
+    "Gallop/last_contact_accuracy": {
+      "n": 2000,
+      "first": 0.0,
+      "last": 0.8149316310882568,
+      "first100": 0.73096295773983,
+      "last100": 0.8321174824237824
+    },
+    "Gallop/last_order_accuracy": {
+      "n": 2000,
+      "first": 0.0,
+      "last": 0.004608294926583767,
+      "first100": 0.08390228647738696,
+      "last100": 0.00816115538123995
+    },
+    "Gallop/last_flight_fraction": {
+      "n": 2000,
+      "first": 1.0,
+      "last": 0.01886792480945587,
+      "first100": 0.09039838496595622,
+      "last100": 0.018397370260208844
+    },
+    "Gallop/last_rom_fraction": {
+      "n": 2000,
+      "first": 0.8909076452255249,
+      "last": 0.9956656694412231,
+      "first100": 0.9408267104625702,
+      "last100": 0.9824980479478836
+    },
+    "Gallop/last_action_clip_fraction": {
+      "n": 2000,
+      "first": 0.0,
+      "last": 0.16386263072490692,
+      "first100": 0.13323199577629566,
+      "last100": 0.1626595039665699
+    },
+    "Gallop/last_pair_valid_cycles": {
+      "n": 2000,
+      "first": 0.0,
+      "last": 50.0,
+      "first100": 35.1,
+      "last100": 49.34
+    },
+    "Gallop/last_pair_joint_cost": {
+      "n": 2000,
+      "first": 0.0,
+      "last": 0.0948244258761406,
+      "first100": 0.14222595900297164,
+      "last100": 0.07701087184250355
+    },
+    "Gallop/last_pair_rom_cost": {
+      "n": 2000,
+      "first": 0.0,
+      "last": 4.485827230382711e-05,
+      "first100": 0.0016027183202913875,
+      "last100": 8.285612871280269e-05
+    },
+    "Gallop/last_pair_load_cost": {
+      "n": 2000,
+      "first": 0.0,
+      "last": 0.0009830603376030922,
+      "first100": 0.0035439343997333596,
+      "last100": 0.00044031249749256954
+    },
+    "Gallop/last_pair_stance_cost": {
+      "n": 2000,
+      "first": 0.0,
+      "last": 1.3702919204661157e-05,
+      "first100": 0.0015478273886583337,
+      "last100": 5.24191433305532e-05
+    }
+  }
+}

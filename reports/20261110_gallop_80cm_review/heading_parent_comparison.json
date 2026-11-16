@@ -1,0 +1,177 @@
+{
+  "comparison_available": true,
+  "parent_play": "/home/cvr/GH/go2_animalization/gallop/runs/isaac/play/unitree_go2_gallop/20261110_193602_5f8664",
+  "parent_formal": {
+    "samples": 1042,
+    "seconds": 20.839999999999556,
+    "first_seconds": 9.18,
+    "last_seconds": 30.0,
+    "body_velocity_mean": [
+      2.4964949693423546,
+      0.00647178797432621,
+      0.04961113827882894
+    ],
+    "body_velocity_rmse": [
+      0.1679445063652647,
+      0.04507164875227859
+    ],
+    "body_z_angular_speed_rms": 0.1732616751214894,
+    "roll_pitch_mean_rad": [
+      0.0036562484422709342,
+      0.022305875501797433
+    ],
+    "roll_pitch_std_rad": [
+      0.023615933199737153,
+      0.024623094385800213
+    ],
+    "roll_pitch_rms_rad": [
+      0.023897289669877964,
+      0.033224220969553436
+    ],
+    "roll_pitch_rate_rms": [
+      0.7049892781341704,
+      0.4947759971969976
+    ],
+    "yaw_target_rmse_rad": 0.03970291681423778,
+    "yaw_drift_from_first_sample_rmse_rad": 0.03970291681423778,
+    "initial_yaw_rad": 0.0,
+    "action_clip_fraction": 0.042706333100795746,
+    "root_displacement_xyz": [
+      51.95601272583008,
+      -1.7539136409759521,
+      0.035105377435684204
+    ],
+    "quiet_score": 0.7870693206787109,
+    "pure_rate_quiet_score": 0.7872787714004517,
+    "forward_score": 0.8551139235496521,
+    "along_speed_mean": 2.4990627765655518,
+    "world_cross_speed_rms": 0.09396195185624859,
+    "movement_direction_rms_rad": 0.0379795496909269,
+    "cross_track_max_abs_from_start_m": 0.9388930201530457,
+    "cross_track_first_last_from_start_m": [
+      0.8150205612182617,
+      -0.9388930201530457
+    ],
+    "pose_quality_mean": 0.9997460246086121,
+    "yaw_damping_cost_mean": 0.1642245501279831,
+    "foot_widths": {
+      "front": {
+        "target_m": 0.2698,
+        "mean_m": 0.24829083681106567,
+        "std_m": 0.04377687722444534,
+        "q0_q10_q50_q90_q100_m": [
+          0.12182550132274628,
+          0.1857822984457016,
+          0.24773310124874115,
+          0.3054101139307022,
+          0.3374885320663452
+        ],
+        "rmse_m": 0.04877561330795288,
+        "fraction_within_1cm": 0.09500959692898273,
+        "score_mean": 0.5794119834899902,
+        "by_contacts": {
+          "both_air": {
+            "samples": 507,
+            "mean_m": 0.2497023195028305,
+            "q10_q50_q90_m": [
+              0.16083582639694213,
+              0.2737976312637329,
+              0.3133694171905518
+            ],
+            "fraction_within_1cm": 0.05917159763313609,
+            "fraction_in_success_width_band": 0.3234714003944773
+          },
+          "one_support": {
+            "samples": 145,
+            "mean_m": 0.2673782408237457,
+            "q10_q50_q90_m": [
+              0.23388903439044953,
+              0.27018865942955017,
+              0.29144036769866943
+            ],
+            "fraction_within_1cm": 0.3724137931034483,
+            "fraction_in_success_width_band": 0.8275862068965517
+          },
+          "both_support": {
+            "samples": 390,
+            "mean_m": 0.23935922980308533,
+            "q10_q50_q90_m": [
+              0.22158107608556749,
+              0.24038290232419968,
+              0.2537326514720917
+            ],
+            "fraction_within_1cm": 0.038461538461538464,
+            "fraction_in_success_width_band": 0.5153846153846153
+          }
+        },
+        "success_width_band_m": [
+          0.24,
+          0.3
+        ]
+      },
+      "hind": {
+        "target_m": 0.2698,
+        "mean_m": 0.278913676738739,
+        "std_m": 0.012393840588629246,
+        "q0_q10_q50_q90_q100_m": [
+          0.23927375674247742,
+          0.2643238216638565,
+          0.2769183814525604,
+          0.29672591984272,
+          0.3238494396209717
+        ],
+        "rmse_m": 0.015383951365947723,
+        "fraction_within_1cm": 0.525911708253359,
+        "score_mean": 0.8101261854171753,
+        "by_contacts": {
+          "both_air": {
+            "samples": 267,
+            "mean_m": 0.2864161431789398,
+            "q10_q50_q90_m": [
+              0.26686389446258546,
+              0.2872748374938965,
+              0.3057504534721375
+            ],
+            "fraction_within_1cm": 0.3595505617977528,
+            "fraction_in_success_width_band": 0.7677902621722846
+          },
+          "one_support": {
+            "samples": 198,
+            "mean_m": 0.27351221442222595,
+            "q10_q50_q90_m": [
+              0.2615558385848999,
+              0.27318617701530457,
+              0.2871358335018158
+            ],
+            "fraction_within_1cm": 0.6666666666666666,
+            "fraction_in_success_width_band": 0.9949494949494949
+          },
+          "both_support": {
+            "samples": 577,
+            "mean_m": 0.2772955000400543,
+            "q10_q50_q90_m": [
+              0.2649827241897583,
+              0.2767214775085449,
+              0.290965074300766
+            ],
+            "fraction_within_1cm": 0.5545927209705372,
+            "fraction_in_success_width_band": 0.9826689774696707
+          }
+        },
+        "success_width_band_m": [
+          0.24,
+          0.3
+        ]
+      }
+    }
+  },
+  "current_formal": null,
+  "roll_pitch_rate_reduction_fraction": null,
+  "absolute_yaw_directly_comparable": true,
+  "caveats": [
+    "Both use the same heading reference.",
+    "Different checkpoints, commanded speeds, reward definitions and random states; these observations do not identify the effect of a single reward.",
+    "Formal control windows differ in duration because handover times differ.",
+    "Quiet and width reward formulas/weights can differ; compare physical pose, rates and widths separately."
+  ]
+}

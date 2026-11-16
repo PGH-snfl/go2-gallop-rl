@@ -1,0 +1,30 @@
+{
+  "asset": "/home/cvr/GH/unitree/unitree_rl_lab/unitree_model/Go2/usd/go2.usd",
+  "asset_sha256": "fd3c8c23c97cea3208fae1ab5eeacba4ffa616fe5f1397be6c7edf4feb93f180",
+  "definition": "Lateral pitch-axis spacing FL_thigh-FR_thigh and RL_thigh-RR_thigh, at authored zero pose; not the 9.3cm hip abduction-axis spacing or chassis exterior width",
+  "positions_m": {
+    "FL": [
+      0.19339999556541443,
+      0.1420000046491623,
+      0.0
+    ],
+    "FR": [
+      0.19339999556541443,
+      -0.1420000046491623,
+      0.0
+    ],
+    "RL": [
+      -0.19339999556541443,
+      0.1420000046491623,
+      0.0
+    ],
+    "RR": [
+      -0.19339999556541443,
+      -0.1420000046491623,
+      0.0
+    ]
+  },
+  "front_shoulder_width_m": 0.2840000092983246,
+  "hind_shoulder_width_m": 0.2840000092983246,
+  "target_ratio": 0.95
+}

@@ -1,0 +1,20 @@
+{
+  "original_train_play_files_verified": 52,
+  "original_hashes_unchanged": true,
+  "checkpoint_sha256": "2d0de1f15c57043af564e8800116c321df2befae02a3c87e497a976d815a78bc",
+  "completed_validation_runs": 3,
+  "recordings_readable": 3,
+  "no_policy_updates": true,
+  "policies_unchanged": true,
+  "every_run_same_checkpoint": true,
+  "final_validation_tests": 12,
+  "original_protected_files_prehashed": 35,
+  "training_collected_episodes": 22025,
+  "new_training_complete": true,
+  "extra_policy_updates_during_this_task": 0,
+  "isaac_recordings": 1,
+  "mujoco_recordings": 3,
+  "gui_evaluations": 2,
+  "existing_policy_reward_and_constraints_unchanged": true,
+  "all_evaluation_processes_finished": true
+}

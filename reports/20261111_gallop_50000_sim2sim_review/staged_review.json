@@ -1,0 +1,1551 @@
+{
+  "success_meaning": "active-stage core-first progress; strict_successes/final80cm_successes remain separate",
+  "training": {
+    "all": {
+      "all": {
+        "episodes": 9684,
+        "successes": 5713,
+        "success_rate": 0.5899421726559273,
+        "strict_successes": 252,
+        "final80cm_successes": 0,
+        "startup_completed_rate": 0.8092730276745147,
+        "startup_failed": 38,
+        "terminated": 1862,
+        "criteria": {
+          "tracking": 0.8072077653862041,
+          "pattern": 0.8090665014456836,
+          "flight": 0.8092730276745147,
+          "motion": 0.8092730276745147,
+          "front_load": 0.8092730276745147,
+          "front_motion": 0.8092730276745147,
+          "front_cycle": 0.8092730276745147,
+          "stable": 0.520239570425444,
+          "mature": 0.8092730276745147,
+          "stabilization_pose": 0.9996902106567535,
+          "stabilization_width": 0.12711689384551839,
+          "stabilization_landing": 0.47996695580338705,
+          "stabilization_distance": 0.7929574555968608,
+          "stabilization_measured": 0.808963238331268,
+          "guarded_limits": 0.8088599752168525,
+          "guarded_feet": 0.5210656753407683,
+          "staged_measured": 0.808756712102437,
+          "staged_tracking": 0.6504543577034283,
+          "staged_core": 0.5915943824865758,
+          "staged_pose": 1.0,
+          "staged_heading": 0.9998967368855844,
+          "staged_landing": 0.8057620817843866,
+          "staged_details": 1.0,
+          "staged_regression": 0.5899421726559273
+        },
+        "leap_events": 445740,
+        "leap_mean_m": 0.20474488423920692,
+        "leap_max_m": 0.331133633852005,
+        "landing_events": 430695,
+        "stable_landings": 345629,
+        "stable_landing_event_rate": 0.8024913221653375,
+        "measured_means": {
+          "stabilization_front_width_fraction": 0.5537329703455546,
+          "stabilization_hind_width_fraction": 0.7047651682275231,
+          "stabilization_landing_fraction": 0.6528908197099834,
+          "guarded_front_high": 0.07042693459566948,
+          "guarded_hind_high": 0.05350570096049607,
+          "guarded_intervention": 0.4555181065456575,
+          "action_clip_fraction": 0.026713643429430802,
+          "vx_rmse": 0.18142909476920524,
+          "staged_yaw_rms": 0.03957740868065154
+        },
+        "failure_combinations": {
+          "tracking,pattern,flight,motion,front_load,front_motion,front_cycle,stable,mature,stabilization_width,stabilization_landing,stabilization_distance,stabilization_measured,guarded_limits,guarded_feet,staged_measured": 1847,
+          "stabilization_width,stabilization_landing,staged_tracking": 531,
+          "stable,stabilization_width,stabilization_landing,guarded_limits,staged_tracking": 1,
+          "stable,stabilization_width,stabilization_landing,guarded_feet,staged_tracking": 243,
+          "stabilization_width,stabilization_landing,stabilization_distance,staged_tracking": 74,
+          "stable,stabilization_width,guarded_feet,staged_tracking": 227,
+          "stabilization_width,staged_tracking": 549,
+          "staged_tracking": 161,
+          "stabilization_width,stabilization_distance,staged_tracking": 33,
+          "tracking,stabilization_width,stabilization_landing,staged_tracking": 6,
+          "tracking,stabilization_width,stabilization_landing,stabilization_distance,staged_tracking": 1,
+          "stable,stabilization_pose,stabilization_width,stabilization_landing,staged_tracking": 1,
+          "stable,stabilization_width,stabilization_landing,guarded_feet": 4,
+          "stabilization_landing,staged_tracking": 147,
+          "stable,stabilization_width,stabilization_distance,guarded_feet,staged_tracking": 7,
+          "stable,stabilization_width,stabilization_landing,stabilization_distance,guarded_feet,staged_tracking": 16,
+          "stabilization_landing,stabilization_distance,staged_tracking": 15,
+          "stable,guarded_feet,staged_tracking": 52,
+          "tracking,stable,stabilization_width,guarded_feet,staged_tracking": 2,
+          "stable,stabilization_landing,guarded_feet,staged_tracking": 27,
+          "tracking,pattern,stable,stabilization_width,stabilization_landing,stabilization_distance,stabilization_measured,guarded_limits,guarded_feet,staged_measured,staged_tracking": 2,
+          "tracking,stabilization_distance,staged_tracking": 1,
+          "tracking,stabilization_landing,staged_tracking": 2,
+          "tracking,stable,stabilization_pose,stabilization_width,guarded_feet,staged_tracking": 1,
+          "tracking,staged_tracking": 1,
+          "stabilization_width,stabilization_landing": 2,
+          "stabilization_distance,staged_tracking": 6,
+          "stabilization_landing": 1,
+          "stable,stabilization_width,stabilization_landing,staged_tracking": 2,
+          "tracking,stable,stabilization_pose,stabilization_width,stabilization_landing,stabilization_distance,stabilization_measured,guarded_limits,guarded_feet,staged_measured,staged_tracking": 1,
+          "tracking,stabilization_landing,stabilization_distance,staged_tracking": 1,
+          "tracking,stable,stabilization_landing,staged_tracking": 1,
+          "stable,stabilization_landing,guarded_feet": 1,
+          "stabilization_distance": 1,
+          "stable,stabilization_landing,staged_tracking": 1,
+          "stable,stabilization_width,guarded_feet,staged_measured,staged_tracking": 1,
+          "tracking,stable,stabilization_width,stabilization_landing,staged_tracking": 1,
+          "stable,stabilization_width,staged_measured,staged_tracking": 1
+        }
+      },
+      "measured_10s": {
+        "episodes": 7832,
+        "successes": 5713,
+        "success_rate": 0.7294433094994893,
+        "strict_successes": 252,
+        "final80cm_successes": 0,
+        "startup_completed_rate": 1.0,
+        "startup_failed": 0,
+        "terminated": 10,
+        "criteria": {
+          "tracking": 0.997829417773238,
+          "pattern": 1.0,
+          "flight": 1.0,
+          "motion": 1.0,
+          "front_load": 1.0,
+          "front_motion": 1.0,
+          "front_cycle": 1.0,
+          "stable": 0.6432584269662921,
+          "mature": 1.0,
+          "stabilization_pose": 0.9997446373850868,
+          "stabilization_width": 0.15717568947906027,
+          "stabilization_landing": 0.5932073544433095,
+          "stabilization_distance": 0.9802093973442288,
+          "stabilization_measured": 1.0,
+          "guarded_limits": 0.9998723186925434,
+          "guarded_feet": 0.6441521961184883,
+          "staged_measured": 1.0,
+          "staged_tracking": 0.5684371807967313,
+          "staged_core": 0.7314862104187947,
+          "staged_pose": 1.0,
+          "staged_heading": 0.9998723186925434,
+          "staged_landing": 0.9960418794688458,
+          "staged_details": 1.0,
+          "staged_regression": 0.7294433094994893
+        },
+        "leap_events": 445680,
+        "leap_mean_m": 0.20474959211505908,
+        "leap_max_m": 0.331133633852005,
+        "landing_events": 430642,
+        "stable_landings": 345589,
+        "stable_landing_event_rate": 0.8024972018521185,
+        "measured_means": {
+          "stabilization_front_width_fraction": 0.6842362611431846,
+          "stabilization_hind_width_fraction": 0.8708880873239077,
+          "stabilization_landing_fraction": 0.8068286874031875,
+          "guarded_front_high": 0.0870261647299967,
+          "guarded_hind_high": 0.06612240314408489,
+          "guarded_intervention": 0.5628691739169643,
+          "action_clip_fraction": 0.03300693473185054,
+          "vx_rmse": 0.22402931397268977,
+          "staged_yaw_rms": 0.04888275591228481
+        },
+        "failure_combinations": {
+          "stabilization_width,stabilization_landing,staged_tracking": 531,
+          "stable,stabilization_width,stabilization_landing,guarded_limits,staged_tracking": 1,
+          "stable,stabilization_width,stabilization_landing,guarded_feet,staged_tracking": 243,
+          "stabilization_width,stabilization_landing,stabilization_distance,staged_tracking": 74,
+          "stable,stabilization_width,guarded_feet,staged_tracking": 227,
+          "stabilization_width,staged_tracking": 549,
+          "staged_tracking": 161,
+          "stabilization_width,stabilization_distance,staged_tracking": 33,
+          "tracking,stabilization_width,stabilization_landing,staged_tracking": 6,
+          "tracking,stabilization_width,stabilization_landing,stabilization_distance,staged_tracking": 1,
+          "stable,stabilization_pose,stabilization_width,stabilization_landing,staged_tracking": 1,
+          "stable,stabilization_width,stabilization_landing,guarded_feet": 4,
+          "stabilization_landing,staged_tracking": 147,
+          "stable,stabilization_width,stabilization_distance,guarded_feet,staged_tracking": 7,
+          "stable,stabilization_width,stabilization_landing,stabilization_distance,guarded_feet,staged_tracking": 16,
+          "stabilization_landing,stabilization_distance,staged_tracking": 15,
+          "stable,guarded_feet,staged_tracking": 52,
+          "tracking,stable,stabilization_width,guarded_feet,staged_tracking": 2,
+          "stable,stabilization_landing,guarded_feet,staged_tracking": 27,
+          "tracking,stabilization_distance,staged_tracking": 1,
+          "tracking,stabilization_landing,staged_tracking": 2,
+          "tracking,stable,stabilization_pose,stabilization_width,guarded_feet,staged_tracking": 1,
+          "tracking,staged_tracking": 1,
+          "stabilization_width,stabilization_landing": 2,
+          "stabilization_distance,staged_tracking": 6,
+          "stabilization_landing": 1,
+          "stable,stabilization_width,stabilization_landing,staged_tracking": 2,
+          "tracking,stabilization_landing,stabilization_distance,staged_tracking": 1,
+          "tracking,stable,stabilization_landing,staged_tracking": 1,
+          "stable,stabilization_landing,guarded_feet": 1,
+          "stabilization_distance": 1,
+          "stable,stabilization_landing,staged_tracking": 1,
+          "tracking,stable,stabilization_width,stabilization_landing,staged_tracking": 1
+        }
+      }
+    },
+    "accepted": {
+      "all": {
+        "episodes": 5042,
+        "successes": 3750,
+        "success_rate": 0.7437524791749306,
+        "strict_successes": 179,
+        "final80cm_successes": 0,
+        "startup_completed_rate": 0.9662832209440698,
+        "startup_failed": 12,
+        "terminated": 176,
+        "criteria": {
+          "tracking": 0.96449821499405,
+          "pattern": 0.9662832209440698,
+          "flight": 0.9662832209440698,
+          "motion": 0.9662832209440698,
+          "front_load": 0.9662832209440698,
+          "front_motion": 0.9662832209440698,
+          "front_cycle": 0.9662832209440698,
+          "stable": 0.667393891312971,
+          "mature": 0.9662832209440698,
+          "stabilization_pose": 0.9998016660055533,
+          "stabilization_width": 0.171360571201904,
+          "stabilization_landing": 0.6166203887346291,
+          "stabilization_distance": 0.9512098373661245,
+          "stabilization_measured": 0.9662832209440698,
+          "guarded_limits": 0.9662832209440698,
+          "guarded_feet": 0.6681872272907576,
+          "staged_measured": 0.9660848869496231,
+          "staged_tracking": 0.6225704085680286,
+          "staged_core": 0.7453391511305038,
+          "staged_pose": 1.0,
+          "staged_heading": 0.9998016660055533,
+          "staged_landing": 0.9642998809996033,
+          "staged_details": 1.0,
+          "staged_regression": 0.7437524791749306
+        },
+        "leap_events": 277435,
+        "leap_mean_m": 0.20547881797462283,
+        "leap_max_m": 0.331133633852005,
+        "landing_events": 268037,
+        "stable_landings": 217157,
+        "stable_landing_event_rate": 0.8101754608505543,
+        "measured_means": {
+          "stabilization_front_width_fraction": 0.6740506787779595,
+          "stabilization_hind_width_fraction": 0.8428006082454025,
+          "stabilization_landing_fraction": 0.7871050969776962,
+          "guarded_front_high": 0.08042785605856796,
+          "guarded_hind_high": 0.06689541610563672,
+          "guarded_intervention": 0.5390574774161448,
+          "action_clip_fraction": 0.030687709018301392,
+          "vx_rmse": 0.21132855889273275,
+          "staged_yaw_rms": 0.04677937423477141
+        },
+        "failure_combinations": {
+          "stabilization_width,stabilization_landing,staged_tracking": 254,
+          "stabilization_width,staged_tracking": 349,
+          "stable,stabilization_width,stabilization_landing,guarded_feet,staged_tracking": 60,
+          "stabilization_landing,staged_tracking": 101,
+          "stabilization_width,stabilization_landing,stabilization_distance,staged_tracking": 30,
+          "stable,stabilization_width,guarded_feet,staged_tracking": 101,
+          "stabilization_width,stabilization_distance,staged_tracking": 23,
+          "staged_tracking": 112,
+          "tracking,pattern,flight,motion,front_load,front_motion,front_cycle,stable,mature,stabilization_width,stabilization_landing,stabilization_distance,stabilization_measured,guarded_limits,guarded_feet,staged_measured": 170,
+          "tracking,stabilization_distance,staged_tracking": 1,
+          "tracking,stable,stabilization_pose,stabilization_width,guarded_feet,staged_tracking": 1,
+          "tracking,staged_tracking": 1,
+          "stabilization_width,stabilization_landing": 2,
+          "tracking,stabilization_width,stabilization_landing,staged_tracking": 4,
+          "stabilization_distance,staged_tracking": 5,
+          "stabilization_landing,stabilization_distance,staged_tracking": 8,
+          "stabilization_landing": 1,
+          "stable,stabilization_width,stabilization_landing,staged_tracking": 2,
+          "stable,stabilization_landing,guarded_feet,staged_tracking": 19,
+          "stable,guarded_feet,staged_tracking": 34,
+          "stable,stabilization_landing,guarded_feet": 1,
+          "stable,stabilization_width,stabilization_distance,guarded_feet,staged_tracking": 4,
+          "stabilization_distance": 1,
+          "stable,stabilization_width,stabilization_landing,guarded_feet": 1,
+          "stable,stabilization_width,stabilization_landing,stabilization_distance,guarded_feet,staged_tracking": 4,
+          "tracking,stable,stabilization_width,guarded_feet,staged_tracking": 1,
+          "tracking,stable,stabilization_width,stabilization_landing,staged_tracking": 1,
+          "stable,stabilization_width,staged_measured,staged_tracking": 1
+        }
+      },
+      "measured_10s": {
+        "episodes": 4871,
+        "successes": 3750,
+        "success_rate": 0.7698624512420448,
+        "strict_successes": 179,
+        "final80cm_successes": 0,
+        "startup_completed_rate": 1.0,
+        "startup_failed": 0,
+        "terminated": 5,
+        "criteria": {
+          "tracking": 0.9981523301170191,
+          "pattern": 1.0,
+          "flight": 1.0,
+          "motion": 1.0,
+          "front_load": 1.0,
+          "front_motion": 1.0,
+          "front_cycle": 1.0,
+          "stable": 0.6908232395811948,
+          "mature": 1.0,
+          "stabilization_pose": 0.9997947033463355,
+          "stabilization_width": 0.1773763087661671,
+          "stabilization_landing": 0.6380619995894067,
+          "stabilization_distance": 0.9843974543214946,
+          "stabilization_measured": 1.0,
+          "guarded_limits": 1.0,
+          "guarded_feet": 0.6914391295421884,
+          "staged_measured": 1.0,
+          "staged_tracking": 0.609525764730035,
+          "staged_core": 0.7715048244713612,
+          "staged_pose": 1.0,
+          "staged_heading": 0.9997947033463355,
+          "staged_landing": 0.9979470334633546,
+          "staged_details": 1.0,
+          "staged_regression": 0.7698624512420448
+        },
+        "leap_events": 277416,
+        "leap_mean_m": 0.20548103408532986,
+        "leap_max_m": 0.331133633852005,
+        "landing_events": 268020,
+        "stable_landings": 217143,
+        "stable_landing_event_rate": 0.8101746138347885,
+        "measured_means": {
+          "stabilization_front_width_fraction": 0.6975550016713715,
+          "stabilization_hind_width_fraction": 0.8722078264603941,
+          "stabilization_landing_fraction": 0.8145679264092098,
+          "guarded_front_high": 0.0832323024182857,
+          "guarded_hind_high": 0.06923259633742969,
+          "guarded_intervention": 0.5578639620972032,
+          "action_clip_fraction": 0.03175904335895008,
+          "vx_rmse": 0.21868619153299412,
+          "staged_yaw_rms": 0.048412177399691066
+        },
+        "failure_combinations": {
+          "stabilization_width,stabilization_landing,staged_tracking": 254,
+          "stabilization_width,staged_tracking": 349,
+          "stable,stabilization_width,stabilization_landing,guarded_feet,staged_tracking": 60,
+          "stabilization_landing,staged_tracking": 101,
+          "stabilization_width,stabilization_landing,stabilization_distance,staged_tracking": 30,
+          "stable,stabilization_width,guarded_feet,staged_tracking": 101,
+          "stabilization_width,stabilization_distance,staged_tracking": 23,
+          "staged_tracking": 112,
+          "tracking,stabilization_distance,staged_tracking": 1,
+          "tracking,stable,stabilization_pose,stabilization_width,guarded_feet,staged_tracking": 1,
+          "tracking,staged_tracking": 1,
+          "stabilization_width,stabilization_landing": 2,
+          "tracking,stabilization_width,stabilization_landing,staged_tracking": 4,
+          "stabilization_distance,staged_tracking": 5,
+          "stabilization_landing,stabilization_distance,staged_tracking": 8,
+          "stabilization_landing": 1,
+          "stable,stabilization_width,stabilization_landing,staged_tracking": 2,
+          "stable,stabilization_landing,guarded_feet,staged_tracking": 19,
+          "stable,guarded_feet,staged_tracking": 34,
+          "stable,stabilization_landing,guarded_feet": 1,
+          "stable,stabilization_width,stabilization_distance,guarded_feet,staged_tracking": 4,
+          "stabilization_distance": 1,
+          "stable,stabilization_width,stabilization_landing,guarded_feet": 1,
+          "stable,stabilization_width,stabilization_landing,stabilization_distance,guarded_feet,staged_tracking": 4,
+          "tracking,stable,stabilization_width,guarded_feet,staged_tracking": 1,
+          "tracking,stable,stabilization_width,stabilization_landing,staged_tracking": 1
+        }
+      }
+    },
+    "windows": [
+      {
+        "start_iteration": 0,
+        "end_iteration": 1000,
+        "all": {
+          "episodes": 4820,
+          "successes": 2603,
+          "success_rate": 0.5400414937759336,
+          "strict_successes": 85,
+          "final80cm_successes": 0,
+          "startup_completed_rate": 0.8053941908713693,
+          "startup_failed": 19,
+          "terminated": 943,
+          "criteria": {
+            "tracking": 0.8031120331950208,
+            "pattern": 0.8049792531120332,
+            "flight": 0.8053941908713693,
+            "motion": 0.8053941908713693,
+            "front_load": 0.8053941908713693,
+            "front_motion": 0.8053941908713693,
+            "front_cycle": 0.8053941908713693,
+            "stable": 0.6178423236514523,
+            "mature": 0.8053941908713693,
+            "stabilization_pose": 0.9995850622406639,
+            "stabilization_width": 0.08547717842323652,
+            "stabilization_landing": 0.43008298755186725,
+            "stabilization_distance": 0.7848547717842324,
+            "stabilization_measured": 0.8049792531120332,
+            "guarded_limits": 0.8047717842323652,
+            "guarded_feet": 0.6182572614107884,
+            "staged_measured": 0.8049792531120332,
+            "staged_tracking": 0.59149377593361,
+            "staged_core": 0.541908713692946,
+            "staged_pose": 1.0,
+            "staged_heading": 1.0,
+            "staged_landing": 0.8004149377593361,
+            "staged_details": 1.0,
+            "staged_regression": 0.5400414937759336
+          },
+          "leap_events": 220460,
+          "leap_mean_m": 0.2037933624372431,
+          "leap_max_m": 0.331133633852005,
+          "landing_events": 212884,
+          "stable_landings": 168684,
+          "stable_landing_event_rate": 0.7923751902444524,
+          "measured_means": {
+            "stabilization_front_width_fraction": 0.5314870106697824,
+            "stabilization_hind_width_fraction": 0.7024457452950141,
+            "stabilization_landing_fraction": 0.6416923298133359,
+            "guarded_front_high": 0.06424211672433802,
+            "guarded_hind_high": 0.044977233107723454,
+            "guarded_intervention": 0.4589090442385416,
+            "action_clip_fraction": 0.027147250835053406,
+            "vx_rmse": 0.18740768741460756,
+            "staged_yaw_rms": 0.040597254409613204
+          },
+          "failure_combinations": {
+            "tracking,pattern,flight,motion,front_load,front_motion,front_cycle,stable,mature,stabilization_width,stabilization_landing,stabilization_distance,stabilization_measured,guarded_limits,guarded_feet,staged_measured": 938,
+            "stabilization_width,stabilization_landing,staged_tracking": 389,
+            "stable,stabilization_width,stabilization_landing,guarded_limits,staged_tracking": 1,
+            "stable,stabilization_width,stabilization_landing,guarded_feet,staged_tracking": 165,
+            "stabilization_width,stabilization_landing,stabilization_distance,staged_tracking": 53,
+            "stable,stabilization_width,guarded_feet,staged_tracking": 106,
+            "stabilization_width,staged_tracking": 352,
+            "staged_tracking": 75,
+            "stabilization_width,stabilization_distance,staged_tracking": 20,
+            "tracking,stabilization_width,stabilization_landing,staged_tracking": 3,
+            "tracking,stabilization_width,stabilization_landing,stabilization_distance,staged_tracking": 1,
+            "stable,stabilization_pose,stabilization_width,stabilization_landing,staged_tracking": 1,
+            "stable,stabilization_width,stabilization_landing,guarded_feet": 2,
+            "stabilization_landing,staged_tracking": 74,
+            "stable,stabilization_width,stabilization_distance,guarded_feet,staged_tracking": 1,
+            "stable,stabilization_width,stabilization_landing,stabilization_distance,guarded_feet,staged_tracking": 10,
+            "stabilization_landing,stabilization_distance,staged_tracking": 6,
+            "stable,guarded_feet,staged_tracking": 3,
+            "tracking,stable,stabilization_width,guarded_feet,staged_tracking": 1,
+            "stable,stabilization_landing,guarded_feet,staged_tracking": 3,
+            "tracking,pattern,stable,stabilization_width,stabilization_landing,stabilization_distance,stabilization_measured,guarded_limits,guarded_feet,staged_measured,staged_tracking": 2,
+            "tracking,stabilization_distance,staged_tracking": 1,
+            "tracking,stabilization_landing,staged_tracking": 1,
+            "tracking,stable,stabilization_pose,stabilization_width,guarded_feet,staged_tracking": 1,
+            "tracking,staged_tracking": 1,
+            "stabilization_width,stabilization_landing": 1,
+            "stabilization_distance,staged_tracking": 5,
+            "stabilization_landing": 1
+          }
+        },
+        "measured_10s": {
+          "episodes": 3880,
+          "successes": 2603,
+          "success_rate": 0.6708762886597938,
+          "strict_successes": 85,
+          "final80cm_successes": 0,
+          "startup_completed_rate": 1.0,
+          "startup_failed": 0,
+          "terminated": 3,
+          "criteria": {
+            "tracking": 0.997680412371134,
+            "pattern": 1.0,
+            "flight": 1.0,
+            "motion": 1.0,
+            "front_load": 1.0,
+            "front_motion": 1.0,
+            "front_cycle": 1.0,
+            "stable": 0.7675257731958763,
+            "mature": 1.0,
+            "stabilization_pose": 0.9994845360824742,
+            "stabilization_width": 0.10618556701030928,
+            "stabilization_landing": 0.5342783505154639,
+            "stabilization_distance": 0.975,
+            "stabilization_measured": 1.0,
+            "guarded_limits": 0.9997422680412371,
+            "guarded_feet": 0.7680412371134021,
+            "staged_measured": 1.0,
+            "staged_tracking": 0.4930412371134021,
+            "staged_core": 0.6731958762886598,
+            "staged_pose": 1.0,
+            "staged_heading": 1.0,
+            "staged_landing": 0.9943298969072165,
+            "staged_details": 1.0,
+            "staged_regression": 0.6708762886597938
+          },
+          "leap_events": 220450,
+          "leap_mean_m": 0.20379377295118417,
+          "leap_max_m": 0.331133633852005,
+          "landing_events": 212875,
+          "stable_landings": 168678,
+          "stable_landing_event_rate": 0.7923805049911921,
+          "measured_means": {
+            "stabilization_front_width_fraction": 0.6599094567647608,
+            "stabilization_hind_width_fraction": 0.8722299160877454,
+            "stabilization_landing_fraction": 0.7968188220846284,
+            "guarded_front_high": 0.07975981488113397,
+            "guarded_hind_high": 0.055867621812431774,
+            "guarded_intervention": 0.5697965332834991,
+            "action_clip_fraction": 0.03370666905863153,
+            "vx_rmse": 0.2326022253400579,
+            "staged_yaw_rms": 0.05038503725561745
+          },
+          "failure_combinations": {
+            "stabilization_width,stabilization_landing,staged_tracking": 389,
+            "stable,stabilization_width,stabilization_landing,guarded_limits,staged_tracking": 1,
+            "stable,stabilization_width,stabilization_landing,guarded_feet,staged_tracking": 165,
+            "stabilization_width,stabilization_landing,stabilization_distance,staged_tracking": 53,
+            "stable,stabilization_width,guarded_feet,staged_tracking": 106,
+            "stabilization_width,staged_tracking": 352,
+            "staged_tracking": 75,
+            "stabilization_width,stabilization_distance,staged_tracking": 20,
+            "tracking,stabilization_width,stabilization_landing,staged_tracking": 3,
+            "tracking,stabilization_width,stabilization_landing,stabilization_distance,staged_tracking": 1,
+            "stable,stabilization_pose,stabilization_width,stabilization_landing,staged_tracking": 1,
+            "stable,stabilization_width,stabilization_landing,guarded_feet": 2,
+            "stabilization_landing,staged_tracking": 74,
+            "stable,stabilization_width,stabilization_distance,guarded_feet,staged_tracking": 1,
+            "stable,stabilization_width,stabilization_landing,stabilization_distance,guarded_feet,staged_tracking": 10,
+            "stabilization_landing,stabilization_distance,staged_tracking": 6,
+            "stable,guarded_feet,staged_tracking": 3,
+            "tracking,stable,stabilization_width,guarded_feet,staged_tracking": 1,
+            "stable,stabilization_landing,guarded_feet,staged_tracking": 3,
+            "tracking,stabilization_distance,staged_tracking": 1,
+            "tracking,stabilization_landing,staged_tracking": 1,
+            "tracking,stable,stabilization_pose,stabilization_width,guarded_feet,staged_tracking": 1,
+            "tracking,staged_tracking": 1,
+            "stabilization_width,stabilization_landing": 1,
+            "stabilization_distance,staged_tracking": 5,
+            "stabilization_landing": 1
+          }
+        }
+      },
+      {
+        "start_iteration": 1000,
+        "end_iteration": 2000,
+        "all": {
+          "episodes": 4864,
+          "successes": 3110,
+          "success_rate": 0.639391447368421,
+          "strict_successes": 167,
+          "final80cm_successes": 0,
+          "startup_completed_rate": 0.8131167763157895,
+          "startup_failed": 19,
+          "terminated": 919,
+          "criteria": {
+            "tracking": 0.811266447368421,
+            "pattern": 0.8131167763157895,
+            "flight": 0.8131167763157895,
+            "motion": 0.8131167763157895,
+            "front_load": 0.8131167763157895,
+            "front_motion": 0.8131167763157895,
+            "front_cycle": 0.8131167763157895,
+            "stable": 0.42351973684210525,
+            "mature": 0.8131167763157895,
+            "stabilization_pose": 0.9997944078947368,
+            "stabilization_width": 0.16837993421052633,
+            "stabilization_landing": 0.5293996710526315,
+            "stabilization_distance": 0.8009868421052632,
+            "stabilization_measured": 0.8129111842105263,
+            "guarded_limits": 0.8129111842105263,
+            "guarded_feet": 0.42475328947368424,
+            "staged_measured": 0.8125,
+            "staged_tracking": 0.7088815789473685,
+            "staged_core": 0.6408305921052632,
+            "staged_pose": 1.0,
+            "staged_heading": 0.9997944078947368,
+            "staged_landing": 0.8110608552631579,
+            "staged_details": 1.0,
+            "staged_regression": 0.639391447368421
+          },
+          "leap_events": 225280,
+          "leap_mean_m": 0.20567604766454844,
+          "leap_max_m": 0.32533279061317444,
+          "landing_events": 217811,
+          "stable_landings": 176945,
+          "stable_landing_event_rate": 0.8123786218326898,
+          "measured_means": {
+            "stabilization_front_width_fraction": 0.5757776918992596,
+            "stabilization_hind_width_fraction": 0.7070636095381096,
+            "stabilization_landing_fraction": 0.6639880074776316,
+            "guarded_front_high": 0.07655580427902016,
+            "guarded_hind_high": 0.061957019844205784,
+            "guarded_intervention": 0.45215784345361354,
+            "action_clip_fraction": 0.0262839584592209,
+            "vx_rmse": 0.17550458478753603,
+            "staged_yaw_rms": 0.03856678852983015
+          },
+          "failure_combinations": {
+            "stabilization_width,stabilization_landing,staged_tracking": 142,
+            "stabilization_width,staged_tracking": 197,
+            "tracking,pattern,flight,motion,front_load,front_motion,front_cycle,stable,mature,stabilization_width,stabilization_landing,stabilization_distance,stabilization_measured,guarded_limits,guarded_feet,staged_measured": 909,
+            "staged_tracking": 86,
+            "stabilization_width,stabilization_distance,staged_tracking": 13,
+            "stabilization_landing,staged_tracking": 73,
+            "stabilization_width,stabilization_landing,stabilization_distance,staged_tracking": 21,
+            "stabilization_landing,stabilization_distance,staged_tracking": 9,
+            "stable,stabilization_width,stabilization_landing,staged_tracking": 2,
+            "stabilization_width,stabilization_landing": 1,
+            "tracking,stabilization_width,stabilization_landing,staged_tracking": 3,
+            "tracking,stable,stabilization_pose,stabilization_width,stabilization_landing,stabilization_distance,stabilization_measured,guarded_limits,guarded_feet,staged_measured,staged_tracking": 1,
+            "stable,stabilization_width,stabilization_landing,guarded_feet": 2,
+            "stable,stabilization_landing,guarded_feet,staged_tracking": 24,
+            "stable,stabilization_width,guarded_feet,staged_tracking": 121,
+            "stable,guarded_feet,staged_tracking": 49,
+            "stable,stabilization_width,stabilization_landing,guarded_feet,staged_tracking": 78,
+            "tracking,stabilization_landing,stabilization_distance,staged_tracking": 1,
+            "tracking,stable,stabilization_landing,staged_tracking": 1,
+            "stable,stabilization_landing,guarded_feet": 1,
+            "stabilization_distance,staged_tracking": 1,
+            "stable,stabilization_width,stabilization_distance,guarded_feet,staged_tracking": 6,
+            "stabilization_distance": 1,
+            "stable,stabilization_width,stabilization_landing,stabilization_distance,guarded_feet,staged_tracking": 6,
+            "stable,stabilization_landing,staged_tracking": 1,
+            "stable,stabilization_width,guarded_feet,staged_measured,staged_tracking": 1,
+            "tracking,stable,stabilization_width,guarded_feet,staged_tracking": 1,
+            "tracking,stable,stabilization_width,stabilization_landing,staged_tracking": 1,
+            "tracking,stabilization_landing,staged_tracking": 1,
+            "stable,stabilization_width,staged_measured,staged_tracking": 1
+          }
+        },
+        "measured_10s": {
+          "episodes": 3952,
+          "successes": 3110,
+          "success_rate": 0.7869433198380567,
+          "strict_successes": 167,
+          "final80cm_successes": 0,
+          "startup_completed_rate": 1.0,
+          "startup_failed": 0,
+          "terminated": 7,
+          "criteria": {
+            "tracking": 0.9979757085020243,
+            "pattern": 1.0,
+            "flight": 1.0,
+            "motion": 1.0,
+            "front_load": 1.0,
+            "front_motion": 1.0,
+            "front_cycle": 1.0,
+            "stable": 0.521255060728745,
+            "mature": 1.0,
+            "stabilization_pose": 1.0,
+            "stabilization_width": 0.20723684210526316,
+            "stabilization_landing": 0.6510627530364372,
+            "stabilization_distance": 0.9853238866396761,
+            "stabilization_measured": 1.0,
+            "guarded_limits": 1.0,
+            "guarded_feet": 0.5225202429149798,
+            "staged_measured": 1.0,
+            "staged_tracking": 0.6424595141700404,
+            "staged_core": 0.7887145748987854,
+            "staged_pose": 1.0,
+            "staged_heading": 0.999746963562753,
+            "staged_landing": 0.9977226720647774,
+            "staged_details": 1.0,
+            "staged_regression": 0.7869433198380567
+          },
+          "leap_events": 225230,
+          "leap_mean_m": 0.2056851261676996,
+          "leap_max_m": 0.32533279061317444,
+          "landing_events": 217767,
+          "stable_landings": 176911,
+          "stable_landing_event_rate": 0.8123866334201233,
+          "measured_means": {
+            "stabilization_front_width_fraction": 0.708119864632123,
+            "stabilization_hind_width_fraction": 0.8695707048330954,
+            "stabilization_landing_fraction": 0.8166561867544043,
+            "guarded_front_high": 0.09416013168687612,
+            "guarded_hind_high": 0.07619035647576863,
+            "guarded_intervention": 0.5560680215024514,
+            "action_clip_fraction": 0.03231994860130645,
+            "vx_rmse": 0.2156125892496664,
+            "staged_yaw_rms": 0.047407844067110044
+          },
+          "failure_combinations": {
+            "stabilization_width,stabilization_landing,staged_tracking": 142,
+            "stabilization_width,staged_tracking": 197,
+            "staged_tracking": 86,
+            "stabilization_width,stabilization_distance,staged_tracking": 13,
+            "stabilization_landing,staged_tracking": 73,
+            "stabilization_width,stabilization_landing,stabilization_distance,staged_tracking": 21,
+            "stabilization_landing,stabilization_distance,staged_tracking": 9,
+            "stable,stabilization_width,stabilization_landing,staged_tracking": 2,
+            "stabilization_width,stabilization_landing": 1,
+            "tracking,stabilization_width,stabilization_landing,staged_tracking": 3,
+            "stable,stabilization_width,stabilization_landing,guarded_feet": 2,
+            "stable,stabilization_landing,guarded_feet,staged_tracking": 24,
+            "stable,stabilization_width,guarded_feet,staged_tracking": 121,
+            "stable,guarded_feet,staged_tracking": 49,
+            "stable,stabilization_width,stabilization_landing,guarded_feet,staged_tracking": 78,
+            "tracking,stabilization_landing,stabilization_distance,staged_tracking": 1,
+            "tracking,stable,stabilization_landing,staged_tracking": 1,
+            "stable,stabilization_landing,guarded_feet": 1,
+            "stabilization_distance,staged_tracking": 1,
+            "stable,stabilization_width,stabilization_distance,guarded_feet,staged_tracking": 6,
+            "stabilization_distance": 1,
+            "stable,stabilization_width,stabilization_landing,stabilization_distance,guarded_feet,staged_tracking": 6,
+            "stable,stabilization_landing,staged_tracking": 1,
+            "tracking,stable,stabilization_width,guarded_feet,staged_tracking": 1,
+            "tracking,stable,stabilization_width,stabilization_landing,staged_tracking": 1,
+            "tracking,stabilization_landing,staged_tracking": 1
+          }
+        }
+      }
+    ],
+    "by_stage": {
+      "1": {
+        "all": {
+          "episodes": 9684,
+          "successes": 5713,
+          "success_rate": 0.5899421726559273,
+          "strict_successes": 252,
+          "final80cm_successes": 0,
+          "startup_completed_rate": 0.8092730276745147,
+          "startup_failed": 38,
+          "terminated": 1862,
+          "criteria": {
+            "tracking": 0.8072077653862041,
+            "pattern": 0.8090665014456836,
+            "flight": 0.8092730276745147,
+            "motion": 0.8092730276745147,
+            "front_load": 0.8092730276745147,
+            "front_motion": 0.8092730276745147,
+            "front_cycle": 0.8092730276745147,
+            "stable": 0.520239570425444,
+            "mature": 0.8092730276745147,
+            "stabilization_pose": 0.9996902106567535,
+            "stabilization_width": 0.12711689384551839,
+            "stabilization_landing": 0.47996695580338705,
+            "stabilization_distance": 0.7929574555968608,
+            "stabilization_measured": 0.808963238331268,
+            "guarded_limits": 0.8088599752168525,
+            "guarded_feet": 0.5210656753407683,
+            "staged_measured": 0.808756712102437,
+            "staged_tracking": 0.6504543577034283,
+            "staged_core": 0.5915943824865758,
+            "staged_pose": 1.0,
+            "staged_heading": 0.9998967368855844,
+            "staged_landing": 0.8057620817843866,
+            "staged_details": 1.0,
+            "staged_regression": 0.5899421726559273
+          },
+          "leap_events": 445740,
+          "leap_mean_m": 0.20474488423920692,
+          "leap_max_m": 0.331133633852005,
+          "landing_events": 430695,
+          "stable_landings": 345629,
+          "stable_landing_event_rate": 0.8024913221653375,
+          "measured_means": {
+            "stabilization_front_width_fraction": 0.5537329703455546,
+            "stabilization_hind_width_fraction": 0.7047651682275231,
+            "stabilization_landing_fraction": 0.6528908197099834,
+            "guarded_front_high": 0.07042693459566948,
+            "guarded_hind_high": 0.05350570096049607,
+            "guarded_intervention": 0.4555181065456575,
+            "action_clip_fraction": 0.026713643429430802,
+            "vx_rmse": 0.18142909476920524,
+            "staged_yaw_rms": 0.03957740868065154
+          },
+          "failure_combinations": {
+            "tracking,pattern,flight,motion,front_load,front_motion,front_cycle,stable,mature,stabilization_width,stabilization_landing,stabilization_distance,stabilization_measured,guarded_limits,guarded_feet,staged_measured": 1847,
+            "stabilization_width,stabilization_landing,staged_tracking": 531,
+            "stable,stabilization_width,stabilization_landing,guarded_limits,staged_tracking": 1,
+            "stable,stabilization_width,stabilization_landing,guarded_feet,staged_tracking": 243,
+            "stabilization_width,stabilization_landing,stabilization_distance,staged_tracking": 74,
+            "stable,stabilization_width,guarded_feet,staged_tracking": 227,
+            "stabilization_width,staged_tracking": 549,
+            "staged_tracking": 161,
+            "stabilization_width,stabilization_distance,staged_tracking": 33,
+            "tracking,stabilization_width,stabilization_landing,staged_tracking": 6,
+            "tracking,stabilization_width,stabilization_landing,stabilization_distance,staged_tracking": 1,
+            "stable,stabilization_pose,stabilization_width,stabilization_landing,staged_tracking": 1,
+            "stable,stabilization_width,stabilization_landing,guarded_feet": 4,
+            "stabilization_landing,staged_tracking": 147,
+            "stable,stabilization_width,stabilization_distance,guarded_feet,staged_tracking": 7,
+            "stable,stabilization_width,stabilization_landing,stabilization_distance,guarded_feet,staged_tracking": 16,
+            "stabilization_landing,stabilization_distance,staged_tracking": 15,
+            "stable,guarded_feet,staged_tracking": 52,
+            "tracking,stable,stabilization_width,guarded_feet,staged_tracking": 2,
+            "stable,stabilization_landing,guarded_feet,staged_tracking": 27,
+            "tracking,pattern,stable,stabilization_width,stabilization_landing,stabilization_distance,stabilization_measured,guarded_limits,guarded_feet,staged_measured,staged_tracking": 2,
+            "tracking,stabilization_distance,staged_tracking": 1,
+            "tracking,stabilization_landing,staged_tracking": 2,
+            "tracking,stable,stabilization_pose,stabilization_width,guarded_feet,staged_tracking": 1,
+            "tracking,staged_tracking": 1,
+            "stabilization_width,stabilization_landing": 2,
+            "stabilization_distance,staged_tracking": 6,
+            "stabilization_landing": 1,
+            "stable,stabilization_width,stabilization_landing,staged_tracking": 2,
+            "tracking,stable,stabilization_pose,stabilization_width,stabilization_landing,stabilization_distance,stabilization_measured,guarded_limits,guarded_feet,staged_measured,staged_tracking": 1,
+            "tracking,stabilization_landing,stabilization_distance,staged_tracking": 1,
+            "tracking,stable,stabilization_landing,staged_tracking": 1,
+            "stable,stabilization_landing,guarded_feet": 1,
+            "stabilization_distance": 1,
+            "stable,stabilization_landing,staged_tracking": 1,
+            "stable,stabilization_width,guarded_feet,staged_measured,staged_tracking": 1,
+            "tracking,stable,stabilization_width,stabilization_landing,staged_tracking": 1,
+            "stable,stabilization_width,staged_measured,staged_tracking": 1
+          }
+        },
+        "measured_10s": {
+          "episodes": 7832,
+          "successes": 5713,
+          "success_rate": 0.7294433094994893,
+          "strict_successes": 252,
+          "final80cm_successes": 0,
+          "startup_completed_rate": 1.0,
+          "startup_failed": 0,
+          "terminated": 10,
+          "criteria": {
+            "tracking": 0.997829417773238,
+            "pattern": 1.0,
+            "flight": 1.0,
+            "motion": 1.0,
+            "front_load": 1.0,
+            "front_motion": 1.0,
+            "front_cycle": 1.0,
+            "stable": 0.6432584269662921,
+            "mature": 1.0,
+            "stabilization_pose": 0.9997446373850868,
+            "stabilization_width": 0.15717568947906027,
+            "stabilization_landing": 0.5932073544433095,
+            "stabilization_distance": 0.9802093973442288,
+            "stabilization_measured": 1.0,
+            "guarded_limits": 0.9998723186925434,
+            "guarded_feet": 0.6441521961184883,
+            "staged_measured": 1.0,
+            "staged_tracking": 0.5684371807967313,
+            "staged_core": 0.7314862104187947,
+            "staged_pose": 1.0,
+            "staged_heading": 0.9998723186925434,
+            "staged_landing": 0.9960418794688458,
+            "staged_details": 1.0,
+            "staged_regression": 0.7294433094994893
+          },
+          "leap_events": 445680,
+          "leap_mean_m": 0.20474959211505908,
+          "leap_max_m": 0.331133633852005,
+          "landing_events": 430642,
+          "stable_landings": 345589,
+          "stable_landing_event_rate": 0.8024972018521185,
+          "measured_means": {
+            "stabilization_front_width_fraction": 0.6842362611431846,
+            "stabilization_hind_width_fraction": 0.8708880873239077,
+            "stabilization_landing_fraction": 0.8068286874031875,
+            "guarded_front_high": 0.0870261647299967,
+            "guarded_hind_high": 0.06612240314408489,
+            "guarded_intervention": 0.5628691739169643,
+            "action_clip_fraction": 0.03300693473185054,
+            "vx_rmse": 0.22402931397268977,
+            "staged_yaw_rms": 0.04888275591228481
+          },
+          "failure_combinations": {
+            "stabilization_width,stabilization_landing,staged_tracking": 531,
+            "stable,stabilization_width,stabilization_landing,guarded_limits,staged_tracking": 1,
+            "stable,stabilization_width,stabilization_landing,guarded_feet,staged_tracking": 243,
+            "stabilization_width,stabilization_landing,stabilization_distance,staged_tracking": 74,
+            "stable,stabilization_width,guarded_feet,staged_tracking": 227,
+            "stabilization_width,staged_tracking": 549,
+            "staged_tracking": 161,
+            "stabilization_width,stabilization_distance,staged_tracking": 33,
+            "tracking,stabilization_width,stabilization_landing,staged_tracking": 6,
+            "tracking,stabilization_width,stabilization_landing,stabilization_distance,staged_tracking": 1,
+            "stable,stabilization_pose,stabilization_width,stabilization_landing,staged_tracking": 1,
+            "stable,stabilization_width,stabilization_landing,guarded_feet": 4,
+            "stabilization_landing,staged_tracking": 147,
+            "stable,stabilization_width,stabilization_distance,guarded_feet,staged_tracking": 7,
+            "stable,stabilization_width,stabilization_landing,stabilization_distance,guarded_feet,staged_tracking": 16,
+            "stabilization_landing,stabilization_distance,staged_tracking": 15,
+            "stable,guarded_feet,staged_tracking": 52,
+            "tracking,stable,stabilization_width,guarded_feet,staged_tracking": 2,
+            "stable,stabilization_landing,guarded_feet,staged_tracking": 27,
+            "tracking,stabilization_distance,staged_tracking": 1,
+            "tracking,stabilization_landing,staged_tracking": 2,
+            "tracking,stable,stabilization_pose,stabilization_width,guarded_feet,staged_tracking": 1,
+            "tracking,staged_tracking": 1,
+            "stabilization_width,stabilization_landing": 2,
+            "stabilization_distance,staged_tracking": 6,
+            "stabilization_landing": 1,
+            "stable,stabilization_width,stabilization_landing,staged_tracking": 2,
+            "tracking,stabilization_landing,stabilization_distance,staged_tracking": 1,
+            "tracking,stable,stabilization_landing,staged_tracking": 1,
+            "stable,stabilization_landing,guarded_feet": 1,
+            "stabilization_distance": 1,
+            "stable,stabilization_landing,staged_tracking": 1,
+            "tracking,stable,stabilization_width,stabilization_landing,staged_tracking": 1
+          }
+        }
+      }
+    },
+    "recorded_episodes": 9684,
+    "accepted_episodes": 5042,
+    "curriculum_decisions": 48,
+    "complete_cohorts": 19,
+    "promotions": 0,
+    "reason_counts": {
+      "adapting_stage": 8,
+      "waiting_for_cohort": 21,
+      "hold": 18,
+      "confirming_success": 1
+    },
+    "cohort_success_rate_max": 0.81640625,
+    "cohort_success_rate_last": 0.78515625,
+    "cohort_success_rate_last10_mean": 0.7640625,
+    "last_complete_cohort": {
+      "step": 47000,
+      "speed_before": 2.75,
+      "speed_cap": 2.75,
+      "level": 0,
+      "staged_index_before": 1,
+      "staged_index": 1,
+      "staged_goal_before": {
+        "name": "speed_275",
+        "speed": 2.75,
+        "leap": 0.18,
+        "alpha": 0.0,
+        "period": 0.385,
+        "touchdown": [
+          0.25,
+          0.5,
+          0.0,
+          0.125
+        ],
+        "duty": [
+          0.45,
+          0.3,
+          0.35,
+          0.45
+        ],
+        "air_seconds": 0.077,
+        "flight_min_seconds": 0.06,
+        "flight_prepare_seconds": 0.08,
+        "flight_recovery_seconds": 0.08,
+        "flight_takeoff_vz": 0.4,
+        "flight_max_landing_vz": 1.2
+      },
+      "staged_goal": {
+        "name": "speed_275",
+        "speed": 2.75,
+        "leap": 0.18,
+        "alpha": 0.0,
+        "period": 0.385,
+        "touchdown": [
+          0.25,
+          0.5,
+          0.0,
+          0.125
+        ],
+        "duty": [
+          0.45,
+          0.3,
+          0.35,
+          0.45
+        ],
+        "air_seconds": 0.077,
+        "flight_min_seconds": 0.06,
+        "flight_prepare_seconds": 0.08,
+        "flight_recovery_seconds": 0.08,
+        "flight_takeoff_vz": 0.4,
+        "flight_max_landing_vz": 1.2
+      },
+      "episodes": 256,
+      "success_rate": 0.78515625,
+      "reason": "hold",
+      "streak": 0,
+      "failure_streak": 0,
+      "criterion_rates": {
+        "tracking": 0.953125,
+        "pattern": 0.95703125,
+        "flight": 0.95703125,
+        "motion": 0.95703125,
+        "front_load": 0.95703125,
+        "front_motion": 0.95703125,
+        "front_cycle": 0.95703125,
+        "stable": 0.60546875,
+        "mature": 0.95703125,
+        "stabilization_pose": 1.0,
+        "stabilization_width": 0.375,
+        "stabilization_landing": 0.65234375,
+        "stabilization_distance": 0.94140625,
+        "stabilization_measured": 0.95703125,
+        "guarded_limits": 0.95703125,
+        "guarded_feet": 0.60546875,
+        "staged_measured": 0.95703125,
+        "staged_tracking": 0.6875,
+        "staged_core": 0.78515625,
+        "staged_pose": 1.0,
+        "staged_heading": 1.0,
+        "staged_landing": 0.95703125,
+        "staged_details": 1.0,
+        "staged_regression": 0.78515625
+      },
+      "cohort_size": 256,
+      "cohort_completed": 256,
+      "cohort_rounds": 19,
+      "repeated_env_episodes": 2950,
+      "discarded_cross_level": 0,
+      "adaptation_discarded": 1665,
+      "leap_target": 0.18,
+      "highest_confirmed_speed": 2.5,
+      "highest_confirmed_stage": 0,
+      "core_safety_success_rate": 0.78515625
+    },
+    "terminal_partial_cohort": {
+      "step": 48000,
+      "speed_before": 2.75,
+      "speed_cap": 2.75,
+      "level": 0,
+      "staged_index_before": 1,
+      "staged_index": 1,
+      "staged_goal_before": {
+        "name": "speed_275",
+        "speed": 2.75,
+        "leap": 0.18,
+        "alpha": 0.0,
+        "period": 0.385,
+        "touchdown": [
+          0.25,
+          0.5,
+          0.0,
+          0.125
+        ],
+        "duty": [
+          0.45,
+          0.3,
+          0.35,
+          0.45
+        ],
+        "air_seconds": 0.077,
+        "flight_min_seconds": 0.06,
+        "flight_prepare_seconds": 0.08,
+        "flight_recovery_seconds": 0.08,
+        "flight_takeoff_vz": 0.4,
+        "flight_max_landing_vz": 1.2
+      },
+      "staged_goal": {
+        "name": "speed_275",
+        "speed": 2.75,
+        "leap": 0.18,
+        "alpha": 0.0,
+        "period": 0.385,
+        "touchdown": [
+          0.25,
+          0.5,
+          0.0,
+          0.125
+        ],
+        "duty": [
+          0.45,
+          0.3,
+          0.35,
+          0.45
+        ],
+        "air_seconds": 0.077,
+        "flight_min_seconds": 0.06,
+        "flight_prepare_seconds": 0.08,
+        "flight_recovery_seconds": 0.08,
+        "flight_takeoff_vz": 0.4,
+        "flight_max_landing_vz": 1.2
+      },
+      "episodes": 178,
+      "success_rate": 0.7808988764044944,
+      "reason": "waiting_for_cohort",
+      "streak": 0,
+      "failure_streak": 0,
+      "criterion_rates": {
+        "tracking": 0.9382022471910112,
+        "pattern": 0.9382022471910112,
+        "flight": 0.9382022471910112,
+        "motion": 0.9382022471910112,
+        "front_load": 0.9382022471910112,
+        "front_motion": 0.9382022471910112,
+        "front_cycle": 0.9382022471910112,
+        "stable": 0.4887640449438202,
+        "mature": 0.9382022471910112,
+        "stabilization_pose": 1.0,
+        "stabilization_width": 0.42696629213483145,
+        "stabilization_landing": 0.6123595505617978,
+        "stabilization_distance": 0.9269662921348315,
+        "stabilization_measured": 0.9382022471910112,
+        "guarded_limits": 0.9382022471910112,
+        "guarded_feet": 0.4943820224719101,
+        "staged_measured": 0.9325842696629213,
+        "staged_tracking": 0.7191011235955056,
+        "staged_core": 0.7808988764044944,
+        "staged_pose": 1.0,
+        "staged_heading": 1.0,
+        "staged_landing": 0.9382022471910112,
+        "staged_details": 1.0,
+        "staged_regression": 0.7808988764044944
+      },
+      "cohort_size": 256,
+      "cohort_completed": 178,
+      "cohort_rounds": 19,
+      "repeated_env_episodes": 2977,
+      "discarded_cross_level": 0,
+      "adaptation_discarded": 1665,
+      "leap_target": 0.18,
+      "highest_confirmed_speed": 2.5,
+      "highest_confirmed_stage": 0,
+      "core_safety_success_rate": 0.7808988764044944
+    },
+    "reproduced_all_decisions": true,
+    "reproduced_each_acceptance": true
+  },
+  "comparison": {
+    "current_play": "/home/cvr/GH/go2_animalization/gallop/runs/isaac/play/unitree_go2_gallop/20261111_170803_4c378d",
+    "parent_play": "/home/cvr/GH/go2_animalization/gallop/runs/isaac/play/unitree_go2_gallop/20261111_145807_ef719e",
+    "parent_checkpoint": {
+      "path": "/home/cvr/GH/go2_animalization/gallop/runs/isaac/train/unitree_go2_gallop/20261111_141724_6a1661/model_final.pt",
+      "sha256": "8fcf582b9a6aeabd46cfb5da35be2b75391be3784dc60734c1d6af9c90be10af"
+    },
+    "metrics": {
+      "leap_events": {
+        "parent": 54.0,
+        "current": 56.0
+      },
+      "leap_distance_mean": {
+        "parent": 0.20987580716609955,
+        "current": 0.2110346257686615
+      },
+      "leap_distance_max": {
+        "parent": 0.23857834935188293,
+        "current": 0.2539421617984772
+      },
+      "leap_air_seconds_mean": {
+        "parent": 0.08546297997236252,
+        "current": 0.08517857640981674
+      },
+      "flight_landings": {
+        "parent": 54.0,
+        "current": 54.0
+      },
+      "flight_stable_landings": {
+        "parent": 44.0,
+        "current": 48.0
+      },
+      "stabilization_landing_fraction": {
+        "parent": 0.8148148059844971,
+        "current": 0.8888888955116272
+      },
+      "stabilization_front_width_fraction": {
+        "parent": 0.375,
+        "current": 0.7032967209815979
+      },
+      "stabilization_hind_width_fraction": {
+        "parent": 0.9700704216957092,
+        "current": 0.9348198771476746
+      },
+      "guarded_front_high": {
+        "parent": 0.0818268284201622,
+        "current": 0.09381044656038284
+      },
+      "guarded_hind_high": {
+        "parent": 0.05518553778529167,
+        "current": 0.09816247224807739
+      },
+      "guarded_intervention": {
+        "parent": 0.5428956151008606,
+        "current": 0.5220823884010315
+      },
+      "action_clip_fraction": {
+        "parent": 0.03235015645623207,
+        "current": 0.023372018709778786
+      },
+      "guarded_actual": {
+        "parent": 0.0,
+        "current": 0.0
+      },
+      "staged_yaw_rms": {
+        "parent": 0.03361222520470619,
+        "current": 0.035324979573488235
+      },
+      "vx_rmse": {
+        "parent": 0.21258847415447235,
+        "current": 0.20349201560020447
+      },
+      "gallop_metric_seconds": {
+        "parent": 21.020000457763672,
+        "current": 20.68000030517578
+      }
+    },
+    "current_formal": {
+      "samples": 1034,
+      "seconds": 20.67999999999956,
+      "first_seconds": 9.34,
+      "last_seconds": 30.0,
+      "body_velocity_mean": [
+        2.638256520782264,
+        0.04997800230479806,
+        -0.0904188368052228
+      ],
+      "body_velocity_rmse": [
+        0.20525551094251837,
+        0.07178998953151518
+      ],
+      "body_z_angular_speed_rms": 0.19805036331176726,
+      "roll_pitch_mean_rad": [
+        0.012510216213056612,
+        -0.03150288002633956
+      ],
+      "roll_pitch_std_rad": [
+        0.027401107784133884,
+        0.022005001437078422
+      ],
+      "roll_pitch_rms_rad": [
+        0.03012185614292629,
+        0.03842722392002534
+      ],
+      "roll_pitch_rate_rms": [
+        0.6215042897882024,
+        0.4913723038075212
+      ],
+      "yaw_target_rmse_rad": 0.035324982904085665,
+      "yaw_drift_from_first_sample_rmse_rad": 0.035324982904085665,
+      "initial_yaw_rad": 0.0,
+      "action_clip_fraction": 0.023372018709778786,
+      "root_displacement_xyz": [
+        54.60274124145508,
+        -0.28800320625305176,
+        -0.07094047963619232
+      ],
+      "quiet_score": 0.7986102104187012,
+      "pure_rate_quiet_score": 0.7998976707458496,
+      "forward_score": 0.8503906726837158,
+      "along_speed_mean": 2.6451222896575928,
+      "world_cross_speed_rms": 0.07377276247151886,
+      "movement_direction_rms_rad": 0.02772590551199025,
+      "cross_track_max_abs_from_start_m": 0.8394696712493896,
+      "cross_track_first_last_from_start_m": [
+        0.8394696712493896,
+        0.5514664649963379
+      ],
+      "pose_quality_mean": 0.9982878565788269,
+      "yaw_damping_cost_mean": 0.2089187353849411,
+      "foot_widths": {
+        "front": {
+          "target_m": 0.2698,
+          "mean_m": 0.23682501912117004,
+          "std_m": 0.05655703693628311,
+          "q0_q10_q50_q90_q100_m": [
+            0.06446623802185059,
+            0.13421794176101687,
+            0.2520047277212143,
+            0.29079702496528625,
+            0.3219538927078247
+          ],
+          "rmse_m": 0.06546790897846222,
+          "fraction_within_1cm": 0.19729206963249515,
+          "score_mean": 0.5420365929603577,
+          "by_contacts": {
+            "both_air": {
+              "samples": 569,
+              "mean_m": 0.2264629602432251,
+              "q10_q50_q90_m": [
+                0.11082864105701447,
+                0.26627659797668457,
+                0.30027987957000735
+              ],
+              "fraction_within_1cm": 0.15641476274165203,
+              "fraction_in_success_width_band": 0.46397188049209137
+            },
+            "one_support": {
+              "samples": 101,
+              "mean_m": 0.263368159532547,
+              "q10_q50_q90_m": [
+                0.24779711663722992,
+                0.2659209370613098,
+                0.27661553025245667
+              ],
+              "fraction_within_1cm": 0.7029702970297029,
+              "fraction_in_success_width_band": 0.9603960396039604
+            },
+            "both_support": {
+              "samples": 364,
+              "mean_m": 0.24565784633159637,
+              "q10_q50_q90_m": [
+                0.22865360975265503,
+                0.24766364693641663,
+                0.26062171161174774
+              ],
+              "fraction_within_1cm": 0.12087912087912088,
+              "fraction_in_success_width_band": 0.7032967032967034
+            }
+          },
+          "success_width_band_m": [
+            0.24,
+            0.3
+          ]
+        },
+        "hind": {
+          "target_m": 0.2698,
+          "mean_m": 0.2668912708759308,
+          "std_m": 0.017013052478432655,
+          "q0_q10_q50_q90_q100_m": [
+            0.21710416674613953,
+            0.24641041606664657,
+            0.26499326527118683,
+            0.29095607399940493,
+            0.3044038414955139
+          ],
+          "rmse_m": 0.017259910702705383,
+          "fraction_within_1cm": 0.3520309477756286,
+          "score_mean": 0.7720009684562683,
+          "by_contacts": {
+            "both_air": {
+              "samples": 310,
+              "mean_m": 0.28215810656547546,
+              "q10_q50_q90_m": [
+                0.26314914524555205,
+                0.2844383865594864,
+                0.2976504862308502
+              ],
+              "fraction_within_1cm": 0.3387096774193548,
+              "fraction_in_success_width_band": 0.9580645161290322
+            },
+            "one_support": {
+              "samples": 141,
+              "mean_m": 0.2545181214809418,
+              "q10_q50_q90_m": [
+                0.23651596903800964,
+                0.25448665022850037,
+                0.2712622284889221
+              ],
+              "fraction_within_1cm": 0.2695035460992908,
+              "fraction_in_success_width_band": 0.8085106382978723
+            },
+            "both_support": {
+              "samples": 583,
+              "mean_m": 0.2617659270763397,
+              "q10_q50_q90_m": [
+                0.245769464969635,
+                0.25985825061798096,
+                0.2802202880382538
+              ],
+              "fraction_within_1cm": 0.379073756432247,
+              "fraction_in_success_width_band": 0.934819897084048
+            }
+          },
+          "success_width_band_m": [
+            0.24,
+            0.3
+          ]
+        }
+      }
+    },
+    "parent_formal": {
+      "samples": 1051,
+      "seconds": 21.019999999999552,
+      "first_seconds": 9.0,
+      "last_seconds": 30.0,
+      "body_velocity_mean": [
+        2.6080101210088755,
+        -0.01167432206719303,
+        -0.08747561797956013
+      ],
+      "body_velocity_rmse": [
+        0.2146566217592667,
+        0.04819073841313064
+      ],
+      "body_z_angular_speed_rms": 0.18752811577932915,
+      "roll_pitch_mean_rad": [
+        0.029073319357990877,
+        -0.030683410383200896
+      ],
+      "roll_pitch_std_rad": [
+        0.026457235834889743,
+        0.019982763145441895
+      ],
+      "roll_pitch_rms_rad": [
+        0.03930958186644448,
+        0.036616696951947365
+      ],
+      "roll_pitch_rate_rms": [
+        0.6934959988954021,
+        0.46686694235901816
+      ],
+      "yaw_target_rmse_rad": 0.03361223084664555,
+      "yaw_drift_from_first_sample_rmse_rad": 0.03361223084664555,
+      "initial_yaw_rad": 0.0,
+      "action_clip_fraction": 0.03235014155507088,
+      "root_displacement_xyz": [
+        54.745697021484375,
+        -0.8178700804710388,
+        -0.06885907053947449
+      ],
+      "quiet_score": 0.7774968147277832,
+      "pure_rate_quiet_score": 0.7815979719161987,
+      "forward_score": 0.8124580979347229,
+      "along_speed_mean": 2.609492063522339,
+      "world_cross_speed_rms": 0.09823871258745112,
+      "movement_direction_rms_rad": 0.03787594769953912,
+      "cross_track_max_abs_from_start_m": 0.6774687767028809,
+      "cross_track_first_last_from_start_m": [
+        0.6058040857315063,
+        -0.21206599473953247
+      ],
+      "pose_quality_mean": 0.9949924349784851,
+      "yaw_damping_cost_mean": 0.18817585706710815,
+      "foot_widths": {
+        "front": {
+          "target_m": 0.2698,
+          "mean_m": 0.2411595731973648,
+          "std_m": 0.05410556122660637,
+          "q0_q10_q50_q90_q100_m": [
+            0.08110716193914413,
+            0.15431013703346252,
+            0.24323205649852753,
+            0.3072216212749481,
+            0.3392477333545685
+          ],
+          "rmse_m": 0.061218343675136566,
+          "fraction_within_1cm": 0.10846812559467174,
+          "score_mean": 0.5218796133995056,
+          "by_contacts": {
+            "both_air": {
+              "samples": 574,
+              "mean_m": 0.24251773953437805,
+              "q10_q50_q90_m": [
+                0.13165619522333144,
+                0.273185595870018,
+                0.3202965140342713
+              ],
+              "fraction_within_1cm": 0.10452961672473868,
+              "fraction_in_success_width_band": 0.34668989547038326
+            },
+            "one_support": {
+              "samples": 109,
+              "mean_m": 0.2532340884208679,
+              "q10_q50_q90_m": [
+                0.22630272507667543,
+                0.25810930132865906,
+                0.27541285157203677
+              ],
+              "fraction_within_1cm": 0.4036697247706422,
+              "fraction_in_success_width_band": 0.8256880733944955
+            },
+            "both_support": {
+              "samples": 368,
+              "mean_m": 0.23546476662158966,
+              "q10_q50_q90_m": [
+                0.22005187720060349,
+                0.2344697043299675,
+                0.2512976974248886
+              ],
+              "fraction_within_1cm": 0.02717391304347826,
+              "fraction_in_success_width_band": 0.375
+            }
+          },
+          "success_width_band_m": [
+            0.24,
+            0.3
+          ]
+        },
+        "hind": {
+          "target_m": 0.2698,
+          "mean_m": 0.26643526554107666,
+          "std_m": 0.016300208866596222,
+          "q0_q10_q50_q90_q100_m": [
+            0.22657424211502075,
+            0.24787548184394836,
+            0.26414042711257935,
+            0.290870726108551,
+            0.32339704036712646
+          ],
+          "rmse_m": 0.016643866896629333,
+          "fraction_within_1cm": 0.39295908658420553,
+          "score_mean": 0.7789096236228943,
+          "by_contacts": {
+            "both_air": {
+              "samples": 310,
+              "mean_m": 0.2824806869029999,
+              "q10_q50_q90_m": [
+                0.26000070869922637,
+                0.28322650492191315,
+                0.3021701633930206
+              ],
+              "fraction_within_1cm": 0.29354838709677417,
+              "fraction_in_success_width_band": 0.8612903225806452
+            },
+            "one_support": {
+              "samples": 173,
+              "mean_m": 0.2644648849964142,
+              "q10_q50_q90_m": [
+                0.2507277011871338,
+                0.26421576738357544,
+                0.2788058936595917
+              ],
+              "fraction_within_1cm": 0.5780346820809249,
+              "fraction_in_success_width_band": 0.9884393063583815
+            },
+            "both_support": {
+              "samples": 568,
+              "mean_m": 0.2582782208919525,
+              "q10_q50_q90_m": [
+                0.24475997239351271,
+                0.25800180435180664,
+                0.2708741307258606
+              ],
+              "fraction_within_1cm": 0.3908450704225352,
+              "fraction_in_success_width_band": 0.9700704225352113
+            }
+          },
+          "success_width_band_m": [
+            0.24,
+            0.3
+          ]
+        }
+      }
+    },
+    "current_failed_gates": [
+      "stabilization_width"
+    ],
+    "current_failed_promotion_gates": [],
+    "original_failed_gates_are_diagnostic_only": true,
+    "note": "Two saved stochastic play episodes, not a matched multi-seed evaluation. No causal or statistical significance claim."
+  },
+  "final_checkpoint": {
+    "index": 1,
+    "goal": {
+      "name": "speed_275",
+      "speed": 2.75,
+      "leap": 0.18,
+      "alpha": 0.0,
+      "period": 0.385,
+      "touchdown": [
+        0.25,
+        0.5,
+        0.0,
+        0.125
+      ],
+      "duty": [
+        0.45,
+        0.3,
+        0.35,
+        0.45
+      ],
+      "air_seconds": 0.077,
+      "flight_min_seconds": 0.06,
+      "flight_prepare_seconds": 0.08,
+      "flight_recovery_seconds": 0.08,
+      "flight_takeoff_vz": 0.4,
+      "flight_max_landing_vz": 1.2
+    },
+    "highest_confirmed_stage": 0,
+    "sha256": "93394343a7faf50f848e94ec4138c6a354641addb5b0d4e0b65db3f7ad4674a2",
+    "stage_iterations": 2000,
+    "cumulative_iterations": 50000
+  },
+  "inactive_later_stage_reference_bug": {
+    "all_observed_stage_indices": [
+      1
+    ],
+    "alpha_zero_all_observed": true,
+    "note": "The historical missing-profile issue began at stage4. Observed indices and alpha_zero_all_observed describe the data; fixed runtime bundles must be assessed using their own saved source."
+  },
+  "limitations": [
+    "Training success rates are on-policy randomized episode statistics, not independent frozen-policy evaluation.",
+    "Stage0 target18cm is distinct from the configured final80cm.",
+    "Timeout reset at30s is not a fall.",
+    "Physical joint observations and filtered targets are different from raw requested angles.",
+    "No PPO updates or physics rollouts were performed by this collector."
+  ]
+}

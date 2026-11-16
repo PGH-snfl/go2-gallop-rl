@@ -1,0 +1,16 @@
+{
+  "checkpoint": "/home/cvr/GH/go2_animalization/gallop/runs/isaac/train/unitree_go2_gallop/20261110_223314_cef16b/model_final.pt",
+  "checkpoint_sha256": "32ac3e282cf014ec8ac342ca832a49ea809b1e9a158beb17b490c9fe6b22ecdb",
+  "target_speed_mps": 2.5,
+  "target_leap_m": 0.18,
+  "cumulative_iterations": 46000,
+  "previous_isaac_collection": "/home/cvr/GH/go2_animalization/gallop/reports/20261111_gallop_staged_46000_review",
+  "comparison_50000_report": "reports/20261111_gallop_50000_sim2sim_review",
+  "profiles": [
+    "trained_dt5ms_GUI",
+    "trained_dt1ms",
+    "sdk_proxy_dt5ms_GUI"
+  ],
+  "policy_updates": 0,
+  "physical_hardware": false
+}

@@ -1,0 +1,31 @@
+{
+  "checked_on": "2026-11-10",
+  "meaning": "research comparison source snapshot; hashes identify current working files, not an assertion of clean git status",
+  "files": [
+    {
+      "path": "configs/gallop_staged_80cm.json",
+      "sha256": "ca9e2020dd00967c57806ff2644fb3d5c8259c54e4c93973c8599e7b7b12fcbd",
+      "bytes": 5594
+    },
+    {
+      "path": "isaac_task/gallop_env.py",
+      "sha256": "209e47d2de5114d7fa7865dddf8ded16cc012e1863ae57c31eec4c47f61ebe61",
+      "bytes": 67557
+    },
+    {
+      "path": "isaac_task/gallop_core.py",
+      "sha256": "2671fdaf6d8d8535233d52f234318169a412db120625725dc953c36dd5518789",
+      "bytes": 86924
+    },
+    {
+      "path": "AGENTS.md",
+      "sha256": "7c4d0cc966b6608be98291f5ecc6823ced81f1c2f271fc468db890453f26fccb",
+      "bytes": 60081
+    },
+    {
+      "path": "docs/CONTINUE_HERE.md",
+      "sha256": "acd7ca7a5bc660e4af093cc1adc2970b4a722ed727ff2c340dbb77c314bb5022",
+      "bytes": 108764
+    }
+  ]
+}

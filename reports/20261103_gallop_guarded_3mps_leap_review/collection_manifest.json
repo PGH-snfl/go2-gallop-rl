@@ -1,0 +1,300 @@
+{
+  "collected_at": "2026-11-03T17:46:47.952794+09:00",
+  "files": {
+    "README.md": {
+      "sha256": "ffc93b66588fe3091310f191e9d03304924680170a39872c6e757a57ae12964f",
+      "bytes": 9425
+    },
+    "additional_input_manifest.json": {
+      "sha256": "229d8d49f7e213f2dead46a1cf1b73d2aeac82ad50f17d812a896de359470bd4",
+      "bytes": 1653
+    },
+    "bounded_command_projection.npz": {
+      "sha256": "04763dbdcd36a6d953b27ccb391f14771c09d6968dd4fea69546900b3c55db25",
+      "bytes": 151872
+    },
+    "bounded_joint_tracking.png": {
+      "sha256": "759ec43152edde791491c0431f8e68b26be61362ab3250c1ea28af915136f72b",
+      "bytes": 416252
+    },
+    "bounded_motion_diagnostics.json": {
+      "sha256": "9e98461e92e790bea177852329d23c034e19052dc010889717743374b3733938",
+      "bytes": 17867
+    },
+    "criterion_pass_rates.png": {
+      "sha256": "2da2c7988b149a72e4b9b70f591cc3d05b8b6b08518514d0dafc486ba4ef5eb2",
+      "bytes": 90063
+    },
+    "curriculum_decisions.csv": {
+      "sha256": "611163195b3e8f2aa2091abd8ac1b5a428a43b457562a864a7e27b679c542a1d",
+      "bytes": 27607
+    },
+    "evidence_manifest.json": {
+      "sha256": "6e1f859867686a8d28518e21fcbccb782419b8a08f5d3584456c5957ffc8cefb",
+      "bytes": 11901
+    },
+    "flight_reward_curves.png": {
+      "sha256": "a704c8a903410d8c12ed8df5fc56a8b9bed982f85d3f7b7046b86ac6fcef2dc0",
+      "bytes": 728377
+    },
+    "gallop_config.json": {
+      "sha256": "02afdb679c96953057cace0c4fd6a6303a40864bc27e36eb6634351131a081b2",
+      "bytes": 5525
+    },
+    "gallop_keyframes.png": {
+      "sha256": "bb175773f555472f526fd7a1ea45800cf28a52aa827db03c7ae461ede6b345b7",
+      "bytes": 739977
+    },
+    "guarded_height_and_intervention.png": {
+      "sha256": "965429fb2273e54ed4418420e9ff5ee1cfbfea8969ab6e4b4101f8d758f7586a",
+      "bytes": 612825
+    },
+    "guarded_joint_diagnostics.csv": {
+      "sha256": "f2e033cff8c8d0fdb0d458e6b7ed3d7295bcede3b32b751b29701289e725608e",
+      "bytes": 1359
+    },
+    "guarded_parent_comparison.json": {
+      "sha256": "47f05d1c2d39658b6c13f4f727da6d18ff49fb177453490af197c1b4d8f8f4b8",
+      "bytes": 2933
+    },
+    "guarded_play_diagnostics.json": {
+      "sha256": "f72ca505807955dcc1576574305112929efc67e0288d3ecd14da1938aa913c22",
+      "bytes": 9089
+    },
+    "guarded_training_diagnostics.json": {
+      "sha256": "46410716198a27033630135bc84b1aac6ef93e60d6d1c839383cf915e43ce317",
+      "bytes": 4236
+    },
+    "heading_motion_play.png": {
+      "sha256": "ce385643db709bab0b1198d9390e57a0107d5693d6bc944f78ebbe251feed6b8",
+      "bytes": 659287
+    },
+    "heading_parent_comparison.json": {
+      "sha256": "a4964fa82a13d976d81e53afd62545cacdfc23ccfaf6855171ea4f7faa8f2aa4",
+      "bytes": 10714
+    },
+    "heading_play_diagnostics.json": {
+      "sha256": "3921fdd9d083edf80f33ea5668d17943b05ed358fac8e0edb7d01a80a0be1fa2",
+      "bytes": 29492
+    },
+    "heading_play_trace.csv": {
+      "sha256": "b751ae84ffc9178f371c6e22f99191e895727df05c4f434f662a8d150e9c262a",
+      "bytes": 1856999
+    },
+    "heading_reward_curves.png": {
+      "sha256": "d224f2d593fb83a2afd5ea2d446d3c40f80d98edb95481113a61952492e1e792",
+      "bytes": 527374
+    },
+    "heading_training_diagnostics.json": {
+      "sha256": "1d203282d2f096c7f2020be8558960c260e7c666b9941a9627d12e883de2db44",
+      "bytes": 4710
+    },
+    "joint_motion.png": {
+      "sha256": "6c166d2ade4f3a0a2049b7ae6a2f7d9a2f21c9691213e6a848f4721f6468b71d",
+      "bytes": 584760
+    },
+    "joint_target_diagnostics.json": {
+      "sha256": "a5f99c77cf01ec2d84e7e60306a5c462e294542b681e2d76ecb787d68d91018f",
+      "bytes": 6762
+    },
+    "leap_curves.png": {
+      "sha256": "3f76abb62487f792c65dcbc6d620b4a68946ed8867e39428a352bc15f833915f",
+      "bytes": 386730
+    },
+    "pair_reward_curves.png": {
+      "sha256": "596860ef7e24a97d7f51a6ee5e0eab641b391718b3afe675fa2843283c16aa4e",
+      "bytes": 272809
+    },
+    "params/agent.yaml": {
+      "sha256": "a10f3b2bef1e5773cc7970d9afba2fc7a436d3a70f719137b363ca999f680fef",
+      "bytes": 1039
+    },
+    "params/env.yaml": {
+      "sha256": "a06d7cafb57d74a4750e5f299a590743650141afe226790e46c5f4852f7b639b",
+      "bytes": 32027
+    },
+    "parent_play_comparison.json": {
+      "sha256": "cc6db4c492b597fda2233917bc2eb616420cecdf6f305e97838a34f7afeb7769",
+      "bytes": 12184
+    },
+    "play_analysis.json": {
+      "sha256": "cdcf718133c080b49f1a444e05d487f7d8c35886cf7433ebc8638b160ce18cfb",
+      "bytes": 6688
+    },
+    "play_contacts.png": {
+      "sha256": "95a1306b6522aeecf41a6bed26a6fbb01358c1cffac8790517d11933c27e629d",
+      "bytes": 311157
+    },
+    "play_diagnostics.json": {
+      "sha256": "1e5273c70beade4e3f8d392b0ae249e207b1cbd333c550332dc7ccceb1c9b50a",
+      "bytes": 3373
+    },
+    "play_episodes.csv": {
+      "sha256": "8d7624d88fc1e60e1c50a5778fb1d98da19a1d32e31db5c027d9b014d3a55484",
+      "bytes": 3031
+    },
+    "play_flight_events.csv": {
+      "sha256": "206d3a981fd2d901e8c0824afe3e2685971c9c72aba86680051cd7f6d2cf4b6b",
+      "bytes": 5669
+    },
+    "play_flight_events.png": {
+      "sha256": "2d17a2543f5e4dcd26785660a8bc65290f3746fc05359dd18c5d10192eccbd32",
+      "bytes": 119534
+    },
+    "play_flight_trace.csv": {
+      "sha256": "d2d9f291e25db8070ddd115d571cd9e2bf90c4bb9379d03e15ee21d0de7b1df8",
+      "bytes": 873176
+    },
+    "play_keyframes.png": {
+      "sha256": "18e9f5be238dd8a6b8a628e0991b5a7a7f5d50ad01038c39a4b85a52ee73d3f0",
+      "bytes": 906757
+    },
+    "play_state_trace.csv": {
+      "sha256": "c82144ca18b6307a6448b411ddf292c39aacb007713e9173eb9a84b3443eb587",
+      "bytes": 188115
+    },
+    "play_tracking.png": {
+      "sha256": "0d3eee1e9a354b1f7cb8ee7876b79cf7f0ff8c5da3f650b555fe6100e8bb7ff5",
+      "bytes": 384380
+    },
+    "reward_contributions_last100.json": {
+      "sha256": "11da327bc1801afe9b7d6cfec2ef56c18c246c04c3cd51bf41797a8c0066b96e",
+      "bytes": 2993
+    },
+    "source/AGENTS.md": {
+      "sha256": "af1f4526e3ef5ec339c23b5d8efe9a94e52ef8748c1418dc0098afa8ef766655",
+      "bytes": 40712
+    },
+    "source/README.md": {
+      "sha256": "2e9e6c0fad16ae393b8690c02b686397d609f7feb8082b7864b3eade45ede147",
+      "bytes": 25172
+    },
+    "source/configs/gallop_guarded_3mps_leap.json": {
+      "sha256": "86e2bbf843fc796f20fb259773c1ad45e9c5879cc5302846746a18a45a09ef75",
+      "bytes": 5322
+    },
+    "source/docs/CONTINUE_HERE.md": {
+      "sha256": "566f6c700ecab9e04f92de37991a7e08ab7128b6808927be317fa108aa3c5ac0",
+      "bytes": 80885
+    },
+    "source/docs/gallop_guarded_3mps_leap.md": {
+      "sha256": "5d205c62131779293818981fe5e99b52f095cb3419fa278c662c3b34ffcde9e8",
+      "bytes": 7930
+    },
+    "source/isaac_task/gallop_core.py": {
+      "sha256": "8ffa4518db5ab650a555dfd5e1ccae0aa8f2de81b42600b205642a3e5e364f1b",
+      "bytes": 64556
+    },
+    "source/isaac_task/gallop_env.py": {
+      "sha256": "b113e075feb27f6b187200e7856b06c4969db79cbe15f7aec5898e9831b57ffc",
+      "bytes": 57456
+    },
+    "source/isaac_task/gallop_runtime.py": {
+      "sha256": "250126db52ced4a71d7b223d48c0ede6cf0bd9d282fd13a0bdb5b9c5bdfc347f",
+      "bytes": 2297
+    },
+    "source/logs/go2_guarded_3mps_collect_bounded_motion.log": {
+      "sha256": "aabfc25621a3ac70c94bdbb45b5305f3d555611f0893d9f8afc641b4056a494d",
+      "bytes": 693
+    },
+    "source/logs/go2_guarded_3mps_collect_flight.log": {
+      "sha256": "0385763ce8a631de71e6bc1d398bc92b2214fb4ff5d040bcaed64ec53cd41da5",
+      "bytes": 2635
+    },
+    "source/logs/go2_guarded_3mps_collect_guarded.log": {
+      "sha256": "34191222157c499339b6000f6c2cdcdf7bf639e210fae5d73f76ed2f021629bd",
+      "bytes": 1732
+    },
+    "source/logs/go2_guarded_3mps_collect_heading.log": {
+      "sha256": "aacba7e793bbde11157ebee7e1f0eb4aa0a0b500ac120b9fc2be3d5b59ef665f",
+      "bytes": 3672
+    },
+    "source/logs/go2_guarded_3mps_collect_stabilization.log": {
+      "sha256": "a92d0ecb4c0aeb0624817fe51c2678c060fc3ca2b670fb2a0ec136ad1aec07bb",
+      "bytes": 253
+    },
+    "source/logs/go2_guarded_3mps_collection.log": {
+      "sha256": "2ec528e39c1091ef65f060f431ddb2ede5ca2bb83a7388006e45691a01349b44",
+      "bytes": 6579
+    },
+    "source/scripts/analysis/collect_bounded_motion_diagnostics.py": {
+      "sha256": "1d9430d329de6c56e0940f90eb7922967c6776200be44edb2725726d35bed8b3",
+      "bytes": 10368
+    },
+    "source/scripts/analysis/collect_flight_diagnostics.py": {
+      "sha256": "2af64ba0d41c7da0df49b93aaece4ac8cc39ac56dbcf21816c7531dad0937c69",
+      "bytes": 12927
+    },
+    "source/scripts/analysis/collect_gallop.py": {
+      "sha256": "901d9b6c386514e684c6580e365aaec2c91e8db235e2dedf6ca79ed136fb634d",
+      "bytes": 22122
+    },
+    "source/scripts/analysis/collect_guarded_diagnostics.py": {
+      "sha256": "23c7d595ec76f897f11e2ee6ed0fbaf46e9320cb2998ee2dbf2d9ba2ed3bc3c8",
+      "bytes": 10009
+    },
+    "source/scripts/analysis/collect_heading_diagnostics.py": {
+      "sha256": "a7f56f1e7e45f3f8cd7ed72d5077ee2516dc89f0fce297af690213eae29181ae",
+      "bytes": 15190
+    },
+    "source/scripts/analysis/collect_stabilization_diagnostics.py": {
+      "sha256": "f87da7a1151602efc147c7bd1a70780c9969b8604e527081f654d6caacf842ce",
+      "bytes": 6975
+    },
+    "source/scripts/analysis/collect_unitree_baseline.py": {
+      "sha256": "4d6b07f431b54f251712710549aa41a0e1540da4671a9c7c676517b9f3e6d252",
+      "bytes": 10105
+    },
+    "source/verify.py": {
+      "sha256": "64d9ee634bbd7de066087281be1486ec875ae5502a9680c74dda981aac0d86c5",
+      "bytes": 10808
+    },
+    "stabilization_diagnostics.json": {
+      "sha256": "9139f2b512163e32011f2ffc2841a247ead45ebbb092abedf0dcf9ccce7ee544",
+      "bytes": 7740
+    },
+    "summary.json": {
+      "sha256": "2bb93607bebfa30a6ea3142eb94bf4308a75b186bedf5ab457f8267dca404d44",
+      "bytes": 78447
+    },
+    "tensorboard_scalars.csv": {
+      "sha256": "1f5ee4f02c45f45cfb19e51d73e725eccb533ed626b022c2f65b794e71c1b2fe",
+      "bytes": 19891824
+    },
+    "train_episodes.csv": {
+      "sha256": "4ba0aa4ed65902b82591e6e33c97862ea91f4fc887cd3d3bfc6237f741a9eee9",
+      "bytes": 10914896
+    },
+    "training_curves.png": {
+      "sha256": "9bfebc26fa2b6ede783b0de0fbe3080d8d8122af54df351138715de7ff1c95cd",
+      "bytes": 335746
+    },
+    "training_diagnostics.json": {
+      "sha256": "62f9be486a5ff43075a6b1c34e413ab466f7fdcf7eca54c84b8e941b1276a6d6",
+      "bytes": 64954
+    },
+    "verification.json": {
+      "sha256": "617a19623e48801e8483eaac2b77be13a152572de3c50ab94b983c2350c997b3",
+      "bytes": 2017
+    },
+    "videos.csv": {
+      "sha256": "c0903a3cffc04a48234f05bcf3aebe4d64714762ae9860536a1b507ce6663998",
+      "bytes": 211
+    }
+  },
+  "artifact_count": 70,
+  "validation_checks": 37,
+  "all_checks_passed": true,
+  "new_policy_updates": 0,
+  "new_supervised_updates": 0,
+  "new_physics_rollouts": 0,
+  "analysis_change": "Only the stabilization collector explanatory distance string now uses active/final targets from saved settings.",
+  "collection_commands": [
+    "python -m scripts.analysis.collect_gallop --train runs/isaac/train/unitree_go2_gallop/20261103_165217_19801a --play runs/isaac/play/unitree_go2_gallop/20261103_173835_024b20 --output reports/20261103_gallop_guarded_3mps_leap_review",
+    "python -m scripts.analysis.collect_flight_diagnostics --report <report> --parent-report reports/20261103_gallop_guarded_2p5_review",
+    "python -m scripts.analysis.collect_heading_diagnostics --report <report> --parent-play runs/isaac/play/unitree_go2_gallop/20261103_160608_cf586d",
+    "python -m scripts.analysis.collect_stabilization_diagnostics --report <report> --parent-report reports/20261103_gallop_guarded_2p5_review",
+    "python -m scripts.analysis.collect_bounded_motion_diagnostics --report <report> --parent-report reports/20261103_gallop_guarded_2p5_review",
+    "python -m scripts.analysis.collect_guarded_diagnostics --report <report>"
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "status": "predefined_before_checkpoint_evaluation",
+  "authorization": "User requested agent-run short training and result collection in current turn.",
+  "parent": "runs/isaac/train/unitree_go2_gallop/20261106_000029_077a6f/model_final.pt",
+  "parent_sha256": "cc05c078abe28c4c9ac2ce0a8a51af7d006e33268cc6c7f57e15621a85535d7b",
+  "train": "runs/isaac/train/unitree_go2_gallop/20261110_214726_dc4067",
+  "precheck": "runs/isaac/check/unitree_go2_gallop/20261110_214613_bfda28",
+  "training_updates": 500,
+  "comparison_updates": [
+    0,
+    250,
+    500
+  ],
+  "config": "configs/gallop_pilot_18cm.json",
+  "command_mps": 2.5,
+  "active_leap_m": 0.18,
+  "evaluation": {
+    "type": "shared current runtime/controller, frozen policy means, nominal plane",
+    "paired_starts_per_checkpoint": 8,
+    "duration_seconds": 30,
+    "initial_joint_std_rad": 0.002,
+    "initial_tilt_std_rad": 0.003,
+    "observation_noise": false,
+    "push_mass_material_randomization": false,
+    "first_episode_only": true,
+    "failures_counted": true
+  },
+  "directional_acceptance": {
+    "minimum_full_student_10s_fraction": 0.875,
+    "maximum_nominal_terminations": 0,
+    "minimum_leap_mean_ratio_to_parent": 0.9,
+    "maximum_actual_guard_failure_fraction": 0.0,
+    "maximum_raw_angle_clip_fraction": 0.1,
+    "maximum_mean_speed_error_mps": 0.15,
+    "maximum_yaw_rms_deg": 3.0,
+    "minimum_front_width_gain": 0.1,
+    "minimum_landing_gain": 0.05,
+    "maximum_other_metric_loss": 0.05,
+    "one_of_width_or_landing_gain_required": true,
+    "minimum_forelimb_gate_fraction": 0.875,
+    "minimum_foot_height_gate_fraction": 0.875,
+    "maximum_roll_pitch_rms_deg": [
+      5.0,
+      8.0
+    ]
+  },
+  "notes": [
+    "Acceptance means pilot direction is promising; it does not replace full staged graduation tests or prove 80cm feasibility.",
+    "Noisy/randomized training aggregates are separate from nominal deterministic policy evaluation.",
+    "Terminal startup deadline is a failure, not a timeout. Old replay snapshots remain unchanged.",
+    "Total filter frequency allowance stays 100%; angle/rate/physical limits and the separate 10% raw-angle gate are retained."
+  ]
+}

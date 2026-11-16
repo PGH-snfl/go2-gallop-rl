@@ -1,0 +1,23 @@
+{
+  "date": "2026-11-10T21:31:07.741686+09:00",
+  "decision": "exclude_final34k_as_default_gallop_finetuning_parent",
+  "scope": "Retain all models; select 30k for staged recovery at 2.5m/s/14cm, not immediate 3m/s/80cm.",
+  "selected_checkpoint": "runs/isaac/train/unitree_go2_gallop/20261106_000029_077a6f/model_final.pt",
+  "excluded_checkpoint": "runs/isaac/train/unitree_go2_gallop/20261110_195814_959c90/model_final.pt",
+  "evidence_run": "runs/isaac/check/unitree_go2_gallop/20261110_212523_0804ce",
+  "policy_updates": 0,
+  "basis": [
+    "Old-task native start: 30k 8/8 measured, 441 flights averaging 19.29cm; final34k 8/8 measured, zero flights.",
+    "Warm tests support lost flight behavior under both old and new task references; final34k has zero flights in all eight new-task student-only cases. Warm starts are not exact cloned states.",
+    "30k fails direct long-flight new task; staged transition and stability training are required.",
+    "Intermediate iteration500 produces only tiny 1.65cm/3.10cm flights; iteration1000 produces no flights in evaluated regimes. None of the three later candidates justifies replacing the 30k gallop parent."
+  ],
+  "preserve_failed_run": true,
+  "limitations": [
+    "Single nominal simulator scene, eight small paired initial perturbations; not broad randomized validation.",
+    "Warm tests bypass startup at 12s and diagnose retained ability only, not a deployable startup controller.",
+    "Warm tests share the parent actor and requested initial states but do not clone a common physical state. Trajectories diverged before switching; inspect warmup_state_audit. They are supporting evidence, not strict common-state counterfactuals.",
+    "New-task runtime commands/references/filters/measurements apply; fixed environment reward-manager weights remain old and are ignored.",
+    "No new MuJoCo or hardware validation. Unmeasured metrics are null, never interpreted as perfect scores."
+  ]
+}

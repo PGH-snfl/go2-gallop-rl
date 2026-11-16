@@ -1,0 +1,58 @@
+{
+  "run": "/home/cvr/GH/go2_animalization/gallop/runs/mujoco/evaluate/unitree_go2_gallop/20261102_141502_01c472",
+  "formal_gallop_metrics_available": false,
+  "transition_completed": false,
+  "max_mix": 0.6575721502304077,
+  "blend_block_counts": {
+    "speed_error": 1188,
+    "lateral_speed": 239,
+    "tilt": 34,
+    "angular_speed": 406
+  },
+  "blend_samples": 1286,
+  "last10_block_counts": {
+    "speed_error": 501,
+    "lateral_speed": 87,
+    "tilt": 3,
+    "angular_speed": 169
+  },
+  "last10_samples": 501,
+  "last10_mean_vx": 3.0902557373046875,
+  "last_command": 2.1836299896240234,
+  "last10_roll_pitch_rms": [
+    0.0877562016248703,
+    0.06538207083940506
+  ],
+  "last10_action_clipping": 0.1415502429008484,
+  "physical_flight_events": 123,
+  "physical_qualified_events": 8,
+  "physical_flight_distance_mean": 0.06308637266311636,
+  "physical_flight_distance_max": 0.20310006314972934,
+  "physical_flight_air_seconds_mean": 0.021869918699185458,
+  "independent_recovery_counts": {
+    "failed_proxy": 51,
+    "not_monitored_short_or_nonforward": 71,
+    "pending": 1
+  },
+  "independent_recovery_qualified_and_stable": 0,
+  "caveats": [
+    "Physical flights and recovery proxies are independent 5ms contact reanalysis, including blend stage; forelimb/phase eligibility and reward budgets are not applied.",
+    "Original formal episode zero-valued gait metrics are unavailable placeholders because full Gallop was never entered. tracking=1/stable=1 in raw episode are not validation passes.",
+    "Nominal mass/contact model and noise/randomization differ from Isaac playback; this test does not isolate their causal effects."
+  ],
+  "physical_long_flight_events": 52,
+  "physical_long_distance_mean": 0.12564512654159746,
+  "physical_long_air_seconds_mean": 0.04365384615384292,
+  "recovery_failure_condition_counts": {
+    "slide": 49,
+    "angular": 17,
+    "support": 10,
+    "force": 1
+  },
+  "last10_vertical_load_share_FL_FR_RL_RR": [
+    0.2061961442232132,
+    0.28134849667549133,
+    0.2934850752353668,
+    0.21897022426128387
+  ]
+}

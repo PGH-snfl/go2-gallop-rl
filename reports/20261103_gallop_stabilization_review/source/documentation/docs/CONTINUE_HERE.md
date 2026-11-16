@@ -1,0 +1,450 @@
+# 다음 작업 시작점 — 2026-11-03 Gallop 안정화 수집
+
+## 최신 완료: 안정화 추가 학습과 플레이
+
+[수집 보고서·영상·비교](../reports/20261103_gallop_stabilization_review/README.md)를 먼저 읽는다. 사용자가 추가 2,000회 / 12,288,000 transition / 계보 22,000회 학습을 완료했다. 최신 모델은 `runs/isaac/train/unitree_go2_gallop/20261102_161522_fe6276/model_final.pt`, SHA256 `c2439fd522a98e5b782e5e08b749aabd01c64f50a73edb6c6ad020e6d2cdbf5a`다. actor49/critic64/action12/scale0.5, saved source·teacher를 함께 보존한다. 이번 수집은 기존 파일 분석으로 PPO0/새simulation0, 보상·설정·모델 불변이다. 학습은 사용자가 직접 한다.
+
+사용자 play `20261103_091200_02fe98`는 1,500step/30초 자연 timeout/낙상0이다. 7.74초 Gallop 전환, 공식8.76~30초21.26초/1063표본,5ms물리계측6000개,영상29.98초1개/학습영상0이다. 실제 전진2.4253m/s/명령2.2, yaw각RMS2.16°/z각속도RMS0.1817rad/s로추종통과했다. 평균roll11.1→3.83°/앞발지지폭4.2→25.42cm/안정착지45/57→57/59회로개선됐다. 하지만RP각도변화율은.3190/.4378rad/s로부모보다증가했다. 기울기개선과진동감소를혼동하지않는다. 최대횡편차.723m/공식구간횡변위−1.362m로완전직선이동합격은아니다.
+
+목표폭각26.98cm,양발지지폭24~30cm유지율앞82.62%(305표본)/뒤78.13%(439표본)로뒤폭gate실패다. 목표각clip22.48%>10%로stable도실패하며전체success0이다. FRcalf74.88%등calf포화가남는다. 동일수식초과비용부모1.1401→현재.2245로약80%줄었지만빈도는24.24→22.48%로조금감소했다. clipping은요청목표각제한이며실제관절물리한계위반비율이아니다.
+
+59도약/평균17.37cm·75.59ms/최대21.13cm,현재14cm·60ms충족54회,안정57/중단2,거리시간안정동시53회다. 최종18cm·60ms는참고33회모두안정이며실제목표14cm와구분한다. 회복중단을낙상으로부르지않는다.
+
+학습적격8304개중전체성공0/앞발폭통과0/뒤1777,clip만으로stable실패7972개다. 최근200회rawtracking84.54%이나앞발폭유지율최대70.89%로80%미만이다. 확률적학습/환경변화집계와결정론적단일play를구분한다. 판단48회=대기16/유지32/승급0,현재cap2.2m/s·14cm/highest_confirmed_speed=null은반복성공조건미달의결과다. 다음검토는calf포화와학습중지지폭재현성이다. 보고서에37항목검증·원본/결과/소스해시를보관했다. 새22,000회모델MuJoCo는아직미검증이다. 아래미학습표현은구현당시기록이며이완료결과가우선한다.
+
+```bash
+cd /home/cvr/GH/go2_animalization/gallop
+./isaac.sh gallop play --num-envs 1 --steps 1500 \
+  --checkpoint runs/isaac/train/unitree_go2_gallop/20261102_161522_fe6276/model_final.pt \
+  --video --video-length 1500
+```
+
+## 구현 당시 기록: 안정화 보정과 성공률 기반 속도·도약 목표
+
+사용자가 제안을 승인해 [안정화 설계·학습 명령](gallop_stabilization.md)을 구현했다. 새 설정 `configs/gallop_stabilization.json`. 부모는 아래 최신 완료20,000회 `runs/isaac/train/unitree_go2_gallop/20261102_145730_26810f/model_final.pt`다. 새 학습은 아직 실행하지 않았고 학습은 사용자가 진행한다.
+
+RP 진동 점수에 기준 자세 점수를 곱해 고정 기울기로 만점을 받지 못하게 했다(roll허용3°/scale6°,pitch5°/8°). 앞뒤 독립26.98cm 폭 보상을 `1/(1+오차²)`로 바꾸고 지지1/공중0.3 우선순위, 폭척도8cm/각weight2를 사용한다. 발쌍 중심선 벌점은 없다. 몸체yaw각속도Huber(scale.3rad/s/weight1),잘리기전목표각 초과Huber(scale.35rad/calf2배/weight2)를 추가했다. calf student만 전환 중1→.85로 줄이고 teacher/나머지관절/latent PPOaction은 보존한다. 실행action은 새 축소·혼합 값을 관측에 기록한다.
+
+2.2m/s·14cm부터시작해2.4·15.33cm→2.6·16.67cm→2.8·18cm로 성공률에따라올린다. 각환경reset에서speed/leap을고정해진행중episode는목표가갑자기바뀌지않는다.128개이상적격episode/80%성공두구간확인해야승급,50%미만이면한단계하향(최저2.2). 기존gait/fore/flight/추종/clipgate와함께rollRMS5°/pitch8°,fullmetric5초,앞뒤각양발지지10표본/폭24~30cm80%,회복10회/안정80%,도약10회/현재거리·시간충족60%를요구한다. 시간만으로승급하지않고빈계측을통과로세지않는다.
+
+49/64/12·scale0.5/network tensor/noise유지+새Adam이다. 저장된새모델의play/check/MuJoCo는cap/거리/highest_confirmed를복원하고평가중승급을동결한다. 현재cap은아직성공확인되지않은새단계일수있으며highest_confirmed는실제반복성공확인최고속도다. 수집기는새gate·episode별거리목표를별도로표시한다.
+
+102검사와실제20,000회모델정확복원등13항목이통과했고동적거리목표그림도연결검사했다. 임시bundle의MuJoCo1step은새학습정책보행검증이아니다. 자료 `runs/isaac/check/unitree_go2_gallop/20261102_161410_16d00a/`. 같은기존trace수식대조에서기울어진quiet점수.915→.158/앞지지폭점수≈0→.117이다. calf축소만대입해도clip21.88%로여전히10%를넘어추가학습이필요하다. CUDA인식불가/새Isaac주행·본학습미실행/PPO0/기존모델·공식checkout보존. 다음에는사용자가추가학습한새run을수집·play검증하고그뒤MuJoCo를검사한다.
+
+## 이전 완료 결과: yaw·진동·발 간격 추가 학습과 플레이 수집
+
+먼저 [결과 보고서·영상·비교](../reports/20261102_gallop_heading_motion_review/README.md)를 읽는다. 사용자가 추가2,000회/새12,288,000transition을 완료했고 최신 모델은 `runs/isaac/train/unitree_go2_gallop/20261102_145730_26810f/model_final.pt`(계보20,000회)다. SHA256 `8cd836ae4d6987d18ee5ada9690bf7d54cf85933aaf5a6123083c2dd3d1cc189`. 완료2026-11-02 15:25:47KST/1,693.65초,actor49/critic64/관절12/scale0.5다. 이번 결과 수집은 기존 파일만 분석했으며 PPO0/새시뮬레이션0/정책·보상·설정 보존이다. 학습은 계속 사용자가 직접 진행한다.
+
+사용자 플레이 `runs/isaac/play/unitree_go2_gallop/20261102_152630_4e9e7a/`는30초 자연timeout·낙상0,10.12초에Gallop 전환을 완료했다. 공식 집계는11.14~30초18.88초/944표본,도약5ms계측6,000회다. 학습영상0/플레이영상29.98초1개를보관했다. 영상의2초 구간은 일반 보행이며 보고서의 `gallop_keyframes.png`는12초 실제Gallop 구간이다.
+
+평균 몸체vx2.9233/world목표방향2.9224m/s,전진RMSE.2032/횡RMSE.0701이다. yaw각오차RMS2.76°이나몸체z각속도RMS.4779rad/s가.3을넘어tracking실패다. yaw각도와각속도를혼동하지않는다. RP각도변화율.2963/.3160rad/s로부모보다19.8/19.0%감소했지만roll평균+11.10°/std1.03°라기울어진자세가유지된다. 진동보상은절대RP각도0을강제하는보상이아니므로이결과를수평유지성공으로부르지않는다. clip24.24%>10%가stable실패원인이며전체success0이다.
+
+앞/뒤발 평균폭12.72/25.14cm(목표26.98),앞발중앙값7.25cm,양발지지때앞4.20cm/뒤27.54cm다. 앞폭점수.2117/뒤.6859이며앞다리참여gate통과와발폭성공은별개다. 앞발지지폭실패가남았다. 목표방향점수.8608이지만종점횡변위−.056m만으로직선경로를가정하지않는다. 최대횡편차1.399m,공식구간Y변위−1.294m였다.
+
+도약57회/평균19.39cm·69.30ms/최대25.96cm,18cm·60ms충족38회,안정회복45회/실패12회/미완료0회다. 거리·시간·안정착지동시충족27회,거리보상88.39점. 45/57=78.95%안정회복이며실패12회를낙상12회로해석하지않는다. 실패사유·발속도원시trace가없어원인전부분리불가다. 부모25안정/36실패/1미완료와비교하되집계시간·초기yaw·보상이달라단일보상효과로단정하지않는다.
+
+학습은실제2,000회완료다. 최초6회완료episode가없어평균리워드만1994개이며loss는0~1999모두존재한다. 수집기완료판정을고쳤다. 학습적격8,377개중계측있는8,138개tracking통과0%,rawtracking1인239개는빈Gallop계측값이다. 최근1,000회4,339개중계측있는4,220개도tracking0%,4,075개는clip만으로stable실패다. 마지막200회yaw가중RMS4.06°/앞뒤폭17.29·26.81cm/전진점수.690,자연timeout89.16%다. 확률적학습집계와결정론적단일play를혼용하지않는다.
+
+새분석 `scripts/analysis/collect_heading_diagnostics.py`가전체/단계/Gallop별정확한yaw·진동·폭·방향통계와부모비교/CSV/그림을저장한다. 무결성·수식35항목통과와코드/입력/결과SHA를보고서에보관했다. 다음검토는앞발지지폭/고정roll/yaw각속도/clip이다. 새49정책MuJoCo는아직미검증이며이전47정책MuJoCo실패를소급하지않는다. 아래미학습표현은구현당시기록이다.
+
+```bash
+cd /home/cvr/GH/go2_animalization/gallop
+./isaac.sh gallop play --num-envs 1 --steps 1500 \
+  --checkpoint runs/isaac/train/unitree_go2_gallop/20261102_145730_26810f/model_final.pt \
+  --video --video-length 1500
+```
+
+## 구현 당시 기록: yaw0·RP 진동·어깨 기준 발 간격·전진 방향 보상
+
+사용자 수정 요청으로 [최신 설계·학습 명령](gallop_heading_motion.md)을 구현했다. 설정 `configs/gallop_2p8mps_heading_motion.json`. yaw0을world+X방향으로정의하고resetyaw도0으로고정했다. yaw오차wrap²패널티(weight2/scale0.35rad),roll·pitch는시간변화율이작을수록exp보상(weight2/scale1rad/s)이다. 이전수직축0고정/발쌍중심선패널티는이설정에서제거했다. 기존낙상·착지회복안전gate와각속도안정조건은유지한다.
+
+실제학습USD의앞뒤어깨pitch축폭을각각28.4000009cm로측정했고각각95%인발중심폭26.98cm를독립Gaussian보상한다(각1점). 지지허용±0.5cm/한발스윙·공중±0.75cm/scale4cm,교차발저점수. 발쌍중심선이동자체는벌하지않고실제월드속도의목표방향전진량·이동각·속도추종점수를준다. 정지·후진·옆으로만움직이면0,과속해도감점한다. 모든출발/전환/갤롭위상에서계산하며,정지/동결teacher자체는학습하지않는다.
+
+기존관측에절대yaw가없어heading sin/cos오차2열을추가했다. actor47→49/critic62→64/관절12·scale0.5. 새interface `unitree_go2_gallop_heading_49_64_12_v2`. 기존첫층열과나머지모든tensor/noise보존+추가열0초기화로최초actor출력은부모와일치한다. teacher는앞45열입력을유지한다. 최신완료18,000회모델 `runs/isaac/train/unitree_go2_gallop/20261102_133218_92ee54/model_final.pt`에서새Adam·단계0으로추가2,000회를사용자가학습한다. 기존보행/전환·2.8m/s·18cm/60ms·착지80ms조건은유지한다.
+
+90개회귀/보상/보상연결/MuJoCo관측검사가통과했고최종관련11개도재확인했다. 실제이식/초기출력/zero추가열/해시/어깨폭/목표폭가동범위14항목통과,자료 `runs/isaac/check/unitree_go2_gallop/20261102_144451_a5c367/`. 새49차원임시bundle은무학습·무물리적분연결검사후삭제했다. 기존정책MuJoCo단위검사1step은새정책주행검증이아니다. CUDA인식불가로새Isaac/MuJoCo주행episode미검증/PPO0/새학습미실행. 사용자가학습완료한뒤새모델play와sim2sim을검사한다. 구현당시에는아래47/62모델이최신이었으며이후완료된49/64모델은맨위수집결과를따른다.
+
+## 이전 구현: 몸체 수직 정렬과 발 간격 보상, 미학습 상태로 대체됨
+
+사용자가몸체의지속기울기와앞뒤각좌우발간격을고치도록요청했다. [새보상·추가학습명령](gallop_posture.md)을먼저읽는다. `configs/gallop_2p8mps_posture.json`은최신완료모델 `runs/isaac/train/unitree_go2_gallop/20261102_133218_92ee54/model_final.pt`(계보18,000회)에서새Adam/iteration0으로추가2,000회를학습하는설정이다. 아직새본학습은실행하지않았고학습은사용자가진행한다.
+
+pitch_amplitude0으로기존주기pitch목표를없애고,몸체+Z와지면법선의기울기를새로벌준다(weight6,허용0.05rad/scale0.2). 앞뒤signed발폭각30cm에가까우면보상/멀어지면벌점(weight2),쌍중심의몸체중심선편향벌점(weight1)을추가했다. 지지허용폭±2.5cm/중심±1.5cm,한발스윙·공중때1.5배완화. yaw만반영한수평좌표계로측정하고발의앞뒤·높이운동은자유다. 30cm는공식MJ다리축폭28.4cm를참고한설계값이며순기구학가동범위내도달을확인했다.
+
+새항목은전체출발/전환/갤롭위상에서속도·warmup·gait강도와무관하게계산한다. 정지/동결보행actor자체는변경하지않으며Gallop actor가혼합되는구간부터학습행동에영향을준다. 기존2.8m/s·18cm/60ms·안정착지80ms,상태기·추종조건,앞다리참여·느슨한발순서유지. 관측47/62·action12/scale0.5유지,최신actor/critic/noise를정확히복원했다. 기존모델play는저장source를읽어원래행동을유지한다.
+
+새보상/실제보상연결/기존전환·도약·reset 회귀74검사와모델복원·SHA·폭가동범위10항목이통과했다. 자료 `runs/isaac/check/unitree_go2_gallop/20261102_143300_d8d961/`. `posture_*`기울기RMS/앞뒤폭/중심오차/비용은전체구간별도분모로episode·TensorBoard·trace에저장한다. 콘솔iteration표는유지한다. CUDA인식불가로새PhysX주행은미검증/PPO0/새물리rollout0이며개선성공을주장하지않는다. 다음에는사용자추가학습과새Isaac play,그뒤MuJoCo재검증을진행한다.
+
+## 최신 완료 결과: 2.8m/s 학습과 MuJoCo 전환 검증
+
+먼저 [MuJoCo 검증 보고서·영상](../reports/20261102_gallop_mujoco_review/README.md)을 읽는다. 사용자가 추가2,000회/12,288,000transition을 완료했고 최종 모델은 `runs/isaac/train/unitree_go2_gallop/20261102_133218_92ee54/model_final.pt`(계보 누적18,000회)다. SHA256 `f2a426bec14b43b240ec1a26e924b9b482fbbb8a52789879bb8d1bcc9a924d69`. 2026-11-02 14:00:59KST 완료, 1717.47초 소요다. 학습은 계속 사용자가 직접 실행한다.
+
+사용자 Isaac 플레이 `runs/isaac/play/unitree_go2_gallop/20261102_140231_b1e215/`는30초 자연timeout이고8.34초에완전한Gallop으로전환됐다. 공식9.36~30초 구간 평균vx2.93862/RMSE0.19783m/s,63도약/평균18.53cm·66.03ms/거리·시간충족47회,안정착지25회다. 추종gate와목표각clipping21.02% 때문에전체success0이다. 학습완료/전환완료와모든Gallop조건통과를구분한다.
+
+이번에 **MuJoCo 평지30초1회 검증을 완료했으나 전환은 미통과**했다. 실행 `runs/mujoco/evaluate/unitree_go2_gallop/20261102_141502_01c472/`에영상30초·50fps,정책trace1,500표본/물리trace6,000표본·결과를보관했다. 낙상없이끝났지만4.30초부터혼합단계에머물러최종Gallop비율65.757%다. 마지막10초501표본모두속도오차0.25m/s초과:명령2.18363/실제평균3.09026m/s,RMS오차0.91783m/s. 추종이불량하면명령/혼합진행을함께멈추는기존상태기가작동했다. 과속의물성/노이즈/접촉별기여는분리하지않았다.
+
+완전한Gallop계측mask가한번도켜지지않았다. raw episode의tracking1/stable1/거리0 등은빈집계placeholder라성공이나실제도약0으로해석하지않는다. 독립5ms접촉분석에서20ms이상전진도약52회/평균12.56cm·43.65ms/최대20.31cm,18cm·60ms충족8회다. 이는혼합단계포함참고값이며앞다리/위상자격·보상예산은적용하지않았다. 착지80ms독립회복proxy는51실패/1진행중으로통과0,발속도기준초과가주로동반됐다. 전환성공도공식Gallop합격도아니다.
+
+새어댑터 `gpd/rl_mujoco.py`는저장된학습source·동봉walking_teacher·47/62/12인터페이스를사용한다. `assets/go2_isaac_contract.json`의실제PhysX관절순서hip4→thigh4→calf4를이름으로MJjoint/motor에매핑하고COM속도/PD25·0.5/저장토크속도제한/softlimit을반영했다. 어댑터5검사통과. 공식MJ질량15.206kg와학습USD16.087kg/접촉모델차이는남아있다. 관측노이즈·무작위화·push·전달지연없이nominal단일seed만검사했다. 이번작업PPO0/모델해시보존/학습·전환조건불변/실기미사용이다.
+
+```bash
+cd /home/cvr/GH/go2_animalization/gallop
+OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 MKL_NUM_THREADS=1 \
+MPLCONFIGDIR=/tmp/go2-gallop-mujoco-matplotlib MUJOCO_GL=egl \
+.venv/bin/python -m scripts.validation.sim2sim_gallop \
+  --checkpoint runs/isaac/train/unitree_go2_gallop/20261102_133218_92ee54/model_final.pt \
+  --isaac-play runs/isaac/play/unitree_go2_gallop/20261102_140231_b1e215 \
+  --seconds 30 --video
+```
+
+다음검토대상은혼합단계의과속·진행정지상호작용과착지발속도다. 정책/문턱값을임의로바꾸거나완전한Gallop을강제하지않았다. 아래미학습·PhysX미검증표현은구현당시기록이며최신상태는이항목을따른다.
+
+## 구현 당시 기록: 2.8m/s·18cm와 일반 보행 출발
+
+사용자가 속도/도약거리를 조금 높이고 정지에서 바로갤롭하지말고일반보행후전환하도록요청했다. [학습·제어·검증](gallop_walk_transition.md)을먼저읽는다. 설정 `configs/gallop_2p8mps_walk_transition.json`, 목표2.8m/s·18cm/공중60ms/안정착지80ms. 정지최소0.5초+안정0.5초→완료1m/s보행정책으로1.5초속도ramp/최소3초보행→안정추종확인→3초smoothstep혼합→Gallop. 자세/속도불량이면전환진행정지. episode30초/초기길이랜덤비활성/초기관절속도0이다.
+
+부모 `20261029_151901_f393b4/model_final.pt`(누적16,000회), 동결보행정책 `unitree_go2_forward_only/20261028_160258_54620c/model_final.pt`. 새모델은보행actor+Gallop actor+상태기를함께사용한다. 관측47/62·action12/scale0.5유지/phase2열크기로상태표시, teacher45/scale0.25단위보정. PPOlatentaction은보관하고physics/last_action/action_rate는실행혼합action사용. teacher는source/walking_teacher.pt로복사하고manifestSHA검증한다. 체크포인트이동시source/manifest동봉필수. 기존단일actor재생과혼동하지않는다.
+
+보행에는공중기를강제하지않고, 도약/성공지표는전환완료후1초부터완전한Gallop주기만집계한다. 전구간body/hip/clip균형패널티유지. CPU65검사/실제Gallop복원/teacher원래RSL출력일치/모델해시보존확인, 자료 `runs/isaac/check/unitree_go2_gallop/startup_2p8_offline_20261102/`. 구현당시CUDA불가로새PhysX전환은미검증/PPO0/새본학습없음이었고,이후사용자가완료한학습·플레이와이번MuJoCo결과는맨위항목을따른다.
+
+## 이전 완료 결과: 2.5m/s에서 실제 도약 생성
+
+먼저 [2.5m/s 결과 보고서](../reports/20261029_gallop_2p5mps_flight_review/README.md)를 읽는다. 사용자 추가2,000회/12,288,000transition 완료, 모델은 `runs/isaac/train/unitree_go2_gallop/20261029_151901_f393b4/model_final.pt`, 계보 누적16,000회다. 완료시각2026-10-29 15:46:21KST, SHA256 `0ff9b94db4a5cc5d8b8dd7ae8d26fd532adb27436e1b4e0e4b7840d60b54785d`다.
+
+사용자 플레이 `runs/isaac/play/unitree_go2_gallop/20261029_154656_8d5ba5/`의30초trace/29.98초영상1개를수집했다. 학습영상은없다. 첫episode20초자연timeout,초기1초제외 평균vx2.52633/RMSE0.13092, 실제도약55회/평균14.16cm·59.27ms/최대16.86cm다. **16cm·60ms충족4회는모두착지후80ms안정판정도통과**했다. 안정착지29회/회복실패24회/진행중timeout1회이며raw도약중1개는회복대상미선정이다. 실패24회를낙상24회로해석하지않는다. 끝난회복판정53회중성공54.72%.5ms4000표본/정책step당4표본과도약보상48.37494점을확인했다.
+
+기존공중기gate는36/57주기=63.16%로통과했다. 전체episode안정gate는목표각clip15.24%>10%때문에실패해전체success0이다. roll/pitch RMS0.04077/0.02551rad,RR/RL hip24.64°/13.76°로부모보다각도차이는줄었지만FL/FR하중13.73/30.73%의새편중이남는다. 공중예정195표본중91개동시비접촉/104개RR한발지지로위상도어긋난다. 착지최대힘1.8522BW/하강0.54247m/s는한계이내이나실패사유코드/발속도trace가없어24회실패원인을전부분리할수없다.
+
+학습적격18,620episode에서433,519도약/21,008거리·시간충족/113,933안정착지다. 마지막200회적격1,274episode의이벤트가중평균12.89cm·54.72ms,자연timeout95.13%,추종gate47.65%,전체성공0%다. 추종gate는횡속도/yaw도포함하므로전진RMSE0.1601만으로전체추종통과를판단하지않는다. 확률적학습집계와최종결정론적단일플레이를구분한다.
+
+새분석모듈 `scripts/analysis/collect_flight_diagnostics.py`는완료수집보고서에학습cohort/도약-착지연결CSV/위상통계/그림을추가한다. 기본수집기는 `collect_gallop.py`다. 이번수집은PPO0/새시뮬레이션0/원본모델·설정·보상보존이며공식checkout clean이다. 다음검토는16cm반복성/회복실패사유/앞다리하중편중/RR공중위상접촉/clipping이다. MuJoCoSim2Sim/실기는미검증이고학습은계속사용자가직접한다.
+
+```bash
+cd /home/cvr/GH/go2_animalization/gallop
+./isaac.sh gallop play --num-envs 1 --steps 1500 \
+  --checkpoint runs/isaac/train/unitree_go2_gallop/20261029_151901_f393b4/model_final.pt \
+  --video --video-length 1500
+```
+
+## 구현 당시 기록: 2.5m/s 도약·좌우 균형·착지 회복
+
+사용자가 도약 생성/거리 증가, 좌우 균형 패널티, 안정 이륙·착지 보상을 요청했고 속도도2.5로 낮추라고 했다. [학습·보상·검증 문서](gallop_flight_2p5.md)를 먼저 읽는다. `configs/gallop_2p5mps_flight.json`은 vx2.5/횡·yaw0 고정, 참조 anchor1~3 유지, 주기0.345초, 공동 공중 위상0.80~1.00(69ms), 준비80ms다. 실제거리16cm/시간60ms의 연속 부분 score, weight3을 사용하고 착지 후80ms 안정 지지를 확인해 거리·착지 보상을 확정한다. 공중 구간 접촉 패널티와 gait 양의 보상 감소, 몸통 roll/횡속도/roll각속도 비용, 좌우hip ROM 편중 비용, 목표각 clipping 비용을 추가했다. 이전 앞다리 조건과 느슨한 발 순서는 유지한다.
+
+부모는 아래3m/s 최종 모델 `20261029_140301_dbb121/model_final.pt`(누적14,000회)다. 관측47/62·출력12·scale0.5와 모든 policy/noise tensor를 유지하고 새 Adam/iteration0부터 이어 학습한다. 검증 `runs/isaac/check/unitree_go2_gallop/flight_2p5_offline_20261029/`: CPU55검사, 실제 모델 정확복원, 소스/부모SHA와 공식checkout clean 확인. 구현당시에는CUDA불가로새PhysX미검증/PPO0였고,이후완료한사용자본학습·플레이는맨위최신수집결과를따른다. 학습은사용자가진행한다. 기존play는checkpoint의원래source를읽는다.
+
+## 이전 완료 결과: 3m/s·실제 도약거리 보상 추가 학습
+
+먼저 [3m/s 결과 보고서](../reports/20261029_gallop_3mps_leap_review/README.md)를 읽는다. 사용자가 추가2,000회/12,288,000transition을 완료했고, 최종 모델은 `runs/isaac/train/unitree_go2_gallop/20261029_140301_dbb121/model_final.pt`다. 부모2m/s모델을 포함한 계보 누적14,000회이며 완료시각은2026-10-29 14:25:29KST다. 모델SHA256은 `7f1b6f63aeb66ca84bacf5ddca28b6c476f57cb6f33cf29981776019dd0a554d`다.
+
+플레이 `runs/isaac/play/unitree_go2_gallop/20261029_143102_f0e828/`의30초trace와29.98초영상1개를 수집했다. 학습영상은없다. 첫episode는20초 자연timeout이며 초기1초를제외한1~20초 평균vx2.95632m/s/RMSE0.10822, 완전58참조주기당전진0.94811m(2m/s때보다약32.4%증가), FL/FR thighROM91.99°/85.19°, 앞다리하중43.10%다. 주기전진0.948m는 지지시간도 포함하므로 공중도약거리로 부르지 않는다.
+
+**핵심 미달:** 5ms계측이4000표본/정책step당4표본으로 수행됐지만 warmup이후 유효완료도약0회·기준충족0회·도약보상0점이다. 이벤트없는경우거리0은미관측placeholder다. 학습 적격12,428episode에서는4,535개 계측도약 중12cm·40ms충족5회(0.1103%)뿐이며 이벤트가중평균3.16cm/12.21ms다. 학습의 드문성공이 최종결정론적플레이의 반복도약으로 이어지지 않았다. 마지막100회 동일정규화 reward성분중 도약비중은약0.0039%다. `Gallop/last_*`는마지막기록환경값이므로 전체횟수는episode기록으로집계한다.
+
+목표각clip16.956%>10%로stable실패, 기존공중기포함주기0%로flight실패다. 좌우ROM/load/stance비용0이지만 RR hip25.75° vsRL7.11°/pair_joint_cost0.23851이므로 좌우편중이해결됐다고하지않는다. 마지막1,000학습회 적격6,217episode의추종통과96.03%/자연timeout98.21%/전체성공0%,6,106개는clipping만으로stable실패다. 낮은착지순서정확도는필수gate가아니다. 이번설정은고정3m/s이므로48번판단에서승급0/상한3유지는설정대로다.
+
+이번수집은기존사용자실행의오프라인분석이며PPO0/보상·설정·모델보존이다. 공식checkout clean 및해시검사와자료는보고서에보관했다. 다음검토는도약신호희소성,목표각clipping,RR hip편중이다. 학습은사용자가직접한다. MuJoCoSim2Sim/실기는미검증이다.
+
+최신 모델 재생:
+
+```bash
+cd /home/cvr/GH/go2_animalization/gallop
+./isaac.sh gallop play --num-envs 1 --steps 1500 \
+  --checkpoint runs/isaac/train/unitree_go2_gallop/20261029_140301_dbb121/model_final.pt \
+  --video --video-length 1500
+```
+
+## 구현 당시 기록: 도약거리12cm 보상과3.0m/s 고정
+
+사용자가 “도약거리를 계산해서 기준치 이상 리워드, 속도3”을 요청했다. [학습 문서](gallop_rl.md) 맨위의 새명령을 따른다. 부모는 최신2m/s 완료모델 `runs/isaac/train/unitree_go2_gallop/20261029_123734_c563b2/model_final.pt`(누적12,000회). `--config configs/gallop_3mps_leap.json`에서vx3.0고정/속도band0/참조1~3유지/초기gait1이다. actor47/critic62/action12와scale0.5를유지하여가중치/noise그대로복원하고새Adam/새단계0부터센다. 본학습은사용자가진행한다.
+
+기준은12cm(`3×0.04`)와40ms다. 첫all-off부터첫발착지까지root실제위치차이를이륙방향으로투영하고5ms 물리update마다추적한다. 미달은최대0.25부분score,거리·시간동시충족score1,주기합최대1/가중치1이다. 주기경계를넘어도비행시간·위치는유지한다. 초기낙하·warmup이전이륙·reset미완료·착지전종료는제외하고앞다리조건자격과착지step종료도검사한다. 뒤/옆이동은보상하지않는다. 기존좌우쌍패널티와40ms/60%legacy판정은유지하며새거리승급hardgate는추가하지않았다. snapshot/episode/TensorBoard에실제거리·시간·횟수·score·물리표본수를추가했다. legacy flight_fraction20ms와새leap계측5ms는구분한다.
+
+CPU40개검사(이륙/착지/초기낙하/주기경계/reset/옆·뒤/fore자격/종료/예산/dt정규화/scenehook순서),실제부모모든tensor정확복원,원본SHA불변을확인했다. 결과 `runs/isaac/check/unitree_go2_gallop/leap_3mps_offline_20261029_final/`. 구현당시에는CUDA불가로새PhysX·3m/s미검증/PPO0회였으며,이후사용자가완료한본학습·플레이결과는맨위최신항목을따른다. 기존2m/s정책play는학습snapshot을읽으므로소급변경하지않는다.
+
+## 이전 완료 결과: 2m/s·좌우 쌍 추가 학습과 플레이 수집
+
+먼저 [2m/s 추가 학습 수집 보고서](../reports/20261029_gallop_2mps_pair_review/README.md)를 읽는다. 최종 모델 `runs/isaac/train/unitree_go2_gallop/20261029_123734_c563b2/model_final.pt`, 사용자2,000회/12,288,000transition 완료, 부모포함누적12,000회다. 완료시각2026-10-29 12:56:54KST. 학습영상은없다. 속도판단48회/승급0회,상한2.0유지.
+
+사용자 완료 플레이 `runs/isaac/play/unitree_go2_gallop/20261029_130340_aec1b4/`의30초영상과trace도수집했다. 2.0/0/0명령,첫20초는자연timeout(terminated0,timed_out1),초기1초를뺀1~20초meanvx1.93505/RMSE0.11519/순변위36.64m다. 완전한51참조주기의body-forward거리평균0.71590m로이전1m/s정책0.42419m보다약69%증가했다. 이는보폭/주기이동의증거이며전부공중도약거리라는뜻은아니다. FL/FR thighROM59.25°/58.35°(이전36.24°/42.06°),앞다리하중50.48%/스윙참여100%다.
+
+새플레이pairROM/load/stance비용0이지만허용오차가있고hip은ROM비용대상에서제외한다. RR hip19.21° vsRL9.29°차이가남으므로한발의존이완전히없어졌다고단정하지않는다. clip16.456%>10%가stable실패원인이고,공중기포함주기1/54로60%기준미달이다. 초기1초이후20ms저장표본동시비접촉0개는더짧은공중기까지부정하지않는다. 최근1,000학습iteration 적격6,189개추종RMSE0.11495,clip16.389%,전체성공0%;6,123개는clipping만으로stable실패다.
+
+좌우관절비용은학습초기200회0.14485→마지막200회0.07552(약48%감소),자연timeout생존episode만보면약47%감소했다. 명령/초기상태를맞춘부모vs최종정책대조는아니라패널티단독효과로단정하지않는다. 데이터는학습CSV/TensorBoard/판단48회/새play분석/부모play조건비교/영상색인/그림/설정/해시로보관했다. 수집기 `scripts/analysis/collect_gallop.py`는play가아직없을때학습만수집하는경로도지원한다.
+
+에이전트세션CUDA불가상태에서이미완료된사용자play를분석했으며추가PPO0/모델해시보존/공식checkout clean이다. 보상·학습설정은이번수집에서바꾸지않았다. 다음검토는RR hip차이와clipping/공중기병목이다. MuJoCoSim2Sim/실기는아직미검증이다.
+
+재생 명령:
+
+```bash
+./isaac.sh gallop play --num-envs 1 --steps 1500 \
+  --checkpoint runs/isaac/train/unitree_go2_gallop/20261029_123734_c563b2/model_final.pt \
+  --video --video-length 1500
+```
+
+## 구현 당시 기록: 좌우 쌍 편중 패널티와 현재 모델 추가 학습
+
+사용자가 앞다리 쌍/뒷다리 쌍의 좌우 움직임이 동떨어지고 한쪽만 균형을 잡는 경향을 줄이라고 요청했다. [현재 학습 문서](gallop_rl.md) 맨 위를 읽는다. 위상 참조를 뺀 좌우 관절 오차(hip 거울 부호), 주기별 실제 ROM, 수직 충격량, 지지시간 차이에 네 패널티를 추가했다. 정상적인 lead/lag는 허용하고 새 승급 hard gate는 없다. 새 TensorBoard/episode/trace 비용과 clipping·종료 사유 기록을 추가했다.
+
+현재 6,000회 모델에서 이어 학습하는 명령도 연결했다. `./isaac.sh gallop train --headless --num-envs 256 --iterations 2000 --finetune-from runs/isaac/train/unitree_go2_gallop/20261028_181029_379d1c/model_final.pt --config configs/gallop_2mps_pair.json --video --video-length 500 --video-interval 10000`. 1.8~2.0m/s 시작, 최저 상한2.0, 최대3.0. 참조하한1.0을 분리해 2m/s의0.37초/±0.60rad/9.25cm 참조를 유지한다. Actor/critic/noise는 그대로, Adam은새로, 새단계iteration0부터센다. 부모누적10,000회보존. `initial_gait_weight=1.0`으로기존모션강도를유지한다.
+
+구현 당시 CPU 회귀22개, 합성 입력으로 실제 `GallopState` reward/episode/reset 연결, 실제 모델의 모든 tensor 정확 복원, 부모SHA불변, 기존trace비용 유한값을 확인했다. 결과 `runs/isaac/check/unitree_go2_gallop/pair_offline_20261029_final/`. 이 검사는 오프라인/PPO0이며 이후 사용자 추가 학습과 플레이는 위 최신 결과에서 구분한다. 검증기 `scripts/validation/verify_gallop_pair.py`. 기존정책 play/check는 학습당시source snapshot을SHA검증후로드한다.
+
+## 최신 결과: Gallop 6,000회 완료, 속도 1.0에서 승급 정체
+
+먼저 [수집 보고서](../reports/20261029_gallop_review/README.md)를 읽는다. 최종 모델은 `runs/isaac/train/unitree_go2_gallop/20261028_181029_379d1c/model_final.pt`다. 사용자가6,000회/36,864,000transition을완료했고부모포함누적10,000회다. 학습완료시각2026-10-28 19:09:09KST. 최종reward153.6724,최근100회episode19.913초/20초. 학습영상15개가있다.
+
+기존플레이 `runs/isaac/play/unitree_go2_gallop/20261029_110531_367535/`의30초영상과trace를수집했다. 초기1초·첫reset이후를제외한1~20초에서명령1.0/실제meanvx1.0109m/s,RMSE0.0710,순변위19.28m. 앞다리하중49.47%/ROM84.19%/주기참여97.87%로앞다리조건은통과한다. 완전한44참조주기의thighROM FL36.24°/FR42.06°,calf FL33.55°/FR31.18°다. 10월29일추가점검에서reset으로잘린마지막불완전구간1개를제외해수치를갱신했다. 뒷다리만쓰는상태는아니다.
+
+그러나초기1초이후공중시간은0%,episode공중기포함주기는초기구간1/47(2.13%)뿐이다. 목표각clipping평균14.73%>기준10%로플레이stable도실패한다. 144번속도판단전부hold,상한1.0m/s유지. 최근1,000회적격episode6,176개에서flight통과0.16%/stable0%/전체성공0%,나머지조건은99.5~100%다. strict착지순서는필수가아니므로낮은order정확도는승급실패원인이아니다. stable=false를전부낙상으로해석하지않는다. 학습episode별clipping평균은미기록이므로학습전체원인을한항목으로확정할수없다.
+
+다음설계검토는공중기학습정체와관절목표/보상의clip유도여부가우선이다. 이번작업은오프라인수집만했고보상·조건·모델을변경하지않았다. PPO0,모델해시보존,현재core/env소스와학습snapshot일치. MuJoCoSim2Sim/실기미검증. 학습은계속사용자가직접실행한다. 수집기 `scripts/analysis/collect_gallop.py`,보고서에CSV·6개그림·설정·영상색인·해시를저장했다.
+
+사용자는 이어서 “공중기는 보이지만 1m/s라 한 주기의 전진 거리가 짧다. 2m/s면 더 길게 도약하는 모션이 나올 수 있는지 판단”을 요청했다. 당시 판단과 계산은 수집 보고서 마지막 절 및 `speed_2mps_assessment.json`에 기록했다. 1→2m/s에서 주기0.42→0.37초, 목표 주기 이동거리0.42→0.74m로 약76% 증가한다. 이어서 위의 좌우쌍 구현에서 시작 속도/참조 하한 분리와 Gallop47/62 이어 학습 기능을 추가했다. 새 동작 실측은 없다. 앞서 공중기0%는20ms 저장 표본의 미검출로 한정하며, 더 짧은 공중기/다른 영상까지 부정하지 않는다.
+
+아래는각단계구현당시의기록이다. '최신/미실행'이라는과거표현보다위완료결과가우선한다.
+
+## Gallop 구현 기록: 느슨한 스타일/앞다리 필수/성공률 속도 승급
+
+`docs/gallop_rl.md`를 먼저 읽는다. 사용자는 큰관절동작과고속Gallop스타일을원하지만속도는성공률로만올리고,개별착지순서는후하게허용하며,개구리처럼뒷다리만쓰는동작은막으라고지시했다. 새코드는 `isaac_task/gallop_core.py`, `isaac_task/gallop_env.py`, `scripts/training/gallop_baseline.py`,설정 `configs/gallop_rl.json`이다.
+
+사용자 학습 명령:
+```bash
+./isaac.sh gallop train --headless --num-envs 256 --iterations 6000 \
+  --finetune-from runs/isaac/train/unitree_go2_forward_only/20261028_160258_54620c/model_final.pt \
+  --video --video-length 500 --video-interval 10000
+```
+
+Actor45→47/critic60→62에sin/cos위상을추가,12출력유지.새입력열0,action scale0.25→0.5변환을출력/std0.5배·last_action입력2배로보정해제한각클리핑전물리목표/critic불변을unit검사했다.Adam은fresh.부모누적4000회를기록하고새단계0부터센다.이전1.0추가학습은사용자가완료했고그모델을부모로쓰는것이다.
+
+착지순서는필수성공조건아님,보상0.1,좌우앞/뒤교환허용.패턴60%/공중기주기60%/실제ROM70%/추종·안정성/앞다리하중총25%각8%/앞다리ROM평균70%각최저50%/양앞발지지와스윙참여70%가성공조건이다.성공률80%이상인최소128episode구간2개연속에서상한+0.25,50%미만하향.상한1.0부터최대3.0을목표로하며시간기반승급은없다.초기500iteration보상램프는속도승급과별개다.넓은plane/기존모터제한/soft각도clip사용.
+
+구현당시검증:`tests/test_gallop_core.py`7개통과. `runs/isaac/check/gallop_style_plane256_20261028/` 256환경1200step(24초),249eligible episode에서성공률0%→상한1.0hold,초기정책불변/부모SHA불변/PPO0/원본clean. 영상은4초연결검사용이고학습된Gallop영상이아니다.이전소규모검사는 `gallop_style_wiring_20261028/`에보관.이후Gallop본학습6,000회는사용자가완료했고위에수집결과를기록했다.
+
+새출력 `runs/isaac/{train,check,play}/unitree_go2_gallop/<ID>/`:manifest/gallop_config/params/source/모델/TensorBoard/console/progress/episodes.jsonl/curriculum_summary.플레이는 새47/62Gallop모델에 `gallop play`를쓰며훈련도달cap을자동명령으로사용한다.gallop_trace.npz는위상·실제/목표접촉·관절각/참조·발높이·속도를저장하며valid는첫연속구간,reset행은pre-reset terminal대체다.GPD/forward정책과인터페이스혼용금지.MuJoCo/실기는아직검증하지않았다.
+
+## 이전 준비 기록: 기존 정책에서 상한1.0m/s 추가 학습
+
+사용자가 “1로 올려서 추가학습 진행”을 요청했다. `docs/forward_1ms_finetune.md`를 먼저 읽는다. 명령은 `./isaac.sh forward train --headless --num-envs 256 --iterations 2000 --forward-speed-range 0.2 1.0 --finetune-from runs/isaac/train/unitree_go2_forward_only/20261028_150349_3efb1b/model_final.pt --video --video-length 500 --video-interval 10000`. 기존 actor/critic/Adam/LR를 복원하고 새 단계0~1999로 추가2000회다. 부모 누적2000회를manifest에남겨단계완료시누적4000회로집계한다. 정지/후진/횡/회전은계속제외한다. 이전파일은유지하고새실행폴더에저장한다.
+
+코드: `isaac_task/forward_only.py`의range인자, `isaac_task/finetune.py` 복원헬퍼, 공통official_baseline runner. train에서는추론용`--checkpoint`대신`--finetune-from`을사용한다. 플레이/check는체크포인트manifest에서범위를자동상속하므로새모델의1.0명령을허용한다. 수집기는새단계iteration과부모누적iteration을구분한다.
+
+구현당시검증: `tests/test_forward_finetune.py` 3개통과, `runs/isaac/check/forward_finetune_1ms_20261028/`에서실제부모정책/critic/Adam17항목·LR약1e-5복원,actor1.0명령9600개,정책상태/부모파일불변,PPO0,원본sourceclean. 기존저속정책으로reset4회가있었으며이는새1.0정책의성능평가가아니다. 이후사용자가추가본학습2,000회를완료한결과가 `unitree_go2_forward_only/20261028_160258_54620c/model_final.pt`이며현재Gallop의부모다. 사용자가학습하는기존원칙을유지한다.
+
+## 최신 결과: 전진 전용 정책의 평지 추종 확인(2026-10-28)
+
+먼저 `reports/20261028_forward_only_review/README.md`를 읽는다. 최신 모델: `runs/isaac/train/unitree_go2_forward_only/20261028_150349_3efb1b/model_final.pt` (`model_1999.pt`도 있음). 사용자 학습2,000iteration/12,288,000transition 완료. 마지막reward33.3992,최근100회33.7422,episode19.45초/20초. 학습 영상5개가 있다. 명령은vx0.2~0.4만,vy/yaw0,standing0,curriculum없음이다.
+
+플레이 `runs/isaac/play/unitree_go2_forward_only/20261028_153742_c7f3d7/`:0.3고정명령,30초trace/약30초영상. reset20초이후와초기3초를제외한17초에서meanvx0.296568,RMSE0.055876,순변위5.034m,네발지지46%. reset이유는없으므로낙상으로해석하지않는다.
+
+새평가 `runs/isaac/check/forward_only_nominal_20261028/`:정지/감속/회전없이양의전진만주는 `--case-suite forward-only`, nominal3조건각20초/처음1초제외19초.0.2/0.3/0.4명령에서실제vx0.209969/0.291376/0.377424,RMSE0.020643/0.018125/0.031408,모든공학적gate통과. 입력명령일치/양의전진만검증,실패0,추가PPO0,모델SHA/원본clean확인. 단일seed/각1회이며 Gallop/Sim2Sim/실기는아직미검증이다. 정지제거뿐아니라전진범위/횡회전/curriculum도함께변경했으므로원인을한항으로분리해주장하지않는다.
+
+보고서에전체TensorBoardCSV/원시play분석/평가보고서·CSV·그래프/학습5·플레이1·평가1영상색인/설정사본/해시저장.이기준선은보존하고다음Gallop설계와Sim2Sim은별도작업으로진행한다.학습은사용자실행원칙을유지한다.
+
+## 최신 사용자 지시: 전진 명령만 학습(2026-10-28)
+
+`docs/forward_only_baseline.md`를 읽는다. 명령은 `./isaac.sh forward train --headless --num-envs 256 --iterations 2000 --video --video-length 500 --video-interval 10000`. vx0.2~0.4,vy=yaw0,정지비율0,대칭 command curriculum 비활성이다. 보상/액추에이터/외란/종료는 유지했다. 새 정책부터 시작하며 저장은 `runs/isaac/train/unitree_go2_forward_only/<실행ID>/`, 플레이도forward를 쓴다. 설정 이후 사용자 본학습이 완료됐고 위에 결과를 기록했다. 사용자 학습 원칙을 유지한다.
+
+비학습 검증: `runs/isaac/check/forward_only_commands_20261028/command_verification.json`. 16환경×600step actor명령9,600개, vx실측명령범위0.20381~0.39179,정지/후진/횡/회전명령0개. 10초 이후16환경 모두 명령 재추출 확인. PPO0회,원본source clean. 이는 입력 분포 검증이며 전진 추종 성능은 새 학습 후 확인한다.
+
+## 최신 완료 결과 수집: curriculum 수정본도 전진 실패
+
+보고서: `reports/20261028_curriculum_fixed_review/README.md`. 학습은 `runs/isaac/train/unitree_go2_curriculum_fixed/20261028_141745_8d9837/model_final.pt`다. 2,000회/12,288,000transition 완료,마지막reward21.9497,episode19.48초/20초. command cap0.1→0.2(step8000)→0.3(step10000)→0.4(step30000)로 갱신 문제는 해결됐다. 하지만 nominal고정0.4명령에서 실제vx0.0000324,RMSE0.399968,네발접촉100%로 직진 실패다. 필수5조건 중 정지만 통과했다. 우회전yaw는허용범위지만전진실패,좌회전도불안정했다. 후속 사용자 지시로 위 전진 전용 실험을 분리했다.
+
+플레이 `runs/isaac/play/unitree_go2_curriculum_fixed/20261028_145206_497a24/`:30초trace/10초영상,고정0.4명령. 3~20초구간 meanvx0.000280,네발지지99.53%,reset20초이후제외. 해당학습은video=False로학습중영상없다. 새평가 `runs/isaac/check/curriculum_fixed_commands_20261028/`:28초/6조건,0.4전진영상28초및초기종료전상태포함trace·CSV·도표. 추가학습0회,모델보존확인. summary/TensorBoard전체CSV/curriculum48회판단/영상색인/해시를보고서에저장했다.
+
+## 최신 구현: 2026-10-28 주기적 curriculum 수정본
+
+사용자가 수정과 학습 명령을 요청해 `./isaac.sh baseline train ...`을 추가했다. [실행 문서](curriculum_fixed_baseline.md)를 읽는다. 원본 checkout/`official` 경로는 유지하며, 수정본은 `unitree_go2_curriculum_fixed` variant/폴더와 별도 체크포인트 interface를 쓴다. 보상·초기 명령·무작위 episode 시작·물리는 그대로 두고 `isaac_task/velocity_curriculum.py`에서 reset 전 통계를 수집하고 매1,000step에 판단한다. 초기 짧은 episode/단계 변경을 가로지른 episode를 제외하고, 그 밖의 조기 실패는20초로 정규화해 낮게 반영한다. 최소32개(256환경) 미만이면 통계를 다음 주기까지 유지한다.
+
+회귀 검사4개 통과. 완료 정책을 고정한256환경/2,200step 비학습 검사에서2,000step의 reset0개에도 eligible episode258개·추종1.41269로0.1→0.2 확장을 확인했다. 초기 짧은 episode256개 제외, 모델/정책 불변, 업데이트0회, 공식 source clean. 결과: `runs/isaac/check/periodic_curriculum_fixed_20261028/`. 본학습은 실행하지 않았다. 새 정책의 보행 성능은 사용자 학습 후 평가해야 한다.
+
+사용자 실행 명령: `./isaac.sh baseline train --headless --num-envs 256 --iterations 2000 --video --video-length 500 --video-interval 10000`. 새 가중치에서 시작하며 저장은 `runs/isaac/train/unitree_go2_curriculum_fixed/<실행ID>/`. iteration 표는 유지하고 추가 curriculum 로그는1,000step마다 한 줄, 상세 지표는 TensorBoard에 기록한다. 플레이도 `baseline play --command 0.4 0 0 --checkpoint ...`로 같은 variant를 쓴다. 학습은 계속 사용자가 직접 실행한다.
+
+## 최신 진단: 2026-10-28 curriculum 갱신 누락 재현
+
+[진단 보고서](../reports/20261028_official_walking_diagnosis/README.md)를 먼저 읽는다. 원본 curriculum은 reset callback과 `global_step % 1000 == 0`, 추종 보상>1.2를 동시에 요구한다. 학습의 무작위 초기 episode buffer와 결합하면 갱신 기회를 놓친다. 완료 정책을 고정한256환경/2,200step 시험에서 무작위 위상은 보상 기준 통과306회 모두 step gate에 걸려 확장0회였다. 초기 buffer0 대조는1,000/2,000step에서0.1→0.2→0.3m/s로 확장했다. 두 시험 모두 PPO업데이트0회, state_dict/모델 파일 불변, 공식 checkout clean 확인. 과거 본학습의 reset별 callback은 저장되지 않아 이 재현을 과거 경로의 완전한 복원으로 표현하지 않는다.
+
+추가로0.1m/s 명령에 정지해도 선형 추종 보상의96.1%를 받고, feet_air_time은 `norm(vxy_cmd) > 0.1`에서만 활성화돼 초기 명령 약80.7%에서0이다. 실제 고정명령 평가에서도 네 발 접촉100%로 정지했다. 이 진단 당시에는 학습 환경을 바꾸지 않았고, 이후 위의 별도 curriculum 수정본을 구현했다. 사용자가 학습하므로 추가 지시 전 PPO 업데이트를 실행하지 않는다.
+
+진단 실행: `scripts/validation/diagnose_official_curriculum.py` (`--initial-phase random|zero`, `--action-mode sampled|mean`). 원시 결과: `runs/isaac/check/official_curriculum_{random,zero}_20261028/`. 오프라인 집계: `scripts/analysis/analyze_official_walking_failure.py`.
+
+## 최신: 2026-10-28 공식 원본 모델도 전진 추종 실패 확인
+
+공식 원본 학습이 실제로 완료됐다: `runs/isaac/train/unitree_go2_official/20261028_131510_3b7c2b/model_final.pt` (256환경, rollout24, 2,000iteration, 12,288,000transition). 기존 수정본 모델과 구분한다. 수집 보고서는 `reports/20261028_unitree_official_review/README.md`다.
+
+마지막 평균 reward29.4383, episode19.88초/20초, 최근100회 timeout통계98.14%지만 보행 성공이 아니다. 전진 command curriculum 상한이 전체2,000회 동안0.1m/s에서 늘지 않았다. 명시적 명령 평가(`runs/isaac/check/unitree_official_commands_20261028/`)에서 0.05/0.1m/s 명령의 평균 실제vx는0.000029/0.000057m/s였고 네 발 지지 비율100%였다. actor입력 명령과 요청 명령은 매 step 일치했다. 정지만 통과했고 전진/회전은 실패, 참고0.8m/s는3.88초에 자세 제한 종료됐다. 평가 업데이트0회, 원본 checkout clean과 모델 해시 보존을 확인했다.
+
+기존 플레이(`runs/isaac/play/unitree_go2_official/20261028_134908_a53718/`)는 초기범위±0.1의 무작위 명령이었다. 이후 official play/check에 평가 전용 `--command VX VY YAW` 및 `play_trace.npz/csv` 저장을 추가했다. train에서는 이 옵션을 거부한다. 고정명령/trace/MP4 연결은 `runs/isaac/check/official_fixed_command_logging_20261028/`에서16step·정책업데이트0회로 확인했다.
+
+원본 기본 학습 예산은4,096환경×rollout24×최대50,000iteration=4,915,200,000transition이며 이번 실행은 경험 수로1/400이다. 원본은10초마다 낮은 속도 명령을 뽑고, reset 시점의 reward/episode길이 및 global step 조건이 만족돼야 범위를±0.1씩 확장한다. 이번에는 그 확장이 일어나지 않았다. 단순히 학습 횟수만 늘리기 전에 curriculum 호출/조건과 정지 보상을 조사한다. 기본 최대 예산은 수렴 보장이 아니다.
+
+## 2026-10-28 공식 원본 학습 경로 준비
+
+사용자가 수정본이 아닌 공식 원본에서 학습하도록 요청했다. 공식 GitHub에서 `/home/cvr/GH/unitree/unitree_rl_lab_official`을 별도로 복제하고 공식 커밋 `4960b84732b0c2ec593dccbfe963fda1bcd7b1e3`에 고정했다. tracked 소스는 clean이며 실행기가 이를 검사한다.
+
+실행 명령은 `./isaac.sh official train --headless --num-envs 256 --iterations 2000 --video`다. 전용 실행기는 원본 RobotEnvCfg/BasePPORunnerCfg를 직접 읽고 로컬 USD 경로와 RSL-RL 관측 그룹/normalization=False 호환만 처리한다. task 보상·지형·초기 자세·action scale을 원본대로 감사한다. 상세: `docs/official_baseline.md`.
+
+검증은 `runs/isaac/check/unitree_official_verified_20261028/`에 있다. 1환경16step 신경망 추론/MP4/자동 로그/실행 후 소스 clean, 정책 업데이트0회. 새 공식 경로의 본학습은 아직 실행하지 않았다. 사용자 직접 학습이며 결과는 `runs/isaac/train/unitree_go2_official/<실행ID>/`에 저장된다.
+
+## 2026-10-28 출처 정정: 공식 원본 그대로의 학습이 아님
+
+학습 실행 폴더의 `git/unitree_rl_lab.diff`를 확인했다. 이번 `Unitree-Go2-Velocity`는 **로컬에서 이미 수정돼 있던 태스크**였다. 태스크 이름과 기본 구조가 공식 저장소에서 유래했다는 뜻이며, 원본 기본 환경과 동일하다는 뜻이 아니다. 앞선 문서의 “공식 기본 보행” 표현은 이 구분이 불충분했다.
+
+저장소 HEAD 대비 학습 시 변경: action scale0.25→0.35, feet_air_time 보상0.1→0.01, 관절 한계 페널티−10→0, action_rate−0.1→−0.01, joint_pos−0.7→−0.1, undesired_contacts−1→0, foot_clearance 보상 추가, 밀기 외란 비활성화, 거친 지형/경사/계단 활성화, calf 초기각−1.5→−1.8. RSL-RL 호환 설정 추가도 포함된다. 이는 저장소 HEAD와의 비교이며 최신 공식 upstream과의 동등성을 주장하지 않는다.
+
+학습/평가 파일은 그대로 보존한다. 해당 모델의 실패를 공식 원본 환경 자체의 실패로 해석하지 않는다. 원본 기준선 비교는 아직 수행하지 않았다.
+
+## 가장 최근 검증 결론: 기본 보행 명령 추종 실패
+
+**`model_1999.pt`를 실제로 평가하니 서 있기만 하고 직진·회전을 제대로 수행하지 못했다. Gallop 추가 학습보다 기본 보행부터 해결해야 한다.** 상세 보고서: `reports/20261027_unitree_baseline_evaluation/README.md`.
+
+- Nominal 평지, 정지2초→ramp1초→명령20초→감속/정지5초: 기본5조건 중 정지만 통과(1/5). 0.4m/s 명령의 평균 vx −0.00003m/s, vx RMSE0.40003m/s. 19초 평가 구간 내 네 발 모두 접촉한 비율100%.
+- 질량·마찰·초기 상태·관측 잡음을 학습에 가깝게 둔 조건, 각 명령3회: 정지만3/3, 직진/회전0/12 통과. 좌회전1회 자세 제한 종료. 참고0.8m/s는2/3 자세 제한 종료.
+- 초기화 직후부터 이동 명령을 주는 대조 시험도 직진·회전 실패. 정지 후 출발 절차만의 문제는 아니다.
+- 매 step 요청 명령과 실제 actor 입력 명령이 같은지 검사했다. 원시 상태·명령·행동·접촉·첫 실패 기록, 영상, CSV와 그래프를 저장했다. 자동 reset 후의 상태는 회복으로 세지 않았다.
+- 유효 결과: `runs/isaac/check/unitree_baseline_nominal_v2_20261027/`, `unitree_baseline_randomized_20261027/`, `unitree_baseline_immediate_20261027/`. 첫 프로토타입 `unitree_baseline_nominal_20261027`은 무효 표시해 결론에서 제외했다.
+- 원본 체크포인트와 학습 파일은 보존했다. 모든 시험에서 PPO 업데이트를 차단했으며 추가 학습은0회다.
+- 다음에는 정지 해법을 허용하는 리워드/명령 curriculum 및 stochastic 학습 행동과 deterministic 평가 행동의 차이를 조사한다. 근본 원인은 아직 확정하지 않았다. 안정적인 기본 보행을 확보하기 전 Gallop 조건을 추가하는 학습을 시작하지 않는다.
+
+## 최신 상태: Unitree 기본 보행 사전 학습 완료
+
+**앞으로 Gallop 조건으로 추가 학습할 출발점은 아래 공식 기본 보행 체크포인트다.** 과거 GPD residual 정책과 별개다.
+
+- 원본 실행: `runs/isaac/train/unitree_go2_baseline/2026-10-27_17-59-58/`
+- 최종 체크포인트: 위 폴더의 `model_1999.pt`. 256환경 × rollout 24 × 2,000 iteration = **12,288,000 transition** 완료를 파일과 TensorBoard로 확인했다.
+- 인터페이스: actor 관측 45차원, critic 60차원, 관절 목표각 행동 12차원. actor/critic 512×256×128 ELU, 관측 정규화 False.
+- 마지막 평균 리워드 17.7895, 최근 100회 평균 19.3369. 마지막 평균 에피소드 18.07초/목표 20초.
+- 최근 100회 학습 로그의 시간 제한 종료 통계 78.50%, 자세 제한 종료 통계 21.50%. 독립 평가의 성공률이 아니다.
+- 최종 지형 curriculum level 0, 전진 명령 상한 0.4 m/s. 어려운 지형이나 0.8 m/s에서 충분히 검증된 것은 아니다.
+- 실제 플레이 영상: 위 폴더의 `videos/play/rl-video-step-0.mp4`, 9.98초, 50fps, 1280×720. 학습 중 영상도 5개 있다.
+- 수집 보고서: `reports/20261027_unitree_baseline_review/README.md`. `summary.json`, 전체 TensorBoard CSV, 파일 해시, 설정 사본, 학습 차트, 플레이 프레임 포함.
+- 공식 play는 상태·접촉·reset 수치 trace를 남기지 않아 결정론 보행 성능은 아직 정량 검증하지 못했다. MuJoCo 검증도 미진행이다.
+- **다음 단계는 이 기본 정책을 수치 평가하고, 같은 관측/행동 구조에 Gallop 조건을 추가한 환경을 구현하는 것이다.** 새 추가 학습 환경은 아직 구현하지 않았다. 기존 GPD 57차원/5행동 모델에 바로 로드하지 않는다.
+- 이번 결과 수집은 기존 파일만 분석했다. 학습·새 시뮬레이션·정책 업데이트를 수행하지 않았다. 학습은 사용자가 실행한다.
+
+## 과거 기록: GPD residual 경로(2026-10-08)
+
+### 당시 결론
+
+**Isaac Lab 본학습은 완료됐고, 최종 정책의 Isaac 플레이는 Gallop 성능 기준에 실패했다.** 저장된 실제 학습 모델이 있다. 예전의 “본학습 모델이 없음” 결론은 10월 6일 OOM으로 종료된 실행에 대한 것이며, 이번 10월 7일 완료 실행에 적용하면 안 된다.
+
+사용자가 직접 학습한다. 추가 학습·가중치 업데이트는 명시적인 요청 없이 실행하지 않는다. 이번 작업은 기존 파일 수집·분석만 했으며 새 시뮬레이션도 실행하지 않았다. 원본 체크포인트·로그·설정은 수정하지 않았다.
+
+## 이어서 사용할 파일
+
+프로젝트 루트: `/home/cvr/GH/go2_animalization/gallop`
+
+| 용도 | 경로(프로젝트 루트 기준) |
+|---|---|
+| 실제 완료 학습 | `runs/isaac/train/20261007_124336_0e2927/` |
+| 재개/플레이 체크포인트 | 위 폴더의 `model_final.pt` |
+| 배포용 actor | 위 폴더의 `actor.pt` |
+| 정책·설정 식별 및 export 검증 | 위 폴더의 `manifest.json`, `export_validation.json` |
+| 이번 플레이 | `runs/isaac/play/20261008_093942_61876e/` |
+| 플레이 평가·원시 기록 | 위 폴더의 `evaluation.json`, `episode_0.npz`~`episode_28.npz`, `progress.jsonl` |
+| 결과 요약 및 증거 SHA256 | `reports/20261008_training_play_review/summary.json`, `evidence_manifest.json` |
+| 학습 지표 원자료 | 같은 보고서 폴더의 `tensorboard_scalars.csv` |
+| 에피소드별 종료 기록 | 같은 보고서 폴더의 `episodes.csv` |
+| 차트 | 같은 보고서 폴더의 `training_curves.png`, `play_episode_0.png` |
+
+`model_final.pt`는 최종 시점 모델이며 최고 보행 성능을 가진 모델로 선별된 것은 아니다. 중간 모델은 50 iteration 간격으로 남아 있고 `model_999.pt`도 있다. 총 체크포인트 파일은 22개다.
+
+## 실제 학습 결과
+
+- 2026-10-07 12:43:36~14:02:55 KST, 총 4,759.07초(약 1시간 19분 19초).
+- Isaac Lab/PhysX + RSL-RL PPO, 환경 4개, seed 42, 처음부터 1,000 iteration.
+- 환경당 rollout 32 step: 총 **128,000 transition**. 최종 status는 `completed`.
+- TensorBoard의 `Train/mean_reward`: 첫 기록 58.849 → 마지막 99.487. 최대 116.780(0-based step 487, 488번째 iteration). 이 값은 최근 완료 에피소드의 평균 누적 리워드이며 성공률이 아니다.
+- `Train/mean_episode_length`: 마지막 97.22 policy step, 약 2.43초. 에피소드 목표는 서기 0.5초+Gallop 10초로 10.5초다.
+- 최종 value loss 171.926, surrogate loss -0.03613, entropy loss -2.34644. 마지막 learning rate 약 1e-5.
+- TorchScript export 검증 통과: 57차원 관측/5차원 행동, 출력 최대 절대오차 0. 별도의 보행 합격을 의미하지 않는다.
+
+## 이번 플레이 결과
+
+- 2026-10-08 09:39:42~09:44:31 KST. 환경 1개, 2,400 policy step(누적 시뮬레이션 약 60초), wall time 288.7초.
+- **reset 29회, 완료 에피소드 29개 모두 실패(0/29)**. 마지막 불완전 관측 구간 1개를 포함해 `evaluation.json`에는 30개 항목이 있다.
+- 29개 모두 episode time **2.05초**에 `Attitude limit + attitude_limit`로 종료. 초기 서기 0.5초를 빼면 Gallop 실행 약 **1.55초**다.
+- 두 표현은 제어기의 추정 자세 제한과 PhysX 실제 자세 제한이 함께 검출된 기록이다. 두 번의 별도 사고로 세지 않는다.
+- 초기화가 고정되어 비슷한 실패를 반복하므로 29회 결과는 다양한 초기 조건에서의 독립적인 강건성 시험이 아니다.
+- 첫 에피소드 평가 구간의 roll RMS 약 0.613 rad(35.1°). roll 불안정이 관측되지만 물리적인 근본 원인은 아직 확정하지 않았다.
+- 초기 warmup을 제외하면 에피소드별 평가 창은 약 0.045초로 매우 짧다. 그 창의 평균 속도/접촉 일치율을 안정적인 보행 성능으로 해석하면 안 된다. 완전한 유효 Gallop 주기도 확보하지 못했다.
+- 현재 기본 설정은 공중기 없는 grounded transverse 접촉 템플릿이며 공중기 조건은 합격 기준에 포함하지 않는다.
+
+## 제어 설정과 소스 상태
+
+- GPD-MPC + residual PPO. 우측 lead `RL → RR → FL → FR`, 목표 0.8 m/s, 주기 0.45초.
+- physics/control/policy = 1/5/25 ms. 제어기 QP는 환경별 CPU, PhysX/PPO는 GPU.
+- duty(FL,FR,RL,RR) = 0.55/0.50/0.45/0.55, GPD 혼합 0.5, swing KP/KD 400/40, stance KP/KD 150/20.
+- 현재 소스와 학습 당시 `source/` 스냅샷의 Python 비교에서 `isaac_task/env.py`, `isaac_task/logging.py`만 차이가 있다. env 차이는 진행 로그의 mean_reward 출력 제거이며, logging 차이는 콘솔 형식 변경이다. 학습 스냅샷에 없는 새 수집 스크립트는 이 비교에 포함하지 않았다.
+- 현재 콘솔은 사용자가 제시한 RSL-RL 기본 iteration 표 형식이다. 이터레이션·처리량·손실·리워드·episode length·시간/ETA를 표시하고, 중복 step/reset 로그는 파일에만 남긴다.
+
+## 다음 작업 순서
+
+1. 이번 최종 모델을 성능 기준선으로 보존한다. 학습 완료와 보행 합격을 혼동하지 않는다.
+2. `play_episode_0.png`, 원시 `truth/estimated/torque/foot_force`를 이용해 roll 발산 시점과 상태 추정·접촉·토크의 관계를 조사한다. 원인 분석 전에 리워드만 높이거나 합격 기준을 완화하지 않는다.
+3. 같은 물리 조건에서 zero-residual GPD와 정책의 차이를 비교한다. 초기 GPD의 PhysX 안정성부터 확인해야 한다.
+4. 중간 체크포인트(예: 450/500/950)를 비학습 평가하여 최종 정책만의 문제인지 확인한다. 최대 학습 리워드와 최고 보행 성능을 동일시하지 않는다.
+5. Isaac에서 충분한 길이의 보행 합격 후 같은 번들을 MuJoCo에서 검증한다. **이번 최종 정책의 MuJoCo/DDS 검증은 아직 수집된 결과가 없다.** 과거 시험 정책과 nominal 제어의 MuJoCo 결과는 별개다.
+6. 학습 설정을 변경하거나 학습을 재개하는 것은 사용자 요청 후 진행한다. 실제 로봇 시험은 수행하지 않았다.
+
+## 다음 실행 명령
+
+Isaac에서 최종 정책 재생(정책 업데이트 없음):
+
+```bash
+cd /home/cvr/GH/go2_animalization/gallop
+./isaac.sh play --num-envs 1 --steps 2400 \
+  --checkpoint runs/isaac/train/20261007_124336_0e2927/model_final.pt
+```
+
+무학습 기준 제어 검증:
+
+```bash
+./isaac.sh check --headless --num-envs 1 --steps 440 \
+  --config runs/isaac/train/20261007_124336_0e2927/config.json
+```
+
+텐서보드:
+
+```bash
+.isaacvenv/bin/python -m tensorboard.main \
+  --logdir runs/isaac/train/20261007_124336_0e2927 --port 6006
+```
+
+후속 MuJoCo 검증(아직 이번 작업에서 실행하지 않음):
+
+```bash
+./gallop.sh validate_mujoco.py runs/isaac/train/20261007_124336_0e2927 \
+  --seconds 30 --require-pass
+```
+
+사용자가 요청했을 때만 학습 재개:
+
+```bash
+./isaac.sh train --headless --num-envs 4 --iterations 1000 \
+  --checkpoint runs/isaac/train/20261007_124336_0e2927/model_final.pt
+```
+
+새 결과는 `runs/` 아래 종류별 새 실행 폴더에 저장된다. 이전 결과 경로를 출력으로 재사용하지 않는다.
+
+## 2026-10-27 추가: Unitree 기본 보행 사전 학습 준비
+
+사용자가 Unitree RL Lab 기본 보행을 약 2,000 iteration 학습한 뒤 Gallop 조건으로 추가 학습하는 방향을 선택했다. 현재 GPD 57차원/5행동 모델에 기본 보행 모델을 직접 합치는 작업은 아니며, 공식 45차원 actor/60차원 critic/12관절 출력 구조를 유지하는 추가 학습 환경은 아직 구현하지 않았다.
+
+기본 태스크는 `/home/cvr/GH/unitree/unitree_rl_lab`의 `Unitree-Go2-Velocity`다. 현재 기본 환경은 여러 지형을 사용하는 속도 추종 태스크다. `BasePPORunnerCfg`에 RSL-RL 3.x용 `obs_groups={policy:[policy],critic:[critic]}`와 actor/critic normalization=False를 명시했다. CLI로 `+agent.obs_groups=...`만 추가하면 configclass.from_dict에서 `/obs_groups/policy` KeyError가 발생하므로 설정 파일 정의로 수정했다. 이제 세 가지 `agent.*` CLI 호환 인수는 필요 없다.
+
+검증: `runs/isaac/check/unitree_baseline_20261027/verification.json` 및 `console.log`. 공식 train.py의 설정 round-trip/환경 생성/runner 생성/영상 저장을 통과했고, 1환경·4step 추론에서 관측 45/60차원과 행동 12차원을 확인했다. 검증 중 PPO 업데이트 호출을 차단했으며 학습은 수행하지 않았다. 이 검증 폴더의 영상은 학습된 기본 보행 정책의 성능 결과가 아니다.
+
+실행 명령(사용자가 직접 학습):
+
+```bash
+cd /home/cvr/GH/unitree/unitree_rl_lab
+PYTHONPATH="$PWD/source/unitree_rl_lab" \
+/home/cvr/miniconda3/envs/kine2go/bin/python scripts/rsl_rl/train.py \
+  --task Unitree-Go2-Velocity --headless \
+  --num_envs 256 --max_iterations 2000 \
+  --video --video_length 500 --video_interval 10000 \
+  --log_root_dir /home/cvr/GH/go2_animalization/gallop/runs/isaac/train \
+  --experiment_name unitree_go2_baseline
+```
+
+각 줄 끝의 `\` 뒤에는 공백을 넣지 않는다. 결과는 `runs/isaac/train/unitree_go2_baseline/<실행시간>/` 아래 저장된다. 기본 보행 체크포인트가 생성된 것을 확인한 뒤 Gallop 추가 학습을 구현한다.

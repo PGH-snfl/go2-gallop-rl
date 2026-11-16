@@ -1,0 +1,10 @@
+{
+  "runtime_core_env_config_unchanged": true,
+  "analysis_modules_compile": 6,
+  "report_links_valid": true,
+  "input_checkpoint": "167504719e5f3b0523893b69bc1a9c12bde5eeefb477a6fc26d1301abccb926d",
+  "verification_checks": 30,
+  "new_policy_updates": 0,
+  "new_supervised_updates": 0,
+  "new_simulations": 0
+}

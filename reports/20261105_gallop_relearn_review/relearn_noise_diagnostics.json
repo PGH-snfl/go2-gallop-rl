@@ -1,0 +1,204 @@
+{
+  "formal_seconds": 21.5,
+  "samples": 1075,
+  "initial_action_std_mean": 0.10521197319030762,
+  "final_action_std_mean": 0.26338905716935795,
+  "final_physical_std_rad": [
+    0.11959221959114075,
+    0.11628750711679459,
+    0.1150558739900589,
+    0.11164689064025879,
+    0.16877320408821106,
+    0.16936537623405457,
+    0.14224134385585785,
+    0.1450672298669815,
+    0.12253567576408386,
+    0.12498880922794342,
+    0.12385430186986923,
+    0.1209259107708931
+  ],
+  "entropy_coefficient": 0.01,
+  "cases": [
+    {
+      "noise_multiplier": 1.0,
+      "goal_index": 0,
+      "request_tolerance": 0.12,
+      "required_steps": 3,
+      "single_action_any_joint_exceed_probability_mean": 0.0001823756485657598,
+      "single_action_probability_q10_q50_q90": [
+        5.498210174570417e-06,
+        4.724647536613613e-05,
+        0.0005269024108046417
+      ],
+      "fixed_state_sequence_no_failure_probability": 0.9999999710924453
+    },
+    {
+      "noise_multiplier": 1.0,
+      "goal_index": 1,
+      "request_tolerance": 0.06,
+      "required_steps": 2,
+      "single_action_any_joint_exceed_probability_mean": 0.0009624576080918007,
+      "single_action_probability_q10_q50_q90": [
+        4.715140269218043e-05,
+        0.00032705744552952165,
+        0.002779500366483757
+      ],
+      "fixed_state_sequence_no_failure_probability": 0.998122589980209
+    },
+    {
+      "noise_multiplier": 1.0,
+      "goal_index": 2,
+      "request_tolerance": 0.02,
+      "required_steps": 1,
+      "single_action_any_joint_exceed_probability_mean": 0.002628139711500563,
+      "single_action_probability_q10_q50_q90": [
+        0.00017628856661224825,
+        0.001059050759835145,
+        0.007447911408661634
+      ],
+      "fixed_state_sequence_no_failure_probability": 0.05865934861440587
+    },
+    {
+      "noise_multiplier": 0.75,
+      "goal_index": 0,
+      "request_tolerance": 0.12,
+      "required_steps": 3,
+      "single_action_any_joint_exceed_probability_mean": 2.400690850112542e-06,
+      "single_action_probability_q10_q50_q90": [
+        1.5155418031653769e-09,
+        8.068120671556045e-08,
+        5.037779650662878e-06
+      ],
+      "fixed_state_sequence_no_failure_probability": 0.999999999999935
+    },
+    {
+      "noise_multiplier": 0.75,
+      "goal_index": 1,
+      "request_tolerance": 0.06,
+      "required_steps": 2,
+      "single_action_any_joint_exceed_probability_mean": 3.379874406098324e-05,
+      "single_action_probability_q10_q50_q90": [
+        5.996059009305555e-08,
+        2.1996442772787006e-06,
+        8.514948431395109e-05
+      ],
+      "fixed_state_sequence_no_failure_probability": 0.9999974581217855
+    },
+    {
+      "noise_multiplier": 0.75,
+      "goal_index": 2,
+      "request_tolerance": 0.02,
+      "required_steps": 1,
+      "single_action_any_joint_exceed_probability_mean": 0.00016385124371209734,
+      "single_action_probability_q10_q50_q90": [
+        5.429529620792906e-07,
+        1.6318189728581345e-05,
+        0.00044184925162307217
+      ],
+      "fixed_state_sequence_no_failure_probability": 0.8383990955542943
+    },
+    {
+      "noise_multiplier": 0.5,
+      "goal_index": 0,
+      "request_tolerance": 0.12,
+      "required_steps": 3,
+      "single_action_any_joint_exceed_probability_mean": 1.4320214120454408e-10,
+      "single_action_probability_q10_q50_q90": [
+        0.0,
+        1.7763568394002505e-15,
+        1.6068146813097428e-11
+      ],
+      "fixed_state_sequence_no_failure_probability": 1.0
+    },
+    {
+      "noise_multiplier": 0.5,
+      "goal_index": 1,
+      "request_tolerance": 0.06,
+      "required_steps": 2,
+      "single_action_any_joint_exceed_probability_mean": 2.294778305992882e-08,
+      "single_action_probability_q10_q50_q90": [
+        4.884981308350695e-16,
+        2.6132429553626935e-12,
+        7.2699860353964146e-09
+      ],
+      "fixed_state_sequence_no_failure_probability": 0.999999999999699
+    },
+    {
+      "noise_multiplier": 0.5,
+      "goal_index": 2,
+      "request_tolerance": 0.02,
+      "required_steps": 1,
+      "single_action_any_joint_exceed_probability_mean": 4.4508629134598375e-07,
+      "single_action_probability_q10_q50_q90": [
+        7.94475596421762e-14,
+        2.0110912934967473e-10,
+        2.61378256460887e-07
+      ],
+      "fixed_state_sequence_no_failure_probability": 0.9995216349717132
+    }
+  ],
+  "per_joint_stage2": [
+    {
+      "joint": "FL_hip_joint",
+      "exceed_probability_mean": 9.794424849612516e-08,
+      "minimum_headroom_in_sigma": 3.9491603097948613
+    },
+    {
+      "joint": "FR_hip_joint",
+      "exceed_probability_mean": 2.6607386667182963e-07,
+      "minimum_headroom_in_sigma": 3.4900810457817846
+    },
+    {
+      "joint": "RL_hip_joint",
+      "exceed_probability_mean": 7.204075363230833e-09,
+      "minimum_headroom_in_sigma": 4.525170927214167
+    },
+    {
+      "joint": "RR_hip_joint",
+      "exceed_probability_mean": 1.9613457088322983e-08,
+      "minimum_headroom_in_sigma": 4.390496838436751
+    },
+    {
+      "joint": "FL_thigh_joint",
+      "exceed_probability_mean": 0.0,
+      "minimum_headroom_in_sigma": 8.599836237784714
+    },
+    {
+      "joint": "FR_thigh_joint",
+      "exceed_probability_mean": 0.0,
+      "minimum_headroom_in_sigma": 8.225722902452754
+    },
+    {
+      "joint": "RL_thigh_joint",
+      "exceed_probability_mean": 2.468258206465839e-05,
+      "minimum_headroom_in_sigma": 2.875652220827172
+    },
+    {
+      "joint": "RR_thigh_joint",
+      "exceed_probability_mean": 3.0814528907965685e-06,
+      "minimum_headroom_in_sigma": 3.2477739508101293
+    },
+    {
+      "joint": "FL_calf_joint",
+      "exceed_probability_mean": 0.00020845171097526495,
+      "minimum_headroom_in_sigma": 2.4281145000200652
+    },
+    {
+      "joint": "FR_calf_joint",
+      "exceed_probability_mean": 0.0004778088969178834,
+      "minimum_headroom_in_sigma": 1.6697928922727223
+    },
+    {
+      "joint": "RL_calf_joint",
+      "exceed_probability_mean": 0.0014942660552592362,
+      "minimum_headroom_in_sigma": 1.7855574203250193
+    },
+    {
+      "joint": "RR_calf_joint",
+      "exceed_probability_mean": 0.0004212861499710186,
+      "minimum_headroom_in_sigma": 2.008324994558052
+    }
+  ],
+  "independent_run_probability_check": true,
+  "limitation": "Analytic independent Gaussian samples on the same recorded mean requests, with the state trajectory fixed. No state feedback, training rollout or actual survival prediction. Noise multipliers are counterfactual settings only."
+}

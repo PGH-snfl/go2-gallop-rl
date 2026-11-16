@@ -1,0 +1,247 @@
+[
+  {
+    "path": "/home/cvr/GH/go2_animalization/gallop/AGENTS.md",
+    "bytes": 25977,
+    "sha256": "2532d6307c24fb4837ddcd75cd596327319de3601a52f4a44d4fdb14fc681cf0"
+  },
+  {
+    "path": "/home/cvr/GH/go2_animalization/gallop/README.md",
+    "bytes": 19003,
+    "sha256": "923a5bf13b0eeefd21d9a11824cc515de1340979ffbe333466984f5ced24059c"
+  },
+  {
+    "path": "/home/cvr/GH/go2_animalization/gallop/docs/CONTINUE_HERE.md",
+    "bytes": 58824,
+    "sha256": "adf27fbc59c9aa51288f46b1c843cb5bbc9a1b9674d75d2346e2fe6e20a0b04f"
+  },
+  {
+    "path": "/home/cvr/GH/go2_animalization/gallop/docs/gallop_heading_motion.md",
+    "bytes": 8239,
+    "sha256": "5ee119b299b90852008f6899f9dda146ae041c834330be9eaa83c42536bbdb98"
+  },
+  {
+    "path": "/home/cvr/GH/go2_animalization/gallop/reports/20261102_gallop_heading_motion_review/README.md",
+    "bytes": 11824,
+    "sha256": "88e38621c62f7c2942920ecab2bf36aa7bda4da7271f26122a8fb542300ef2f3"
+  },
+  {
+    "path": "/home/cvr/GH/go2_animalization/gallop/reports/20261102_gallop_heading_motion_review/additional_input_manifest.json",
+    "bytes": 1616,
+    "sha256": "0ad1bfed370b250468c2ea5b0173a92f0e14114e5358425da20380cea4e4a3ae"
+  },
+  {
+    "path": "/home/cvr/GH/go2_animalization/gallop/reports/20261102_gallop_heading_motion_review/collection.log",
+    "bytes": 5396,
+    "sha256": "fd51a9339322671a2400252f810fec64cb37dfd27bee02f9a007c25c5c467b78"
+  },
+  {
+    "path": "/home/cvr/GH/go2_animalization/gallop/reports/20261102_gallop_heading_motion_review/collection_status.json",
+    "bytes": 208,
+    "sha256": "e4a0dda95d8e29626e361efbb5c2b7f2aa1891ceb84eda01682cca28f80456cc"
+  },
+  {
+    "path": "/home/cvr/GH/go2_animalization/gallop/reports/20261102_gallop_heading_motion_review/criterion_pass_rates.png",
+    "bytes": 63283,
+    "sha256": "23737b9fc24e16b48b20a9d2d8e950472d3a129a7d640ae1a2e4ccaf4192802b"
+  },
+  {
+    "path": "/home/cvr/GH/go2_animalization/gallop/reports/20261102_gallop_heading_motion_review/curriculum_decisions.csv",
+    "bytes": 14842,
+    "sha256": "02996d4107621ed02adb0b224680d3d1af29cd952218d1727dd67c322bc2a43b"
+  },
+  {
+    "path": "/home/cvr/GH/go2_animalization/gallop/reports/20261102_gallop_heading_motion_review/evidence_manifest.json",
+    "bytes": 11895,
+    "sha256": "732d43022651960ed4a7615edc54e67440552dd1aa4762aa5070f21d6e4ece21"
+  },
+  {
+    "path": "/home/cvr/GH/go2_animalization/gallop/reports/20261102_gallop_heading_motion_review/flight_collection.log",
+    "bytes": 2591,
+    "sha256": "a8ecc938aa36305eebc34f3b39add42a1a01f51f54fbab79572586820814cf29"
+  },
+  {
+    "path": "/home/cvr/GH/go2_animalization/gallop/reports/20261102_gallop_heading_motion_review/flight_reward_curves.png",
+    "bytes": 676496,
+    "sha256": "a2116969fac9f8318ab06872030cb814a71eb77e9cb5cf4979f5b13738a2378b"
+  },
+  {
+    "path": "/home/cvr/GH/go2_animalization/gallop/reports/20261102_gallop_heading_motion_review/gallop_config.json",
+    "bytes": 3788,
+    "sha256": "082bbc28b339ea266abcac0940ae26313b54515b7026ee0d7ac523c4a4f00cbd"
+  },
+  {
+    "path": "/home/cvr/GH/go2_animalization/gallop/reports/20261102_gallop_heading_motion_review/gallop_keyframes.png",
+    "bytes": 756311,
+    "sha256": "e36fead173cf90dbf126e176c938bed69d51e1ff1ecca68533bcc967d6db7fab"
+  },
+  {
+    "path": "/home/cvr/GH/go2_animalization/gallop/reports/20261102_gallop_heading_motion_review/heading_collection.log",
+    "bytes": 3121,
+    "sha256": "ff6cb4ea1057af3709f5487af2850a316bec792cab22257289445487e308ec33"
+  },
+  {
+    "path": "/home/cvr/GH/go2_animalization/gallop/reports/20261102_gallop_heading_motion_review/heading_motion_play.png",
+    "bytes": 690804,
+    "sha256": "d978c7919254892148c1f2f8029ea15746f1c644f822ac20592bfec6fd294e1e"
+  },
+  {
+    "path": "/home/cvr/GH/go2_animalization/gallop/reports/20261102_gallop_heading_motion_review/heading_parent_comparison.json",
+    "bytes": 6100,
+    "sha256": "dcfad5893df14ea13c60103587f583cb1fd44677c7e534250c7f3c03dfdf73bf"
+  },
+  {
+    "path": "/home/cvr/GH/go2_animalization/gallop/reports/20261102_gallop_heading_motion_review/heading_play_diagnostics.json",
+    "bytes": 25624,
+    "sha256": "b70a61647ca608c4d95db5f5ff6f8a6478e4275fe2858a4390103f4bbfe38f94"
+  },
+  {
+    "path": "/home/cvr/GH/go2_animalization/gallop/reports/20261102_gallop_heading_motion_review/heading_play_trace.csv",
+    "bytes": 413345,
+    "sha256": "9abb13a523898a46669ad6aad9b9b1755f57f377b28b37989a327d3d18229010"
+  },
+  {
+    "path": "/home/cvr/GH/go2_animalization/gallop/reports/20261102_gallop_heading_motion_review/heading_reward_curves.png",
+    "bytes": 434679,
+    "sha256": "0078fc927c1c2d4b24c078250175f83fc33c060e652ba5acbd81e0b45d1b4ddd"
+  },
+  {
+    "path": "/home/cvr/GH/go2_animalization/gallop/reports/20261102_gallop_heading_motion_review/heading_training_diagnostics.json",
+    "bytes": 4653,
+    "sha256": "dc10d670b8bb6037a5bfd9fbc12fddaca125914df63240f96e44a765b480619f"
+  },
+  {
+    "path": "/home/cvr/GH/go2_animalization/gallop/reports/20261102_gallop_heading_motion_review/joint_motion.png",
+    "bytes": 595844,
+    "sha256": "8a9eec15390cfa87ca503bab3d9b7b1145b2bb98604f1fc03e77e03ff5d2e7d0"
+  },
+  {
+    "path": "/home/cvr/GH/go2_animalization/gallop/reports/20261102_gallop_heading_motion_review/leap_curves.png",
+    "bytes": 383199,
+    "sha256": "ea404af97678d1abc7500badb63194db66774cc7e571a76eb278e1b0262d800b"
+  },
+  {
+    "path": "/home/cvr/GH/go2_animalization/gallop/reports/20261102_gallop_heading_motion_review/pair_reward_curves.png",
+    "bytes": 298633,
+    "sha256": "161b418845d2bf18338cba29c9eaf3d74cd1c3926298258031d72ad53077590f"
+  },
+  {
+    "path": "/home/cvr/GH/go2_animalization/gallop/reports/20261102_gallop_heading_motion_review/params/agent.yaml",
+    "bytes": 1039,
+    "sha256": "0916df3c3b5fbbac8e3bce4c48504cf89ec819c7b8d2cc966ccabb7dc87e8a0a"
+  },
+  {
+    "path": "/home/cvr/GH/go2_animalization/gallop/reports/20261102_gallop_heading_motion_review/params/env.yaml",
+    "bytes": 31139,
+    "sha256": "09db243c92edbe10773a1ccefb2bae6d4ec520b2de2845b74da0d025ab363c23"
+  },
+  {
+    "path": "/home/cvr/GH/go2_animalization/gallop/reports/20261102_gallop_heading_motion_review/play_analysis.json",
+    "bytes": 5508,
+    "sha256": "20435a60735014de9fbd29ff2c2db9cbc7c3f236685b0939313e4d57aa9472b0"
+  },
+  {
+    "path": "/home/cvr/GH/go2_animalization/gallop/reports/20261102_gallop_heading_motion_review/play_contacts.png",
+    "bytes": 342083,
+    "sha256": "169783570bf2449acacf2cff25bd70805df7c775c739e2518757e172e1dd70e9"
+  },
+  {
+    "path": "/home/cvr/GH/go2_animalization/gallop/reports/20261102_gallop_heading_motion_review/play_diagnostics.json",
+    "bytes": 3300,
+    "sha256": "2ead5f96491bab93d77dfa81a9191fbd9783ab6f17e0627620c62d529dc4f7b2"
+  },
+  {
+    "path": "/home/cvr/GH/go2_animalization/gallop/reports/20261102_gallop_heading_motion_review/play_episodes.csv",
+    "bytes": 2141,
+    "sha256": "ceb58d95b49ef57150954eb032f2488e093c017b6077953e16ec5528332d6088"
+  },
+  {
+    "path": "/home/cvr/GH/go2_animalization/gallop/reports/20261102_gallop_heading_motion_review/play_flight_events.csv",
+    "bytes": 5161,
+    "sha256": "0ad6cce50acd33dbc5ed296d42b7bc61dd33e8e5410f2e9086cbb43a2d2323aa"
+  },
+  {
+    "path": "/home/cvr/GH/go2_animalization/gallop/reports/20261102_gallop_heading_motion_review/play_flight_events.png",
+    "bytes": 117242,
+    "sha256": "3a6b55e0c18d8921fb0f6c6c4ac467377156a031788b5327d2f64ea624254071"
+  },
+  {
+    "path": "/home/cvr/GH/go2_animalization/gallop/reports/20261102_gallop_heading_motion_review/play_flight_trace.csv",
+    "bytes": 859621,
+    "sha256": "f7351430b19239589889b6df0f566cf09c142eef53b3fc2c48f8d71c77455b15"
+  },
+  {
+    "path": "/home/cvr/GH/go2_animalization/gallop/reports/20261102_gallop_heading_motion_review/play_keyframes.png",
+    "bytes": 898918,
+    "sha256": "52a1739c245fa109b2195fc56e37ea70c7fc09d8b3333e5d8c93905f3c892160"
+  },
+  {
+    "path": "/home/cvr/GH/go2_animalization/gallop/reports/20261102_gallop_heading_motion_review/play_state_trace.csv",
+    "bytes": 184819,
+    "sha256": "d855c9e46eb23600b92338228d386fcd9f85da73fecccd8e781253cd1737e30a"
+  },
+  {
+    "path": "/home/cvr/GH/go2_animalization/gallop/reports/20261102_gallop_heading_motion_review/play_tracking.png",
+    "bytes": 326420,
+    "sha256": "93c6825e278de04f9146c5ccc858f65e7ddfe26e3ac11474f9a45b443217b609"
+  },
+  {
+    "path": "/home/cvr/GH/go2_animalization/gallop/reports/20261102_gallop_heading_motion_review/reward_contributions_last100.json",
+    "bytes": 2583,
+    "sha256": "2402779f732962791c3bded2ca1487246c8d73efdfbd506bdc48e42a26202504"
+  },
+  {
+    "path": "/home/cvr/GH/go2_animalization/gallop/reports/20261102_gallop_heading_motion_review/source/scripts/analysis/collect_flight_diagnostics.py",
+    "bytes": 12171,
+    "sha256": "c55239af21acd2c4331ce9428fe76ed73e55efeda9e07324d335fc949e0ff98a"
+  },
+  {
+    "path": "/home/cvr/GH/go2_animalization/gallop/reports/20261102_gallop_heading_motion_review/source/scripts/analysis/collect_gallop.py",
+    "bytes": 21068,
+    "sha256": "77cf97261384eea470bd0aa0f90745d4298a321d1bfba89f0c78e041e30de6fe"
+  },
+  {
+    "path": "/home/cvr/GH/go2_animalization/gallop/reports/20261102_gallop_heading_motion_review/source/scripts/analysis/collect_heading_diagnostics.py",
+    "bytes": 13946,
+    "sha256": "4422dea2cef4257979caf9847ec314a260abdd6428741956816432d110fe2013"
+  },
+  {
+    "path": "/home/cvr/GH/go2_animalization/gallop/reports/20261102_gallop_heading_motion_review/source/verify.py",
+    "bytes": 8462,
+    "sha256": "5e25fa0d0b4db7a5ccc085c5cea64e10d8cd2a84e5150ed07a6f4882f41c2914"
+  },
+  {
+    "path": "/home/cvr/GH/go2_animalization/gallop/reports/20261102_gallop_heading_motion_review/summary.json",
+    "bytes": 55405,
+    "sha256": "891efa6713536ad17dcfb19d82421b4f9490991a0bcb4cd14efa28f1a780c25b"
+  },
+  {
+    "path": "/home/cvr/GH/go2_animalization/gallop/reports/20261102_gallop_heading_motion_review/tensorboard_scalars.csv",
+    "bytes": 15471260,
+    "sha256": "c4584fcc18b34da2f38349442ad7df974bac0c9464087322dc1068e26684f774"
+  },
+  {
+    "path": "/home/cvr/GH/go2_animalization/gallop/reports/20261102_gallop_heading_motion_review/train_episodes.csv",
+    "bytes": 7603672,
+    "sha256": "ec3dca2cd48487f6778302fab3b3787ffabd3fff1ba7bc5c77415d0d1956804c"
+  },
+  {
+    "path": "/home/cvr/GH/go2_animalization/gallop/reports/20261102_gallop_heading_motion_review/training_curves.png",
+    "bytes": 279436,
+    "sha256": "89e2c7ce84947ff69306655a9d1146ce152bba9150e3ac1fc7aee30cc246daec"
+  },
+  {
+    "path": "/home/cvr/GH/go2_animalization/gallop/reports/20261102_gallop_heading_motion_review/training_diagnostics.json",
+    "bytes": 37152,
+    "sha256": "4d2bb5082fb4fbca303e249295ebc5377fbcc65fb25cbbeeb6feead736283f1d"
+  },
+  {
+    "path": "/home/cvr/GH/go2_animalization/gallop/reports/20261102_gallop_heading_motion_review/verification.json",
+    "bytes": 2193,
+    "sha256": "e5f851ea70b7f9df3f340c50c34feb27d1ab043cf286b21289a34db8fc141cfb"
+  },
+  {
+    "path": "/home/cvr/GH/go2_animalization/gallop/reports/20261102_gallop_heading_motion_review/videos.csv",
+    "bytes": 211,
+    "sha256": "74274ac3981148a164ef09386c2536246f4c978ae0407d4e20df9cbb5fdb843e"
+  }
+]

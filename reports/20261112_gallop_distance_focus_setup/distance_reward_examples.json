@@ -1,0 +1,26 @@
+[
+  {
+    "distance_m": 0.17,
+    "air_seconds": 0.09,
+    "old_weighted_distance_points": 0.7650001049041748,
+    "new_weighted_distance_points": 0.19507502764463425,
+    "qualified": false,
+    "note": "Pre recovery-quality confirmation budget; not simulated/trained performance"
+  },
+  {
+    "distance_m": 0.4,
+    "air_seconds": 0.2,
+    "old_weighted_distance_points": 3.9999990463256836,
+    "new_weighted_distance_points": 5.333330869674683,
+    "qualified": false,
+    "note": "Pre recovery-quality confirmation budget; not simulated/trained performance"
+  },
+  {
+    "distance_m": 0.5,
+    "air_seconds": 0.25,
+    "old_weighted_distance_points": 8.0,
+    "new_weighted_distance_points": 24.0,
+    "qualified": true,
+    "note": "Pre recovery-quality confirmation budget; not simulated/trained performance"
+  }
+]

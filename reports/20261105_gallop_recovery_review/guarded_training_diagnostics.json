@@ -1,0 +1,170 @@
+{
+  "all_eligible": {
+    "episodes": 26008,
+    "measured_episodes": 24490,
+    "success": 0,
+    "terminated_fraction": 0.10339126422639187,
+    "measured_episodes_with_actual_excess": 0,
+    "criteria": {
+      "guarded_limits": 0.9416333435865888,
+      "guarded_feet": 0.9416333435865888,
+      "tracking": 0.9410950476776376,
+      "flight": 0.0,
+      "stabilization_width": 0.9530913565056905,
+      "stabilization_landing": 0.0
+    },
+    "measured_quantiles": {
+      "guarded_intervention": [
+        0.09718263149261475,
+        0.11511566117405891,
+        0.12930504679679872
+      ],
+      "guarded_actual": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "guarded_front_high": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "guarded_hind_high": [
+        0.0,
+        0.0,
+        0.0009115770226344466
+      ],
+      "guarded_tracking_rmse": [
+        0.25585198402404785,
+        0.28016866743564606,
+        0.30526427924633026
+      ]
+    }
+  },
+  "first_200": {
+    "episodes": 791,
+    "measured_episodes": 762,
+    "success": 0,
+    "terminated_fraction": 0.03666245259165613,
+    "measured_episodes_with_actual_excess": 0,
+    "criteria": {
+      "guarded_limits": 0.9633375474083439,
+      "guarded_feet": 0.9633375474083439,
+      "tracking": 0.9633375474083439,
+      "flight": 0.0,
+      "stabilization_width": 0.9633375474083439,
+      "stabilization_landing": 0.0
+    },
+    "measured_quantiles": {
+      "guarded_intervention": [
+        0.13180504590272904,
+        0.1466573402285576,
+        0.1553691327571869
+      ],
+      "guarded_actual": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "guarded_front_high": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "guarded_hind_high": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "guarded_tracking_rmse": [
+        0.23627079129219056,
+        0.2587956041097641,
+        0.28387711346149447
+      ]
+    }
+  },
+  "last_200": {
+    "episodes": 880,
+    "measured_episodes": 830,
+    "success": 0,
+    "terminated_fraction": 0.10227272727272728,
+    "measured_episodes_with_actual_excess": 0,
+    "criteria": {
+      "guarded_limits": 0.9431818181818182,
+      "guarded_feet": 0.9431818181818182,
+      "tracking": 0.9431818181818182,
+      "flight": 0.0,
+      "stabilization_width": 0.9590909090909091,
+      "stabilization_landing": 0.0
+    },
+    "measured_quantiles": {
+      "guarded_intervention": [
+        0.09720576405525208,
+        0.10645968094468117,
+        0.11792281195521355
+      ],
+      "guarded_actual": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "guarded_front_high": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "guarded_hind_high": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "guarded_tracking_rmse": [
+        0.25260616540908815,
+        0.27582788467407227,
+        0.2999066263437271
+      ]
+    }
+  },
+  "last_1000": {
+    "episodes": 4364,
+    "measured_episodes": 4113,
+    "success": 0,
+    "terminated_fraction": 0.10036663611365719,
+    "measured_episodes_with_actual_excess": 0,
+    "criteria": {
+      "guarded_limits": 0.9424839596700275,
+      "guarded_feet": 0.9424839596700275,
+      "tracking": 0.9424839596700275,
+      "flight": 0.0,
+      "stabilization_width": 0.9562328139321723,
+      "stabilization_landing": 0.0
+    },
+    "measured_quantiles": {
+      "guarded_intervention": [
+        0.10000009983778,
+        0.10847050696611404,
+        0.11931793689727783
+      ],
+      "guarded_actual": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "guarded_front_high": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "guarded_hind_high": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "guarded_tracking_rmse": [
+        0.25537639260292055,
+        0.27747708559036255,
+        0.30181354880332945
+      ]
+    }
+  }
+}

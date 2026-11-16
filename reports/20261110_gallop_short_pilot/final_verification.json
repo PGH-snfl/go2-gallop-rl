@@ -1,0 +1,11 @@
+{
+  "policy_updates_500": true,
+  "candidate500_directional_pass": true,
+  "candidate250_height_gate_failure_recorded": true,
+  "no_full_graduation_claim": true,
+  "video1499_frames_2998_seconds": true,
+  "parent30k_original_hash_unchanged": true,
+  "failed34k_original_hash_unchanged": true,
+  "original_checkpoint_kept_as_protected_baseline": true,
+  "all_evidence_hashes_match": true
+}

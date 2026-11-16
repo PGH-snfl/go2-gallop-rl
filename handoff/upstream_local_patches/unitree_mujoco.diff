@@ -1,0 +1,44 @@
+diff --git a/simulate/config.yaml b/simulate/config.yaml
+index ba10638..dfe8e5f 100644
+--- a/simulate/config.yaml
++++ b/simulate/config.yaml
+@@ -1,13 +1,13 @@
+ robot: "go2"  # Robot name, "go2", "b2", "b2w", "h1", "go2w", "g1", "h2", "as2"
+ robot_scene: "scene.xml" # Robot scene, /unitree_robots/[robot]/scene.xml 
+ 
+-domain_id: 1  # Domain id
+-interface: "lo" # Interface 
++domain_id: 0  # Domain id
++interface: "lo" # Local simulation interface
+ # DDS IDL type: -1 auto, 0 unitree_go, 1 unitree_hg. Auto selects unitree_hg for as2.
+ idl_type: -1
+ 
+-use_joystick: 0 # Simulate Unitree WirelessController using a gamepad
+-joystick_type: "xbox" # support "xbox" and "switch" gamepad layout
++use_joystick: 1 # Simulate Unitree WirelessController using a gamepad
++joystick_type: "unitree_ble" # BLE bridge on localhost:15001; also supports xbox/switch
+ joystick_device: "/dev/input/js0" # Device path
+ joystick_bits: 16 # Some game controllers may only have 8-bit accuracy
+ 
+diff --git a/simulate/src/unitree_sdk2_bridge.h b/simulate/src/unitree_sdk2_bridge.h
+index 7c13289..e0eca8b 100644
+--- a/simulate/src/unitree_sdk2_bridge.h
++++ b/simulate/src/unitree_sdk2_bridge.h
+@@ -13,6 +13,7 @@
+ 
+ #include "param.h"
+ #include "physics_joystick.h"
++#include "ble_joystick.h"
+ 
+ #define MOTOR_SENSOR_NUM 3
+ 
+@@ -31,6 +32,9 @@ public:
+                 joystick = std::make_shared<XBoxJoystick>(param::config.joystick_device, param::config.joystick_bits);
+             } else if(param::config.joystick_type == "switch") {
+                 joystick  = std::make_shared<SwitchJoystick>(param::config.joystick_device, param::config.joystick_bits);
++            } else if(param::config.joystick_type == "unitree_ble") {
++                joystick = std::make_shared<BleJoystick>();
++                std::cout << "Unitree BLE input: 127.0.0.1:15001" << std::endl;
+             } else {
+                 std::cerr << "Unsupported joystick type: " << param::config.joystick_type << std::endl;
+                 exit(EXIT_FAILURE);

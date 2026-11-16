@@ -1,0 +1,2230 @@
+{
+  "episode_rows": 66644,
+  "groups": {
+    "all_eligible": {
+      "count": 66644,
+      "success_rate": 0.0,
+      "criterion_pass_rates": {
+        "tracking": 0.7033341336054258,
+        "pattern": 0.0004651581537722826,
+        "flight": 0.0,
+        "motion": 0.8461827021187204,
+        "front_load": 0.8760728647740231,
+        "front_motion": 0.8409609267150832,
+        "front_cycle": 0.11295840585799172,
+        "stable": 0.5300102034691795,
+        "mature": 0.0,
+        "stabilization_pose": 0.9887761839025269,
+        "stabilization_width": 0.6833623431966869,
+        "stabilization_landing": 0.0,
+        "stabilization_distance": 0.0,
+        "stabilization_measured": 0.7083908528899826,
+        "guarded_limits": 0.7082107916691676,
+        "guarded_feet": 0.7083608426865134
+      },
+      "measures": {
+        "vx_rmse": {
+          "mean": 0.10010144918247059,
+          "q10_q50_q90": [
+            0.0,
+            0.10018987581133842,
+            0.15108138471841812
+          ]
+        },
+        "contact_accuracy": {
+          "mean": 0.477246983455955,
+          "q10_q50_q90": [
+            0.0,
+            0.5396825671195984,
+            0.5666620492935182
+          ]
+        },
+        "order_accuracy": {
+          "mean": 0.2652725071001933,
+          "q10_q50_q90": [
+            0.19760479032993317,
+            0.26530611515045166,
+            0.33738601207733154
+          ]
+        },
+        "flight_fraction": {
+          "mean": 0.0,
+          "q10_q50_q90": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "rom_fraction": {
+          "mean": 0.8016672938910969,
+          "q10_q50_q90": [
+            0.0,
+            0.9525865614414215,
+            0.9783805251121521
+          ]
+        },
+        "fore_load_share": {
+          "mean": 0.4751031488469938,
+          "q10_q50_q90": [
+            0.0,
+            0.536032497882843,
+            0.556606239080429
+          ]
+        },
+        "fore_min_load_share": {
+          "mean": 0.2251549500961244,
+          "q10_q50_q90": [
+            0.0,
+            0.2568587064743042,
+            0.2693233460187912
+          ]
+        },
+        "fore_rom_fraction": {
+          "mean": 0.7697244445011256,
+          "q10_q50_q90": [
+            0.0,
+            0.9135870933532715,
+            0.9645290672779083
+          ]
+        },
+        "fore_min_rom_fraction": {
+          "mean": 0.7540643002595745,
+          "q10_q50_q90": [
+            0.0,
+            0.8949537873268127,
+            0.9560717046260834
+          ]
+        },
+        "fore_participation": {
+          "mean": 0.40687137761117337,
+          "q10_q50_q90": [
+            0.0,
+            0.45098039507865906,
+            0.7058823704719543
+          ]
+        },
+        "attitude_rms": {
+          "mean": 0.04229388088183265,
+          "q10_q50_q90": [
+            0.0,
+            0.043758874759078026,
+            0.059479860588908195
+          ]
+        },
+        "action_clip_fraction": {
+          "mean": 0.0005740793729482355,
+          "q10_q50_q90": [
+            0.0,
+            0.0,
+            0.0006252735911402869
+          ]
+        },
+        "terminated": {
+          "mean": 0.46982474041174,
+          "q10_q50_q90": [
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        "timed_out": {
+          "mean": 0.5303103055038714,
+          "q10_q50_q90": [
+            0.0,
+            1.0,
+            1.0
+          ]
+        },
+        "pair_joint_cost": {
+          "mean": 0.14288406047416935,
+          "q10_q50_q90": [
+            0.0,
+            0.16281693428754807,
+            0.1978779897093773
+          ]
+        },
+        "pair_rom_cost": {
+          "mean": 0.0018404673399631468,
+          "q10_q50_q90": [
+            0.0,
+            0.0014617727720178664,
+            0.0036601374158635744
+          ]
+        },
+        "pair_load_cost": {
+          "mean": 0.002410716838251651,
+          "q10_q50_q90": [
+            0.0,
+            0.0013166128192096949,
+            0.004795908508822323
+          ]
+        },
+        "pair_stance_cost": {
+          "mean": 0.0004603849735874125,
+          "q10_q50_q90": [
+            0.0,
+            6.135409057606012e-05,
+            0.0009051427186932438
+          ]
+        },
+        "pair_hip_cost": {
+          "mean": 0.009877784992738316,
+          "q10_q50_q90": [
+            0.0,
+            0.009900049772113562,
+            0.016467056982219223
+          ]
+        },
+        "pair_valid_cycles": {
+          "mean": 46.90636816517616,
+          "q10_q50_q90": [
+            14.0,
+            65.0,
+            66.0
+          ]
+        },
+        "leap_events": {
+          "mean": 0.007367504951683573,
+          "q10_q50_q90": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "leap_qualified_events": {
+          "mean": 0.0,
+          "q10_q50_q90": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "leap_qualified_fraction": {
+          "mean": 0.0,
+          "q10_q50_q90": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "leap_distance_mean": {
+          "mean": 6.1373873221805e-05,
+          "q10_q50_q90": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "leap_distance_max": {
+          "mean": 6.276328539409405e-05,
+          "q10_q50_q90": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "leap_air_seconds_mean": {
+          "mean": 6.415931239269593e-05,
+          "q10_q50_q90": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "leap_reward_points": {
+          "mean": 0.0,
+          "q10_q50_q90": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "leap_reward_steps": {
+          "mean": 0.0,
+          "q10_q50_q90": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "leap_physics_samples": {
+          "mean": 4411.4615569293555,
+          "q10_q50_q90": [
+            1632.0,
+            6000.0,
+            6000.0
+          ]
+        },
+        "flight_takeoffs": {
+          "mean": 0.001185403037032591,
+          "q10_q50_q90": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "flight_landings": {
+          "mean": 0.00013504591561130783,
+          "q10_q50_q90": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "flight_stable_landings": {
+          "mean": 1.500510173458976e-05,
+          "q10_q50_q90": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "flight_aborted_landings": {
+          "mean": 0.00012004081387671808,
+          "q10_q50_q90": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "flight_takeoff_vz_mean": {
+          "mean": -9.800265867792548e-05,
+          "q10_q50_q90": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "flight_landing_peak_force_bw": {
+          "mean": 0.00011653533739442907,
+          "q10_q50_q90": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "flight_landing_peak_down_vz": {
+          "mean": 3.049633322663399e-05,
+          "q10_q50_q90": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "flight_balance_cost": {
+          "mean": 0.055971269513407196,
+          "q10_q50_q90": [
+            0.034957078471779826,
+            0.05659572407603264,
+            0.0690041296184063
+          ]
+        },
+        "flight_support_cost": {
+          "mean": 0.0,
+          "q10_q50_q90": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "guarded_intervention": {
+          "mean": 0.2587118992180837,
+          "q10_q50_q90": [
+            0.0,
+            0.3082760274410248,
+            0.3285845458507538
+          ]
+        },
+        "guarded_actual": {
+          "mean": 6.234887278479246e-08,
+          "q10_q50_q90": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "guarded_front_high": {
+          "mean": 5.434433535350079e-06,
+          "q10_q50_q90": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "guarded_hind_high": {
+          "mean": 0.001207793485037851,
+          "q10_q50_q90": [
+            0.0,
+            0.0,
+            0.0013951542088761954
+          ]
+        },
+        "guarded_front_cost": {
+          "mean": 1.7584656667334777e-06,
+          "q10_q50_q90": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "guarded_hind_cost": {
+          "mean": 0.001222688210385681,
+          "q10_q50_q90": [
+            0.0,
+            0.0,
+            6.0322532226564384e-05
+          ]
+        },
+        "guarded_tracking_rmse": {
+          "mean": 0.23885436011241853,
+          "q10_q50_q90": [
+            0.0,
+            0.2659098207950592,
+            0.2987533867359161
+          ]
+        }
+      },
+      "failure_combinations": {
+        "tracking,pattern,flight,motion,front_load,front_motion,front_cycle,stable,mature,stabilization_width,stabilization_landing,stabilization_distance,stabilization_measured,guarded_limits,guarded_feet": 8148,
+        "tracking,pattern,flight,motion,front_motion,front_cycle,stable,mature,stabilization_width,stabilization_landing,stabilization_distance,stabilization_measured,guarded_limits,guarded_feet": 1536,
+        "tracking,pattern,flight,front_motion,front_cycle,stable,mature,stabilization_width,stabilization_landing,stabilization_distance,stabilization_measured,guarded_limits,guarded_feet": 71,
+        "tracking,pattern,flight,motion,front_load,front_motion,front_cycle,stable,mature,stabilization_pose,stabilization_width,stabilization_landing,stabilization_distance,stabilization_measured,guarded_limits,guarded_feet": 94,
+        "tracking,pattern,flight,motion,front_motion,front_cycle,stable,mature,stabilization_width,stabilization_landing,stabilization_distance": 11,
+        "tracking,pattern,flight,motion,front_motion,front_cycle,stable,mature,stabilization_pose,stabilization_width,stabilization_landing,stabilization_distance,stabilization_measured,guarded_limits,guarded_feet": 119,
+        "pattern,flight,motion,front_motion,front_cycle,stable,mature,stabilization_width,stabilization_landing,stabilization_distance": 1,
+        "tracking,pattern,flight,front_motion,front_cycle,stable,mature,stabilization_width,stabilization_landing,stabilization_distance": 10,
+        "tracking,pattern,flight,motion,front_motion,front_cycle,stable,mature,stabilization_pose,stabilization_width,stabilization_landing,stabilization_distance": 1,
+        "pattern,flight,front_motion,front_cycle,stable,mature,stabilization_width,stabilization_landing,stabilization_distance": 32,
+        "tracking,pattern,flight,stable,mature,stabilization_width,stabilization_landing,stabilization_distance,stabilization_measured,guarded_limits,guarded_feet": 385,
+        "tracking,pattern,flight,front_cycle,stable,mature,stabilization_pose,stabilization_width,stabilization_landing,stabilization_distance,stabilization_measured,guarded_limits,guarded_feet": 173,
+        "tracking,pattern,flight,front_motion,front_cycle,stable,mature,stabilization_pose,stabilization_width,stabilization_landing,stabilization_distance,stabilization_measured,guarded_limits,guarded_feet": 53,
+        "tracking,pattern,flight,front_motion,front_cycle,stable,mature,stabilization_pose,stabilization_width,stabilization_landing,stabilization_distance": 7,
+        "tracking,pattern,flight,front_cycle,stable,mature,stabilization_width,stabilization_landing,stabilization_distance,stabilization_measured,guarded_limits,guarded_feet": 2433,
+        "tracking,pattern,flight,front_motion,front_cycle,mature,stabilization_width,stabilization_landing,stabilization_distance": 30,
+        "tracking,pattern,flight,motion,front_motion,front_cycle,mature,stabilization_width,stabilization_landing,stabilization_distance": 6,
+        "pattern,flight,front_motion,front_cycle,mature,stabilization_width,stabilization_landing,stabilization_distance": 68,
+        "tracking,pattern,flight,front_cycle,mature,stabilization_width,stabilization_landing,stabilization_distance": 78,
+        "pattern,flight,front_cycle,mature,stabilization_width,stabilization_landing,stabilization_distance": 4614,
+        "pattern,flight,front_cycle,stable,mature,stabilization_pose,stabilization_width,stabilization_landing,stabilization_distance": 68,
+        "pattern,flight,front_cycle,stable,mature,stabilization_width,stabilization_landing,stabilization_distance": 2429,
+        "tracking,pattern,flight,front_cycle,stable,mature,stabilization_pose,stabilization_width,stabilization_landing,stabilization_distance": 65,
+        "tracking,pattern,flight,front_cycle,stable,mature,stabilization_width,stabilization_landing,stabilization_distance": 70,
+        "flight,front_cycle,stable,mature,stabilization_width,stabilization_landing,stabilization_distance": 2,
+        "pattern,flight,stable,mature,stabilization_width,stabilization_landing,stabilization_distance": 91,
+        "tracking,pattern,flight,front_load,front_motion,front_cycle,stable,mature,stabilization_pose,stabilization_width,stabilization_landing,stabilization_distance,stabilization_measured,guarded_limits,guarded_feet": 13,
+        "tracking,pattern,flight,front_cycle,mature,stabilization_pose,stabilization_width,stabilization_landing,stabilization_distance": 2,
+        "tracking,pattern,flight,stable,mature,stabilization_width,stabilization_landing,stabilization_distance": 1,
+        "tracking,pattern,flight,front_cycle,stable,mature,stabilization_landing,stabilization_distance,stabilization_measured,guarded_limits,guarded_feet": 5264,
+        "tracking,pattern,flight,mature,stabilization_width,stabilization_landing,stabilization_distance": 1,
+        "tracking,pattern,flight,front_motion,front_cycle,stable,mature,stabilization_pose,stabilization_landing,stabilization_distance,stabilization_measured,guarded_limits,guarded_feet": 4,
+        "pattern,flight,front_cycle,mature,stabilization_landing,stabilization_distance": 24456,
+        "pattern,flight,front_motion,front_cycle,stable,mature,stabilization_landing,stabilization_distance": 3,
+        "pattern,flight,front_cycle,stable,mature,stabilization_landing,stabilization_distance": 8664,
+        "pattern,flight,front_motion,front_cycle,stable,mature,stabilization_pose,stabilization_width,stabilization_landing,stabilization_distance": 5,
+        "tracking,pattern,flight,front_cycle,stable,mature,stabilization_pose,stabilization_landing,stabilization_distance,stabilization_measured,guarded_limits,guarded_feet": 88,
+        "tracking,pattern,flight,front_motion,front_cycle,stable,mature,stabilization_landing,stabilization_distance,stabilization_measured,guarded_limits,guarded_feet": 50,
+        "tracking,pattern,flight,front_load,front_cycle,stable,mature,stabilization_pose,stabilization_width,stabilization_landing,stabilization_distance,stabilization_measured,guarded_limits,guarded_feet": 4,
+        "tracking,pattern,flight,front_cycle,stable,mature,stabilization_pose,stabilization_landing,stabilization_distance": 7,
+        "tracking,pattern,flight,front_cycle,stable,mature,stabilization_landing,stabilization_distance": 35,
+        "tracking,pattern,flight,stable,mature,stabilization_landing,stabilization_distance,stabilization_measured,guarded_limits,guarded_feet": 647,
+        "tracking,pattern,flight,motion,front_motion,front_cycle,stable,mature,stabilization_landing,stabilization_distance,stabilization_measured,guarded_limits,guarded_feet": 327,
+        "pattern,flight,front_cycle,stable,mature,stabilization_pose,stabilization_landing,stabilization_distance": 22,
+        "pattern,flight,front_cycle,stable,mature,stabilization_width,stabilization_landing,stabilization_distance,guarded_limits": 1,
+        "pattern,flight,front_motion,front_cycle,mature,stabilization_landing,stabilization_distance": 1,
+        "tracking,pattern,flight,front_motion,stable,mature,stabilization_width,stabilization_landing,stabilization_distance,stabilization_measured,guarded_limits,guarded_feet": 1,
+        "pattern,flight,mature,stabilization_width,stabilization_landing,stabilization_distance": 466,
+        "pattern,flight,mature,stabilization_landing,stabilization_distance": 5580,
+        "tracking,pattern,flight,stable,mature,stabilization_pose,stabilization_width,stabilization_landing,stabilization_distance,stabilization_measured,guarded_limits,guarded_feet": 8,
+        "pattern,flight,stable,mature,stabilization_landing,stabilization_distance": 334,
+        "tracking,pattern,flight,front_cycle,mature,stabilization_landing,stabilization_distance": 9,
+        "pattern,flight,front_cycle,stable,mature,stabilization_landing,stabilization_distance,guarded_limits": 11,
+        "tracking,pattern,flight,stable,mature,stabilization_pose,stabilization_width,stabilization_landing,stabilization_distance": 1,
+        "tracking,pattern,flight,mature,stabilization_landing,stabilization_distance": 1,
+        "pattern,flight,stable,mature,stabilization_pose,stabilization_width,stabilization_landing,stabilization_distance": 1,
+        "tracking,pattern,flight,stable,mature,stabilization_pose,stabilization_landing,stabilization_distance,stabilization_measured,guarded_limits,guarded_feet": 2,
+        "tracking,pattern,flight,motion,front_motion,front_cycle,stable,mature,stabilization_pose,stabilization_landing,stabilization_distance,stabilization_measured,guarded_limits,guarded_feet": 8,
+        "flight,front_cycle,stable,mature,stabilization_landing,stabilization_distance": 11,
+        "tracking,pattern,flight,front_cycle,stable,mature,stabilization_pose,stabilization_width,stabilization_landing,stabilization_distance,guarded_feet": 2,
+        "pattern,flight,stable,mature,stabilization_pose,stabilization_landing,stabilization_distance": 1,
+        "tracking,flight,front_cycle,stable,mature,stabilization_landing,stabilization_distance,stabilization_measured,guarded_limits,guarded_feet": 5,
+        "flight,stable,mature,stabilization_landing,stabilization_distance": 2,
+        "flight,front_cycle,mature,stabilization_landing,stabilization_distance": 4,
+        "flight,mature,stabilization_landing,stabilization_distance": 6,
+        "tracking,flight,front_cycle,stable,mature,stabilization_width,stabilization_landing,stabilization_distance,stabilization_measured,guarded_limits,guarded_feet": 1
+      },
+      "event_totals": {
+        "leap_events": 491.0,
+        "leap_qualified_events": 0.0,
+        "leap_reward_points": 0.0,
+        "flight_takeoffs": 79.0,
+        "flight_landings": 9.0,
+        "flight_stable_landings": 1.0,
+        "flight_aborted_landings": 8.0
+      },
+      "event_weighted_distance_m": 0.008856087538061375,
+      "event_weighted_air_seconds": 0.009236252285320077,
+      "stable_failure_combinations": {
+        "terminated,short_episode": 31220,
+        "attitude,terminated,short_episode": 78,
+        "terminated": 13
+      }
+    },
+    "first_200_iterations": {
+      "count": 1425,
+      "success_rate": 0.0,
+      "criterion_pass_rates": {
+        "tracking": 0.24140350877192981,
+        "pattern": 0.0007017543859649122,
+        "flight": 0.0,
+        "motion": 0.4007017543859649,
+        "front_load": 0.47228070175438597,
+        "front_motion": 0.3059649122807018,
+        "front_cycle": 0.004912280701754386,
+        "stable": 0.22736842105263158,
+        "mature": 0.0,
+        "stabilization_pose": 0.9438596491228071,
+        "stabilization_width": 0.002105263157894737,
+        "stabilization_landing": 0.0,
+        "stabilization_distance": 0.0,
+        "stabilization_measured": 0.35368421052631577,
+        "guarded_limits": 0.35368421052631577,
+        "guarded_feet": 0.35368421052631577
+      },
+      "measures": {
+        "vx_rmse": {
+          "mean": 0.1109412908005087,
+          "q10_q50_q90": [
+            0.0,
+            0.0,
+            0.29314686655998234
+          ]
+        },
+        "contact_accuracy": {
+          "mean": 0.2667991049352445,
+          "q10_q50_q90": [
+            0.0,
+            0.0,
+            0.5728923201560974
+          ]
+        },
+        "order_accuracy": {
+          "mean": 0.23691091921507265,
+          "q10_q50_q90": [
+            0.18518517911434174,
+            0.232876718044281,
+            0.30182173252105715
+          ]
+        },
+        "flight_fraction": {
+          "mean": 0.0,
+          "q10_q50_q90": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "rom_fraction": {
+          "mean": 0.3670189494208286,
+          "q10_q50_q90": [
+            0.0,
+            0.0,
+            0.8874730706214905
+          ]
+        },
+        "fore_load_share": {
+          "mean": 0.26893278027835643,
+          "q10_q50_q90": [
+            0.0,
+            0.0,
+            0.5674207091331482
+          ]
+        },
+        "fore_min_load_share": {
+          "mean": 0.12506821611471344,
+          "q10_q50_q90": [
+            0.0,
+            0.0,
+            0.27180856466293335
+          ]
+        },
+        "fore_rom_fraction": {
+          "mean": 0.3383364857288829,
+          "q10_q50_q90": [
+            0.0,
+            0.0,
+            0.8414836168289185
+          ]
+        },
+        "fore_min_rom_fraction": {
+          "mean": 0.32246745116877973,
+          "q10_q50_q90": [
+            0.0,
+            0.0,
+            0.8130490183830261
+          ]
+        },
+        "fore_participation": {
+          "mean": 0.1633282232755109,
+          "q10_q50_q90": [
+            0.0,
+            0.0,
+            0.4896222352981568
+          ]
+        },
+        "attitude_rms": {
+          "mean": 0.03109546915938457,
+          "q10_q50_q90": [
+            0.0,
+            0.0,
+            0.06324406415224075
+          ]
+        },
+        "action_clip_fraction": {
+          "mean": 0.006860449989898163,
+          "q10_q50_q90": [
+            0.0,
+            0.0,
+            0.014156138710677632
+          ]
+        },
+        "terminated": {
+          "mean": 0.7719298245614035,
+          "q10_q50_q90": [
+            0.0,
+            1.0,
+            1.0
+          ]
+        },
+        "timed_out": {
+          "mean": 0.22807017543859648,
+          "q10_q50_q90": [
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        "pair_joint_cost": {
+          "mean": 0.050757317456759904,
+          "q10_q50_q90": [
+            0.0,
+            0.0,
+            0.11461023539304734
+          ]
+        },
+        "pair_rom_cost": {
+          "mean": 0.0010104714422200151,
+          "q10_q50_q90": [
+            0.0,
+            0.0,
+            0.0027845700737088924
+          ]
+        },
+        "pair_load_cost": {
+          "mean": 0.003976989682676248,
+          "q10_q50_q90": [
+            0.0,
+            0.0,
+            0.007144151348620669
+          ]
+        },
+        "pair_stance_cost": {
+          "mean": 0.001487333165993429,
+          "q10_q50_q90": [
+            0.0,
+            0.0,
+            0.002393041644245387
+          ]
+        },
+        "pair_hip_cost": {
+          "mean": 0.005053503689509289,
+          "q10_q50_q90": [
+            0.0,
+            0.0,
+            0.013029836490750332
+          ]
+        },
+        "pair_valid_cycles": {
+          "mean": 29.67298245614035,
+          "q10_q50_q90": [
+            11.0,
+            16.0,
+            66.0
+          ]
+        },
+        "leap_events": {
+          "mean": 0.0,
+          "q10_q50_q90": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "leap_qualified_events": {
+          "mean": 0.0,
+          "q10_q50_q90": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "leap_qualified_fraction": {
+          "mean": 0.0,
+          "q10_q50_q90": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "leap_distance_mean": {
+          "mean": 0.0,
+          "q10_q50_q90": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "leap_distance_max": {
+          "mean": 0.0,
+          "q10_q50_q90": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "leap_air_seconds_mean": {
+          "mean": 0.0,
+          "q10_q50_q90": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "leap_reward_points": {
+          "mean": 0.0,
+          "q10_q50_q90": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "leap_reward_steps": {
+          "mean": 0.0,
+          "q10_q50_q90": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "leap_physics_samples": {
+          "mean": 2970.1249122807017,
+          "q10_q50_q90": [
+            1444.0,
+            1816.0,
+            6000.0
+          ]
+        },
+        "flight_takeoffs": {
+          "mean": 0.0,
+          "q10_q50_q90": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "flight_landings": {
+          "mean": 0.0,
+          "q10_q50_q90": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "flight_stable_landings": {
+          "mean": 0.0,
+          "q10_q50_q90": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "flight_aborted_landings": {
+          "mean": 0.0,
+          "q10_q50_q90": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "flight_takeoff_vz_mean": {
+          "mean": 0.0,
+          "q10_q50_q90": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "flight_landing_peak_force_bw": {
+          "mean": 0.0,
+          "q10_q50_q90": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "flight_landing_peak_down_vz": {
+          "mean": 0.0,
+          "q10_q50_q90": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "flight_balance_cost": {
+          "mean": 0.04209504302787153,
+          "q10_q50_q90": [
+            0.015793229267001153,
+            0.04049856215715408,
+            0.0704254373908043
+          ]
+        },
+        "flight_support_cost": {
+          "mean": 0.0,
+          "q10_q50_q90": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "guarded_intervention": {
+          "mean": 0.06540748252941851,
+          "q10_q50_q90": [
+            0.0,
+            0.0,
+            0.14583348631858825
+          ]
+        },
+        "guarded_actual": {
+          "mean": 0.0,
+          "q10_q50_q90": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "guarded_front_high": {
+          "mean": 3.2720772565848993e-05,
+          "q10_q50_q90": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "guarded_hind_high": {
+          "mean": 0.004334110448202281,
+          "q10_q50_q90": [
+            0.0,
+            0.0,
+            0.00141653122846038
+          ]
+        },
+        "guarded_front_cost": {
+          "mean": 3.068613648378104e-06,
+          "q10_q50_q90": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "guarded_hind_cost": {
+          "mean": 0.00680038819675632,
+          "q10_q50_q90": [
+            0.0,
+            0.0,
+            0.00010442822676850999
+          ]
+        },
+        "guarded_tracking_rmse": {
+          "mean": 0.10783529317169858,
+          "q10_q50_q90": [
+            0.0,
+            0.0,
+            0.2468620747327805
+          ]
+        }
+      },
+      "failure_combinations": {
+        "tracking,pattern,flight,motion,front_load,front_motion,front_cycle,stable,mature,stabilization_width,stabilization_landing,stabilization_distance,stabilization_measured,guarded_limits,guarded_feet": 745,
+        "tracking,pattern,flight,motion,front_motion,front_cycle,stable,mature,stabilization_width,stabilization_landing,stabilization_distance,stabilization_measured,guarded_limits,guarded_feet": 75,
+        "tracking,pattern,flight,front_motion,front_cycle,stable,mature,stabilization_width,stabilization_landing,stabilization_distance,stabilization_measured,guarded_limits,guarded_feet": 18,
+        "tracking,pattern,flight,motion,front_load,front_motion,front_cycle,stable,mature,stabilization_pose,stabilization_width,stabilization_landing,stabilization_distance,stabilization_measured,guarded_limits,guarded_feet": 6,
+        "tracking,pattern,flight,motion,front_motion,front_cycle,stable,mature,stabilization_width,stabilization_landing,stabilization_distance": 11,
+        "tracking,pattern,flight,motion,front_motion,front_cycle,stable,mature,stabilization_pose,stabilization_width,stabilization_landing,stabilization_distance,stabilization_measured,guarded_limits,guarded_feet": 9,
+        "pattern,flight,motion,front_motion,front_cycle,stable,mature,stabilization_width,stabilization_landing,stabilization_distance": 1,
+        "tracking,pattern,flight,front_motion,front_cycle,stable,mature,stabilization_width,stabilization_landing,stabilization_distance": 10,
+        "tracking,pattern,flight,motion,front_motion,front_cycle,stable,mature,stabilization_pose,stabilization_width,stabilization_landing,stabilization_distance": 1,
+        "pattern,flight,front_motion,front_cycle,stable,mature,stabilization_width,stabilization_landing,stabilization_distance": 19,
+        "tracking,pattern,flight,stable,mature,stabilization_width,stabilization_landing,stabilization_distance,stabilization_measured,guarded_limits,guarded_feet": 2,
+        "tracking,pattern,flight,front_cycle,stable,mature,stabilization_pose,stabilization_width,stabilization_landing,stabilization_distance,stabilization_measured,guarded_limits,guarded_feet": 24,
+        "tracking,pattern,flight,front_motion,front_cycle,stable,mature,stabilization_pose,stabilization_width,stabilization_landing,stabilization_distance,stabilization_measured,guarded_limits,guarded_feet": 9,
+        "tracking,pattern,flight,front_motion,front_cycle,stable,mature,stabilization_pose,stabilization_width,stabilization_landing,stabilization_distance": 3,
+        "tracking,pattern,flight,front_cycle,stable,mature,stabilization_width,stabilization_landing,stabilization_distance,stabilization_measured,guarded_limits,guarded_feet": 29,
+        "tracking,pattern,flight,front_motion,front_cycle,mature,stabilization_width,stabilization_landing,stabilization_distance": 29,
+        "tracking,pattern,flight,motion,front_motion,front_cycle,mature,stabilization_width,stabilization_landing,stabilization_distance": 6,
+        "pattern,flight,front_motion,front_cycle,mature,stabilization_width,stabilization_landing,stabilization_distance": 46,
+        "tracking,pattern,flight,front_cycle,mature,stabilization_width,stabilization_landing,stabilization_distance": 62,
+        "pattern,flight,front_cycle,mature,stabilization_width,stabilization_landing,stabilization_distance": 179,
+        "pattern,flight,front_cycle,stable,mature,stabilization_pose,stabilization_width,stabilization_landing,stabilization_distance": 15,
+        "pattern,flight,front_cycle,stable,mature,stabilization_width,stabilization_landing,stabilization_distance": 80,
+        "tracking,pattern,flight,front_cycle,stable,mature,stabilization_pose,stabilization_width,stabilization_landing,stabilization_distance": 11,
+        "tracking,pattern,flight,front_cycle,stable,mature,stabilization_width,stabilization_landing,stabilization_distance": 24,
+        "flight,front_cycle,stable,mature,stabilization_width,stabilization_landing,stabilization_distance": 1,
+        "pattern,flight,stable,mature,stabilization_width,stabilization_landing,stabilization_distance": 3,
+        "tracking,pattern,flight,front_load,front_motion,front_cycle,stable,mature,stabilization_pose,stabilization_width,stabilization_landing,stabilization_distance,stabilization_measured,guarded_limits,guarded_feet": 1,
+        "tracking,pattern,flight,front_cycle,mature,stabilization_pose,stabilization_width,stabilization_landing,stabilization_distance": 1,
+        "tracking,pattern,flight,stable,mature,stabilization_width,stabilization_landing,stabilization_distance": 1,
+        "tracking,pattern,flight,front_cycle,stable,mature,stabilization_landing,stabilization_distance,stabilization_measured,guarded_limits,guarded_feet": 3,
+        "tracking,pattern,flight,mature,stabilization_width,stabilization_landing,stabilization_distance": 1
+      },
+      "event_totals": {
+        "leap_events": 0.0,
+        "leap_qualified_events": 0.0,
+        "leap_reward_points": 0.0,
+        "flight_takeoffs": 0.0,
+        "flight_landings": 0.0,
+        "flight_stable_landings": 0.0,
+        "flight_aborted_landings": 0.0
+      },
+      "event_weighted_distance_m": null,
+      "event_weighted_air_seconds": null,
+      "stable_failure_combinations": {
+        "terminated,short_episode": 1085,
+        "attitude,terminated,short_episode": 15
+      }
+    },
+    "last_200_iterations": {
+      "count": 1088,
+      "success_rate": 0.0,
+      "criterion_pass_rates": {
+        "tracking": 0.71875,
+        "pattern": 0.0027573529411764708,
+        "flight": 0.0,
+        "motion": 0.8492647058823529,
+        "front_load": 0.8777573529411765,
+        "front_motion": 0.8483455882352942,
+        "front_cycle": 0.04963235294117647,
+        "stable": 0.5055147058823529,
+        "mature": 0.0,
+        "stabilization_pose": 0.9954044117647058,
+        "stabilization_width": 0.8079044117647058,
+        "stabilization_landing": 0.0,
+        "stabilization_distance": 0.0,
+        "stabilization_measured": 0.71875,
+        "guarded_limits": 0.71875,
+        "guarded_feet": 0.71875
+      },
+      "measures": {
+        "vx_rmse": {
+          "mean": 0.09550702288962544,
+          "q10_q50_q90": [
+            0.0,
+            0.09602857381105423,
+            0.15031638741493225
+          ]
+        },
+        "contact_accuracy": {
+          "mean": 0.4793013163623126,
+          "q10_q50_q90": [
+            0.0,
+            0.541803777217865,
+            0.5720007002353669
+          ]
+        },
+        "order_accuracy": {
+          "mean": 0.27990588075686795,
+          "q10_q50_q90": [
+            0.22623250186443328,
+            0.2853805124759674,
+            0.34028400480747223
+          ]
+        },
+        "flight_fraction": {
+          "mean": 0.0,
+          "q10_q50_q90": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "rom_fraction": {
+          "mean": 0.8271540534846923,
+          "q10_q50_q90": [
+            0.0,
+            0.9739592671394348,
+            0.9846431851387024
+          ]
+        },
+        "fore_load_share": {
+          "mean": 0.4823460894472459,
+          "q10_q50_q90": [
+            0.0,
+            0.5464845597743988,
+            0.5587840497493743
+          ]
+        },
+        "fore_min_load_share": {
+          "mean": 0.23214548600919763,
+          "q10_q50_q90": [
+            0.0,
+            0.2661356031894684,
+            0.2735850691795349
+          ]
+        },
+        "fore_rom_fraction": {
+          "mean": 0.8071004213655696,
+          "q10_q50_q90": [
+            0.0,
+            0.9488638043403625,
+            0.9755253672599793
+          ]
+        },
+        "fore_min_rom_fraction": {
+          "mean": 0.7933224443181911,
+          "q10_q50_q90": [
+            0.0,
+            0.9330416917800903,
+            0.9698141276836395
+          ]
+        },
+        "fore_participation": {
+          "mean": 0.3654911489814849,
+          "q10_q50_q90": [
+            0.0,
+            0.3921568691730499,
+            0.6399999856948853
+          ]
+        },
+        "attitude_rms": {
+          "mean": 0.04044137896305662,
+          "q10_q50_q90": [
+            0.0,
+            0.04336443357169628,
+            0.0531130999326706
+          ]
+        },
+        "action_clip_fraction": {
+          "mean": 0.00019198315814773035,
+          "q10_q50_q90": [
+            0.0,
+            0.0,
+            0.00019252780184615475
+          ]
+        },
+        "terminated": {
+          "mean": 0.4944852941176471,
+          "q10_q50_q90": [
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        "timed_out": {
+          "mean": 0.5055147058823529,
+          "q10_q50_q90": [
+            0.0,
+            1.0,
+            1.0
+          ]
+        },
+        "pair_joint_cost": {
+          "mean": 0.15587368683875813,
+          "q10_q50_q90": [
+            0.0,
+            0.1753208264708519,
+            0.19386854767799377
+          ]
+        },
+        "pair_rom_cost": {
+          "mean": 0.0013888006217585864,
+          "q10_q50_q90": [
+            0.0,
+            0.0010694974334910512,
+            0.0026882563252002
+          ]
+        },
+        "pair_load_cost": {
+          "mean": 0.001593320620882616,
+          "q10_q50_q90": [
+            0.0,
+            0.0009319858509115875,
+            0.0035553167108446364
+          ]
+        },
+        "pair_stance_cost": {
+          "mean": 0.0001466831106974516,
+          "q10_q50_q90": [
+            0.0,
+            2.184376626246376e-05,
+            0.0003846692648949105
+          ]
+        },
+        "pair_hip_cost": {
+          "mean": 0.009060333735185529,
+          "q10_q50_q90": [
+            0.0,
+            0.00914271967485547,
+            0.01517283767461777
+          ]
+        },
+        "pair_valid_cycles": {
+          "mean": 46.612132352941174,
+          "q10_q50_q90": [
+            13.0,
+            65.0,
+            66.0
+          ]
+        },
+        "leap_events": {
+          "mean": 0.0055147058823529415,
+          "q10_q50_q90": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "leap_qualified_events": {
+          "mean": 0.0,
+          "q10_q50_q90": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "leap_qualified_fraction": {
+          "mean": 0.0,
+          "q10_q50_q90": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "leap_distance_mean": {
+          "mean": 7.372126941952636e-05,
+          "q10_q50_q90": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "leap_distance_max": {
+          "mean": 7.372126941952636e-05,
+          "q10_q50_q90": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "leap_air_seconds_mean": {
+          "mean": 7.812499825377017e-05,
+          "q10_q50_q90": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "leap_reward_points": {
+          "mean": 0.0,
+          "q10_q50_q90": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "leap_reward_steps": {
+          "mean": 0.0,
+          "q10_q50_q90": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "leap_physics_samples": {
+          "mean": 4385.985294117647,
+          "q10_q50_q90": [
+            1604.0,
+            6000.0,
+            6000.0
+          ]
+        },
+        "flight_takeoffs": {
+          "mean": 0.0,
+          "q10_q50_q90": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "flight_landings": {
+          "mean": 0.0,
+          "q10_q50_q90": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "flight_stable_landings": {
+          "mean": 0.0,
+          "q10_q50_q90": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "flight_aborted_landings": {
+          "mean": 0.0,
+          "q10_q50_q90": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "flight_takeoff_vz_mean": {
+          "mean": 0.0,
+          "q10_q50_q90": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "flight_landing_peak_force_bw": {
+          "mean": 0.0,
+          "q10_q50_q90": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "flight_landing_peak_down_vz": {
+          "mean": 0.0,
+          "q10_q50_q90": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "flight_balance_cost": {
+          "mean": 0.055835983414641195,
+          "q10_q50_q90": [
+            0.03684354163706303,
+            0.055535292252898216,
+            0.06754315719008445
+          ]
+        },
+        "flight_support_cost": {
+          "mean": 0.0,
+          "q10_q50_q90": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "guarded_intervention": {
+          "mean": 0.2677699408822638,
+          "q10_q50_q90": [
+            0.0,
+            0.30345433950424194,
+            0.31364894509315494
+          ]
+        },
+        "guarded_actual": {
+          "mean": 0.0,
+          "q10_q50_q90": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "guarded_front_high": {
+          "mean": 3.681197781321209e-06,
+          "q10_q50_q90": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "guarded_hind_high": {
+          "mean": 0.0011669481171017705,
+          "q10_q50_q90": [
+            0.0,
+            0.0,
+            0.0014038435765542094
+          ]
+        },
+        "guarded_front_cost": {
+          "mean": 5.763033809855374e-06,
+          "q10_q50_q90": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "guarded_hind_cost": {
+          "mean": 0.0001931218782886672,
+          "q10_q50_q90": [
+            0.0,
+            0.0,
+            5.9408279412309687e-05
+          ]
+        },
+        "guarded_tracking_rmse": {
+          "mean": 0.23755787189721184,
+          "q10_q50_q90": [
+            0.0,
+            0.2633569985628128,
+            0.2946814090013504
+          ]
+        }
+      },
+      "failure_combinations": {
+        "pattern,flight,front_cycle,mature,stabilization_landing,stabilization_distance": 504,
+        "pattern,flight,mature,stabilization_landing,stabilization_distance": 38,
+        "tracking,pattern,flight,motion,front_load,front_motion,front_cycle,stable,mature,stabilization_width,stabilization_landing,stabilization_distance,stabilization_measured,guarded_limits,guarded_feet": 133,
+        "tracking,pattern,flight,motion,front_motion,front_cycle,stable,mature,stabilization_width,stabilization_landing,stabilization_distance,stabilization_measured,guarded_limits,guarded_feet": 23,
+        "pattern,flight,front_cycle,stable,mature,stabilization_landing,stabilization_distance": 214,
+        "tracking,pattern,flight,motion,front_motion,front_cycle,stable,mature,stabilization_landing,stabilization_distance,stabilization_measured,guarded_limits,guarded_feet": 6,
+        "tracking,pattern,flight,front_cycle,stable,mature,stabilization_width,stabilization_landing,stabilization_distance,stabilization_measured,guarded_limits,guarded_feet": 25,
+        "tracking,pattern,flight,front_cycle,stable,mature,stabilization_landing,stabilization_distance,stabilization_measured,guarded_limits,guarded_feet": 102,
+        "tracking,pattern,flight,stable,mature,stabilization_landing,stabilization_distance,stabilization_measured,guarded_limits,guarded_feet": 9,
+        "pattern,flight,stable,mature,stabilization_landing,stabilization_distance": 2,
+        "flight,stable,mature,stabilization_landing,stabilization_distance": 1,
+        "tracking,pattern,flight,front_motion,front_cycle,stable,mature,stabilization_width,stabilization_landing,stabilization_distance,stabilization_measured,guarded_limits,guarded_feet": 1,
+        "flight,front_cycle,stable,mature,stabilization_landing,stabilization_distance": 2,
+        "tracking,pattern,flight,motion,front_motion,front_cycle,stable,mature,stabilization_pose,stabilization_width,stabilization_landing,stabilization_distance,stabilization_measured,guarded_limits,guarded_feet": 2,
+        "tracking,pattern,flight,stable,mature,stabilization_width,stabilization_landing,stabilization_distance,stabilization_measured,guarded_limits,guarded_feet": 3,
+        "pattern,flight,front_cycle,stable,mature,stabilization_width,stabilization_landing,stabilization_distance": 12,
+        "tracking,pattern,flight,stable,mature,stabilization_pose,stabilization_width,stabilization_landing,stabilization_distance,stabilization_measured,guarded_limits,guarded_feet": 1,
+        "tracking,pattern,flight,front_cycle,stable,mature,stabilization_pose,stabilization_width,stabilization_landing,stabilization_distance,stabilization_measured,guarded_limits,guarded_feet": 1,
+        "pattern,flight,front_cycle,mature,stabilization_width,stabilization_landing,stabilization_distance": 8,
+        "pattern,flight,front_cycle,stable,mature,stabilization_pose,stabilization_landing,stabilization_distance": 1
+      },
+      "event_totals": {
+        "leap_events": 6.0,
+        "leap_qualified_events": 0.0,
+        "leap_reward_points": 0.0,
+        "flight_takeoffs": 0.0,
+        "flight_landings": 0.0,
+        "flight_stable_landings": 0.0,
+        "flight_aborted_landings": 0.0
+      },
+      "event_weighted_distance_m": 0.013368123521407446,
+      "event_weighted_air_seconds": 0.01416666635001699,
+      "stable_failure_combinations": {
+        "terminated,short_episode": 538
+      }
+    },
+    "last_1000_iterations": {
+      "count": 5404,
+      "success_rate": 0.0,
+      "criterion_pass_rates": {
+        "tracking": 0.7326054774241303,
+        "pattern": 0.000925240562546262,
+        "flight": 0.0,
+        "motion": 0.8671354552183568,
+        "front_load": 0.8941524796447077,
+        "front_motion": 0.866580310880829,
+        "front_cycle": 0.06365655070318282,
+        "stable": 0.5481125092524056,
+        "mature": 0.0,
+        "stabilization_pose": 0.9925980754996299,
+        "stabilization_width": 0.7979274611398963,
+        "stabilization_landing": 0.0,
+        "stabilization_distance": 0.0,
+        "stabilization_measured": 0.7329755736491488,
+        "guarded_limits": 0.7327905255366395,
+        "guarded_feet": 0.7329755736491488
+      },
+      "measures": {
+        "vx_rmse": {
+          "mean": 0.09126463734446925,
+          "q10_q50_q90": [
+            0.0,
+            0.09367861226201057,
+            0.1301015645265579
+          ]
+        },
+        "contact_accuracy": {
+          "mean": 0.48721566543722045,
+          "q10_q50_q90": [
+            0.0,
+            0.5401375889778137,
+            0.5704625308513641
+          ]
+        },
+        "order_accuracy": {
+          "mean": 0.29694846392485785,
+          "q10_q50_q90": [
+            0.2358490526676178,
+            0.30000001192092896,
+            0.3644240885972977
+          ]
+        },
+        "flight_fraction": {
+          "mean": 0.0,
+          "q10_q50_q90": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "rom_fraction": {
+          "mean": 0.8439091890829744,
+          "q10_q50_q90": [
+            0.0,
+            0.9732210338115692,
+            0.9840990543365479
+          ]
+        },
+        "fore_load_share": {
+          "mean": 0.4864533028443331,
+          "q10_q50_q90": [
+            0.0,
+            0.5394761562347412,
+            0.5561060786247254
+          ]
+        },
+        "fore_min_load_share": {
+          "mean": 0.23263360489487958,
+          "q10_q50_q90": [
+            0.0,
+            0.2609534114599228,
+            0.27204227149486543
+          ]
+        },
+        "fore_rom_fraction": {
+          "mean": 0.8208411144910257,
+          "q10_q50_q90": [
+            0.0,
+            0.946919858455658,
+            0.9739325761795044
+          ]
+        },
+        "fore_min_rom_fraction": {
+          "mean": 0.8082215869751002,
+          "q10_q50_q90": [
+            0.0,
+            0.9341299831867218,
+            0.9671779215335846
+          ]
+        },
+        "fore_participation": {
+          "mean": 0.3638724930898778,
+          "q10_q50_q90": [
+            0.0,
+            0.3874259293079376,
+            0.6600000262260437
+          ]
+        },
+        "attitude_rms": {
+          "mean": 0.04149632254128739,
+          "q10_q50_q90": [
+            0.0,
+            0.04375925287604332,
+            0.052797784656286234
+          ]
+        },
+        "action_clip_fraction": {
+          "mean": 0.00015486801113284208,
+          "q10_q50_q90": [
+            0.0,
+            0.0,
+            0.00021650920825777546
+          ]
+        },
+        "terminated": {
+          "mean": 0.45170244263508513,
+          "q10_q50_q90": [
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        "timed_out": {
+          "mean": 0.5484826054774241,
+          "q10_q50_q90": [
+            0.0,
+            1.0,
+            1.0
+          ]
+        },
+        "pair_joint_cost": {
+          "mean": 0.17055875671955775,
+          "q10_q50_q90": [
+            0.0,
+            0.1885928511619568,
+            0.2095553457736969
+          ]
+        },
+        "pair_rom_cost": {
+          "mean": 0.0012265598018339587,
+          "q10_q50_q90": [
+            0.0,
+            0.0009919487056322396,
+            0.002454410446807742
+          ]
+        },
+        "pair_load_cost": {
+          "mean": 0.0019305176852246824,
+          "q10_q50_q90": [
+            0.0,
+            0.0010235815425403416,
+            0.0038182392250746488
+          ]
+        },
+        "pair_stance_cost": {
+          "mean": 0.0002794505478098571,
+          "q10_q50_q90": [
+            0.0,
+            2.2419570086640306e-05,
+            0.0005625485384371128
+          ]
+        },
+        "pair_hip_cost": {
+          "mean": 0.009401904864381387,
+          "q10_q50_q90": [
+            0.0,
+            0.009348436258733273,
+            0.015322922449558973
+          ]
+        },
+        "pair_valid_cycles": {
+          "mean": 47.99740932642487,
+          "q10_q50_q90": [
+            14.0,
+            66.0,
+            66.0
+          ]
+        },
+        "leap_events": {
+          "mean": 0.0033308660251665434,
+          "q10_q50_q90": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "leap_qualified_events": {
+          "mean": 0.0,
+          "q10_q50_q90": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "leap_qualified_fraction": {
+          "mean": 0.0,
+          "q10_q50_q90": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "leap_distance_mean": {
+          "mean": 3.702600667877695e-05,
+          "q10_q50_q90": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "leap_distance_max": {
+          "mean": 3.828795143864293e-05,
+          "q10_q50_q90": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "leap_air_seconds_mean": {
+          "mean": 3.932272251226631e-05,
+          "q10_q50_q90": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "leap_reward_points": {
+          "mean": 0.0,
+          "q10_q50_q90": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "leap_reward_steps": {
+          "mean": 0.0,
+          "q10_q50_q90": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "leap_physics_samples": {
+          "mean": 4502.373797187269,
+          "q10_q50_q90": [
+            1680.0,
+            6000.0,
+            6000.0
+          ]
+        },
+        "flight_takeoffs": {
+          "mean": 0.0001850481125092524,
+          "q10_q50_q90": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "flight_landings": {
+          "mean": 0.0001850481125092524,
+          "q10_q50_q90": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "flight_stable_landings": {
+          "mean": 0.0,
+          "q10_q50_q90": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "flight_aborted_landings": {
+          "mean": 0.0001850481125092524,
+          "q10_q50_q90": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "flight_takeoff_vz_mean": {
+          "mean": 7.709255269683792e-06,
+          "q10_q50_q90": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "flight_landing_peak_force_bw": {
+          "mean": 6.67113846624277e-05,
+          "q10_q50_q90": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "flight_landing_peak_down_vz": {
+          "mean": 1.5484661327124877e-05,
+          "q10_q50_q90": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "flight_balance_cost": {
+          "mean": 0.056725815554486546,
+          "q10_q50_q90": [
+            0.03697110041975975,
+            0.05678368918597698,
+            0.06824889257550239
+          ]
+        },
+        "flight_support_cost": {
+          "mean": 0.0,
+          "q10_q50_q90": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "guarded_intervention": {
+          "mean": 0.277722205564126,
+          "q10_q50_q90": [
+            0.0,
+            0.3083139806985855,
+            0.3193380504846573
+          ]
+        },
+        "guarded_actual": {
+          "mean": 1.4212605711293278e-08,
+          "q10_q50_q90": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "guarded_front_high": {
+          "mean": 7.739406762638444e-06,
+          "q10_q50_q90": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "guarded_hind_high": {
+          "mean": 0.000983012347066979,
+          "q10_q50_q90": [
+            0.0,
+            0.0,
+            0.0013799448497593403
+          ]
+        },
+        "guarded_front_cost": {
+          "mean": 5.40857726884029e-06,
+          "q10_q50_q90": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "guarded_hind_cost": {
+          "mean": 0.0007379845462880874,
+          "q10_q50_q90": [
+            0.0,
+            0.0,
+            4.713660164270548e-05
+          ]
+        },
+        "guarded_tracking_rmse": {
+          "mean": 0.24634363386176147,
+          "q10_q50_q90": [
+            0.0,
+            0.2695396840572357,
+            0.2987701684236526
+          ]
+        }
+      },
+      "failure_combinations": {
+        "pattern,flight,front_cycle,stable,mature,stabilization_landing,stabilization_distance": 852,
+        "pattern,flight,front_cycle,mature,stabilization_landing,stabilization_distance": 2591,
+        "tracking,pattern,flight,motion,front_load,front_motion,front_cycle,stable,mature,stabilization_width,stabilization_landing,stabilization_distance,stabilization_measured,guarded_limits,guarded_feet": 568,
+        "pattern,flight,front_cycle,mature,stabilization_width,stabilization_landing,stabilization_distance": 88,
+        "pattern,flight,front_cycle,stable,mature,stabilization_width,stabilization_landing,stabilization_distance": 124,
+        "pattern,flight,front_cycle,stable,mature,stabilization_pose,stabilization_width,stabilization_landing,stabilization_distance": 4,
+        "pattern,flight,mature,stabilization_landing,stabilization_distance": 279,
+        "pattern,flight,mature,stabilization_width,stabilization_landing,stabilization_distance": 2,
+        "pattern,flight,front_cycle,stable,mature,stabilization_landing,stabilization_distance,guarded_limits": 1,
+        "tracking,pattern,flight,front_cycle,stable,mature,stabilization_landing,stabilization_distance,stabilization_measured,guarded_limits,guarded_feet": 506,
+        "tracking,pattern,flight,motion,front_motion,front_cycle,stable,mature,stabilization_width,stabilization_landing,stabilization_distance,stabilization_measured,guarded_limits,guarded_feet": 111,
+        "tracking,pattern,flight,front_cycle,stable,mature,stabilization_width,stabilization_landing,stabilization_distance,stabilization_measured,guarded_limits,guarded_feet": 146,
+        "tracking,pattern,flight,stable,mature,stabilization_landing,stabilization_distance,stabilization_measured,guarded_limits,guarded_feet": 32,
+        "tracking,pattern,flight,motion,front_motion,front_cycle,stable,mature,stabilization_pose,stabilization_landing,stabilization_distance,stabilization_measured,guarded_limits,guarded_feet": 1,
+        "tracking,pattern,flight,motion,front_motion,front_cycle,stable,mature,stabilization_pose,stabilization_width,stabilization_landing,stabilization_distance,stabilization_measured,guarded_limits,guarded_feet": 7,
+        "tracking,pattern,flight,stable,mature,stabilization_width,stabilization_landing,stabilization_distance,stabilization_measured,guarded_limits,guarded_feet": 19,
+        "tracking,pattern,flight,front_cycle,stable,mature,stabilization_pose,stabilization_width,stabilization_landing,stabilization_distance,stabilization_measured,guarded_limits,guarded_feet": 12,
+        "tracking,pattern,flight,front_cycle,stable,mature,stabilization_pose,stabilization_landing,stabilization_distance,stabilization_measured,guarded_limits,guarded_feet": 6,
+        "pattern,flight,stable,mature,stabilization_landing,stabilization_distance": 5,
+        "tracking,pattern,flight,front_motion,front_cycle,stable,mature,stabilization_landing,stabilization_distance,stabilization_measured,guarded_limits,guarded_feet": 2,
+        "tracking,pattern,flight,motion,front_motion,front_cycle,stable,mature,stabilization_landing,stabilization_distance,stabilization_measured,guarded_limits,guarded_feet": 27,
+        "tracking,pattern,flight,motion,front_load,front_motion,front_cycle,stable,mature,stabilization_pose,stabilization_width,stabilization_landing,stabilization_distance,stabilization_measured,guarded_limits,guarded_feet": 4,
+        "tracking,pattern,flight,front_cycle,stable,mature,stabilization_landing,stabilization_distance": 1,
+        "flight,mature,stabilization_landing,stabilization_distance": 1,
+        "pattern,flight,stable,mature,stabilization_width,stabilization_landing,stabilization_distance": 4,
+        "tracking,pattern,flight,front_cycle,stable,mature,stabilization_pose,stabilization_width,stabilization_landing,stabilization_distance": 1,
+        "pattern,flight,front_cycle,stable,mature,stabilization_pose,stabilization_landing,stabilization_distance": 4,
+        "flight,front_cycle,mature,stabilization_landing,stabilization_distance": 1,
+        "flight,stable,mature,stabilization_landing,stabilization_distance": 1,
+        "tracking,pattern,flight,front_motion,front_cycle,stable,mature,stabilization_width,stabilization_landing,stabilization_distance,stabilization_measured,guarded_limits,guarded_feet": 1,
+        "flight,front_cycle,stable,mature,stabilization_landing,stabilization_distance": 2,
+        "tracking,pattern,flight,stable,mature,stabilization_pose,stabilization_width,stabilization_landing,stabilization_distance,stabilization_measured,guarded_limits,guarded_feet": 1
+      },
+      "event_totals": {
+        "leap_events": 18.0,
+        "leap_qualified_events": 0.0,
+        "leap_reward_points": 0.0,
+        "flight_takeoffs": 1.0,
+        "flight_landings": 1.0,
+        "flight_stable_landings": 0.0,
+        "flight_aborted_landings": 1.0
+      },
+      "event_weighted_distance_m": 0.011947199624652663,
+      "event_weighted_air_seconds": 0.012777777336951759,
+      "stable_failure_combinations": {
+        "terminated,short_episode": 2438,
+        "terminated": 1,
+        "attitude,terminated,short_episode": 2
+      }
+    }
+  },
+  "per_speed_stage": {
+    "1.0": {
+      "count": 66644,
+      "success_rate": 0.0,
+      "criterion_pass_rates": {
+        "tracking": 0.7033341336054258,
+        "pattern": 0.0004651581537722826,
+        "flight": 0.0,
+        "motion": 0.8461827021187204,
+        "front_load": 0.8760728647740231,
+        "front_motion": 0.8409609267150832,
+        "front_cycle": 0.11295840585799172,
+        "stable": 0.5300102034691795,
+        "mature": 0.0,
+        "stabilization_pose": 0.9887761839025269,
+        "stabilization_width": 0.6833623431966869,
+        "stabilization_landing": 0.0,
+        "stabilization_distance": 0.0,
+        "stabilization_measured": 0.7083908528899826,
+        "guarded_limits": 0.7082107916691676,
+        "guarded_feet": 0.7083608426865134
+      },
+      "measures": {
+        "vx_rmse": {
+          "mean": 0.10010144918247059,
+          "q10_q50_q90": [
+            0.0,
+            0.10018987581133842,
+            0.15108138471841812
+          ]
+        },
+        "contact_accuracy": {
+          "mean": 0.477246983455955,
+          "q10_q50_q90": [
+            0.0,
+            0.5396825671195984,
+            0.5666620492935182
+          ]
+        },
+        "order_accuracy": {
+          "mean": 0.2652725071001933,
+          "q10_q50_q90": [
+            0.19760479032993317,
+            0.26530611515045166,
+            0.33738601207733154
+          ]
+        },
+        "flight_fraction": {
+          "mean": 0.0,
+          "q10_q50_q90": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "rom_fraction": {
+          "mean": 0.8016672938910969,
+          "q10_q50_q90": [
+            0.0,
+            0.9525865614414215,
+            0.9783805251121521
+          ]
+        },
+        "fore_load_share": {
+          "mean": 0.4751031488469938,
+          "q10_q50_q90": [
+            0.0,
+            0.536032497882843,
+            0.556606239080429
+          ]
+        },
+        "fore_min_load_share": {
+          "mean": 0.2251549500961244,
+          "q10_q50_q90": [
+            0.0,
+            0.2568587064743042,
+            0.2693233460187912
+          ]
+        },
+        "fore_rom_fraction": {
+          "mean": 0.7697244445011256,
+          "q10_q50_q90": [
+            0.0,
+            0.9135870933532715,
+            0.9645290672779083
+          ]
+        },
+        "fore_min_rom_fraction": {
+          "mean": 0.7540643002595745,
+          "q10_q50_q90": [
+            0.0,
+            0.8949537873268127,
+            0.9560717046260834
+          ]
+        },
+        "fore_participation": {
+          "mean": 0.40687137761117337,
+          "q10_q50_q90": [
+            0.0,
+            0.45098039507865906,
+            0.7058823704719543
+          ]
+        },
+        "attitude_rms": {
+          "mean": 0.04229388088183265,
+          "q10_q50_q90": [
+            0.0,
+            0.043758874759078026,
+            0.059479860588908195
+          ]
+        },
+        "action_clip_fraction": {
+          "mean": 0.0005740793729482355,
+          "q10_q50_q90": [
+            0.0,
+            0.0,
+            0.0006252735911402869
+          ]
+        },
+        "terminated": {
+          "mean": 0.46982474041174,
+          "q10_q50_q90": [
+            0.0,
+            0.0,
+            1.0
+          ]
+        },
+        "timed_out": {
+          "mean": 0.5303103055038714,
+          "q10_q50_q90": [
+            0.0,
+            1.0,
+            1.0
+          ]
+        },
+        "pair_joint_cost": {
+          "mean": 0.14288406047416935,
+          "q10_q50_q90": [
+            0.0,
+            0.16281693428754807,
+            0.1978779897093773
+          ]
+        },
+        "pair_rom_cost": {
+          "mean": 0.0018404673399631468,
+          "q10_q50_q90": [
+            0.0,
+            0.0014617727720178664,
+            0.0036601374158635744
+          ]
+        },
+        "pair_load_cost": {
+          "mean": 0.002410716838251651,
+          "q10_q50_q90": [
+            0.0,
+            0.0013166128192096949,
+            0.004795908508822323
+          ]
+        },
+        "pair_stance_cost": {
+          "mean": 0.0004603849735874125,
+          "q10_q50_q90": [
+            0.0,
+            6.135409057606012e-05,
+            0.0009051427186932438
+          ]
+        },
+        "pair_hip_cost": {
+          "mean": 0.009877784992738316,
+          "q10_q50_q90": [
+            0.0,
+            0.009900049772113562,
+            0.016467056982219223
+          ]
+        },
+        "pair_valid_cycles": {
+          "mean": 46.90636816517616,
+          "q10_q50_q90": [
+            14.0,
+            65.0,
+            66.0
+          ]
+        },
+        "leap_events": {
+          "mean": 0.007367504951683573,
+          "q10_q50_q90": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "leap_qualified_events": {
+          "mean": 0.0,
+          "q10_q50_q90": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "leap_qualified_fraction": {
+          "mean": 0.0,
+          "q10_q50_q90": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "leap_distance_mean": {
+          "mean": 6.1373873221805e-05,
+          "q10_q50_q90": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "leap_distance_max": {
+          "mean": 6.276328539409405e-05,
+          "q10_q50_q90": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "leap_air_seconds_mean": {
+          "mean": 6.415931239269593e-05,
+          "q10_q50_q90": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "leap_reward_points": {
+          "mean": 0.0,
+          "q10_q50_q90": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "leap_reward_steps": {
+          "mean": 0.0,
+          "q10_q50_q90": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "leap_physics_samples": {
+          "mean": 4411.4615569293555,
+          "q10_q50_q90": [
+            1632.0,
+            6000.0,
+            6000.0
+          ]
+        },
+        "flight_takeoffs": {
+          "mean": 0.001185403037032591,
+          "q10_q50_q90": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "flight_landings": {
+          "mean": 0.00013504591561130783,
+          "q10_q50_q90": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "flight_stable_landings": {
+          "mean": 1.500510173458976e-05,
+          "q10_q50_q90": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "flight_aborted_landings": {
+          "mean": 0.00012004081387671808,
+          "q10_q50_q90": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "flight_takeoff_vz_mean": {
+          "mean": -9.800265867792548e-05,
+          "q10_q50_q90": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "flight_landing_peak_force_bw": {
+          "mean": 0.00011653533739442907,
+          "q10_q50_q90": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "flight_landing_peak_down_vz": {
+          "mean": 3.049633322663399e-05,
+          "q10_q50_q90": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "flight_balance_cost": {
+          "mean": 0.055971269513407196,
+          "q10_q50_q90": [
+            0.034957078471779826,
+            0.05659572407603264,
+            0.0690041296184063
+          ]
+        },
+        "flight_support_cost": {
+          "mean": 0.0,
+          "q10_q50_q90": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "guarded_intervention": {
+          "mean": 0.2587118992180837,
+          "q10_q50_q90": [
+            0.0,
+            0.3082760274410248,
+            0.3285845458507538
+          ]
+        },
+        "guarded_actual": {
+          "mean": 6.234887278479246e-08,
+          "q10_q50_q90": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "guarded_front_high": {
+          "mean": 5.434433535350079e-06,
+          "q10_q50_q90": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "guarded_hind_high": {
+          "mean": 0.001207793485037851,
+          "q10_q50_q90": [
+            0.0,
+            0.0,
+            0.0013951542088761954
+          ]
+        },
+        "guarded_front_cost": {
+          "mean": 1.7584656667334777e-06,
+          "q10_q50_q90": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "guarded_hind_cost": {
+          "mean": 0.001222688210385681,
+          "q10_q50_q90": [
+            0.0,
+            0.0,
+            6.0322532226564384e-05
+          ]
+        },
+        "guarded_tracking_rmse": {
+          "mean": 0.23885436011241853,
+          "q10_q50_q90": [
+            0.0,
+            0.2659098207950592,
+            0.2987533867359161
+          ]
+        }
+      },
+      "failure_combinations": {
+        "tracking,pattern,flight,motion,front_load,front_motion,front_cycle,stable,mature,stabilization_width,stabilization_landing,stabilization_distance,stabilization_measured,guarded_limits,guarded_feet": 8148,
+        "tracking,pattern,flight,motion,front_motion,front_cycle,stable,mature,stabilization_width,stabilization_landing,stabilization_distance,stabilization_measured,guarded_limits,guarded_feet": 1536,
+        "tracking,pattern,flight,front_motion,front_cycle,stable,mature,stabilization_width,stabilization_landing,stabilization_distance,stabilization_measured,guarded_limits,guarded_feet": 71,
+        "tracking,pattern,flight,motion,front_load,front_motion,front_cycle,stable,mature,stabilization_pose,stabilization_width,stabilization_landing,stabilization_distance,stabilization_measured,guarded_limits,guarded_feet": 94,
+        "tracking,pattern,flight,motion,front_motion,front_cycle,stable,mature,stabilization_width,stabilization_landing,stabilization_distance": 11,
+        "tracking,pattern,flight,motion,front_motion,front_cycle,stable,mature,stabilization_pose,stabilization_width,stabilization_landing,stabilization_distance,stabilization_measured,guarded_limits,guarded_feet": 119,
+        "pattern,flight,motion,front_motion,front_cycle,stable,mature,stabilization_width,stabilization_landing,stabilization_distance": 1,
+        "tracking,pattern,flight,front_motion,front_cycle,stable,mature,stabilization_width,stabilization_landing,stabilization_distance": 10,
+        "tracking,pattern,flight,motion,front_motion,front_cycle,stable,mature,stabilization_pose,stabilization_width,stabilization_landing,stabilization_distance": 1,
+        "pattern,flight,front_motion,front_cycle,stable,mature,stabilization_width,stabilization_landing,stabilization_distance": 32,
+        "tracking,pattern,flight,stable,mature,stabilization_width,stabilization_landing,stabilization_distance,stabilization_measured,guarded_limits,guarded_feet": 385,
+        "tracking,pattern,flight,front_cycle,stable,mature,stabilization_pose,stabilization_width,stabilization_landing,stabilization_distance,stabilization_measured,guarded_limits,guarded_feet": 173,
+        "tracking,pattern,flight,front_motion,front_cycle,stable,mature,stabilization_pose,stabilization_width,stabilization_landing,stabilization_distance,stabilization_measured,guarded_limits,guarded_feet": 53,
+        "tracking,pattern,flight,front_motion,front_cycle,stable,mature,stabilization_pose,stabilization_width,stabilization_landing,stabilization_distance": 7,
+        "tracking,pattern,flight,front_cycle,stable,mature,stabilization_width,stabilization_landing,stabilization_distance,stabilization_measured,guarded_limits,guarded_feet": 2433,
+        "tracking,pattern,flight,front_motion,front_cycle,mature,stabilization_width,stabilization_landing,stabilization_distance": 30,
+        "tracking,pattern,flight,motion,front_motion,front_cycle,mature,stabilization_width,stabilization_landing,stabilization_distance": 6,
+        "pattern,flight,front_motion,front_cycle,mature,stabilization_width,stabilization_landing,stabilization_distance": 68,
+        "tracking,pattern,flight,front_cycle,mature,stabilization_width,stabilization_landing,stabilization_distance": 78,
+        "pattern,flight,front_cycle,mature,stabilization_width,stabilization_landing,stabilization_distance": 4614,
+        "pattern,flight,front_cycle,stable,mature,stabilization_pose,stabilization_width,stabilization_landing,stabilization_distance": 68,
+        "pattern,flight,front_cycle,stable,mature,stabilization_width,stabilization_landing,stabilization_distance": 2429,
+        "tracking,pattern,flight,front_cycle,stable,mature,stabilization_pose,stabilization_width,stabilization_landing,stabilization_distance": 65,
+        "tracking,pattern,flight,front_cycle,stable,mature,stabilization_width,stabilization_landing,stabilization_distance": 70,
+        "flight,front_cycle,stable,mature,stabilization_width,stabilization_landing,stabilization_distance": 2,
+        "pattern,flight,stable,mature,stabilization_width,stabilization_landing,stabilization_distance": 91,
+        "tracking,pattern,flight,front_load,front_motion,front_cycle,stable,mature,stabilization_pose,stabilization_width,stabilization_landing,stabilization_distance,stabilization_measured,guarded_limits,guarded_feet": 13,
+        "tracking,pattern,flight,front_cycle,mature,stabilization_pose,stabilization_width,stabilization_landing,stabilization_distance": 2,
+        "tracking,pattern,flight,stable,mature,stabilization_width,stabilization_landing,stabilization_distance": 1,
+        "tracking,pattern,flight,front_cycle,stable,mature,stabilization_landing,stabilization_distance,stabilization_measured,guarded_limits,guarded_feet": 5264,
+        "tracking,pattern,flight,mature,stabilization_width,stabilization_landing,stabilization_distance": 1,
+        "tracking,pattern,flight,front_motion,front_cycle,stable,mature,stabilization_pose,stabilization_landing,stabilization_distance,stabilization_measured,guarded_limits,guarded_feet": 4,
+        "pattern,flight,front_cycle,mature,stabilization_landing,stabilization_distance": 24456,
+        "pattern,flight,front_motion,front_cycle,stable,mature,stabilization_landing,stabilization_distance": 3,
+        "pattern,flight,front_cycle,stable,mature,stabilization_landing,stabilization_distance": 8664,
+        "pattern,flight,front_motion,front_cycle,stable,mature,stabilization_pose,stabilization_width,stabilization_landing,stabilization_distance": 5,
+        "tracking,pattern,flight,front_cycle,stable,mature,stabilization_pose,stabilization_landing,stabilization_distance,stabilization_measured,guarded_limits,guarded_feet": 88,
+        "tracking,pattern,flight,front_motion,front_cycle,stable,mature,stabilization_landing,stabilization_distance,stabilization_measured,guarded_limits,guarded_feet": 50,
+        "tracking,pattern,flight,front_load,front_cycle,stable,mature,stabilization_pose,stabilization_width,stabilization_landing,stabilization_distance,stabilization_measured,guarded_limits,guarded_feet": 4,
+        "tracking,pattern,flight,front_cycle,stable,mature,stabilization_pose,stabilization_landing,stabilization_distance": 7,
+        "tracking,pattern,flight,front_cycle,stable,mature,stabilization_landing,stabilization_distance": 35,
+        "tracking,pattern,flight,stable,mature,stabilization_landing,stabilization_distance,stabilization_measured,guarded_limits,guarded_feet": 647,
+        "tracking,pattern,flight,motion,front_motion,front_cycle,stable,mature,stabilization_landing,stabilization_distance,stabilization_measured,guarded_limits,guarded_feet": 327,
+        "pattern,flight,front_cycle,stable,mature,stabilization_pose,stabilization_landing,stabilization_distance": 22,
+        "pattern,flight,front_cycle,stable,mature,stabilization_width,stabilization_landing,stabilization_distance,guarded_limits": 1,
+        "pattern,flight,front_motion,front_cycle,mature,stabilization_landing,stabilization_distance": 1,
+        "tracking,pattern,flight,front_motion,stable,mature,stabilization_width,stabilization_landing,stabilization_distance,stabilization_measured,guarded_limits,guarded_feet": 1,
+        "pattern,flight,mature,stabilization_width,stabilization_landing,stabilization_distance": 466,
+        "pattern,flight,mature,stabilization_landing,stabilization_distance": 5580,
+        "tracking,pattern,flight,stable,mature,stabilization_pose,stabilization_width,stabilization_landing,stabilization_distance,stabilization_measured,guarded_limits,guarded_feet": 8,
+        "pattern,flight,stable,mature,stabilization_landing,stabilization_distance": 334,
+        "tracking,pattern,flight,front_cycle,mature,stabilization_landing,stabilization_distance": 9,
+        "pattern,flight,front_cycle,stable,mature,stabilization_landing,stabilization_distance,guarded_limits": 11,
+        "tracking,pattern,flight,stable,mature,stabilization_pose,stabilization_width,stabilization_landing,stabilization_distance": 1,
+        "tracking,pattern,flight,mature,stabilization_landing,stabilization_distance": 1,
+        "pattern,flight,stable,mature,stabilization_pose,stabilization_width,stabilization_landing,stabilization_distance": 1,
+        "tracking,pattern,flight,stable,mature,stabilization_pose,stabilization_landing,stabilization_distance,stabilization_measured,guarded_limits,guarded_feet": 2,
+        "tracking,pattern,flight,motion,front_motion,front_cycle,stable,mature,stabilization_pose,stabilization_landing,stabilization_distance,stabilization_measured,guarded_limits,guarded_feet": 8,
+        "flight,front_cycle,stable,mature,stabilization_landing,stabilization_distance": 11,
+        "tracking,pattern,flight,front_cycle,stable,mature,stabilization_pose,stabilization_width,stabilization_landing,stabilization_distance,guarded_feet": 2,
+        "pattern,flight,stable,mature,stabilization_pose,stabilization_landing,stabilization_distance": 1,
+        "tracking,flight,front_cycle,stable,mature,stabilization_landing,stabilization_distance,stabilization_measured,guarded_limits,guarded_feet": 5,
+        "flight,stable,mature,stabilization_landing,stabilization_distance": 2,
+        "flight,front_cycle,mature,stabilization_landing,stabilization_distance": 4,
+        "flight,mature,stabilization_landing,stabilization_distance": 6,
+        "tracking,flight,front_cycle,stable,mature,stabilization_width,stabilization_landing,stabilization_distance,stabilization_measured,guarded_limits,guarded_feet": 1
+      },
+      "event_totals": {
+        "leap_events": 491.0,
+        "leap_qualified_events": 0.0,
+        "leap_reward_points": 0.0,
+        "flight_takeoffs": 79.0,
+        "flight_landings": 9.0,
+        "flight_stable_landings": 1.0,
+        "flight_aborted_landings": 8.0
+      },
+      "event_weighted_distance_m": 0.008856087538061375,
+      "event_weighted_air_seconds": 0.009236252285320077,
+      "stable_failure_combinations": {
+        "terminated,short_episode": 31220,
+        "attitude,terminated,short_episode": 78,
+        "terminated": 13
+      }
+    }
+  },
+  "note": "Distance qualifications use each episode target; do not treat every stage as the final leap_min_distance."
+}

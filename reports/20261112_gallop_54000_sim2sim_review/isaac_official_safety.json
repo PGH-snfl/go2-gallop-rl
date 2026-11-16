@@ -1,0 +1,30 @@
+{
+  "sampled_by_startup_stage": {
+    "0": 0,
+    "1": 0,
+    "2": 0,
+    "3": 7
+  },
+  "control_sample_interval_s": 0.02,
+  "physics_monitor_interval_s": 0.005,
+  "episode_bad_physics_samples": 70.0,
+  "episode_peak_velocity_ratio": 1.5960513353347778,
+  "episode_peak_effort_ratio": 0.9873417019844055,
+  "sustained_termination": 0.0,
+  "sampled_max_run_s": 0.004999999888241291,
+  "sampled_joint_peak_velocity_rad_s": {
+    "FL_hip_joint": 7.7021613121032715,
+    "FR_hip_joint": 9.683496475219727,
+    "RL_hip_joint": 5.788182735443115,
+    "RR_hip_joint": 8.356590270996094,
+    "FL_thigh_joint": 19.066831588745117,
+    "FR_thigh_joint": 18.09762954711914,
+    "RL_thigh_joint": 19.313533782958984,
+    "RR_thigh_joint": 19.382396697998047,
+    "FL_calf_joint": 16.92872428894043,
+    "FR_calf_joint": 15.77238941192627,
+    "RL_calf_joint": 15.742546081542969,
+    "RR_calf_joint": 15.55501937866211
+  },
+  "note": "Last physics sample per control step is recorded. Episode peak/bad counters include every physics sample, so20ms sampled maxima can understate5ms peaks. Brief bounds violations invalidate success even without20ms sustained termination."
+}

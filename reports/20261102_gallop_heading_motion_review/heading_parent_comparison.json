@@ -1,0 +1,202 @@
+{
+  "parent_play": "/home/cvr/GH/go2_animalization/gallop/runs/isaac/play/unitree_go2_gallop/20261102_140231_b1e215",
+  "parent_formal": {
+    "samples": 1033,
+    "seconds": 20.65999999999956,
+    "first_seconds": 9.36,
+    "last_seconds": 30.0,
+    "body_velocity_mean": [
+      2.9386184510972355,
+      -0.016899339777632957,
+      -0.04781235917674203
+    ],
+    "body_velocity_rmse": [
+      0.19783416185158617,
+      0.07759627119907925
+    ],
+    "body_z_angular_speed_rms": 0.3663383463110776,
+    "roll_pitch_mean_rad": [
+      0.013528805388370303,
+      -0.013844027985446336
+    ],
+    "roll_pitch_std_rad": [
+      0.026529665887543376,
+      0.018766078899844923
+    ],
+    "roll_pitch_rms_rad": [
+      0.029780056201106804,
+      0.023320009179608525
+    ],
+    "roll_pitch_rate_rms": [
+      0.36955021708575053,
+      0.3900135656736855
+    ],
+    "yaw_target_rmse_rad": 1.225686790244585,
+    "yaw_drift_from_first_sample_rmse_rad": 1.4799815314177338,
+    "initial_yaw_rad": -2.2520432472229004,
+    "action_clip_fraction": 0.21022911369800568,
+    "root_displacement_xyz": [
+      25.44390869140625,
+      -37.46262741088867,
+      -0.022290080785751343
+    ]
+  },
+  "current_formal": {
+    "samples": 944,
+    "seconds": 18.879999999999598,
+    "first_seconds": 11.14,
+    "last_seconds": 30.0,
+    "body_velocity_mean": [
+      2.923312773391352,
+      0.020266881600067697,
+      -0.10075299135188304
+    ],
+    "body_velocity_rmse": [
+      0.2032279348568721,
+      0.07014128160802331
+    ],
+    "body_z_angular_speed_rms": 0.4779103073196309,
+    "roll_pitch_mean_rad": [
+      0.19373124661081928,
+      -0.028696370831990645
+    ],
+    "roll_pitch_std_rad": [
+      0.01795990378082879,
+      0.0176023601340103
+    ],
+    "roll_pitch_rms_rad": [
+      0.19456195429014045,
+      0.03366488944307584
+    ],
+    "roll_pitch_rate_rms": [
+      0.29633485901384343,
+      0.31600166538401264
+    ],
+    "yaw_target_rmse_rad": 0.0481657771712266,
+    "yaw_drift_from_first_sample_rmse_rad": 0.0481657771712266,
+    "initial_yaw_rad": 0.0,
+    "action_clip_fraction": 0.24240820109844208,
+    "root_displacement_xyz": [
+      55.0953483581543,
+      -1.293679118156433,
+      -0.025357812643051147
+    ],
+    "quiet_score": 0.9150100946426392,
+    "forward_score": 0.8607615828514099,
+    "along_speed_mean": 2.9224226474761963,
+    "world_cross_speed_rms": 0.11350812594115697,
+    "movement_direction_rms_rad": 0.03933144490895413,
+    "cross_track_max_abs_from_start_m": 1.398726224899292,
+    "cross_track_first_last_from_start_m": [
+      1.237831473350525,
+      -0.05584767460823059
+    ],
+    "foot_widths": {
+      "front": {
+        "target_m": 0.2698,
+        "mean_m": 0.12722064554691315,
+        "std_m": 0.10407131165266037,
+        "q0_q10_q50_q90_q100_m": [
+          0.00011589750647544861,
+          0.02338209450244904,
+          0.07245859503746033,
+          0.29484779536724093,
+          0.3281911611557007
+        ],
+        "rmse_m": 0.17652113735675812,
+        "fraction_within_1cm": 0.05614406779661017,
+        "score_mean": 0.21167422831058502,
+        "by_contacts": {
+          "both_air": {
+            "samples": 488,
+            "mean_m": 0.20585383474826813,
+            "q10_q50_q90_m": [
+              0.06781084537506103,
+              0.2301623448729515,
+              0.30715765357017516
+            ],
+            "fraction_within_1cm": 0.10860655737704918
+          },
+          "one_support": {
+            "samples": 208,
+            "mean_m": 0.044344380497932434,
+            "q10_q50_q90_m": [
+              0.0207605829462409,
+              0.044677985832095146,
+              0.06907963454723358
+            ],
+            "fraction_within_1cm": 0.0
+          },
+          "both_support": {
+            "samples": 248,
+            "mean_m": 0.0419999323785305,
+            "q10_q50_q90_m": [
+              0.009688591584563255,
+              0.04275466501712799,
+              0.07393795102834703
+            ],
+            "fraction_within_1cm": 0.0
+          }
+        }
+      },
+      "hind": {
+        "target_m": 0.2698,
+        "mean_m": 0.25143569707870483,
+        "std_m": 0.049030277878046036,
+        "q0_q10_q50_q90_q100_m": [
+          0.11209869384765625,
+          0.16817720234394073,
+          0.27029964327812195,
+          0.2995620906352997,
+          0.3344096541404724
+        ],
+        "rmse_m": 0.052356619387865067,
+        "fraction_within_1cm": 0.336864406779661,
+        "score_mean": 0.6858750581741333,
+        "by_contacts": {
+          "both_air": {
+            "samples": 259,
+            "mean_m": 0.18591190874576569,
+            "q10_q50_q90_m": [
+              0.1395922362804413,
+              0.18093420565128326,
+              0.24803308248519898
+            ],
+            "fraction_within_1cm": 0.02702702702702703
+          },
+          "one_support": {
+            "samples": 292,
+            "mean_m": 0.27731481194496155,
+            "q10_q50_q90_m": [
+              0.22992756068706513,
+              0.27653470635414124,
+              0.31419705748558047
+            ],
+            "fraction_within_1cm": 0.2568493150684932
+          },
+          "both_support": {
+            "samples": 393,
+            "mean_m": 0.27538979053497314,
+            "q10_q50_q90_m": [
+              0.26275641918182374,
+              0.27487441897392273,
+              0.28759507536888124
+            ],
+            "fraction_within_1cm": 0.6005089058524173
+          }
+        }
+      }
+    }
+  },
+  "roll_pitch_rate_reduction_fraction": [
+    0.19812018688360877,
+    0.18976750247604657
+  ],
+  "absolute_yaw_directly_comparable": false,
+  "caveats": [
+    "Parent reset yaw was uniform in [-pi, pi]; current reset yaw is zero. Absolute yaw errors are not a matched-start comparison.",
+    "Different checkpoints, reward definitions and random states; these observations do not identify the effect of a single reward.",
+    "Formal Gallop windows differ in duration because handover times differ.",
+    "Parent foot width was not logged, so no inferred parent width is substituted."
+  ]
+}

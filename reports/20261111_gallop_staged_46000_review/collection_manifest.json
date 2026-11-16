@@ -1,0 +1,227 @@
+{
+  "collected_at": "2026-11-11T13:53:41.257536+09:00",
+  "train": "/home/cvr/GH/go2_animalization/gallop/runs/isaac/train/unitree_go2_gallop/20261110_223314_cef16b",
+  "play": "/home/cvr/GH/go2_animalization/gallop/runs/isaac/play/unitree_go2_gallop/20261111_134458_3dcc3c",
+  "files": {
+    "play_episodes.csv": {
+      "sha256": "ad418ae23389c45cd3d5992f1d19fbf66e7bc10757dbeb8b27640411ee981835",
+      "bytes": 3277
+    },
+    "README.md": {
+      "sha256": "cad13d230c9e5d5dd6e5f66a89782c9f399c47c84be56fa1acd30742e8461e1d",
+      "bytes": 12795
+    },
+    "play_diagnostics.json": {
+      "sha256": "2e7daa6af691a8088c023ea8d6af83aa7beaa693d1e12effb8d42d37b042e2d5",
+      "bytes": 3477
+    },
+    "heading_play_diagnostics.json": {
+      "sha256": "5cad86babb92c464da5710fd94d14beecd9cbb78af6db93c5292e66828526c41",
+      "bytes": 29488
+    },
+    "reward_contributions_last100.json": {
+      "sha256": "11ef08d52d7f53e310502f9b91bc84d126a0d22ef73b0678b8eb1827461a00c4",
+      "bytes": 3068
+    },
+    "play_analysis.json": {
+      "sha256": "a6d07d2348467b7bfffcabf2ac610c781b8fd55ec671625b07a34e54c87c96b3",
+      "bytes": 7048
+    },
+    "play_flight_trace.csv": {
+      "sha256": "09d728d6a3eb09e289f28a55311c835ba8de6734aed5495c26d8a4e7b12cb3cb",
+      "bytes": 876338
+    },
+    "curriculum_decisions.csv": {
+      "sha256": "3e6175789f47269e9037324c333a4a2f2c8dc87166c37246affc7783c97966fe",
+      "bytes": 483251
+    },
+    "heading_parent_comparison.json": {
+      "sha256": "dd92f119dd52dcdd28eac953e44ee7443d3152fbf42c49985beffb5b87cce38a",
+      "bytes": 10733
+    },
+    "criterion_pass_rates.png": {
+      "sha256": "b558be70d78f31a0c2b266c307a5980ef2f8b4c6a15ec79c761c859f7a1002a7",
+      "bytes": 102659
+    },
+    "tensorboard_scalars.csv": {
+      "sha256": "5be1ea3c432d797fc0b19e6e771ba59e5753635bca7820f01eb198d5cce5c30d",
+      "bytes": 165065422
+    },
+    "joint_motion.png": {
+      "sha256": "dd1dc19e223f662c3e5052a7342847f7fdaa3cf327af4a74484cfe0ac33d1a5e",
+      "bytes": 590939
+    },
+    "guarded_joint_diagnostics.csv": {
+      "sha256": "ee8313cb0b1e73092bdb9a378ce95a08c2a61b3f094fc2e1773387844866e7bb",
+      "bytes": 1336
+    },
+    "play_keyframes.png": {
+      "sha256": "b0b7799b340dc269a8fb4fec590f5986a57bd6258eb930b0189e2943b8c7e04a",
+      "bytes": 909393
+    },
+    "evidence_manifest.json": {
+      "sha256": "9b508afb5bd179c944d5b22127b865ba7807f662e431762820344909b8e6ad48",
+      "bytes": 13994
+    },
+    "staged_review.json": {
+      "sha256": "c378e8efda5dcc9a9fc68fe53bb7ac23c48ed665ba357d14331e8bc10c77d646",
+      "bytes": 291929
+    },
+    "gallop_keyframes.png": {
+      "sha256": "c33513e18e99f4310b6a18f988752a742021df86cf7bc768d960984de8e97295",
+      "bytes": 735030
+    },
+    "heading_reward_curves.png": {
+      "sha256": "f6b0312e631a2aa83e49ffce5c25b6e030999c7aa94cde74bdc6deb9f3a25541",
+      "bytes": 246871
+    },
+    "verification.json": {
+      "sha256": "688e33adfb7b97653726252dc51ef717f4d19932809cac9107d7ac38a9240343",
+      "bytes": 1383
+    },
+    "train_episodes.csv": {
+      "sha256": "e08184ffde54b753f811435b2f1731f31340dacc960316c90d94e28abb72ce32",
+      "bytes": 90949339
+    },
+    "collect_heading_diagnostics.log": {
+      "sha256": "89f5439ae6540b817493be510c667c1333f7b924ceb7d4c5b9351e4c1e997aee",
+      "bytes": 3660
+    },
+    "leap_curves.png": {
+      "sha256": "c6b99eeb2fa651ab5a90adabe4b0ddf78dac433680f30be37690ca6c6ee75d04",
+      "bytes": 153858
+    },
+    "heading_play_trace.csv": {
+      "sha256": "9f1649139b0cac008c24b72e05656a3fe2378c846300e4ca36fb20fe0123f1a6",
+      "bytes": 1853222
+    },
+    "selection_before.json": {
+      "sha256": "fea8fe425765ab7210d7b473f4b46cdbe79907a49c7dca7694807ee2701e115f",
+      "bytes": 3836
+    },
+    "collect_guarded_diagnostics.log": {
+      "sha256": "119b5c3c3096c65f7af73ce0302f362d1aa36962d7ad021fc0fc51e087af0504",
+      "bytes": 1701
+    },
+    "training_diagnostics.json": {
+      "sha256": "4f04181ae159f57e26a283d7c032c4b3ee49a475b69be38c8a8610e30f67dee8",
+      "bytes": 74866
+    },
+    "heading_training_diagnostics.json": {
+      "sha256": "11f33f21cbe27240e24555adb11750c151e6f816f1231442d8afc7cde08028df",
+      "bytes": 4770
+    },
+    "gallop_config.json": {
+      "sha256": "f9757668336fcf4648c4adf93c3b18d5753b61fc47d81448680924bfbd80563f",
+      "bytes": 6140
+    },
+    "pair_reward_curves.png": {
+      "sha256": "5e27fa5be7d660e8c7c6e47681fa2d63f2685a8353d38f6bbe3958db37ae293a",
+      "bytes": 195101
+    },
+    "play_flight_events.csv": {
+      "sha256": "b2693800762441b5eae697b2fd29976da045c1347c5677e85cb4c7ed328e1e1f",
+      "bytes": 6239
+    },
+    "guarded_height_and_intervention.png": {
+      "sha256": "f5c5042686cb1351416b99e912bb65eb28a723e96c2b68e652abebff9f17f602",
+      "bytes": 602282
+    },
+    "flight_reward_curves.png": {
+      "sha256": "35146ab450062dedbbe9a4575ddb3aee96b19df281e49dcb3ee78ec8d37afb4c",
+      "bytes": 346256
+    },
+    "videos.csv": {
+      "sha256": "1b207acd6c06ff0e7530f6a0cc423cc13556fb4428b104772d52d4aa777e7475",
+      "bytes": 211
+    },
+    "play_tracking.png": {
+      "sha256": "2882ef5dd643327e893b50fa34961e2a319e95ec842f603494a5434b90d7eab6",
+      "bytes": 360100
+    },
+    "selection_after.json": {
+      "sha256": "7f966b3f73085db34643f494a1b8fca8d314dae5c0224e579f314559b9575a06",
+      "bytes": 4150
+    },
+    "play_contacts.png": {
+      "sha256": "2f0cf7ed5afd9955d606d60a386d4917dd567cca35e118fcaabae7adf8998eec",
+      "bytes": 316496
+    },
+    "guarded_training_diagnostics.json": {
+      "sha256": "09ad132c5dc71e397c3b2960353736bfa703d964d639a6ec66a4d82498bdf93a",
+      "bytes": 4308
+    },
+    "play_flight_events.png": {
+      "sha256": "2b1f6603277e421e4eb3a41ea5c16e5c9b86d2fab45a967a1e24c92195eab85f",
+      "bytes": 115187
+    },
+    "summary.json": {
+      "sha256": "41068f53a5367409285218cac842507642bb10780924ecb2663d0e0be20cd6b5",
+      "bytes": 123373
+    },
+    "collect_flight_diagnostics.log": {
+      "sha256": "a1661f077e01b28b0c10cc6cc8bab49e6bcd84b3d37f97541903160031b5f219",
+      "bytes": 2691
+    },
+    "guarded_play_diagnostics.json": {
+      "sha256": "c3f0829118438d886e91ce162bb85c4c2cce3ed71a694e9de8d1d9afd3bcab31",
+      "bytes": 9034
+    },
+    "training_curves.png": {
+      "sha256": "3e4dae03340fbda15e086143697ddd46eff746a08c59a76ca91143d6b2ccadf4",
+      "bytes": 256230
+    },
+    "heading_motion_play.png": {
+      "sha256": "aa386faffa3bb886a42f9fcc1cd0506185f60bc0af4e51f63789c7da8039b0f1",
+      "bytes": 694506
+    },
+    "play_state_trace.csv": {
+      "sha256": "4d691ceb9ab10e4fd511108e21772b4c9a3b44b2f3873d7d7628af5507cd7222",
+      "bytes": 184364
+    },
+    "staged_training_progress.png": {
+      "sha256": "b83854db0163d25da752f8aa4efe7e82169771f2069ebeb0677769c0fbbc4700",
+      "bytes": 227225
+    },
+    "params/agent.yaml": {
+      "sha256": "49d4730da410b929d0bdc70a805f92d7b24df194e8c9bccffa526d0ad5c1f7f1",
+      "bytes": 1040
+    },
+    "params/env.yaml": {
+      "sha256": "7756306bafc4800ff4451f24b6e13db27d420ba0d020ae30ab5ae069eaf67a61",
+      "bytes": 32246
+    },
+    "source/analysis/collect_guarded_diagnostics.py": {
+      "sha256": "23c7d595ec76f897f11e2ee6ed0fbaf46e9320cb2998ee2dbf2d9ba2ed3bc3c8",
+      "bytes": 10009
+    },
+    "source/analysis/collect_gallop.py": {
+      "sha256": "e3b50fd27ea2d0ee18ab0d3f2f872a55a87ad974511fbb5b050a9dc5a7d52508",
+      "bytes": 22907
+    },
+    "source/analysis/collect_heading_diagnostics.py": {
+      "sha256": "134ba6b3ef624df3d7ed90f463f07dde7b9e89a6e8ace8ad27aae054c7881e62",
+      "bytes": 15862
+    },
+    "source/analysis/collect_staged_gallop_review.py": {
+      "sha256": "18eef7bea44cddfa29a24f29045e61a7949111b0cec720532dbd005ded88ecc3",
+      "bytes": 10761
+    },
+    "source/analysis/collect_flight_diagnostics.py": {
+      "sha256": "ebb4bcdebe842d04953f6579196711f686ab4e025d7afba4b7e6ffeff6b9516e",
+      "bytes": 12981
+    },
+    "source/configs/gallop_config.json": {
+      "sha256": "f9757668336fcf4648c4adf93c3b18d5753b61fc47d81448680924bfbd80563f",
+      "bytes": 6140
+    },
+    "source/trained/gallop_env.py": {
+      "sha256": "209e47d2de5114d7fa7865dddf8ded16cc012e1863ae57c31eec4c47f61ebe61",
+      "bytes": 67557
+    },
+    "source/trained/gallop_core.py": {
+      "sha256": "2671fdaf6d8d8535233d52f234318169a412db120625725dc953c36dd5518789",
+      "bytes": 86924
+    }
+  }
+}

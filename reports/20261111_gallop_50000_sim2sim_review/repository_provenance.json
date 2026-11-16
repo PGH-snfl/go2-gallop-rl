@@ -1,0 +1,18 @@
+{
+  "unitree_mujoco": {
+    "head": "1eb6642e3f3fdfb7fb13a9794fd6a2dd93ea0e7d",
+    "status": " M simulate/config.yaml\n M simulate/src/unitree_sdk2_bridge.h\n?? simulate/src/ble_joystick.h\n?? simulate/tests/\n?? simulate/tools/\n"
+  },
+  "unitree_rl_lab_official": {
+    "head": "4960b84732b0c2ec593dccbfe963fda1bcd7b1e3",
+    "status": ""
+  },
+  "mujoco_model": {
+    "local_path": "/home/cvr/GH/unitree/unitree_mujoco/unitree_robots/go2/go2.xml",
+    "local_sha256": "2014a3d76e30f17ab9447d8a67bd015291f74fa4d71ae30d005f1a32bd693d4b",
+    "upstream_saved_sha256": "68784cdaf0068476aa9bf52a9dba40569e7197266e52762d33493d673a96c142",
+    "byte_identical_to_upstream_file": false,
+    "identical_ignoring_trailing_whitespace": true,
+    "difference": "Only missing final newline in local tracked model; physical XML content identical."
+  }
+}
