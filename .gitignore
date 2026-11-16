@@ -4,11 +4,11 @@ __pycache__/
 *.py[cod]
 *.egg-info/
 .pytest_cache/
-third_party/
-runs/
-archive/
-data/
-results
+/third_party/
+/runs/
+/archive/
+/data/
+/results
 deploy/build*/
 .release_assets/
 .env
