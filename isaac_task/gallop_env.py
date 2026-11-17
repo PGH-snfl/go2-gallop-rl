@@ -228,6 +228,8 @@ def configure_gallop(cfg,settings):
     if settings.flight_shaping_enabled:
         for key in ('drive','clearance','support','balance','takeoff','landing','impact','clip'):
             weights['flight_'+key]=getattr(settings,'flight_'+key+'_weight')
+        for key in ('airtime','slide'):
+            if getattr(settings,'flight_'+key+'_weight')>0:weights['flight_'+key]=getattr(settings,'flight_'+key+'_weight')
     if settings.bounded_actions_enabled:
         weights.update(bounded_near_limit=settings.bounded_limit_weight,bounded_target_rate=settings.bounded_target_rate_weight)
     if settings.guarded_enabled:
@@ -545,9 +547,9 @@ class GallopState:
             adherence=1-gait_mix*air_target.float()*(1-floor)*contact.float().mean(dim=1)
             for key in ('contact','swing','joint','motion','fore_use'):self.components[key]*=adherence
             for key,value in self.flight.rates.items():
-                sign=-1 if key in ('support','balance','impact') else 1
+                sign=-1 if key in ('support','balance','impact','slide') else 1
                 self.components['flight_'+key]=sign*self.strength*value/self.env.step_dt
-            for key in ('takeoff','landing'):
+            for key in ('takeoff','landing','airtime'):
                 self.components['flight_'+key]=self.strength*self.flight.points[key]/self.env.step_dt
                 if self.cfg.relearn_enabled:self.components['flight_'+key]*=self.relearn_gait
             self.components['flight_clip']=-self.strength*balance_active.float()*self.action_clip
@@ -948,6 +950,10 @@ class GallopState:
                            flight_step_confirmed_distance_score=self.flight.points['distance'],world_vertical_velocity=d.root_lin_vel_w[:,2])
             tensors.update(flight_step_touchdown_distance_score=self.flight.points['distance_touchdown'],
                            flight_step_recovery_distance_score=self.flight.points['distance_recovery'])
+            tensors.update(flight_step_airtime_score=self.flight.points['airtime'],
+                           flight_step_touchdown_airtime_score=self.flight.points['airtime_touchdown'],
+                           flight_step_recovery_airtime_score=self.flight.points['airtime_recovery'],
+                           flight_pending_airtime_score=self.flight.airtime_recovery_bank)
         tensors.update(leap_active=self.leap.active,leap_current_distance=self.leap.current_distance,
                        leap_air_seconds=self.leap.air_seconds,leap_landed=self.leap.landed,
                        leap_qualified_landed=self.leap.qualified_landed,leap_last_distance=self.leap.last_distance,

@@ -1,11 +1,11 @@
 {
   "snapshot_date": "2026-11-17",
-  "latest_completed_checkpoint": "runs/isaac/train/unitree_go2_gallop/20261117_160234_3e2363/model_final.pt",
-  "sha256": "06da23ddd15d6f70f5fd8637ee3fe01a1a3d584078649218a01f244b43ceea2d",
-  "completed_cumulative_iterations": 62000,
-  "next_training_config": "configs/gallop_2mps_50cm_landing_credit.json",
+  "latest_completed_checkpoint": "runs/isaac/train/unitree_go2_gallop/20261117_204032_022fd2/model_final.pt",
+  "sha256": "ed2ac0758317a294574d1d5a3d6c25e6e076472a64372ad4f5d384eb573a0afe",
+  "completed_cumulative_iterations": 66000,
+  "next_training_config": "configs/gallop_2mps_50cm_airtime.json",
   "next_training_additional_iterations": 4000,
-  "next_training_planned_cumulative_iterations": 66000,
+  "next_training_planned_cumulative_iterations": 70000,
   "next_training_executed": false,
   "goal": {
     "speed_mps": 2.0,
@@ -15,10 +15,14 @@
   },
   "hardware_deployment_accepted": false,
   "notes": [
-    "62k server completion and received model/checksums verified; latest checkpoint is not yet in the Release resume pack (which ends at58k).",
-    "62k playback: zero distance/landing rewards, 0 stable landings of56 candidates; maximum air distance13.68cm.",
-    "Next config splits safe-touchdown/recovery distance credit25/75, uses linear partial progress and logs physics-step abort reasons. Goals and all safety gates unchanged.",
-    "CPU unit checks only on editing computer; no Isaac/PPO run for the new reward config. Performance improvement remains unverified.",
-    "Previous official-physics MuJoCo transfer failed; hardware deployment remains unaccepted."
-  ]
+    "66k server training completed and collected;43 original files checksum-verified. Latest model is not yet in the Release resume pack (which ends at58k).",
+    "Single66k playback: mean/max flight10.54/14.34cm, mean air55.45ms, stable landings21/40,qualified flights0/44. Fixed50cm/240ms goal not achieved.",
+    "All18 playback landing aborts exceeded the0.5m/s contacted-foot center horizontal-speed gate. Distance reward13.80710 points was paid in touchdown/recovery parts.",
+    "Playback had zero official-limit bad physics samples. Entire training had3697/27271 official-limit terminations (13.56%); maximum recorded actual speed/limit ratio2.739. These populations must not be conflated.",
+    "62k-to66k additional4000-update plan is consumed. A new66k-to70k plan is now prepared with airtime objective and lower exploration. Collection ran no new simulation/PPO/imitation/hardware commands.",
+    "Previous official-physics MuJoCo transfer failed; current66k transfer is untested and hardware deployment remains unaccepted.",
+    "Airtime objective12 points, actual-flight clearance, contact-foot speed cost2 from0.25m/s,drive8/landing2,and target exploration std0.10. All goal/mechanical/landing limits unchanged.",
+    "100CPU tests and61 protected-setting comparisons passed; actual66k weights restored exactly into a shape-compatible CPU probe. No new RSL/Isaac/PPO/hardware run performed; server non-training check is required."
+  ],
+  "next_training_plan_status": "prepared:66k-to70k airtime objective; server check required"
 }

@@ -1,0 +1,37 @@
+{
+  "checkpoint_sha256": "ed2ac0758317a294574d1d5a3d6c25e6e076472a64372ad4f5d384eb573a0afe",
+  "config_sha256": "bbed614719224f71cbe617790db1f68935a8a7937648482eb091f9dd12ea1220",
+  "parent_cumulative_updates": 66000,
+  "production_restore_function": {
+    "parent_iteration_zero_based": 3999,
+    "parent_stage_iterations": 4000,
+    "actor_critic_restored": true,
+    "noise_restored": true,
+    "optimizer_reset": true,
+    "stage_iteration_start": 0,
+    "actor_observations": [
+      49,
+      49
+    ],
+    "critic_observations": [
+      64,
+      64
+    ],
+    "added_heading_columns_zero": false
+  },
+  "all_restored_tensors_equal": true,
+  "protected_settings_checked": 61,
+  "actor_probe_shape": [
+    4,
+    12
+  ],
+  "critic_probe_shape": [
+    4,
+    1
+  ],
+  "probe_outputs_finite": true,
+  "optimizer_updates": 0,
+  "physics_steps": 0,
+  "source_checkpoint_unchanged": true,
+  "scope": "Production tensor restore function against a CPU shape-compatible probe, not an actual RSL/Isaac runtime check. weights_only=True used for the user-provided checkpoint."
+}

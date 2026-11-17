@@ -143,9 +143,13 @@ class LandingCreditTests(unittest.TestCase):
         main=next(node for node in tree.body if isinstance(node,ast.FunctionDef) and node.name=='main')
         block=next(node for node in main.body if isinstance(node,ast.If)
                    and ast.unparse(node.test)=="getattr(settings, 'flight_shaping_enabled', False)")
-        old=settings().to_dict();del old['flight_touchdown_distance_fraction']
-        for core,s,version in ((SimpleNamespace(FlightStabilityTracker=object),SimpleNamespace(**old),1),
-                               (SimpleNamespace(FlightStabilityTracker=FlightStabilityTracker),settings(),2)):
+        old=settings().to_dict()
+        for key in ('flight_airtime_weight','flight_clearance_requires_airborne','flight_slide_weight','flight_slide_soft_speed'):
+            del old[key]
+        oldest={key:value for key,value in old.items() if key!='flight_touchdown_distance_fraction'}
+        for core,s,version in ((SimpleNamespace(FlightStabilityTracker=object),SimpleNamespace(**oldest),1),
+                               (SimpleNamespace(FlightStabilityTracker=FlightStabilityTracker),SimpleNamespace(**old),2),
+                               (SimpleNamespace(FlightStabilityTracker=FlightStabilityTracker),settings(),3)):
             namespace={'manifest':{},'gallop_core':core,'settings':s}
             exec(compile(ast.Module(body=[block],type_ignores=[]),'flight_manifest','exec'),namespace)
             design=namespace['manifest']['flight_design']

@@ -1,0 +1,37 @@
+{
+  "date": "2026-11-17",
+  "parent_cumulative_updates": 66000,
+  "parent_sha256": "ed2ac0758317a294574d1d5a3d6c25e6e076472a64372ad4f5d384eb573a0afe",
+  "next_config": "configs/gallop_2mps_50cm_airtime.json",
+  "additional_updates_planned": 4000,
+  "planned_cumulative_updates": 70000,
+  "cpu_unit_tests_passed": 100,
+  "portable_handoff_tests_passed": 4,
+  "syntax_python_files": 119,
+  "syntax_json_configs": 31,
+  "ruff_and_shell_syntax": "passed",
+  "git_diff_check": "passed",
+  "original_files_sha256_verified_unchanged": 86,
+  "protected_settings_unchanged": 61,
+  "real_parent_tensors_equal": true,
+  "test_environment": "Python3.11.16; Torch2.7.0+cpu and NumPy1.26.4 from /tmp only; existing Conda environments unchanged",
+  "not_run": [
+    "Isaac runtime check; user must run this on server",
+    "Actual RSL runner initialization; CPU probe only",
+    "PPO or imitation training",
+    "New simulator physics or hardware execution"
+  ],
+  "performance_improvement_verified": false,
+  "test_command": "OMP_NUM_THREADS=1 python -m unittest tests.test_gallop_airtime tests.test_gallop_landing_credit tests.test_gallop_flight_collection tests.test_gallop_flight tests.test_gallop_distance_focus tests.test_gallop_velocity_guard tests.test_gallop_leap tests.test_gallop_leap_env tests.test_gallop_fixed_edu tests.test_gallop_guarded.GuardedCoreTests tests.test_gallop_guarded_curriculum tests.test_gallop_pair_env",
+  "source_sha256": {
+    "isaac_task/gallop_core.py": "a7d3d01d899cb475a51148b9363f4300bde0942bbaa4ce25fae81ca99e48e38f",
+    "isaac_task/gallop_env.py": "903ed755dfa5f5f86d05d6f542f4018e8850718da67165c9eb9c821abe76c8d7",
+    "scripts/training/gallop_baseline.py": "ed081e85a361d3f5d4b557989d4cd8eae2db087e41f087ba7105a9021077230d",
+    "configs/gallop_2mps_50cm_airtime.json": "bbed614719224f71cbe617790db1f68935a8a7937648482eb091f9dd12ea1220",
+    "tests/test_gallop_airtime.py": "9c24267d7f2d917e2518bcde5f09903c88cf70322f99bbe7cca5a3e128846cb8",
+    "tests/test_gallop_landing_credit.py": "4a0fcd76c0f732f3006d1d48277b0f4233fd13a1f872a7cb75398c9dbf67000a",
+    "scripts/validation/verify_airtime_parent.py": "bbfe08385e6277f9aedc9275f47831229b6b66243ea7f7e840cf5ae93290461f",
+    "docs/gallop_airtime.md": "2ab3b078d2e178dcbb97f057bfd41708aca3c365e626db516e76e2cefc05d5ac",
+    "handoff/resume-state.json": "bccb903ed1c50da6b88b9881cabe02e1cd64e1feeea592c50edbd883493894cb"
+  }
+}

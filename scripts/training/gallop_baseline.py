@@ -255,6 +255,15 @@ def main():
                 abort_reason_order=list(gallop_core.FlightStabilityTracker.ABORT_REASONS),
                 abort_reason_counts='5ms landing decisions; termination cancellation at control boundary; overlapping reasons',
                 abort_samples='last physics-step abort sample per environment; counters retain all abort events')
+        if hasattr(settings,'flight_airtime_weight'):
+            manifest['flight_design'].update(version=3,
+                airtime_weight=settings.flight_airtime_weight,
+                airtime_score='min(actual_air_seconds / target_air_seconds, 1); best-score increases per reference cycle',
+                airtime_eligibility='upward valid takeoff, forward flight average >= half command, minimum landing air time, safe touchdown/recovery split',
+                clearance_requires_actual_air=settings.flight_clearance_requires_airborne,
+                contact_foot_soft_speed_mps=settings.flight_slide_soft_speed,
+                contact_foot_speed_cost_weight=settings.flight_slide_weight,
+                abort_contact_mask='5ms contact mask stored with last abort sample')
     if settings.start_speed==settings.max_speed and settings.speed_band==0:
         manifest['speed_increase_rule']=f'Fixed positive forward command {settings.start_speed} m/s; no speed promotion'
     if startup_enabled:manifest['speed_increase_rule']=f'Stationary hold -> stable walking {settings.startup_walk_speed} m/s -> smooth stable handover -> {settings.start_speed} m/s Gallop'
@@ -348,6 +357,13 @@ def main():
             sampling='Every physics update, all startup/transition/gallop stages',
             success='No velocity/effort hard-bound exceedance in any physics sample; no forced q/dq clipping',
             motor_model='Saved conservative Go2HV curve retained; not an identified EDU continuous-duty curve')
+        if hasattr(env.gallop.official,'peak_velocity_joint'):
+            manifest['official_joint_limits']['peak_velocity_trace']=dict(
+                fields=['edu_peak_velocity_joint','edu_peak_velocity_actual','edu_peak_velocity_limit',
+                        'edu_peak_velocity_seconds','edu_peak_velocity_sample_finite'],
+                joint_index='Index into joint_order; -1 before a nonzero peak',
+                timestamp='Episode physics seconds; first occurrence of the maximum ratio',
+                nonfinite='Actual value uses zero placeholder when sample_finite is false; ratio/fault still mark the invalid sample')
     if getattr(settings,'fixed_goal_enabled',False):
         manifest['fixed_goal']=dict(speed_mps=settings.start_speed,air_distance_m=settings.leap_min_distance,
             promotion=False,regression=False,cohort_collection=False,decision_windows=False,
