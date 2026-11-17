@@ -79,6 +79,7 @@ class GallopSettings:
     leap_partial_credit: float = .25
     leap_progress_exponent: float = 1.
     flight_landing_distance_scaled: bool = False
+    flight_touchdown_distance_fraction: float = 0.
     pair_hip_weight: float = 0.
     pair_hip_tolerance: float = .2
     flight_shaping_enabled: bool = False
@@ -238,6 +239,10 @@ class GallopSettings:
         if not math.isfinite(self.velocity_tracking_weight) or self.velocity_tracking_weight<0:raise ValueError('Invalid velocity tracking weight')
         if not math.isfinite(self.leap_progress_exponent) or self.leap_progress_exponent<1:raise ValueError('Invalid leap progress exponent')
         if type(self.flight_landing_distance_scaled) is not bool:raise ValueError('Landing distance scaling must be boolean')
+        if not math.isfinite(self.flight_touchdown_distance_fraction) or not 0<=self.flight_touchdown_distance_fraction<=1:
+            raise ValueError('Invalid touchdown distance fraction')
+        if self.flight_touchdown_distance_fraction>0 and not self.flight_shaping_enabled:
+            raise ValueError('Touchdown distance credit requires flight tracking')
         if type(self.fixed_goal_enabled) is not bool or type(self.managed_exploration_enabled) is not bool or type(self.edu_limits_enabled) is not bool or type(self.flight_height_compensation) is not bool:
             raise ValueError('New fixed-goal options must be booleans')
         if self.fixed_goal_enabled and (self.staged_enabled or self.relearn_enabled or self.start_speed!=self.max_speed or self.speed_band!=0 or self.stabilization_min_leap_distance!=self.leap_min_distance):
@@ -845,22 +850,40 @@ def flight_phase_targets(phase,period,settings):
 class FlightStabilityTracker:
     """5ms shaping and delayed landing confirmation. All rewards are bounded.
 
-    Rates integrate in seconds; event points are paid once. Distance is held
-    through recovery, so a crash or another takeoff cannot earn a landing bonus.
+    Rates integrate in seconds; event points are paid once. By default all
+    distance is held through recovery. An opt-in fraction can be paid at safe
+    touchdown; the remaining distance and landing bonus still require recovery.
     This tracker does not prescribe an individual foot's touchdown order.
     """
     RATE_KEYS=('drive','clearance','support','balance','impact')
+    ABORT_REASONS=('retakeoff','contact','height','tilt','angular_speed','lateral_speed',
+                   'force','down_vz','slide','termination')
     def __init__(self,positions,settings,body_weight):
         self.cfg=settings;self.body_weight=body_weight
         n=len(positions)
         def zero():return positions.new_zeros(n)
         self.rates={key:zero() for key in self.RATE_KEYS}
-        self.points={key:zero() for key in ('takeoff','landing','distance')}
+        self.points={key:zero() for key in ('takeoff','landing','distance','distance_touchdown','distance_recovery')}
         self.fore_ok_at_takeoff=zero().bool();self.flight_valid=zero().bool();self.recovering=zero().bool()
         self.recovery_elapsed=zero();self.recovery_bank=zero();self.recovery_quality=zero();self.recovery_progress=zero()
         self.previous_vz=zero();self.takeoff_best=zero();self.landing_best=zero();self.step_stable=zero()
         self.totals={key:zero() for key in ('takeoffs','landings','stable_landings','aborted_landings',
-                    'takeoff_vz_sum','landing_peak_force_bw','landing_peak_down_vz','balance_integral','support_integral','seconds')}
+                    'takeoff_vz_sum','landing_peak_force_bw','landing_peak_down_vz','landing_peak_foot_slide',
+                    'balance_integral','support_integral','seconds',*('abort_'+key for key in self.ABORT_REASONS))}
+        self.sample={key:zero() for key in ('episode_seconds','foot_slide','force_bw','down_vz','height','tilt','angular_speed','lateral_speed')}
+        self.sample['foot_velocity_w']=positions.new_zeros((n,4,3))
+        self.abort_sample={key:torch.zeros_like(value) for key,value in self.sample.items()}
+        self.abort_reasons=positions.new_zeros((n,len(self.ABORT_REASONS)),dtype=torch.bool)
+
+    def record_abort(self,mask,reasons,counts=None):
+        """Keep overlapping reason counts and the last abort physics sample per env."""
+        flags=torch.stack([reasons.get(key,torch.zeros_like(mask)) for key in self.ABORT_REASONS],dim=1)
+        amounts=mask.float() if counts is None else counts
+        for i,key in enumerate(self.ABORT_REASONS):self.totals['abort_'+key]+=amounts*flags[:,i].float()
+        self.abort_reasons=torch.where(mask[:,None],flags,self.abort_reasons)
+        for key,value in self.sample.items():
+            selected=mask.reshape((-1,)+(1,)*(value.ndim-1))
+            self.abort_sample[key]=torch.where(selected,value,self.abort_sample[key])
 
     def begin_step(self,wrapped):
         for value in (*self.rates.values(),*self.points.values(),self.step_stable):value.zero_()
@@ -912,6 +935,9 @@ class FlightStabilityTracker:
         downward=torch.maximum(-self.previous_vz,-vz).clamp_min(0)
         force_bw=force.clamp_min(0).sum(dim=1)/self.body_weight.clamp_min(1.)
         slide=(foot_velocity[:,:,:2].norm(dim=2)*contact.float()).amax(dim=1)
+        self.sample.update(episode_seconds=leap.elapsed.clone(),foot_slide=slide,force_bw=force_bw,down_vz=downward,height=position[:,2].clone(),
+                           tilt=rpy[:,:2].abs().amax(dim=1),angular_speed=angular_velocity.norm(dim=1),
+                           lateral_speed=body_velocity[:,1].abs(),foot_velocity_w=foot_velocity.clone())
         impact_cost=(((force_bw/s.flight_max_force_bw-1).clamp_min(0)).square()
                     +((downward/s.flight_max_landing_vz-1).clamp_min(0)).square()
                     +(slide/s.flight_max_foot_slide).square()).clamp_max(4)/3
@@ -921,20 +947,28 @@ class FlightStabilityTracker:
         self.totals['landings']+=begin_recovery.float()
         self.totals['landing_peak_force_bw']=torch.maximum(self.totals['landing_peak_force_bw'],torch.where(monitoring,force_bw,0.))
         self.totals['landing_peak_down_vz']=torch.maximum(self.totals['landing_peak_down_vz'],torch.where(monitoring,downward,0.))
+        self.totals['landing_peak_foot_slide']=torch.maximum(self.totals['landing_peak_foot_slide'],torch.where(monitoring,slide,0.))
         landing_safe=safe&grounded&(force_bw<=s.flight_max_force_bw)&(downward<=s.flight_max_landing_vz)&(slide<=s.flight_max_foot_slide)
         aborted=self.recovering&(start|~landing_safe)
+        failed_touch=begin_recovery&~landing_safe
+        self.record_abort(aborted|failed_touch,dict(retakeoff=start,contact=~grounded,height=~height_ok,
+            tilt=~tilt_ok,angular_speed=~angular_ok,lateral_speed=~lateral_ok,
+            force=force_bw>s.flight_max_force_bw,down_vz=downward>s.flight_max_landing_vz,slide=slide>s.flight_max_foot_slide))
         self.totals['aborted_landings']+=aborted.float()
         self.recovering&=~aborted
         self.recovery_bank=torch.where(self.recovering,self.recovery_bank,0.)
         self.recovery_elapsed=torch.where(self.recovering,self.recovery_elapsed+dt,0.)
-        self.recovery_bank=torch.where(begin_recovery,distance_gain,self.recovery_bank)
+        self.recovery_bank=torch.where(begin_recovery,(1-s.flight_touchdown_distance_fraction)*distance_gain,self.recovery_bank)
         self.recovery_elapsed=torch.where(begin_recovery,0.,self.recovery_elapsed)
         landing_quality=quality*torch.exp(-(downward/s.flight_max_landing_vz).square()-.5*(slide/s.flight_max_foot_slide).square())
+        touchdown_points=torch.where(begin_recovery&landing_safe,
+            s.flight_touchdown_distance_fraction*distance_gain*landing_quality,0.)
+        self.points['distance_touchdown']+=touchdown_points
+        self.points['distance']+=touchdown_points
         self.recovery_quality=torch.where(begin_recovery,landing_quality,self.recovery_quality)
         progress=(leap.last_distance/leap.distance_target).clamp(0,1)*(leap.last_seconds/s.flight_min_seconds).clamp(0,1)
         self.recovery_progress=torch.where(begin_recovery,progress,self.recovery_progress)
         self.recovering|=begin_recovery
-        failed_touch=begin_recovery&~landing_safe
         self.totals['aborted_landings']+=failed_touch.float()
         self.recovering&=~failed_touch
         self.recovery_quality=torch.where(self.recovering,torch.minimum(self.recovery_quality,landing_quality),self.recovery_quality)
@@ -943,14 +977,18 @@ class FlightStabilityTracker:
         if s.flight_landing_distance_scaled:landing_score*=self.recovery_progress
         self.points['landing']+=(landing_score-self.landing_best).clamp_min(0)
         self.landing_best=torch.maximum(self.landing_best,landing_score)
-        self.points['distance']+=torch.where(settled,self.recovery_bank*self.recovery_quality,0.)
+        recovery_points=torch.where(settled,self.recovery_bank*self.recovery_quality,0.)
+        self.points['distance_recovery']+=recovery_points
+        self.points['distance']+=recovery_points
         self.totals['stable_landings']+=settled.float();self.step_stable+=settled.float()
         self.recovering&=~settled
         self.recovery_bank=torch.where(self.recovering,self.recovery_bank,0.)
         self.previous_vz=vz.clone()
 
     def reject_terminated(self,mask):
-        self.totals['aborted_landings']+=mask.float()*(self.recovering.float()+self.step_stable)
+        cancelled=mask.float()*(self.recovering.float()+self.step_stable)
+        self.record_abort(cancelled>0,{'termination':mask},counts=cancelled)
+        self.totals['aborted_landings']+=cancelled
         self.totals['stable_landings']-=mask.float()*self.step_stable
         self.recovering&=~mask
         self.recovery_bank[mask]=0.
@@ -963,8 +1001,15 @@ class FlightStabilityTracker:
                       flight_support_cost=self.totals['support_integral']/self.totals['seconds'].clamp_min(1e-6))
         return values
 
+    def snapshot(self):
+        values={'flight_sample_'+key:value for key,value in self.sample.items()}
+        values.update({'flight_abort_sample_'+key:value for key,value in self.abort_sample.items()})
+        values['flight_last_abort_reasons']=self.abort_reasons
+        return values
+
     def reset(self,ids):
-        for value in (*self.rates.values(),*self.points.values(),*self.totals.values(),self.fore_ok_at_takeoff,
+        for value in (*self.rates.values(),*self.points.values(),*self.totals.values(),*self.sample.values(),
+                      *self.abort_sample.values(),self.abort_reasons,self.fore_ok_at_takeoff,
                       self.flight_valid,self.recovering,self.recovery_elapsed,self.recovery_bank,self.recovery_quality,self.recovery_progress,
                       self.previous_vz,self.takeoff_best,self.landing_best,self.step_stable):value[ids]=0
 

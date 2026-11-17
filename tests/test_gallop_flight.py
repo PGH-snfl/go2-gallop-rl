@@ -183,7 +183,7 @@ class GallopFlightTests(unittest.TestCase):
 class GallopFlightEnvironmentTests(unittest.TestCase):
     def test_production_wiring_has_same_event_points_at_10_and_20ms_and_masks_failed_envs(self):
         results=[]
-        for control_dt in (.01,.02):
+        for control_dt,fraction in ((.01,0.),(.02,0.),(.01,.25),(.02,.25)):
             _,env,data,sensor=make_state(control_dt)
             data.root_lin_vel_b=torch.tensor([[2.5,0.,0.]]).repeat(3,1)
             data.root_lin_vel_w=data.root_lin_vel_b.clone()
@@ -191,7 +191,8 @@ class GallopFlightEnvironmentTests(unittest.TestCase):
             env.scene['robot'].root_physx_view=SimpleNamespace(get_masses=lambda:torch.full((3,1),15.))
             env.cfg.sim=SimpleNamespace(gravity=(0.,0.,-9.81))
             env.command_manager.get_command=lambda name:torch.tensor([[2.5,0.,0.]]).repeat(3,1)
-            s=settings();state=state_class()(env,s,None,None,training_targets=False,curriculum_enabled=False)
+            s=replace(settings(),flight_touchdown_distance_fraction=fraction)
+            state=state_class()(env,s,None,None,training_targets=False,curriculum_enabled=False)
             state.phase[:]=.75
             earned=torch.zeros(3);landing=torch.zeros(3);drive=torch.zeros(3)
             for step in range(40//env.cfg.decimation):
@@ -219,9 +220,11 @@ class GallopFlightEnvironmentTests(unittest.TestCase):
             self.assertEqual(state.last_episode['flight_stable_landings'],1.)
             self.assertEqual(state.last_episode['leap_physics_samples'],40.)
             self.assertIn('flight_planned_stage',state.snapshot())
+            self.assertEqual(state.snapshot()['flight_abort_sample_foot_velocity_w'].shape,(3,4,3))
+            self.assertIn('flight_abort_slide',state.snapshot())
             state.reset(torch.tensor([0]))
             self.assertEqual(state.flight.totals['stable_landings'][0].item(),0.)
-        torch.testing.assert_close(results[0],results[1],rtol=0,atol=1e-5)
+        for result in results[1:]:torch.testing.assert_close(results[0],result,rtol=0,atol=1e-5)
 
 
 if __name__=='__main__':unittest.main()

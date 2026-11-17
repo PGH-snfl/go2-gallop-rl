@@ -30,6 +30,9 @@ def cohort(rows, settings, max_episode_steps):
     result['event_totals'] = {key: sum(r[key] for r in rows) for key in (
         'leap_events', 'leap_qualified_events', 'leap_reward_points', 'flight_takeoffs',
         'flight_landings', 'flight_stable_landings', 'flight_aborted_landings')}
+    reason_keys=sorted({key for row in rows for key in row if key.startswith('flight_abort_')})
+    result['landing_abort_reasons']={key:sum(row.get(key,0) for row in rows) for key in reason_keys}
+    result['landing_abort_reason_note']='5ms landing decisions; termination at control boundary; reasons can overlap.'
     result['event_weighted_distance_m'] = sum(r['leap_distance_mean'] * r['leap_events'] for r in rows) / events if events else None
     result['event_weighted_air_seconds'] = sum(r['leap_air_seconds_mean'] * r['leap_events'] for r in rows) / events if events else None
     failures = Counter()
@@ -47,6 +50,70 @@ def cohort(rows, settings, max_episode_steps):
             failures[','.join(reasons)] += 1
     result['stable_failure_combinations'] = dict(failures)
     return result
+
+
+def flight_event_rows(z,settings):
+    if z['valid'].shape[1] != 1:
+        raise ValueError('This event join currently requires one playback environment')
+    valid = z['valid'][:, 0].astype(bool)
+    counters = ('leap_events', 'leap_qualified_events', 'flight_landings', 'flight_stable_landings', 'flight_aborted_landings')
+    increments = {key: np.diff(np.r_[0, z[key][valid, 0]]) for key in counters}
+    if any((delta < 0).any() or (delta > 1).any() for delta in increments.values()):
+        raise ValueError('Cannot attribute multiple events or counter resets within one saved policy frame')
+    indices = np.flatnonzero(valid)
+    events = {}
+    for local, i in enumerate(indices):
+        event_id = int(z['leap_events'][i, 0])
+        if increments['leap_events'][local]:
+            events[event_id] = {
+                'event_id': event_id, 'landing_snapshot_seconds': float(z['time'][i]),
+                'distance_m': float(z['leap_last_distance'][i, 0]),
+                'air_seconds': float(z['leap_last_seconds'][i, 0]),
+                'target_distance_m': float(z['stabilization_leap_target'][i,0]) if 'stabilization_leap_target' in z else settings['leap_min_distance'],
+                'distance_time_qualified': int(increments['leap_qualified_events'][local]),
+                'recovery_monitored': int(increments['flight_landings'][local]),
+                'stable_landing': 0, 'recovery_aborted': 0,
+                'recovery_end_snapshot_seconds': None, 'distance_reward_points': 0.,
+                'touchdown_distance_reward_points': 0., 'recovery_distance_reward_points': 0.,
+                'abort_reason_counts': '{}',
+            }
+        if increments['flight_stable_landings'][local]:
+            row = events[event_id]
+            row['stable_landing'] = 1
+            row['recovery_end_snapshot_seconds'] = float(z['time'][i])
+        if increments['flight_aborted_landings'][local]:
+            row = events[event_id]
+            row['recovery_aborted'] = 1
+            row['recovery_end_snapshot_seconds'] = float(z['time'][i])
+            reasons={key:float(z[key][i,0]-(z[key][indices[local-1],0] if local else 0))
+                     for key in z if key.startswith('flight_abort_') and not key.startswith('flight_abort_sample_') and z[key].ndim==2}
+            row['abort_reason_counts']=json.dumps({key:value for key,value in reasons.items() if value},sort_keys=True)
+        if event_id in events:
+            row=events[event_id]
+            row['distance_reward_points']+=float(z['leap_reward_score'][i,0])*settings['leap_reward_weight']
+            for field,key in (('touchdown_distance_reward_points','flight_step_touchdown_distance_score'),
+                              ('recovery_distance_reward_points','flight_step_recovery_distance_score')):
+                if key in z:row[field]+=float(z[key][i,0])*settings['leap_reward_weight']
+    for row in events.values():
+        row['status'] = 'stable' if row['stable_landing'] else 'aborted' if row['recovery_aborted'] else 'pending_at_episode_end' if row['recovery_monitored'] else 'not_selected_for_recovery'
+    event_rows = list(events.values())
+    return event_rows
+
+
+def flight_trace_rows(z):
+    valid=z['valid'][:,0].astype(bool)
+    extra_keys = [key for key in z if key.startswith(('leap_', 'flight_', 'pair_')) or key == 'world_vertical_velocity']
+    traces = []
+    for i, time in enumerate(z['time']):
+        row = dict(time=float(time), env=0, first_segment_valid=int(valid[i]), episode_reset=int(z['episode_reset'][i, 0]))
+        for key in extra_keys:
+            values = np.asarray(z[key][i, 0])
+            if values.ndim == 0:
+                row[key] = values.item()
+            else:
+                row.update({key+'_'+'_'.join(map(str,index)):value.item() for index,value in np.ndenumerate(values)})
+        traces.append(row)
+    return traces
 
 
 def main():
@@ -84,53 +151,12 @@ def main():
 
     with np.load(Path(summary['play']) / 'gallop_trace.npz') as archive:
         z = {key: archive[key] for key in archive.files}
-    if z['valid'].shape[1] != 1:
-        raise ValueError('This event join currently requires one playback environment')
-    valid = z['valid'][:, 0].astype(bool)
-    mask = rollout_metric_mask(z,settings,0)
-    counters = ('leap_events', 'leap_qualified_events', 'flight_landings', 'flight_stable_landings', 'flight_aborted_landings')
-    increments = {key: np.diff(np.r_[0, z[key][valid, 0]]) for key in counters}
-    if any((delta < 0).any() or (delta > 1).any() for delta in increments.values()):
-        raise ValueError('Cannot attribute multiple events or counter resets within one saved policy frame')
-    indices = np.flatnonzero(valid)
-    events = {}
-    for local, i in enumerate(indices):
-        event_id = int(z['leap_events'][i, 0])
-        if increments['leap_events'][local]:
-            events[event_id] = {
-                'event_id': event_id, 'landing_snapshot_seconds': float(z['time'][i]),
-                'distance_m': float(z['leap_last_distance'][i, 0]),
-                'air_seconds': float(z['leap_last_seconds'][i, 0]),
-                'target_distance_m': float(z['stabilization_leap_target'][i,0]) if 'stabilization_leap_target' in z else settings['leap_min_distance'],
-                'distance_time_qualified': int(increments['leap_qualified_events'][local]),
-                'recovery_monitored': int(increments['flight_landings'][local]),
-                'stable_landing': 0, 'recovery_aborted': 0,
-                'recovery_end_snapshot_seconds': None, 'distance_reward_points': 0.,
-            }
-        if increments['flight_stable_landings'][local]:
-            row = events[event_id]
-            row['stable_landing'] = 1
-            row['recovery_end_snapshot_seconds'] = float(z['time'][i])
-            row['distance_reward_points'] = float(z['leap_reward_score'][i, 0]) * settings['leap_reward_weight']
-        if increments['flight_aborted_landings'][local]:
-            row = events[event_id]
-            row['recovery_aborted'] = 1
-            row['recovery_end_snapshot_seconds'] = float(z['time'][i])
-    for row in events.values():
-        row['status'] = 'stable' if row['stable_landing'] else 'aborted' if row['recovery_aborted'] else 'pending_at_episode_end' if row['recovery_monitored'] else 'not_selected_for_recovery'
-    event_rows = list(events.values())
+    event_rows=flight_event_rows(z,settings)
+    valid=z['valid'][:,0].astype(bool)
+    indices=np.flatnonzero(valid)
+    mask=rollout_metric_mask(z,settings,0)
     write_csv(out / 'play_flight_events.csv', event_rows)
-    extra_keys = [key for key in z if key.startswith(('leap_', 'flight_', 'pair_')) or key == 'world_vertical_velocity']
-    traces = []
-    for i, time in enumerate(z['time']):
-        row = dict(time=float(time), env=0, first_segment_valid=int(valid[i]), episode_reset=int(z['episode_reset'][i, 0]))
-        for key in extra_keys:
-            values = np.asarray(z[key][i, 0])
-            if values.ndim == 0:
-                row[key] = values.item()
-            else:
-                row.update({f'{key}_{j}': value.item() for j, value in enumerate(values)})
-        traces.append(row)
+    traces=flight_trace_rows(z)
     write_csv(out / 'play_flight_trace.csv', traces)
 
     phase_statistics = []

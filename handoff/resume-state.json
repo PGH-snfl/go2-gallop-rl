@@ -1,11 +1,11 @@
 {
-  "snapshot_date": "2026-11-16",
-  "latest_completed_checkpoint": "runs/isaac/train/unitree_go2_gallop/20261112_124757_47b3b7/model_final.pt",
-  "sha256": "b870c94b016930c17c01b0de4fcebed12a3204ba158d2bc3f0b54b35aaffb8b1",
-  "completed_cumulative_iterations": 58000,
-  "next_training_config": "configs/gallop_2mps_50cm_velocity_guard.json",
+  "snapshot_date": "2026-11-17",
+  "latest_completed_checkpoint": "runs/isaac/train/unitree_go2_gallop/20261117_160234_3e2363/model_final.pt",
+  "sha256": "06da23ddd15d6f70f5fd8637ee3fe01a1a3d584078649218a01f244b43ceea2d",
+  "completed_cumulative_iterations": 62000,
+  "next_training_config": "configs/gallop_2mps_50cm_landing_credit.json",
   "next_training_additional_iterations": 4000,
-  "next_training_planned_cumulative_iterations": 62000,
+  "next_training_planned_cumulative_iterations": 66000,
   "next_training_executed": false,
   "goal": {
     "speed_mps": 2.0,
@@ -15,8 +15,10 @@
   },
   "hardware_deployment_accepted": false,
   "notes": [
-    "58k completion/restoration verified; full58k performance review pending.",
-    "54k did not reach50cm, showed actual joint overspeed and failed MuJoCo transfer.",
-    "New velocity guard verified without PPO; existing frozen policies frequently terminate."
+    "62k server completion and received model/checksums verified; latest checkpoint is not yet in the Release resume pack (which ends at58k).",
+    "62k playback: zero distance/landing rewards, 0 stable landings of56 candidates; maximum air distance13.68cm.",
+    "Next config splits safe-touchdown/recovery distance credit25/75, uses linear partial progress and logs physics-step abort reasons. Goals and all safety gates unchanged.",
+    "CPU unit checks only on editing computer; no Isaac/PPO run for the new reward config. Performance improvement remains unverified.",
+    "Previous official-physics MuJoCo transfer failed; hardware deployment remains unaccepted."
   ]
 }

@@ -2,9 +2,11 @@
 
 일반 전진보행 정책을 기반으로 갤롭 조건을 추가하는 Unitree Go2 프로젝트입니다. **Isaac Lab에서 학습하고, MuJoCo는 Sim2Sim 검증에만 사용합니다.**
 
-현재 완료된 모델은 **58,000회**입니다. 다음 작업은 실제 관절속도 제약을 적용한 추가4,000회입니다. 목표는 **2.0m/s·실제 공중 전진거리50cm·공중시간0.24초 고정**이며 승급은 없습니다. 새 제약으로62k 학습을 실행한 기록은 아직 없습니다. 과거 정책의 실제 관절속도 초과·MuJoCo 전환 실패로 **실배포는 보류** 상태입니다.
+현재 서버에서 완료된 모델은 **62,000회**입니다. 다음 수정은 안전 접촉·안정 착지의 거리 보상 분리와 착지 실패 사유 기록입니다. 목표는 **2.0m/s·실제 공중 전진거리50cm·공중시간0.24초 고정**이며 승급은 없습니다. 새 보상으로 학습한 결과는 아직 없습니다. 과거 정책의 실제 관절속도 초과·MuJoCo 전환 실패로 **실배포는 보류** 상태입니다.
 
 ## 다른 컴퓨터에서 시작
+
+코드 편집만 진행하는 컴퓨터에서는 [코드 편집 환경](docs/CODE_EDITING.md)을 사용합니다. 아래 모델 복원과 학습 환경 설치는 학습·시뮬레이션 컴퓨터용입니다.
 
 ```bash
 git clone https://github.com/PGH-snfl/go2-gallop-rl.git
@@ -26,17 +28,16 @@ python3 -m scripts.data.restore_artifacts --full
 
 ## 다음 학습
 
-Isaac 환경 구성과 최소 복원을 마친 뒤 실행합니다. 실제 학습은 사용자가 진행합니다.
+서버에 수정본을 반영하고 [비학습 검사](docs/gallop_landing_credit.md)를 먼저 진행합니다. 아래62k 부모는 서버에 있으며 Release 최소 복원 묶음은58k까지입니다. 실제 학습은 사용자가 진행하며 영상은 저장하지 않습니다.
 
 ```bash
 ./isaac.sh gallop train \
   --headless --num-envs 256 --iterations 4000 --save-interval 500 \
-  --finetune-from runs/isaac/train/unitree_go2_gallop/20261112_124757_47b3b7/model_final.pt \
-  --config configs/gallop_2mps_50cm_velocity_guard.json \
-  --video --video-length 500 --video-interval 20000
+  --finetune-from runs/isaac/train/unitree_go2_gallop/20261117_160234_3e2363/model_final.pt \
+  --config configs/gallop_2mps_50cm_landing_credit.json
 ```
 
-기존 고정 목표 부모이므로 `--reset-curriculum`을 넣지 않습니다. 새Adam으로 시작하고 새 결과는 `runs/isaac/train/unitree_go2_gallop/<새ID>/`에 저장합니다. 새 제약의 동결 부모 검사는 조기 종료가 잦았으며, 코드 검사 통과가50cm 달성이나 실기 안전을 입증하지는 않습니다.
+기존 고정 목표 부모이므로 `--reset-curriculum`을 넣지 않습니다. 새Adam으로 시작하고 새 결과는 `runs/isaac/train/unitree_go2_gallop/<새ID>/`에 저장합니다. 완료 시 누적66k입니다. 보상 수정과 코드 검사 통과가50cm 달성이나 실기 안전을 입증하지는 않습니다.
 
 | 위치 | 내용 |
 |---|---|
@@ -48,4 +49,4 @@ Isaac 환경 구성과 최소 복원을 마친 뒤 실행합니다. 실제 학�
 | `assets/vendor/unitree_go2/` | 원래 Go2 모델과 BSD 라이선스 |
 | `runs/`, `archive/`, `data/` | Release에서 복원하는 원본 산출물 |
 
-[현재 설계](docs/gallop_velocity_guard.md) · [새 컴퓨터 안내](docs/NEW_COMPUTER.md) · [검증 기록](reports/20261112_gallop_velocity_guard_setup/README.md) · [전체 실험 경과](docs/PROJECT_HISTORY.md) · [작업 규칙](AGENTS.md) · [제3자 자료](THIRD_PARTY_NOTICES.md)
+[현재 보상 설계·명령](docs/gallop_landing_credit.md) · [관절 보호](docs/gallop_velocity_guard.md) · [새 컴퓨터 안내](docs/NEW_COMPUTER.md) · [전체 실험 경과](docs/PROJECT_HISTORY.md) · [작업 규칙](AGENTS.md) · [제3자 자료](THIRD_PARTY_NOTICES.md)

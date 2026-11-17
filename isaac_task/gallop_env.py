@@ -941,10 +941,13 @@ class GallopState:
         if self.flight is not None:
             _,_,_,stage=flight_phase_targets(self.phase,self.period,self.profile or self.cfg)
             tensors.update(self.flight.diagnostics())
+            tensors.update(self.flight.snapshot())
             tensors.update(flight_planned_stage=stage,flight_recovering=self.flight.recovering,
                            flight_recovery_elapsed=self.flight.recovery_elapsed,flight_pending_distance_score=self.flight.recovery_bank,
                            flight_step_takeoff_score=self.flight.points['takeoff'],flight_step_landing_score=self.flight.points['landing'],
                            flight_step_confirmed_distance_score=self.flight.points['distance'],world_vertical_velocity=d.root_lin_vel_w[:,2])
+            tensors.update(flight_step_touchdown_distance_score=self.flight.points['distance_touchdown'],
+                           flight_step_recovery_distance_score=self.flight.points['distance_recovery'])
         tensors.update(leap_active=self.leap.active,leap_current_distance=self.leap.current_distance,
                        leap_air_seconds=self.leap.air_seconds,leap_landed=self.leap.landed,
                        leap_qualified_landed=self.leap.qualified_landed,leap_last_distance=self.leap.last_distance,

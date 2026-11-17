@@ -1,0 +1,45 @@
+{
+  "date": "2026-11-17",
+  "parent_cumulative_updates": 62000,
+  "parent_sha256": "06da23ddd15d6f70f5fd8637ee3fe01a1a3d584078649218a01f244b43ceea2d",
+  "config": "configs/gallop_2mps_50cm_landing_credit.json",
+  "validation": {
+    "cpu_unit_tests_passed": 83,
+    "portable_handoff_tests_passed": 4,
+    "python_syntax_files_checked": 116,
+    "json_configs_checked": 30,
+    "ruff": "passed",
+    "shell_syntax": "passed",
+    "git_diff_check": "passed",
+    "received_original_files_sha256_verified": 43,
+    "received_original_files_changed": 0,
+    "legacy_playback_collector": {
+      "events": 70,
+      "trace_rows": 1500,
+      "stable": 0,
+      "aborted": 55,
+      "reward_points": 0
+    }
+  },
+  "not_run": [
+    "Isaac simulation/check on server",
+    "PPO or imitation training",
+    "Actual checkpoint policy replay/restore under new config",
+    "Full historical test suite: local checkout lacks IsaacLab upstream source and some analysis/runtime dependencies"
+  ],
+  "test_command": "OMP_NUM_THREADS=1 python -m unittest tests.test_gallop_landing_credit tests.test_gallop_flight_collection tests.test_gallop_flight tests.test_gallop_distance_focus tests.test_gallop_velocity_guard tests.test_gallop_leap tests.test_gallop_leap_env tests.test_gallop_fixed_edu tests.test_gallop_guarded.GuardedCoreTests tests.test_gallop_guarded_curriculum tests.test_gallop_pair_env",
+  "test_environment": "Python3.11.16, torch2.7.0+cpu and numpy1.26.4 loaded from temporary /tmp dependency folder; no Conda environment created or modified",
+  "performance_improvement_verified": false,
+  "source_sha256": {
+    "isaac_task/gallop_core.py": "cf2f74fc5b8e123c2e152f787e16df8b3be8f9018047146a31f6b9aff91588a5",
+    "isaac_task/gallop_env.py": "858e9e2b61c7ebff3c6908e94e172fac585296a03a0ace5f43016db624833e7e",
+    "scripts/training/gallop_baseline.py": "f967669409318b7278c5d6c4adde8f6c8149da6c0ced6c4281ba1fa5a60cc1ed",
+    "scripts/analysis/collect_flight_diagnostics.py": "a82cdc311a0f565f1c44edf79a0deb911956257348b882982d5a7c0b12683095",
+    "configs/gallop_2mps_50cm_landing_credit.json": "883604a2c66b3a7695f3aa01400fa760d2327461aabdf7e16b240fe90b16302b",
+    "tests/test_gallop_landing_credit.py": "bfc6736e53fb939a941ceef52bf12fd3af481088da6998f47249a039796adb80",
+    "tests/test_gallop_flight_collection.py": "6a513565e8fa346d0365075f7cca6ae88b4fc1ca7d5d29e7b892f534145389d4",
+    "tests/test_gallop_flight.py": "d4a11fddcb3d520f798899d3a66051041faa974a2862fb5b0778311ea456c659",
+    "docs/gallop_landing_credit.md": "381cac73921a015f2ae111e4175ca03a8ec8b641251d6547319a58282d13ec29",
+    "handoff/resume-state.json": "93802fd834e5ddbbfaaeaa2da6698dd33c06ccd16ee77799f0a391b841d4619e"
+  }
+}

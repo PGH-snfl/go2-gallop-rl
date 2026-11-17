@@ -246,6 +246,15 @@ def main():
             force_normalization='sum of positive vertical foot force / measured robot weight',
             touchdown_order_required=settings.require_touchdown_order,
             gait_reward_floor_during_flight_violation=settings.flight_air_reward_floor)
+        # Historical play activates the checkpoint's original core/settings.
+        # Describe new fields only when that source actually implements them.
+        if hasattr(gallop_core.FlightStabilityTracker,'ABORT_REASONS'):
+            manifest['flight_design'].update(version=2,
+                distance_reward_confirmation='safe touchdown fraction; remainder after continuous stable supported recovery',
+                touchdown_distance_fraction=settings.flight_touchdown_distance_fraction,
+                abort_reason_order=list(gallop_core.FlightStabilityTracker.ABORT_REASONS),
+                abort_reason_counts='5ms landing decisions; termination cancellation at control boundary; overlapping reasons',
+                abort_samples='last physics-step abort sample per environment; counters retain all abort events')
     if settings.start_speed==settings.max_speed and settings.speed_band==0:
         manifest['speed_increase_rule']=f'Fixed positive forward command {settings.start_speed} m/s; no speed promotion'
     if startup_enabled:manifest['speed_increase_rule']=f'Stationary hold -> stable walking {settings.startup_walk_speed} m/s -> smooth stable handover -> {settings.start_speed} m/s Gallop'
