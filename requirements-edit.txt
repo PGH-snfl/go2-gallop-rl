@@ -1,0 +1,2 @@
+# Code inspection only. Does not install training or simulation dependencies.
+ruff==0.17.5

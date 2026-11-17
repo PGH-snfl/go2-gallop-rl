@@ -1,4 +1,6 @@
 .venv/
+.tooling/
+.ruff_cache/
 .isaacvenv/
 __pycache__/
 *.py[cod]

@@ -1,0 +1,14 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Gallop: code checks only",
+      "type": "process",
+      "command": "${workspaceFolder}/.venv/bin/python",
+      "args": ["-B", "-m", "scripts.validation.check_code_editing"],
+      "options": {"cwd": "${workspaceFolder}"},
+      "group": {"kind": "test", "isDefault": true},
+      "problemMatcher": []
+    }
+  ]
+}
